@@ -1,15 +1,15 @@
 ---
 title: "2× Freezing Medium (R0 + 10% FCS + 20% DMSO)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-buffer_id: "BUF-FREEZE-MIX-2x-001"
+protocol_id: "BUF-FREEZE-MIX-2x-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Preparation of 2× freezing medium for cryopreservation of PBMCs and other lymphocytes. Mixed 1:1 with cell suspension to yield standard 10% DMSO freezing medium."
 ---
 
-**Buffer ID:** {{< meta buffer_id >}}  
+**Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

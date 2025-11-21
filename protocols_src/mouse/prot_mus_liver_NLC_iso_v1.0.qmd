@@ -3,13 +3,13 @@ title: "Isolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mou
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-LIV-NLC-ISO-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Enzymatic digestion of mouse liver and density-based enrichment to isolate liver-associated lymphocytes (LALs), including NK-like T cells (NLCs), for downstream flow cytometry, sorting, and functional assays."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

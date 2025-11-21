@@ -3,13 +3,13 @@ title: "Mouse Blood Processing to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-BLD-PRC-001"
 version: "v1.0"
+date: "2025-11-20"
 description: "Processing of mouse peripheral blood to obtain leukocyte-enriched single-cell suspensions for flow cytometry and immunological assays."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-20
 
 # Purpose
 

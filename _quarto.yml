@@ -4,22 +4,36 @@ project:
 
 website:
   title: "Protocol Library"
-  navbar:
-    left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Buffers"
-        href: protocols_src/buffers/index.qmd
-      - text: "Mouse"
-        href: protocols_src/mouse/index.qmd
-      - text: "Human"
-        href: protocols_src/human/index.qmd
-      - text: "General"
-        href: protocols_src/general/index.qmd
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: "Overview"
+        icon: house
+
+      - href: protocols_src/buffers/index.qmd
+        text: "Buffers"
+        icon: droplet
+
+      - href: protocols_src/general/index.qmd
+        text: "General"
+        icon: gear
+        
+      - href: protocols_src/human/index.qmd
+        text: "Human"
+        icon: person
+
+      - href: protocols_src/mouse/index.qmd
+        text: "Mouse"
+        icon: mouse
+
 
 format:
   html:
-    toc: false
+    theme: flatly
+    toc: true
     number-sections: false
     geometry: "margin=2cm"
     fontsize: 11pt

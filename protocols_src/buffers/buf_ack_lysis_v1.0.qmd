@@ -1,15 +1,15 @@
 ---
 title: "ACK Red Blood Cell Lysis Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-buffer_id: "BUF-ACK-LYSIS-001"
+protocol_id: "BUF-ACK-LYSIS-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions."
 ---
 
-**Buffer ID:** {{< meta buffer_id >}}  
+**Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

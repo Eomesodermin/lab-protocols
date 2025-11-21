@@ -4,9 +4,16 @@ listing:
   contents:
     - "*.qmd"
   type: table
-  sort: "title"
+  fields: [protocol_id, title, version, date]
+  field-display-names:
+    protocol_id: "Protocol ID"
+    title: "Protocol"
+    version: "Version"
+    date: "Date"
+  field-types:
+    date: date        # so date sorts and formats correctly
+  field-links: [title]   # make the title the clickable link
+  sort: "protocol_id"    # or "title" or "-date"
 ---
-
-# Mouse protocols
 
 Mouse processing, tissue digestion, and functional assays.

@@ -42,13 +42,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d5e7c60e6424aa6ccf163f01508596ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -132,55 +132,82 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Protocol Library</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../../protocols_src/buffers/index.html" aria-current="page"> 
-<span class="menu-text">Buffers</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/mouse/index.html"> 
-<span class="menu-text">Mouse</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/human/index.html"> 
-<span class="menu-text">Human</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/general/index.html"> 
-<span class="menu-text">General</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/buffers/index.html">Buffers</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
     <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -204,13 +231,10 @@ window.Quarto = {
 </header>
 
 
-<section id="buffers" class="level1">
-<h1>Buffers</h1>
 <p>Standard buffers used across protocols. Select a buffer from the table below to view the full protocol.</p>
 
 
 
-</section>
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
@@ -226,10 +250,7 @@ window.Quarto = {
         Date - Newest
       </option>
       <option value="listing-title-sort" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
+        Protocol
       </option>
     </select>
   </div>
@@ -243,147 +264,181 @@ window.Quarto = {
 <tr>
 
 <th>
+Protocol ID
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
+</th>
+
+<th>
+Version
+</th>
+
+<th>
 <a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
 </th>
 
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-file-modified-sort="1763762675373" data-listing-reading-time-sort="5" data-listing-word-count-sort="959" data-listing-title-sort="2× Freezing Medium (R0 + 10% FCS + 20% DMSO)" data-listing-filename-sort="buf_freeze_mix_2x_v1.0.qmd">
+<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763767291091" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1052" data-listing-title-sort="ACK Red Blood Cell Lysis Buffer">
 <td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../../protocols_src/buffers/buf_freeze_mix_2x_v1.0.html" class="title listing-title">2× Freezing Medium (R0 + 10% FCS + 20% DMSO)</a>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1763762653764" data-listing-reading-time-sort="4" data-listing-word-count-sort="685" data-listing-title-sort="33% Percoll Solution" data-listing-filename-sort="buf_percoll_33pct_v1.0.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-<td>
-<a href="../../protocols_src/buffers/buf_percoll_33pct_v1.0.html" class="title listing-title">33% Percoll Solution</a>
-</td>
-<td>
-<span class="listing-author">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1763762684156" data-listing-reading-time-sort="6" data-listing-word-count-sort="1053" data-listing-title-sort="ACK Red Blood Cell Lysis Buffer" data-listing-filename-sort="buf_ack_lysis_v1.0.qmd">
-<td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-ACK-LYSIS-001</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_ack_lysis_v1.0.html" class="title listing-title">ACK Red Blood Cell Lysis Buffer</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 21, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-listing-file-modified-sort="1763762679847" data-listing-reading-time-sort="4" data-listing-word-count-sort="627" data-listing-title-sort="FACS/MACS Buffer" data-listing-filename-sort="buf_facs_buffer_v1.0.qmd">
+<tr data-index="1" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763767067814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="626" data-listing-title-sort="FACS/MACS Buffer">
 <td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-FACS-v1.0</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_facs_buffer_v1.0.html" class="title listing-title">FACS/MACS Buffer</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 20, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="4" data-listing-file-modified-sort="1763762670274" data-listing-reading-time-sort="6" data-listing-word-count-sort="1184" data-listing-title-sort="Liver Digestion Buffer" data-listing-filename-sort="buf_liver_digestion_v1.0.qmd">
+<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763767221830" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="958" data-listing-title-sort="2× Freezing Medium (R0 + 10% FCS + 20% DMSO)">
 <td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-FREEZE-MIX-2x-001</span>
+</td>
+<td>
+<a href="../../protocols_src/buffers/buf_freeze_mix_2x_v1.0.html" class="title listing-title">2× Freezing Medium (R0 + 10% FCS + 20% DMSO)</a>
+</td>
+<td>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 21, 2025</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763767055217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1183" data-listing-title-sort="Liver Digestion Buffer">
+<td>
+<span class="listing-protocol_id">BUF-LIV-DIG-v1.0</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_liver_digestion_v1.0.html" class="title listing-title">Liver Digestion Buffer</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 20, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="5" data-listing-file-modified-sort="1763762665269" data-listing-reading-time-sort="4" data-listing-word-count-sort="712" data-listing-title-sort="Mouse Liver Digestion Buffer" data-listing-filename-sort="buf_mus_liver_digestion_NLC_v1.0.qmd">
+<tr data-index="4" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763767237252" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="711" data-listing-title-sort="Mouse Liver Digestion Buffer">
 <td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-MUS-LIV-DIG-001</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_mus_liver_digestion_NLC_v1.0.html" class="title listing-title">Mouse Liver Digestion Buffer</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 21, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="6" data-listing-file-modified-sort="1763762659537" data-listing-reading-time-sort="10" data-listing-word-count-sort="1811" data-listing-title-sort="NK Cell Culture Medium (cRPMI for Murine NK Cells)" data-listing-filename-sort="buf_mus_NK_med_v1.0.qmd">
+<tr data-index="5" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763767243946" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1810" data-listing-title-sort="NK Cell Culture Medium (cRPMI for Murine NK Cells)">
 <td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-MUS-NK-MED-001</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_mus_NK_med_v1.0.html" class="title listing-title">NK Cell Culture Medium (cRPMI for Murine NK Cells)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 21, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="7" data-listing-file-modified-sort="1763762648054" data-listing-reading-time-sort="3" data-listing-word-count-sort="558" data-listing-title-sort="R0 Medium (RPMI Without Serum)" data-listing-filename-sort="buf_R0_med_v1.0.qmd">
+<tr data-index="6" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763767038786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="684" data-listing-title-sort="33% Percoll Solution">
 <td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-PERC-33-v1.0</span>
+</td>
+<td>
+<a href="../../protocols_src/buffers/buf_percoll_33pct_v1.0.html" class="title listing-title">33% Percoll Solution</a>
+</td>
+<td>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 20, 2025</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763767264978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="557" data-listing-title-sort="R0 Medium (RPMI Without Serum)">
+<td>
+<span class="listing-protocol_id">BUF-R0-MED-001</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_R0_med_v1.0.html" class="title listing-title">R0 Medium (RPMI Without Serum)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 21, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="8" data-listing-file-modified-sort="1763762642232" data-listing-reading-time-sort="5" data-listing-word-count-sort="806" data-listing-title-sort="R10 Medium (RPMI + 10% FCS + Pen/Strep)" data-listing-filename-sort="buf_R10_med_v1.0.qmd">
+<tr data-index="8" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763767255350" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="805" data-listing-title-sort="R10 Medium (RPMI + 10% FCS + Pen/Strep)">
 <td>
-<span class="listing-date">&nbsp;</span>
+<span class="listing-protocol_id">BUF-R10-MED-001</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_R10_med_v1.0.html" class="title listing-title">R10 Medium (RPMI + 10% FCS + Pen/Strep)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 21, 2025</span>
 </td>
 
 </tr>
 
-<tr data-index="9" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763762637951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="477" data-listing-title-sort="RBC Lysis Buffer (Hybrimax / Commercial)" data-listing-filename-sort="buf_rbc_lysis_hybrimax_v1.0.qmd">
+<tr data-index="9" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763762637951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="477" data-listing-title-sort="RBC Lysis Buffer (Hybrimax / Commercial)">
 <td>
-<span class="listing-date">Nov 20, 2025</span>
+<span class="listing-protocol_id">BUF-RBC-HYB-v1.0</span>
 </td>
 <td>
 <a href="../../protocols_src/buffers/buf_rbc_lysis_hybrimax_v1.0.html" class="title listing-title">RBC Lysis Buffer (Hybrimax / Commercial)</a>
 </td>
 <td>
-<span class="listing-author">&nbsp;</span>
+<span class="listing-version">v1.0</span>
+</td>
+<td>
+<span class="listing-date">Nov 20, 2025</span>
 </td>
 
 </tr>

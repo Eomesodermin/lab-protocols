@@ -3,13 +3,13 @@ title: "NK-92 Cell Line Culture Protocol"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "HUM-NK92-CULTURE-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Culture and maintenance of the human NK-92 cell line, including thawing, IL-2–supplemented culture, routine passaging, and cryopreservation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

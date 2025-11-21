@@ -3,13 +3,13 @@ title: "In vitro NK Cell Proliferation Assay Using CellTrace Dyes"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-SPL-NK-PROLIF-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "In vitro proliferation assay for murine NK cells using CellTrace dyes, starting from splenic NK cells isolated by magnetic enrichment and/or sorting, and cultured in NK medium containing IL-15."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

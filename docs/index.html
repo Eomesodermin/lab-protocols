@@ -40,13 +40,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d5e7c60e6424aa6ccf163f01508596ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -72,56 +72,94 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Protocol Library</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./protocols_src/buffers/index.html"> 
-<span class="menu-text">Buffers</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./protocols_src/mouse/index.html"> 
-<span class="menu-text">Mouse</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./protocols_src/human/index.html"> 
-<span class="menu-text">Human</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./protocols_src/general/index.html"> 
-<span class="menu-text">General</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Overview</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <ul class="collapse">
+  <li><a href="#how-to-use-this-library" id="toc-how-to-use-this-library" class="nav-link" data-scroll-target="#how-to-use-this-library">How to use this library</a></li>
+  <li><a href="#naming-and-versioning-conventions" id="toc-naming-and-versioning-conventions" class="nav-link" data-scroll-target="#naming-and-versioning-conventions">Naming and versioning conventions</a></li>
+  <li><a href="#document-structure" id="toc-document-structure" class="nav-link" data-scroll-target="#document-structure">Document structure</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -144,33 +182,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="protocol-library" class="level1">
-<h1>Protocol Library</h1>
-<p>Centralised protocol library for buffers, mouse and human workflows, and general methods.</p>
-<p>Use the links below to navigate by category.</p>
-<section id="buffers" class="level2">
-<h2 class="anchored" data-anchor-id="buffers">Buffers</h2>
+<section id="welcome" class="level1">
+<h1>Welcome</h1>
+<p>This site hosts the standardised protocol library for the lab, including buffers, mouse and human workflows, flow panels, and general methods. All documents follow a common Quarto template and are versioned.</p>
+<p>Use the navigation bar on the left to browse by category or search for a protocol by name.</p>
+<hr>
+<section id="how-to-use-this-library" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-library">How to use this library</h2>
 <ul>
-<li><a href="./protocols_src/buffers/index.html">Buffers</a></li>
+<li><p><strong>Browse by category</strong> using the sidebar:</p>
+<ul>
+<li><em>Buffers</em> – all stock and working solutions.</li>
+<li><em>Mouse</em> – mouse tissue processing and functional assays.</li>
+<li><em>Human</em> – human PBMC and cell line protocols.</li>
+<li><em>General</em> – cross-cutting methods (e.g.&nbsp;flow staining, nucleofection).</li>
+</ul></li>
+<li><p><strong>Download as PDF</strong><br>
+Each protocol page includes a PDF version suitable for printing or attaching to experiment documentation.</p></li>
+<li><p><strong>Search</strong><br>
+Use the search box in the sidebar to find protocols by keyword (e.g.&nbsp;“liver digestion”, “PBMC”, “ACK lysis”).</p></li>
 </ul>
+<hr>
 </section>
-<section id="mouse" class="level2">
-<h2 class="anchored" data-anchor-id="mouse">Mouse</h2>
+<section id="naming-and-versioning-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="naming-and-versioning-conventions">Naming and versioning conventions</h2>
+<p>Protocols and buffers follow a consistent naming scheme:</p>
 <ul>
-<li><a href="./protocols_src/mouse/index.html">Mouse protocols</a></li>
+<li><strong>Buffers:</strong> <code>buf_&lt;target&gt;_vX.Y</code>, e.g.&nbsp;<code>buf_liver_digestion_v1.0</code></li>
+<li><strong>Mouse protocols:</strong> <code>prot_mus_&lt;tissue_or_process&gt;_vX.Y</code></li>
+<li><strong>Human protocols:</strong> <code>prot_hum_&lt;tissue_or_process&gt;_vX.Y</code></li>
+<li><strong>General protocols:</strong> <code>prot_gen_&lt;process&gt;_vX.Y</code></li>
 </ul>
+<p>Version numbers are incremented when the procedure changes in a way that could affect results (reagent changes, timings, etc.).</p>
+<p>The <strong>title</strong> and <strong>version</strong> in each protocol’s YAML header define what appears on the website and in the PDF.</p>
+<hr>
 </section>
-<section id="human" class="level2">
-<h2 class="anchored" data-anchor-id="human">Human</h2>
+<section id="document-structure" class="level2">
+<h2 class="anchored" data-anchor-id="document-structure">Document structure</h2>
+<p>Most protocols follow a common structure:</p>
+<ol type="1">
+<li><strong>Purpose and scope</strong> – what the protocol is for and when to use it.<br>
+</li>
+<li><strong>Reagents and materials</strong> – linked to buffer entries where applicable.<br>
+</li>
+<li><strong>Equipment</strong> – key instruments and settings.<br>
+</li>
+<li><strong>Procedure</strong> – stepwise instructions.<br>
+</li>
+<li><strong>Notes and troubleshooting</strong> – optional recommendations, pitfalls, or variants.</li>
+</ol>
+<p>Buffers have a simplified structure focusing on:</p>
 <ul>
-<li><a href="./protocols_src/human/index.html">Human protocols</a></li>
+<li>Composition (final concentrations)</li>
+<li>Preparation steps</li>
+<li>Storage and stability</li>
+<li>Safety considerations</li>
 </ul>
-</section>
-<section id="general" class="level2">
-<h2 class="anchored" data-anchor-id="general">General</h2>
-<ul>
-<li><a href="./protocols_src/general/index.html">General protocols</a></li>
-</ul>
+<hr>
 
 
 </section>

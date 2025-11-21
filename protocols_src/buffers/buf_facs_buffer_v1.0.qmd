@@ -3,13 +3,13 @@ title: "FACS/MACS Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "BUF-FACS-v1.0"
 version: "v1.0"
+date: "2025-11-20"
 description: "Buffer for washing, staining, and handling cells for flow cytometry and magnetic separation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-20
 
 # Purpose
 

@@ -4,9 +4,16 @@ listing:
   contents:
     - "*.qmd"
   type: table
-  sort: "title"
+  fields: [protocol_id, title, version, date]
+  field-display-names:
+    protocol_id: "Protocol ID"
+    title: "Protocol"
+    version: "Version"
+    date: "Date"
+  field-types:
+    date: date        # so date sorts and formats correctly
+  field-links: [title]   # make the title the clickable link
+  sort: "protocol_id"    # or "title" or "-date"
 ---
-
-# General protocols
 
 General-purpose protocols (e.g. flow staining, nucleofection) that are species-agnostic.

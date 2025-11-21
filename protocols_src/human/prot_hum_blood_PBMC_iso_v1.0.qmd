@@ -3,13 +3,13 @@ title: "Isolation of Human PBMCs from Whole Blood by Ficoll Gradient"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "HUM-BLD-PBMC-ISO-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation, followed by washing and optional cryopreservation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

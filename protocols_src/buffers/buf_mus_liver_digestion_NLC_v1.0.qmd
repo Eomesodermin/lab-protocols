@@ -1,15 +1,15 @@
 ---
 title: "Mouse Liver Digestion Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-buffer_id: "BUF-MUS-LIV-DIG-001"
+protocol_id: "BUF-MUS-LIV-DIG-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Preparation of collagenase IV and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue."
 ---
 
-**Buffer ID:** {{< meta buffer_id >}}  
+**Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

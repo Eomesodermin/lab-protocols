@@ -3,13 +3,13 @@ title: "K-562 Cell Line Culture Protocol"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "HUM-K562-CULTURE-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

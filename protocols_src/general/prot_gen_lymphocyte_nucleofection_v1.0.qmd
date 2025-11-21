@@ -3,13 +3,13 @@ title: "4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "GEN-LYMPH-NUC-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Unified 4D-Nucleofector protocol for CRISPR–Cas9 RNP delivery into primary mouse T cells, primary mouse NK cells, human CD8 T cells, and NK-92 cells using cell-type–specific buffer and pulse codes."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

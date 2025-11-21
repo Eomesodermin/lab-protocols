@@ -3,13 +3,13 @@ title: "33% Percoll Solution"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "BUF-PERC-33-v1.0"
 version: "v1.0"
+date: "2025-11-20"
 description: "33% Percoll density solution for enrichment of leukocytes from digested liver tissue."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-20
 
 # Purpose
 

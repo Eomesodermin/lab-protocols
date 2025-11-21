@@ -3,13 +3,13 @@ title: "KHYG-1 Cell Line Culture Protocol"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "HUM-KHYG1-CULTURE-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Culture and maintenance of the human KHYG-1 NK-like cell line, including thawing, routine passaging, IL-2 supplementation, and cryopreservation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

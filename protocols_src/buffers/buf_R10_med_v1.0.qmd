@@ -1,15 +1,15 @@
 ---
 title: "R10 Medium (RPMI + 10% FCS + Pen/Strep)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-buffer_id: "BUF-R10-MED-001"
+protocol_id: "BUF-R10-MED-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Complete RPMI 1640 medium supplemented with 10% fetal calf serum and Penicillin/Streptomycin for culture and washing of human PBMCs and lymphocytes."
 ---
 
-**Buffer ID:** {{< meta buffer_id >}}  
+**Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

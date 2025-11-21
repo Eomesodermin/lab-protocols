@@ -4,7 +4,7 @@
     "href": "protocols_src/human/prot_hum_K562_culture_v1.0.html",
     "title": "K-562 Cell Line Culture Protocol",
     "section": "",
-    "text": "Protocol ID: HUM-K562-CULTURE-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: HUM-K562-CULTURE-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/human/prot_hum_K562_culture_v1.0.html#step-1-reagents-and-medium-preparation",
@@ -67,7 +67,7 @@
     "href": "protocols_src/human/prot_hum_blood_PBMC_iso_v1.0.html",
     "title": "Isolation of Human PBMCs from Whole Blood by Ficoll Gradient",
     "section": "",
-    "text": "Protocol ID: HUM-BLD-PBMC-ISO-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: HUM-BLD-PBMC-ISO-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/human/prot_hum_blood_PBMC_iso_v1.0.html#step-1-tube-labelling-and-blood-dilution",
@@ -130,7 +130,7 @@
     "href": "protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro_v1.0.html",
     "title": "In vitro NK Cell Proliferation Assay Using CellTrace Dyes",
     "section": "",
-    "text": "Protocol ID: MUS-SPL-NK-PROLIF-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: MUS-SPL-NK-PROLIF-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro_v1.0.html#step-1-preparations-on-the-day-before-sort",
@@ -221,7 +221,7 @@
     "href": "protocols_src/mouse/prot_mus_liver_digestion_v1.0.html",
     "title": "Mouse Liver Digestion to Single-Cell Suspension",
     "section": "",
-    "text": "Protocol ID: MUS-LIV-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: MUS-LIV-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_liver_digestion_v1.0.html#step-1-liver-harvest-and-perfusion",
@@ -291,7 +291,7 @@
     "href": "protocols_src/mouse/prot_mus_bone_marrow_isolation_v1.0.html",
     "title": "Mouse Bone Marrow Isolation to Single-Cell Suspension",
     "section": "",
-    "text": "Protocol ID: MUS-BM-ISO-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: MUS-BM-ISO-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_bone_marrow_isolation_v1.0.html#step-1-bone-collection",
@@ -361,7 +361,7 @@
     "href": "protocols_src/mouse/prot_mus_lung_digestion_v1.0.html",
     "title": "Mouse Lung Digestion to Single-Cell Suspension",
     "section": "",
-    "text": "Protocol ID: MUS-LNG-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: MUS-LNG-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_lung_digestion_v1.0.html#step-1-lung-collection",
@@ -431,7 +431,7 @@
     "href": "protocols_src/mouse/prot_mus_liver_NLC_iso_v1.0.html",
     "title": "Isolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver",
     "section": "",
-    "text": "Protocol ID: MUS-LIV-NLC-ISO-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: MUS-LIV-NLC-ISO-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_liver_NLC_iso_v1.0.html#step-1-preparation-and-setup",
@@ -515,7 +515,7 @@
     "href": "protocols_src/general/prot_gen_lymphocyte_nucleofection_v1.0.html",
     "title": "4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells",
     "section": "",
-    "text": "Protocol ID: GEN-LYMPH-NUC-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: GEN-LYMPH-NUC-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/general/prot_gen_lymphocyte_nucleofection_v1.0.html#step-1-cell-typespecific-lookup",
@@ -592,7 +592,7 @@
     "href": "protocols_src/general/prot_gen_CTV_stain_v1.0.html",
     "title": "CellTrace Violet (CTV) Staining of Lymphocytes",
     "section": "",
-    "text": "Protocol ID: GEN-CTV-STAIN-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: GEN-CTV-STAIN-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/general/prot_gen_CTV_stain_v1.0.html#step-1-cell-preparation-and-resting",
@@ -655,7 +655,7 @@
     "href": "protocols_src/buffers/buf_mus_liver_digestion_NLC_v1.0.html",
     "title": "Mouse Liver Digestion Buffer",
     "section": "",
-    "text": "Buffer ID: BUF-MUS-LIV-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: BUF-MUS-LIV-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_mus_liver_digestion_NLC_v1.0.html#stock-solutions",
@@ -676,7 +676,7 @@
     "href": "protocols_src/buffers/buf_R10_med_v1.0.html",
     "title": "R10 Medium (RPMI + 10% FCS + Pen/Strep)",
     "section": "",
-    "text": "Buffer ID: BUF-R10-MED-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: BUF-R10-MED-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_R10_med_v1.0.html#stock-solutions-required",
@@ -711,14 +711,17 @@
     "href": "protocols_src/buffers/index.html",
     "title": "Buffers",
     "section": "",
-    "text": "Buffers\nStandard buffers used across protocols. Select a buffer from the table below to view the full protocol.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n \n\n\n2× Freezing Medium (R0 + 10% FCS + 20% DMSO)\n\n\n \n\n\n\n\n\n\n \n\n\n33% Percoll Solution\n\n\n \n\n\n\n\n\n\n \n\n\nACK Red Blood Cell Lysis Buffer\n\n\n \n\n\n\n\n\n\n \n\n\nFACS/MACS Buffer\n\n\n \n\n\n\n\n\n\n \n\n\nLiver Digestion Buffer\n\n\n \n\n\n\n\n\n\n \n\n\nMouse Liver Digestion Buffer\n\n\n \n\n\n\n\n\n\n \n\n\nNK Cell Culture Medium (cRPMI for Murine NK Cells)\n\n\n \n\n\n\n\n\n\n \n\n\nR0 Medium (RPMI Without Serum)\n\n\n \n\n\n\n\n\n\n \n\n\nR10 Medium (RPMI + 10% FCS + Pen/Strep)\n\n\n \n\n\n\n\n\n\nNov 20, 2025\n\n\nRBC Lysis Buffer (Hybrimax / Commercial)\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Standard buffers used across protocols. Select a buffer from the table below to view the full protocol.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Protocol\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProtocol ID\n\n\n\nProtocol\n\n\n\nVersion\n\n\n\nDate\n\n\n\n\n\n\n\n\nBUF-ACK-LYSIS-001\n\n\nACK Red Blood Cell Lysis Buffer\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nBUF-FACS-v1.0\n\n\nFACS/MACS Buffer\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nBUF-FREEZE-MIX-2x-001\n\n\n2× Freezing Medium (R0 + 10% FCS + 20% DMSO)\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nBUF-LIV-DIG-v1.0\n\n\nLiver Digestion Buffer\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nBUF-MUS-LIV-DIG-001\n\n\nMouse Liver Digestion Buffer\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nBUF-MUS-NK-MED-001\n\n\nNK Cell Culture Medium (cRPMI for Murine NK Cells)\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nBUF-PERC-33-v1.0\n\n\n33% Percoll Solution\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nBUF-R0-MED-001\n\n\nR0 Medium (RPMI Without Serum)\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nBUF-R10-MED-001\n\n\nR10 Medium (RPMI + 10% FCS + Pen/Strep)\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nBUF-RBC-HYB-v1.0\n\n\nRBC Lysis Buffer (Hybrimax / Commercial)\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Buffers"
+    ]
   },
   {
     "objectID": "protocols_src/buffers/buf_mus_NK_med_v1.0.html",
     "href": "protocols_src/buffers/buf_mus_NK_med_v1.0.html",
     "title": "NK Cell Culture Medium (cRPMI for Murine NK Cells)",
     "section": "",
-    "text": "Buffer ID: BUF-MUS-NK-MED-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: BUF-MUS-NK-MED-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_mus_NK_med_v1.0.html#stock-reagents-required",
@@ -739,7 +742,7 @@
     "href": "protocols_src/buffers/buf_R0_med_v1.0.html",
     "title": "R0 Medium (RPMI Without Serum)",
     "section": "",
-    "text": "Buffer ID: BUF-R0-MED-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: BUF-R0-MED-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_R0_med_v1.0.html#preparation-of-500-ml-r0",
@@ -753,49 +756,54 @@
     "href": "index.html",
     "title": "Protocol Library",
     "section": "",
-    "text": "Centralised protocol library for buffers, mouse and human workflows, and general methods.\nUse the links below to navigate by category.\n\n\n\nBuffers\n\n\n\n\n\nMouse protocols\n\n\n\n\n\nHuman protocols\n\n\n\n\n\nGeneral protocols"
+    "text": "This site hosts the standardised protocol library for the lab, including buffers, mouse and human workflows, flow panels, and general methods. All documents follow a common Quarto template and are versioned.\nUse the navigation bar on the left to browse by category or search for a protocol by name.\n\n\n\n\nBrowse by category using the sidebar:\n\nBuffers – all stock and working solutions.\nMouse – mouse tissue processing and functional assays.\nHuman – human PBMC and cell line protocols.\nGeneral – cross-cutting methods (e.g. flow staining, nucleofection).\n\nDownload as PDF\nEach protocol page includes a PDF version suitable for printing or attaching to experiment documentation.\nSearch\nUse the search box in the sidebar to find protocols by keyword (e.g. “liver digestion”, “PBMC”, “ACK lysis”).\n\n\n\n\n\nProtocols and buffers follow a consistent naming scheme:\n\nBuffers: buf_&lt;target&gt;_vX.Y, e.g. buf_liver_digestion_v1.0\nMouse protocols: prot_mus_&lt;tissue_or_process&gt;_vX.Y\nHuman protocols: prot_hum_&lt;tissue_or_process&gt;_vX.Y\nGeneral protocols: prot_gen_&lt;process&gt;_vX.Y\n\nVersion numbers are incremented when the procedure changes in a way that could affect results (reagent changes, timings, etc.).\nThe title and version in each protocol’s YAML header define what appears on the website and in the PDF.\n\n\n\n\nMost protocols follow a common structure:\n\nPurpose and scope – what the protocol is for and when to use it.\n\nReagents and materials – linked to buffer entries where applicable.\n\nEquipment – key instruments and settings.\n\nProcedure – stepwise instructions.\n\nNotes and troubleshooting – optional recommendations, pitfalls, or variants.\n\nBuffers have a simplified structure focusing on:\n\nComposition (final concentrations)\nPreparation steps\nStorage and stability\nSafety considerations",
+    "crumbs": [
+      "Overview"
+    ]
   },
   {
-    "objectID": "index.html#buffers",
-    "href": "index.html#buffers",
+    "objectID": "index.html#how-to-use-this-library",
+    "href": "index.html#how-to-use-this-library",
     "title": "Protocol Library",
     "section": "",
-    "text": "Buffers"
+    "text": "Browse by category using the sidebar:\n\nBuffers – all stock and working solutions.\nMouse – mouse tissue processing and functional assays.\nHuman – human PBMC and cell line protocols.\nGeneral – cross-cutting methods (e.g. flow staining, nucleofection).\n\nDownload as PDF\nEach protocol page includes a PDF version suitable for printing or attaching to experiment documentation.\nSearch\nUse the search box in the sidebar to find protocols by keyword (e.g. “liver digestion”, “PBMC”, “ACK lysis”).",
+    "crumbs": [
+      "Overview"
+    ]
   },
   {
-    "objectID": "index.html#mouse",
-    "href": "index.html#mouse",
+    "objectID": "index.html#naming-and-versioning-conventions",
+    "href": "index.html#naming-and-versioning-conventions",
     "title": "Protocol Library",
     "section": "",
-    "text": "Mouse protocols"
+    "text": "Protocols and buffers follow a consistent naming scheme:\n\nBuffers: buf_&lt;target&gt;_vX.Y, e.g. buf_liver_digestion_v1.0\nMouse protocols: prot_mus_&lt;tissue_or_process&gt;_vX.Y\nHuman protocols: prot_hum_&lt;tissue_or_process&gt;_vX.Y\nGeneral protocols: prot_gen_&lt;process&gt;_vX.Y\n\nVersion numbers are incremented when the procedure changes in a way that could affect results (reagent changes, timings, etc.).\nThe title and version in each protocol’s YAML header define what appears on the website and in the PDF.",
+    "crumbs": [
+      "Overview"
+    ]
   },
   {
-    "objectID": "index.html#human",
-    "href": "index.html#human",
+    "objectID": "index.html#document-structure",
+    "href": "index.html#document-structure",
     "title": "Protocol Library",
     "section": "",
-    "text": "Human protocols"
-  },
-  {
-    "objectID": "index.html#general",
-    "href": "index.html#general",
-    "title": "Protocol Library",
-    "section": "",
-    "text": "General protocols"
+    "text": "Most protocols follow a common structure:\n\nPurpose and scope – what the protocol is for and when to use it.\n\nReagents and materials – linked to buffer entries where applicable.\n\nEquipment – key instruments and settings.\n\nProcedure – stepwise instructions.\n\nNotes and troubleshooting – optional recommendations, pitfalls, or variants.\n\nBuffers have a simplified structure focusing on:\n\nComposition (final concentrations)\nPreparation steps\nStorage and stability\nSafety considerations",
+    "crumbs": [
+      "Overview"
+    ]
   },
   {
     "objectID": "protocols_src/buffers/buf_percoll_33pct_v1.0.html",
     "href": "protocols_src/buffers/buf_percoll_33pct_v1.0.html",
     "title": "33% Percoll Solution",
     "section": "",
-    "text": "Protocol ID: BUF-PERC-33-v1.0\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20\n\nPurpose\nThis buffer is used as a 33% Percoll solution for density-based enrichment of leukocytes from digested liver. It separates hepatocytes (floating) from leukocyte- and erythrocyte-enriched pellets during centrifugation.\n\n\nLinked protocols\nThis buffer is used in:\n\nMouse Liver Dissociation to Single-Cell Suspension – LIV-001 (v1.0)\n\n\n\nComposition (per 10 mL 33% Percoll)\nBased on the original SOP:\n\n\n\n\n\n\n\n\n\n\nComponent\nStock\nVolume for 10 mL\nApprox. final composition\nNotes\n\n\n\n\nPercoll (sterile)\n100%\n3.33 mL\n33% (v/v)\nUndiluted stock\n\n\nPBS 1×\n—\n6.29 mL\n—\nIsotonic medium\n\n\nPBS 10×\n10×\n370.37 µL\nAdjusts osmolarity\nAdded last\n\n\n\n\n\nPreparation\n\nEquilibrate Percoll stock to room temperature before preparation.\nFor each 10 mL of 33% Percoll:\n\nIn a sterile 15 mL or 50 mL tube, add 3.33 mL Percoll (sterile).\nAdd 6.29 mL PBS 1×.\nAdd 370.37 µL PBS 10×.\nMix gently by inversion until homogeneous.\n\nIf preparing multiple aliquots (e.g. 10 mL per liver), scale volumes accordingly.\nAliquot 10 mL per labeled 15 mL tube for each liver sample.\nLabel tubes with:\n\n“33% Percoll”\nDate of preparation\nVersion (BUF-PERC-33-v1.0)\n\n\n\n\n\n\n\n\nNote\n\n\n\nMaintain sterility by preparing the solution in a biosafety cabinet or sterile environment if it will contact viable cells used for culture or sensitive downstream applications.\n\n\n\n\nStorage and stability\n\nWorking 33% Percoll solution is generally prepared fresh on the day of use.\nShort-term storage (same day) at room temperature is acceptable.\nDo not freeze 33% Percoll; discard any unused working solution at the end of the day.\nStock Percoll (100%) should be stored according to manufacturer’s instructions (typically at room temperature), protected from contamination.\n\n\n\nReagent details\n\n\n\n\n\n\n\n\n\nComponent\nSupplier\nCat#\nNotes\n\n\n\n\nPercoll (100%)\n[TBD]\n[TBD]\nSterile Percoll; density gradient medium\n\n\nPBS 1×\n[TBD]\n[TBD]\nSterile, Ca²⁺/Mg²⁺-free recommended\n\n\nPBS 10×\n[TBD]\n[TBD]\nSterile concentrate; used to adjust osmolarity\n\n\n\n\n\nSafety (brief)\n\nPercoll solutions should be handled with gloves and standard lab PPE.\nDispose of Percoll-containing waste according to local chemical and biohazard regulations when mixed with biological material.\nAvoid ingestion and contact with eyes; consult the manufacturer’s safety data sheet (SDS) for details.\n\n\n\nVersion history\n\n\n\nVersion\nDate\nAuthor\nChange summary\n\n\n\n\nv1.0\n2025-11-20\nDillon Corvino\nInitial buffer definition"
+    "text": "Protocol ID: BUF-PERC-33-v1.0\nVersion: v1.0\nAuthor: Dillon Corvino\n\nPurpose\nThis buffer is used as a 33% Percoll solution for density-based enrichment of leukocytes from digested liver. It separates hepatocytes (floating) from leukocyte- and erythrocyte-enriched pellets during centrifugation.\n\n\nLinked protocols\nThis buffer is used in:\n\nMouse Liver Dissociation to Single-Cell Suspension – LIV-001 (v1.0)\n\n\n\nComposition (per 10 mL 33% Percoll)\nBased on the original SOP:\n\n\n\n\n\n\n\n\n\n\nComponent\nStock\nVolume for 10 mL\nApprox. final composition\nNotes\n\n\n\n\nPercoll (sterile)\n100%\n3.33 mL\n33% (v/v)\nUndiluted stock\n\n\nPBS 1×\n—\n6.29 mL\n—\nIsotonic medium\n\n\nPBS 10×\n10×\n370.37 µL\nAdjusts osmolarity\nAdded last\n\n\n\n\n\nPreparation\n\nEquilibrate Percoll stock to room temperature before preparation.\nFor each 10 mL of 33% Percoll:\n\nIn a sterile 15 mL or 50 mL tube, add 3.33 mL Percoll (sterile).\nAdd 6.29 mL PBS 1×.\nAdd 370.37 µL PBS 10×.\nMix gently by inversion until homogeneous.\n\nIf preparing multiple aliquots (e.g. 10 mL per liver), scale volumes accordingly.\nAliquot 10 mL per labeled 15 mL tube for each liver sample.\nLabel tubes with:\n\n“33% Percoll”\nDate of preparation\nVersion (BUF-PERC-33-v1.0)\n\n\n\n\n\n\n\n\nNote\n\n\n\nMaintain sterility by preparing the solution in a biosafety cabinet or sterile environment if it will contact viable cells used for culture or sensitive downstream applications.\n\n\n\n\nStorage and stability\n\nWorking 33% Percoll solution is generally prepared fresh on the day of use.\nShort-term storage (same day) at room temperature is acceptable.\nDo not freeze 33% Percoll; discard any unused working solution at the end of the day.\nStock Percoll (100%) should be stored according to manufacturer’s instructions (typically at room temperature), protected from contamination.\n\n\n\nReagent details\n\n\n\n\n\n\n\n\n\nComponent\nSupplier\nCat#\nNotes\n\n\n\n\nPercoll (100%)\n[TBD]\n[TBD]\nSterile Percoll; density gradient medium\n\n\nPBS 1×\n[TBD]\n[TBD]\nSterile, Ca²⁺/Mg²⁺-free recommended\n\n\nPBS 10×\n[TBD]\n[TBD]\nSterile concentrate; used to adjust osmolarity\n\n\n\n\n\nSafety (brief)\n\nPercoll solutions should be handled with gloves and standard lab PPE.\nDispose of Percoll-containing waste according to local chemical and biohazard regulations when mixed with biological material.\nAvoid ingestion and contact with eyes; consult the manufacturer’s safety data sheet (SDS) for details.\n\n\n\nVersion history\n\n\n\nVersion\nDate\nAuthor\nChange summary\n\n\n\n\nv1.0\n2025-11-20\nDillon Corvino\nInitial buffer definition"
   },
   {
     "objectID": "protocols_src/buffers/buf_liver_digestion_v1.0.html",
     "href": "protocols_src/buffers/buf_liver_digestion_v1.0.html",
     "title": "Liver Digestion Buffer",
     "section": "",
-    "text": "Protocol ID: BUF-LIV-DIG-v1.0\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: BUF-LIV-DIG-v1.0\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_liver_digestion_v1.0.html#a.-prepare-liver-digestion-stock-no-dnase",
@@ -837,14 +845,14 @@
     "href": "protocols_src/buffers/buf_facs_buffer_v1.0.html",
     "title": "FACS/MACS Buffer",
     "section": "",
-    "text": "Protocol ID: BUF-FACS-v1.0\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20\n\nPurpose\nThis buffer is used for washing and resuspending cells during flow cytometry staining, FACS sorting, and MACS-based enrichment. It helps maintain cell viability, prevents clumping, and minimises nonspecific binding.\n\n\nLinked protocols\nThis buffer is used in:\n\nMouse Liver Dissociation to Single-Cell Suspension – LIV-001 (v1.0)\n\nAdditional protocols as needed.\n\n\n\nComposition (1× FACS/MACS Buffer)\nTypical preparation for 500 mL of buffer:\n\n\n\n\n\n\n\n\n\n\nComponent\nStock concentration\nVolume for 500 mL\nFinal concentration\nNotes\n\n\n\n\nPBS 1×\n—\n500 mL\n—\nBase buffer\n\n\nFCS\n—\n10 mL\n2% (v/v)\nHeat-inactivated, if used\n\n\nEDTA\n0.5 M\n2 mL\n2 mM\nSterile stock\n\n\n\n(Volumes above reflect the original SOP recipe: PBS 1× 500 mL, FCS 10 mL, EDTA (0.5 M) 2 mL.)\n\n\nPreparation\n\nStart with 500 mL PBS 1× in a sterile bottle.\nAdd 10 mL FCS (to achieve 2% v/v final).\nAdd 2 mL EDTA 0.5 M stock (to achieve 2 mM final).\nMix gently by inversion.\nIf sterility is required, filter the buffer through a 0.22 µm filter into a sterile storage bottle.\nLabel with:\n\n“FACS/MACS Buffer (PBS + 2% FCS + 2 mM EDTA)”\nDate of preparation\nVersion (BUF-FACS-v1.0)\n\n\n\n\n\n\n\n\nTip\n\n\n\nFor highly sensitive applications (e.g. scRNA-seq, FACS of rare populations), prepare fresh or use small aliquots to minimise repeated warming/cooling cycles and contamination risk.\n\n\n\n\nStorage and stability\n\nStore at 4 °C, protected from light if possible.\nRecommended to use within 4–6 weeks, or according to internal lab validation and microbial QC.\nBefore use, invert gently to resuspend any settled components.\nAvoid repeated temperature cycling; if frequent bench use is expected, consider preparing smaller working aliquots.\n\n\n\nReagent details\n\n\n\n\n\n\n\n\n\nComponent\nSupplier\nCat#\nNotes\n\n\n\n\nPBS 1×\n[TBD]\n[TBD]\nSterile, Ca²⁺/Mg²⁺-free recommended\n\n\nFCS\n[TBD]\n[TBD]\nHeat-inactivated if required by downstream applications\n\n\nEDTA 0.5 M\n[TBD]\n[TBD]\nSterile stock solution; pH ~8.0\n\n\n\n\n\nSafety (brief)\n\nHandle biological samples in FACS buffer according to institutional biosafety rules.\nFCS is of animal origin; treat as a potential biohazard.\nEDTA is of low toxicity at working concentrations but should be handled with standard lab PPE.\n\n\n\nVersion history\n\n\n\nVersion\nDate\nAuthor\nChange summary\n\n\n\n\nv1.0\n2025-11-20\nDillon Corvino\nInitial buffer definition"
+    "text": "Protocol ID: BUF-FACS-v1.0\nVersion: v1.0\nAuthor: Dillon Corvino\n\nPurpose\nThis buffer is used for washing and resuspending cells during flow cytometry staining, FACS sorting, and MACS-based enrichment. It helps maintain cell viability, prevents clumping, and minimises nonspecific binding.\n\n\nLinked protocols\nThis buffer is used in:\n\nMouse Liver Dissociation to Single-Cell Suspension – LIV-001 (v1.0)\n\nAdditional protocols as needed.\n\n\n\nComposition (1× FACS/MACS Buffer)\nTypical preparation for 500 mL of buffer:\n\n\n\n\n\n\n\n\n\n\nComponent\nStock concentration\nVolume for 500 mL\nFinal concentration\nNotes\n\n\n\n\nPBS 1×\n—\n500 mL\n—\nBase buffer\n\n\nFCS\n—\n10 mL\n2% (v/v)\nHeat-inactivated, if used\n\n\nEDTA\n0.5 M\n2 mL\n2 mM\nSterile stock\n\n\n\n(Volumes above reflect the original SOP recipe: PBS 1× 500 mL, FCS 10 mL, EDTA (0.5 M) 2 mL.)\n\n\nPreparation\n\nStart with 500 mL PBS 1× in a sterile bottle.\nAdd 10 mL FCS (to achieve 2% v/v final).\nAdd 2 mL EDTA 0.5 M stock (to achieve 2 mM final).\nMix gently by inversion.\nIf sterility is required, filter the buffer through a 0.22 µm filter into a sterile storage bottle.\nLabel with:\n\n“FACS/MACS Buffer (PBS + 2% FCS + 2 mM EDTA)”\nDate of preparation\nVersion (BUF-FACS-v1.0)\n\n\n\n\n\n\n\n\nTip\n\n\n\nFor highly sensitive applications (e.g. scRNA-seq, FACS of rare populations), prepare fresh or use small aliquots to minimise repeated warming/cooling cycles and contamination risk.\n\n\n\n\nStorage and stability\n\nStore at 4 °C, protected from light if possible.\nRecommended to use within 4–6 weeks, or according to internal lab validation and microbial QC.\nBefore use, invert gently to resuspend any settled components.\nAvoid repeated temperature cycling; if frequent bench use is expected, consider preparing smaller working aliquots.\n\n\n\nReagent details\n\n\n\n\n\n\n\n\n\nComponent\nSupplier\nCat#\nNotes\n\n\n\n\nPBS 1×\n[TBD]\n[TBD]\nSterile, Ca²⁺/Mg²⁺-free recommended\n\n\nFCS\n[TBD]\n[TBD]\nHeat-inactivated if required by downstream applications\n\n\nEDTA 0.5 M\n[TBD]\n[TBD]\nSterile stock solution; pH ~8.0\n\n\n\n\n\nSafety (brief)\n\nHandle biological samples in FACS buffer according to institutional biosafety rules.\nFCS is of animal origin; treat as a potential biohazard.\nEDTA is of low toxicity at working concentrations but should be handled with standard lab PPE.\n\n\n\nVersion history\n\n\n\nVersion\nDate\nAuthor\nChange summary\n\n\n\n\nv1.0\n2025-11-20\nDillon Corvino\nInitial buffer definition"
   },
   {
     "objectID": "protocols_src/buffers/buf_freeze_mix_2x_v1.0.html",
     "href": "protocols_src/buffers/buf_freeze_mix_2x_v1.0.html",
     "title": "2× Freezing Medium (R0 + 10% FCS + 20% DMSO)",
     "section": "",
-    "text": "Buffer ID: BUF-FREEZE-MIX-2x-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: BUF-FREEZE-MIX-2x-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_freeze_mix_2x_v1.0.html#stock-reagents",
@@ -865,7 +873,7 @@
     "href": "protocols_src/buffers/buf_ack_lysis_v1.0.html",
     "title": "ACK Red Blood Cell Lysis Buffer",
     "section": "",
-    "text": "Buffer ID: BUF-ACK-LYSIS-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: BUF-ACK-LYSIS-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/buffers/buf_ack_lysis_v1.0.html#reagent-stocks",
@@ -886,7 +894,7 @@
     "href": "protocols_src/general/prot_gen_flow_standard_v1.0.html",
     "title": "Standard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)",
     "section": "",
-    "text": "Protocol ID: GEN-FLOW-STD-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: GEN-FLOW-STD-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/general/prot_gen_flow_standard_v1.0.html#step-1-plate-setup-and-facs-buffer",
@@ -949,14 +957,17 @@
     "href": "protocols_src/general/index.html",
     "title": "General protocols",
     "section": "",
-    "text": "General protocols\nGeneral-purpose protocols (e.g. flow staining, nucleofection) that are species-agnostic.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells\n\n\n \n\n\n\n\n\n\nCellTrace Violet (CTV) Staining of Lymphocytes\n\n\n \n\n\n\n\n\n\nStandard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "General-purpose protocols (e.g. flow staining, nucleofection) that are species-agnostic.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Protocol\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProtocol ID\n\n\n\nProtocol\n\n\n\nVersion\n\n\n\nDate\n\n\n\n\n\n\n\n\nGEN-CTV-STAIN-001\n\n\nCellTrace Violet (CTV) Staining of Lymphocytes\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nGEN-FLOW-STD-001\n\n\nStandard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nGEN-LYMPH-NUC-001\n\n\n4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "General"
+    ]
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_tumour_digestion_v1.0.html",
     "href": "protocols_src/mouse/prot_mus_tumour_digestion_v1.0.html",
     "title": "Mouse Tumour Digestion to Single-Cell Suspension",
     "section": "",
-    "text": "Protocol ID: MUS-TMR-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: MUS-TMR-DIG-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_tumour_digestion_v1.0.html#step-1-tumour-excision-and-preparation",
@@ -1033,7 +1044,7 @@
     "href": "protocols_src/mouse/prot_mus_spleen_dissociation_v1.0.html",
     "title": "Mouse Spleen Dissociation to Single-Cell Suspension",
     "section": "",
-    "text": "Protocol ID: MUS-SPL-DIS-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: MUS-SPL-DIS-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_spleen_dissociation_v1.0.html#step-1-collection-and-preparation",
@@ -1103,14 +1114,17 @@
     "href": "protocols_src/mouse/index.html",
     "title": "Mouse protocols",
     "section": "",
-    "text": "Mouse protocols\nMouse processing, tissue digestion, and functional assays.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nIn vitro NK Cell Proliferation Assay Using CellTrace Dyes\n\n\n \n\n\n\n\n\n\nIsolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver\n\n\n \n\n\n\n\n\n\nMouse Blood Processing to Single-Cell Suspension\n\n\n \n\n\n\n\n\n\nMouse Bone Marrow Isolation to Single-Cell Suspension\n\n\n \n\n\n\n\n\n\nMouse Liver Digestion to Single-Cell Suspension\n\n\n \n\n\n\n\n\n\nMouse Lung Digestion to Single-Cell Suspension\n\n\n \n\n\n\n\n\n\nMouse Spleen Dissociation to Single-Cell Suspension\n\n\n \n\n\n\n\n\n\nMouse Tumour Digestion to Single-Cell Suspension\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Mouse processing, tissue digestion, and functional assays.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Protocol\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProtocol ID\n\n\n\nProtocol\n\n\n\nVersion\n\n\n\nDate\n\n\n\n\n\n\n\n\nMUS-BLD-PRC-001\n\n\nMouse Blood Processing to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-BM-ISO-001\n\n\nMouse Bone Marrow Isolation to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-LIV-DIG-001\n\n\nMouse Liver Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-LIV-NLC-ISO-001\n\n\nIsolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nMUS-LNG-DIG-001\n\n\nMouse Lung Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-SPL-DIS-001\n\n\nMouse Spleen Dissociation to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-SPL-NK-PROLIF-001\n\n\nIn vitro NK Cell Proliferation Assay Using CellTrace Dyes\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nMUS-TMR-DIG-001\n\n\nMouse Tumour Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Mouse"
+    ]
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_blood_processing_v1.0.html",
     "href": "protocols_src/mouse/prot_mus_blood_processing_v1.0.html",
     "title": "Mouse Blood Processing to Single-Cell Suspension",
     "section": "",
-    "text": "Protocol ID: MUS-BLD-PRC-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-20"
+    "text": "Protocol ID: MUS-BLD-PRC-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/mouse/prot_mus_blood_processing_v1.0.html#step-1-blood-collection",
@@ -1166,14 +1180,17 @@
     "href": "protocols_src/human/index.html",
     "title": "Human protocols",
     "section": "",
-    "text": "Human protocols\nHuman cell line and PBMC preparation protocols.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nIsolation of Human PBMCs from Whole Blood by Ficoll Gradient\n\n\n \n\n\n\n\n\n\nK-562 Cell Line Culture Protocol\n\n\n \n\n\n\n\n\n\nKHYG-1 Cell Line Culture Protocol\n\n\n \n\n\n\n\n\n\nNK-92 Cell Line Culture Protocol\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Human cell line and PBMC preparation protocols.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Protocol\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProtocol ID\n\n\n\nProtocol\n\n\n\nVersion\n\n\n\nDate\n\n\n\n\n\n\n\n\nHUM-BLD-PBMC-ISO-001\n\n\nIsolation of Human PBMCs from Whole Blood by Ficoll Gradient\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nHUM-K562-CULTURE-001\n\n\nK-562 Cell Line Culture Protocol\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nHUM-KHYG1-CULTURE-001\n\n\nKHYG-1 Cell Line Culture Protocol\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nHUM-NK92-CULTURE-001\n\n\nNK-92 Cell Line Culture Protocol\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Human"
+    ]
   },
   {
     "objectID": "protocols_src/human/prot_hum_KHYG1_culture_v1.0.html",
     "href": "protocols_src/human/prot_hum_KHYG1_culture_v1.0.html",
     "title": "KHYG-1 Cell Line Culture Protocol",
     "section": "",
-    "text": "Protocol ID: HUM-KHYG1-CULTURE-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: HUM-KHYG1-CULTURE-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/human/prot_hum_KHYG1_culture_v1.0.html#step-1-medium-and-reagent-preparation",
@@ -1236,7 +1253,7 @@
     "href": "protocols_src/human/prot_hum_NK92_culture_v1.0.html",
     "title": "NK-92 Cell Line Culture Protocol",
     "section": "",
-    "text": "Protocol ID: HUM-NK92-CULTURE-001\nVersion: v1.0\nAuthor: Dillon Corvino\nDate: 2025-11-21"
+    "text": "Protocol ID: HUM-NK92-CULTURE-001\nVersion: v1.0\nAuthor: Dillon Corvino"
   },
   {
     "objectID": "protocols_src/human/prot_hum_NK92_culture_v1.0.html#step-1-medium-and-reagent-preparation",

@@ -3,10 +3,17 @@ title: "Buffers"
 listing:
   contents:
     - "*.qmd"
-  type: table      # table / grid / default
-  sort: "title"
+  type: table
+  fields: [protocol_id, title, version, date]
+  field-display-names:
+    protocol_id: "Protocol ID"
+    title: "Protocol"
+    version: "Version"
+    date: "Date"
+  field-types:
+    date: date        # so date sorts and formats correctly
+  field-links: [title]   # make the title the clickable link
+  sort: "protocol_id"    # or "title" or "-date"
 ---
-
-# Buffers
 
 Standard buffers used across protocols. Select a buffer from the table below to view the full protocol.

@@ -3,13 +3,13 @@ title: "Liver Digestion Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "BUF-LIV-DIG-v1.0"
 version: "v1.0"
+date: "2025-11-20"
 description: "Enzymatic digestion buffer for mouse liver dissociation prior to single-cell preparation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-20
 
 # Purpose
 

@@ -1,15 +1,15 @@
 ---
 title: "R0 Medium (RPMI Without Serum)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-buffer_id: "BUF-R0-MED-001"
+protocol_id: "BUF-R0-MED-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Serum-free RPMI 1640 medium used for dilution of whole blood prior to Ficoll gradient separation, and for initial PBMC washes."
 ---
 
-**Buffer ID:** {{< meta buffer_id >}}  
+**Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

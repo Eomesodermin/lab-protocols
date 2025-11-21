@@ -3,13 +3,13 @@ title: "Mouse Liver Digestion to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-LIV-DIG-001"
 version: "v1.0"
+date: "2025-11-20"
 description: "Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-20
 
 # Purpose
 

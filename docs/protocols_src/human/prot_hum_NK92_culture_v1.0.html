@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-21">
 <meta name="description" content="Culture and maintenance of the human NK-92 cell line, including thawing, IL-2–supplemented culture, routine passaging, and cryopreservation.">
 
 <title>NK-92 Cell Line Culture Protocol – Protocol Library</title>
@@ -41,13 +42,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d5e7c60e6424aa6ccf163f01508596ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -73,56 +74,120 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Protocol Library</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/buffers/index.html"> 
-<span class="menu-text">Buffers</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/mouse/index.html"> 
-<span class="menu-text">Mouse</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/human/index.html"> 
-<span class="menu-text">Human</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../protocols_src/general/index.html"> 
-<span class="menu-text">General</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_hum_NK92_culture_v1.0.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-medium-and-reagent-preparation" id="toc-step-1-medium-and-reagent-preparation" class="nav-link" data-scroll-target="#step-1-medium-and-reagent-preparation">Step 1 – Medium and reagent preparation</a></li>
+  <li><a href="#step-2-thawing-nk-92-cells" id="toc-step-2-thawing-nk-92-cells" class="nav-link" data-scroll-target="#step-2-thawing-nk-92-cells">Step 2 – Thawing NK-92 cells</a></li>
+  <li><a href="#step-3-routine-culture-and-passaging" id="toc-step-3-routine-culture-and-passaging" class="nav-link" data-scroll-target="#step-3-routine-culture-and-passaging">Step 3 – Routine culture and passaging</a>
+  <ul class="collapse">
+  <li><a href="#recommended-density" id="toc-recommended-density" class="nav-link" data-scroll-target="#recommended-density">Recommended density</a></li>
+  <li><a href="#procedure-1" id="toc-procedure-1" class="nav-link" data-scroll-target="#procedure-1">Procedure</a></li>
+  <li><a href="#full-medium-change-for-stressed-cultures" id="toc-full-medium-change-for-stressed-cultures" class="nav-link" data-scroll-target="#full-medium-change-for-stressed-cultures">Full medium change for stressed cultures</a></li>
+  </ul></li>
+  <li><a href="#step-4-preparing-nk-92-cells-for-experiments" id="toc-step-4-preparing-nk-92-cells-for-experiments" class="nav-link" data-scroll-target="#step-4-preparing-nk-92-cells-for-experiments">Step 4 – Preparing NK-92 cells for experiments</a></li>
+  <li><a href="#step-5-cryopreservation-of-nk-92-cells" id="toc-step-5-cryopreservation-of-nk-92-cells" class="nav-link" data-scroll-target="#step-5-cryopreservation-of-nk-92-cells">Step 5 – Cryopreservation of NK-92 cells</a>
+  <ul class="collapse">
+  <li><a href="#freezing-medium" id="toc-freezing-medium" class="nav-link" data-scroll-target="#freezing-medium">Freezing medium</a></li>
+  <li><a href="#procedure-2" id="toc-procedure-2" class="nav-link" data-scroll-target="#procedure-2">Procedure</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_hum_NK92_culture_v1.0.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -142,6 +207,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -153,8 +224,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p><strong>Protocol ID:</strong> HUM-NK92-CULTURE-001<br>
 <strong>Version:</strong> v1.0<br>
-<strong>Author:</strong> Dillon Corvino<br>
-<strong>Date:</strong> 2025-11-21</p>
+<strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
 <p>This protocol describes thawing, routine culture, IL-2–supplemented maintenance, passaging, and cryopreservation of the <strong>human NK-92 cell line</strong>. NK-92 is a suspension NK-like cell line requiring continuous IL-2 supplementation for viability, proliferation, and maintenance of cytotoxic phenotype.</p>

@@ -1,15 +1,15 @@
 ---
 title: "NK Cell Culture Medium (cRPMI for Murine NK Cells)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-buffer_id: "BUF-MUS-NK-MED-001"
+protocol_id: "BUF-MUS-NK-MED-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Complete NK culture medium (cRPMI) for murine NK cells, including RPMI 1640 supplemented with FCS, antibiotics, HEPES, sodium pyruvate, NEAA, and β-mercaptoethanol. IL-15 is added fresh at the time of culture and is not included in the stored base medium."
 ---
 
-**Buffer ID:** {{< meta buffer_id >}}  
+**Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

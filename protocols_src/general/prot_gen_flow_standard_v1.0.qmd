@@ -3,13 +3,13 @@ title: "Standard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "GEN-FLOW-STD-001"
 version: "v1.0"
+date: "2025-11-21"
 description: "Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry using FACS buffer, Fc block, live/dead dyes, and commercial fixation/permeabilization kits."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-21
 
 # Purpose
 

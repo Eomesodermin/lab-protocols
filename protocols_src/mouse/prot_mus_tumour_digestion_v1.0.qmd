@@ -3,13 +3,13 @@ title: "Mouse Tumour Digestion to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-TMR-DIG-001"
 version: "v1.0"
+date: "2025-11-20"
 description: "Enzymatic and mechanical dissociation of mouse solid tumours to obtain viable single-cell suspensions for flow cytometry, sorting, and single-cell transcriptomic applications."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Date:** 2025-11-20
 
 # Purpose
 

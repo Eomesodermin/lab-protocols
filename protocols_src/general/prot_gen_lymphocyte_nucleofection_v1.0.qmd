@@ -1,0 +1,310 @@
+---
+title: "4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "GEN-LYMPH-NUC-001"
+version: "v1.0"
+description: "Unified 4D-Nucleofector protocol for CRISPR–Cas9 RNP delivery into primary mouse T cells, primary mouse NK cells, human CD8 T cells, and NK-92 cells using cell-type–specific buffer and pulse codes."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol provides a unified workflow for CRISPR–Cas9 ribonucleoprotein (RNP) delivery into T and NK cells using the Lonza 4D-Nucleofector system with 20 µL Nucleocuvette™ strips. It harmonises RNP preparation, cell handling, nucleofection, and recovery steps across:
+
+- Primary mouse CD8 T cells (naïve and activated)  
+- Primary mouse NK cells (activated)  
+- Human CD8 T cells (activated)  
+- NK-92 cells  
+
+Cell-type–specific parameters (nucleofection buffer, pulse program, and recommended RNP load) are summarised in a lookup table.
+
+# Critical notes (read before starting)
+
+- This protocol is specific to the **4D-Nucleofector X unit with 20 µL Nucleocuvette™ strips**.
+- Always use the **cell-type–specific buffer and pulse code** from the lookup table; do not interchange programs between cell types without re-optimisation.
+- Nucleofector solutions (P3, P4, SE) are **toxic** to cells; minimise exposure time and handle rapidly once cells are resuspended.
+- Residual culture medium or serum will impair nucleofection efficiency; remove supernatants completely after the final PBS/DPBS wash.
+- Assemble RNP at a defined gRNA:Cas9 molar ratio (2–3:1) and incubate **15 min at 37 °C** before mixing with cells.
+- Use **pre-warmed rescue medium** and allow cells to recover in the cuvette for 10–25 min after nucleofection before transfer to culture plates.
+- Perform all steps under appropriate biosafety conditions (typically BSL2), as cells and reagents may be of human origin.
+
+::: callout-warning
+Do not leave cells in nucleofector solution for extended periods. Prepare RNP, wash cells, resuspend in buffer, mix, load cuvette, and pulse within a tightly controlled time window to preserve viability.
+:::
+
+::: callout-tip
+Prepare a simple “nucleofection map” for each run, listing wells/strips, cell types, buffers, programs, gRNAs, and replicates. This reduces labelling errors and simplifies downstream analysis.
+:::
+
+# Approximate timing
+
+- RNP preparation and incubation: 20–30 min  
+- Cell harvest and washing: 30–60 min (depending on source and activation protocol)  
+- Nucleofection (loading strips and pulsing): 15–30 min  
+- Post-nucleofection recovery and transfer to culture: 30–45 min  
+
+**Total hands-on time (per run):** ~2–3 hours (excluding prior activation and downstream readouts).
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Cell-type–specific lookup
+
+Use the table below to select the appropriate **buffer**, **4D-Nucleofector program**, and starting **RNP load** for each cell type. All reactions use **20 µL total nucleofection volume** in 20 µL Nucleocuvette™ strips.
+
+### 1.1 Cell-type–specific nucleofection settings
+
+| Cell type                  | Activation state           | Buffer (solution) | Program | Cells per reaction (20 µL) | Suggested gRNA per reaction¹ | Suggested Cas9 per reaction¹ | Post-nucleofection cytokines (examples) |
+|---------------------------|---------------------------|-------------------|---------|----------------------------|------------------------------|------------------------------------------|-----------------------------------------|
+| Mouse CD8 T (naïve)       | IL-7, no TCR stimulation  | P4                | DS-137  | 1.0 × 10⁶                  | ~150 pmol                    | ~60 pmol                             | IL-7 (e.g. 5–10 ng/mL)                  |
+| Mouse CD8 T (activated)   | TCR/peptide stimulated    | P4                | CM-137  | 1.0 × 10⁶                  | ~150 pmol                    | ~60 pmol                             | IL-2 ± IL-7 (lab-specific)              |
+| Mouse NK (primary)        | Pre-activated (e.g. NK1.1 + IL-15/IL-2) | P3 or P4²         | EN-138 | 0.5–1.0 × 10⁶              | ~150 pmol                    | ~60 pmol                             | IL-15 + IL-2 (as per NK culture SOP)    |
+| Human CD8 T (activated)   | TCR/anti-CD3/CD28, IL-2   | P3                | EH-115  | 1.0 × 10⁶                  | ~120–150 pmol                | ~60 pmol                             | IL-2 (e.g. 100–200 IU/mL)               |
+| NK-92                      | NK-92 medium, log-phase   | SE                | CM-137  | 0.5–1.0 × 10⁶              | ~150–180 pmol                | ~60 pmol                             | IL-2 as per NK-92 culture SOP (if used) |
+
+¹Values are per 20 µL reaction and are starting points based on existing optimisation; adjust per guide, locus, and experimental needs.  
+²If both P3 and P4 have been tested for mouse NK, use the solution that gave the best balance of viability and editing in your prior experiments.
+
+::: callout-note
+This unified protocol describes a common workflow. Cell-type–specific pre-activation (e.g. NK priming, T-cell stimulation) and culture conditions should be followed according to the relevant cell culture SOPs and are not exhaustively detailed here.
+:::
+
+---
+
+## Step 2 – gRNA duplex and RNP preparation
+
+This section assumes use of **crRNA + tracrRNA** duplexes and recombinant Cas9 protein.
+
+### 2.1 crRNA:tracrRNA duplexing
+
+1. Thaw crRNA and tracrRNA aliquots on ice.  
+2. Mix crRNA and tracrRNA at **equimolar concentrations** (e.g. each at 100 µM) to generate a duplex:
+   - Example: 5 µL crRNA (100 µM) + 5 µL tracrRNA (100 µM) → 10 µL duplex at 100 µM.
+3. Incubate at **95 °C for 5 min**, then allow to cool to room temperature (bench-top) for at least 10 min, or follow vendor instructions.
+4. Store duplexed gRNA on ice during RNP preparation.
+
+### 2.2 RNP assembly
+
+1. Thaw Cas9 protein aliquots on ice.  
+2. For each nucleofection reaction, prepare RNP mix in a low-bind tube:
+
+   - Example per reaction (starting point, adjust using Table 1):  
+     - 1.5 µL gRNA duplex (100 µM) → 150 pmol gRNA  
+     - 3.0 µL Cas9 (20 µM) → 60 pmol Cas9  
+     - Optional: add nuclease-free water to increase handling volume, if needed.
+
+3. Gently mix by pipetting; avoid bubbles.  
+4. Incubate the RNP mix at **37 °C for 15 min**.  
+5. After incubation, keep RNP at room temperature or on ice and use within **1–2 hours** for nucleofection.
+
+::: callout-warning
+Do not repeatedly freeze–thaw Cas9 or gRNA aliquots. Prepare small working aliquots and discard thawed leftovers at the end of the day to preserve activity.
+:::
+
+---
+
+## Step 3 – Cell preparation
+
+The steps below describe the unified handling for all T and NK cell types. Follow cell-type–specific culture SOPs for prior expansion and activation.
+
+### 3.1 Harvesting cells
+
+1. Harvest cells from culture flasks or plates at the desired time point (e.g. 2–3 days post activation for T cells; 3 days post priming for NK).  
+2. For suspension cultures (mouse NK, NK-92, activated T cells): gently resuspend by pipetting up and down.  
+3. For mixed cultures (e.g. mouse spleen-derived T or NK), process according to the relevant isolation SOP (e.g. magnetic separation) before nucleofection.
+
+### 3.2 Washing and counting
+
+1. Transfer cells to 15 mL conical tubes.  
+2. Centrifuge at **300–400 g for 5 min** at room temperature.  
+3. Carefully aspirate supernatant.  
+4. Resuspend the pellet in **10 mL** DPBS or PBS and mix gently.  
+5. Centrifuge again under the same conditions.  
+6. Aspirate the supernatant completely.  
+7. Take an aliquot and count cells (e.g. trypan blue exclusion).  
+8. Calculate total cell number and plan **0.5–1.0 × 10⁶ cells per nucleofection reaction**.
+
+::: callout-warning
+Residual serum or culture medium in the pellet will reduce nucleofection efficiency and viability. After the final wash, remove supernatant carefully and completely before adding nucleofector solution.
+:::
+
+---
+
+## Step 4 – Resuspension in nucleofector solution and mixing with RNP
+
+### 4.1 Preparation of nucleofector cell suspension
+
+1. Pre-equilibrate nucleofector solutions (P3, P4, SE) to **room temperature** as recommended by the manufacturer.  
+2. For each cell type, prepare enough nucleofector solution for all planned reactions, following the kit instructions (e.g. supplementing solution with additive as required).  
+3. Resuspend washed cells in the appropriate nucleofector solution at a concentration of:
+
+   - **5 × 10⁷ cells/mL** for 1.0 × 10⁶ cells in 20 µL  
+   - **2.5 × 10⁷ cells/mL** for 0.5 × 10⁶ cells in 20 µL  
+
+4. Gently mix and keep at room temperature. Avoid leaving cells in nucleofector solution for longer than **15–20 min** before pulsing.
+
+### 4.2 Mixing cells with RNP
+
+For each reaction:
+
+1. Aliquot the appropriate volume of RNP mix into a fresh low-bind tube or directly into the well/strip position (e.g. 4.5 µL per reaction).  
+2. Add nucleofector cell suspension to reach a **total volume of 20 µL per reaction**:
+   - Example: 4.5 µL RNP + 15.5 µL cell suspension.  
+3. Gently pipette up and down to mix; avoid introducing air bubbles.  
+4. Immediately proceed to loading the Nucleocuvette™.
+
+---
+
+## Step 5 – Loading Nucleocuvette™ and running the 4D program
+
+### 5.1 Loading Nucleocuvette™ strips
+
+1. Place the 20 µL Nucleocuvette™ strip into its holder.  
+2. Carefully pipette **20 µL** of the RNP–cell mix into each well, aiming the pipette tip to the side of the well to minimise bubbles.  
+3. Visually inspect each well for uniform filling and absence of air pockets.  
+4. Insert the holder into the 4D-Nucleofector X unit.
+
+### 5.2 Selecting and running programs
+
+1. On the 4D-Nucleofector control unit, select the **nucleofection program** corresponding to the cell type (see lookup table in Step 1).  
+2. Confirm that the selected program and kit (P3, P4, SE) match the cells in the strip.  
+3. Start the nucleofection run.  
+4. When complete, remove the Nucleocuvette™ strip promptly and place it in a biosafety cabinet.
+
+::: callout-note
+If running multiple cell types in parallel, clearly separate strips by cell type and program to avoid mismatches. Only one program can be used per strip/run.
+:::
+
+---
+
+## Step 6 – Immediate post-nucleofection rescue
+
+### 6.1 Addition of rescue medium in cuvette
+
+1. Immediately after nucleofection, add **60–100 µL** of **pre-warmed culture medium** directly into each Nucleocuvette™ well:
+   - Use the appropriate base medium (e.g. T-cell medium, NK medium, or NK-92 medium).  
+   - Cytokines may be omitted from this initial rescue step if preferred (see cell-type notes below).
+2. Gently pipette up and down once to mix, without generating bubbles.  
+3. Place the Nucleocuvette™ strip into a 37 °C incubator (inside a sterile container) or keep at 37 °C in the biosafety cabinet if feasible.
+4. Allow cells to recover in the cuvette for **10–25 min**.
+
+### 6.2 Transfer to culture plates
+
+1. After the recovery period, gently resuspend each Nucleocuvette™ well by pipetting up and down.  
+2. Transfer the entire volume (typically 80–120 µL) into the corresponding well of a pre-warmed 96- or 48-well plate or into a culture tube containing:
+
+   - **Final volume**: 200–1000 µL per well/tube.  
+   - **Appropriate cytokine supplementation**, for example:
+     - Naïve mouse T: IL-7 ± low IL-2.  
+     - Activated T (mouse/human): IL-2 ± IL-7.  
+     - Mouse NK: IL-15 + IL-2 as per NK culture SOP.  
+     - NK-92: NK-92 medium ± IL-2 as per NK-92 culture SOP.
+
+3. Adjust final cell density to **0.5–1.0 × 10⁶ cells/mL** for standard culture.  
+4. Incubate plates at **37 °C, 5% CO₂**.
+
+::: callout-warning
+Do not leave nucleofected cells in undiluted nucleofector buffer longer than necessary. Rescue medium should be added within minutes after the pulse and cells should be transferred to standard culture conditions within 30–40 min.
+:::
+
+---
+
+## Step 7 – Recommended timelines for analysis
+
+Although the exact timepoint will depend on the target locus and downstream readouts, the following windows are commonly used:
+
+- **Mouse NK cells:** assess viability and KO efficiency at **day 3** and **day 7**.  
+- **Mouse T cells (naïve/activated):** assess between **day 3–6**, with extended phenotyping up to **day 10–15** when needed.  
+- **Human T cells (activated):** assess at **day 3–5** post nucleofection.  
+- **NK-92:** assess between **day 3–5** post nucleofection.
+
+Choice of timepoint should balance maximal editing efficiency with sufficient recovery and expansion.
+
+---
+
+# Materials
+
+## Reagents
+
+| Reagent                                       | Supplier            | Cat. #  | Notes                                                          |
+|-----------------------------------------------|---------------------|---------|----------------------------------------------------------------|
+| 4D-Nucleofector™ X Unit + 20 µL Nucleocuvette™ strips | Lonza       | —       | Core instrument and plasticware                               |
+| Nucleofector™ P3 Primary Cell kit             | Lonza              | —       | For mouse NK (option), human activated T cells                |
+| Nucleofector™ P4 Primary Cell kit             | Lonza              | —       | For mouse CD8 T cells (naïve and activated), mouse NK (option)|
+| Nucleofector™ SE Cell Line kit                | Lonza              | —       | For NK-92 cells                                                |
+| crRNA and tracrRNA (or sgRNA)                 | IDT / similar       | —       | Target-specific; duplexed prior to RNP assembly               |
+| Cas9 nuclease (recombinant)                   | IDT / similar       | —       | High-purity Cas9 for RNP formation                             |
+| DPBS / PBS, 1×                                | Various             | —       | For washing cells before nucleofection                        |
+| T-cell culture medium                         | In-house / various  | —       | e.g. RPMI + 10% FCS + Pen/Strep + supplements                 |
+| NK culture medium                             | In-house / various  | —       | e.g. NK medium (BUF-MUS-NK-MED-001)                           |
+| NK-92 culture medium                          | In-house / various  | —       | Defined NK-92 medium formulation                              |
+| Recombinant cytokines (IL-7, IL-2, IL-15)     | PeproTech / similar | —       | For pre-activation and post-nucleofection culture             |
+| Trypan blue or viability dye                  | Various             | —       | For viability and counting                                    |
+
+## Disposables
+
+| Item                                | Specification                            |
+|-------------------------------------|------------------------------------------|
+| 15 mL and 50 mL tubes               | Sterile, conical                         |
+| 96-well or 48-well culture plates   | Tissue culture-treated                   |
+| Low-bind microcentrifuge tubes      | For RNP assembly                         |
+| Serological pipettes (5–25 mL)      | Sterile                                  |
+| Pipette tips (10–1000 µL)           | Sterile, filter tips recommended         |
+| Reservoirs for media and buffers    | Sterile                                  |
+
+## Equipment
+
+| Equipment                           | Specification / Notes                    |
+|-------------------------------------|------------------------------------------|
+| 4D-Nucleofector™ X Unit            | With 20 µL Nucleocuvette™ strips        |
+| Biological safety cabinet           | Class II, for sterile and safe handling  |
+| CO₂ incubator                       | 37 °C, 5% CO₂                            |
+| Benchtop centrifuge                 | For 15/50 mL tubes (300–400 g)          |
+| Water bath                          | 37 °C, for reaction and thawing         |
+| Cell counter or hemocytometer       | For counting and viability assessment   |
+
+# Buffers used
+
+- **Nucleofection buffers (Lonza kits):**
+  - P3 Primary Cell kit – solution + supplement  
+  - P4 Primary Cell kit – solution + supplement  
+  - SE Cell Line kit – solution + supplement  
+
+- **Culture media and specialised buffers:**  
+  - T-cell medium (e.g. RPMI + 10% FCS + Pen/Strep + supplements)  
+  - NK medium (e.g. BUF-MUS-NK-MED-001)  
+  - NK-92 medium (cell-line–specific formulation)  
+  - DPBS/PBS, 1× (for washes)
+
+# Troubleshooting
+
+| Problem                                    | Possible cause                                         | Suggested solution                                                      |
+|--------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------|
+| Low viability after nucleofection          | Prolonged exposure to P3/P4/SE; incorrect program      | Shorten handling time in nucleofector solution; verify program; reduce cell density per reaction |
+| Poor editing efficiency (low KO)           | Insufficient gRNA/Cas9; residual serum; incorrect guide | Increase gRNA (within range); ensure complete washes; verify guide design |
+| High variability between replicates        | Uneven cell counts; pipetting error in RNP addition    | Standardise counting; use multichannel pipettes or master mixes where possible |
+| Clumping after nucleofection               | High cell density; inadequate resuspension             | Reduce cells per reaction; gently resuspend and filter if necessary     |
+| Delayed recovery or poor proliferation     | Inadequate cytokine support; suboptimal post-nucleofection density | Optimise cytokine cocktail; adjust seeding density; ensure fresh medium |
+| Apparent toxicity of RNP mix               | Old or degraded Cas9/gRNA; repeated freeze–thaw cycles | Use fresh aliquots; avoid refreezing; check storage conditions          |
+
+# Safety (brief)
+
+- Handle all primary cells and cell lines, especially human-derived material, under **BSL2** conditions according to institutional guidelines.
+- Wear appropriate PPE (lab coat, gloves, eye protection) throughout the procedure.
+- Dispose of cell culture waste, nucleofection strips, and contaminated plastics as biohazardous waste.
+- Follow manufacturer safety data sheets (SDS) for nucleofector solutions, Cas9, and any chemical reagents used.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                        |
+|--------|------------|----------------|----------------------------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | First unified 4D-Nucleofector protocol for T and NK cell CRISPR–Cas9 RNP. |

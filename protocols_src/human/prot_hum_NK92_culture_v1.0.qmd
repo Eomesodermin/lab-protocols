@@ -1,0 +1,196 @@
+---
+title: "NK-92 Cell Line Culture Protocol"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "HUM-NK92-CULTURE-001"
+version: "v1.0"
+description: "Culture and maintenance of the human NK-92 cell line, including thawing, IL-2–supplemented culture, routine passaging, and cryopreservation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol describes thawing, routine culture, IL-2–supplemented maintenance, passaging, and cryopreservation of the **human NK-92 cell line**. NK-92 is a suspension NK-like cell line requiring continuous IL-2 supplementation for viability, proliferation, and maintenance of cytotoxic phenotype.
+
+# Critical notes (read before starting)
+
+- NK-92 is a **human clinical-grade NK cell line** and must be handled under strict BSL2 conditions.
+- NK-92 requires **continuous IL-2 supplementation** for survival. Never culture NK-92 in IL-2–free medium.
+- NK-92 is typically cultured at **200–500 IU/mL IL-2** (lab-validated range should be consistent).
+- NK-92 grows in suspension but forms **loose aggregates**; avoid over-pipetting or harsh centrifugation.
+- Passage NK-92 before cultures become dense or acidic; overgrown cultures lose cytotoxicity and viability.
+- Cryopreserved NK-92 must be thawed quickly and washed immediately to remove DMSO.
+
+::: callout-warning
+NK-92 viability rapidly decreases if IL-2 is omitted or if medium becomes depleted. Always add IL-2 fresh to pre-warmed medium before feeding or splitting.
+:::
+
+::: callout-tip
+For reproducibility, record IL-2 batch number, concentration added, split ratio, and passage number at every passage.
+:::
+
+# Approximate timing
+
+- Thawing: 15–20 min  
+- Routine maintenance and splitting: 10–20 min  
+- Cryopreservation: 20–30 min  
+- Hands-on time per culture session: ~15–30 min  
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Medium and reagent preparation
+
+1. Prepare complete NK-92 medium:
+   - RPMI 1640  
+   - 10% heat-inactivated FCS  
+   - 1% Pen/Strep  
+2. Prepare IL-2 working aliquots.
+3. Supplement complete medium with IL-2 immediately before use:
+   - **200 IU/mL** final (or your lab-validated concentration).
+4. Pre-warm:
+   - NK-92 complete medium + IL-2  
+   - PBS (if washing is needed)  
+   to **37 °C**.
+
+::: callout-note
+IL-2 is unstable when stored in complete medium. Always add fresh, immediately before feeding.
+:::
+
+## Step 2 – Thawing NK-92 cells
+
+1. Remove a cryovial from liquid nitrogen and place immediately in a **37 °C water bath**.
+2. Gently swirl until only a small ice crystal remains.
+3. Disinfect the vial and transfer to a biosafety cabinet.
+4. Transfer the contents to a 15 mL tube containing **9–10 mL** pre-warmed medium **without IL-2** to dilute DMSO.
+5. Centrifuge at **300 g for 5 min**.
+6. Carefully aspirate supernatant.
+7. Gently resuspend the pellet in **10–15 mL** NK-92 complete medium **with IL-2**.
+8. Transfer cells to a T25 or T75 flask and incubate at **37 °C, 5% CO₂**.
+
+::: callout-warning
+Do not expose thawed cells to DMSO for more than a few minutes; wash immediately after thawing.
+:::
+
+## Step 3 – Routine culture and passaging
+
+### Recommended density
+
+- Maintain cultures between **2 × 10⁵** and **1 × 10⁶ cells/mL**.
+
+### Procedure
+
+1. Gently pipette or swirl flask to resuspend cells uniformly.
+2. Remove an aliquot for counting and viability.
+3. If density exceeds **1 × 10⁶ cells/mL**, split culture:
+   - Remove part of the culture (e.g., ½–¾ volume).
+   - Replace with fresh NK-92 medium + IL-2.
+4. Restore cultures to **2–3 × 10⁵ cells/mL**.
+5. Return flasks to incubator.
+
+### Full medium change for stressed cultures
+
+1. Collect cells and centrifuge at **300 g for 5 min**.
+2. Aspirate depleted medium.
+3. Resuspend cells in fresh complete NK-92 medium + IL-2.
+
+::: callout-note
+Fresh IL-2 medium is essential after any decline in viability; NK-92 responds rapidly to improved culture conditions.
+:::
+
+## Step 4 – Preparing NK-92 cells for experiments
+
+1. For functional assays, activate cultures 24 hours before experiments using:
+   - Fresh NK-92 complete medium + IL-2  
+2. Seed cultures at defined densities (e.g., **2–3 × 10⁵ cells/mL**).
+3. Avoid using NK-92 beyond a set passage number (e.g., **<20 passages** post-thaw).
+
+## Step 5 – Cryopreservation of NK-92 cells
+
+### Freezing medium
+
+- **90% FCS + 10% DMSO**, or  
+- Mix cell suspension 1:1 with **BUF-GEN-FREEZE-MIX-001** for a final 10% DMSO freezing medium.
+
+### Procedure
+
+1. Harvest NK-92 cells during exponential growth.
+2. Centrifuge at **300 g for 5 min**.
+3. Resuspend cells at **5–10 × 10⁶ cells/mL** in freezing medium.
+4. Aliquot **1 mL** per labelled cryovial.
+5. Place into a **controlled-rate freezing container** (Mr Frosty).
+6. Freeze at **−70/−80 °C** for ≥12 hours.
+7. Transfer to liquid nitrogen for long-term storage.
+
+# Materials
+
+## Reagents
+
+| Reagent                     | Supplier       | Cat. # | Notes                                  |
+|----------------------------|----------------|--------|----------------------------------------|
+| RPMI 1640                  | Various        | —      | Base medium                            |
+| Fetal calf serum (FCS)     | Various        | —      | 10% in culture, 90% in freezing medium |
+| Penicillin/Streptomycin    | Various        | —      | 1% final in medium                     |
+| Recombinant human IL-2     | PeproTech/etc. | —      | 200 IU/mL final                        |
+| DMSO, cell-grade           | Sigma/etc.     | —      | 10% final for freezing                 |
+| PBS, 1×                    | Various        | —      | For optional washes                    |
+
+## Disposables
+
+| Item                    | Specification                       |
+|-------------------------|--------------------------------------|
+| T25 / T75 flasks        | Vent-cap, sterile                    |
+| 15 mL / 50 mL tubes     | Sterile                              |
+| Cryovials               | LN₂ compatible                       |
+| Serological pipettes    | Sterile (5–25 mL)                    |
+| Pipette tips            | Sterile (10–1000 µL)                 |
+
+## Equipment
+
+| Equipment                     | Specification / Notes              |
+|-------------------------------|-----------------------------------|
+| CO₂ incubator                 | 37 °C, 5% CO₂                     |
+| Biological safety cabinet     | BSL2 work                         |
+| Benchtop centrifuge           | 300 g for washing                 |
+| Water bath                    | 37 °C for thawing                 |
+| Controlled-rate freezer       | e.g., Mr Frosty                   |
+| −70/−80 °C freezer            | For initial freezing              |
+| Liquid nitrogen storage       | Long-term storage                 |
+| Cell counter/hemocytometer    | For counting                      |
+
+# Buffers used
+
+- **BUF-GEN-FREEZE-MIX-001** – 2× freezing medium (for final 10% DMSO)  
+- PBS (laboratory standard)
+
+# Troubleshooting
+
+| Issue                          | Possible cause                                  | Suggested solution                                        |
+|-------------------------------|--------------------------------------------------|-----------------------------------------------------------|
+| Poor viability after thaw     | Slow thawing; prolonged DMSO exposure           | Thaw rapidly; wash promptly; ensure gentle handling       |
+| Slow growth                   | Insufficient IL-2; old medium                   | Increase IL-2 (within validated range); refresh medium    |
+| Excessive clumping            | Overgrowth or nutrient depletion                | Split earlier; replace medium entirely                    |
+| Reduced cytotoxicity          | High passage number; inconsistent IL-2          | Use low-passage cells; standardise IL-2 concentration     |
+| Contamination                 | Aseptic technique failure                       | Discard culture and restart from frozen stock             |
+
+# Safety (brief)
+
+- NK-92 is a human-derived cell line and must be handled under **BSL2**.  
+- Wear gloves, lab coat, and eye protection.  
+- Dispose of all culture waste as biohazardous.  
+- Handle DMSO cautiously; it increases dermal absorption of contaminants.  
+- Follow institutional protocols for cryogen handling and LN₂ storage.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                 |
+|--------|------------|----------------|------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto protocol for NK-92 culture |

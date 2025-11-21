@@ -1,0 +1,83 @@
+---
+title: "RBC Lysis Buffer (Hybrimax / Commercial)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-RBC-HYB-v1.0"
+version: "v1.0"
+date: "2025-11-20"
+description: "Red blood cell lysis buffer based on commercial HybriMax or equivalent RBC lysis reagent."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This buffer is used to lyse red blood cells in single-cell suspensions derived from liver (and other tissues, if applicable) while aiming to preserve leukocyte populations for downstream analysis.
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)  
+- Additional protocols where RBC lysis is required.
+
+# Composition
+
+This protocol assumes the use of a **commercially supplied RBC lysis buffer**, such as:
+
+- **HybriMax RBC lysis buffer** (Sigma), used at 1× working strength.
+
+If an alternative supplier is used (e.g. BioLegend RBC Lysis Buffer), document the product and use according to manufacturer instructions, adapting incubation times as internally validated.
+
+# Preparation
+
+## A. From HybriMax (ready-to-use formulation)
+
+1. Confirm whether the commercial HybriMax RBC lysis buffer is supplied as **ready-to-use (1×)** or **concentrate (e.g. 10×)**.
+2. If supplied as **1× solution**:
+   - Aliquot into smaller working volumes (e.g. 5–10 mL) to avoid repeated bottle opening.
+   - No further dilution is required.
+3. If supplied as **concentrate (e.g. 10×)**:
+   - Dilute with sterile water or buffer as per manufacturer’s instructions to make **1× RBC lysis solution**.
+   - Mix thoroughly.
+4. Label aliquots with:
+   - “RBC Lysis Buffer (HybriMax)”
+   - 1× or stock concentration
+   - Date of preparation
+   - Version (`BUF-RBC-HYB-v1.0`)
+
+::: {.callout-note}
+The liver protocol `LIV-001` uses **0.5 mL of 1× RBC lysis buffer per sample** after Percoll enrichment, with a **7-minute** incubation at room temperature.
+:::
+
+# Storage and stability
+
+- Store the commercial RBC lysis buffer according to manufacturer’s instructions (commonly at **2–8 °C**).
+- Keep tightly closed to avoid evaporation and contamination.
+- Aliquoted 1× working solution should also be stored at **2–8 °C** and used within the period recommended by the manufacturer or internal validation.
+- Do not freeze unless explicitly supported by the manufacturer.
+
+# Reagent details
+
+| Component                    | Supplier | Cat# | Notes |
+|-----------------------------|----------|------|-------|
+| HybriMax RBC lysis buffer   | [TBD]    | [TBD]| Commercial RBC lysis buffer; used at 1× working concentration |
+
+(If using a different brand, add a row or update Supplier/Cat# accordingly.)
+
+# Safety (brief)
+
+- RBC lysis buffers typically contain detergents and may contain **sodium azide** or other toxic components.
+- Handle with gloves and standard lab PPE.
+- Avoid contact with eyes and skin; consult the manufacturer’s safety data sheet (SDS).
+- Dispose of RBC-lysis waste and contaminated consumables in accordance with local chemical and biohazard regulations.
+
+# Version history
+
+| Version | Date       | Author          | Change summary           |
+|---------|------------|-----------------|--------------------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial buffer definition |

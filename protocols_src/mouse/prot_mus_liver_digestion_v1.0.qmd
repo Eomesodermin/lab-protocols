@@ -1,0 +1,233 @@
+---
+title: "Mouse Liver Digestion to Single-Cell Suspension"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-LIV-DIG-001"
+version: "v1.0"
+description: "Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This protocol describes the preparation of single-cell suspensions from mouse liver using perfusion, enzymatic digestion, mechanical dissociation, density centrifugation, and RBC lysis. The resulting cell suspension is suitable for downstream applications such as flow cytometry, FACS sorting, and single-cell omics workflows (with appropriate QC).
+
+# Critical notes (read before starting)
+
+-   Keep all **post-digestion washes cold** (4 °C) where possible to preserve viability.
+-   Process **one liver per 70 μm strainer**; do not reuse strainers between livers.
+-   Liver cell pellets are often **loose**; be careful when pouring supernatants.
+-   Do not over-digest; limit digestion to **30 minutes at 37 °C** with agitation.
+-   Percoll must be at **room temperature** and properly diluted to **33%** immediately before use.
+-   Ensure RBC lysis is **time-limited (7 minutes)** to avoid damaging leukocytes.
+
+# Approximate timing
+
+-   Mouse euthanasia, perfusion, and liver dissection: **5–10 min per mouse**
+-   Liver mincing and transfer into digestion buffer: **5 min per mouse**
+-   Enzymatic digestion: **30 min**
+-   Mechanical dissociation and initial washes: **15–20 min**
+-   Percoll centrifugation and cleanup: **25–30 min**
+-   RBC lysis and final resuspension: **15–20 min**
+
+Total hands-on time per liver (excluding setup): **\~60–90 minutes**, depending on batching and operator experience.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Liver harvest and perfusion
+
+1.  Euthanise the mouse using **CO₂ asphyxiation** or another approved method (ensure compatibility if cardiac puncture is also performed in the experiment).
+2.  Weigh the mouse and record the body weight.
+3.  Perform a midline incision to open the abdominal cavity and expose the liver and portal vein.
+4.  Load a **5 mL syringe** with **Liver Digestion Buffer** and attach a **27 G needle**.
+5.  Perfuse the liver through the **Inferior vena cava** with approximately **2 mL Liver Digestion Buffer per mouse**, allowing blood and perfusate to drain into a petri dish or waste beaker.
+
+::: callout-warning
+Handle needles and sharps carefully and dispose of them directly into an approved sharps container after perfusion.
+:::
+
+6.  Excise the liver and place it on **filter paper** to blot excess blood and buffer.
+7.  Weigh the liver and record the weight.
+8.  Transfer the liver to a **10 cm petri dish** and mince it roughly into small fragments using scissors or scalpels.
+9.  Transfer the minced liver pieces into the **pre-labeled 50 mL tube** containing **3 mL Liver Digestion Buffer**.
+
+## STEP 2 – Enzymatic digestion
+
+1.  Place the 50 mL tubes containing minced liver in **3 mL Liver Digestion Buffer** on a **37 °C benchtop shaker**.
+2.  Incubate at **37 °C, 250 rpm for 30 minutes**.
+
+::: callout-note
+Ensure tubes are securely capped and properly balanced in the shaker to avoid leakage and uneven mixing.
+:::
+
+## STEP 3 – Mechanical dissociation and first wash
+
+1.  After the 30-minute digestion, add **FACS/MACS Buffer** to each 50 mL tube to a **total volume of 25 mL**.
+2.  Place a **70 μm cell strainer** into a **10 cm petri dish**.
+3.  Pour the entire content of one liver tube onto the cell strainer, ensuring all tissue fragments are transferred.
+4.  Using the **back of a 5 mL syringe plunger**, mechanically dissociate the liver through the strainer until no visible large fragments remain.
+5.  Use a **transfer pipette** to:
+    -   Rinse remaining material on the strainer with FACS buffer.
+    -   Help pass residual clumps through the mesh.
+6.  Once the sample is fully dissociated:
+    -   Pour the cell suspension from the petri dish back into the **corresponding 50 mL tube**.
+7.  Add additional FACS buffer to the petri dish:
+    -   Dab the bottom of the strainer in the buffer to wash off remaining cells.
+    -   Rinse the syringe plunger in the buffer to recover residual cells.
+    -   Use a transfer pipette to collect all remaining liquid and return it to the 50 mL tube.
+8.  Repeat steps 2–7 for each liver.
+9.  Top up each 50 mL tube to **50 mL with FACS buffer**.
+10. Centrifuge at **400 g for 5 minutes** (4 °C recommended).
+
+::: callout-warning
+Cell pellets from digested livers are often **loose**. When discarding supernatant by pouring, use a slow, controlled motion and avoid abrupt shaking or flicking.
+:::
+
+11. Carefully discard supernatant by pouring.
+12. Top up each tube again to **50 mL with FACS buffer**.
+13. Resuspend pellets by gentle inversion or a brief controlled shake.
+14. Centrifuge again at **400 g for 5 minutes** (4 °C recommended).
+
+## STEP 4 – 33% Percoll purification
+
+1.  During the second centrifugation, prepare **33% Percoll Solution** according to its buffer protocol (BUF-PERC-33-v1.0).
+2.  Aliquot **10 mL of 33% Percoll Solution** into **pre-labeled 15 mL Falcon tubes**, one tube per liver.
+3.  After the centrifugation in STEP 3:
+    -   Carefully discard the supernatant from each 50 mL tube by pouring.
+4.  Use the remaining **dead volume** in each tube to resuspend the cell pellet with a **transfer pipette**.
+5.  Transfer the resuspended cells into the corresponding **15 mL tube** containing **10 mL 33% Percoll Solution**.
+6.  Gently invert the 15 mL tubes to ensure an even cell suspension in Percoll.
+7.  Centrifuge the Percoll suspensions at **1700 rpm for 15 minutes at room temperature**
+    -   Acceleration: **9**\
+    -   Brake: **1** (minimal braking to preserve gradient).
+
+::: callout-note
+After the Percoll spin, a **hepatocyte-rich layer** typically floats on top, while a **lymphocyte + erythrocyte pellet** forms at the bottom.
+:::
+
+8.  Prepare several layers of paper towels near a sink or waste container.
+9.  In one smooth motion, pour off the **hepatocyte layer and supernatant** from each 15 mL tube.
+10. Keep tubes inverted and gently dab the tube openings on paper towels to wick off residual liquid, avoiding disturbance of the pellet.
+
+## STEP 5 – RBC lysis
+
+1.  Add **0.5 mL HybriMax RBC lysis buffer** (or equivalent; see BUF-RBC-HYB-v1.0) directly to each pellet in the 15 mL tubes.
+2.  Pipette up and down to fully resuspend the pellet in the lysis buffer.
+3.  Incubate at **room temperature for 7 minutes**.
+
+::: callout-warning
+RBC lysis buffers often contain sodium azide and other toxic components. Avoid skin contact and inhalation. Dispose of lysis waste in accordance with institutional chemical safety rules.
+:::
+
+4.  After 7 minutes, top up each tube to **10 mL with FACS buffer**.
+5.  Centrifuge at **400 g for 5 minutes** (4 °C recommended; standard braking).
+
+## STEP 6 – Final wash and resuspension
+
+1.  Prepare several layers of paper towel near your waste container.
+2.  Discard supernatant from each tube by careful pouring and dab the opening on paper towels to remove residual liquid.
+3.  Loosen each pellet in the remaining dead volume by brief vortexing or gentle flicking.
+4.  Resuspend each pellet in **5 mL FACS buffer** (or another desired final volume) to obtain the final single-cell suspension.
+5.  Proceed immediately to:
+    -   Cell counting and viability assessment.
+    -   Flow cytometry staining and/or FACS sorting.
+    -   Sample freezing (e.g. in FBS + 10% DMSO) if required.
+    -   Downstream single-cell workflows (e.g. scRNA-seq, scTCR-seq) with appropriate QC.
+
+::: callout-tip
+For single-cell sequencing applications, minimise the time from tissue harvest to final resuspension, keep samples on ice whenever possible after digestion, and consider additional debris/dead cell removal steps if yields permit.
+:::
+
+{{< pagebreak >}}
+
+# Buffers used (defined in separate buffer protocols)
+
+This protocol relies on the following buffers, each defined in its own buffer file:
+
+-   **Liver Digestion Buffer** – `BUF-LIV-DIG-v1.0`
+    -   DMEM (incomplete) + Collagenase D + DNase I at defined concentrations.
+-   **FACS/MACS Buffer** – `BUF-FACS-v1.0`
+    -   PBS 1× + FCS + EDTA.
+-   **33% Percoll Solution** – `BUF-PERC-33-v1.0`
+    -   Sterile Percoll + PBS (1× and 10×), prepared at 33% (v/v) on the day of use.
+-   **RBC Lysis Buffer (Hybrimax)** – `BUF-RBC-HYB-v1.0`
+    -   Commercial HybriMax buffer or equivalent, used according to manufacturer and in-house specifications.
+
+Each buffer file should include preparation, storage conditions, shelf-life, and safety notes.
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|------------------------|------------------|-------------------------------|
+| Liver Digestion Buffer | In-house (see buffer) | Pre-warmed to 37 °C; 3 mL per liver + for perfusion |
+| FACS/MACS Buffer | In-house (see buffer) | Cold; used for washing and final resuspension |
+| 33% Percoll Solution | In-house (see buffer) | 10 mL per liver; prepared fresh at RT |
+| HybriMax RBC lysis buffer | Sigma, etc. | 0.5 mL per sample |
+| PBS 1× | Any | For tissue handling and washes |
+| CO₂ or approved euthanasia agent | Facility supply | For mouse sacrifice |
+
+## Disposables
+
+| Item                       | Notes                                    |
+|----------------------------|------------------------------------------|
+| 50 mL Falcon tubes         | 1 per liver (collection and processing)  |
+| 15 mL Falcon tubes         | 1 per liver (Percoll gradient)           |
+| 10 cm petri dishes         | 1 per liver (mincing and straining)      |
+| 70 μm cell strainers       | 1 per liver; do not reuse between livers |
+| 5 mL syringes              | 1 per liver                              |
+| 27 G needles               | 1 per liver (portal vein perfusion)      |
+| Transfer pipettes          | Several per experiment                   |
+| Filter paper               | For blotting liver                       |
+| Paper towels / bench wipes | For cleanup and wicking supernatants     |
+| Gloves, sharps container   | Standard lab safety items                |
+
+## Equipment
+
+| Equipment | Notes |
+|-------------------------|----------------------------------------------|
+| CO₂ chamber or euthanasia setup | As per ethics approval |
+| Surgical scissors and forceps | For dissection |
+| Benchtop shaker/incubator | 37 °C, 250 rpm |
+| Benchtop centrifuge | Compatible with 50 mL and 15 mL tubes; 400 g and 1700 rpm |
+| Analytical balance | For weighing mice and livers |
+| Biosafety cabinet (Class II) | Recommended for tissue processing |
+| Timer | For digestion and lysis steps |
+
+{{< pagebreak >}}
+
+# Troubleshooting (selected examples)
+
+| Issue | Possible cause | Suggested solution |
+|--------------------|-----------------------|------------------------------|
+| Low lymphocyte yield | Over-digestion or harsh centrifugation | Limit digestion to 30 min; ensure 400 g spins; gentle brake |
+| Very loose pellets, loss of cells | Aggressive pouring of supernatant | Practice slow, continuous pouring; dab tube on paper towel |
+| High debris in suspension | Incomplete mechanical dissociation/filtering | Increase time mashing through 70 μm mesh; add extra wash |
+| Poor viability | Prolonged handling at RT post-digestion | Keep washes cold; minimise processing time; work on ice |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+-   Follow institutional S1/S2 safety rules and animal ethics regulations at all times.
+-   Handle mouse tissues and potentially infectious material in appropriate containment (preferably Class II biosafety cabinet when required).
+-   RBC lysis buffers and Percoll are chemical hazards; avoid contact with skin and eyes, and dispose of waste according to local chemical safety guidelines.
+-   Dispose of needles, blades, and other sharps immediately into approved sharps containers.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|-------------|-------------|-------------|-----------------------------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial Quarto version based on SOP_001 (liver) from IEO |

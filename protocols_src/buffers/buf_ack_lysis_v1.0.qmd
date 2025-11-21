@@ -1,0 +1,83 @@
+---
+title: "ACK Red Blood Cell Lysis Buffer"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+buffer_id: "BUF-ACK-LYSIS-001"
+version: "v1.0"
+description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions."
+---
+
+**Buffer ID:** {{< meta buffer_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g. liver digests, spleen, PBMC preparations). The reagent maintains leukocyte integrity while efficiently removing red blood cells during brief room-temperature incubation.
+
+# Working buffer composition
+
+| Component                    | Final concentration  | Notes                                      |
+|-----------------------------|----------------------|--------------------------------------------|
+| Ammonium chloride (NH₄Cl)   | 150 mM               | Primary erythrocyte-lysing component       |
+| Potassium bicarbonate (KHCO₃)| 10 mM               | Buffering capacity                          |
+| Disodium EDTA (Na₂EDTA)     | 0.1 mM               | Chelates divalent cations; prevents clumping |
+| Sterile distilled water     | —                    | Solvent                                    |
+
+::: callout-note
+This composition matches the standard formulation used in immunology workflows (commonly referred to as “ACK lysis buffer” or “RBC lysis buffer”).
+:::
+
+# Preparation
+
+## Reagent stocks
+
+| Reagent               | Stock concentration | Notes                                  |
+|-----------------------|---------------------|----------------------------------------|
+| NH₄Cl                 | Powder              | Prepare fresh solution                 |
+| KHCO₃                 | Powder              | CO₂-reactive; store desiccated         |
+| Na₂EDTA (disodium)    | Powder              | Use ultrapure cell-culture grade       |
+| Sterile distilled water | —                 | For dissolution                        |
+
+## Preparation of **1 L ACK lysis buffer**
+
+1. Add the following to a 1 L glass bottle or beaker:
+   - **8.02 g NH₄Cl** (150 mM)  
+   - **1.00 g KHCO₃** (10 mM)  
+   - **0.037 g Na₂EDTA** (0.1 mM)
+2. Add ~800 mL sterile distilled water.
+3. Stir or gently swirl until fully dissolved.
+4. Adjust the final volume to **1 L** with sterile distilled water.
+5. Filter-sterilize using a **0.22 µm PES or PVDF filter**.
+6. Aliquot if desired.
+
+### pH adjustment  
+- Typically **no pH adjustment is required**; the solution should be at pH ~7.2–7.4.  
+- If necessary, adjust minimally with sterile HCl or NaOH.
+
+# Storage and stability
+
+- Store at **4 °C** for up to **3 months**.  
+- Aliquots stored sterilely remain stable for common immunology workflows.  
+- **Do not freeze**; precipitation and performance changes may occur.
+
+# Reagent details
+
+| Reagent                       | Supplier | Cat. # | Notes                                  |
+|------------------------------|----------|--------|----------------------------------------|
+| Ammonium chloride            | Various  | —      | Analytical or cell-culture grade       |
+| Potassium bicarbonate        | Various  | —      | Store tightly sealed                   |
+| Disodium EDTA (Na₂EDTA)      | Various  | —      | Chelates divalent cations              |
+| Sterile distilled water      | —        | —      | Solvent                                |
+
+# Safety
+
+- Wear gloves and eye protection; NH₄Cl is an irritant.  
+- Dispose of unused buffer and erythrocyte-containing waste as biological/chemical waste.  
+- Prepare and filter-sterilize the buffer in a biosafety cabinet when used for primary tissue processing.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                  |
+|--------|------------|----------------|-------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto buffer document for ACK lysis buffer. |

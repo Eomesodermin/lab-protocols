@@ -1,0 +1,69 @@
+---
+title: "R0 Medium (RPMI Without Serum)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+buffer_id: "BUF-R0-MED-001"
+version: "v1.0"
+description: "Serum-free RPMI 1640 medium used for dilution of whole blood prior to Ficoll gradient separation, and for initial PBMC washes."
+---
+
+**Buffer ID:** {{< meta buffer_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+R0 medium is serum-free RPMI 1640 used for diluting whole blood prior to Ficoll separation and for washing PBMCs following gradient isolation. The absence of serum preserves the density characteristics of blood during layering and ensures optimal interface formation on Ficoll.
+
+# Working buffer composition
+
+| Component        | Final concentration | Notes                                      |
+|------------------|---------------------|--------------------------------------------|
+| RPMI 1640        | 100%                | Base medium                                |
+| FCS              | 0%                  | Serum-free formulation                     |
+| Antibiotics      | 0%                  | Add only if required for sterility         |
+
+::: callout-note
+This buffer is intentionally **serum-free** to avoid interference with Ficoll density gradient separation.
+:::
+
+# Preparation
+
+R0 medium consists of sterile RPMI 1640 with **no** serum or additional supplements.
+
+## Preparation of **500 mL R0**
+
+1. Obtain 500 mL sterile-filtered RPMI 1640.
+2. Inspect for turbidity or colour change; discard if contamination is suspected.
+3. Label the bottle clearly as **R0 (RPMI, no serum)**.
+4. Store protected from light.
+
+### Optional antibiotic supplementation  
+If required for sterility during slower workflows:  
+- Add **5 mL** Penicillin/Streptomycin (100× stock) → final 1% (v/v).  
+(Not recommended unless protocol explicitly requires it.)
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.
+- Stable for **4–6 weeks** unopened; **2–4 weeks** after opening if handled aseptically.
+- Do not freeze.
+
+# Reagent details
+
+| Reagent     | Supplier | Cat. # | Notes                     |
+|-------------|----------|--------|---------------------------|
+| RPMI 1640    | Various  | —      | Sterile-filtered          |
+| Pen/Strep (optional) | Various | — | Only if supplementation required |
+
+# Safety
+
+- Handle RPMI using aseptic technique to avoid contamination.
+- Work in a biosafety cabinet when preparing aliquots or supplementing.
+- Dispose of expired or contaminated medium as biohazardous liquid waste.
+
+# Version history
+
+| Version | Date       | Author         | Changes                           |
+|--------|------------|----------------|-----------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial release of R0 medium file |

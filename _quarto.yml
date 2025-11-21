@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Protocol Library"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Buffers"
+        href: protocols_src/buffers/_index.qmd
+      - text: "Mouse"
+        href: protocols_src/mouse/_index.qmd
+      - text: "Human"
+        href: protocols_src/human/_index.qmd
+      - text: "General"
+        href: protocols_src/general/_index.qmd
+
+format:
+  html:
+    toc: false
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false

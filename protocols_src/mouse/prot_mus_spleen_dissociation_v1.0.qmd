@@ -1,0 +1,153 @@
+---
+title: "Mouse Spleen Dissociation to Single-Cell Suspension"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-SPL-DIS-001"
+version: "v1.0"
+description: "Preparation of mouse spleen single-cell suspensions for flow cytometry, sorting, and downstream immunological assays."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This protocol describes the rapid isolation of leukocytes from mouse spleen using mechanical dissociation, red blood cell lysis, and gentle washing steps. The resulting suspension is suitable for flow cytometry, sorting, and standard immunological assays.
+
+# Critical notes (read before starting)
+
+- Work on **ice** or at **4 °C** after dissociation to preserve viability.  
+- **Do not reuse strainers** between spleens.  
+- RBC lysis should be **time-limited (5 minutes)** to prevent leukocyte damage.  
+- Spleen pellets can be **fragile** after lysis — pour supernatants slowly.
+
+# Approximate timing
+
+- Dissection and spleen removal: **2–3 min**
+- Mechanical dissociation: **2–3 min**
+- RBC lysis: **5 min**
+- Final wash and resuspension: **5 min**
+
+Total hands-on time per spleen: **10–15 minutes**.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Collection and preparation
+
+1. Euthanise the mouse by an approved method.  
+2. Expose the spleen by opening the abdominal cavity.  
+3. Excise the spleen and place it into a petri dish containing **cold PBS or FACS/MACS Buffer**.
+
+## STEP 2 – Mechanical dissociation
+
+1. Place a **70 μm cell strainer** over a **50 mL Falcon tube**.  
+2. Transfer the spleen onto the strainer.  
+3. Using the **back of a 5 mL syringe plunger**, gently mash the spleen through the mesh until a homogenous suspension is obtained.  
+4. Rinse the strainer with **FACS/MACS Buffer** and top the tube up to **50 mL**.
+
+::: callout-tip
+Use gentle, consistent pressure — avoid grinding, which reduces viability.
+:::
+
+## STEP 3 – Wash and centrifugation
+
+1. Centrifuge the 50 mL tube at **400 g for 5 minutes at 4 °C**.  
+2. Carefully pour off the supernatant.
+
+## STEP 4 – RBC lysis
+
+1. Add **1 mL HybriMax RBC Lysis Buffer** (or equivalent) **per spleen** to the pellet.  
+2. Gently resuspend the pellet by pipetting or flicking.  
+3. Incubate for **5 minutes at room temperature**.  
+4. Top up to **50 mL** with **FACS/MACS Buffer**.
+
+::: callout-warning
+Over-lysis (>5 minutes) can reduce leukocyte viability and alter scatter profiles.
+:::
+
+## STEP 5 – Filtration and final wash
+
+1. Filter the suspension through a **fresh 70 μm strainer** into a clean tube.  
+2. Centrifuge at **400 g for 5 minutes at 4 °C**.  
+3. Carefully discard supernatant.  
+4. Resuspend the pellet in **5 mL FACS/MACS Buffer** (or a volume appropriate for your downstream assay).
+
+## STEP 6 – Downstream handling
+
+Proceed immediately to:
+
+- Flow cytometry staining  
+- FACS sorting  
+- Cryopreservation  
+- Functional assays  
+
+Keep cells **on ice** until use.
+
+{{< pagebreak >}}
+
+# Buffers used
+
+- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
+- **RBC Lysis Buffer (HybriMax)** – `BUF-RBC-HYB-v1.0`  
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|--------|------------------|-------|
+| PBS or FACS/MACS Buffer | In-house | Cold |
+| HybriMax RBC Lysis Buffer | Sigma | 1 mL per spleen |
+| Sterile PBS | Any | For handling and rinsing |
+
+## Disposables
+
+| Item | Notes |
+|------|-------|
+| 50 mL Falcon tubes | 1 per spleen |
+| 70 μm cell strainers | Do not reuse |
+| 5 mL syringes (without needle) | For mashing |
+| Transfer pipettes | For washing/rinsing |
+
+## Equipment
+
+| Equipment | Notes |
+|-----------|-------|
+| Biosafety cabinet | Recommended |
+| Benchtop centrifuge | 400 g at 4 °C |
+| Petri dishes | For dissection/dissociation |
+| Timer | For RBC lysis |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Issue | Possible cause | Suggested solution |
+|-------|----------------|---------------------|
+| Low cell yield | Incomplete mechanical dissociation | Spend additional time mashing through mesh |
+| Excess debris | Over-aggressive mashing | Apply gentler pressure |
+| Poor viability | Prolonged room-temperature handling | Keep samples cold; minimise processing time |
+| Pellets lost | Pouring too forcefully | Use slow, controlled decanting |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- Process mouse tissues according to S1/S2 guidelines and ethics approval.  
+- RBC lysis buffer contains toxic reagents — wear PPE and avoid inhalation or skin contact.  
+- Dispose of biological material and sharps appropriately.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for spleen |

@@ -1,0 +1,177 @@
+---
+title: "K-562 Cell Line Culture Protocol"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "HUM-K562-CULTURE-001"
+version: "v1.0"
+description: "Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol describes the thawing, routine culture, maintenance, passaging, and cryopreservation of the human K-562 erythroleukemia cell line. K-562 cells grow in suspension and require regular monitoring of density to maintain viability and consistent growth rates.
+
+# Critical notes (read before starting)
+
+- K-562 cells grow as **suspension cultures** and should remain in exponential growth phase.
+- Do not allow cultures to exceed recommended density, as nutrient depletion reduces viability and alters phenotype.
+- K-562 cells are of human origin—treat all cultures and waste as BSL2.
+- Always pre-warm media and reagents to **37 °C** before use.
+- Ensure gentle handling; harsh centrifugation or over-pipetting can damage suspension cells.
+- Cryopreservation requires **10% DMSO**, and cells should be frozen using a controlled-rate freezing container.
+
+::: callout-warning
+Overgrowth (tight clumps, very dense cultures) leads to poor viability and altered functional responses. Split cultures **before** they exceed recommended density.
+:::
+
+::: callout-tip
+Record passage number and split ratios at every passage. This improves reproducibility when using K-562 cells as targets or stimulator cells.
+:::
+
+# Approximate timing
+
+- Thawing: 15–20 min  
+- Routine medium change / split: 10–15 min  
+- Cryopreservation: 20–30 min  
+- Total hands-on time per session: ~15–30 min
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Reagents and medium preparation
+
+1. Pre-warm complete culture medium:
+   - RPMI 1640  
+   - 10% FCS  
+   - 1% Pen/Strep  
+2. Pre-warm PBS (if washing is needed).  
+3. Label flasks with:
+   - Cell line name (K-562)  
+   - Passage number  
+   - Date  
+   - Operator initials  
+
+## Step 2 – Thawing K-562 cells
+
+1. Pre-warm **10–15 mL** of complete medium to 37 °C.
+2. Thaw a cryovial of K-562 cells in a 37 °C water bath:
+   - Gently swirl and remove when only a small ice crystal remains.
+3. Transfer contents into a 15 mL tube containing **10 mL** pre-warmed complete medium.
+4. Centrifuge at **300 g for 5 min** at room temperature.
+5. Remove supernatant and gently resuspend the pellet in **10–15 mL** fresh complete medium.
+6. Transfer cells to a T25 or T75 flask and incubate at **37 °C, 5% CO₂**.
+
+::: callout-note
+The centrifugation step removes DMSO, preventing toxicity during recovery.
+:::
+
+## Step 3 – Routine culture and passaging
+
+### Recommended density  
+- Maintain between **2 × 10⁵** and **1 × 10⁶ cells/mL**.
+
+### Procedure  
+1. Gently resuspend the culture by pipetting up and down.
+2. Count cells using trypan blue or an automated counter.
+3. If density > 1 × 10⁶ cells/mL:
+   - Split culture **1:2 to 1:5** depending on growth.
+4. Add fresh, pre-warmed complete medium to adjust culture to:
+   - **2–3 × 10⁵ cells/mL**
+5. Return to incubator (37 °C, 5% CO₂).
+
+::: callout-warning
+Do not allow cultures to sit for more than 3–4 days without splitting. Nutrient depletion leads to apoptosis and growth arrest.
+:::
+
+## Step 4 – Short-term storage / holding conditions
+
+- Cultures may be held at **2–4 × 10⁵ cells/mL** for 24–48 h without splitting.
+- If cultures appear slow or viability drops:
+  - Increase medium volume  
+  - Spin down and resuspend in entirely fresh medium  
+
+## Step 5 – Cryopreservation of K-562 cells
+
+### Preparation of freezing medium
+- **90% FCS + 10% DMSO**  
+(or use BUF-GEN-FREEZE-MIX-001 diluted 1:1 with cell suspension)
+
+### Freezing procedure
+
+1. Collect cells in exponential growth phase.
+2. Centrifuge at **300 g for 5 min**.
+3. Resuspend in freezing medium at **1–10 × 10⁶ cells/mL**.
+4. Aliquot **1 mL** into labelled cryovials.
+5. Place vials into a **controlled-rate freezing container** (e.g. Mr Frosty).
+6. Freeze at **−70/−80 °C overnight**.
+7. Transfer vials to **liquid nitrogen** for long-term storage.
+
+# Materials
+
+## Reagents
+
+| Reagent                    | Supplier         | Cat. # | Notes                                  |
+|---------------------------|------------------|--------|----------------------------------------|
+| RPMI 1640                 | Various          | —      | Base medium                            |
+| Fetal calf serum (FCS)    | Various          | —      | 10% v/v in medium                      |
+| Penicillin/Streptomycin   | Various          | —      | 1% v/v final                           |
+| DMSO (cell culture grade) | Sigma/others     | —      | 10% final in freezing medium           |
+| PBS, 1×                   | Various          | —      | For washing (optional)                 |
+
+## Disposables
+
+| Item                       | Specification                    |
+|---------------------------|----------------------------------|
+| T25 / T75 flasks          | Vent-cap, sterile                |
+| 15 mL / 50 mL tubes       | Sterile                          |
+| Cryovials                 | LN2-compatible                   |
+| Pipette tips              | Sterile (10 µL – 1000 µL)        |
+| Serological pipettes      | Sterile (5–25 mL)                |
+
+## Equipment
+
+| Equipment                   | Specification / Notes             |
+|-----------------------------|----------------------------------|
+| CO₂ incubator               | 37 °C, 5% CO₂                    |
+| Benchtop centrifuge         | 300 g for washing                |
+| Biological safety cabinet   | BSL2 handling                    |
+| Water bath                  | 37 °C for thawing                |
+| Cell counter/hemocytometer  | For counting                     |
+| Controlled-rate freezer     | e.g. Mr Frosty                   |
+| Liquid nitrogen storage     | Long-term cryostorage            |
+
+# Buffers used
+
+- **BUF-GEN-FREEZE-MIX-001** – optional alternative for freezing  
+- PBS (standard laboratory reagent)
+
+# Troubleshooting
+
+| Issue                           | Possible cause                      | Solution                                           |
+|--------------------------------|-------------------------------------|----------------------------------------------------|
+| Low viability after thaw       | Slow thawing or DMSO exposure       | Thaw rapidly; wash immediately after thaw          |
+| Clumping                      | High density or depleted medium     | Dilute, split earlier, or replace medium entirely  |
+| Slow growth                   | Old medium, poor serum batch        | Prepare fresh medium; test new batch of FCS        |
+| Sudden drop in viability       | Contamination or overgrowth         | Check culture; discard and restart from stock      |
+
+# Safety (brief)
+
+- Handle all human-derived cell lines using BSL2 precautions.
+- Wear gloves, lab coat, and eye protection.
+- Dispose of liquid and solid waste as biohazardous material.
+- DMSO increases skin permeability—avoid contact.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                 |
+|--------|------------|----------------|------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto protocol for K-562 culture |

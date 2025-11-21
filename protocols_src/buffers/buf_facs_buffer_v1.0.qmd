@@ -1,0 +1,80 @@
+---
+title: "FACS/MACS Buffer"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-FACS-v1.0"
+version: "v1.0"
+description: "Buffer for washing, staining, and handling cells for flow cytometry and magnetic separation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This buffer is used for washing and resuspending cells during flow cytometry staining, FACS sorting, and MACS-based enrichment. It helps maintain cell viability, prevents clumping, and minimises nonspecific binding.
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)  
+- Additional protocols as needed.
+
+# Composition (1× FACS/MACS Buffer)
+
+Typical preparation for **500 mL** of buffer:
+
+| Component  | Stock concentration | Volume for 500 mL | Final concentration | Notes            |
+|-----------|---------------------|-------------------|---------------------|------------------|
+| PBS 1×    | —                   | 500 mL            | —                   | Base buffer      |
+| FCS       | —                   | 10 mL             | 2% (v/v)            | Heat-inactivated, if used |
+| EDTA      | 0.5 M               | 2 mL              | 2 mM                | Sterile stock    |
+
+(Volumes above reflect the original SOP recipe: PBS 1× 500 mL, FCS 10 mL, EDTA (0.5 M) 2 mL.)
+
+# Preparation
+
+1. Start with **500 mL PBS 1×** in a sterile bottle.
+2. Add **10 mL FCS** (to achieve 2% v/v final).
+3. Add **2 mL EDTA 0.5 M stock** (to achieve 2 mM final).
+4. Mix gently by inversion.
+5. If sterility is required, filter the buffer through a **0.22 µm filter** into a sterile storage bottle.
+6. Label with:
+   - “FACS/MACS Buffer (PBS + 2% FCS + 2 mM EDTA)”
+   - Date of preparation
+   - Version (`BUF-FACS-v1.0`)
+
+::: {.callout-tip}
+For highly sensitive applications (e.g. scRNA-seq, FACS of rare populations), prepare fresh or use small aliquots to minimise repeated warming/cooling cycles and contamination risk.
+:::
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light if possible.
+- Recommended to use within **4–6 weeks**, or according to internal lab validation and microbial QC.
+- Before use, invert gently to resuspend any settled components.
+- Avoid repeated temperature cycling; if frequent bench use is expected, consider preparing smaller working aliquots.
+
+# Reagent details
+
+| Component  | Supplier | Cat# | Notes |
+|-----------|----------|------|-------|
+| PBS 1×    | [TBD]    | [TBD]| Sterile, Ca²⁺/Mg²⁺-free recommended |
+| FCS       | [TBD]    | [TBD]| Heat-inactivated if required by downstream applications |
+| EDTA 0.5 M| [TBD]    | [TBD]| Sterile stock solution; pH ~8.0     |
+
+# Safety (brief)
+
+- Handle biological samples in FACS buffer according to institutional biosafety rules.
+- FCS is of animal origin; treat as a potential biohazard.
+- EDTA is of low toxicity at working concentrations but should be handled with standard lab PPE.
+
+# Version history
+
+| Version | Date       | Author          | Change summary           |
+|---------|------------|-----------------|--------------------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial buffer definition |

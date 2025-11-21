@@ -1,0 +1,80 @@
+---
+title: "33% Percoll Solution"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-PERC-33-v1.0"
+version: "v1.0"
+description: "33% Percoll density solution for enrichment of leukocytes from digested liver tissue."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This buffer is used as a 33% Percoll solution for density-based enrichment of leukocytes from digested liver. It separates hepatocytes (floating) from leukocyte- and erythrocyte-enriched pellets during centrifugation.
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)
+
+# Composition (per 10 mL 33% Percoll)
+
+Based on the original SOP:
+
+| Component            | Stock                | Volume for 10 mL | Approx. final composition | Notes         |
+|----------------------|----------------------|------------------|---------------------------|---------------|
+| Percoll (sterile)    | 100%                 | 3.33 mL          | 33% (v/v)                 | Undiluted stock |
+| PBS 1×               | —                    | 6.29 mL          | —                         | Isotonic medium |
+| PBS 10×              | 10×                  | 370.37 µL        | Adjusts osmolarity        | Added last    |
+
+# Preparation
+
+1. Equilibrate **Percoll stock** to **room temperature** before preparation.
+2. For each **10 mL** of 33% Percoll:
+   1. In a sterile 15 mL or 50 mL tube, add **3.33 mL** Percoll (sterile).
+   2. Add **6.29 mL** PBS 1×.
+   3. Add **370.37 µL** PBS 10×.
+   4. Mix gently by inversion until homogeneous.
+3. If preparing multiple aliquots (e.g. **10 mL per liver**), scale volumes accordingly.
+4. Aliquot **10 mL** per labeled 15 mL tube for each liver sample.
+5. Label tubes with:
+   - “33% Percoll”
+   - Date of preparation
+   - Version (`BUF-PERC-33-v1.0`)
+
+::: {.callout-note}
+Maintain sterility by preparing the solution in a biosafety cabinet or sterile environment if it will contact viable cells used for culture or sensitive downstream applications.
+:::
+
+# Storage and stability
+
+- **Working 33% Percoll solution** is generally prepared **fresh on the day of use**.
+- Short-term storage (same day) at **room temperature** is acceptable.
+- Do not freeze 33% Percoll; discard any unused working solution at the end of the day.
+- Stock Percoll (100%) should be stored according to manufacturer’s instructions (typically at room temperature), protected from contamination.
+
+# Reagent details
+
+| Component         | Supplier | Cat# | Notes |
+|------------------|----------|------|-------|
+| Percoll (100%)   | [TBD]    | [TBD]| Sterile Percoll; density gradient medium |
+| PBS 1×           | [TBD]    | [TBD]| Sterile, Ca²⁺/Mg²⁺-free recommended     |
+| PBS 10×          | [TBD]    | [TBD]| Sterile concentrate; used to adjust osmolarity |
+
+# Safety (brief)
+
+- Percoll solutions should be handled with gloves and standard lab PPE.
+- Dispose of Percoll-containing waste according to local chemical and biohazard regulations when mixed with biological material.
+- Avoid ingestion and contact with eyes; consult the manufacturer’s safety data sheet (SDS) for details.
+
+# Version history
+
+| Version | Date       | Author          | Change summary           |
+|---------|------------|-----------------|--------------------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial buffer definition |

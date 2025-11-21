@@ -1,0 +1,207 @@
+---
+title: "KHYG-1 Cell Line Culture Protocol"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "HUM-KHYG1-CULTURE-001"
+version: "v1.0"
+description: "Culture and maintenance of the human KHYG-1 NK-like cell line, including thawing, routine passaging, IL-2 supplementation, and cryopreservation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol describes the thawing, routine culture, maintenance, passaging, and cryopreservation of the human KHYG-1 NK-like cell line. KHYG-1 cells grow as a suspension culture and require IL-2 supplementation for optimal growth and function.
+
+# Critical notes (read before starting)
+
+- KHYG-1 is a **human NK-like suspension cell line**; treat all material as BSL2.
+- Maintain cultures in **logarithmic growth phase**; avoid overgrowth and nutrient depletion.
+- IL-2 is required for optimal growth and should be **added fresh** to complete medium at each medium change.
+- Always pre-warm media and PBS to **37 °C** before use.
+- Avoid excessive centrifugation speeds and harsh pipetting to prevent cell damage.
+- Use controlled-rate freezing and appropriate freezing medium for cryopreservation.
+
+::: callout-warning
+Failure to supplement medium with IL-2 or allowing cultures to overgrow can lead to reduced viability, altered phenotype, and inconsistent experimental results.
+:::
+
+::: callout-tip
+Keep a simple culture log listing passage number, split ratio, IL-2 batch and concentration, and any deviations. This improves reproducibility across experiments.
+:::
+
+# Approximate timing
+
+- Thawing: 15–20 min  
+- Routine split/medium change: 10–20 min  
+- Cryopreservation: 20–30 min  
+
+**Total hands-on time per session:** ~15–30 min.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Medium and reagent preparation
+
+1. Prepare **KHYG-1 complete medium** based on R10 (BUF-GEN-R10-MED-001):
+   - RPMI 1640  
+   - 10% heat-inactivated FCS  
+   - 1% Pen/Strep  
+2. Prepare **IL-2 stock** according to manufacturer’s instructions.
+3. Immediately before use, supplement complete medium with IL-2:
+   - Final concentration: **100–200 IU/mL** (use a lab-validated concentration consistently).
+4. Pre-warm:
+   - KHYG-1 complete medium + IL-2  
+   - PBS (if washing is needed)  
+   to **37 °C**.
+
+::: callout-note
+IL-2 should not be stored long-term in medium; add fresh to pre-warmed R10 immediately before feeding or splitting cultures.
+:::
+
+## Step 2 – Thawing KHYG-1 cells
+
+1. Remove a cryovial of KHYG-1 cells from liquid nitrogen and immediately place it in a **37 °C water bath**.
+2. Gently swirl the vial until only a small ice crystal remains (1–2 min).
+3. Disinfect the outside of the vial with 70% ethanol and transfer to a biosafety cabinet.
+4. Transfer the vial contents to a 15 mL tube containing **9–10 mL** pre-warmed KHYG-1 complete medium **without IL-2** to dilute DMSO.
+5. Centrifuge at **300 g for 5 min** at room temperature.
+6. Carefully aspirate the supernatant without disturbing the cell pellet.
+7. Resuspend the cell pellet gently in **10–15 mL** pre-warmed KHYG-1 complete medium **with IL-2**.
+8. Transfer cells to an appropriate flask (e.g. T25 or T75).
+9. Place the flask in a **37 °C, 5% CO₂ incubator**.
+
+::: callout-warning
+Do not leave cells in freezing medium (DMSO-containing) after thawing. Wash promptly to minimise DMSO toxicity.
+:::
+
+## Step 3 – Routine culture and passaging
+
+### Recommended density range
+
+- Maintain cultures between approximately **2 × 10⁵** and **1 × 10⁶ cells/mL**.
+
+### Monitoring and splitting
+
+1. Gently resuspend the culture by pipetting up and down or gently swirling the flask.
+2. Remove a small aliquot for counting and viability assessment.
+3. If the cell density exceeds **1 × 10⁶ cells/mL**, split the culture:
+   - Remove a defined volume of culture (e.g. half to three-quarters of the flask volume).
+   - Replace with an equal volume of **fresh pre-warmed KHYG-1 medium with IL-2**.
+   - This corresponds to approximately a **1:2–1:4 split**, depending on growth.
+4. Aim to re-establish cultures at **2–3 × 10⁵ cells/mL** after splitting.
+5. Return flasks to the incubator (37 °C, 5% CO₂).
+
+### Medium change for lower-density cultures
+
+- If cells are at acceptable density but medium appears acidic or exhausted:
+  1. Gently resuspend cells.  
+  2. Transfer to a 15 mL tube and centrifuge at **300 g for 5 min**.  
+  3. Aspirate supernatant and resuspend in fresh medium with IL-2 at the desired density.  
+  4. Return to flask and incubator.
+
+::: callout-note
+Maintain consistent IL-2 concentrations at each passage and medium change. Record IL-2 lot numbers for traceability.
+:::
+
+## Step 4 – Short-term maintenance and experimental setup
+
+1. For experiments, seed KHYG-1 cells at a defined density consistent with experimental requirements (e.g. **2–3 × 10⁵ cells/mL**).
+2. Use fresh medium with IL-2 on the day before and the day of the experiment to ensure cells are in active growth phase.
+3. Avoid using cultures older than a defined passage number (e.g. **>20–25 passages** post-thaw) for critical experiments; restart from frozen stock as needed.
+
+## Step 5 – Cryopreservation of KHYG-1 cells
+
+### Freezing medium
+
+- Standard freezing medium for KHYG-1:
+  - **90% FCS + 10% DMSO**  
+  or  
+  - Cell suspension in R10 mixed 1:1 with **BUF-GEN-FREEZE-MIX-001** (2× freezing medium) to yield final 10% DMSO.
+
+### Freezing procedure
+
+1. Ensure KHYG-1 cells are in exponential growth phase (healthy, non-overgrown cultures).
+2. Transfer the culture to a 15 or 50 mL tube and centrifuge at **300 g for 5 min**.
+3. Aspirate the supernatant and gently resuspend the pellet in freezing medium at **5–10 × 10⁶ cells/mL**.
+4. Aliquot **1 mL** of cell suspension per labelled cryovial (include cell line name, passage number, date, and your initials).
+5. Place vials into a **controlled-rate freezing container** (e.g. Mr Frosty).
+6. Freeze at **−70/−80 °C** for at least **12–24 hours**.
+7. Transfer vials to **liquid nitrogen** for long-term storage.
+
+::: callout-warning
+Avoid extended handling of cells at room temperature in freezing medium; DMSO is toxic and should be minimised outside of the controlled freezing process.
+:::
+
+# Materials
+
+## Reagents
+
+| Reagent                          | Supplier         | Cat. # | Notes                                         |
+|----------------------------------|------------------|--------|-----------------------------------------------|
+| RPMI 1640                        | Various          | —      | Base for KHYG-1 medium                        |
+| Fetal calf serum (FCS)          | Various          | —      | 10% v/v in complete medium; 90% in freezing medium |
+| Penicillin/Streptomycin         | Various          | —      | 1% v/v in complete medium                     |
+| Recombinant human IL-2          | PeproTech/others | —      | Added fresh to 100–200 IU/mL                  |
+| DMSO, cell culture grade        | Sigma/others     | —      | 10% final for freezing                        |
+| PBS, 1×                         | Various          | —      | For optional washes                           |
+
+## Disposables
+
+| Item                       | Specification                      |
+|----------------------------|-----------------------------------|
+| T25 / T75 tissue culture flasks | Vent-cap, sterile             |
+| 15 mL and 50 mL tubes      | Sterile                           |
+| Cryovials                  | Suitable for liquid nitrogen      |
+| Serological pipettes       | Sterile (5–25 mL)                 |
+| Pipette tips               | Sterile (10 µL–1000 µL)           |
+
+## Equipment
+
+| Equipment                     | Specification / Notes                 |
+|-------------------------------|--------------------------------------|
+| CO₂ incubator                 | 37 °C, 5% CO₂                        |
+| Biological safety cabinet     | Class II, BSL2 work                  |
+| Benchtop centrifuge           | For 15/50 mL tubes, 300 g            |
+| Controlled-rate freezing unit | e.g. Mr Frosty                       |
+| −70/−80 °C freezer            | For initial freezing                 |
+| Liquid nitrogen storage       | For long-term storage                |
+| Water bath                    | 37 °C, for thawing                   |
+| Cell counter/hemocytometer    | For cell counting and viability      |
+
+# Buffers used
+
+- **BUF-GEN-R10-MED-001** – R10 complete medium (RPMI + 10% FCS + 1% Pen/Strep).  
+- **BUF-GEN-FREEZE-MIX-001** – 2× freezing medium (optional, when preparing final 10% DMSO freezing medium).  
+- PBS (standard laboratory PBS).
+
+# Troubleshooting
+
+| Problem                            | Possible cause                                 | Suggested solution                                          |
+|------------------------------------|-----------------------------------------------|-------------------------------------------------------------|
+| Slow growth or low expansion       | Insufficient IL-2; suboptimal passage density | Verify IL-2 concentration; maintain cells in log phase; refresh medium |
+| Drop in viability after thaw       | Prolonged DMSO exposure; slow thaw            | Thaw rapidly; wash DMSO promptly; ensure gentle handling   |
+| Culture appears granular or clumpy | Overgrowth; depleted medium                   | Split earlier; replace medium completely; re-seed at lower density |
+| Contamination (bacterial/fungal)   | Aseptic technique failure                     | Discard contaminated culture; disinfect incubator if needed; restart from stock |
+| Variable functional readouts       | Passage-dependent changes; inconsistent IL-2  | Use defined passage range; standardise IL-2 concentration and medium changes |
+
+# Safety (brief)
+
+- Handle KHYG-1 cells as human-derived BSL2 material.
+- Work in a Class II biological safety cabinet with appropriate PPE (lab coat, gloves, eye protection).
+- Dispose of all cell culture waste (media, flasks, pipettes) as biohazardous material.
+- Handle DMSO with care; avoid skin contact and inhalation.
+- Follow institutional guidelines for cryogen handling and storage in liquid nitrogen.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                      |
+|--------|------------|----------------|----------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto protocol for KHYG-1 culture.  |

@@ -1,0 +1,205 @@
+---
+title: "Isolation of Human PBMCs from Whole Blood by Ficoll Gradient"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "HUM-BLD-PBMC-ISO-001"
+version: "v1.0"
+description: "Isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation, followed by washing and optional cryopreservation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol describes the isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation. Whole blood is diluted with serum-free medium (R0), layered onto Ficoll, centrifuged to generate a mononuclear cell interface, and PBMCs are harvested, washed, and optionally cryopreserved in freezing medium.
+
+# Critical notes (read before starting)
+
+- Handle human blood and PBMCs as potentially infectious material under appropriate biosafety conditions (e.g. BSL2).
+- Carefully layer diluted blood onto Ficoll to avoid mixing; a sharp interface is essential for good yield and purity.
+- Use **rcf (g)** where possible rather than rpm; if rpm is used, ensure it corresponds to the correct g-force for your rotor.
+- Use low brake (or reduced deceleration) during the Ficoll spin to avoid disturbing the gradient.
+- Avoid aspirating Ficoll when harvesting the PBMC layer; take only the “fluffy” interface.
+- Keep cells at room temperature during the Ficoll separation and at room temperature or 4 °C during washes, as appropriate.
+- For cryopreservation, use controlled-rate freezing (e.g. Mr Frosty) and avoid leaving cells at room temperature with DMSO for prolonged periods.
+
+::: callout-warning
+Mixing of diluted blood with Ficoll or using high brake during the gradient centrifugation can collapse the interface and dramatically reduce PBMC yield and purity.
+:::
+
+::: callout-tip
+Prepare all R0 and R10 media, Ficoll tubes, and pre-labelled cryovials before starting. This simplifies handling once blood is collected and reduces the time PBMCs spend at room temperature.
+:::
+
+# Approximate timing
+
+- Setup and blood dilution: 10–15 min  
+- Ficoll gradient and spin: 30 min  
+- First PBMC wash: 15–20 min  
+- Second wash and resuspension in R10: 15–20 min  
+- Counting and freezing (if applicable): 20–30 min  
+
+**Total approximate time:** 1.5–2 hours.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Tube labelling and blood dilution
+
+1. Label 50 mL conical tubes for each blood sample.
+2. For each sample, add whole blood to a 50 mL tube:
+   - Transfer up to **17.5 mL whole blood** per 50 mL tube.
+3. Dilute blood **1:2** with R0 medium (RPMI without FCS; BUF-GEN-R0-MED-001):
+   - Add **17.5 mL R0** to 17.5 mL blood (total 35 mL).  
+   - If using less than 17.5 mL blood, top up to **35 mL** with R0.
+
+::: callout-note
+Dilution with R0 reduces viscosity, improves layering on Ficoll, and can improve separation quality.
+:::
+
+## Step 2 – Ficoll layering and gradient centrifugation
+
+1. In a fresh 50 mL tube, add **10 mL Ficoll** (density gradient medium).
+2. Using a 10 mL serological pipette, **slowly overlay** the **35 mL diluted blood** onto the Ficoll:
+   - Hold the Ficoll tube at a gentle angle.
+   - Carefully dispense the diluted blood onto the Ficoll surface, avoiding mixing.
+   - Maximum volume of diluted blood per tube: **35 mL**.
+3. Prepare all Ficoll gradients required and ensure they are balanced.
+4. Centrifuge at **450 g (rcf)** for **30 min** at room temperature with:
+   - Acceleration: 2  
+   - Deceleration: 1 (minimal brake)
+5. During centrifugation, prepare **10 mL tubes** containing **3 mL R0** (2 tubes per Ficoll gradient) for PBMC collection.
+
+## Step 3 – Harvest of PBMC layer and first wash
+
+1. After centrifugation, identify:
+   - Plasma / diluted medium layer on top.
+   - A white, “fluffy” PBMC layer at the plasma/Ficoll interface.
+   - Ficoll layer.
+   - Pellet of erythrocytes and granulocytes at the bottom.
+2. Using a sterile transfer pipette, gently harvest the PBMC layer:
+   - Carefully aspirate the interface and transfer to a 10 mL tube containing **3 mL R0**.
+   - Continue until the visible fluffy layer is removed.
+3. For each gradient, distribute the collected PBMCs across **two 10 mL tubes** (each with 3 mL R0).
+4. Centrifuge the 10 mL tubes at **400 g for 10 min** at room temperature:
+   - Acceleration: 9  
+   - Deceleration: 9
+5. Carefully remove and discard the supernatant without disturbing the cell pellets.
+
+## Step 4 – Second wash and resuspension in R10
+
+1. Resuspend each PBMC pellet in **3 mL R0**.
+2. Combine **two pellets into one tube** and top up to **10 mL R0**.
+3. Centrifuge at **400 g for 5 min** at room temperature:
+   - Acceleration: 9  
+   - Deceleration: 9
+4. Remove and discard the supernatant.
+5. Resuspend the pellet in **10 mL R10** (complete RPMI with 10 % FCS; BUF-GEN-R10-MED-001).
+6. If multiple gradients were processed for the same sample, combine their PBMC pellets into a single tube in R10.
+7. Centrifuge at **400 g for 5 min** at room temperature.
+8. Remove and discard the supernatant.
+9. Resuspend the pellet in **1–10 mL R10**, depending on pellet size and planned downstream use.
+
+## Step 5 – Counting and cryopreservation (optional)
+
+1. Mix the cell suspension gently and take a small aliquot for counting with trypan blue or an equivalent viability dye.
+2. Calculate the total number of viable PBMCs.
+3. For cryopreservation, aim for a final concentration of **10 × 10⁶ cells/mL** per cryovial.
+
+### 5.1 Preparation of 2× freezing medium (BUF-GEN-FREEZE-MIX-001)
+
+1. Prepare 2× freezing medium by mixing:
+   - 7 mL R0  
+   - 1 mL FCS  
+   - 2 mL DMSO  
+   (Final: R0 + 10 % FCS + 20 % DMSO; 2× relative to standard 10 % DMSO freezing medium.)
+2. Keep the 2× freezing medium on ice and protected from light.
+
+### 5.2 Adjust cell concentration and freeze
+
+1. Adjust PBMCs in R10 to **20 × 10⁶ cells/mL**:
+   - If only one cryovial is needed, pellet cells at **200 g for 5 min**, remove supernatant, and resuspend so that the cell pellet is in **500 µL R10** (20 × 10⁶ cells/mL).
+2. Add an **equal volume** of 2× freezing medium (BUF-GEN-FREEZE-MIX-001) to the cells:
+   - Final concentration: **10 × 10⁶ cells/mL** in **10 % DMSO**.
+3. Gently mix to avoid bubbles.
+4. Dispense **1 mL** of cell suspension into **pre-cooled cryovials**, labelled with:
+   - Patient name or anonymised ID.
+   - Sample type (PBMC).
+   - Date.
+5. Place cryovials into a **pre-cooled controlled-rate freezing container** (e.g. Mr Frosty) and transfer to a **−70 °C or −80 °C** freezer.
+6. After at least **overnight freezing**, move cryovials to **liquid nitrogen** for long-term storage.
+
+# Materials
+
+## Reagents
+
+| Reagent                                      | Supplier        | Cat. # | Notes                                                       |
+|---------------------------------------------|-----------------|--------|-------------------------------------------------------------|
+| Ficoll-Paque or equivalent density medium   | Cytiva / other  | –      | Density gradient for PBMC isolation                         |
+| RPMI 1640                                   | Various         | –      | Base for R0 and R10 media                                   |
+| Fetal calf serum (FCS), heat-inactivated    | Various         | –      | 10 % v/v in R10, 10 % v/v in freezing medium                |
+| Penicillin/Streptomycin                     | Various         | –      | 1 % v/v in R10                                              |
+| DMSO, cell culture grade                    | Various         | –      | 20 % in 2× freezing medium; 10 % final in cell suspension   |
+| PBS, sterile, 1× (optional)                 | Various         | –      | For additional washes if required                           |
+| Trypan blue or viability dye                | Various         | –      | For counting and assessing viability                        |
+
+## Disposables
+
+| Item                           | Specification                        |
+|--------------------------------|-------------------------------------|
+| 50 mL conical tubes            | Sterile, for blood and Ficoll       |
+| 10 mL round-bottom tubes       | Sterile, for PBMC collection        |
+| Cryovials                      | Suitable for liquid nitrogen storage|
+| Serological pipettes (5–25 mL) | For layering and media handling     |
+| Pipette tips                   | Sterile (10 µL, 200 µL, 1000 µL)    |
+| Transfer pipettes              | For harvesting PBMC interface       |
+| Biohazard waste containers     | For blood-contaminated disposables  |
+
+## Equipment
+
+| Equipment                          | Specification / Notes                           |
+|------------------------------------|------------------------------------------------|
+| Benchtop centrifuge                | For 50 mL and 10 mL tubes; adjustable rcf      |
+| Class II biological safety cabinet | For handling human blood and PBMCs             |
+| Controlled-rate freezing container | e.g. Mr Frosty, for −70/−80 °C freezing        |
+| −70 °C or −80 °C freezer           | For initial freezing                           |
+| Liquid nitrogen storage system     | For long-term storage                          |
+| Hemocytometer or automated cell counter | For PBMC counting                        |
+
+# Buffers used
+
+- **BUF-GEN-R0-MED-001** – RPMI 1640 without FCS (R0).  
+- **BUF-GEN-R10-MED-001** – RPMI 1640 with 10 % FCS and Pen/Strep (R10).  
+- **BUF-GEN-FREEZE-MIX-001** – 2× freezing medium (R0 + 10 % FCS + 20 % DMSO).
+
+# Troubleshooting
+
+| Problem                                   | Possible cause                                     | Suggested solution                                                  |
+|-------------------------------------------|----------------------------------------------------|---------------------------------------------------------------------|
+| Poor PBMC layer formation                 | Blood and Ficoll mixed; incorrect centrifuge settings | Carefully overlay blood; verify 450 g; reduce brake to minimal      |
+| Low PBMC yield                            | Interface harvested too shallow or too deep        | Practice aspirating only the fluffy interface; avoid Ficoll and pellet |
+| High granulocyte or RBC contamination     | Interface disturbed; Ficoll aspiration             | Harvest more gently; leave a thin Ficoll layer above the pellet     |
+| PBMC clumping                             | High cell concentration; extended room temperature time | Gently resuspend; consider DNase during processing; shorten handling time |
+| Reduced viability after thawing           | Inadequate freezing rate or DMSO handling          | Use controlled-rate freezing; minimize time with DMSO at room temperature |
+| Loss of cells during washes               | Pellets disturbed when decanting                   | Leave a small volume above the pellet; decant carefully; use pipette to remove residual supernatant |
+
+# Safety (brief)
+
+- Treat all human blood and PBMCs as potentially infectious material.
+- Work in a Class II biological safety cabinet and follow institutional BSL2 procedures.
+- Wear appropriate PPE (lab coat, gloves, eye protection) at all times when handling blood and PBMCs.
+- Dispose of blood-contaminated materials (tips, tubes, pipettes, Ficoll waste) as biohazardous waste.
+- Handle DMSO and cryogenic materials (e.g. liquid nitrogen) according to institutional chemical and cryogen safety guidelines.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                         |
+|--------|------------|----------------|-----------------------------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | First Quarto protocol version for PBMC isolation by Ficoll gradient. |

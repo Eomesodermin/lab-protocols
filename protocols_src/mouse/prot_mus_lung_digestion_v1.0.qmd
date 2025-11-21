@@ -1,0 +1,167 @@
+---
+title: "Mouse Lung Digestion to Single-Cell Suspension"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-LNG-DIG-001"
+version: "v1.0"
+description: "Enzymatic digestion of mouse lung to generate viable single-cell suspensions for flow cytometry, sorting, and single-cell omics workflows."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This protocol describes the enzymatic and mechanical dissociation of mouse lung tissue to obtain single-cell suspensions suitable for flow cytometry, FACS sorting, and single-cell sequencing. Lung tissue is fibrous and elastic; therefore, digestion requires both **collagenase** and **DNase** together with thorough mechanical disruption.
+
+# Critical notes (read before starting)
+
+- Keep all buffers and tubes **cold** except during digestion at **37 °C**.
+- Use **fresh, pre-warmed digestion buffer** with DNase added on the day of use.
+- Lung tissue contains **trapped blood**; incomplete perfusion increases RBC contamination.
+- Do not over-digest: limit digestion to **30–35 minutes**, as prolonged incubation reduces viability.
+- After digestion, perform all downstream steps on **ice**.
+- Use **70 μm strainers** and do not reuse between lungs.
+
+# Approximate timing
+
+- Dissection: **5 min**
+- Mince + pre-digestion handling: **5 min**
+- Enzymatic digestion: **30–35 min**
+- Mechanical processing and washes: **20–25 min**
+
+Total hands-on time: **~60 minutes per lung** (less when batching).
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Lung collection
+
+1. Euthanise the mouse using an approved method.
+2. Open the thoracic cavity to expose the lungs.
+3. (Optional but recommended) Perfuse via the right ventricle with **cold PBS** until lungs visibly blanch, reducing RBC content.
+4. Excise the entire lung block and place it in a **10 cm petri dish** containing **cold PBS or FACS/MACS Buffer**.
+
+::: callout-tip
+Perfusion markedly improves final leukocyte purity and reduces RBC lysis requirements.
+:::
+
+## STEP 2 – Tissue mincing
+
+1. Blot the lungs briefly on sterile tissue to remove excess fluid.
+2. Transfer to a fresh **10 cm dish** and mince thoroughly using scissors or scalpels until small fragments are obtained.
+3. Transfer the minced lung into a **50 mL Falcon tube** containing **5 mL Lung Digestion Buffer** (see buffer protocol `BUF-LNG-DIG-v1.0`).
+
+## STEP 3 – Enzymatic digestion
+
+1. Place tubes on a **37 °C benchtop shaker** at **250 rpm**.
+2. Incubate for **30–35 minutes**.
+
+::: callout-warning
+Over-digestion can decrease viability and negatively impact epithelial and myeloid populations.
+:::
+
+## STEP 4 – Mechanical dissociation
+
+1. After digestion, add **FACS/MACS Buffer** to bring total volume to **25 mL**.
+2. Pour the suspension onto a **70 μm cell strainer** placed on a **10 cm dish**.
+3. Mechanically mash the digested lung through the mesh using the **back of a 5 mL syringe plunger**.
+4. Rinse the strainer with **cold FACS/MACS Buffer** until no visible tissue remains.
+5. Transfer the filtered cell suspension back into a **50 mL tube**.
+6. Top up to **50 mL** with cold FACS/MACS Buffer.
+7. Centrifuge at **400 g for 5 minutes at 4 °C**.
+8. Carefully discard the supernatant.
+
+## STEP 5 – RBC removal (if required)
+
+Lung digests vary in RBC content. If erythrocytes are visible:
+
+1. Add **1 mL 1× RBC Lysis Buffer** (e.g. HybriMax) per lung.  
+2. Mix gently and incubate for **3–5 minutes at room temperature**.
+3. Immediately top up to **50 mL** with cold FACS/MACS Buffer.
+4. Centrifuge at **400 g for 5 minutes at 4 °C**.
+5. Discard supernatant.
+
+::: callout-note
+If the lung was perfused effectively, this step may not be needed.
+:::
+
+## STEP 6 – Final wash and resuspension
+
+1. Loosen pellet by gentle flicking or brief vortexing.
+2. Resuspend in **5 mL FACS/MACS Buffer** (or other desired volume).
+3. Filter again through a **fresh 70 μm strainer** if clumping is observed.
+4. Keep the suspension **on ice** until staining, sorting, or single-cell workflows.
+
+{{< pagebreak >}}
+
+# Buffers used
+
+- **Lung Digestion Buffer** – `BUF-LNG-DIG-v1.0`  
+  - Typically DMEM (or RPMI) + Collagenase D or Collagenase IV + DNase I.
+- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
+- **RBC Lysis Buffer** – `BUF-RBC-HYB-v1.0`
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|--------|------------------|-------|
+| Lung Digestion Buffer | In-house | Pre-warmed to 37 °C |
+| FACS/MACS Buffer | In-house | Cold |
+| RBC Lysis Buffer (1×) | [TBD] | Use only if needed |
+| PBS (1×) | Any | For perfusion and rinsing |
+
+## Disposables
+
+| Item | Notes |
+|------|-------|
+| 50 mL Falcon tubes | 1 per lung |
+| 10 cm petri dishes | For mincing & filtering |
+| 70 μm strainers | Do not reuse |
+| 5 mL syringes (no needle) | For mechanical dissociation |
+| Scissors, scalpels | For mincing |
+| Transfer pipettes | For washing & transfers |
+
+## Equipment
+
+| Equipment | Notes |
+|-----------|-------|
+| Benchtop shaker/incubator | 37 °C, 250 rpm |
+| Benchtop centrifuge | 400 g at 4 °C |
+| Biosafety cabinet (Class II) | Recommended |
+| Timer | For digestion and lysis steps |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Issue | Possible cause | Suggested solution |
+|-------|----------------|---------------------|
+| Persistent clumps | Incomplete digestion | Increase mechanical dissociation; do not over-digest |
+| High RBC contamination | Lungs not perfused | Perform RBC lysis or perfuse before collection |
+| Low viability | Over-digestion or RT handling | Limit digestion to 30–35 min; keep washes cold |
+| Excess debris | Harsh mechanical disruption | Use gentle, repetitive plunger strokes |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- Treat mouse tissues as potentially infectious and process according to institutional S1/S2 rules.
+- Enzyme mixtures (Collagenase, DNase) may cause irritation; wear gloves and eye protection.
+- Dispose of sharps, tissues, and enzymatic waste according to facility guidelines.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for lung digestion |

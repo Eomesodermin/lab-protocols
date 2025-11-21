@@ -1,0 +1,170 @@
+---
+title: "CellTrace Violet (CTV) Staining of Lymphocytes"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "GEN-CTV-STAIN-001"
+version: "v1.0"
+description: "Staining of lymphocytes (e.g. PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol describes the staining of lymphocytes (e.g. PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry. Cells are thawed (if frozen), rested in complete medium, stained with CTV in protein-free buffer, and then washed and resuspended in complete medium prior to stimulation or culture.
+
+The protocol is written for PBMCs but can be applied to other lymphocyte preparations with minor adjustments.
+
+# Critical notes (read before starting)
+
+- Perform CTV staining in **protein-free buffer (PBS without FCS)**. Serum during the staining step will markedly reduce dye uptake.
+- Optimise CTV concentration for your cell type and assay; the 0.2–0.5 µL/mL range given here is based on prior titration.
+- Protect CTV and stained cells from light at all times to prevent photobleaching.
+- Ensure cells are in good condition and, if thawed, rested in complete medium before staining.
+- Keep incubation times and temperatures consistent between experiments for reproducible proliferation profiles.
+- Use appropriate biosafety practices for human material (e.g. PBMCs).
+
+::: callout-warning
+Over-staining or prolonged exposure to high CTV concentrations can be toxic and alter cell behaviour. Always work within a titrated concentration range and adhere to the recommended 20 min staining time.
+:::
+
+::: callout-tip
+When testing a new batch of CTV or a new cell type, include a small titration panel (e.g. 0.1, 0.2, 0.5, 1.0 µL/mL) to identify the lowest concentration that provides a clear proliferation profile.
+:::
+
+# Approximate timing
+
+- Thawing and resting PBMCs (if starting from frozen): ~60 min  
+- CTV staining: 20 min  
+- Quenching and wash: 10–20 min  
+- Final resuspension and equilibration: 10–15 min  
+
+**Total approximate time (from thawed, rested cells):** ~45–60 min.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Cell preparation and resting
+
+1. If using frozen PBMCs:
+   1. Thaw vials rapidly in a 37 °C water bath until a small ice crystal remains.
+   2. Immediately transfer the cell suspension into a tube containing pre-warmed R10 medium (BUF-GEN-R10-MED-001) and mix gently.
+   3. Centrifuge at ~400–500 g for 5 min at room temperature.
+   4. Discard the supernatant and resuspend cells in fresh R10.
+2. Optionally add DNase I (e.g. 10 µL/mL of an appropriate stock) to reduce clumping during the initial rest period.
+3. Incubate cells at 37 °C, 5 % CO₂ for ~1 hour to recover from thawing and improve viability.
+4. Count cells and assess viability using trypan blue or an equivalent method.
+5. Adjust the cell concentration as needed to allow resuspension at **1 × 10⁶ cells/mL in PBS** in the next step.
+
+## Step 2 – Preparation of CellTrace Violet stock
+
+1. Reconstitute one vial of CellTrace Violet in **20 µL DMSO** in a biosafety cabinet.
+2. Mix gently by pipetting; avoid foaming or vortexing.
+3. Aliquot the stock if desired and store according to the manufacturer’s recommendations (typically −20 °C, protected from light).
+
+::: callout-note
+Prepare CTV stock fresh on the day of use or use single-use aliquots to avoid repeated freeze–thaw cycles.
+:::
+
+## Step 3 – CTV staining
+
+1. Pellet cells and resuspend in **PBS without FCS** at **1 × 10⁶ cells/mL**.
+2. For each mL of cell suspension, add **0.2–0.5 µL** of the CTV stock solution (based on prior titration).
+3. Immediately mix by gentle pipetting or brief low-speed vortexing to ensure even distribution of the dye.
+4. Incubate cells for **20 min at room temperature**, protected from light.
+5. During incubation, gently invert or tap the tube once or twice to maintain a uniform suspension.
+
+::: callout-warning
+Do not stain cells in R10 or other serum-containing media. Proteins in the medium will quench the dye and lead to weak or inconsistent staining.
+:::
+
+## Step 4 – Quenching and washing
+
+1. After 20 min, add **5× the original staining volume** of pre-warmed R10 (e.g. add 5 mL R10 to 1 mL stained cells) to quench unbound dye.
+2. Incubate for **5 min at room temperature**, protected from light.
+3. Centrifuge at **~400–500 g for 5 min** (or ~1200 rpm in a standard cell-culture centrifuge, if this corresponds to the correct g-force).
+4. Discard the supernatant carefully.
+5. Optional extended wash (recommended for higher CTV concentrations or sensitive cell types):
+   1. Resuspend cells in up to 10 mL R10.  
+   2. Centrifuge again at ~400–500 g for 5 min.  
+   3. Discard the supernatant.  
+   4. Repeat once more if residual dye is a concern.
+
+## Step 5 – Final resuspension and equilibration
+
+1. Resuspend cells in R10 (BUF-GEN-R10-MED-001) at the desired concentration for stimulation or culture (commonly 0.5–2 × 10⁶ cells/mL).
+2. Incubate for at least **10 min at 37 °C**, 5 % CO₂ to allow stabilization of dye distribution within the cells.
+3. Proceed with downstream steps such as:
+   - Addition of stimuli for proliferation assays.
+   - Plating for co-culture experiments.
+   - Subsequent staining for surface markers prior to acquisition.
+
+# Materials
+
+## Reagents
+
+| Reagent                                     | Supplier           | Cat. # | Notes                                                      |
+|--------------------------------------------|--------------------|--------|------------------------------------------------------------|
+| CellTrace Violet proliferation dye         | Invitrogen / similar | –    | Fluorescent proliferation dye; store as per manufacturer   |
+| RPMI 1640                                  | Various            | –      | Base for R10 (BUF-GEN-R10-MED-001)                         |
+| Fetal calf serum (FCS), heat-inactivated   | Various            | –      | 10 % v/v in R10                                            |
+| Penicillin/Streptomycin                    | Various            | –      | 1 % v/v in R10                                             |
+| DNase I (optional)                         | Various            | –      | To reduce clumping during thaw/rest                        |
+| PBS, sterile, 1×                           | Various            | –      | Protein-free staining buffer                               |
+| DMSO, cell culture grade                   | Various            | –      | Solvent for CTV stock                                      |
+
+## Disposables
+
+| Item                           | Specification                     |
+|--------------------------------|----------------------------------|
+| 15 mL and/or 50 mL tubes       | Sterile, conical                 |
+| Pipette tips (10 µL, 200 µL, 1000 µL) | Sterile               |
+| Serological pipettes (5–25 mL) | For media handling               |
+| Cryovials                      | If starting from frozen PBMCs    |
+| Waste containers               | For biohazardous material        |
+
+## Equipment
+
+| Equipment                         | Specification / Notes                            |
+|-----------------------------------|-------------------------------------------------|
+| CO₂ incubator                     | 37 °C, 5 % CO₂                                  |
+| Benchtop centrifuge               | For 15/50 mL tubes; adjustable speed (g or rpm) |
+| Class II biological safety cabinet| For handling human samples and CTV              |
+| Water bath                        | 37 °C; for thawing frozen vials                 |
+| Cell counter or hemocytometer     | For cell counting                               |
+
+# Buffers used
+
+- **BUF-GEN-R10-MED-001** – Complete RPMI 1640 medium with 10 % FCS, Pen/Strep (R10).  
+- **PBS, 1× (no FCS)** – Protein-free staining buffer (no dedicated buffer ID if defined as standard lab PBS).
+
+# Troubleshooting
+
+| Problem                                   | Possible cause                               | Suggested solution                                                |
+|-------------------------------------------|----------------------------------------------|-------------------------------------------------------------------|
+| Weak CTV signal                           | Under-staining; serum present during staining; short incubation | Increase CTV within titrated range; ensure staining in PBS; maintain full 20 min incubation. |
+| Very bright, non-resolving peaks          | Over-staining (too high CTV); too high cell density | Reduce CTV volume per mL; keep cells at 1 × 10⁶/mL during staining. |
+| Reduced viability after staining          | Excess CTV; prolonged staining; poor thaw    | Lower CTV concentration; reduce staining time; improve thaw and recovery conditions. |
+| Cell clumping                             | Insufficient DNase; high cell concentration  | Add DNase during rest; gently resuspend; pass through a cell strainer if needed. |
+| High background in downstream panels      | Incomplete quenching or insufficient washes  | Include extended R10 washes; verify centrifuge speeds and times. |
+
+# Safety (brief)
+
+- Handle human PBMCs and other primary cells as potentially infectious material under appropriate biosafety conditions (e.g. BSL2).
+- Wear standard PPE (lab coat, gloves, eye protection) when handling samples, CTV, and DMSO.
+- Work with CTV and DMSO in a biological safety cabinet to minimize exposure.
+- Dispose of all human-derived material, contaminated tips, tubes, and media as biohazardous waste according to local regulations.
+- Follow institutional guidelines for the safe handling and disposal of organic solvents such as DMSO.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                      |
+|--------|------------|----------------|--------------------------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | First Quarto protocol version for generic CellTrace Violet staining of lymphocytes. |

@@ -1,0 +1,307 @@
+---
+title: "In vitro NK Cell Proliferation Assay Using CellTrace Dyes"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-SPL-NK-PROLIF-001"
+version: "v1.0"
+description: "In vitro proliferation assay for murine NK cells using CellTrace dyes, starting from splenic NK cells isolated by magnetic enrichment and/or sorting, and cultured in NK medium containing IL-15."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This protocol describes an in vitro proliferation assay for murine NK cells using CellTrace dyes (e.g. CellTrace Violet, CTV, or CellTrace Blue, CTB). NK cells are isolated from mouse spleens using a magnetic NK isolation kit, optionally further purified or subsetted by flow cytometric sorting (e.g. CD160⁺ vs CD160⁻ NK cells), labelled with CellTrace dye, and cultured in NK medium containing IL-15. Proliferation is quantified by dilution of the CellTrace dye over time by flow cytometry.
+
+The protocol assumes access to a magnetic NK isolation kit (e.g. EasySep Mouse NK cell isolation kit) and a flow cytometer or cell sorter.
+
+# Critical notes (read before starting)
+
+- Plan mouse numbers and genotypes in advance based on the number of conditions, timepoints, and desired biological replicates.
+- Use the same sex, age range, and housing conditions where possible to minimise biological variability.
+- Keep cells, buffers, and reagents at appropriate temperatures:
+  - Room temperature for the EasySep NK isolation steps (as per kit instructions).  
+  - 4 °C/on ice for staining and sorting.  
+  - 37 °C, 5 % CO₂ for culture.
+- CellTrace staining must be done in PBS without serum; serum-containing medium should be used only for quenching and washing.
+- Minimise time between sorting and plating to preserve viability and function.
+- IL-15 should be added fresh to NK medium immediately before culture; avoid repeated freeze–thaw cycles.
+
+::: callout-warning
+Overly harsh handling (vigorous pipetting, extended time at room temperature, or delayed plating after sorting) can markedly reduce NK cell viability and impair proliferation readouts.
+:::
+
+::: callout-tip
+Pre-coating sort collection tubes with FCS and using NK medium containing IL-15 in the collection and culture steps can improve post-sort recovery and proliferation.
+:::
+
+# Approximate timing
+
+- Preparations on the day before sort: 30–60 min  
+- Spleen harvest and NK isolation: 1.5–2 hours (depending on mouse numbers)  
+- CellTrace staining and surface staining: 1–1.5 hours  
+- Sorting of NK subsets (if applicable): 1–3 hours (panel- and sample-dependent)  
+- Plating and culture setup: 30–60 min  
+- Culture duration: assay-dependent (typically 2–5 days, with defined timepoints)  
+
+**Hands-on time (excluding sort runtime and culture):** ~4–6 hours.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Step 1 – Preparations on the day before sort
+
+1. Determine:
+   - Mouse genotypes (e.g. WT, CD160 KO, IFNAR1 KO, etc.).
+   - Number of mice per genotype and per experimental group.
+   - Number of timepoints and replicates for the proliferation assay.
+2. Assign mice to the experiment in PyRAT (or equivalent animal management system) and record a cohort ID.
+3. Export the list of mice and provide it to the animal facility (e.g. Kathrin) as required.
+
+4. Prepare sort collection tubes:
+   1. For each sorted population (e.g. total NK, CD160⁺ NK, CD160⁻ NK), prepare 15 mL Falcon tubes.
+   2. Add 2–3 mL FCS to each tube.
+   3. Place tubes on a roller at 4 °C (cold room) or in the fridge overnight to allow coating.
+
+5. Prepare 50 mL Falcon tubes with 1× PBS for spleen harvest:
+   - One tube per mouse or per pooled group (as per experimental design).
+   - Store at 4 °C until use.
+
+## Step 2 – Preparations on the day of sort: spleen harvest
+
+1. Bring prepared PBS tubes and transport containers to the animal facility.
+2. Remove cages of mice assigned to the experiment:
+   - Pool mice in groups as required (e.g. groups of 10 within a cage).
+   - Sacrifice mice (e.g. in CO₂ chamber) according to institutional guidelines.
+3. Harvest spleens:
+   1. Place each spleen into a 50 mL tube containing cold PBS (5–10 mL).
+   2. Keep tubes on ice during transport back to the lab.
+4. Refer to the relevant SOP for detailed organ harvest and splenocyte isolation, if needed.
+
+## Step 3 – Preparation of splenocyte suspensions
+
+1. In a biosafety cabinet, transfer each spleen to a sterile Petri dish containing cold PBS.
+2. Gently homogenise the spleen through a suitable cell strainer (e.g. 70 µm) using the plunger of a 5 or 10 mL syringe into a 50 mL tube.
+3. Rinse the strainer with additional PBS to maximise cell recovery.
+4. Centrifuge at ~400–500 g for 5 min at 4 °C.
+5. Discard supernatant and resuspend the cell pellet in FACS buffer (BUF-GEN-FACS-BUF-001) or PBS, as appropriate for counting.
+6. Count splenocytes and record total cell numbers.
+
+::: callout-note
+A rough guideline used in the original SOP is ~1 × 10⁸ splenocytes per mouse. This can be used for initial planning but always verify by counting.
+:::
+
+## Step 4 – NK cell isolation from spleen
+
+Follow the instructions of the magnetic NK cell isolation kit (e.g. EasySep Mouse NK cell isolation kit) and the recommendations for temperature and volumes.
+
+1. Calculate the total splenocyte count and volume needed for isolation:
+   - For example, if using 14 spleens and assuming ~1 × 10⁸ cells per spleen, plan for ~1.4 × 10⁹ splenocytes.
+   - Adjust volumes and kit reagent amounts accordingly.
+2. Adjust the splenocyte suspension to **1 × 10⁸ cells/mL** in FACS buffer or kit-specified buffer at room temperature.
+3. For comparison of NK cells from two genotypes (e.g. WT vs CD160 KO):
+   - Perform **complete NK isolation** as per the kit instructions for each genotype (full recommended reagent volumes per mL of cells).
+4. For experiments requiring NK subsets (e.g. CD160⁺ vs CD160⁻ NK from WT mice):
+   - Perform a **pre-enrichment** step:
+     - Use the same kit but with **half the indicated volume** of isolation cocktail and magnetic beads per mL of cells (to enrich but not fully deplete other cells).
+5. Keep reagents, buffers, and cells at room temperature during the magnetic isolation, as recommended by the kit.
+
+::: callout-warning
+Deviating from the manufacturer’s temperature recommendations (e.g. performing kit steps on ice instead of room temperature) can substantially reduce NK cell yield and purity.
+:::
+
+6. After isolation or pre-enrichment, resuspend NK-enriched cells in PBS for CellTrace staining (see Step 5).
+
+## Step 5 – CellTrace staining of NK cells
+
+This step uses CellTrace Violet (CTV) or CellTrace Blue (CTB) to track divisions.
+
+1. Count enriched NK cells and calculate the volume needed for staining.
+2. Resuspend NK cells at **1 × 10⁶ cells/mL** in PBS (no FCS).
+3. Prepare CTV or CTB according to the manufacturer’s instructions:
+   - Reconstitute the vial in DMSO to create a concentrated stock.
+4. Stain NK cells:
+   - For CTV: use a final concentration corresponding to **1:5000** of the stock (as used in the original SOP).  
+   - For CTB: use a final concentration corresponding to **1:1000** of the stock.
+5. Incubate at **37 °C** for **15 min**, protected from light.
+
+6. Controls:
+   - Before staining, remove aliquots of cells for:
+     - Unstained control.
+     - Live/dead-only control.
+   - After CTV/CTB staining, remove an aliquot for:
+     - CTV/CTB single-stain control.
+
+7. Quench and wash:
+   1. Add complete NK medium (BUF-MUS-NK-MED-001; cRPMI with supplements and IL-15 omitted at this stage or added as per your lab practice) to a volume sufficient to quench the dye.
+   2. Centrifuge at ~400 g for 5 min.
+   3. Discard supernatant and resuspend in fresh NK medium or FACS buffer as required for subsequent surface staining.
+
+::: callout-warning
+Incorrect CTV/CTB concentration or prolonged staining can cause toxicity and alter NK cell behaviour. Always work within titrated ranges and avoid exceeding 15 min at 37 °C.
+:::
+
+## Step 6 – Surface staining for sorting (if sorting NK subsets)
+
+If sorting CD160⁺ and CD160⁻ NK subsets or other NK subsets, perform surface staining after CTV/CTB labelling.
+
+1. Prepare surface staining master mixes in FACS buffer (BUF-GEN-FACS-BUF-001), including:
+   - Fc block (e.g. 1:200).  
+   - Surface antibodies for NK identification and subset discrimination (e.g. NK1.1, NKp46, CD3, CD160, etc.).  
+   - Live/dead dye, if not already integrated earlier.
+2. Stain up to **5 × 10⁶ cells in 50 µL** surface staining mix per tube.
+3. Incubate for **30 min at 4 °C**, protected from light.
+4. Add ~4× the staining volume of FACS buffer to wash.
+5. Centrifuge at **400 g for 5 min**, discard supernatant.
+6. Resuspend the cell pellet at **10–15 × 10⁶ cells/mL** in PBS for sorting (e.g. for a 70 µm nozzle).
+
+7. Prepare single-colour controls:
+   - Single-stain controls for each fluorochrome in PBS.
+   - Live/dead controls in beads and/or cells.
+
+8. Keep all stained cells and controls cold (4 °C or on ice) and protected from light until sorting.
+
+## Step 7 – Sorting and collection
+
+1. Set up the cell sorter (e.g. BD FACS Aria) with the appropriate nozzle (e.g. 70 µm) and sorting strategy for NK cells and subsets.
+2. Use FCS-coated collection tubes prepared in Step 1:
+   - Add an appropriate volume of NK medium (BUF-MUS-NK-MED-001) to each tube before sorting.
+3. Sort NK populations:
+   - For total NK proliferation: sort or gate total NK cells as required.  
+   - For subset proliferation (e.g. CD160⁺ vs CD160⁻): sort each subset into separate collection tubes.
+4. Keep collection tubes at 4 °C or room temperature as appropriate and move them to the incubator as soon as sorting is complete.
+
+::: callout-tip
+Monitor sort purity and yield during the run to ensure that enough events are collected for the planned timepoints and replicates.
+:::
+
+## Step 8 – In vitro culture and proliferation assay
+
+1. After sorting, count the NK cell populations (e.g. using a microscope or automated cell counter).
+2. Centrifuge at **400 g for 5 min** and resuspend in NK medium (BUF-MUS-NK-MED-001) supplemented with IL-15.
+   - Add IL-15 to a final concentration of **100 IU/mL** immediately before plating.
+3. Plate sorted NK cells in suitable culture plates (e.g. 96-well U- or flat-bottom plates):
+   - Typical seeding density: **20–50 × 10³ cells per well** in **200 µL** NK medium + IL-15.  
+   - Adjust based on yield and number of timepoints.
+
+4. Culture conditions:
+   - Incubate plates at **37 °C**, 5 % CO₂.
+   - Include:
+     - “Day 0” samples (can be fixed immediately after sorting).  
+     - Multiple timepoints (e.g. day 2, 3, 4, etc.).
+
+5. Controls:
+   - Unstimulated NK cells (IL-15 only).  
+   - NK cells with additional stimuli, if desired (cytokines, co-stimulation, etc.).  
+   - CTV/CTB single-stain and unstained controls (can be fixed early).
+
+6. For each selected timepoint:
+   1. Harvest NK cells from the wells.
+   2. Optionally stain for additional surface markers (using standard FACS buffer and staining conditions).
+   3. Fix cells in 4 % PFA or Histofix as per your lab standard.
+
+::: callout-note
+The original SOP notes that Day 0 populations and single-stain controls can be fixed immediately for reference; subsequent timepoints should be acquired using the same cytometer settings as Day 0.
+:::
+
+## Step 9 – Acquisition and analysis
+
+1. Acquire all timepoints on the same flow cytometer (e.g. Cytek Aurora) using:
+   - The same voltage/PMT settings.
+   - Consistent compensation and gating strategy.
+2. When possible, use:
+   - Counting beads and/or  
+   - A fixed acquisition volume and flow rate.
+
+3. Analyse CellTrace dilution profiles for each NK population:
+   - Determine the number of divisions.  
+   - Calculate proliferation indices and division indices as required.  
+   - Compare genotypes or conditions (e.g. WT vs KO, CD160⁺ vs CD160⁻).
+
+# Materials
+
+## Reagents
+
+| Reagent                                           | Supplier           | Cat. # | Notes                                                         |
+|--------------------------------------------------|--------------------|--------|---------------------------------------------------------------|
+| RPMI 1640 + GlutaMAX                              | Gibco / similar    | –      | Base for NK medium (BUF-MUS-NK-MED-001)                       |
+| Fetal calf serum (FCS), heat-inactivated         | Various            | –      | 10 % v/v in NK medium; also used for FCS-coating sort tubes   |
+| Penicillin/Streptomycin                          | Gibco / similar    | –      | 1 % v/v in NK medium                                          |
+| Sodium pyruvate (NaPy)                           | Gibco / similar    | –      | 1 % v/v in NK medium                                          |
+| HEPES                                            | Gibco / similar    | –      | 1 % v/v in NK medium                                          |
+| Non-essential amino acids (NEAA)                 | Gibco / similar    | –      | 1 % v/v in NK medium                                          |
+| β-mercaptoethanol                                | Sigma / similar    | –      | Added to NK medium (e.g. 50 µM final)                         |
+| IL-15                                            | PeproTech / similar| –      | Added fresh to NK cultures at 100 IU/mL                       |
+| 1× DPBS (PBS)                                    | Gibco / similar    | –      | For washes, CellTrace staining, spleen processing             |
+| FACS buffer (BUF-GEN-FACS-BUF-001)               | In-house           | –      | PBS + 2 % FCS + 2 mM EDTA                                     |
+| EasySep Mouse NK cell isolation kit              | StemCell Technologies | 19855 | For NK cell isolation/pre-enrichment                         |
+| CellTrace Violet (CTV) or CellTrace Blue (CTB)   | Invitrogen / similar | –    | For proliferation tracking                                    |
+| Live/dead dye                                    | Various            | –      | For viability assessment during sorting/acquisition           |
+| Surface antibodies for NK phenotyping            | Various            | –      | e.g. NK1.1, NKp46, CD3, CD160; titration required             |
+| Histofix or 4 % PFA                              | Various / in-house | –      | For fixation of samples                                       |
+
+## Disposables
+
+| Item                                 | Specification                               |
+|--------------------------------------|--------------------------------------------|
+| 50 mL sterile conical tubes          | For spleen processing and washes           |
+| 15 mL sterile tubes                  | For sort collection                        |
+| Petri dishes                         | For spleen homogenisation                  |
+| 70 µm cell strainers                 | For generating single-cell suspensions     |
+| Syringe plungers (2–5 mL)            | For mechanical dissociation                |
+| 96-well plates (U or flat-bottom)    | For NK cell culture                        |
+| FACS tubes (14 mL or 7 mL polystyrene)| For sorting and acquisition               |
+| Pipette tips (10 µL, 200 µL, 1000 µL)| Sterile                                    |
+| Cryovials (optional)                 | If freezing intermediate cell stocks       |
+
+## Equipment
+
+| Equipment                             | Specification / Notes                                  |
+|---------------------------------------|-------------------------------------------------------|
+| CO₂ chamber / euthanasia setup        | As per institutional animal welfare guidelines        |
+| Biological safety cabinet             | For all cell handling and staining                    |
+| Dissection tools                      | Scissors, forceps, autoclaved                         |
+| Benchtop centrifuge                   | Refrigerated, suitable for 15/50 mL tubes             |
+| Gentle shaker or rocker               | For FCS-coating tubes (optional)                      |
+| Magnet for NK cell isolation          | Compatible with EasySep kit                           |
+| Flow cytometer and/or cell sorter     | e.g. BD FACS Aria, Cytek Aurora                       |
+| Cell counter or microscope with haemocytometer | For cell counting                            |
+| CO₂ incubator                         | 37 °C, 5 % CO₂                                        |
+
+# Buffers used
+
+- **BUF-GEN-FACS-BUF-001** – FACS buffer (PBS + 2 % FCS + 2 mM EDTA).  
+- **BUF-MUS-NK-MED-001** – NK culture medium (RPMI 1640 + 10 % FCS + Pen/Strep + NaPy + HEPES + NEAA + β-mercaptoethanol; IL-15 added fresh to 100 IU/mL at the time of culture).  
+- **PBS, 1×** – Standard phosphate-buffered saline (no dedicated buffer file if already defined in the system).
+
+# Troubleshooting
+
+| Problem                                        | Possible cause                                         | Suggested solution                                                   |
+|-----------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------|
+| Low NK recovery after isolation                | Suboptimal kit use; incorrect temperatures             | Recheck EasySep protocol; ensure room temperature during isolation. |
+| Poor sort purity                               | Incomplete staining; gating strategy issues; low event rates | Optimise staining; review gating; increase event collection time.   |
+| Weak or unclear CellTrace peaks                | Under-staining; serum present during staining; long time to analysis | Optimise CTV/CTB concentration; ensure staining in PBS; acquire promptly. |
+| Reduced viability post-sorting                 | Long sort duration; harsh sheath pressure; delayed plating | Shorten runs; adjust sort settings; plate cells quickly in warm NK medium. |
+| No or minimal proliferation                    | Inadequate IL-15; poor cell health; suboptimal culture density | Confirm IL-15 activity and concentration; adjust seeding density; review culture conditions. |
+| Excessive background proliferation in controls | Contaminating stimuli; high IL-15 dose                 | Check media and plasticware; titrate IL-15; include true unstimulated controls. |
+
+# Safety (brief)
+
+- Perform all animal work under approved licences and institutional animal welfare regulations.
+- Handle murine tissues and cells in a biological safety cabinet following local biosafety guidelines.
+- Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+- Dispose of sharps (needles, scalpels) in designated sharps containers.
+- Treat all waste containing animal material, media, or dyes (CTV/CTB) as biohazardous and dispose of according to institutional policies.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                                    |
+|--------|------------|----------------|----------------------------------------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | First Quarto protocol version for in vitro NK proliferation using CellTrace dyes. |

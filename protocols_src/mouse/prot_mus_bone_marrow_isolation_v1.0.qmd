@@ -1,0 +1,167 @@
+---
+title: "Mouse Bone Marrow Isolation to Single-Cell Suspension"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-BM-ISO-001"
+version: "v1.0"
+description: "Isolation of mouse bone marrow cells from long bones for flow cytometry, sorting, and downstream immunological assays."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This protocol describes the isolation of bone marrow cells from mouse long bones (typically femurs and tibias) by flushing with buffer, mechanical dispersion, and optional RBC lysis. The resulting suspension is suitable for flow cytometry, FACS sorting, and functional assays.
+
+# Critical notes (read before starting)
+
+- Work on **ice** or at **4 °C** after marrow isolation to preserve viability.
+- Keep bones **moist at all times** in cold buffer; do not allow them to dry.
+- Use fresh, sterile instruments and avoid introducing bone shards into the final suspension.
+- If erythrocyte content is high, perform **controlled RBC lysis**; avoid prolonged exposure to lysis buffer.
+
+# Approximate timing
+
+- Bone dissection: **10–15 min per mouse** (faster when batching)
+- Marrow flushing and dispersion: **10–15 min**
+- RBC lysis and washing: **10–15 min**
+
+Total hands-on time per mouse: **30–45 minutes**, depending on experience and batching.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Bone collection
+
+1. Euthanise the mouse using an approved method.
+2. Spray the hind limbs with **70% ethanol** and transfer the carcass to a sterile working area (e.g. Class II biosafety cabinet, if available).
+3. Dissect out **femurs and tibias** (or other long bones as required) using scissors and forceps.
+4. Remove all excess muscle and connective tissue from the bones.
+5. Place cleaned bones in a 50 mL tube or petri dish containing **cold FACS/MACS Buffer or PBS** and keep on ice.
+
+::: callout-tip
+You can pool bones from multiple mice in a single tube for batch processing, but keep track of how many bones per tube in your notebook.
+:::
+
+## STEP 2 – Flushing the bone marrow
+
+1. In a petri dish or on a sterile surface, cut or snap off the **epiphyses** (ends) of each bone with sterile scissors to expose the marrow cavity.
+2. Fill a **10 mL syringe** fitted with an appropriate gauge needle (e.g. 25 G) with **cold FACS/MACS Buffer or PBS**.
+3. Position the needle into one end of the bone and flush the marrow into a **petri dish** or **50 mL tube**:
+   - Use ~1–3 mL buffer per bone, depending on size.
+4. Repeat flushing from both ends if necessary until the bone appears pale and empty.
+5. Gently triturate the flushed marrow with a **5–10 mL pipette** or by drawing up and down with the syringe (without needle) to break up clumps.
+
+::: callout-warning
+Avoid vigorous pipetting that shears cells; use gentle, repeated strokes to obtain a single-cell suspension.
+:::
+
+## STEP 3 – Filtration and initial wash
+
+1. Place a **70 μm cell strainer** onto a **50 mL Falcon tube**.
+2. Pour the marrow suspension through the strainer to remove bone fragments and debris.
+3. Rinse the petri dish and strainer with additional cold **FACS/MACS Buffer** to collect remaining cells and top up to **20–30 mL**.
+4. Centrifuge at **400 g for 5 minutes at 4 °C**.
+5. Carefully discard the supernatant.
+
+## STEP 4 – RBC lysis (if required)
+
+1. Gently resuspend the bone marrow pellet in **1–2 mL 1× RBC Lysis Buffer** (e.g. HybriMax or equivalent), depending on pellet size.
+2. Incubate for **3–5 minutes at room temperature**, gently inverting the tube once or twice.
+
+::: callout-warning
+Do not exceed 5 minutes of RBC lysis; prolonged exposure can reduce leukocyte viability and alter surface marker expression.
+:::
+
+3. After lysis, immediately top up the tube to **20–30 mL** with **FACS/MACS Buffer**.
+4. Centrifuge at **400 g for 5 minutes at 4 °C**.
+5. Carefully discard the supernatant.
+
+## STEP 5 – Final wash and resuspension
+
+1. Gently flick or briefly vortex to loosen the pellet.
+2. Resuspend cells in **5–10 mL FACS/MACS Buffer** (adjust volume according to desired final concentration and downstream application).
+3. If residual clumping is observed, pass the suspension again through a **70 μm strainer** into a fresh tube.
+4. Keep the suspension on **ice** until counting, staining, or further processing.
+
+## STEP 6 – Downstream applications
+
+Proceed to:
+
+- Cell counting and viability assessment.
+- Flow cytometry staining panels (e.g. hematopoietic profiling).
+- FACS sorting (e.g. HSCs, progenitors, mature lineages).
+- Functional assays or in vitro culture as per experimental design.
+
+{{< pagebreak >}}
+
+# Buffers used
+
+- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
+- **RBC Lysis Buffer (HybriMax or equivalent)** – `BUF-RBC-HYB-v1.0`  
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|--------|------------------|-------|
+| FACS/MACS Buffer | In-house (see buffer) | Cold; used for flushing and washes |
+| PBS 1× (sterile) | Any | Optional; for flushing |
+| RBC Lysis Buffer (1×) | [TBD] | 1–2 mL per pellet; as needed |
+| 70% Ethanol | Any | For surface disinfection of carcass |
+
+## Disposables
+
+| Item | Notes |
+|------|-------|
+| 50 mL Falcon tubes | For bone storage and processing |
+| 15 mL Falcon tubes | Optional; for smaller volumes |
+| 70 μm cell strainers | For debris removal |
+| 10 mL syringes + needles (~25 G) | For marrow flushing |
+| 5–10 mL serological pipettes | For trituration |
+| Petri dishes | For bone trimming and flushing |
+| Gloves, bench wipes | Standard PPE and cleanup |
+
+## Equipment
+
+| Equipment | Notes |
+|-----------|-------|
+| Biosafety cabinet (Class II) | Recommended for tissue handling |
+| Benchtop centrifuge | 400 g at 4 °C, compatible with 50 mL tubes |
+| Dissection scissors and forceps | For bone isolation and cleaning |
+| Timer | For RBC lysis timing |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Issue | Possible cause | Suggested solution |
+|-------|----------------|---------------------|
+| Low cell yield | Incomplete marrow flushing | Flush from both ends; increase volume per bone slightly |
+| Excess debris or bone fragments | Inadequate filtration | Ensure proper use of 70 μm strainer; repeat filtration if needed |
+| High red cell contamination | Insufficient RBC lysis | Repeat RBC lysis briefly (≤3 min) followed by wash |
+| Poor viability | Overly vigorous trituration or long RT handling | Use gentler pipetting; keep steps cold; minimise processing time |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- Handle mouse tissues and sharps according to institutional S1/S2 and animal ethics guidelines.
+- RBC lysis buffers may contain hazardous components; avoid skin/eye contact and dispose of waste according to chemical safety rules.
+- Bone fragments and needles must be discarded into appropriate sharps containers.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for bone marrow isolation |

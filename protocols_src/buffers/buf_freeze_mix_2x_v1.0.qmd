@@ -1,0 +1,90 @@
+---
+title: "2× Freezing Medium (R0 + 10% FCS + 20% DMSO)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+buffer_id: "BUF-FREEZE-MIX-2x-001"
+version: "v1.0"
+description: "Preparation of 2× freezing medium for cryopreservation of PBMCs and other lymphocytes. Mixed 1:1 with cell suspension to yield standard 10% DMSO freezing medium."
+---
+
+**Buffer ID:** {{< meta buffer_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+This buffer is a **2× concentrated freezing medium** used for the cryopreservation of PBMCs and other lymphocytes. When mixed 1:1 with a cell suspension in R10 or R0, it yields a standard **final freezing medium containing 10% DMSO and 5% FCS** (or 10% FCS if starting from R10), suitable for controlled-rate freezing.
+
+# Working buffer composition
+
+| Component           | Final concentration (2×) | Purpose                                     |
+|--------------------|---------------------------|---------------------------------------------|
+| RPMI 1640 (R0)     | —                         | Base medium                                 |
+| Fetal calf serum   | 10% (v/v)                 | Protects cells during freezing              |
+| DMSO (cell-grade)  | 20% (v/v)                 | Cryoprotectant                               |
+
+When mixed 1:1 with cells in R10 or R0, the **final freezing medium** contains:
+
+- **10% DMSO**  
+- **5–10% FCS** (depending on suspension medium)  
+- RPMI base medium  
+
+# Preparation
+
+## Stock reagents
+
+| Reagent           | Stock concentration | Notes                           |
+|-------------------|---------------------|---------------------------------|
+| RPMI 1640         | —                   | Sterile-filtered                |
+| DMSO, cell-grade  | 100%                | Use fresh or freshly opened     |
+| Fetal calf serum  | —                   | Heat-inactivated recommended    |
+
+## Preparation of **10 mL 2× freezing medium**
+
+1. In a sterile 15 mL tube, add:
+   - **7 mL R0 medium** (RPMI without serum)  
+   - **1 mL heat-inactivated FCS** (10% v/v)  
+   - **2 mL DMSO** (20% v/v)
+2. Mix gently by inversion; **do not vortex**.
+3. Keep on ice until use.
+
+::: callout-warning
+DMSO is toxic at room temperature. Keep the 2× freezing medium on **ice**, and **mix with cells immediately** after preparation.
+:::
+
+# Usage
+
+1. Adjust PBMCs or lymphocytes to **20 × 10⁶ cells/mL** in R10 or R0.  
+2. Add an **equal volume** of this 2× freezing medium.  
+3. Mix gently by pipetting.  
+4. Dispense **1 mL per cryovial** (final 10% DMSO).  
+5. Freeze using a **controlled-rate freezing container** (e.g. Mr Frosty) at −70/−80 °C.  
+6. Transfer to liquid nitrogen after ≥12 hours.
+
+# Storage and stability
+
+- Use **fresh on the day of preparation**.  
+- Keep on **ice** during use.  
+- Do **not store** after the experiment; discard any remaining buffer.  
+- DMSO-containing mixtures degrade rapidly and should never be refrozen.
+
+# Reagent details
+
+| Reagent               | Supplier  | Cat. # | Notes                                  |
+|----------------------|-----------|--------|----------------------------------------|
+| RPMI 1640            | Various   | —      | Base medium                            |
+| Fetal calf serum     | Various   | —      | Heat-inactivated                       |
+| DMSO, cell-grade     | Sigma/etc.| —      | Highly hygroscopic; handle aseptically |
+
+# Safety
+
+- Handle DMSO with gloves; it enhances dermal absorption of other chemicals.  
+- Prepare freezing medium in a biosafety cabinet using aseptic technique.  
+- Dispose of DMSO-containing waste according to institutional chemical waste protocols.  
+- Avoid eye/skin contact and inhalation.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                     |
+|--------|------------|----------------|---------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto buffer document for 2× freezing medium. |

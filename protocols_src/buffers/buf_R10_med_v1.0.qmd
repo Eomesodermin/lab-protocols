@@ -1,0 +1,75 @@
+---
+title: "R10 Medium (RPMI + 10% FCS + Pen/Strep)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+buffer_id: "BUF-R10-MED-001"
+version: "v1.0"
+description: "Complete RPMI 1640 medium supplemented with 10% fetal calf serum and Penicillin/Streptomycin for culture and washing of human PBMCs and lymphocytes."
+---
+
+**Buffer ID:** {{< meta buffer_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-21
+
+# Purpose
+
+R10 is complete RPMI 1640 medium supplemented with 10% heat-inactivated FCS and Penicillin/Streptomycin. It is used for PBMC washing after Ficoll separation, for quenching CellTrace dyes, and as a general-purpose lymphocyte culture medium.
+
+# Working buffer composition
+
+| Component           | Final concentration | Notes                                           |
+|---------------------|---------------------|-------------------------------------------------|
+| RPMI 1640           | —                   | Base medium                                     |
+| Fetal calf serum    | 10% (v/v)           | Heat-inactivated                                |
+| Penicillin/Streptomycin | 1% (v/v)        | 100× stock → 1× final                           |
+
+# Preparation
+
+## Stock solutions required
+
+| Reagent                | Stock concentration | Notes                       |
+|------------------------|---------------------|-----------------------------|
+| Fetal calf serum (FCS) | —                   | Heat-inactivate if required |
+| Penicillin/Streptomycin| 100×                | Add to 1× final             |
+| RPMI 1640               | —                  | Sterile-filtered            |
+
+## Preparation of **500 mL R10**
+
+1. Aliquot **450 mL** sterile RPMI 1640 into a sterile bottle.  
+2. Add **50 mL** FCS (10% final).  
+3. Add **5 mL** Penicillin/Streptomycin (100× stock) → **1% final**.  
+4. Gently invert to mix; **do not vortex**.  
+5. Label with:
+   - *R10 complete medium*  
+   - Date of preparation  
+   - Expiry (4 weeks after preparation)
+
+::: callout-tip
+Pre-warming R10 to 37 °C before use improves cell recovery following Ficoll separation or staining.
+:::
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.  
+- Use within **4 weeks** after preparation.  
+- Do not freeze.
+
+# Reagent details
+
+| Reagent               | Supplier  | Cat. # | Notes                          |
+|----------------------|-----------|--------|--------------------------------|
+| RPMI 1640            | Various   | —      | Base medium                    |
+| Fetal calf serum     | Various   | —      | Heat-inactivated               |
+| Pen/Strep (100×)     | Various   | —      | Final 1× concentration         |
+
+# Safety
+
+- Handle medium aseptically in a biosafety cabinet.  
+- Dispose of contaminated or expired medium as biohazardous waste.  
+- Follow institutional guidelines for handling FCS-containing media.
+
+# Version history
+
+| Version | Date       | Author         | Changes                        |
+|--------|------------|----------------|--------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial R10 buffer document.   |

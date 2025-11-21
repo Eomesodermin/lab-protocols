@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation.">
+
+<title>K-562 Cell Line Culture Protocol – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d5e7c60e6424aa6ccf163f01508596ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Protocol Library</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/buffers/_index.qmd"> 
+<span class="menu-text">Buffers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/mouse/_index.qmd"> 
+<span class="menu-text">Mouse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/human/_index.qmd"> 
+<span class="menu-text">Human</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/general/_index.qmd"> 
+<span class="menu-text">General</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_hum_K562_culture_v1.0.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">K-562 Cell Line Culture Protocol</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+</div>
+
+<div>
+  <div class="description">
+    Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> HUM-K562-CULTURE-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino<br>
+<strong>Date:</strong> 2025-11-21</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the thawing, routine culture, maintenance, passaging, and cryopreservation of the human K-562 erythroleukemia cell line. K-562 cells grow in suspension and require regular monitoring of density to maintain viability and consistent growth rates.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>K-562 cells grow as <strong>suspension cultures</strong> and should remain in exponential growth phase.</li>
+<li>Do not allow cultures to exceed recommended density, as nutrient depletion reduces viability and alters phenotype.</li>
+<li>K-562 cells are of human origin—treat all cultures and waste as BSL2.</li>
+<li>Always pre-warm media and reagents to <strong>37 °C</strong> before use.</li>
+<li>Ensure gentle handling; harsh centrifugation or over-pipetting can damage suspension cells.</li>
+<li>Cryopreservation requires <strong>10% DMSO</strong>, and cells should be frozen using a controlled-rate freezing container.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Overgrowth (tight clumps, very dense cultures) leads to poor viability and altered functional responses. Split cultures <strong>before</strong> they exceed recommended density.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Record passage number and split ratios at every passage. This improves reproducibility when using K-562 cells as targets or stimulator cells.</p>
+</div>
+</div>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Thawing: 15–20 min<br>
+</li>
+<li>Routine medium change / split: 10–15 min<br>
+</li>
+<li>Cryopreservation: 20–30 min<br>
+</li>
+<li>Total hands-on time per session: ~15–30 min</li>
+</ul>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-reagents-and-medium-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-reagents-and-medium-preparation">Step 1 – Reagents and medium preparation</h2>
+<ol type="1">
+<li>Pre-warm complete culture medium:
+<ul>
+<li>RPMI 1640<br>
+</li>
+<li>10% FCS<br>
+</li>
+<li>1% Pen/Strep<br>
+</li>
+</ul></li>
+<li>Pre-warm PBS (if washing is needed).<br>
+</li>
+<li>Label flasks with:
+<ul>
+<li>Cell line name (K-562)<br>
+</li>
+<li>Passage number<br>
+</li>
+<li>Date<br>
+</li>
+<li>Operator initials</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-2-thawing-k-562-cells" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-thawing-k-562-cells">Step 2 – Thawing K-562 cells</h2>
+<ol type="1">
+<li>Pre-warm <strong>10–15 mL</strong> of complete medium to 37 °C.</li>
+<li>Thaw a cryovial of K-562 cells in a 37 °C water bath:
+<ul>
+<li>Gently swirl and remove when only a small ice crystal remains.</li>
+</ul></li>
+<li>Transfer contents into a 15 mL tube containing <strong>10 mL</strong> pre-warmed complete medium.</li>
+<li>Centrifuge at <strong>300 g for 5 min</strong> at room temperature.</li>
+<li>Remove supernatant and gently resuspend the pellet in <strong>10–15 mL</strong> fresh complete medium.</li>
+<li>Transfer cells to a T25 or T75 flask and incubate at <strong>37 °C, 5% CO₂</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The centrifugation step removes DMSO, preventing toxicity during recovery.</p>
+</div>
+</div>
+</section>
+<section id="step-3-routine-culture-and-passaging" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-routine-culture-and-passaging">Step 3 – Routine culture and passaging</h2>
+<section id="recommended-density" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-density">Recommended density</h3>
+<ul>
+<li>Maintain between <strong>2 × 10⁵</strong> and <strong>1 × 10⁶ cells/mL</strong>.</li>
+</ul>
+</section>
+<section id="procedure-1" class="level3">
+<h3 class="anchored" data-anchor-id="procedure-1">Procedure</h3>
+<ol type="1">
+<li>Gently resuspend the culture by pipetting up and down.</li>
+<li>Count cells using trypan blue or an automated counter.</li>
+<li>If density &gt; 1 × 10⁶ cells/mL:
+<ul>
+<li>Split culture <strong>1:2 to 1:5</strong> depending on growth.</li>
+</ul></li>
+<li>Add fresh, pre-warmed complete medium to adjust culture to:
+<ul>
+<li><strong>2–3 × 10⁵ cells/mL</strong></li>
+</ul></li>
+<li>Return to incubator (37 °C, 5% CO₂).</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not allow cultures to sit for more than 3–4 days without splitting. Nutrient depletion leads to apoptosis and growth arrest.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="step-4-short-term-storage-holding-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-short-term-storage-holding-conditions">Step 4 – Short-term storage / holding conditions</h2>
+<ul>
+<li>Cultures may be held at <strong>2–4 × 10⁵ cells/mL</strong> for 24–48 h without splitting.</li>
+<li>If cultures appear slow or viability drops:
+<ul>
+<li>Increase medium volume<br>
+</li>
+<li>Spin down and resuspend in entirely fresh medium</li>
+</ul></li>
+</ul>
+</section>
+<section id="step-5-cryopreservation-of-k-562-cells" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-cryopreservation-of-k-562-cells">Step 5 – Cryopreservation of K-562 cells</h2>
+<section id="preparation-of-freezing-medium" class="level3">
+<h3 class="anchored" data-anchor-id="preparation-of-freezing-medium">Preparation of freezing medium</h3>
+<ul>
+<li><strong>90% FCS + 10% DMSO</strong><br>
+(or use BUF-GEN-FREEZE-MIX-001 diluted 1:1 with cell suspension)</li>
+</ul>
+</section>
+<section id="freezing-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="freezing-procedure">Freezing procedure</h3>
+<ol type="1">
+<li>Collect cells in exponential growth phase.</li>
+<li>Centrifuge at <strong>300 g for 5 min</strong>.</li>
+<li>Resuspend in freezing medium at <strong>1–10 × 10⁶ cells/mL</strong>.</li>
+<li>Aliquot <strong>1 mL</strong> into labelled cryovials.</li>
+<li>Place vials into a <strong>controlled-rate freezing container</strong> (e.g.&nbsp;Mr Frosty).</li>
+<li>Freeze at <strong>−70/−80 °C overnight</strong>.</li>
+<li>Transfer vials to <strong>liquid nitrogen</strong> for long-term storage.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 8%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RPMI 1640</td>
+<td>Various</td>
+<td>—</td>
+<td>Base medium</td>
+</tr>
+<tr class="even">
+<td>Fetal calf serum (FCS)</td>
+<td>Various</td>
+<td>—</td>
+<td>10% v/v in medium</td>
+</tr>
+<tr class="odd">
+<td>Penicillin/Streptomycin</td>
+<td>Various</td>
+<td>—</td>
+<td>1% v/v final</td>
+</tr>
+<tr class="even">
+<td>DMSO (cell culture grade)</td>
+<td>Sigma/others</td>
+<td>—</td>
+<td>10% final in freezing medium</td>
+</tr>
+<tr class="odd">
+<td>PBS, 1×</td>
+<td>Various</td>
+<td>—</td>
+<td>For washing (optional)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T25 / T75 flasks</td>
+<td>Vent-cap, sterile</td>
+</tr>
+<tr class="even">
+<td>15 mL / 50 mL tubes</td>
+<td>Sterile</td>
+</tr>
+<tr class="odd">
+<td>Cryovials</td>
+<td>LN2-compatible</td>
+</tr>
+<tr class="even">
+<td>Pipette tips</td>
+<td>Sterile (10 µL – 1000 µL)</td>
+</tr>
+<tr class="odd">
+<td>Serological pipettes</td>
+<td>Sterile (5–25 mL)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Specification / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO₂ incubator</td>
+<td>37 °C, 5% CO₂</td>
+</tr>
+<tr class="even">
+<td>Benchtop centrifuge</td>
+<td>300 g for washing</td>
+</tr>
+<tr class="odd">
+<td>Biological safety cabinet</td>
+<td>BSL2 handling</td>
+</tr>
+<tr class="even">
+<td>Water bath</td>
+<td>37 °C for thawing</td>
+</tr>
+<tr class="odd">
+<td>Cell counter/hemocytometer</td>
+<td>For counting</td>
+</tr>
+<tr class="even">
+<td>Controlled-rate freezer</td>
+<td>e.g.&nbsp;Mr Frosty</td>
+</tr>
+<tr class="odd">
+<td>Liquid nitrogen storage</td>
+<td>Long-term cryostorage</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>BUF-GEN-FREEZE-MIX-001</strong> – optional alternative for freezing<br>
+</li>
+<li>PBS (standard laboratory reagent)</li>
+</ul>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 30%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Possible cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Low viability after thaw</td>
+<td>Slow thawing or DMSO exposure</td>
+<td>Thaw rapidly; wash immediately after thaw</td>
+</tr>
+<tr class="even">
+<td>Clumping</td>
+<td>High density or depleted medium</td>
+<td>Dilute, split earlier, or replace medium entirely</td>
+</tr>
+<tr class="odd">
+<td>Slow growth</td>
+<td>Old medium, poor serum batch</td>
+<td>Prepare fresh medium; test new batch of FCS</td>
+</tr>
+<tr class="even">
+<td>Sudden drop in viability</td>
+<td>Contamination or overgrowth</td>
+<td>Check culture; discard and restart from stock</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Handle all human-derived cell lines using BSL2 precautions.</li>
+<li>Wear gloves, lab coat, and eye protection.</li>
+<li>Dispose of liquid and solid waste as biohazardous material.</li>
+<li>DMSO increases skin permeability—avoid contact.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 20%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>Initial Quarto protocol for K-562 culture</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

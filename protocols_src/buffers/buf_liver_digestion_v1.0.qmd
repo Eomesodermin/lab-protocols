@@ -1,0 +1,134 @@
+---
+title: "Liver Digestion Buffer"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-LIV-DIG-v1.0"
+version: "v1.0"
+description: "Enzymatic digestion buffer for mouse liver dissociation prior to single-cell preparation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This buffer is used for enzymatic digestion of mouse liver tissue prior to preparation of single-cell suspensions. It supports efficient dissociation while aiming to preserve cell viability for downstream flow cytometry, FACS sorting, and single-cell omics workflows.
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)
+
+# Composition (final working buffer)
+
+Final working-buffer composition per **5 mL**:
+
+| Component          | Stock concentration | Volume for 5 mL | Final concentration (approx.) | Notes                                |
+|-------------------|---------------------|-----------------|-------------------------------|--------------------------------------|
+| DMEM (incomplete) | —                   | to 5 mL         | N/A                           | Base medium                          |
+| Collagenase D     | 100 mg/mL           | 10 µL           | 1 mg/mL                       | From frozen stock                    |
+| DNase I           | 10 mg/mL            | 1 µL            | 10 µg/mL                      | Added on day of use                  |
+
+::: {.callout-note}
+The table above describes the **final working buffer** used in the protocol. In practice, a **stock digestion buffer without DNase** is prepared and frozen in aliquots, and DNase is added only on the day of use (see Preparation and Storage sections).
+:::
+
+# Preparation
+
+## A. Prepare “Liver Digestion Stock (no DNase)”
+
+This stock is DMEM + Collagenase D, **without DNase**. It is frozen in aliquots for convenient use.
+
+1. Thaw **Collagenase D** stock (100 mg/mL) on ice or at 4 °C.
+2. In a sterile tube, prepare the digestion stock for the desired number of aliquots, for example:
+
+   - For each **5 mL** stock aliquot:
+     - Add **~4 mL** DMEM (incomplete).
+     - Add **10 µL** Collagenase D stock (100 mg/mL).
+     - Mix gently by inversion (avoid foaming).
+     - Bring volume to **5 mL** with DMEM (incomplete).
+
+3. Aliquot the digestion stock into sterile tubes (e.g. **3–5 mL per aliquot**, depending on typical experimental usage).
+4. Label aliquots clearly with:
+   - “Liver Digestion Stock (no DNase)”
+   - Concentration
+   - Date
+   - Version (`BUF-LIV-DIG-v1.0`)
+5. Freeze aliquots at **−20 °C**.
+
+## B. Prepare final working Liver Digestion Buffer (day of use)
+
+1. Remove the required number of **Liver Digestion Stock (no DNase)** aliquots from −20 °C and **thaw** at room temperature or 4 °C.
+2. For each **5 mL** of final working buffer needed:
+   1. Ensure the thawed stock is well mixed (gentle inversion).
+   2. Add **1 µL** of DNase I stock (10 mg/mL) to **5 mL** digestion stock.
+   3. Mix gently by inversion.
+3. Pre-warm the final working buffer to **37 °C** before use (e.g. by placing tubes in a 37 °C water bath or incubator).
+4. If desired, pre-aliquot **3 mL** of the final working buffer into pre-labeled 50 mL liver collection tubes, and retain additional buffer in a separate tube for perfusion.
+
+::: {.callout-tip}
+To minimise variability, prepare all working-buffer aliquots for a given experiment at the **same time** using the **same DNase stock** and keep them at 37 °C only for as long as required during the digestion step.
+:::
+
+# Storage and stability
+
+## Liver Digestion Stock (no DNase)
+
+- **Composition**: DMEM (incomplete) + Collagenase D at 1 mg/mL final (when diluted as described).
+- **Storage**:
+  - Store aliquots at **−20 °C**.
+  - Avoid repeated freeze–thaw cycles (use single-use aliquots where possible).
+- **Stability**:
+  - Recommended to use within **3–6 months** of preparation, or according to internal lab validation.
+- Before use:
+  - Thaw at room temperature or 4 °C.
+  - Mix gently to ensure homogeneity.
+
+## Final working Liver Digestion Buffer (with DNase)
+
+- Prepared from thawed **Liver Digestion Stock (no DNase)** + DNase I.
+- **Use on the same day** as preparation.
+- Keep at **37 °C** only during active digestion steps; otherwise, keep at room temperature for short periods.
+- Do not refreeze working buffer once DNase has been added; discard any unused working buffer at the end of the day.
+
+## Stock reagents
+
+- **Collagenase D stock (100 mg/mL)**  
+  - Store as recommended by the manufacturer (typically **−20 °C** in aliquots).  
+  - Avoid repeated freeze–thaw cycles.
+
+- **DNase I stock (10 mg/mL)**  
+  - Store according to manufacturer’s instructions (often **−20 °C**).  
+  - Avoid repeated freeze–thaw cycles.
+
+- **DMEM (incomplete)**  
+  - Store at **4 °C**, protected from light.  
+  - Respect manufacturer’s expiry date.
+
+::: {.callout-note}
+If the lab validates alternative storage conditions (e.g. short-term storage of working buffer at 4 °C), document the conditions and update the version number and description accordingly.
+:::
+
+# Reagent details
+
+| Component          | Supplier | Cat# | Notes |
+|-------------------|----------|------|-------|
+| DMEM (incomplete) | [TBD]    | [TBD]| High-glucose DMEM without supplements |
+| Collagenase D     | [TBD]    | [TBD]| Prepare 100 mg/mL stock according to manufacturer |
+| DNase I           | [TBD]    | [TBD]| Prepare 10 mg/mL stock; avoid repeated thawing    |
+
+# Safety (brief)
+
+- Handle mouse tissues and enzymatic digestion buffers in accordance with institutional biosafety rules (S1/S2 as applicable).
+- Collagenase and DNase are enzymes; avoid inhalation of powders and minimise contact with eyes or damaged skin.
+- Dispose of buffer waste and contaminated consumables in appropriate **biohazard** or **chemical** waste streams, as determined by local regulations.
+
+# Version history
+
+| Version | Date       | Author          | Change summary           |
+|---------|------------|-----------------|--------------------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial buffer definition |

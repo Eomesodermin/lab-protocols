@@ -1,0 +1,240 @@
+---
+title: "Lab Naming and Versioning Guide"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+version: "v1.0"
+date: "2025-11-20"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+---
+
+# Purpose
+
+This document defines the **standardised naming conventions** for all protocols, buffers, metadata files, and rendered outputs in the Abdullah Lab.  
+Consistent naming ensures reproducibility, traceability, and predictable file structure across the shared lab protocol repository.
+
+# General principles
+
+1. **Everything is versioned** (`v1.0`, `v1.1`, `v2.0`).
+2. **No spaces in filenames** — use lowercase snake_case.
+3. **Titles** (YAML `title:`) should be human-readable and capitalised.
+4. **Protocol IDs** are machine-readable and never changed after publication.
+5. **File versions and protocol versions always match**.
+6. **Species prefix** only appears when necessary (e.g., mouse–specific vs human–specific).
+
+# File naming conventions
+
+## Format
+\<type>_\<descriptive_name>_vX.X.qmd
+
+
+### Examples
+
+- `buf_liver_digestion_v1.0.qmd`
+- `prot_mouse_liver_dissociation_v1.0.qmd`
+- `panel_mouse_liver_sorting_cd8_v1.0.qmd`
+
+## Components
+
+| Component         | Meaning                                          |
+|-------------------|--------------------------------------------------|
+| `<type>`          | One of: `buf`, `prot`, `panel`, `meta`           |
+| `<descriptive_name>` | lowercase snake_case, clear and specific       |
+| `_vX.X`           | Major/minor version                              |
+
+---
+
+# YAML title naming conventions
+
+## Format
+title: "Human-readable Name"
+
+
+### Rules
+
+- Use capital letters at the start of major words.
+- No internal code prefixes (no species label in the title unless necessary).
+- Keep titles clear and short.
+
+### Examples
+
+- `title: "Liver Digestion Buffer"`
+- `title: "Mouse Liver Single-Cell Dissociation"`
+- `title: "FACS Panel for Liver Sorting"`
+
+---
+# Protocol ID conventions
+
+## Format
+
+Protocol IDs follow:
+
+\<type>-\<shortcode>-vX.X  
+
+where `vX.X` is the version (e.g. `v1.0`, `v1.1`, `v2.0`).
+
+## Types
+
+| Type   | Meaning            |
+|--------|--------------------|
+| `PROT` | Full protocols     |
+| `BUF`  | Buffers & reagents |
+| `PANEL`| Flow panels        |
+
+(If we later decide to use lowercase types, the structure stays the same.)
+
+## Shortcode design
+
+The `<shortcode>` is a compact, uppercase code built from:
+
+- **Species code** (optional if only one species exists)  
+- **Organ / tissue code**  
+- **Action / process code**  
+
+Joined by dashes, e.g.:
+
+- `MUS-LIV-DIG`  
+- `MUS-SPL-DIS`  
+- `MUS-BM-ISO`  
+- `MUS-BLD-PRC`  
+- `MUS-LNG-DIG`  
+- `MUS-TMR-DIG`  
+
+Examples of full IDs:
+
+- `PROT-MUS-LIV-DIG-v1.0`  
+- `PROT-MUS-SPL-DIS-v1.0`  
+- `PROT-MUS-BLD-PRC-v1.0`  
+
+If only mouse protocols exist for a given organ, the `MUS-` prefix can be omitted (e.g. `PROT-LIV-DIG-v1.0`), but using species codes is future-proof if human protocols are added.
+
+### Species codes (examples)
+
+| Code | Species |
+|------|---------|
+| `MUS` | Mouse   |
+| `HUM` | Human   |
+
+### Organ / tissue codes (examples)
+
+| Code | Organ / tissue   |
+|------|------------------|
+| `LIV` | Liver           |
+| `SPL` | Spleen          |
+| `BLD` | Blood           |
+| `BM`  | Bone marrow     |
+| `LNG` | Lung            |
+| `TMR` | Tumour          |
+
+You can extend this list as needed for gut, lymph node, skin, etc.
+
+### Action / process codes
+
+These are the **standard verbs** used in protocol IDs. The rules here should be applied consistently across new protocols.
+
+| Code | When to use it                                                                 |
+|------|-------------------------------------------------------------------------------|
+| `DIG` | **Digestion**: protocols using enzymatic digestion (e.g. Collagenase ± DNase) to break down tissue. Typical for solid organs (liver, lung, tumour). |
+| `DIS` | **Dissociation**: primarily mechanical dissociation (e.g. mashing through strainers) with at most simple RBC lysis, but **no tissue digestion enzymes**. Typical for spleen. |
+| `ISO` | **Isolation**: protocols that isolate cells from a compartment without enzymatic tissue digestion, often by flushing or elution (e.g. bone marrow flush from long bones). |
+| `PRC` | **Processing**: handling/processing of fluids (e.g. blood) where the main operations are centrifugation, RBC lysis, and washes rather than tissue digestion or isolation from a solid organ. |
+
+Examples:
+
+- **Liver digestion protocol**:  
+  - ID: `PROT-MUS-LIV-DIG-v1.0`  
+  - File: `prot_mus_liver_digestion_v1.0.qmd`
+
+- **Spleen dissociation protocol** (mechanical + RBC lysis, no collagenase):  
+  - ID: `PROT-MUS-SPL-DIS-v1.0`  
+  - File: `prot_mus_spleen_dissociation_v1.0.qmd`
+
+- **Blood processing protocol**:  
+  - ID: `PROT-MUS-BLD-PRC-v1.0`  
+  - File: `prot_mus_blood_processing_v1.0.qmd`
+
+- **Bone marrow isolation protocol** (flushing):  
+  - ID: `PROT-MUS-BM-ISO-v1.0`  
+  - File: `prot_mus_bone_marrow_isolation_v1.0.qmd`
+
+- **Lung digestion protocol**:  
+  - ID: `PROT-MUS-LNG-DIG-v1.0`  
+  - File: `prot_mus_lung_digestion_v1.0.qmd`
+
+- **Tumour digestion protocol**:  
+  - ID: `PROT-MUS-TMR-DIG-v1.0`  
+  - File: `prot_mus_tumour_digestion_v1.0.qmd`
+
+
+# Folder structure conventions
+```
+protocols_src/
+  _templates/
+  buffers/
+  computational/
+  flow_panels/
+    human/
+      acquisition/
+      sorting/
+    mouse/
+      acquisition/
+      sorting/
+  general/
+  human/
+  mouse/
+rendered/
+  pdf/
+  html/
+```
+
+Each file sits in the corresponding folder.
+
+Rendered PDFs mirror the structure:  
+rendered/pdf/buffers/buf_liver_digestion_v1.0.pdf
+
+
+---
+
+# Versioning rules
+
+## Version format
+v\<major>.\<minor>
+
+- Increase **minor** for editorial revisions, formatting changes, or typo fixes.
+- Increase **major** for any scientifically meaningful change (new reagent concentrations, new steps, new gating strategy, etc.).
+
+Examples:
+
+- `v1.0` → initial release
+- `v1.1` → typo fixes, clarifications
+- `v2.0` → method changed (new digestion buffer, new enzyme, new panel)
+
+---
+
+# Summary tables
+
+## Fast checklist
+
+- Filenames: snake_case  
+- Titles: human-readable  
+- Protocol IDs: ALL CAPS + dashes  
+- Version: vX.X  
+- Species prefix only if both human + mouse versions exist  
+- Rendered PDFs mirror the folder structure  
+
+---
+
+# Version history
+
+| Version | Date       | Author          | Summary                  |
+|---------|------------|-----------------|--------------------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial naming guide     |
+
+
+
+
+

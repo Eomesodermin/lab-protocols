@@ -1,0 +1,148 @@
+---
+title: "Mouse Blood Processing to Single-Cell Suspension"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-BLD-PRC-001"
+version: "v1.0"
+description: "Processing of mouse peripheral blood to obtain leukocyte-enriched single-cell suspensions for flow cytometry and immunological assays."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This protocol describes the processing of mouse peripheral blood collected in EDTA to generate a leukocyte-enriched single-cell suspension using RBC lysis and gentle washing. The final suspension is suitable for flow cytometry, basic immunophenotyping, and other standard immunological assays.
+
+# Critical notes (read before starting)
+
+- Always collect blood into tubes containing **EDTA** (or other approved anticoagulant) and **mix immediately** to prevent clotting.
+- Perform all processing steps as soon as possible after collection; avoid prolonged storage at room temperature.
+- RBC lysis should be **time-limited (~5 minutes)** to minimise leukocyte damage.
+- Keep samples on **ice** or at **4 °C** after lysis and during washing to preserve viability.
+
+# Approximate timing
+
+- Blood collection and transfer: **2–5 min per mouse**
+- Initial spin and serum removal: **5 min**
+- RBC lysis and wash: **10–15 min**
+
+Total hands-on time per sample: **20–25 minutes**, depending on batching.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Blood collection
+
+1. Prepare **EDTA-containing microcentrifuge tubes** (20–40 μL EDTA per tube) and label one tube per mouse.
+2. Collect blood using an **insulin syringe** (or other approved method, e.g. retro-orbital, submandibular, cardiac puncture as per ethics approval).
+3. Immediately dispense the blood into the EDTA tube.
+4. Flick the tube gently to mix blood with EDTA and prevent clotting.
+
+::: callout-warning
+Ensure local ethics approval covers the chosen blood collection method. Handle sharps carefully and discard immediately into an approved sharps container.
+:::
+
+## STEP 2 – Allocate sample volume and initial spin
+
+1. Transfer a defined volume of well-mixed whole blood (e.g. **100–200 μL**, or as required) from the EDTA tube into a **new, labelled microcentrifuge tube**.  
+   - Record the volume used per sample in your lab notebook.
+2. Centrifuge the whole blood at **maximum g (bench-top microcentrifuge)** for **5 minutes** at room temperature or 4 °C.
+3. Carefully remove the **serum**:
+   - Discard, or
+   - Aliquot and freeze at **−20 °C or −80 °C** if required for serum analyses.
+
+## STEP 3 – RBC lysis
+
+1. Gently resuspend the remaining blood pellet in **1 mL of 1× RBC lysis buffer** (e.g. BioLegend / HybriMax 1×).  
+2. Transfer the suspension to a **15 mL Falcon tube**.
+3. Gently mix by inversion or brief pipetting to ensure complete resuspension.
+4. Incubate for **5 minutes at room temperature**.
+
+::: callout-warning
+Do not exceed the recommended lysis time; prolonged exposure to RBC lysis buffer can damage leukocytes and alter marker expression.
+:::
+
+## STEP 4 – Wash and final resuspension
+
+1. After the 5-minute lysis, top up the tube to **10 mL** with **FACS/MACS Buffer**.
+2. Centrifuge at **400 g for 4–5 minutes at 4 °C**.
+3. Carefully pour off or aspirate the supernatant.
+4. If substantial red cell contamination remains:
+   - Repeat the RBC lysis step (STEP 3) once more, followed by the wash in STEP 4.
+5. Finally, resuspend the cell pellet in an appropriate volume of **FACS/MACS Buffer** (e.g. **0.5–1 mL**) for:
+   - Flow cytometry staining
+   - Cell counting
+   - Other downstream assays
+
+Keep the cell suspension on **ice** until staining.
+
+{{< pagebreak >}}
+
+# Buffers used
+
+- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
+- **RBC Lysis Buffer (e.g. BioLegend / HybriMax)** – `BUF-RBC-HYB-v1.0`  
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|--------|------------------|-------|
+| EDTA | [TBD] | 20–40 μL per collection tube |
+| RBC Lysis Buffer (1×) | [TBD] | 1 mL per sample; may repeat once |
+| FACS/MACS Buffer | In-house (see buffer) | For washing and resuspension |
+| PBS 1× | Any | As needed |
+
+## Disposables
+
+| Item | Notes |
+|------|-------|
+| Microcentrifuge tubes (1.5–2 mL) | 2 per mouse (EDTA collection + processing) |
+| 15 mL Falcon tubes | 1 per sample |
+| Insulin syringes / collection needles | 1 per mouse (as per procedure) |
+| Transfer pipettes | For serum removal and transfers |
+| Gloves, bench wipes, sharps container | Standard PPE and safety disposables |
+
+## Equipment
+
+| Equipment | Notes |
+|-----------|-------|
+| Bench-top microcentrifuge | For initial high-g spin |
+| Centrifuge for 15 mL tubes | 400 g at 4 °C |
+| Biosafety cabinet (Class II) | Recommended for handling blood |
+| Timer | For lysis timing |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Issue | Possible cause | Suggested solution |
+|-------|----------------|---------------------|
+| Sample clotted | Delayed mixing with EDTA | Mix immediately after blood collection; discard clotted samples |
+| Persistent red tinge after lysis | Incomplete RBC lysis | Repeat lysis once; do not extend lysis time excessively |
+| Low leukocyte recovery | Pellet loss during washes | Pour supernatants slowly; consider aspirating instead |
+| Poor viability | Prolonged room-temperature handling | Keep samples cold; minimise processing time |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- Treat all mouse blood as potentially infectious; follow S1/S2 biosafety rules.
+- Use appropriate PPE (lab coat, gloves, eye protection) and handle sharps with care.
+- RBC lysis buffers may contain toxic components (e.g. ammonium chloride, azide); avoid contact with skin and eyes and dispose of waste according to institutional chemical safety guidelines.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for blood processing |

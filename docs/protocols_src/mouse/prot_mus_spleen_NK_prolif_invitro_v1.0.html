@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="In vitro proliferation assay for murine NK cells using CellTrace dyes, starting from splenic NK cells isolated by magnetic enrichment and/or sorting, and cultured in NK medium containing IL-15.">
+
+<title>In vitro NK Cell Proliferation Assay Using CellTrace Dyes – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d5e7c60e6424aa6ccf163f01508596ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Protocol Library</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/buffers/_index.qmd"> 
+<span class="menu-text">Buffers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/mouse/_index.qmd"> 
+<span class="menu-text">Mouse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/human/_index.qmd"> 
+<span class="menu-text">Human</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/general/_index.qmd"> 
+<span class="menu-text">General</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_spleen_NK_prolif_invitro_v1.0.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">In vitro NK Cell Proliferation Assay Using CellTrace Dyes</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+</div>
+
+<div>
+  <div class="description">
+    In vitro proliferation assay for murine NK cells using CellTrace dyes, starting from splenic NK cells isolated by magnetic enrichment and/or sorting, and cultured in NK medium containing IL-15.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> MUS-SPL-NK-PROLIF-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino<br>
+<strong>Date:</strong> 2025-11-21</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes an in vitro proliferation assay for murine NK cells using CellTrace dyes (e.g.&nbsp;CellTrace Violet, CTV, or CellTrace Blue, CTB). NK cells are isolated from mouse spleens using a magnetic NK isolation kit, optionally further purified or subsetted by flow cytometric sorting (e.g.&nbsp;CD160⁺ vs CD160⁻ NK cells), labelled with CellTrace dye, and cultured in NK medium containing IL-15. Proliferation is quantified by dilution of the CellTrace dye over time by flow cytometry.</p>
+<p>The protocol assumes access to a magnetic NK isolation kit (e.g.&nbsp;EasySep Mouse NK cell isolation kit) and a flow cytometer or cell sorter.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>Plan mouse numbers and genotypes in advance based on the number of conditions, timepoints, and desired biological replicates.</li>
+<li>Use the same sex, age range, and housing conditions where possible to minimise biological variability.</li>
+<li>Keep cells, buffers, and reagents at appropriate temperatures:
+<ul>
+<li>Room temperature for the EasySep NK isolation steps (as per kit instructions).<br>
+</li>
+<li>4 °C/on ice for staining and sorting.<br>
+</li>
+<li>37 °C, 5 % CO₂ for culture.</li>
+</ul></li>
+<li>CellTrace staining must be done in PBS without serum; serum-containing medium should be used only for quenching and washing.</li>
+<li>Minimise time between sorting and plating to preserve viability and function.</li>
+<li>IL-15 should be added fresh to NK medium immediately before culture; avoid repeated freeze–thaw cycles.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Overly harsh handling (vigorous pipetting, extended time at room temperature, or delayed plating after sorting) can markedly reduce NK cell viability and impair proliferation readouts.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pre-coating sort collection tubes with FCS and using NK medium containing IL-15 in the collection and culture steps can improve post-sort recovery and proliferation.</p>
+</div>
+</div>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Preparations on the day before sort: 30–60 min<br>
+</li>
+<li>Spleen harvest and NK isolation: 1.5–2 hours (depending on mouse numbers)<br>
+</li>
+<li>CellTrace staining and surface staining: 1–1.5 hours<br>
+</li>
+<li>Sorting of NK subsets (if applicable): 1–3 hours (panel- and sample-dependent)<br>
+</li>
+<li>Plating and culture setup: 30–60 min<br>
+</li>
+<li>Culture duration: assay-dependent (typically 2–5 days, with defined timepoints)</li>
+</ul>
+<p><strong>Hands-on time (excluding sort runtime and culture):</strong> ~4–6 hours.</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-preparations-on-the-day-before-sort" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-preparations-on-the-day-before-sort">Step 1 – Preparations on the day before sort</h2>
+<ol type="1">
+<li><p>Determine:</p>
+<ul>
+<li>Mouse genotypes (e.g.&nbsp;WT, CD160 KO, IFNAR1 KO, etc.).</li>
+<li>Number of mice per genotype and per experimental group.</li>
+<li>Number of timepoints and replicates for the proliferation assay.</li>
+</ul></li>
+<li><p>Assign mice to the experiment in PyRAT (or equivalent animal management system) and record a cohort ID.</p></li>
+<li><p>Export the list of mice and provide it to the animal facility (e.g.&nbsp;Kathrin) as required.</p></li>
+<li><p>Prepare sort collection tubes:</p>
+<ol type="1">
+<li>For each sorted population (e.g.&nbsp;total NK, CD160⁺ NK, CD160⁻ NK), prepare 15 mL Falcon tubes.</li>
+<li>Add 2–3 mL FCS to each tube.</li>
+<li>Place tubes on a roller at 4 °C (cold room) or in the fridge overnight to allow coating.</li>
+</ol></li>
+<li><p>Prepare 50 mL Falcon tubes with 1× PBS for spleen harvest:</p>
+<ul>
+<li>One tube per mouse or per pooled group (as per experimental design).</li>
+<li>Store at 4 °C until use.</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-2-preparations-on-the-day-of-sort-spleen-harvest" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-preparations-on-the-day-of-sort-spleen-harvest">Step 2 – Preparations on the day of sort: spleen harvest</h2>
+<ol type="1">
+<li>Bring prepared PBS tubes and transport containers to the animal facility.</li>
+<li>Remove cages of mice assigned to the experiment:
+<ul>
+<li>Pool mice in groups as required (e.g.&nbsp;groups of 10 within a cage).</li>
+<li>Sacrifice mice (e.g.&nbsp;in CO₂ chamber) according to institutional guidelines.</li>
+</ul></li>
+<li>Harvest spleens:
+<ol type="1">
+<li>Place each spleen into a 50 mL tube containing cold PBS (5–10 mL).</li>
+<li>Keep tubes on ice during transport back to the lab.</li>
+</ol></li>
+<li>Refer to the relevant SOP for detailed organ harvest and splenocyte isolation, if needed.</li>
+</ol>
+</section>
+<section id="step-3-preparation-of-splenocyte-suspensions" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-preparation-of-splenocyte-suspensions">Step 3 – Preparation of splenocyte suspensions</h2>
+<ol type="1">
+<li>In a biosafety cabinet, transfer each spleen to a sterile Petri dish containing cold PBS.</li>
+<li>Gently homogenise the spleen through a suitable cell strainer (e.g.&nbsp;70 µm) using the plunger of a 5 or 10 mL syringe into a 50 mL tube.</li>
+<li>Rinse the strainer with additional PBS to maximise cell recovery.</li>
+<li>Centrifuge at ~400–500 g for 5 min at 4 °C.</li>
+<li>Discard supernatant and resuspend the cell pellet in FACS buffer (BUF-GEN-FACS-BUF-001) or PBS, as appropriate for counting.</li>
+<li>Count splenocytes and record total cell numbers.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A rough guideline used in the original SOP is ~1 × 10⁸ splenocytes per mouse. This can be used for initial planning but always verify by counting.</p>
+</div>
+</div>
+</section>
+<section id="step-4-nk-cell-isolation-from-spleen" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-nk-cell-isolation-from-spleen">Step 4 – NK cell isolation from spleen</h2>
+<p>Follow the instructions of the magnetic NK cell isolation kit (e.g.&nbsp;EasySep Mouse NK cell isolation kit) and the recommendations for temperature and volumes.</p>
+<ol type="1">
+<li>Calculate the total splenocyte count and volume needed for isolation:
+<ul>
+<li>For example, if using 14 spleens and assuming ~1 × 10⁸ cells per spleen, plan for ~1.4 × 10⁹ splenocytes.</li>
+<li>Adjust volumes and kit reagent amounts accordingly.</li>
+</ul></li>
+<li>Adjust the splenocyte suspension to <strong>1 × 10⁸ cells/mL</strong> in FACS buffer or kit-specified buffer at room temperature.</li>
+<li>For comparison of NK cells from two genotypes (e.g.&nbsp;WT vs CD160 KO):
+<ul>
+<li>Perform <strong>complete NK isolation</strong> as per the kit instructions for each genotype (full recommended reagent volumes per mL of cells).</li>
+</ul></li>
+<li>For experiments requiring NK subsets (e.g.&nbsp;CD160⁺ vs CD160⁻ NK from WT mice):
+<ul>
+<li>Perform a <strong>pre-enrichment</strong> step:
+<ul>
+<li>Use the same kit but with <strong>half the indicated volume</strong> of isolation cocktail and magnetic beads per mL of cells (to enrich but not fully deplete other cells).</li>
+</ul></li>
+</ul></li>
+<li>Keep reagents, buffers, and cells at room temperature during the magnetic isolation, as recommended by the kit.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Deviating from the manufacturer’s temperature recommendations (e.g.&nbsp;performing kit steps on ice instead of room temperature) can substantially reduce NK cell yield and purity.</p>
+</div>
+</div>
+<ol start="6" type="1">
+<li>After isolation or pre-enrichment, resuspend NK-enriched cells in PBS for CellTrace staining (see Step 5).</li>
+</ol>
+</section>
+<section id="step-5-celltrace-staining-of-nk-cells" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-celltrace-staining-of-nk-cells">Step 5 – CellTrace staining of NK cells</h2>
+<p>This step uses CellTrace Violet (CTV) or CellTrace Blue (CTB) to track divisions.</p>
+<ol type="1">
+<li><p>Count enriched NK cells and calculate the volume needed for staining.</p></li>
+<li><p>Resuspend NK cells at <strong>1 × 10⁶ cells/mL</strong> in PBS (no FCS).</p></li>
+<li><p>Prepare CTV or CTB according to the manufacturer’s instructions:</p>
+<ul>
+<li>Reconstitute the vial in DMSO to create a concentrated stock.</li>
+</ul></li>
+<li><p>Stain NK cells:</p>
+<ul>
+<li>For CTV: use a final concentration corresponding to <strong>1:5000</strong> of the stock (as used in the original SOP).<br>
+</li>
+<li>For CTB: use a final concentration corresponding to <strong>1:1000</strong> of the stock.</li>
+</ul></li>
+<li><p>Incubate at <strong>37 °C</strong> for <strong>15 min</strong>, protected from light.</p></li>
+<li><p>Controls:</p>
+<ul>
+<li>Before staining, remove aliquots of cells for:
+<ul>
+<li>Unstained control.</li>
+<li>Live/dead-only control.</li>
+</ul></li>
+<li>After CTV/CTB staining, remove an aliquot for:
+<ul>
+<li>CTV/CTB single-stain control.</li>
+</ul></li>
+</ul></li>
+<li><p>Quench and wash:</p>
+<ol type="1">
+<li>Add complete NK medium (BUF-MUS-NK-MED-001; cRPMI with supplements and IL-15 omitted at this stage or added as per your lab practice) to a volume sufficient to quench the dye.</li>
+<li>Centrifuge at ~400 g for 5 min.</li>
+<li>Discard supernatant and resuspend in fresh NK medium or FACS buffer as required for subsequent surface staining.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Incorrect CTV/CTB concentration or prolonged staining can cause toxicity and alter NK cell behaviour. Always work within titrated ranges and avoid exceeding 15 min at 37 °C.</p>
+</div>
+</div>
+</section>
+<section id="step-6-surface-staining-for-sorting-if-sorting-nk-subsets" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-surface-staining-for-sorting-if-sorting-nk-subsets">Step 6 – Surface staining for sorting (if sorting NK subsets)</h2>
+<p>If sorting CD160⁺ and CD160⁻ NK subsets or other NK subsets, perform surface staining after CTV/CTB labelling.</p>
+<ol type="1">
+<li><p>Prepare surface staining master mixes in FACS buffer (BUF-GEN-FACS-BUF-001), including:</p>
+<ul>
+<li>Fc block (e.g.&nbsp;1:200).<br>
+</li>
+<li>Surface antibodies for NK identification and subset discrimination (e.g.&nbsp;NK1.1, NKp46, CD3, CD160, etc.).<br>
+</li>
+<li>Live/dead dye, if not already integrated earlier.</li>
+</ul></li>
+<li><p>Stain up to <strong>5 × 10⁶ cells in 50 µL</strong> surface staining mix per tube.</p></li>
+<li><p>Incubate for <strong>30 min at 4 °C</strong>, protected from light.</p></li>
+<li><p>Add ~4× the staining volume of FACS buffer to wash.</p></li>
+<li><p>Centrifuge at <strong>400 g for 5 min</strong>, discard supernatant.</p></li>
+<li><p>Resuspend the cell pellet at <strong>10–15 × 10⁶ cells/mL</strong> in PBS for sorting (e.g.&nbsp;for a 70 µm nozzle).</p></li>
+<li><p>Prepare single-colour controls:</p>
+<ul>
+<li>Single-stain controls for each fluorochrome in PBS.</li>
+<li>Live/dead controls in beads and/or cells.</li>
+</ul></li>
+<li><p>Keep all stained cells and controls cold (4 °C or on ice) and protected from light until sorting.</p></li>
+</ol>
+</section>
+<section id="step-7-sorting-and-collection" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-sorting-and-collection">Step 7 – Sorting and collection</h2>
+<ol type="1">
+<li>Set up the cell sorter (e.g.&nbsp;BD FACS Aria) with the appropriate nozzle (e.g.&nbsp;70 µm) and sorting strategy for NK cells and subsets.</li>
+<li>Use FCS-coated collection tubes prepared in Step 1:
+<ul>
+<li>Add an appropriate volume of NK medium (BUF-MUS-NK-MED-001) to each tube before sorting.</li>
+</ul></li>
+<li>Sort NK populations:
+<ul>
+<li>For total NK proliferation: sort or gate total NK cells as required.<br>
+</li>
+<li>For subset proliferation (e.g.&nbsp;CD160⁺ vs CD160⁻): sort each subset into separate collection tubes.</li>
+</ul></li>
+<li>Keep collection tubes at 4 °C or room temperature as appropriate and move them to the incubator as soon as sorting is complete.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Monitor sort purity and yield during the run to ensure that enough events are collected for the planned timepoints and replicates.</p>
+</div>
+</div>
+</section>
+<section id="step-8-in-vitro-culture-and-proliferation-assay" class="level2">
+<h2 class="anchored" data-anchor-id="step-8-in-vitro-culture-and-proliferation-assay">Step 8 – In vitro culture and proliferation assay</h2>
+<ol type="1">
+<li>After sorting, count the NK cell populations (e.g.&nbsp;using a microscope or automated cell counter).</li>
+<li>Centrifuge at <strong>400 g for 5 min</strong> and resuspend in NK medium (BUF-MUS-NK-MED-001) supplemented with IL-15.
+<ul>
+<li>Add IL-15 to a final concentration of <strong>100 IU/mL</strong> immediately before plating.</li>
+</ul></li>
+<li>Plate sorted NK cells in suitable culture plates (e.g.&nbsp;96-well U- or flat-bottom plates):
+<ul>
+<li>Typical seeding density: <strong>20–50 × 10³ cells per well</strong> in <strong>200 µL</strong> NK medium + IL-15.<br>
+</li>
+<li>Adjust based on yield and number of timepoints.</li>
+</ul></li>
+<li>Culture conditions:
+<ul>
+<li>Incubate plates at <strong>37 °C</strong>, 5 % CO₂.</li>
+<li>Include:
+<ul>
+<li>“Day 0” samples (can be fixed immediately after sorting).<br>
+</li>
+<li>Multiple timepoints (e.g.&nbsp;day 2, 3, 4, etc.).</li>
+</ul></li>
+</ul></li>
+<li>Controls:
+<ul>
+<li>Unstimulated NK cells (IL-15 only).<br>
+</li>
+<li>NK cells with additional stimuli, if desired (cytokines, co-stimulation, etc.).<br>
+</li>
+<li>CTV/CTB single-stain and unstained controls (can be fixed early).</li>
+</ul></li>
+<li>For each selected timepoint:
+<ol type="1">
+<li>Harvest NK cells from the wells.</li>
+<li>Optionally stain for additional surface markers (using standard FACS buffer and staining conditions).</li>
+<li>Fix cells in 4 % PFA or Histofix as per your lab standard.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The original SOP notes that Day 0 populations and single-stain controls can be fixed immediately for reference; subsequent timepoints should be acquired using the same cytometer settings as Day 0.</p>
+</div>
+</div>
+</section>
+<section id="step-9-acquisition-and-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="step-9-acquisition-and-analysis">Step 9 – Acquisition and analysis</h2>
+<ol type="1">
+<li>Acquire all timepoints on the same flow cytometer (e.g.&nbsp;Cytek Aurora) using:
+<ul>
+<li>The same voltage/PMT settings.</li>
+<li>Consistent compensation and gating strategy.</li>
+</ul></li>
+<li>When possible, use:
+<ul>
+<li>Counting beads and/or<br>
+</li>
+<li>A fixed acquisition volume and flow rate.</li>
+</ul></li>
+<li>Analyse CellTrace dilution profiles for each NK population:
+<ul>
+<li>Determine the number of divisions.<br>
+</li>
+<li>Calculate proliferation indices and division indices as required.<br>
+</li>
+<li>Compare genotypes or conditions (e.g.&nbsp;WT vs KO, CD160⁺ vs CD160⁻).</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RPMI 1640 + GlutaMAX</td>
+<td>Gibco / similar</td>
+<td>–</td>
+<td>Base for NK medium (BUF-MUS-NK-MED-001)</td>
+</tr>
+<tr class="even">
+<td>Fetal calf serum (FCS), heat-inactivated</td>
+<td>Various</td>
+<td>–</td>
+<td>10 % v/v in NK medium; also used for FCS-coating sort tubes</td>
+</tr>
+<tr class="odd">
+<td>Penicillin/Streptomycin</td>
+<td>Gibco / similar</td>
+<td>–</td>
+<td>1 % v/v in NK medium</td>
+</tr>
+<tr class="even">
+<td>Sodium pyruvate (NaPy)</td>
+<td>Gibco / similar</td>
+<td>–</td>
+<td>1 % v/v in NK medium</td>
+</tr>
+<tr class="odd">
+<td>HEPES</td>
+<td>Gibco / similar</td>
+<td>–</td>
+<td>1 % v/v in NK medium</td>
+</tr>
+<tr class="even">
+<td>Non-essential amino acids (NEAA)</td>
+<td>Gibco / similar</td>
+<td>–</td>
+<td>1 % v/v in NK medium</td>
+</tr>
+<tr class="odd">
+<td>β-mercaptoethanol</td>
+<td>Sigma / similar</td>
+<td>–</td>
+<td>Added to NK medium (e.g.&nbsp;50 µM final)</td>
+</tr>
+<tr class="even">
+<td>IL-15</td>
+<td>PeproTech / similar</td>
+<td>–</td>
+<td>Added fresh to NK cultures at 100 IU/mL</td>
+</tr>
+<tr class="odd">
+<td>1× DPBS (PBS)</td>
+<td>Gibco / similar</td>
+<td>–</td>
+<td>For washes, CellTrace staining, spleen processing</td>
+</tr>
+<tr class="even">
+<td>FACS buffer (BUF-GEN-FACS-BUF-001)</td>
+<td>In-house</td>
+<td>–</td>
+<td>PBS + 2 % FCS + 2 mM EDTA</td>
+</tr>
+<tr class="odd">
+<td>EasySep Mouse NK cell isolation kit</td>
+<td>StemCell Technologies</td>
+<td>19855</td>
+<td>For NK cell isolation/pre-enrichment</td>
+</tr>
+<tr class="even">
+<td>CellTrace Violet (CTV) or CellTrace Blue (CTB)</td>
+<td>Invitrogen / similar</td>
+<td>–</td>
+<td>For proliferation tracking</td>
+</tr>
+<tr class="odd">
+<td>Live/dead dye</td>
+<td>Various</td>
+<td>–</td>
+<td>For viability assessment during sorting/acquisition</td>
+</tr>
+<tr class="even">
+<td>Surface antibodies for NK phenotyping</td>
+<td>Various</td>
+<td>–</td>
+<td>e.g.&nbsp;NK1.1, NKp46, CD3, CD160; titration required</td>
+</tr>
+<tr class="odd">
+<td>Histofix or 4 % PFA</td>
+<td>Various / in-house</td>
+<td>–</td>
+<td>For fixation of samples</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>50 mL sterile conical tubes</td>
+<td>For spleen processing and washes</td>
+</tr>
+<tr class="even">
+<td>15 mL sterile tubes</td>
+<td>For sort collection</td>
+</tr>
+<tr class="odd">
+<td>Petri dishes</td>
+<td>For spleen homogenisation</td>
+</tr>
+<tr class="even">
+<td>70 µm cell strainers</td>
+<td>For generating single-cell suspensions</td>
+</tr>
+<tr class="odd">
+<td>Syringe plungers (2–5 mL)</td>
+<td>For mechanical dissociation</td>
+</tr>
+<tr class="even">
+<td>96-well plates (U or flat-bottom)</td>
+<td>For NK cell culture</td>
+</tr>
+<tr class="odd">
+<td>FACS tubes (14 mL or 7 mL polystyrene)</td>
+<td>For sorting and acquisition</td>
+</tr>
+<tr class="even">
+<td>Pipette tips (10 µL, 200 µL, 1000 µL)</td>
+<td>Sterile</td>
+</tr>
+<tr class="odd">
+<td>Cryovials (optional)</td>
+<td>If freezing intermediate cell stocks</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Specification / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO₂ chamber / euthanasia setup</td>
+<td>As per institutional animal welfare guidelines</td>
+</tr>
+<tr class="even">
+<td>Biological safety cabinet</td>
+<td>For all cell handling and staining</td>
+</tr>
+<tr class="odd">
+<td>Dissection tools</td>
+<td>Scissors, forceps, autoclaved</td>
+</tr>
+<tr class="even">
+<td>Benchtop centrifuge</td>
+<td>Refrigerated, suitable for 15/50 mL tubes</td>
+</tr>
+<tr class="odd">
+<td>Gentle shaker or rocker</td>
+<td>For FCS-coating tubes (optional)</td>
+</tr>
+<tr class="even">
+<td>Magnet for NK cell isolation</td>
+<td>Compatible with EasySep kit</td>
+</tr>
+<tr class="odd">
+<td>Flow cytometer and/or cell sorter</td>
+<td>e.g.&nbsp;BD FACS Aria, Cytek Aurora</td>
+</tr>
+<tr class="even">
+<td>Cell counter or microscope with haemocytometer</td>
+<td>For cell counting</td>
+</tr>
+<tr class="odd">
+<td>CO₂ incubator</td>
+<td>37 °C, 5 % CO₂</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>BUF-GEN-FACS-BUF-001</strong> – FACS buffer (PBS + 2 % FCS + 2 mM EDTA).<br>
+</li>
+<li><strong>BUF-MUS-NK-MED-001</strong> – NK culture medium (RPMI 1640 + 10 % FCS + Pen/Strep + NaPy + HEPES + NEAA + β-mercaptoethanol; IL-15 added fresh to 100 IU/mL at the time of culture).<br>
+</li>
+<li><strong>PBS, 1×</strong> – Standard phosphate-buffered saline (no dedicated buffer file if already defined in the system).</li>
+</ul>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 32%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Possible cause</th>
+<th>Suggested solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Low NK recovery after isolation</td>
+<td>Suboptimal kit use; incorrect temperatures</td>
+<td>Recheck EasySep protocol; ensure room temperature during isolation.</td>
+</tr>
+<tr class="even">
+<td>Poor sort purity</td>
+<td>Incomplete staining; gating strategy issues; low event rates</td>
+<td>Optimise staining; review gating; increase event collection time.</td>
+</tr>
+<tr class="odd">
+<td>Weak or unclear CellTrace peaks</td>
+<td>Under-staining; serum present during staining; long time to analysis</td>
+<td>Optimise CTV/CTB concentration; ensure staining in PBS; acquire promptly.</td>
+</tr>
+<tr class="even">
+<td>Reduced viability post-sorting</td>
+<td>Long sort duration; harsh sheath pressure; delayed plating</td>
+<td>Shorten runs; adjust sort settings; plate cells quickly in warm NK medium.</td>
+</tr>
+<tr class="odd">
+<td>No or minimal proliferation</td>
+<td>Inadequate IL-15; poor cell health; suboptimal culture density</td>
+<td>Confirm IL-15 activity and concentration; adjust seeding density; review culture conditions.</td>
+</tr>
+<tr class="even">
+<td>Excessive background proliferation in controls</td>
+<td>Contaminating stimuli; high IL-15 dose</td>
+<td>Check media and plasticware; titrate IL-15; include true unstimulated controls.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Perform all animal work under approved licences and institutional animal welfare regulations.</li>
+<li>Handle murine tissues and cells in a biological safety cabinet following local biosafety guidelines.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
+<li>Dispose of sharps (needles, scalpels) in designated sharps containers.</li>
+<li>Treat all waste containing animal material, media, or dyes (CTV/CTB) as biohazardous and dispose of according to institutional policies.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>First Quarto protocol version for in vitro NK proliferation using CellTrace dyes.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

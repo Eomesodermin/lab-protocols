@@ -1,0 +1,12 @@
+---
+title: "Mouse protocols"
+listing:
+  contents:
+    - "*.qmd"
+  type: table
+  sort: "title"
+---
+
+# Mouse protocols
+
+Mouse processing, tissue digestion, and functional assays.

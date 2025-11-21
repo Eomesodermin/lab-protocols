@@ -1,0 +1,173 @@
+---
+title: "Mouse Tumour Digestion to Single-Cell Suspension"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-TMR-DIG-001"
+version: "v1.0"
+description: "Enzymatic and mechanical dissociation of mouse solid tumours to obtain viable single-cell suspensions for flow cytometry, sorting, and single-cell transcriptomic applications."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** 2025-11-20
+
+# Purpose
+
+This protocol describes the processing of mouse solid tumours to generate high-quality single-cell suspensions using enzymatic digestion (Collagenase + DNase), thorough mechanical dissociation, and controlled washing. The resulting suspensions are suitable for flow cytometry, FACS sorting, tumour-infiltrating lymphocyte (TIL) profiling, and single-cell omics workflows.
+
+# Critical notes (read before starting)
+
+- **Tumours vary widely** in stiffness and extracellular matrix composition; adjust mechanical dissociation effort accordingly.
+- For large or fibrotic tumours, digestion efficiency increases when the tissue is minced **finely** before enzyme incubation.
+- Use **fresh digestion buffer** with DNase added on the day of use.
+- Do not over-digest: aim for **30–45 minutes**, depending on tumour type.
+- After digestion, keep samples on **ice** to maximise viability.
+- Avoid introducing **hair, necrotic debris, or capsule tissue**, which reduce filter performance and cell quality.
+
+# Approximate timing
+
+- Tumour excision + trimming: **5–10 min**
+- Mincing: **5 min**
+- Enzymatic digestion: **30–45 min**
+- Filtering + washes: **20–30 min**
+
+Total hands-on time: **~60–90 minutes**, depending on tumour type and size.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Tumour excision and preparation
+
+1. Euthanise the mouse using an approved method.
+2. Expose the tumour and excise it with sterile scissors and forceps.
+3. Remove fat, necrotic outer layers, and connective tissue using dissection scissors.
+4. Rinse tumour briefly in **cold PBS** to remove blood and debris.
+5. Transfer to a **10 cm petri dish** containing cold **PBS or FACS/MACS Buffer**.
+
+::: callout-tip
+Remove necrotic regions; they clog strainers and reduce cell viability.
+:::
+
+## STEP 2 – Mincing
+
+1. On a sterile petri dish, mince tumour tissue into **very small pieces** using scalpels or scissors.  
+   - Aim for **1–2 mm** fragments for optimal enzyme penetration.
+2. Transfer minced tissue into a **50 mL Falcon tube** containing **5 mL Tumour Digestion Buffer** (`BUF-TMR-DIG-v1.0`).
+
+## STEP 3 – Enzymatic digestion
+
+1. Place tubes on a **37 °C benchtop shaker** at **250 rpm**.
+2. Incubate for **30–45 minutes**, depending on tumour density.
+3. Every 10–15 minutes, remove the tube and gently shake or invert to encourage even digestion.
+
+::: callout-warning
+Over-digestion (>45 min) can reduce viability, especially in lymphocytes and myeloid cells.
+:::
+
+## STEP 4 – Mechanical dissociation
+
+1. Add **FACS/MACS Buffer** to bring total volume to **20–25 mL**.
+2. Pour the digested tumour onto a **70 μm strainer** placed over a **10 cm petri dish**.
+3. Using the **back of a 5 mL syringe plunger**, mash the tissue thoroughly through the strainer.  
+4. Rinse the strainer with additional cold **FACS/MACS Buffer** until no visible tissue remains.
+5. Transfer the filtrate back into a clean **50 mL tube**.
+6. Top up to **50 mL** with cold FACS/MACS Buffer.
+7. Centrifuge at **400 g for 5 minutes at 4 °C**.
+8. Carefully discard the supernatant.
+
+## STEP 5 – RBC lysis (if required)
+
+1. If the suspension appears red or contains substantial blood, add **1 mL 1× RBC Lysis Buffer** (HybriMax or equivalent).
+2. Mix gently and incubate for **3–5 minutes at room temperature**.
+3. Immediately top up to **50 mL** with cold FACS/MACS Buffer.
+4. Centrifuge at **400 g for 5 minutes at 4 °C**.
+5. Discard supernatant.
+
+## STEP 6 – Final wash and filtration
+
+1. Loosen the pellet by gentle flicking.
+2. Resuspend in **5–10 mL FACS/MACS Buffer**.
+3. Filter again through a **fresh 70 μm strainer** to remove remaining debris and aggregates.
+4. Keep the final cell suspension **on ice** for downstream applications.
+
+## STEP 7 – Downstream applications
+
+Proceed to:
+
+- Flow cytometry / TIL profiling  
+- FACS sorting  
+- Tumour microenvironment analyses  
+- Cryopreservation of tumour-derived cell subsets  
+- Single-cell RNA-seq / TCR-seq workflows  
+
+{{< pagebreak >}}
+
+# Buffers used
+
+- **Tumour Digestion Buffer** – `BUF-TMR-DIG-v1.0`  
+  - Typically Collagenase IV or Collagenase D + DNase I in DMEM or RPMI.
+- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
+- **RBC Lysis Buffer** – `BUF-RBC-HYB-v1.0`  
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|--------|------------------|-------|
+| Tumour Digestion Buffer | In-house | Pre-warmed to 37 °C |
+| FACS/MACS Buffer | In-house | Cold |
+| RBC Lysis Buffer | [TBD] | Optional; 1 mL per tumour |
+| PBS 1× | Any | For rinsing |
+
+## Disposables
+
+| Item | Notes |
+|------|-------|
+| 50 mL Falcon tubes | 1 per tumour |
+| 10 cm petri dishes | For mincing and filtering |
+| 70 μm strainers | Do not reuse |
+| 5 mL syringes (no needle) | For mechanical dissociation |
+| Scalpel blades / scissors | For fine mincing |
+| Transfer pipettes | For washes |
+
+## Equipment
+
+| Equipment | Notes |
+|-----------|-------|
+| Benchtop shaker/incubator | 37 °C, 250 rpm |
+| Benchtop centrifuge | 400 g at 4 °C |
+| Biosafety cabinet (Class II) | Recommended |
+| Timer | For digestion and lysis |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Issue | Possible cause | Suggested solution |
+|-------|----------------|---------------------|
+| Large undigested chunks | Insufficient mincing or digestion time | Mince more finely; extend digestion by 5–10 min |
+| Excess debris | Too much necrotic/capsular tissue | Trim tumour more aggressively before mincing |
+| High RBC content | No perfusion / vascular tumour | Perform RBC lysis once |
+| Poor viability | Over-digestion or harsh mashing | Reduce digestion time; use gentler plunger pressure |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- Treat tumours as potentially infectious and follow S1/S2 safety requirements.
+- Collagenase and DNase can irritate skin and eyes—wear full PPE.
+- Dispose of tumour tissue, blades, and enzymatic waste in biohazard and sharps containers as applicable.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for tumour digestion |

@@ -39,6 +39,7 @@ format:
     fontsize: 11pt
     colorlinks: false
   pdf:
+    pdf-engine: xelatex
     toc: false
     number-sections: false
     geometry: "margin=2cm"

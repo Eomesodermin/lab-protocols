@@ -2,7 +2,7 @@
 title: "Mouse Blood Processing to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-BLD-PRC-001"
-version: "v1.0"
+version: "v1.1"
 date: "2025-11-20"
 description: "Processing of mouse peripheral blood to obtain leukocyte-enriched single-cell suspensions for flow cytometry and immunological assays."
 ---
@@ -60,7 +60,7 @@ Ensure local ethics approval covers the chosen blood collection method. Handle s
 
 ## STEP 3 – RBC lysis
 
-1. Gently resuspend the remaining blood pellet in **1 mL of 1× RBC lysis buffer** (e.g. BioLegend / HybriMax 1×).  
+1. Gently resuspend the remaining blood pellet in **1 mL of 1× BioLegend RBC lysis buffer**.  
 2. Transfer the suspension to a **15 mL Falcon tube**.
 3. Gently mix by inversion or brief pipetting to ensure complete resuspension.
 4. Incubate for **5 minutes at room temperature**.
@@ -88,7 +88,7 @@ Keep the cell suspension on **ice** until staining.
 # Buffers used
 
 - **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
-- **RBC Lysis Buffer (e.g. BioLegend / HybriMax)** – `BUF-RBC-HYB-v1.0`  
+- **BioLegend RBC Lysis Buffer** – `BUF-RBC-BIO-v1.0`  
 
 {{< pagebreak >}}
 
@@ -99,7 +99,7 @@ Keep the cell suspension on **ice** until staining.
 | Reagent | Supplier / Cat# | Notes |
 |--------|------------------|-------|
 | EDTA | [TBD] | 20–40 μL per collection tube |
-| RBC Lysis Buffer (1×) | [TBD] | 1 mL per sample; may repeat once |
+| BioLegend RBC Lysis Buffer (1×) | [TBD] | 1 mL per sample; may repeat once |
 | FACS/MACS Buffer | In-house (see buffer) | For washing and resuspension |
 | PBS 1× | Any | As needed |
 
@@ -146,3 +146,4 @@ Keep the cell suspension on **ice** until staining.
 | Version | Date | Author | Change summary |
 |--------|------|--------|----------------|
 | v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for blood processing |
+| v1.1 | 2025-11-25 | Dillon Corvino | Fixed minor errors in protocol creation |

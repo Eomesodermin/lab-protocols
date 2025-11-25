@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-21">
+<meta name="description" content="Preparation of 2× freezing medium for cryopreservation of PBMCs and other lymphocytes. Mixed 1:1 with cell suspension to yield standard 10% DMSO freezing medium.">
 
-<title>Human protocols – Protocol Library</title>
+<title>2× Freezing Medium (R0 + 10% FCS + 20% DMSO) – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,50 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#working-buffer-composition" id="toc-working-buffer-composition" class="nav-link" data-scroll-target="#working-buffer-composition">Working buffer composition</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#stock-reagents" id="toc-stock-reagents" class="nav-link" data-scroll-target="#stock-reagents">Stock reagents</a></li>
+  <li><a href="#preparation-of-10-ml-2-freezing-medium" id="toc-preparation-of-10-ml-2-freezing-medium" class="nav-link" data-scroll-target="#preparation-of-10-ml-2-freezing-medium">Preparation of <strong>10 mL 2× freezing medium</strong></a></li>
+  </ul></li>
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a></li>
+  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
+  <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
+  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety">Safety</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_freeze_mix_2x.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">2× Freezing Medium (R0 + 10% FCS + 20% DMSO)</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Preparation of 2× freezing medium for cryopreservation of PBMCs and other lymphocytes. Mixed 1:1 with cell suspension to yield standard 10% DMSO freezing medium.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +204,230 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
+<p><strong>Protocol ID:</strong> BUF-FREEZE-MIX-2x-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This buffer is a <strong>2× concentrated freezing medium</strong> used for the cryopreservation of PBMCs and other lymphocytes. When mixed 1:1 with a cell suspension in R10 or R0, it yields a standard <strong>final freezing medium containing 10% DMSO and 5% FCS</strong> (or 10% FCS if starting from R10), suitable for controlled-rate freezing.</p>
+</section>
+<section id="working-buffer-composition" class="level1">
+<h1>Working buffer composition</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 29%">
+<col style="width: 48%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Component</th>
+<th>Final concentration (2×)</th>
+<th>Purpose</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>RPMI 1640 (R0)</td>
+<td>—</td>
+<td>Base medium</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>Fetal calf serum</td>
+<td>10% (v/v)</td>
+<td>Protects cells during freezing</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="odd">
+<td>DMSO (cell-grade)</td>
+<td>20% (v/v)</td>
+<td>Cryoprotectant</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<p>When mixed 1:1 with cells in R10 or R0, the <strong>final freezing medium</strong> contains:</p>
+<ul>
+<li><strong>10% DMSO</strong><br>
+</li>
+<li><strong>5–10% FCS</strong> (depending on suspension medium)<br>
+</li>
+<li>RPMI base medium</li>
+</ul>
+</section>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="stock-reagents" class="level2">
+<h2 class="anchored" data-anchor-id="stock-reagents">Stock reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 28%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Stock concentration</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RPMI 1640</td>
+<td>—</td>
+<td>Sterile-filtered</td>
+</tr>
+<tr class="even">
+<td>DMSO, cell-grade</td>
+<td>100%</td>
+<td>Use fresh or freshly opened</td>
+</tr>
+<tr class="odd">
+<td>Fetal calf serum</td>
+<td>—</td>
+<td>Heat-inactivated recommended</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="preparation-of-10-ml-2-freezing-medium" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-of-10-ml-2-freezing-medium">Preparation of <strong>10 mL 2× freezing medium</strong></h2>
+<ol type="1">
+<li>In a sterile 15 mL tube, add:
+<ul>
+<li><strong>7 mL R0 medium</strong> (RPMI without serum)<br>
+</li>
+<li><strong>1 mL heat-inactivated FCS</strong> (10% v/v)<br>
+</li>
+<li><strong>2 mL DMSO</strong> (20% v/v)</li>
+</ul></li>
+<li>Mix gently by inversion; <strong>do not vortex</strong>.</li>
+<li>Keep on ice until use.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>DMSO is toxic at room temperature. Keep the 2× freezing medium on <strong>ice</strong>, and <strong>mix with cells immediately</strong> after preparation.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="usage" class="level1">
+<h1>Usage</h1>
+<ol type="1">
+<li>Adjust PBMCs or lymphocytes to <strong>20 × 10⁶ cells/mL</strong> in R10 or R0.<br>
+</li>
+<li>Add an <strong>equal volume</strong> of this 2× freezing medium.<br>
+</li>
+<li>Mix gently by pipetting.<br>
+</li>
+<li>Dispense <strong>1 mL per cryovial</strong> (final 10% DMSO).<br>
+</li>
+<li>Freeze using a <strong>controlled-rate freezing container</strong> (e.g.&nbsp;Mr Frosty) at −70/−80 °C.<br>
+</li>
+<li>Transfer to liquid nitrogen after ≥12 hours.</li>
+</ol>
+</section>
+<section id="storage-and-stability" class="level1">
+<h1>Storage and stability</h1>
+<ul>
+<li>Use <strong>fresh on the day of preparation</strong>.<br>
+</li>
+<li>Keep on <strong>ice</strong> during use.<br>
+</li>
+<li>Do <strong>not store</strong> after the experiment; discard any remaining buffer.<br>
+</li>
+<li>DMSO-containing mixtures degrade rapidly and should never be refrozen.</li>
+</ul>
+</section>
+<section id="reagent-details" class="level1">
+<h1>Reagent details</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RPMI 1640</td>
+<td>Various</td>
+<td>—</td>
+<td>Base medium</td>
+</tr>
+<tr class="even">
+<td>Fetal calf serum</td>
+<td>Various</td>
+<td>—</td>
+<td>Heat-inactivated</td>
+</tr>
+<tr class="odd">
+<td>DMSO, cell-grade</td>
+<td>Sigma/etc.</td>
+<td>—</td>
+<td>Highly hygroscopic; handle aseptically</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety" class="level1">
+<h1>Safety</h1>
+<ul>
+<li>Handle DMSO with gloves; it enhances dermal absorption of other chemicals.<br>
+</li>
+<li>Prepare freezing medium in a biosafety cabinet using aseptic technique.<br>
+</li>
+<li>Dispose of DMSO-containing waste according to institutional chemical waste protocols.<br>
+</li>
+<li>Avoid eye/skin contact and inhalation.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 14%">
+<col style="width: 19%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>Initial Quarto buffer document for 2× freezing medium.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

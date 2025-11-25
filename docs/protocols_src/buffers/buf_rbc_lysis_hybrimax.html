@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-20">
+<meta name="description" content="Red blood cell lysis buffer based on commercial HybriMax or equivalent RBC lysis reagent.">
 
-<title>Human protocols – Protocol Library</title>
+<title>RBC Lysis Buffer (Hybrimax / Commercial) – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,49 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#linked-protocols" id="toc-linked-protocols" class="nav-link" data-scroll-target="#linked-protocols">Linked protocols</a></li>
+  <li><a href="#composition" id="toc-composition" class="nav-link" data-scroll-target="#composition">Composition</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#a.-from-hybrimax-ready-to-use-formulation" id="toc-a.-from-hybrimax-ready-to-use-formulation" class="nav-link" data-scroll-target="#a.-from-hybrimax-ready-to-use-formulation">A. From HybriMax (ready-to-use formulation)</a></li>
+  </ul></li>
+  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
+  <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_rbc_lysis_hybrimax.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">RBC Lysis Buffer (Hybrimax / Commercial)</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Red blood cell lysis buffer based on commercial HybriMax or equivalent RBC lysis reagent.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 20, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +203,141 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p><strong>Protocol ID:</strong> BUF-RBC-HYB-v1.0<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino<br>
+<strong>Date:</strong> 2025-11-20</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This buffer is used to lyse red blood cells in single-cell suspensions derived from liver (and other tissues, if applicable) while aiming to preserve leukocyte populations for downstream analysis.</p>
+</section>
+<section id="linked-protocols" class="level1">
+<h1>Linked protocols</h1>
+<p>This buffer is used in:</p>
+<ul>
+<li><strong>Mouse Liver Dissociation to Single-Cell Suspension</strong> – <code>LIV-001</code> (v1.0)<br>
+</li>
+<li>Additional protocols where RBC lysis is required.</li>
+</ul>
+</section>
+<section id="composition" class="level1">
+<h1>Composition</h1>
+<p>This protocol assumes the use of a <strong>commercially supplied RBC lysis buffer</strong>, such as:</p>
+<ul>
+<li><strong>HybriMax RBC lysis buffer</strong> (Sigma), used at 1× working strength.</li>
+</ul>
+<p>If an alternative supplier is used (e.g.&nbsp;BioLegend RBC Lysis Buffer), document the product and use according to manufacturer instructions, adapting incubation times as internally validated.</p>
+</section>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="a.-from-hybrimax-ready-to-use-formulation" class="level2">
+<h2 class="anchored" data-anchor-id="a.-from-hybrimax-ready-to-use-formulation">A. From HybriMax (ready-to-use formulation)</h2>
+<ol type="1">
+<li>Confirm whether the commercial HybriMax RBC lysis buffer is supplied as <strong>ready-to-use (1×)</strong> or <strong>concentrate (e.g.&nbsp;10×)</strong>.</li>
+<li>If supplied as <strong>1× solution</strong>:
+<ul>
+<li>Aliquot into smaller working volumes (e.g.&nbsp;5–10 mL) to avoid repeated bottle opening.</li>
+<li>No further dilution is required.</li>
+</ul></li>
+<li>If supplied as <strong>concentrate (e.g.&nbsp;10×)</strong>:
+<ul>
+<li>Dilute with sterile water or buffer as per manufacturer’s instructions to make <strong>1× RBC lysis solution</strong>.</li>
+<li>Mix thoroughly.</li>
+</ul></li>
+<li>Label aliquots with:
+<ul>
+<li>“RBC Lysis Buffer (HybriMax)”</li>
+<li>1× or stock concentration</li>
+<li>Date of preparation</li>
+<li>Version (<code>BUF-RBC-HYB-v1.0</code>)</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The liver protocol <code>LIV-001</code> uses <strong>0.5 mL of 1× RBC lysis buffer per sample</strong> after Percoll enrichment, with a <strong>7-minute</strong> incubation at room temperature.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="storage-and-stability" class="level1">
+<h1>Storage and stability</h1>
+<ul>
+<li>Store the commercial RBC lysis buffer according to manufacturer’s instructions (commonly at <strong>2–8 °C</strong>).</li>
+<li>Keep tightly closed to avoid evaporation and contamination.</li>
+<li>Aliquoted 1× working solution should also be stored at <strong>2–8 °C</strong> and used within the period recommended by the manufacturer or internal validation.</li>
+<li>Do not freeze unless explicitly supported by the manufacturer.</li>
+</ul>
+</section>
+<section id="reagent-details" class="level1">
+<h1>Reagent details</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 19%">
+<col style="width: 11%">
+<col style="width: 13%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Component</th>
+<th>Supplier</th>
+<th>Cat#</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>HybriMax RBC lysis buffer</td>
+<td>[TBD]</td>
+<td>[TBD]</td>
+<td>Commercial RBC lysis buffer; used at 1× working concentration</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<p>(If using a different brand, add a row or update Supplier/Cat# accordingly.)</p>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>RBC lysis buffers typically contain detergents and may contain <strong>sodium azide</strong> or other toxic components.</li>
+<li>Handle with gloves and standard lab PPE.</li>
+<li>Avoid contact with eyes and skin; consult the manufacturer’s safety data sheet (SDS).</li>
+<li>Dispose of RBC-lysis waste and contaminated consumables in accordance with local chemical and biohazard regulations.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-20</td>
+<td>Dillon Corvino</td>
+<td>Initial buffer definition</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

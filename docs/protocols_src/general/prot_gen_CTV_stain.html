@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-21">
+<meta name="description" content="Staining of lymphocytes (e.g.&nbsp;PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry.">
 
-<title>Human protocols – Protocol Library</title>
+<title>CellTrace Violet (CTV) Staining of Lymphocytes – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,59 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-cell-preparation-and-resting" id="toc-step-1-cell-preparation-and-resting" class="nav-link" data-scroll-target="#step-1-cell-preparation-and-resting">Step 1 – Cell preparation and resting</a></li>
+  <li><a href="#step-2-preparation-of-celltrace-violet-stock" id="toc-step-2-preparation-of-celltrace-violet-stock" class="nav-link" data-scroll-target="#step-2-preparation-of-celltrace-violet-stock">Step 2 – Preparation of CellTrace Violet stock</a></li>
+  <li><a href="#step-3-ctv-staining" id="toc-step-3-ctv-staining" class="nav-link" data-scroll-target="#step-3-ctv-staining">Step 3 – CTV staining</a></li>
+  <li><a href="#step-4-quenching-and-washing" id="toc-step-4-quenching-and-washing" class="nav-link" data-scroll-target="#step-4-quenching-and-washing">Step 4 – Quenching and washing</a></li>
+  <li><a href="#step-5-final-resuspension-and-equilibration" id="toc-step-5-final-resuspension-and-equilibration" class="nav-link" data-scroll-target="#step-5-final-resuspension-and-equilibration">Step 5 – Final resuspension and equilibration</a></li>
+  </ul></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_gen_CTV_stain.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">CellTrace Violet (CTV) Staining of Lymphocytes</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Staining of lymphocytes (e.g.&nbsp;PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +213,390 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p><strong>Protocol ID:</strong> GEN-CTV-STAIN-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the staining of lymphocytes (e.g.&nbsp;PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry. Cells are thawed (if frozen), rested in complete medium, stained with CTV in protein-free buffer, and then washed and resuspended in complete medium prior to stimulation or culture.</p>
+<p>The protocol is written for PBMCs but can be applied to other lymphocyte preparations with minor adjustments.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>Perform CTV staining in <strong>protein-free buffer (PBS without FCS)</strong>. Serum during the staining step will markedly reduce dye uptake.</li>
+<li>Optimise CTV concentration for your cell type and assay; the 0.2–0.5 µL/mL range given here is based on prior titration.</li>
+<li>Protect CTV and stained cells from light at all times to prevent photobleaching.</li>
+<li>Ensure cells are in good condition and, if thawed, rested in complete medium before staining.</li>
+<li>Keep incubation times and temperatures consistent between experiments for reproducible proliferation profiles.</li>
+<li>Use appropriate biosafety practices for human material (e.g.&nbsp;PBMCs).</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Over-staining or prolonged exposure to high CTV concentrations can be toxic and alter cell behaviour. Always work within a titrated concentration range and adhere to the recommended 20 min staining time.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When testing a new batch of CTV or a new cell type, include a small titration panel (e.g.&nbsp;0.1, 0.2, 0.5, 1.0 µL/mL) to identify the lowest concentration that provides a clear proliferation profile.</p>
+</div>
+</div>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Thawing and resting PBMCs (if starting from frozen): ~60 min<br>
+</li>
+<li>CTV staining: 20 min<br>
+</li>
+<li>Quenching and wash: 10–20 min<br>
+</li>
+<li>Final resuspension and equilibration: 10–15 min</li>
+</ul>
+<p><strong>Total approximate time (from thawed, rested cells):</strong> ~45–60 min.</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-cell-preparation-and-resting" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-cell-preparation-and-resting">Step 1 – Cell preparation and resting</h2>
+<ol type="1">
+<li>If using frozen PBMCs:
+<ol type="1">
+<li>Thaw vials rapidly in a 37 °C water bath until a small ice crystal remains.</li>
+<li>Immediately transfer the cell suspension into a tube containing pre-warmed R10 medium (BUF-GEN-R10-MED-001) and mix gently.</li>
+<li>Centrifuge at ~400–500 g for 5 min at room temperature.</li>
+<li>Discard the supernatant and resuspend cells in fresh R10.</li>
+</ol></li>
+<li>Optionally add DNase I (e.g.&nbsp;10 µL/mL of an appropriate stock) to reduce clumping during the initial rest period.</li>
+<li>Incubate cells at 37 °C, 5 % CO₂ for ~1 hour to recover from thawing and improve viability.</li>
+<li>Count cells and assess viability using trypan blue or an equivalent method.</li>
+<li>Adjust the cell concentration as needed to allow resuspension at <strong>1 × 10⁶ cells/mL in PBS</strong> in the next step.</li>
+</ol>
+</section>
+<section id="step-2-preparation-of-celltrace-violet-stock" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-preparation-of-celltrace-violet-stock">Step 2 – Preparation of CellTrace Violet stock</h2>
+<ol type="1">
+<li>Reconstitute one vial of CellTrace Violet in <strong>20 µL DMSO</strong> in a biosafety cabinet.</li>
+<li>Mix gently by pipetting; avoid foaming or vortexing.</li>
+<li>Aliquot the stock if desired and store according to the manufacturer’s recommendations (typically −20 °C, protected from light).</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prepare CTV stock fresh on the day of use or use single-use aliquots to avoid repeated freeze–thaw cycles.</p>
+</div>
+</div>
+</section>
+<section id="step-3-ctv-staining" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-ctv-staining">Step 3 – CTV staining</h2>
+<ol type="1">
+<li>Pellet cells and resuspend in <strong>PBS without FCS</strong> at <strong>1 × 10⁶ cells/mL</strong>.</li>
+<li>For each mL of cell suspension, add <strong>0.2–0.5 µL</strong> of the CTV stock solution (based on prior titration).</li>
+<li>Immediately mix by gentle pipetting or brief low-speed vortexing to ensure even distribution of the dye.</li>
+<li>Incubate cells for <strong>20 min at room temperature</strong>, protected from light.</li>
+<li>During incubation, gently invert or tap the tube once or twice to maintain a uniform suspension.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not stain cells in R10 or other serum-containing media. Proteins in the medium will quench the dye and lead to weak or inconsistent staining.</p>
+</div>
+</div>
+</section>
+<section id="step-4-quenching-and-washing" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-quenching-and-washing">Step 4 – Quenching and washing</h2>
+<ol type="1">
+<li>After 20 min, add <strong>5× the original staining volume</strong> of pre-warmed R10 (e.g.&nbsp;add 5 mL R10 to 1 mL stained cells) to quench unbound dye.</li>
+<li>Incubate for <strong>5 min at room temperature</strong>, protected from light.</li>
+<li>Centrifuge at <strong>~400–500 g for 5 min</strong> (or ~1200 rpm in a standard cell-culture centrifuge, if this corresponds to the correct g-force).</li>
+<li>Discard the supernatant carefully.</li>
+<li>Optional extended wash (recommended for higher CTV concentrations or sensitive cell types):
+<ol type="1">
+<li>Resuspend cells in up to 10 mL R10.<br>
+</li>
+<li>Centrifuge again at ~400–500 g for 5 min.<br>
+</li>
+<li>Discard the supernatant.<br>
+</li>
+<li>Repeat once more if residual dye is a concern.</li>
+</ol></li>
+</ol>
+</section>
+<section id="step-5-final-resuspension-and-equilibration" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-final-resuspension-and-equilibration">Step 5 – Final resuspension and equilibration</h2>
+<ol type="1">
+<li>Resuspend cells in R10 (BUF-GEN-R10-MED-001) at the desired concentration for stimulation or culture (commonly 0.5–2 × 10⁶ cells/mL).</li>
+<li>Incubate for at least <strong>10 min at 37 °C</strong>, 5 % CO₂ to allow stabilization of dye distribution within the cells.</li>
+<li>Proceed with downstream steps such as:
+<ul>
+<li>Addition of stimuli for proliferation assays.</li>
+<li>Plating for co-culture experiments.</li>
+<li>Subsequent staining for surface markers prior to acquisition.</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 15%">
+<col style="width: 6%">
+<col style="width: 45%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>CellTrace Violet proliferation dye</td>
+<td>Invitrogen / similar</td>
+<td>–</td>
+<td>Fluorescent proliferation dye; store as per manufacturer</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>RPMI 1640</td>
+<td>Various</td>
+<td>–</td>
+<td>Base for R10 (BUF-GEN-R10-MED-001)</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="odd">
+<td>Fetal calf serum (FCS), heat-inactivated</td>
+<td>Various</td>
+<td>–</td>
+<td>10 % v/v in R10</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>Penicillin/Streptomycin</td>
+<td>Various</td>
+<td>–</td>
+<td>1 % v/v in R10</td>
 </tr>
-
+<tr class="odd">
+<td>DNase I (optional)</td>
+<td>Various</td>
+<td>–</td>
+<td>To reduce clumping during thaw/rest</td>
+</tr>
+<tr class="even">
+<td>PBS, sterile, 1×</td>
+<td>Various</td>
+<td>–</td>
+<td>Protein-free staining buffer</td>
+</tr>
+<tr class="odd">
+<td>DMSO, cell culture grade</td>
+<td>Various</td>
+<td>–</td>
+<td>Solvent for CTV stock</td>
+</tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>15 mL and/or 50 mL tubes</td>
+<td>Sterile, conical</td>
+</tr>
+<tr class="even">
+<td>Pipette tips (10 µL, 200 µL, 1000 µL)</td>
+<td>Sterile</td>
+</tr>
+<tr class="odd">
+<td>Serological pipettes (5–25 mL)</td>
+<td>For media handling</td>
+</tr>
+<tr class="even">
+<td>Cryovials</td>
+<td>If starting from frozen PBMCs</td>
+</tr>
+<tr class="odd">
+<td>Waste containers</td>
+<td>For biohazardous material</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Specification / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO₂ incubator</td>
+<td>37 °C, 5 % CO₂</td>
+</tr>
+<tr class="even">
+<td>Benchtop centrifuge</td>
+<td>For 15/50 mL tubes; adjustable speed (g or rpm)</td>
+</tr>
+<tr class="odd">
+<td>Class II biological safety cabinet</td>
+<td>For handling human samples and CTV</td>
+</tr>
+<tr class="even">
+<td>Water bath</td>
+<td>37 °C; for thawing frozen vials</td>
+</tr>
+<tr class="odd">
+<td>Cell counter or hemocytometer</td>
+<td>For cell counting</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>BUF-GEN-R10-MED-001</strong> – Complete RPMI 1640 medium with 10 % FCS, Pen/Strep (R10).<br>
+</li>
+<li><strong>PBS, 1× (no FCS)</strong> – Protein-free staining buffer (no dedicated buffer ID if defined as standard lab PBS).</li>
+</ul>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 29%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Possible cause</th>
+<th>Suggested solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weak CTV signal</td>
+<td>Under-staining; serum present during staining; short incubation</td>
+<td>Increase CTV within titrated range; ensure staining in PBS; maintain full 20 min incubation.</td>
+</tr>
+<tr class="even">
+<td>Very bright, non-resolving peaks</td>
+<td>Over-staining (too high CTV); too high cell density</td>
+<td>Reduce CTV volume per mL; keep cells at 1 × 10⁶/mL during staining.</td>
+</tr>
+<tr class="odd">
+<td>Reduced viability after staining</td>
+<td>Excess CTV; prolonged staining; poor thaw</td>
+<td>Lower CTV concentration; reduce staining time; improve thaw and recovery conditions.</td>
+</tr>
+<tr class="even">
+<td>Cell clumping</td>
+<td>Insufficient DNase; high cell concentration</td>
+<td>Add DNase during rest; gently resuspend; pass through a cell strainer if needed.</td>
+</tr>
+<tr class="odd">
+<td>High background in downstream panels</td>
+<td>Incomplete quenching or insufficient washes</td>
+<td>Include extended R10 washes; verify centrifuge speeds and times.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Handle human PBMCs and other primary cells as potentially infectious material under appropriate biosafety conditions (e.g.&nbsp;BSL2).</li>
+<li>Wear standard PPE (lab coat, gloves, eye protection) when handling samples, CTV, and DMSO.</li>
+<li>Work with CTV and DMSO in a biological safety cabinet to minimize exposure.</li>
+<li>Dispose of all human-derived material, contaminated tips, tubes, and media as biohazardous waste according to local regulations.</li>
+<li>Follow institutional guidelines for the safe handling and disposal of organic solvents such as DMSO.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 16%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>First Quarto protocol version for generic CellTrace Violet staining of lymphocytes.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-21">
+<meta name="description" content="Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation.">
 
-<title>Human protocols – Protocol Library</title>
+<title>K-562 Cell Line Culture Protocol – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,67 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-reagents-and-medium-preparation" id="toc-step-1-reagents-and-medium-preparation" class="nav-link" data-scroll-target="#step-1-reagents-and-medium-preparation">Step 1 – Reagents and medium preparation</a></li>
+  <li><a href="#step-2-thawing-k-562-cells" id="toc-step-2-thawing-k-562-cells" class="nav-link" data-scroll-target="#step-2-thawing-k-562-cells">Step 2 – Thawing K-562 cells</a></li>
+  <li><a href="#step-3-routine-culture-and-passaging" id="toc-step-3-routine-culture-and-passaging" class="nav-link" data-scroll-target="#step-3-routine-culture-and-passaging">Step 3 – Routine culture and passaging</a>
+  <ul class="collapse">
+  <li><a href="#recommended-density" id="toc-recommended-density" class="nav-link" data-scroll-target="#recommended-density">Recommended density</a></li>
+  <li><a href="#procedure-1" id="toc-procedure-1" class="nav-link" data-scroll-target="#procedure-1">Procedure</a></li>
+  </ul></li>
+  <li><a href="#step-4-short-term-storage-holding-conditions" id="toc-step-4-short-term-storage-holding-conditions" class="nav-link" data-scroll-target="#step-4-short-term-storage-holding-conditions">Step 4 – Short-term storage / holding conditions</a></li>
+  <li><a href="#step-5-cryopreservation-of-k-562-cells" id="toc-step-5-cryopreservation-of-k-562-cells" class="nav-link" data-scroll-target="#step-5-cryopreservation-of-k-562-cells">Step 5 – Cryopreservation of K-562 cells</a>
+  <ul class="collapse">
+  <li><a href="#preparation-of-freezing-medium" id="toc-preparation-of-freezing-medium" class="nav-link" data-scroll-target="#preparation-of-freezing-medium">Preparation of freezing medium</a></li>
+  <li><a href="#freezing-procedure" id="toc-freezing-procedure" class="nav-link" data-scroll-target="#freezing-procedure">Freezing procedure</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_hum_K562_culture.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">K-562 Cell Line Culture Protocol</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +221,407 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p><strong>Protocol ID:</strong> HUM-K562-CULTURE-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the thawing, routine culture, maintenance, passaging, and cryopreservation of the human K-562 erythroleukemia cell line. K-562 cells grow in suspension and require regular monitoring of density to maintain viability and consistent growth rates.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>K-562 cells grow as <strong>suspension cultures</strong> and should remain in exponential growth phase.</li>
+<li>Do not allow cultures to exceed recommended density, as nutrient depletion reduces viability and alters phenotype.</li>
+<li>K-562 cells are of human origin—treat all cultures and waste as BSL2.</li>
+<li>Always pre-warm media and reagents to <strong>37 °C</strong> before use.</li>
+<li>Ensure gentle handling; harsh centrifugation or over-pipetting can damage suspension cells.</li>
+<li>Cryopreservation requires <strong>10% DMSO</strong>, and cells should be frozen using a controlled-rate freezing container.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Overgrowth (tight clumps, very dense cultures) leads to poor viability and altered functional responses. Split cultures <strong>before</strong> they exceed recommended density.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Record passage number and split ratios at every passage. This improves reproducibility when using K-562 cells as targets or stimulator cells.</p>
+</div>
+</div>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Thawing: 15–20 min<br>
+</li>
+<li>Routine medium change / split: 10–15 min<br>
+</li>
+<li>Cryopreservation: 20–30 min<br>
+</li>
+<li>Total hands-on time per session: ~15–30 min</li>
+</ul>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-reagents-and-medium-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-reagents-and-medium-preparation">Step 1 – Reagents and medium preparation</h2>
+<ol type="1">
+<li>Pre-warm complete culture medium:
+<ul>
+<li>RPMI 1640<br>
+</li>
+<li>10% FCS<br>
+</li>
+<li>1% Pen/Strep<br>
+</li>
+</ul></li>
+<li>Pre-warm PBS (if washing is needed).<br>
+</li>
+<li>Label flasks with:
+<ul>
+<li>Cell line name (K-562)<br>
+</li>
+<li>Passage number<br>
+</li>
+<li>Date<br>
+</li>
+<li>Operator initials</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-2-thawing-k-562-cells" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-thawing-k-562-cells">Step 2 – Thawing K-562 cells</h2>
+<ol type="1">
+<li>Pre-warm <strong>10–15 mL</strong> of complete medium to 37 °C.</li>
+<li>Thaw a cryovial of K-562 cells in a 37 °C water bath:
+<ul>
+<li>Gently swirl and remove when only a small ice crystal remains.</li>
+</ul></li>
+<li>Transfer contents into a 15 mL tube containing <strong>10 mL</strong> pre-warmed complete medium.</li>
+<li>Centrifuge at <strong>300 g for 5 min</strong> at room temperature.</li>
+<li>Remove supernatant and gently resuspend the pellet in <strong>10–15 mL</strong> fresh complete medium.</li>
+<li>Transfer cells to a T25 or T75 flask and incubate at <strong>37 °C, 5% CO₂</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The centrifugation step removes DMSO, preventing toxicity during recovery.</p>
+</div>
+</div>
+</section>
+<section id="step-3-routine-culture-and-passaging" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-routine-culture-and-passaging">Step 3 – Routine culture and passaging</h2>
+<section id="recommended-density" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-density">Recommended density</h3>
+<ul>
+<li>Maintain between <strong>2 × 10⁵</strong> and <strong>1 × 10⁶ cells/mL</strong>.</li>
+</ul>
+</section>
+<section id="procedure-1" class="level3">
+<h3 class="anchored" data-anchor-id="procedure-1">Procedure</h3>
+<ol type="1">
+<li>Gently resuspend the culture by pipetting up and down.</li>
+<li>Count cells using trypan blue or an automated counter.</li>
+<li>If density &gt; 1 × 10⁶ cells/mL:
+<ul>
+<li>Split culture <strong>1:2 to 1:5</strong> depending on growth.</li>
+</ul></li>
+<li>Add fresh, pre-warmed complete medium to adjust culture to:
+<ul>
+<li><strong>2–3 × 10⁵ cells/mL</strong></li>
+</ul></li>
+<li>Return to incubator (37 °C, 5% CO₂).</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not allow cultures to sit for more than 3–4 days without splitting. Nutrient depletion leads to apoptosis and growth arrest.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="step-4-short-term-storage-holding-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-short-term-storage-holding-conditions">Step 4 – Short-term storage / holding conditions</h2>
+<ul>
+<li>Cultures may be held at <strong>2–4 × 10⁵ cells/mL</strong> for 24–48 h without splitting.</li>
+<li>If cultures appear slow or viability drops:
+<ul>
+<li>Increase medium volume<br>
+</li>
+<li>Spin down and resuspend in entirely fresh medium</li>
+</ul></li>
+</ul>
+</section>
+<section id="step-5-cryopreservation-of-k-562-cells" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-cryopreservation-of-k-562-cells">Step 5 – Cryopreservation of K-562 cells</h2>
+<section id="preparation-of-freezing-medium" class="level3">
+<h3 class="anchored" data-anchor-id="preparation-of-freezing-medium">Preparation of freezing medium</h3>
+<ul>
+<li><strong>90% FCS + 10% DMSO</strong><br>
+(or use BUF-GEN-FREEZE-MIX-001 diluted 1:1 with cell suspension)</li>
+</ul>
+</section>
+<section id="freezing-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="freezing-procedure">Freezing procedure</h3>
+<ol type="1">
+<li>Collect cells in exponential growth phase.</li>
+<li>Centrifuge at <strong>300 g for 5 min</strong>.</li>
+<li>Resuspend in freezing medium at <strong>1–10 × 10⁶ cells/mL</strong>.</li>
+<li>Aliquot <strong>1 mL</strong> into labelled cryovials.</li>
+<li>Place vials into a <strong>controlled-rate freezing container</strong> (e.g.&nbsp;Mr Frosty).</li>
+<li>Freeze at <strong>−70/−80 °C overnight</strong>.</li>
+<li>Transfer vials to <strong>liquid nitrogen</strong> for long-term storage.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 8%">
+<col style="width: 43%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>RPMI 1640</td>
+<td>Various</td>
+<td>—</td>
+<td>Base medium</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>Fetal calf serum (FCS)</td>
+<td>Various</td>
+<td>—</td>
+<td>10% v/v in medium</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="odd">
+<td>Penicillin/Streptomycin</td>
+<td>Various</td>
+<td>—</td>
+<td>1% v/v final</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>DMSO (cell culture grade)</td>
+<td>Sigma/others</td>
+<td>—</td>
+<td>10% final in freezing medium</td>
 </tr>
-
+<tr class="odd">
+<td>PBS, 1×</td>
+<td>Various</td>
+<td>—</td>
+<td>For washing (optional)</td>
+</tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T25 / T75 flasks</td>
+<td>Vent-cap, sterile</td>
+</tr>
+<tr class="even">
+<td>15 mL / 50 mL tubes</td>
+<td>Sterile</td>
+</tr>
+<tr class="odd">
+<td>Cryovials</td>
+<td>LN2-compatible</td>
+</tr>
+<tr class="even">
+<td>Pipette tips</td>
+<td>Sterile (10 µL – 1000 µL)</td>
+</tr>
+<tr class="odd">
+<td>Serological pipettes</td>
+<td>Sterile (5–25 mL)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Specification / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO₂ incubator</td>
+<td>37 °C, 5% CO₂</td>
+</tr>
+<tr class="even">
+<td>Benchtop centrifuge</td>
+<td>300 g for washing</td>
+</tr>
+<tr class="odd">
+<td>Biological safety cabinet</td>
+<td>BSL2 handling</td>
+</tr>
+<tr class="even">
+<td>Water bath</td>
+<td>37 °C for thawing</td>
+</tr>
+<tr class="odd">
+<td>Cell counter/hemocytometer</td>
+<td>For counting</td>
+</tr>
+<tr class="even">
+<td>Controlled-rate freezer</td>
+<td>e.g.&nbsp;Mr Frosty</td>
+</tr>
+<tr class="odd">
+<td>Liquid nitrogen storage</td>
+<td>Long-term cryostorage</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>BUF-GEN-FREEZE-MIX-001</strong> – optional alternative for freezing<br>
+</li>
+<li>PBS (standard laboratory reagent)</li>
+</ul>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 30%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Possible cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Low viability after thaw</td>
+<td>Slow thawing or DMSO exposure</td>
+<td>Thaw rapidly; wash immediately after thaw</td>
+</tr>
+<tr class="even">
+<td>Clumping</td>
+<td>High density or depleted medium</td>
+<td>Dilute, split earlier, or replace medium entirely</td>
+</tr>
+<tr class="odd">
+<td>Slow growth</td>
+<td>Old medium, poor serum batch</td>
+<td>Prepare fresh medium; test new batch of FCS</td>
+</tr>
+<tr class="even">
+<td>Sudden drop in viability</td>
+<td>Contamination or overgrowth</td>
+<td>Check culture; discard and restart from stock</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Handle all human-derived cell lines using BSL2 precautions.</li>
+<li>Wear gloves, lab coat, and eye protection.</li>
+<li>Dispose of liquid and solid waste as biohazardous material.</li>
+<li>DMSO increases skin permeability—avoid contact.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 20%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>Initial Quarto protocol for K-562 culture</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

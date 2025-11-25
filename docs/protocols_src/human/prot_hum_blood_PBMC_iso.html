@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-21">
+<meta name="description" content="Isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation, followed by washing and optional cryopreservation.">
 
-<title>Human protocols – Protocol Library</title>
+<title>Isolation of Human PBMCs from Whole Blood by Ficoll Gradient – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,63 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-tube-labelling-and-blood-dilution" id="toc-step-1-tube-labelling-and-blood-dilution" class="nav-link" data-scroll-target="#step-1-tube-labelling-and-blood-dilution">Step 1 – Tube labelling and blood dilution</a></li>
+  <li><a href="#step-2-ficoll-layering-and-gradient-centrifugation" id="toc-step-2-ficoll-layering-and-gradient-centrifugation" class="nav-link" data-scroll-target="#step-2-ficoll-layering-and-gradient-centrifugation">Step 2 – Ficoll layering and gradient centrifugation</a></li>
+  <li><a href="#step-3-harvest-of-pbmc-layer-and-first-wash" id="toc-step-3-harvest-of-pbmc-layer-and-first-wash" class="nav-link" data-scroll-target="#step-3-harvest-of-pbmc-layer-and-first-wash">Step 3 – Harvest of PBMC layer and first wash</a></li>
+  <li><a href="#step-4-second-wash-and-resuspension-in-r10" id="toc-step-4-second-wash-and-resuspension-in-r10" class="nav-link" data-scroll-target="#step-4-second-wash-and-resuspension-in-r10">Step 4 – Second wash and resuspension in R10</a></li>
+  <li><a href="#step-5-counting-and-cryopreservation-optional" id="toc-step-5-counting-and-cryopreservation-optional" class="nav-link" data-scroll-target="#step-5-counting-and-cryopreservation-optional">Step 5 – Counting and cryopreservation (optional)</a>
+  <ul class="collapse">
+  <li><a href="#preparation-of-2-freezing-medium-buf-gen-freeze-mix-001" id="toc-preparation-of-2-freezing-medium-buf-gen-freeze-mix-001" class="nav-link" data-scroll-target="#preparation-of-2-freezing-medium-buf-gen-freeze-mix-001">5.1 Preparation of 2× freezing medium (BUF-GEN-FREEZE-MIX-001)</a></li>
+  <li><a href="#adjust-cell-concentration-and-freeze" id="toc-adjust-cell-concentration-and-freeze" class="nav-link" data-scroll-target="#adjust-cell-concentration-and-freeze">5.2 Adjust cell concentration and freeze</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_hum_blood_PBMC_iso.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation, followed by washing and optional cryopreservation.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +217,461 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p><strong>Protocol ID:</strong> HUM-BLD-PBMC-ISO-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation. Whole blood is diluted with serum-free medium (R0), layered onto Ficoll, centrifuged to generate a mononuclear cell interface, and PBMCs are harvested, washed, and optionally cryopreserved in freezing medium.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>Handle human blood and PBMCs as potentially infectious material under appropriate biosafety conditions (e.g.&nbsp;BSL2).</li>
+<li>Carefully layer diluted blood onto Ficoll to avoid mixing; a sharp interface is essential for good yield and purity.</li>
+<li>Use <strong>rcf (g)</strong> where possible rather than rpm; if rpm is used, ensure it corresponds to the correct g-force for your rotor.</li>
+<li>Use low brake (or reduced deceleration) during the Ficoll spin to avoid disturbing the gradient.</li>
+<li>Avoid aspirating Ficoll when harvesting the PBMC layer; take only the “fluffy” interface.</li>
+<li>Keep cells at room temperature during the Ficoll separation and at room temperature or 4 °C during washes, as appropriate.</li>
+<li>For cryopreservation, use controlled-rate freezing (e.g.&nbsp;Mr Frosty) and avoid leaving cells at room temperature with DMSO for prolonged periods.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mixing of diluted blood with Ficoll or using high brake during the gradient centrifugation can collapse the interface and dramatically reduce PBMC yield and purity.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prepare all R0 and R10 media, Ficoll tubes, and pre-labelled cryovials before starting. This simplifies handling once blood is collected and reduces the time PBMCs spend at room temperature.</p>
+</div>
+</div>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Setup and blood dilution: 10–15 min<br>
+</li>
+<li>Ficoll gradient and spin: 30 min<br>
+</li>
+<li>First PBMC wash: 15–20 min<br>
+</li>
+<li>Second wash and resuspension in R10: 15–20 min<br>
+</li>
+<li>Counting and freezing (if applicable): 20–30 min</li>
+</ul>
+<p><strong>Total approximate time:</strong> 1.5–2 hours.</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-tube-labelling-and-blood-dilution" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-tube-labelling-and-blood-dilution">Step 1 – Tube labelling and blood dilution</h2>
+<ol type="1">
+<li>Label 50 mL conical tubes for each blood sample.</li>
+<li>For each sample, add whole blood to a 50 mL tube:
+<ul>
+<li>Transfer up to <strong>17.5 mL whole blood</strong> per 50 mL tube.</li>
+</ul></li>
+<li>Dilute blood <strong>1:2</strong> with R0 medium (RPMI without FCS; BUF-GEN-R0-MED-001):
+<ul>
+<li>Add <strong>17.5 mL R0</strong> to 17.5 mL blood (total 35 mL).<br>
+</li>
+<li>If using less than 17.5 mL blood, top up to <strong>35 mL</strong> with R0.</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dilution with R0 reduces viscosity, improves layering on Ficoll, and can improve separation quality.</p>
+</div>
+</div>
+</section>
+<section id="step-2-ficoll-layering-and-gradient-centrifugation" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-ficoll-layering-and-gradient-centrifugation">Step 2 – Ficoll layering and gradient centrifugation</h2>
+<ol type="1">
+<li>In a fresh 50 mL tube, add <strong>10 mL Ficoll</strong> (density gradient medium).</li>
+<li>Using a 10 mL serological pipette, <strong>slowly overlay</strong> the <strong>35 mL diluted blood</strong> onto the Ficoll:
+<ul>
+<li>Hold the Ficoll tube at a gentle angle.</li>
+<li>Carefully dispense the diluted blood onto the Ficoll surface, avoiding mixing.</li>
+<li>Maximum volume of diluted blood per tube: <strong>35 mL</strong>.</li>
+</ul></li>
+<li>Prepare all Ficoll gradients required and ensure they are balanced.</li>
+<li>Centrifuge at <strong>450 g (rcf)</strong> for <strong>30 min</strong> at room temperature with:
+<ul>
+<li>Acceleration: 2<br>
+</li>
+<li>Deceleration: 1 (minimal brake)</li>
+</ul></li>
+<li>During centrifugation, prepare <strong>10 mL tubes</strong> containing <strong>3 mL R0</strong> (2 tubes per Ficoll gradient) for PBMC collection.</li>
+</ol>
+</section>
+<section id="step-3-harvest-of-pbmc-layer-and-first-wash" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-harvest-of-pbmc-layer-and-first-wash">Step 3 – Harvest of PBMC layer and first wash</h2>
+<ol type="1">
+<li>After centrifugation, identify:
+<ul>
+<li>Plasma / diluted medium layer on top.</li>
+<li>A white, “fluffy” PBMC layer at the plasma/Ficoll interface.</li>
+<li>Ficoll layer.</li>
+<li>Pellet of erythrocytes and granulocytes at the bottom.</li>
+</ul></li>
+<li>Using a sterile transfer pipette, gently harvest the PBMC layer:
+<ul>
+<li>Carefully aspirate the interface and transfer to a 10 mL tube containing <strong>3 mL R0</strong>.</li>
+<li>Continue until the visible fluffy layer is removed.</li>
+</ul></li>
+<li>For each gradient, distribute the collected PBMCs across <strong>two 10 mL tubes</strong> (each with 3 mL R0).</li>
+<li>Centrifuge the 10 mL tubes at <strong>400 g for 10 min</strong> at room temperature:
+<ul>
+<li>Acceleration: 9<br>
+</li>
+<li>Deceleration: 9</li>
+</ul></li>
+<li>Carefully remove and discard the supernatant without disturbing the cell pellets.</li>
+</ol>
+</section>
+<section id="step-4-second-wash-and-resuspension-in-r10" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-second-wash-and-resuspension-in-r10">Step 4 – Second wash and resuspension in R10</h2>
+<ol type="1">
+<li>Resuspend each PBMC pellet in <strong>3 mL R0</strong>.</li>
+<li>Combine <strong>two pellets into one tube</strong> and top up to <strong>10 mL R0</strong>.</li>
+<li>Centrifuge at <strong>400 g for 5 min</strong> at room temperature:
+<ul>
+<li>Acceleration: 9<br>
+</li>
+<li>Deceleration: 9</li>
+</ul></li>
+<li>Remove and discard the supernatant.</li>
+<li>Resuspend the pellet in <strong>10 mL R10</strong> (complete RPMI with 10 % FCS; BUF-GEN-R10-MED-001).</li>
+<li>If multiple gradients were processed for the same sample, combine their PBMC pellets into a single tube in R10.</li>
+<li>Centrifuge at <strong>400 g for 5 min</strong> at room temperature.</li>
+<li>Remove and discard the supernatant.</li>
+<li>Resuspend the pellet in <strong>1–10 mL R10</strong>, depending on pellet size and planned downstream use.</li>
+</ol>
+</section>
+<section id="step-5-counting-and-cryopreservation-optional" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-counting-and-cryopreservation-optional">Step 5 – Counting and cryopreservation (optional)</h2>
+<ol type="1">
+<li>Mix the cell suspension gently and take a small aliquot for counting with trypan blue or an equivalent viability dye.</li>
+<li>Calculate the total number of viable PBMCs.</li>
+<li>For cryopreservation, aim for a final concentration of <strong>10 × 10⁶ cells/mL</strong> per cryovial.</li>
+</ol>
+<section id="preparation-of-2-freezing-medium-buf-gen-freeze-mix-001" class="level3">
+<h3 class="anchored" data-anchor-id="preparation-of-2-freezing-medium-buf-gen-freeze-mix-001">5.1 Preparation of 2× freezing medium (BUF-GEN-FREEZE-MIX-001)</h3>
+<ol type="1">
+<li>Prepare 2× freezing medium by mixing:
+<ul>
+<li>7 mL R0<br>
+</li>
+<li>1 mL FCS<br>
+</li>
+<li>2 mL DMSO<br>
+(Final: R0 + 10 % FCS + 20 % DMSO; 2× relative to standard 10 % DMSO freezing medium.)</li>
+</ul></li>
+<li>Keep the 2× freezing medium on ice and protected from light.</li>
+</ol>
+</section>
+<section id="adjust-cell-concentration-and-freeze" class="level3">
+<h3 class="anchored" data-anchor-id="adjust-cell-concentration-and-freeze">5.2 Adjust cell concentration and freeze</h3>
+<ol type="1">
+<li>Adjust PBMCs in R10 to <strong>20 × 10⁶ cells/mL</strong>:
+<ul>
+<li>If only one cryovial is needed, pellet cells at <strong>200 g for 5 min</strong>, remove supernatant, and resuspend so that the cell pellet is in <strong>500 µL R10</strong> (20 × 10⁶ cells/mL).</li>
+</ul></li>
+<li>Add an <strong>equal volume</strong> of 2× freezing medium (BUF-GEN-FREEZE-MIX-001) to the cells:
+<ul>
+<li>Final concentration: <strong>10 × 10⁶ cells/mL</strong> in <strong>10 % DMSO</strong>.</li>
+</ul></li>
+<li>Gently mix to avoid bubbles.</li>
+<li>Dispense <strong>1 mL</strong> of cell suspension into <strong>pre-cooled cryovials</strong>, labelled with:
+<ul>
+<li>Patient name or anonymised ID.</li>
+<li>Sample type (PBMC).</li>
+<li>Date.</li>
+</ul></li>
+<li>Place cryovials into a <strong>pre-cooled controlled-rate freezing container</strong> (e.g.&nbsp;Mr Frosty) and transfer to a <strong>−70 °C or −80 °C</strong> freezer.</li>
+<li>After at least <strong>overnight freezing</strong>, move cryovials to <strong>liquid nitrogen</strong> for long-term storage.</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 12%">
+<col style="width: 6%">
+<col style="width: 46%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>Ficoll-Paque or equivalent density medium</td>
+<td>Cytiva / other</td>
+<td>–</td>
+<td>Density gradient for PBMC isolation</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>RPMI 1640</td>
+<td>Various</td>
+<td>–</td>
+<td>Base for R0 and R10 media</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="odd">
+<td>Fetal calf serum (FCS), heat-inactivated</td>
+<td>Various</td>
+<td>–</td>
+<td>10 % v/v in R10, 10 % v/v in freezing medium</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>Penicillin/Streptomycin</td>
+<td>Various</td>
+<td>–</td>
+<td>1 % v/v in R10</td>
 </tr>
-
+<tr class="odd">
+<td>DMSO, cell culture grade</td>
+<td>Various</td>
+<td>–</td>
+<td>20 % in 2× freezing medium; 10 % final in cell suspension</td>
+</tr>
+<tr class="even">
+<td>PBS, sterile, 1× (optional)</td>
+<td>Various</td>
+<td>–</td>
+<td>For additional washes if required</td>
+</tr>
+<tr class="odd">
+<td>Trypan blue or viability dye</td>
+<td>Various</td>
+<td>–</td>
+<td>For counting and assessing viability</td>
+</tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>50 mL conical tubes</td>
+<td>Sterile, for blood and Ficoll</td>
+</tr>
+<tr class="even">
+<td>10 mL round-bottom tubes</td>
+<td>Sterile, for PBMC collection</td>
+</tr>
+<tr class="odd">
+<td>Cryovials</td>
+<td>Suitable for liquid nitrogen storage</td>
+</tr>
+<tr class="even">
+<td>Serological pipettes (5–25 mL)</td>
+<td>For layering and media handling</td>
+</tr>
+<tr class="odd">
+<td>Pipette tips</td>
+<td>Sterile (10 µL, 200 µL, 1000 µL)</td>
+</tr>
+<tr class="even">
+<td>Transfer pipettes</td>
+<td>For harvesting PBMC interface</td>
+</tr>
+<tr class="odd">
+<td>Biohazard waste containers</td>
+<td>For blood-contaminated disposables</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Specification / Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Benchtop centrifuge</td>
+<td>For 50 mL and 10 mL tubes; adjustable rcf</td>
+</tr>
+<tr class="even">
+<td>Class II biological safety cabinet</td>
+<td>For handling human blood and PBMCs</td>
+</tr>
+<tr class="odd">
+<td>Controlled-rate freezing container</td>
+<td>e.g.&nbsp;Mr Frosty, for −70/−80 °C freezing</td>
+</tr>
+<tr class="even">
+<td>−70 °C or −80 °C freezer</td>
+<td>For initial freezing</td>
+</tr>
+<tr class="odd">
+<td>Liquid nitrogen storage system</td>
+<td>For long-term storage</td>
+</tr>
+<tr class="even">
+<td>Hemocytometer or automated cell counter</td>
+<td>For PBMC counting</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>BUF-GEN-R0-MED-001</strong> – RPMI 1640 without FCS (R0).<br>
+</li>
+<li><strong>BUF-GEN-R10-MED-001</strong> – RPMI 1640 with 10 % FCS and Pen/Strep (R10).<br>
+</li>
+<li><strong>BUF-GEN-FREEZE-MIX-001</strong> – 2× freezing medium (R0 + 10 % FCS + 20 % DMSO).</li>
+</ul>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 31%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Possible cause</th>
+<th>Suggested solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Poor PBMC layer formation</td>
+<td>Blood and Ficoll mixed; incorrect centrifuge settings</td>
+<td>Carefully overlay blood; verify 450 g; reduce brake to minimal</td>
+</tr>
+<tr class="even">
+<td>Low PBMC yield</td>
+<td>Interface harvested too shallow or too deep</td>
+<td>Practice aspirating only the fluffy interface; avoid Ficoll and pellet</td>
+</tr>
+<tr class="odd">
+<td>High granulocyte or RBC contamination</td>
+<td>Interface disturbed; Ficoll aspiration</td>
+<td>Harvest more gently; leave a thin Ficoll layer above the pellet</td>
+</tr>
+<tr class="even">
+<td>PBMC clumping</td>
+<td>High cell concentration; extended room temperature time</td>
+<td>Gently resuspend; consider DNase during processing; shorten handling time</td>
+</tr>
+<tr class="odd">
+<td>Reduced viability after thawing</td>
+<td>Inadequate freezing rate or DMSO handling</td>
+<td>Use controlled-rate freezing; minimize time with DMSO at room temperature</td>
+</tr>
+<tr class="even">
+<td>Loss of cells during washes</td>
+<td>Pellets disturbed when decanting</td>
+<td>Leave a small volume above the pellet; decant carefully; use pipette to remove residual supernatant</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Treat all human blood and PBMCs as potentially infectious material.</li>
+<li>Work in a Class II biological safety cabinet and follow institutional BSL2 procedures.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) at all times when handling blood and PBMCs.</li>
+<li>Dispose of blood-contaminated materials (tips, tubes, pipettes, Ficoll waste) as biohazardous waste.</li>
+<li>Handle DMSO and cryogenic materials (e.g.&nbsp;liquid nitrogen) according to institutional chemical and cryogen safety guidelines.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 64%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>First Quarto protocol version for PBMC isolation by Ficoll gradient.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

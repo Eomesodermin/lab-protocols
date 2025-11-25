@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-20">
+<meta name="description" content="Processing of mouse peripheral blood to obtain leukocyte-enriched single-cell suspensions for flow cytometry and immunological assays.">
 
-<title>Human protocols – Protocol Library</title>
+<title>Mouse Blood Processing to Single-Cell Suspension – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,58 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-blood-collection" id="toc-step-1-blood-collection" class="nav-link" data-scroll-target="#step-1-blood-collection">STEP 1 – Blood collection</a></li>
+  <li><a href="#step-2-allocate-sample-volume-and-serum-removal" id="toc-step-2-allocate-sample-volume-and-serum-removal" class="nav-link" data-scroll-target="#step-2-allocate-sample-volume-and-serum-removal">STEP 2 – Allocate sample volume and Serum removal</a></li>
+  <li><a href="#step-3-rbc-lysis" id="toc-step-3-rbc-lysis" class="nav-link" data-scroll-target="#step-3-rbc-lysis">STEP 3 – RBC lysis</a></li>
+  <li><a href="#step-4-wash-and-final-resuspension" id="toc-step-4-wash-and-final-resuspension" class="nav-link" data-scroll-target="#step-4-wash-and-final-resuspension">STEP 4 – Wash and final resuspension</a></li>
+  </ul></li>
+  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_blood_processing.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">Mouse Blood Processing to Single-Cell Suspension</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Processing of mouse peripheral blood to obtain leukocyte-enriched single-cell suspensions for flow cytometry and immunological assays.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 20, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +212,319 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p><strong>Protocol ID:</strong> MUS-BLD-PRC-001<br>
+<strong>Version:</strong> v1.1<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the processing of mouse peripheral blood collected in EDTA to generate a leukocyte-enriched single-cell suspension using RBC lysis and gentle washing. The final suspension is suitable for flow cytometry, basic immunophenotyping, and other standard immunological assays.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>Always collect blood into tubes containing <strong>EDTA</strong> (or other approved anticoagulant) and <strong>mix immediately</strong> to prevent clotting.</li>
+<li>Perform all processing steps as soon as possible after collection; avoid prolonged storage at room temperature.</li>
+<li>RBC lysis should be <strong>time-limited (~5 minutes)</strong> to minimise leukocyte damage.</li>
+<li>Keep samples on <strong>ice</strong> or at <strong>4 °C</strong> after lysis and during washing to preserve viability.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Blood collection and transfer: <strong>2–5 min per mouse</strong></li>
+<li>Initial spin and serum removal: <strong>5 min</strong></li>
+<li>RBC lysis and wash: <strong>10–15 min</strong></li>
+</ul>
+<p>Total hands-on time per sample: <strong>20–25 minutes</strong>, depending on batching.</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-blood-collection" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-blood-collection">STEP 1 – Blood collection</h2>
+<ol type="1">
+<li>Prepare <strong>EDTA-containing microcentrifuge tubes</strong> (20–40 μL EDTA per tube) and label one tube per mouse.</li>
+<li>Collect blood using an <strong>insulin syringe</strong> (or other approved method, e.g.&nbsp;retro-orbital, submandibular, cardiac puncture as per ethics approval).</li>
+<li>Immediately dispense the blood into the EDTA tube.</li>
+<li>Flick the tube gently to mix blood with EDTA and prevent clotting.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ensure local ethics approval covers the chosen blood collection method. Handle sharps carefully and discard immediately into an approved sharps container.</p>
+</div>
+</div>
+</section>
+<section id="step-2-allocate-sample-volume-and-serum-removal" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-allocate-sample-volume-and-serum-removal">STEP 2 – Allocate sample volume and Serum removal</h2>
+<ol type="1">
+<li>Transfer a defined volume of well-mixed whole blood (e.g.&nbsp;<strong>100–200 μL</strong>, or as required) from the EDTA tube into a <strong>new, labelled microcentrifuge tube</strong>.
+<ul>
+<li>Record the volume used per sample in your lab notebook.</li>
+</ul></li>
+<li>Centrifuge the whole blood at <strong>maximum g (bench-top microcentrifuge)</strong> for <strong>5 minutes</strong> at room temperature or 4 °C.</li>
+<li>Carefully remove the <strong>serum</strong>:
+<ul>
+<li>Discard, or</li>
+<li>Aliquot and freeze at <strong>−20 °C or −80 °C</strong> if required for serum analyses.</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-3-rbc-lysis" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-rbc-lysis">STEP 3 – RBC lysis</h2>
+<ol type="1">
+<li>Gently resuspend the remaining blood pellet in <strong>1 mL of 1× BioLegend RBC lysis buffer</strong>.<br>
+</li>
+<li>Transfer the suspension to a <strong>15 mL Falcon tube</strong>.</li>
+<li>Gently mix by inversion or brief pipetting to ensure complete resuspension.</li>
+<li>Incubate for <strong>5 minutes at room temperature</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not exceed the recommended lysis time; prolonged exposure to RBC lysis buffer can damage leukocytes and alter marker expression.</p>
+</div>
+</div>
+</section>
+<section id="step-4-wash-and-final-resuspension" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-wash-and-final-resuspension">STEP 4 – Wash and final resuspension</h2>
+<ol type="1">
+<li>After the 5-minute lysis, top up the tube to <strong>10 mL</strong> with <strong>FACS/MACS Buffer</strong>.</li>
+<li>Centrifuge at <strong>400 g for 4–5 minutes at 4 °C</strong>.</li>
+<li>Carefully pour off or aspirate the supernatant.</li>
+<li>If substantial red cell contamination remains:
+<ul>
+<li>Repeat the RBC lysis step (STEP 3) once more, followed by the wash in STEP 4.</li>
+</ul></li>
+<li>Finally, resuspend the cell pellet in an appropriate volume of <strong>FACS/MACS Buffer</strong> (e.g.&nbsp;<strong>0.5–1 mL</strong>) for:
+<ul>
+<li>Flow cytometry staining</li>
+<li>Cell counting</li>
+<li>Other downstream assays</li>
+</ul></li>
+</ol>
+<p>Keep the cell suspension on <strong>ice</strong> until staining.</p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>FACS/MACS Buffer</strong> – <code>BUF-FACS-v1.0</code><br>
+</li>
+<li><strong>BioLegend RBC Lysis Buffer</strong> – <code>BUF-RBC-BIO-v1.0</code></li>
+</ul>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 54%">
+<col style="width: 21%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier / Cat#</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>EDTA</td>
+<td>[TBD]</td>
+<td>20–40 μL per collection tube</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>BioLegend RBC Lysis Buffer (1×)</td>
+<td>[TBD]</td>
+<td>1 mL per sample; may repeat once</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="odd">
+<td>FACS/MACS Buffer</td>
+<td>In-house (see buffer)</td>
+<td>For washing and resuspension</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>PBS 1×</td>
+<td>Any</td>
+<td>As needed</td>
 </tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Microcentrifuge tubes (1.5–2 mL)</td>
+<td>2 per mouse (EDTA collection + processing)</td>
+</tr>
+<tr class="even">
+<td>15 mL Falcon tubes</td>
+<td>1 per sample</td>
+</tr>
+<tr class="odd">
+<td>Insulin syringes / collection needles</td>
+<td>1 per mouse (as per procedure)</td>
+</tr>
+<tr class="even">
+<td>Transfer pipettes</td>
+<td>For serum removal and transfers</td>
+</tr>
+<tr class="odd">
+<td>Gloves, bench wipes, sharps container</td>
+<td>Standard PPE and safety disposables</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bench-top microcentrifuge</td>
+<td>For initial high-g spin</td>
+</tr>
+<tr class="even">
+<td>Centrifuge for 15 mL tubes</td>
+<td>400 g at 4 °C</td>
+</tr>
+<tr class="odd">
+<td>Biosafety cabinet (Class II)</td>
+<td>Recommended for handling blood</td>
+</tr>
+<tr class="even">
+<td>Timer</td>
+<td>For lysis timing</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 36%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Possible cause</th>
+<th>Suggested solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample clotted</td>
+<td>Delayed mixing with EDTA</td>
+<td>Mix immediately after blood collection; discard clotted samples</td>
+</tr>
+<tr class="even">
+<td>Persistent red tinge after lysis</td>
+<td>Incomplete RBC lysis</td>
+<td>Repeat lysis once; do not extend lysis time excessively</td>
+</tr>
+<tr class="odd">
+<td>Low leukocyte recovery</td>
+<td>Pellet loss during washes</td>
+<td>Pour supernatants slowly; consider aspirating instead</td>
+</tr>
+<tr class="even">
+<td>Poor viability</td>
+<td>Prolonged room-temperature handling</td>
+<td>Keep samples cold; minimise processing time</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Treat all mouse blood as potentially infectious; follow S1/S2 biosafety rules.</li>
+<li>Use appropriate PPE (lab coat, gloves, eye protection) and handle sharps with care.</li>
+<li>RBC lysis buffers may contain toxic components (e.g.&nbsp;ammonium chloride, azide); avoid contact with skin and eyes and dispose of waste according to institutional chemical safety guidelines.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-20</td>
+<td>Dillon Corvino</td>
+<td>Initial upgraded version for blood processing</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-11-25</td>
+<td>Dillon Corvino</td>
+<td>Fixed minor errors in protocol creation</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

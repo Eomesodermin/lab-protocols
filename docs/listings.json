@@ -1,47 +1,47 @@
 [
   {
-    "listing": "/protocols_src/human/index.html",
-    "items": [
-      "/protocols_src/human/prot_hum_blood_PBMC_iso_v1.0.html",
-      "/protocols_src/human/prot_hum_K562_culture_v1.0.html",
-      "/protocols_src/human/prot_hum_KHYG1_culture_v1.0.html",
-      "/protocols_src/human/prot_hum_NK92_culture_v1.0.html"
-    ]
-  },
-  {
-    "listing": "/protocols_src/mouse/index.html",
-    "items": [
-      "/protocols_src/mouse/prot_mus_blood_processing_v1.0.html",
-      "/protocols_src/mouse/prot_mus_bone_marrow_isolation_v1.0.html",
-      "/protocols_src/mouse/prot_mus_liver_digestion_v1.0.html",
-      "/protocols_src/mouse/prot_mus_liver_NLC_iso_v1.0.html",
-      "/protocols_src/mouse/prot_mus_lung_digestion_v1.0.html",
-      "/protocols_src/mouse/prot_mus_spleen_dissociation_v1.0.html",
-      "/protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro_v1.0.html",
-      "/protocols_src/mouse/prot_mus_tumour_digestion_v1.0.html"
-    ]
-  },
-  {
     "listing": "/protocols_src/buffers/index.html",
     "items": [
-      "/protocols_src/buffers/buf_ack_lysis_v1.0.html",
-      "/protocols_src/buffers/buf_facs_buffer_v1.0.html",
-      "/protocols_src/buffers/buf_freeze_mix_2x_v1.0.html",
-      "/protocols_src/buffers/buf_liver_digestion_v1.0.html",
-      "/protocols_src/buffers/buf_mus_liver_digestion_NLC_v1.0.html",
-      "/protocols_src/buffers/buf_mus_NK_med_v1.0.html",
-      "/protocols_src/buffers/buf_percoll_33pct_v1.0.html",
-      "/protocols_src/buffers/buf_R0_med_v1.0.html",
-      "/protocols_src/buffers/buf_R10_med_v1.0.html",
-      "/protocols_src/buffers/buf_rbc_lysis_hybrimax_v1.0.html"
+      "/protocols_src/buffers/buf_ack_lysis.html",
+      "/protocols_src/buffers/buf_facs_buffer.html",
+      "/protocols_src/buffers/buf_freeze_mix_2x.html",
+      "/protocols_src/buffers/buf_liver_digestion.html",
+      "/protocols_src/buffers/buf_mus_liver_digestion_NLC.html",
+      "/protocols_src/buffers/buf_mus_NK_med.html",
+      "/protocols_src/buffers/buf_percoll_33pct.html",
+      "/protocols_src/buffers/buf_R0_med.html",
+      "/protocols_src/buffers/buf_R10_med.html",
+      "/protocols_src/buffers/buf_rbc_lysis_hybrimax.html"
     ]
   },
   {
     "listing": "/protocols_src/general/index.html",
     "items": [
-      "/protocols_src/general/prot_gen_CTV_stain_v1.0.html",
-      "/protocols_src/general/prot_gen_flow_standard_v1.0.html",
-      "/protocols_src/general/prot_gen_lymphocyte_nucleofection_v1.0.html"
+      "/protocols_src/general/prot_gen_CTV_stain.html",
+      "/protocols_src/general/prot_gen_flow_standard.html",
+      "/protocols_src/general/prot_gen_lymphocyte_nucleofection.html"
+    ]
+  },
+  {
+    "listing": "/protocols_src/mouse/index.html",
+    "items": [
+      "/protocols_src/mouse/prot_mus_blood_processing.html",
+      "/protocols_src/mouse/prot_mus_bone_marrow_isolation.html",
+      "/protocols_src/mouse/prot_mus_liver_digestion.html",
+      "/protocols_src/mouse/prot_mus_liver_NLC_iso.html",
+      "/protocols_src/mouse/prot_mus_lung_digestion.html",
+      "/protocols_src/mouse/prot_mus_spleen_dissociation.html",
+      "/protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.html",
+      "/protocols_src/mouse/prot_mus_tumour_digestion.html"
+    ]
+  },
+  {
+    "listing": "/protocols_src/human/index.html",
+    "items": [
+      "/protocols_src/human/prot_hum_blood_PBMC_iso.html",
+      "/protocols_src/human/prot_hum_K562_culture.html",
+      "/protocols_src/human/prot_hum_KHYG1_culture.html",
+      "/protocols_src/human/prot_hum_NK92_culture.html"
     ]
   }
 ]

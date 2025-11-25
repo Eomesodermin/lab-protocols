@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-20">
+<meta name="description" content="Enzymatic and mechanical dissociation of mouse solid tumours to obtain viable single-cell suspensions for flow cytometry, sorting, and single-cell transcriptomic applications.">
 
-<title>Human protocols – Protocol Library</title>
+<title>Mouse Tumour Digestion to Single-Cell Suspension – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,65 +70,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -141,7 +83,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/human/index.html">Human</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,7 +133,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-person" role="img">
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
 </i> 
  <span class="menu-text">Human</span></a>
   </div>
@@ -207,21 +151,61 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-tumour-excision-and-preparation" id="toc-step-1-tumour-excision-and-preparation" class="nav-link" data-scroll-target="#step-1-tumour-excision-and-preparation">STEP 1 – Tumour excision and preparation</a></li>
+  <li><a href="#step-2-mincing" id="toc-step-2-mincing" class="nav-link" data-scroll-target="#step-2-mincing">STEP 2 – Mincing</a></li>
+  <li><a href="#step-3-enzymatic-digestion" id="toc-step-3-enzymatic-digestion" class="nav-link" data-scroll-target="#step-3-enzymatic-digestion">STEP 3 – Enzymatic digestion</a></li>
+  <li><a href="#step-4-mechanical-dissociation" id="toc-step-4-mechanical-dissociation" class="nav-link" data-scroll-target="#step-4-mechanical-dissociation">STEP 4 – Mechanical dissociation</a></li>
+  <li><a href="#step-5-rbc-lysis-if-required" id="toc-step-5-rbc-lysis-if-required" class="nav-link" data-scroll-target="#step-5-rbc-lysis-if-required">STEP 5 – RBC lysis (if required)</a></li>
+  <li><a href="#step-6-final-wash-and-filtration" id="toc-step-6-final-wash-and-filtration" class="nav-link" data-scroll-target="#step-6-final-wash-and-filtration">STEP 6 – Final wash and filtration</a></li>
+  <li><a href="#step-7-downstream-applications" id="toc-step-7-downstream-applications" class="nav-link" data-scroll-target="#step-7-downstream-applications">STEP 7 – Downstream applications</a></li>
+  </ul></li>
+  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_tumour_digestion.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Human protocols</h1>
+<h1 class="title">Mouse Tumour Digestion to Single-Cell Suspension</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Enzymatic and mechanical dissociation of mouse solid tumours to obtain viable single-cell suspensions for flow cytometry, sorting, and single-cell transcriptomic applications.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 20, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -231,126 +215,338 @@ window.Quarto = {
 </header>
 
 
-<p>Human cell line and PBMC preparation protocols.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<p><strong>Protocol ID:</strong> MUS-TMR-DIG-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the processing of mouse solid tumours to generate high-quality single-cell suspensions using enzymatic digestion (Collagenase + DNase), thorough mechanical dissociation, and controlled washing. The resulting suspensions are suitable for flow cytometry, FACS sorting, tumour-infiltrating lymphocyte (TIL) profiling, and single-cell omics workflows.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li><strong>Tumours vary widely</strong> in stiffness and extracellular matrix composition; adjust mechanical dissociation effort accordingly.</li>
+<li>For large or fibrotic tumours, digestion efficiency increases when the tissue is minced <strong>finely</strong> before enzyme incubation.</li>
+<li>Use <strong>fresh digestion buffer</strong> with DNase added on the day of use.</li>
+<li>Do not over-digest: aim for <strong>30–45 minutes</strong>, depending on tumour type.</li>
+<li>After digestion, keep samples on <strong>ice</strong> to maximise viability.</li>
+<li>Avoid introducing <strong>hair, necrotic debris, or capsule tissue</strong>, which reduce filter performance and cell quality.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Tumour excision + trimming: <strong>5–10 min</strong></li>
+<li>Mincing: <strong>5 min</strong></li>
+<li>Enzymatic digestion: <strong>30–45 min</strong></li>
+<li>Filtering + washes: <strong>20–30 min</strong></li>
+</ul>
+<p>Total hands-on time: <strong>~60–90 minutes</strong>, depending on tumour type and size.</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-tumour-excision-and-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-tumour-excision-and-preparation">STEP 1 – Tumour excision and preparation</h2>
+<ol type="1">
+<li>Euthanise the mouse using an approved method.</li>
+<li>Expose the tumour and excise it with sterile scissors and forceps.</li>
+<li>Remove fat, necrotic outer layers, and connective tissue using dissection scissors.</li>
+<li>Rinse tumour briefly in <strong>cold PBS</strong> to remove blood and debris.</li>
+<li>Transfer to a <strong>10 cm petri dish</strong> containing cold <strong>PBS or FACS/MACS Buffer</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<table class="quarto-listing-table table">
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remove necrotic regions; they clog strainers and reduce cell viability.</p>
+</div>
+</div>
+</section>
+<section id="step-2-mincing" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-mincing">STEP 2 – Mincing</h2>
+<ol type="1">
+<li>On a sterile petri dish, mince tumour tissue into <strong>very small pieces</strong> using scalpels or scissors.
+<ul>
+<li>Aim for <strong>1–2 mm</strong> fragments for optimal enzyme penetration.</li>
+</ul></li>
+<li>Transfer minced tissue into a <strong>50 mL Falcon tube</strong> containing <strong>5 mL Tumour Digestion Buffer</strong> (<code>BUF-TMR-DIG-v1.0</code>).</li>
+</ol>
+</section>
+<section id="step-3-enzymatic-digestion" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-enzymatic-digestion">STEP 3 – Enzymatic digestion</h2>
+<ol type="1">
+<li>Place tubes on a <strong>37 °C benchtop shaker</strong> at <strong>250 rpm</strong>.</li>
+<li>Incubate for <strong>30–45 minutes</strong>, depending on tumour density.</li>
+<li>Every 10–15 minutes, remove the tube and gently shake or invert to encourage even digestion.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Over-digestion (&gt;45 min) can reduce viability, especially in lymphocytes and myeloid cells.</p>
+</div>
+</div>
+</section>
+<section id="step-4-mechanical-dissociation" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-mechanical-dissociation">STEP 4 – Mechanical dissociation</h2>
+<ol type="1">
+<li>Add <strong>FACS/MACS Buffer</strong> to bring total volume to <strong>20–25 mL</strong>.</li>
+<li>Pour the digested tumour onto a <strong>70 μm strainer</strong> placed over a <strong>10 cm petri dish</strong>.</li>
+<li>Using the <strong>back of a 5 mL syringe plunger</strong>, mash the tissue thoroughly through the strainer.<br>
+</li>
+<li>Rinse the strainer with additional cold <strong>FACS/MACS Buffer</strong> until no visible tissue remains.</li>
+<li>Transfer the filtrate back into a clean <strong>50 mL tube</strong>.</li>
+<li>Top up to <strong>50 mL</strong> with cold FACS/MACS Buffer.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.</li>
+<li>Carefully discard the supernatant.</li>
+</ol>
+</section>
+<section id="step-5-rbc-lysis-if-required" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-rbc-lysis-if-required">STEP 5 – RBC lysis (if required)</h2>
+<ol type="1">
+<li>If the suspension appears red or contains substantial blood, add <strong>1 mL 1× RBC Lysis Buffer</strong> (HybriMax or equivalent).</li>
+<li>Mix gently and incubate for <strong>3–5 minutes at room temperature</strong>.</li>
+<li>Immediately top up to <strong>50 mL</strong> with cold FACS/MACS Buffer.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.</li>
+<li>Discard supernatant.</li>
+</ol>
+</section>
+<section id="step-6-final-wash-and-filtration" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-final-wash-and-filtration">STEP 6 – Final wash and filtration</h2>
+<ol type="1">
+<li>Loosen the pellet by gentle flicking.</li>
+<li>Resuspend in <strong>5–10 mL FACS/MACS Buffer</strong>.</li>
+<li>Filter again through a <strong>fresh 70 μm strainer</strong> to remove remaining debris and aggregates.</li>
+<li>Keep the final cell suspension <strong>on ice</strong> for downstream applications.</li>
+</ol>
+</section>
+<section id="step-7-downstream-applications" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-downstream-applications">STEP 7 – Downstream applications</h2>
+<p>Proceed to:</p>
+<ul>
+<li>Flow cytometry / TIL profiling<br>
+</li>
+<li>FACS sorting<br>
+</li>
+<li>Tumour microenvironment analyses<br>
+</li>
+<li>Cryopreservation of tumour-derived cell subsets<br>
+</li>
+<li>Single-cell RNA-seq / TCR-seq workflows</li>
+</ul>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="buffers-used" class="level1">
+<h1>Buffers used</h1>
+<ul>
+<li><strong>Tumour Digestion Buffer</strong> – <code>BUF-TMR-DIG-v1.0</code>
+<ul>
+<li>Typically Collagenase IV or Collagenase D + DNase I in DMEM or RPMI.</li>
+</ul></li>
+<li><strong>FACS/MACS Buffer</strong> – <code>BUF-FACS-v1.0</code><br>
+</li>
+<li><strong>RBC Lysis Buffer</strong> – <code>BUF-RBC-HYB-v1.0</code></li>
+</ul>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier / Cat#</th>
+<th>Notes</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766980379" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2746" data-listing-title-sort="Isolation of Human PBMCs from Whole Blood by Ficoll Gradient">
-<td>
-<span class="listing-protocol_id">HUM-BLD-PBMC-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_blood_PBMC_iso.html" class="title listing-title">Isolation of Human PBMCs from Whole Blood by Ficoll Gradient</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td>Tumour Digestion Buffer</td>
+<td>In-house</td>
+<td>Pre-warmed to 37 °C</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766975406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1796" data-listing-title-sort="K-562 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-K562-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_K562_culture.html" class="title listing-title">K-562 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>FACS/MACS Buffer</td>
+<td>In-house</td>
+<td>Cold</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766970146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2279" data-listing-title-sort="KHYG-1 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-KHYG1-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_KHYG1_culture.html" class="title listing-title">KHYG-1 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="odd">
+<td>RBC Lysis Buffer</td>
+<td>[TBD]</td>
+<td>Optional; 1 mL per tumour</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766964222" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2089" data-listing-title-sort="NK-92 Cell Line Culture Protocol">
-<td>
-<span class="listing-protocol_id">HUM-NK92-CULTURE-001</span>
-</td>
-<td>
-<a href="../../protocols_src/human/prot_hum_NK92_culture.html" class="title listing-title">NK-92 Cell Line Culture Protocol</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
+<tr class="even">
+<td>PBS 1×</td>
+<td>Any</td>
+<td>For rinsing</td>
 </tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>50 mL Falcon tubes</td>
+<td>1 per tumour</td>
+</tr>
+<tr class="even">
+<td>10 cm petri dishes</td>
+<td>For mincing and filtering</td>
+</tr>
+<tr class="odd">
+<td>70 μm strainers</td>
+<td>Do not reuse</td>
+</tr>
+<tr class="even">
+<td>5 mL syringes (no needle)</td>
+<td>For mechanical dissociation</td>
+</tr>
+<tr class="odd">
+<td>Scalpel blades / scissors</td>
+<td>For fine mincing</td>
+</tr>
+<tr class="even">
+<td>Transfer pipettes</td>
+<td>For washes</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Benchtop shaker/incubator</td>
+<td>37 °C, 250 rpm</td>
+</tr>
+<tr class="even">
+<td>Benchtop centrifuge</td>
+<td>400 g at 4 °C</td>
+</tr>
+<tr class="odd">
+<td>Biosafety cabinet (Class II)</td>
+<td>Recommended</td>
+</tr>
+<tr class="even">
+<td>Timer</td>
+<td>For digestion and lysis</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 36%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Possible cause</th>
+<th>Suggested solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Large undigested chunks</td>
+<td>Insufficient mincing or digestion time</td>
+<td>Mince more finely; extend digestion by 5–10 min</td>
+</tr>
+<tr class="even">
+<td>Excess debris</td>
+<td>Too much necrotic/capsular tissue</td>
+<td>Trim tumour more aggressively before mincing</td>
+</tr>
+<tr class="odd">
+<td>High RBC content</td>
+<td>No perfusion / vascular tumour</td>
+<td>Perform RBC lysis once</td>
+</tr>
+<tr class="even">
+<td>Poor viability</td>
+<td>Over-digestion or harsh mashing</td>
+<td>Reduce digestion time; use gentler plunger pressure</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>Treat tumours as potentially infectious and follow S1/S2 safety requirements.</li>
+<li>Collagenase and DNase can irritate skin and eyes—wear full PPE.</li>
+<li>Dispose of tumour tissue, blades, and enzymatic waste in biohazard and sharps containers as applicable.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-20</td>
+<td>Dillon Corvino</td>
+<td>Initial upgraded version for tumour digestion</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

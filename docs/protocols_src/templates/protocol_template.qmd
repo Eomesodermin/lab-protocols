@@ -1,0 +1,151 @@
+---
+title: "<PROTOCOL TITLE HERE>"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "<PROT-XXX-XXX-vX.X>"
+version: "vX.X"
+description: "<One-sentence description of protocol purpose>"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** YYYY-MM-DD
+
+# Purpose
+
+<Brief description of the biological motivation and goal of the protocol. Include 2–5 sentences max.>
+
+# Critical notes (read before starting)
+
+- <Add high-level critical notes specific to this protocol.>
+- <Note temperature-sensitive steps.>
+- <Note limitations or warnings.>
+- <Remove or expand placeholders as needed.>
+
+# Approximate timing
+
+- <Sub-step 1: X–Y min>
+- <Sub-step 2: X–Y min>
+- <Major incubations: X min/hours>
+- <Total estimated hands-on time: X–Y min>
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+The procedure is divided into major steps (STEP 1, STEP 2, etc.). Add or remove sections as needed.
+
+---
+
+## STEP 1 – <TITLE OF STEP 1>
+
+1. <Describe step 1 actions.>
+2. <Use numbered lists for sequential actions.>
+3. <Include callouts for warnings or tips if relevant.>
+
+::: callout-warning
+<Example warning: handle enzymes, sharps, or toxic reagents according to safety guidelines.>
+:::
+
+---
+
+## STEP 2 – <TITLE OF STEP 2>
+
+1. <Add actions.>
+2. <Add incubation times, speeds, conditions.>
+
+::: callout-note
+<Optional note: clarify common mistakes or critical parameters.>
+:::
+
+---
+
+## STEP 3 – <TITLE OF STEP 3>
+
+1. <Add further sequential steps.>
+2. <Add sub-steps if needed.>
+
+---
+
+## STEP 4 – <TITLE OF STEP 4> (optional)
+
+1. <Additional optional steps.>
+
+{{< pagebreak >}}
+
+# Buffers used (defined in separate buffer protocols)
+
+This protocol uses the following buffers.  
+Insert only the IDs and short names; do **not** define the buffer compositions here.
+
+- **<Buffer Name 1>** – `<BUF-XXX-XXX-vX.X>`
+- **<Buffer Name 2>** – `<BUF-XXX-XXX-vX.X>`
+- **<Buffer Name 3>** – `<BUF-XXX-XXX-vX.X>`
+
+Each buffer must have its own dedicated buffer file in `protocols_src/buffers/`.
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|--------|------------------|-------|
+| <Reagent 1> | [TBD] | <Notes> |
+| <Reagent 2> | [TBD] | <Notes> |
+| <Reagent 3> | [TBD] | <Notes> |
+
+## Disposables
+
+| Item | Notes |
+|------|--------|
+| <Tube type> | <Notes> |
+| <Filters/strainters> | <Notes> |
+| <Pipettes> | <Notes> |
+| <Safety consumables> | <Notes> |
+
+## Equipment
+
+| Equipment | Notes |
+|-----------|-------|
+| <Shaker/incubator> | <Notes> |
+| <Centrifuge> | <Notes> |
+| <Biosafety cabinet> | <Notes> |
+| <Analytical balance> | <Notes> |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Issue | Possible cause | Suggested solution |
+|-------|----------------|---------------------|
+| <Example issue> | <Cause> | <Solution> |
+| <Example issue> | <Cause> | <Solution> |
+| <Example issue> | <Cause> | <Solution> |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- Follow institutional S1/S2 rules and applicable animal, biological, or chemical safety guidelines.
+- Use personal protective equipment suitable for this protocol.
+- Dispose of sharps, biological waste, and chemical reagents in accordance with facility rules.
+- Add protocol-specific hazards if relevant (e.g. enzymes, detergents, toxic buffers).
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| vX.X | YYYY-MM-DD | Dillon Corvino | Initial version |

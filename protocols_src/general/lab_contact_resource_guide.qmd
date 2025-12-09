@@ -1,0 +1,185 @@
+---
+title: "Lab Contact & Resource Guide"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "LAB-ONBOARD-CONTACTS-001"
+version: "v1.2"
+date: "2025-12-02"
+description: "Centralised contact list for onboarding, facility access, experimental support, and administrative requests."
+---
+
+**Document ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This document provides a centralised, up-to-date contact reference for new and existing Abdullah Lab members.  
+It identifies who to contact for facility access, animal house procedures, equipment booking, software licensing, HPC access, and administrative support.
+
+The goal is to reduce ambiguity and ensure requests reach the correct person efficiently.
+
+---
+
+# Animal Facility (HET) Contacts
+
+## HET Green Barrier – Access, General Enquiries
+**Anna Schilling**  
+Responsibilities:
+- Access permissions and Green Barrier onboarding  
+- General HET queries and procedural guidance  
+
+---
+
+## HET – Genotyping, Mating Setup, Colony Management
+**Christine Schmitt-Mbamunyo (AG Garbi TA)**  
+Responsibilities:
+- Genotyping requests  
+- Setting up mating pairs  
+- Coordination of breeding colony logistics  
+
+---
+
+# IMMEI Institute Administration
+
+## Institute Manager
+**Lucie Hrvat-Delforge**  
+Email: <ldelfo4s@uni-bonn.de>  
+Responsibilities:
+- General administrative management of IMMEI  
+- Institute-level coordination
+
+---
+
+## Science Manager (GMO, Documentation, S1/S2 Safety)
+**Dr. Johanna Breuer**  
+Email: <jbreuer@uni-bonn.de>  
+Responsibilities:
+- GMO applications and approvals  
+- S1/S2 documentation and risk assessments  
+- Laboratory safety compliance and training coordination  
+
+---
+
+# iFET Facility
+
+## iFET Manager
+**Daniela Krauss**  
+Email: <d.krauss@uni-bonn.de>  
+Responsibilities:
+- iFET operational management  
+- Scheduling and workflow coordination  
+
+---
+
+# Flow Cytometry Core Facility (FCCF)
+
+## Core Facility Manager
+**Andreas Dolf**  
+Email: <Andreas.dolf@uni-bonn.de>  
+Responsibilities:
+- Oversight of flow cytometry instruments and sorters  
+- Training and troubleshooting  
+- Assistance with panel design and experiment planning  
+
+### Booking Flow Cytometers
+Machines can be booked via PPMS:  
+**https://ppms.eu/uni-bonn/?FCCF**
+
+---
+
+# High-Performance Computing (HPC) Access
+
+## Marvin HPC Cluster
+Steps for access:
+1. Request a Marvin HPC account via University IT.  
+2. Set up SSH keys for secure access.  
+3. Configure your environment (modules, conda/mamba, R, Python).  
+4. Use Slurm scheduler for job submission.
+
+For assistance:
+- IMMEI analysis support (e.g., Dillon Corvino) for workflows  
+- University HPC team for account setup and permissions  
+
+---
+
+# Software & Digital Tools
+
+Below is a list of commonly used software, what they are used for, and how to obtain access.
+
+### GraphPad Prism  
+Used for statistical analysis and graphing.  
+**How to obtain:** Request a named-user license via IMMEI administration.
+
+---
+
+### FlowJo  
+Flow cytometry data analysis.  
+**How to obtain:** Request access through the Flow Cytometry Core Facility.
+
+---
+
+### FluoroFinder  
+Used for **flow cytometry panel design**, fluorochrome selection, and spillover prediction.  
+**How to obtain:** Request access through the Flow Core booking system under **Orders**.
+
+---
+
+### Benchling  
+Cloud-based molecular biology platform for cloning design, sequence storage, sample tracking.  
+**How to obtain:** Request access via IMMEI administration or PI.
+
+---
+
+### Quartz  
+University time tracking and project allocation system.  
+**How to obtain:** Access granted during HR onboarding.
+
+---
+
+### PyRAT  
+Animal facility management software for cage tracking, breeding, and genotypes.  
+**How to obtain:** Request access through HET administration / Christine Schmitt-Mbamunyo.
+
+---
+
+### BTC Cloud  
+Used for accessing streamed microscopes, facility devices, and cloud‑hosted instrumentation.  
+**How to obtain:** Request through IMMEI IT or device managers.
+
+---
+
+### Mattermost  
+Internal messaging platform used within IMMEI/UKB networks.  
+**How to obtain:** Accounts created during onboarding or upon request to IMMEI IT.
+
+---
+
+### GitHub  
+Version control, code sharing, protocol hosting, analysis pipeline management.  
+**How to obtain:** Create an account on GitHub; Abdullah Lab or IMMEI GitHub organisations provide access by request.
+
+---
+
+# Company Contacts & Representatives
+
+### STEMCELL Technologies  
+**Sanja Lošić**  
+Email: <sanja.losic@stemcell.com>  
+Representative for media, cytokines, and cell culture products.
+
+---
+
+### Miltenyi Biotec  
+**Verena Barbarino**  
+Email: <verena.barbarino@miltenyi.com>  
+Representative for MACS reagents, antibodies, cell isolation kits, instruments.
+
+---
+
+# Version history
+
+| Version | Date       | Description |
+|--------|------------|-------------|
+| v1.0   | 2025-12-02 | Initial onboarding & contact reference created |
+| v1.1   | 2025-12-02 | Added institute admin, safety, core facility, software, HPC |
+| v1.2   | 2025-12-02 | Added company contacts, expanded software section |

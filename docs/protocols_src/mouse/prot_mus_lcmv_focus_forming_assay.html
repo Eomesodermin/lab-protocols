@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-12-02">
+<meta name="description" content="Quantification of infectious titer (FFU/mL) of LCMV using antibody-based detection of infected foci on Vero cells with semi-solid overlay">
+
+<title>LCMV Focus-Forming Assay (Immunofocus) – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../templates/index.qmd" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#principle" id="toc-principle" class="nav-link" data-scroll-target="#principle">Principle</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#cells-and-media" id="toc-cells-and-media" class="nav-link" data-scroll-target="#cells-and-media">Cells and Media</a></li>
+  <li><a href="#overlay-and-related-buffers" id="toc-overlay-and-related-buffers" class="nav-link" data-scroll-target="#overlay-and-related-buffers">Overlay and Related Buffers</a></li>
+  <li><a href="#virus" id="toc-virus" class="nav-link" data-scroll-target="#virus">Virus</a></li>
+  <li><a href="#antibodies-and-detection-reagents" id="toc-antibodies-and-detection-reagents" class="nav-link" data-scroll-target="#antibodies-and-detection-reagents">Antibodies and Detection Reagents</a></li>
+  <li><a href="#fixation-and-permeabilization" id="toc-fixation-and-permeabilization" class="nav-link" data-scroll-target="#fixation-and-permeabilization">Fixation and Permeabilization</a></li>
+  <li><a href="#general-reagents-and-consumables" id="toc-general-reagents-and-consumables" class="nav-link" data-scroll-target="#general-reagents-and-consumables">General Reagents and Consumables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#vero-cell-maintenance" id="toc-vero-cell-maintenance" class="nav-link" data-scroll-target="#vero-cell-maintenance">Vero cell maintenance</a></li>
+  <li><a href="#cell-seeding-for-ffa" id="toc-cell-seeding-for-ffa" class="nav-link" data-scroll-target="#cell-seeding-for-ffa">Cell seeding for FFA</a>
+  <ul class="collapse">
+  <li><a href="#default-method-recommended-day-1-monolayer-seeding" id="toc-default-method-recommended-day-1-monolayer-seeding" class="nav-link" data-scroll-target="#default-method-recommended-day-1-monolayer-seeding">Default method (recommended): Day −1 monolayer seeding</a></li>
+  <li><a href="#alternative-method-same-day-seeding-and-infection-suspension-based" id="toc-alternative-method-same-day-seeding-and-infection-suspension-based" class="nav-link" data-scroll-target="#alternative-method-same-day-seeding-and-infection-suspension-based">Alternative method: Same-day seeding and infection (suspension-based)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#overlay-media" id="toc-overlay-media" class="nav-link" data-scroll-target="#overlay-media">Overlay media</a>
+  <ul class="collapse">
+  <li><a href="#methylcellulose" id="toc-methylcellulose" class="nav-link" data-scroll-target="#methylcellulose">2% methylcellulose</a></li>
+  <li><a href="#dmem-overlay-medium" id="toc-dmem-overlay-medium" class="nav-link" data-scroll-target="#dmem-overlay-medium">2× DMEM overlay medium</a></li>
+  <li><a href="#overlay-mixture" id="toc-overlay-mixture" class="nav-link" data-scroll-target="#overlay-mixture">Overlay mixture</a></li>
+  </ul></li>
+  <li><a href="#virus-dilution-series-5-fold-plate-based" id="toc-virus-dilution-series-5-fold-plate-based" class="nav-link" data-scroll-target="#virus-dilution-series-5-fold-plate-based">Virus dilution series (5-fold plate-based)</a></li>
+  <li><a href="#infection-and-incubation" id="toc-infection-and-incubation" class="nav-link" data-scroll-target="#infection-and-incubation">Infection and incubation</a></li>
+  <li><a href="#fixation" id="toc-fixation" class="nav-link" data-scroll-target="#fixation">Fixation</a></li>
+  <li><a href="#permeabilization-and-priming" id="toc-permeabilization-and-priming" class="nav-link" data-scroll-target="#permeabilization-and-priming">Permeabilization and priming</a></li>
+  <li><a href="#antibody-staining" id="toc-antibody-staining" class="nav-link" data-scroll-target="#antibody-staining">Antibody staining</a>
+  <ul class="collapse">
+  <li><a href="#primary-antibody-vl-4" id="toc-primary-antibody-vl-4" class="nav-link" data-scroll-target="#primary-antibody-vl-4">Primary antibody (VL-4)</a></li>
+  <li><a href="#secondary-antibody-hrp-conjugated-goat-anti-rat-igg" id="toc-secondary-antibody-hrp-conjugated-goat-anti-rat-igg" class="nav-link" data-scroll-target="#secondary-antibody-hrp-conjugated-goat-anti-rat-igg">Secondary antibody (HRP-conjugated goat anti-rat IgG)</a></li>
+  </ul></li>
+  <li><a href="#opd-development-and-stopping-the-reaction" id="toc-opd-development-and-stopping-the-reaction" class="nav-link" data-scroll-target="#opd-development-and-stopping-the-reaction">OPD development and stopping the reaction</a></li>
+  <li><a href="#focus-counting-and-titer-calculation" id="toc-focus-counting-and-titer-calculation" class="nav-link" data-scroll-target="#focus-counting-and-titer-calculation">Focus counting and titer calculation</a></li>
+  <li><a href="#controls-and-quality-checks" id="toc-controls-and-quality-checks" class="nav-link" data-scroll-target="#controls-and-quality-checks">Controls and quality checks</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-considerations" id="toc-safety-considerations" class="nav-link" data-scroll-target="#safety-considerations">Safety considerations</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_lcmv_focus_forming_assay.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">LCMV Focus-Forming Assay (Immunofocus)</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+</div>
+
+<div>
+  <div class="description">
+    Quantification of infectious titer (FFU/mL) of LCMV using antibody-based detection of infected foci on Vero cells with semi-solid overlay
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 2, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> MUS-LCMV-FFA-001<br>
+<strong>Version:</strong> v1.1<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes a <strong>focus-forming assay (FFA)</strong> for determining infectious titers of LCMV stocks using antibody-based detection of infected foci on <strong>Vero cells</strong> with a semi-solid overlay.</p>
+<p>Compared with a classic plaque assay, the FFA:</p>
+<ul>
+<li>Uses <strong>immunostaining</strong> (e.g.&nbsp;anti-NP, VL-4) to visualize infected foci.</li>
+<li>Can detect infection <strong>earlier</strong> (typically 48–72 h post infection).</li>
+<li>Is useful for strains or conditions with limited cytopathic effect and for titrating experimental virus stocks.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>LCMV biosafety and handling
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>LCMV is a zoonotic arenavirus capable of causing severe disease in humans, including meningitis and congenital infection. Work with live LCMV must:</p>
+<ul>
+<li>Be conducted under the appropriate institutional <strong>biosafety level (typically BSL-2 with additional local conditions)</strong> and approved animal and biosafety protocols.</li>
+<li>Use <strong>dedicated infectious CO₂ incubators</strong> and clearly labelled containment for all cultures and waste.</li>
+<li>Include suitable <strong>PPE</strong> (lab coat/gown, gloves, eye protection as appropriate) and measures to avoid sharps injuries, aerosol formation, and spills.</li>
+<li>Exclude or take special precautions for <strong>pregnant or immunocompromised personnel</strong> according to institutional policies.</li>
+</ul>
+<p>All waste (liquid and solid) must be inactivated according to local regulations (e.g.&nbsp;chemical disinfection and/or autoclaving) <strong>before</strong> disposal.</p>
+</div>
+</div>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Vero maintenance and expansion: <strong>ongoing (split every 2–3 days as needed)</strong></li>
+<li>Day −1: Vero seeding for infection (default method): <strong>30–60 min</strong>, depending on number of plates</li>
+<li>Day 0: Virus dilution and infection, overlay addition: <strong>1.5–2.5 h</strong>, depending on number of samples and dilutions</li>
+<li>Day 2–3: Fixation and immunostaining: <strong>3–4 h</strong> hands-on time (spread over incubation steps)</li>
+<li>Focus counting and titer calculation: <strong>30–60 min per plate</strong>, depending on number of foci</li>
+</ul>
+<p>Total calendar time: <strong>~2–3 days</strong> from infection to readout, plus routine cell culture maintenance.</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="principle" class="level1">
+<h1>Principle</h1>
+<ul>
+<li>Serial <strong>5-fold</strong> dilutions of virus are prepared in a 24-well dilution plate and used to infect a suspension of Vero cells in a matching 24-well incubation plate.</li>
+<li>After a short incubation (adsorption/infection phase), cells are overlaid with a <strong>semi-solid methylcellulose/2× DMEM mix</strong> and incubated for 60–72 h to allow local spread and formation of discrete foci.</li>
+<li>Cells are fixed, permeabilized, and stained with <strong>primary anti-LCMV antibody</strong> (VL-4, rat anti-NP), followed by an HRP-conjugated goat anti-rat IgG secondary antibody.</li>
+<li>Foci are visualized using an <strong>OPD (o-phenylenediamine)</strong> substrate and counted under a microscope.</li>
+<li>FFU/mL is calculated from focus counts, dilution factor, and inoculum volume.</li>
+</ul>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="cells-and-media" class="level2">
+<h2 class="anchored" data-anchor-id="cells-and-media">Cells and Media</h2>
+<ul>
+<li><strong>Vero cells</strong> (African green monkey kidney)</li>
+<li><strong>Vero propagation medium</strong> (see <code>buf_vero_propagation_medium.qmd</code> for detailed recipe)</li>
+<li>Trypsin-EDTA for passaging Vero cells</li>
+<li>PBS without Ca²⁺/Mg²⁺</li>
+<li>Infection/dilution medium (e.g.&nbsp;DMEM + 2% FCS/FBS) for virus dilutions</li>
+</ul>
+</section>
+<section id="overlay-and-related-buffers" class="level2">
+<h2 class="anchored" data-anchor-id="overlay-and-related-buffers">Overlay and Related Buffers</h2>
+<ul>
+<li><strong>2% methylcellulose</strong> solution (w/v) in dH₂O, sterilized (e.g.&nbsp;autoclaved)</li>
+<li><strong>2× DMEM</strong> overlay medium, sterile</li>
+<li>Optional: pre-warmed PBS for washing</li>
+</ul>
+</section>
+<section id="virus" class="level2">
+<h2 class="anchored" data-anchor-id="virus">Virus</h2>
+<ul>
+<li>LCMV stocks (e.g.&nbsp;Armstrong, Clone 13, WE, Docile) stored at −80°C in single-use aliquots</li>
+</ul>
+</section>
+<section id="antibodies-and-detection-reagents" class="level2">
+<h2 class="anchored" data-anchor-id="antibodies-and-detection-reagents">Antibodies and Detection Reagents</h2>
+<ul>
+<li><strong>Primary antibody</strong>:
+<ul>
+<li>VL-4 (rat anti-LCMV NP), stored and handled according to supplier or in-house conditions</li>
+</ul></li>
+<li><strong>Secondary antibody</strong>:
+<ul>
+<li>Peroxidase AffiniPure Goat Anti-Rat IgG (HRP-conjugated), or equivalent</li>
+</ul></li>
+<li><strong>Chromogenic substrate</strong>:
+<ul>
+<li>OPD (o-phenylenediamine) tablets or powder for HRP-based detection, with appropriate buffer (e.g.&nbsp;citrate-phosphate) and H₂O₂</li>
+</ul></li>
+</ul>
+</section>
+<section id="fixation-and-permeabilization" class="level2">
+<h2 class="anchored" data-anchor-id="fixation-and-permeabilization">Fixation and Permeabilization</h2>
+<ul>
+<li>4% paraformaldehyde (PFA) in PBS</li>
+<li>Permeabilization buffer:
+<ul>
+<li>PBS + Triton X-100 (final concentration e.g.&nbsp;0.1–0.3%)</li>
+</ul></li>
+<li>Blocking/antibody diluent buffers:
+<ul>
+<li>5% FCS in PBS</li>
+<li>2% FCS in PBS (for primary and secondary antibody dilutions)</li>
+</ul></li>
+</ul>
+</section>
+<section id="general-reagents-and-consumables" class="level2">
+<h2 class="anchored" data-anchor-id="general-reagents-and-consumables">General Reagents and Consumables</h2>
+<ul>
+<li>Sterile 24-well tissue culture plates:
+<ul>
+<li>One or more <strong>incubation plates</strong> for Vero cells</li>
+<li>Matching <strong>dilution plates</strong> for virus serial dilutions</li>
+</ul></li>
+<li>Sterile conical tubes (15 mL, 50 mL)</li>
+<li>Microcentrifuge tubes</li>
+<li>Micropipettes and <strong>sterile filtered tips</strong></li>
+<li><strong>Serological pipettes</strong> (e.g.&nbsp;5 mL, 10 mL, 25 mL)</li>
+<li>Waste containers with freshly prepared disinfectant (e.g.&nbsp;10% bleach)</li>
+</ul>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<ul>
+<li>Class II biosafety cabinet</li>
+<li><strong>Dedicated infectious CO₂ incubator</strong> set to 37°C, 5% CO₂</li>
+<li>Inverted light microscope</li>
+<li>Humidified chamber for antibody incubations</li>
+<li>Timer</li>
+<li>Fume hood for OPD preparation and development</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always use a <strong>designated infectious incubator</strong> for LCMV work. Do not use the same CO₂ incubator for sterile cell culture expansion and virus-infected plates.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="vero-cell-maintenance" class="level2">
+<h2 class="anchored" data-anchor-id="vero-cell-maintenance">Vero cell maintenance</h2>
+<ul>
+<li>Maintain Vero cells in Vero propagation medium (see <code>buf_vero_propagation_medium.qmd</code>) and passage every <strong>2–3 days</strong> when cells reach ~60–80% confluence.</li>
+<li>For routine splitting:
+<ul>
+<li>Aspirate medium.</li>
+<li>Wash with ~10 mL PBS.</li>
+<li>Add 5–7 mL trypsin-EDTA and incubate at 37°C for <strong>5–10 min</strong>, monitoring under the microscope until cells detach.</li>
+<li>Neutralize trypsin with 20–30 mL Vero propagation medium.</li>
+<li>Collect cells into a 50 mL tube and centrifuge at <strong>4°C, 5 min, 1500 rpm</strong>.</li>
+<li>Aspirate supernatant and resuspend the pellet in an appropriate volume (e.g.&nbsp;5–10 mL) of fresh medium.</li>
+<li>Seed into flasks/plates at the desired density for continued expansion.</li>
+</ul></li>
+</ul>
+</section>
+<section id="cell-seeding-for-ffa" class="level2">
+<h2 class="anchored" data-anchor-id="cell-seeding-for-ffa">Cell seeding for FFA</h2>
+<p>Two seeding strategies are described below. The <strong>default method</strong> seeds Vero cells the day before infection to form an adherent monolayer. The <strong>alternative method</strong> seeds Vero cells as a suspension immediately before infection, as described in the collaborator protocol.</p>
+<section id="default-method-recommended-day-1-monolayer-seeding" class="level3">
+<h3 class="anchored" data-anchor-id="default-method-recommended-day-1-monolayer-seeding">Default method (recommended): Day −1 monolayer seeding</h3>
+<ol type="1">
+<li>One day before infection (<strong>Day −1</strong>), prepare a single-cell suspension of Vero cells from a near-confluent flask.</li>
+<li>Count cells using a hemocytometer or automated cell counter.</li>
+<li>Dilute cells in Vero propagation medium to reach <strong>70–90% confluence</strong> in 24-well plates on the day of infection (<strong>Day 0</strong>). As a starting point:
+<ul>
+<li>Aim for ~1–2 × 10⁵ cells per well in 24-well plates.</li>
+</ul></li>
+<li>Seed cells in <strong>24-well incubation plates</strong> (e.g.&nbsp;0.5–1 mL per well).</li>
+<li>Incubate overnight at 37°C, 5% CO₂ in the infectious incubator.</li>
+</ol>
+</section>
+<section id="alternative-method-same-day-seeding-and-infection-suspension-based" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-method-same-day-seeding-and-infection-suspension-based">Alternative method: Same-day seeding and infection (suspension-based)</h3>
+<p>This method is based on the collaborator’s protocol and may be useful when a tightly controlled cell number per well is desired.</p>
+<ol type="1">
+<li>On <strong>Day 0</strong>, detach Vero cells from a near-confluent flask as described under maintenance.</li>
+<li>Resuspend cells in Vero propagation medium and count.</li>
+<li>Calculate total cell number in the suspension. For example, if a counted sample corresponds to <code>N</code> cells per defined volume, determine the concentration and total cells in the resuspension volume.</li>
+<li>Dilute the cell suspension to <strong>8 × 10⁵ cells/mL</strong> in Vero propagation medium.</li>
+<li>Keep the cell suspension on ice until seeding.</li>
+<li>For each well of the <strong>24-well incubation plate</strong>, add <strong>200 µL</strong> of this suspension (→ <strong>1.6 × 10⁵ cells per well</strong>).</li>
+<li>Proceed directly with virus addition and infection as described in the infection section.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The monolayer (Day −1) method may provide slightly more uniform adherence, while the same-day suspension method offers tightly controlled cell numbers per well. Choose one approach and use it consistently within a given experiment.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="overlay-media" class="level1">
+<h1>Overlay media</h1>
+<section id="methylcellulose" class="level2">
+<h2 class="anchored" data-anchor-id="methylcellulose">2% methylcellulose</h2>
+<ul>
+<li>Prepare a <strong>2% (w/v)</strong> methylcellulose solution by dissolving 20 g methylcellulose in 1 L dH₂O.</li>
+<li>Autoclave (if compatible with your methylcellulose product) or sterile-filter if possible.</li>
+<li>Store at 4°C. Warm to room temperature before mixing with 2× DMEM.</li>
+</ul>
+</section>
+<section id="dmem-overlay-medium" class="level2">
+<h2 class="anchored" data-anchor-id="dmem-overlay-medium">2× DMEM overlay medium</h2>
+<p>Prepare <strong>2× DMEM</strong> as follows (example formulation; adapt to your laboratory’s standard buffer documents if applicable):</p>
+<ul>
+<li>1 bag <strong>2× DMEM powder</strong></li>
+<li>10 mL FCS/FBS (to yield 10% final in the overlay)</li>
+<li>5 mL Pen/Strep (2%)</li>
+<li>1.1 g NaHCO₃</li>
+<li>dH₂O to a final volume of <strong>265 mL</strong></li>
+</ul>
+<p>Mix thoroughly and sterile-filter into appropriate storage bottles. Store at 4°C and warm to room temperature before use.</p>
+</section>
+<section id="overlay-mixture" class="level2">
+<h2 class="anchored" data-anchor-id="overlay-mixture">Overlay mixture</h2>
+<ul>
+<li>Immediately before use, mix equal volumes of <strong>2× DMEM overlay medium</strong> and <strong>2% methylcellulose</strong> to generate a <strong>1× DMEM, 1% methylcellulose overlay</strong>.</li>
+<li>Keep at room temperature during the overlay step. The solution will be <strong>viscous</strong>.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because the methylcellulose overlay is viscous, use a <strong>cut pipette tip</strong> (trimmed with sterile scissors) or a <strong>serological pipette</strong> to avoid bubbles and ensure accurate dispensing.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="virus-dilution-series-5-fold-plate-based" class="level1">
+<h1>Virus dilution series (5-fold plate-based)</h1>
+<ol type="1">
+<li>Thaw a virus aliquot rapidly at 37°C and immediately transfer to ice.</li>
+<li>Prepare a <strong>24-well dilution plate</strong>:
+<ul>
+<li>Add <strong>400 µL</strong> infection/dilution medium (e.g.&nbsp;DMEM + 2% FCS) to each well required for the serial dilution.</li>
+</ul></li>
+<li>For each virus stock:
+<ul>
+<li>Add <strong>100 µL</strong> virus stock to the first well in the column (top row) to obtain a 1:5 dilution.</li>
+<li>Mix by pipetting up and down gently.</li>
+</ul></li>
+<li>Serial 5-fold dilutions:
+<ul>
+<li>Transfer <strong>100 µL</strong> from the first well to the next well in the column containing 400 µL medium.</li>
+<li>Mix thoroughly by pipetting.</li>
+<li>Repeat down the column to achieve the desired range of 5-fold dilutions (e.g.&nbsp;dilutions 5¹ to 5⁵ or more, depending on expected titer).</li>
+</ul></li>
+<li>Use fresh tips for each transfer to avoid back-contamination.</li>
+<li>Keep the dilution plate on ice until infection.</li>
+</ol>
+</section>
+<section id="infection-and-incubation" class="level1">
+<h1>Infection and incubation</h1>
+<ol type="1">
+<li>Ensure Vero cells are prepared according to your chosen seeding method (monolayer or same-day suspension) in the <strong>24-well incubation plate</strong>.</li>
+<li>For each virus dilution:
+<ul>
+<li>Transfer <strong>200 µL</strong> from the corresponding well of the <strong>dilution plate</strong> onto the appropriate well of the <strong>incubation plate</strong>.</li>
+<li>Each infection well should now contain:
+<ul>
+<li><strong>200 µL</strong> Vero cell suspension (if using same-day method) or the monolayer in existing medium (if using Day −1 method; in that case, aspirate most of the medium first, leaving a thin layer to prevent drying).</li>
+<li><strong>200 µL</strong> of virus dilution.</li>
+</ul></li>
+</ul></li>
+<li>Gently rock the plate to distribute the inoculum evenly.</li>
+<li>Incubate at 37°C, 5% CO₂ in the infectious incubator for <strong>3 h</strong> (adsorption/infection phase).</li>
+<li>After 3 h, without aspirating the inoculum, overlay each well with <strong>400 µL</strong> of the pre-mixed methylcellulose/2× DMEM overlay (see above).
+<ul>
+<li>Use a <strong>cut pipette tip</strong> or <strong>serological pipette</strong> to handle the viscous overlay and avoid bubbles.</li>
+</ul></li>
+<li>Return the plates to the infectious incubator and incubate at 37°C, 5% CO₂ for <strong>60–72 h</strong>.
+<ul>
+<li>Do not disturb the plates during this period to allow discrete foci to form.</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A typical schedule is <strong>Day 0: infection and overlay</strong>, <strong>Day 2–3: fixation and staining</strong>. For example, Monday infection → Wednesday or Thursday readout.</p>
+</div>
+</div>
+</section>
+<section id="fixation" class="level1">
+<h1>Fixation</h1>
+<p>From this point on, all steps are performed at <strong>room temperature</strong> (unless otherwise specified). Work in the biosafety cabinet until fixation is complete.</p>
+<ol type="1">
+<li>After 60–72 h incubation, remove plates from the incubator and place them in the biosafety cabinet.</li>
+<li>Carefully aspirate the overlay and supernatant without touching the cell layer.</li>
+<li>Add <strong>300–400 µL</strong> of <strong>4% PFA in PBS</strong> to each well.</li>
+<li>Incubate for <strong>30 min</strong> at room temperature.</li>
+<li>Aspirate the fixative into a container containing an appropriate disinfectant (e.g.&nbsp;10% bleach).</li>
+<li>Gently wash wells <strong>2–3× with PBS</strong>.</li>
+</ol>
+<p>Once fixation is complete and the plates have been washed, subsequent steps (permeabilization, antibody staining, OPD development) can be performed outside the BSL-2 cabinet if permitted by local biosafety regulations, but OPD handling must be done in a <strong>fume hood</strong>.</p>
+</section>
+<section id="permeabilization-and-priming" class="level1">
+<h1>Permeabilization and priming</h1>
+<ol type="1">
+<li>Add <strong>200 µL</strong> of <strong>Triton X-100 permeabilization solution</strong> (e.g.&nbsp;PBS + 0.1–0.3% Triton X-100) to each well.</li>
+<li>Incubate for <strong>20 min</strong> at room temperature.</li>
+<li>Aspirate the permeabilization solution.</li>
+<li>Add <strong>400 µL</strong> of <strong>5% FCS in PBS</strong> to each well.</li>
+<li>Incubate for <strong>~20 min</strong> at room temperature.</li>
+<li>Aspirate the 5% FCS/PBS solution immediately before adding primary antibody.</li>
+</ol>
+</section>
+<section id="antibody-staining" class="level1">
+<h1>Antibody staining</h1>
+<section id="primary-antibody-vl-4" class="level2">
+<h2 class="anchored" data-anchor-id="primary-antibody-vl-4">Primary antibody (VL-4)</h2>
+<ol type="1">
+<li>Prepare the primary antibody solution fresh on the day of use:
+<ul>
+<li>Dilute <strong>VL-4 (rat anti-LCMV NP)</strong> <strong>1:400</strong> in <strong>2% FCS in PBS</strong>.</li>
+<li>Example: <strong>50 µL VL-4</strong> into <strong>20 mL</strong> 2% FCS/PBS (adjust volumes as needed).</li>
+</ul></li>
+<li>Aspirate the 5% FCS/PBS solution from each well.</li>
+<li>Add <strong>200 µL</strong> of the VL-4 working solution to each well.</li>
+<li>Incubate for <strong>60 min</strong> at room temperature in a humidified chamber (or covered to prevent evaporation).</li>
+<li>After incubation, wash wells <strong>2× with PBS</strong> (e.g.&nbsp;5 min per wash).</li>
+</ol>
+</section>
+<section id="secondary-antibody-hrp-conjugated-goat-anti-rat-igg" class="level2">
+<h2 class="anchored" data-anchor-id="secondary-antibody-hrp-conjugated-goat-anti-rat-igg">Secondary antibody (HRP-conjugated goat anti-rat IgG)</h2>
+<ol type="1">
+<li>Prepare the secondary antibody solution fresh on the day of use:
+<ul>
+<li>Dilute <strong>Peroxidase AffiniPure Goat Anti-Rat IgG (HRP)</strong> <strong>1:100</strong> in <strong>2% FCS in PBS</strong>.</li>
+<li>Example: <strong>200 µL</strong> secondary antibody into <strong>20 mL</strong> 2% FCS/PBS (adjust volumes as needed).</li>
+</ul></li>
+<li>Add <strong>200 µL</strong> of the secondary antibody solution to each well.</li>
+<li>Incubate for <strong>60 min</strong> at room temperature in a humidified chamber.</li>
+<li>Around <strong>10 min before the end</strong> of the secondary incubation, prepare the OPD substrate solution (see below).</li>
+<li>After incubation, wash wells <strong>2× with PBS</strong> (e.g.&nbsp;5 min per wash).</li>
+</ol>
+</section>
+</section>
+<section id="opd-development-and-stopping-the-reaction" class="level1">
+<h1>OPD development and stopping the reaction</h1>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>OPD is hazardous</strong> and must be handled in a <strong>fume hood</strong> with appropriate PPE. OPD solutions and contaminated consumables must be collected as <strong>chemical hazardous waste</strong> according to institutional regulations.</p>
+</div>
+</div>
+<ol type="1">
+<li>Prepare the OPD substrate solution fresh approximately <strong>10 min</strong> before use, following the manufacturer’s instructions (e.g.&nbsp;OPD tablet in buffer with H₂O₂).</li>
+<li>Transfer the fixed, antibody-stained plates to a <strong>fume hood</strong>.</li>
+<li>Add <strong>400 µL</strong> of OPD substrate solution to each well.</li>
+<li>Incubate for <strong>10–20 min</strong> at room temperature, monitoring the development of foci periodically.
+<ul>
+<li>Stop the reaction once plaques/foci are clearly visible with good contrast but before background staining becomes excessive.</li>
+</ul></li>
+<li>When development is complete:
+<ul>
+<li>Aspirate OPD solution into a designated <strong>chemical waste container</strong> in the fume hood.</li>
+</ul></li>
+<li>Wash wells <strong>2× with 400 µL PBS</strong> to remove residual substrate.</li>
+<li>Plates can be kept in PBS until counting or allowed to air-dry if preferred.</li>
+</ol>
+</section>
+<section id="focus-counting-and-titer-calculation" class="level1">
+<h1>Focus counting and titer calculation</h1>
+<ol type="1">
+<li>Examine wells under a light microscope at low magnification (e.g.&nbsp;4× or 10× objective).</li>
+<li>Identify wells and dilutions that have <strong>10–100 discrete foci</strong> (well-separated, countable).</li>
+<li>For each suitable well, record:
+<ul>
+<li>Dilution factor (e.g.&nbsp;5³ = 125)</li>
+<li>Number of foci</li>
+<li>Volume of virus inoculum added per well (in mL; e.g.&nbsp;0.2 mL from the dilution plate)</li>
+</ul></li>
+<li>Calculate focus-forming units per mL (FFU/mL)</li>
+</ol>
+<p><strong>Formula:</strong><br>
+<strong>FFU/mL = (Number of foci × Dilution factor) / Volume of inoculum (mL)</strong></p>
+<p><strong>Example (5-fold dilution):</strong></p>
+<ul>
+<li>40 foci in a well<br>
+</li>
+<li>Inoculated with <strong>0.2 mL</strong> of a <strong>5⁴ dilution</strong> (5⁴ = 625)</li>
+</ul>
+<p><strong>FFU/mL = (40 × 625) / 0.2 = 125,000 FFU/mL = 1.25 × 10⁵ FFU/mL</strong></p>
+<ol start="5" type="1">
+<li>If multiple wells at the same dilution are counted (technical replicates), calculate the <strong>mean FFU/mL</strong> and optionally the standard deviation.</li>
+<li>Report titers as FFU/mL and record all raw counts and calculations in your lab notebook or electronic record.</li>
+</ol>
+</section>
+<section id="controls-and-quality-checks" class="level1">
+<h1>Controls and quality checks</h1>
+<ul>
+<li><strong>Mock-infected wells</strong> (no virus) to assess background staining and non-specific antibody binding.</li>
+<li><strong>Positive control virus stock</strong> of known titer to monitor assay performance across experiments.</li>
+<li>Wells should exhibit:
+<ul>
+<li>Minimal background staining in mock-infected controls.</li>
+<li>Clear, discrete foci in infected wells.</li>
+</ul></li>
+<li>If background is high or foci are poorly defined:
+<ul>
+<li>Check permeabilization and blocking conditions.</li>
+<li>Optimize primary and secondary antibody dilutions.</li>
+<li>Confirm that overlay viscosity and incubation time are appropriate.</li>
+</ul></li>
+</ul>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 34%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Possible cause</th>
+<th>Suggested action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>No foci at any dilution</td>
+<td>Virus inactive or dilutions too high</td>
+<td>Test lower dilutions; verify virus storage and freeze–thaw history</td>
+</tr>
+<tr class="even">
+<td>Very high foci numbers in all wells</td>
+<td>Virus titer underestimated; dilutions too low</td>
+<td>Increase dilution range (more 5-fold steps)</td>
+</tr>
+<tr class="odd">
+<td>High background staining</td>
+<td>Inadequate blocking or washing; antibody too concentrated</td>
+<td>Increase blocking time; add more/longer washes; titrate antibodies</td>
+</tr>
+<tr class="even">
+<td>Foci too small or faint</td>
+<td>Short incubation; suboptimal antibody concentration</td>
+<td>Extend incubation (up to 72 h); increase primary or secondary slightly</td>
+</tr>
+<tr class="odd">
+<td>Foci merging into large patches</td>
+<td>Incubation too long; inoculum too concentrated</td>
+<td>Shorten incubation; use higher (more dilute) dilutions</td>
+</tr>
+<tr class="even">
+<td>Uneven staining or edge effects</td>
+<td>Incomplete coverage during antibody or OPD steps</td>
+<td>Ensure sufficient volume and gentle rocking; avoid plate drying</td>
+</tr>
+<tr class="odd">
+<td>Bubbles or holes in overlay</td>
+<td>Viscous overlay handled with narrow tips</td>
+<td>Use cut tips or serological pipettes; avoid vigorous pipetting</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety-considerations" class="level1">
+<h1>Safety considerations</h1>
+<ul>
+<li>Confirm that all work with LCMV and infected animals/samples is covered by approved <strong>biosafety and animal use protocols</strong>.</li>
+<li>Perform all live-virus manipulations (thawing virus stocks, infection steps, handling of unfixed plates) in a <strong>certified Class II biosafety cabinet</strong>.</li>
+<li>Use <strong>dedicated infectious incubators</strong> and clearly label plates, flasks, and waste containers with the virus strain and date.</li>
+<li>Wear appropriate <strong>PPE</strong> at all times (lab coat/gown, gloves, eye/face protection as required).</li>
+<li>Decontaminate all liquid waste (e.g.&nbsp;with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.</li>
+<li>OPD and its solutions are handled as <strong>chemical hazardous waste</strong>; follow chemical safety rules in addition to biosafety rules.</li>
+<li>Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 79%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-12-01</td>
+<td>Initial LCMV focus-forming assay (FFA) SOP (generic, MC57G/Vero, DAB-based).</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-12-02</td>
+<td>Updated to Vero-only FFA with methylcellulose overlay, VL-4/OPD staining, and revised timing.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

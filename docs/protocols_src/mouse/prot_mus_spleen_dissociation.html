@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
+<meta name="dcterms.date" content="2025-11-26">
 <meta name="description" content="Preparation of mouse spleen single-cell suspensions for flow cytometry, sorting, and downstream immunological assays.">
 
 <title>Mouse Spleen Dissociation to Single-Cell Suspension – Protocol Library</title>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -145,6 +174,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Mouse</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../templates/index.qmd" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -202,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">November 26, 2025</p>
     </div>
   </div>
   
@@ -215,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>Protocol ID:</strong> MUS-SPL-DIS-001<br>
-<strong>Version:</strong> v1.0<br>
+<strong>Version:</strong> v1.1<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
@@ -228,9 +264,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li><strong>Do not reuse strainers</strong> between spleens.<br>
 </li>
-<li>RBC lysis should be <strong>time-limited (5 minutes)</strong> to prevent leukocyte damage.<br>
-</li>
-<li>Spleen pellets can be <strong>fragile</strong> after lysis — pour supernatants slowly.</li>
+<li>RBC lysis should be <strong>time-limited (5 minutes)</strong> to prevent leukocyte damage.</li>
 </ul>
 </section>
 <section id="approximate-timing" class="level1">
@@ -241,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 <li>RBC lysis: <strong>5 min</strong></li>
 <li>Final wash and resuspension: <strong>5 min</strong></li>
 </ul>
-<p>Total hands-on time per spleen: <strong>10–15 minutes</strong>.</p>
+<p>Total hands-on time per spleen: <strong>15–20 minutes</strong>.</p>
 <div style="page-break-after: always;"></div>
 <div style="page-break-after: always;"></div>
 </section>
@@ -254,31 +288,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
 <li>Expose the spleen by opening the abdominal cavity.<br>
 </li>
-<li>Excise the spleen and place it into a petri dish containing <strong>cold PBS or FACS/MACS Buffer</strong>.</li>
+<li>Excise the spleen and remove connective tissue &amp; adipose tissue</li>
+<li>Place it into a petri dish or 15 mL Falcon tube containing <strong>cold PBS or FACS Buffer</strong>.</li>
 </ol>
 </section>
 <section id="step-2-mechanical-dissociation" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-mechanical-dissociation">STEP 2 – Mechanical dissociation</h2>
 <ol type="1">
-<li>Place a <strong>70 μm cell strainer</strong> over a <strong>50 mL Falcon tube</strong>.<br>
+<li>Place a <strong>70 µm cell strainer</strong> over a <strong>50 mL Falcon tube</strong>.<br>
 </li>
 <li>Transfer the spleen onto the strainer.<br>
 </li>
 <li>Using the <strong>back of a 5 mL syringe plunger</strong>, gently mash the spleen through the mesh until a homogenous suspension is obtained.<br>
 </li>
-<li>Rinse the strainer with <strong>FACS/MACS Buffer</strong> and top the tube up to <strong>50 mL</strong>.</li>
+<li>Rinse the strainer with <strong>FACS Buffer</strong> and top the tube up to <strong>50 mL</strong>.</li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use gentle, consistent pressure — avoid grinding, which reduces viability.</p>
+<p>Max of 2 spleens per tube/strainer</p>
 </div>
 </div>
 </section>
@@ -299,7 +334,7 @@ Tip
 </li>
 <li>Incubate for <strong>5 minutes at room temperature</strong>.<br>
 </li>
-<li>Top up to <strong>50 mL</strong> with <strong>FACS/MACS Buffer</strong>.</li>
+<li>Top up to <strong>50 mL</strong> with <strong>FACS Buffer</strong>.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -311,20 +346,20 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Over-lysis (&gt;5 minutes) can reduce leukocyte viability and alter scatter profiles.</p>
+<p>Avoid over-lysis (&gt;5 minutes) as this can reduce leukocyte viability.</p>
 </div>
 </div>
 </section>
 <section id="step-5-filtration-and-final-wash" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-filtration-and-final-wash">STEP 5 – Filtration and final wash</h2>
 <ol type="1">
-<li>Filter the suspension through a <strong>fresh 70 μm strainer</strong> into a clean tube.<br>
+<li>Filter the suspension through a <strong>fresh 70 µm strainer</strong> into a clean tube.<br>
 </li>
 <li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.<br>
 </li>
 <li>Carefully discard supernatant.<br>
 </li>
-<li>Resuspend the pellet in <strong>5 mL FACS/MACS Buffer</strong> (or a volume appropriate for your downstream assay).</li>
+<li>Resuspend the pellet in <strong>5 mL FACS Buffer</strong> (or a volume appropriate for your downstream assay).</li>
 </ol>
 </section>
 <section id="step-6-downstream-handling" class="level2">
@@ -346,7 +381,7 @@ Warning
 <section id="buffers-used" class="level1">
 <h1>Buffers used</h1>
 <ul>
-<li><strong>FACS/MACS Buffer</strong> – <code>BUF-FACS-v1.0</code><br>
+<li><strong>FACS Buffer</strong> – <code>BUF-FACS-v1.0</code><br>
 </li>
 <li><strong>RBC Lysis Buffer (HybriMax)</strong> – <code>BUF-RBC-HYB-v1.0</code></li>
 </ul>
@@ -366,7 +401,7 @@ Warning
 </thead>
 <tbody>
 <tr class="odd">
-<td>PBS or FACS/MACS Buffer</td>
+<td>PBS or FACS Buffer</td>
 <td>In-house</td>
 <td>Cold</td>
 </tr>
@@ -398,7 +433,7 @@ Warning
 <td>1 per spleen</td>
 </tr>
 <tr class="even">
-<td>70 μm cell strainers</td>
+<td>70 µm cell strainers</td>
 <td>Do not reuse</td>
 </tr>
 <tr class="odd">
@@ -517,8 +552,15 @@ Warning
 <td>Dillon Corvino</td>
 <td>Initial upgraded version for spleen</td>
 </tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-11-26</td>
+<td>Dillon Corvino</td>
+<td>Manual check and update protocol</td>
+</tr>
 </tbody>
 </table>
+
 
 
 </section>

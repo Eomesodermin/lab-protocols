@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - templates/*
 
 website:
   title: "Protocol Library"
@@ -20,7 +22,7 @@ website:
       - href: protocols_src/general/index.qmd
         text: "General"
         icon: gear
-        
+
       - href: protocols_src/human/index.qmd
         text: "Human"
         icon: person
@@ -29,18 +31,22 @@ website:
         text: "Mouse"
         icon: mouse
 
+      - href: protocols_src/templates/index.qmd
+        text: "Templates"
+        icon: file-earmark-spreadsheet
 
 format:
   html:
     theme: flatly
+    math: mathjax
     toc: true
     number-sections: false
     geometry: "margin=2cm"
     fontsize: 11pt
     colorlinks: false
   pdf:
-    pdf-engine: xelatex
     toc: false
+    pdf-engine: xelatex
     number-sections: false
     geometry: "margin=2cm"
     fontsize: 11pt

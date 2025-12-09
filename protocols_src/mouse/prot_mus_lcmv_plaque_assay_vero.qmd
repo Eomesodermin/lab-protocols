@@ -1,0 +1,211 @@
+---
+title: "LCMV Plaque Assay on Vero Cells"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-LCMV-PLA-001"
+version: "v1.0"
+date: "2025-12-01"
+description: "Quantification of infectious titer (PFU/mL)"
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+This protocol describes a standard plaque assay for determining the infectious titer of LCMV stocks using Vero cell monolayers. The readout is plaque-forming units per milliliter (PFU/mL).
+
+:::callout-warning
+## LCMV biosafety and handling
+
+LCMV is a zoonotic arenavirus capable of causing severe disease in humans, including meningitis and congenital infection. Work with live LCMV must:
+
+- Be conducted under the appropriate institutional **biosafety level (typically BSL-2 with additional local conditions)** and approved animal and biosafety protocols.
+- Use **dedicated infectious CO₂ incubators** and clearly labelled containment for all cultures and waste.
+- Include suitable **PPE** (lab coat/gown, gloves, eye protection as appropriate) and measures to avoid sharps injuries, aerosol formation, and spills.
+- Exclude or take special precautions for **pregnant or immunocompromised personnel** according to institutional policies.
+
+All waste (liquid and solid) must be inactivated according to local regulations (e.g. chemical disinfection and/or autoclaving) **before** disposal.
+:::
+
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+
+# Principle
+
+- Serial 10-fold dilutions of virus are prepared in serum-containing medium.
+- Vero cell monolayers are infected with each dilution for a defined adsorption period.
+- Inoculum is removed and cells are overlaid with a semi-solid medium to restrict virus spread to neighboring cells.
+- After several days of incubation, individual plaques (zones of lysis/infection) are fixed, stained, and counted.
+- Viral titer is calculated from plaque counts, dilution factor, and inoculum volume.
+
+# Materials
+
+## Cells and Media
+
+- Vero cells (African green monkey kidney)
+- Vero cell propagation medium (see `buf_vero_propagation_medium.qmd`)
+- LCMV plaque assay medium (2× MEM-based overlay; see `buf_lcmv_plaque_assay_medium.qmd`)
+- Methylcellulose or agarose for overlay (if preparing a gel-based overlay)
+
+## Virus
+
+- LCMV stocks to be titrated (Armstrong, Clone 13, WE, Docile, etc.)
+- Known reference virus stock (optional internal control)
+
+## Reagents and Consumables
+
+- PBS without Ca²⁺/Mg²⁺
+- Crystal violet staining solution (e.g. 0.5% crystal violet in 20% ethanol)
+- Fixative:
+  - 4% paraformaldehyde in PBS, or
+  - 10% neutral buffered formalin
+- Sterile 6-well plates or 12-well plates
+- Sterile conical tubes (15 mL, 50 mL)
+- Micropipettes and sterile filtered tips
+- Serological pipettes
+- Waste containers with disinfectant (e.g. 10% bleach)
+
+## Equipment
+
+- Class II biosafety cabinet
+- CO₂ incubator set to 37°C, 5% CO₂
+- Inverted light microscope
+- Water bath (for overlay preparation if using agarose)
+- Aspirator or vacuum system with appropriate trap and disinfectant
+- Laboratory timer
+
+# Preparation
+
+## Vero Cell Seeding
+
+1. One day before infection, seed Vero cells in 6-well plates to achieve a **90–100% confluent monolayer** on the day of infection.
+2. Use Vero propagation medium and incubate at 37°C, 5% CO₂.
+
+:::callout-tip
+Aim for evenly distributed, healthy monolayers. Avoid overconfluency and large areas of cell-free plastic.
+:::
+
+## Overlay Medium
+
+You can use either:
+
+- **Methylcellulose-based overlay**, or  
+- **Low-melting agarose overlay**
+
+A common approach is to mix **equal volumes** of:
+
+- 2× plaque assay medium (see buffer file) and  
+- 2% methylcellulose or 2% agarose (cooled to ~42–45°C for agarose)
+
+to obtain a final 1× medium with 1% methylcellulose or 1% agarose.
+
+Prepare and keep overlay medium **warm (37–42°C)** until use.
+
+# Virus Dilution Series
+
+1. Thaw a virus aliquot rapidly in a 37°C water bath and immediately place on ice.
+2. Prepare a series of 10-fold dilutions in Vero propagation medium (e.g. 10⁻¹ to 10⁻⁷).
+3. Use sterile 1.5 mL or 15 mL tubes and mix gently by pipetting.
+
+Example:
+
+- Tube 1: 900 µL medium + 100 µL virus stock (10⁻¹)
+- Tube 2: 900 µL medium + 100 µL from Tube 1 (10⁻²)
+- Continue to the desired dilution (e.g. 10⁻⁷).
+
+# Infection of Vero Cell Monolayers
+
+1. Remove growth medium from each well of the 6-well plate.
+2. Rinse wells once with PBS (optional but recommended).
+3. Add virus dilutions:
+   - Typically 200–300 µL per well.
+   - Use at least duplicate wells per dilution if possible.
+4. Gently rock plates to distribute inoculum evenly.
+5. Incubate at 37°C, 5% CO₂ for **1 hour**.
+6. Gently rock plates every 10–15 minutes during adsorption.
+
+# Overlay Application
+
+1. After the adsorption period, carefully aspirate the virus inoculum from each well without disturbing the cell monolayer.
+2. Add **2–3 mL** of warm overlay medium to each well.
+3. Swirl plates gently to ensure even coverage.
+4. Incubate plates at 37°C, 5% CO₂ for **3–5 days**, depending on strain and desired plaque size.
+   - Armstrong and WE often show clear plaques by day 3–4.
+   - Clone 13 and Docile may require up to day 5 for optimal plaque definition.
+
+# Fixation and Staining
+
+1. At the chosen endpoint, remove plates from the incubator.
+2. Carefully add an equal volume of **fixative** (e.g. 4% paraformaldehyde) directly on top of the overlay to fix cells and inactivate virus.
+   - Incubate at room temperature for **30–60 minutes**.
+3. Aspirate overlay and fixative into a disinfectant-containing waste container (e.g. 10% bleach).
+4. Gently rinse wells with tap water or PBS.
+5. Add sufficient **crystal violet staining solution** to cover the monolayer (e.g. 1–2 mL per well).
+6. Incubate at room temperature for **15–30 minutes**.
+7. Rinse thoroughly with tap water until excess stain is removed.
+8. Air-dry plates.
+
+Plaques will appear as clear (unstained) zones against a darkly stained monolayer.
+
+# Plaque Counting and Titer Calculation
+
+1. Count plaques in wells with **10–100 plaques** for accurate quantification.
+2. For each counted well, record:
+   - Dilution factor (e.g. 10⁻⁴)
+   - Number of plaques
+   - Inoculum volume (e.g. 0.2 mL)
+
+3. Calculate PFU/mL:
+
+`PFU/mL = (Number of plaques × Dilution factor) / Volume of inoculum (mL)`
+
+Example:
+
+- 45 plaques at a 10⁻⁵ dilution with 0.2 mL inoculum
+
+PFU/mL is calculated as:
+
+`PFU/mL = (45 × 10^5) / 0.2 = 2.25 × 10^7 PFU/mL`
+
+
+4. Average PFU/mL from replicate wells at the same dilution.
+
+# Controls and Quality Checks
+
+- Include at least one **mock-infected well** (no virus) to check for contamination and monolayer health.
+- Optionally include a **reference virus stock** of known titer to verify assay consistency.
+- Plaques should be well separated and have clearly defined borders.
+- Monolayers should remain intact in mock-infected wells, with no evidence of cytotoxicity from medium or overlay.
+
+# Troubleshooting
+
+| Issue                          | Possible cause                                | Suggested action                                   |
+|--------------------------------|-----------------------------------------------|----------------------------------------------------|
+| No plaques at any dilution     | Virus stock inactive or too dilute            | Check storage history; test a less diluted stock   |
+| Too many plaques (confluent)   | Dilutions not high enough                     | Extend dilution series (e.g. to 10⁻⁸ or 10⁻⁹)      |
+| Irregular or fuzzy plaques     | Overlay too thin or too thick; incubation off | Adjust overlay volume; verify incubator conditions |
+| Poor cell monolayer            | Cells not healthy or not fully attached       | Improve cell culture conditions before assay       |
+| High background staining       | Incomplete washing after staining             | Increase number and volume of wash steps           |
+
+
+# Safety considerations
+
+- Confirm that all work with LCMV and infected animals/samples is covered by approved **biosafety and animal use protocols**.
+- Perform all live-virus manipulations (thawing virus stocks, infection steps, handling of unfixed plates) in a **certified Class II biosafety cabinet**.
+- Use **dedicated infectious incubators** and clearly label plates, flasks, and waste containers with the virus strain and date.
+- Wear appropriate **PPE** at all times (lab coat/gown, gloves, eye/face protection as required).
+- Decontaminate all liquid waste (e.g. with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.
+- OPD and its solutions are handled as **chemical hazardous waste**; follow chemical safety rules in addition to biosafety rules.
+- Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.
+
+
+# Version History
+
+| Version | Date       | Description                       |
+|---------|------------|-----------------------------------|
+| v1.0    | 2025-12-01 | Initial LCMV plaque assay SOP.   |

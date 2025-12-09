@@ -2,8 +2,8 @@
 title: "Mouse Spleen Dissociation to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-SPL-DIS-001"
-version: "v1.0"
-date: "2025-11-20"
+version: "v1.1"
+date: "2025-11-26"
 description: "Preparation of mouse spleen single-cell suspensions for flow cytometry, sorting, and downstream immunological assays."
 ---
 
@@ -20,7 +20,6 @@ This protocol describes the rapid isolation of leukocytes from mouse spleen usin
 - Work on **ice** or at **4 °C** after dissociation to preserve viability.  
 - **Do not reuse strainers** between spleens.  
 - RBC lysis should be **time-limited (5 minutes)** to prevent leukocyte damage.  
-- Spleen pellets can be **fragile** after lysis — pour supernatants slowly.
 
 # Approximate timing
 
@@ -29,7 +28,7 @@ This protocol describes the rapid isolation of leukocytes from mouse spleen usin
 - RBC lysis: **5 min**
 - Final wash and resuspension: **5 min**
 
-Total hands-on time per spleen: **10–15 minutes**.
+Total hands-on time per spleen: **15–20 minutes**.
 
 {{< pagebreak >}}
 
@@ -43,17 +42,18 @@ Total hands-on time per spleen: **10–15 minutes**.
 
 1. Euthanise the mouse by an approved method.  
 2. Expose the spleen by opening the abdominal cavity.  
-3. Excise the spleen and place it into a petri dish containing **cold PBS or FACS/MACS Buffer**.
+3. Excise the spleen and remove connective tissue & adipose tissue
+4. Place it into a petri dish or 15 mL Falcon tube containing **cold PBS or FACS Buffer**.
 
 ## STEP 2 – Mechanical dissociation
 
-1. Place a **70 μm cell strainer** over a **50 mL Falcon tube**.  
+1. Place a **70 µm cell strainer** over a **50 mL Falcon tube**.  
 2. Transfer the spleen onto the strainer.  
 3. Using the **back of a 5 mL syringe plunger**, gently mash the spleen through the mesh until a homogenous suspension is obtained.  
-4. Rinse the strainer with **FACS/MACS Buffer** and top the tube up to **50 mL**.
+4. Rinse the strainer with **FACS Buffer** and top the tube up to **50 mL**.
 
-::: callout-tip
-Use gentle, consistent pressure — avoid grinding, which reduces viability.
+::: callout-note
+Max of 2 spleens per tube/strainer
 :::
 
 ## STEP 3 – Wash and centrifugation
@@ -66,18 +66,18 @@ Use gentle, consistent pressure — avoid grinding, which reduces viability.
 1. Add **1 mL HybriMax RBC Lysis Buffer** (or equivalent) **per spleen** to the pellet.  
 2. Gently resuspend the pellet by pipetting or flicking.  
 3. Incubate for **5 minutes at room temperature**.  
-4. Top up to **50 mL** with **FACS/MACS Buffer**.
+4. Top up to **50 mL** with **FACS Buffer**.
 
 ::: callout-warning
-Over-lysis (>5 minutes) can reduce leukocyte viability and alter scatter profiles.
+Avoid over-lysis (>5 minutes) as this can reduce leukocyte viability.
 :::
 
 ## STEP 5 – Filtration and final wash
 
-1. Filter the suspension through a **fresh 70 μm strainer** into a clean tube.  
+1. Filter the suspension through a **fresh 70 µm strainer** into a clean tube.  
 2. Centrifuge at **400 g for 5 minutes at 4 °C**.  
 3. Carefully discard supernatant.  
-4. Resuspend the pellet in **5 mL FACS/MACS Buffer** (or a volume appropriate for your downstream assay).
+4. Resuspend the pellet in **5 mL FACS Buffer** (or a volume appropriate for your downstream assay).
 
 ## STEP 6 – Downstream handling
 
@@ -94,7 +94,7 @@ Keep cells **on ice** until use.
 
 # Buffers used
 
-- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
+- **FACS Buffer** – `BUF-FACS-v1.0`  
 - **RBC Lysis Buffer (HybriMax)** – `BUF-RBC-HYB-v1.0`  
 
 {{< pagebreak >}}
@@ -105,7 +105,7 @@ Keep cells **on ice** until use.
 
 | Reagent | Supplier / Cat# | Notes |
 |--------|------------------|-------|
-| PBS or FACS/MACS Buffer | In-house | Cold |
+| PBS or FACS Buffer | In-house | Cold |
 | HybriMax RBC Lysis Buffer | Sigma | 1 mL per spleen |
 | Sterile PBS | Any | For handling and rinsing |
 
@@ -114,7 +114,7 @@ Keep cells **on ice** until use.
 | Item | Notes |
 |------|-------|
 | 50 mL Falcon tubes | 1 per spleen |
-| 70 μm cell strainers | Do not reuse |
+| 70 µm cell strainers | Do not reuse |
 | 5 mL syringes (without needle) | For mashing |
 | Transfer pipettes | For washing/rinsing |
 
@@ -151,3 +151,5 @@ Keep cells **on ice** until use.
 | Version | Date | Author | Change summary |
 |--------|------|--------|----------------|
 | v1.0 | 2025-11-20 | Dillon Corvino | Initial upgraded version for spleen |
+| v1.1 | 2025-11-26 | Dillon Corvino | Manual check and update protocol |
+

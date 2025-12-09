@@ -1,0 +1,58 @@
+---
+title: "Vero Cell Propagation Medium"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-VERO-PROP-001"
+version: "v1.1"
+date: "2025-12-02"
+description: "This medium is used for routine propagation of Vero cells."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This medium is used for routine propagation of Vero cells for LCMV focus-forming assays and other virological applications.
+
+# Components (Final volume: 500 mL)
+
+| Component                                                                 | Amount    | Final concentration / note          |
+|---------------------------------------------------------------------------|-----------|-------------------------------------|
+| DMEM (high glucose, with L-glutamine, phenol red)                        | to 500 mL | Base medium                         |
+| Heat-inactivated FCS/FBS                                                 | 50 mL     | 10% (v/v)                           |
+| Penicillin–Streptomycin (100×; 10,000 U/mL penicillin, 10,000 µg/mL strep) | 5 mL      | 1× final                            |
+| 2-mercaptoethanol (100× stock; see lab stock sheet for concentration)    | 0.5 mL    | 1× final (typical 50–100 µM range)  |
+
+:::callout-warning
+For Vero cell culture, always use **DMEM-based medium**. Do **not** confuse this with RPMI-based media used elsewhere in the plaque/FFA protocol (e.g. for sample dilution).
+:::
+
+# Preparation
+
+1. In a sterile biosafety cabinet, add ~400 mL of DMEM to a sterile 500 mL bottle.  
+2. Add:
+   - 50 mL heat-inactivated FCS/FBS.  
+   - 5 mL Penicillin–Streptomycin (100× stock) to achieve 1× final.  
+   - 0.5 mL of the 100× 2-mercaptoethanol stock (check your lab stock sheet for the exact stock concentration and resulting final µM).  
+3. Top up with DMEM to a final volume of **500 mL**.  
+4. Mix gently by inversion.  
+5. If any component was added from a non-sterile container, sterile-filter the complete medium (0.22 µm filter) into a fresh sterile bottle.  
+6. Label with:
+   - “Vero propagation medium (DMEM + 10% FCS + 1× P/S + 2-ME)”  
+   - Date of preparation  
+   - Initials  
+
+7. Store at **4°C** for up to **4 weeks**, protected from light.
+
+# Use
+
+- Warm medium to **37°C** before use with cells.  
+- Discard medium if there is any sign of contamination (turbidity, threads, pH shift) or if it is past the defined expiry (4 weeks from preparation).
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                                |
+|--------|------------|----------------|-------------------------------------------------------------------------|
+| v1.0   | 2025-12-01 | Dillon Corvino | Initial Quarto buffer document (MEM-based formulation).                |
+| v1.1   | 2025-12-02 | Dillon Corvino | Updated to DMEM + 10% FCS + 1× P/S + 2-ME, aligned with lab protocol.  |

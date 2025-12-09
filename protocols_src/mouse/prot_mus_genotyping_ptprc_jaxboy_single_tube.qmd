@@ -1,0 +1,139 @@
+---
+title: "Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-PTPRC-GENO-001"
+version: "v1.0"
+date: "2025-12-01"
+description: "Validated allele-specific endpoint PCR using long-tailed primers."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes a **validated single-tube endpoint PCR assay** for distinguishing:
+
+- **C57BL/6J (Ptprc^b/b, CD45.2)**
+- **JAXBoy (Ptprc^a/a, CD45.1)**
+- **Heterozygous (Ptprc^a/b)**
+
+The method is derived directly from **Supplementary Tables S1, S4–S10 and Figures S1–S3** of Ryan et al. 2024.
+
+# Background
+
+The Ptprc locus contains SNPs that differentiate the CD45.1 (Ptprc^a) and CD45.2 (Ptprc^b) alleles.
+
+A single SNP assay using:
+
+- Ptprc_a_F3cT3 (long-tailed allele-specific forward primer)
+- Ptprc_b_F3d (allele-specific forward primer)
+- Ptprc_R3 (common reverse primer)
+
+provides robust genotype resolution in one reaction tube.
+
+# Materials
+
+## Reagents
+- HotSHOT buffers
+- DreamTaq Green 2× Master Mix
+- Primers as detailed below
+- Nuclease-free water
+
+## Equipment
+- Thermocycler
+- 0.2 mL PCR tubes
+- Agarose gel system
+
+# Primer Sequences
+
+**Ptprc_b_F3d**
+```
+TTG TTT GGA GTG GAA AAC GA
+```
+
+**Ptprc_a_F3cT3**  
+(81-nt tail + allele-specific region)
+```
+cat ctg ata ttt gaa aga ccc aag ccc tct cat acg cga cac gag atc tac act 
+ctt tcc cta cac gac gct ctt ccg atc TGT TTG GAG TGG AAA ACC A
+```
+
+**Ptprc_R3**
+```
+CGT TGT GAA TTT GTT TCA GTG C
+```
+
+# Ready-to-Use Primer Mix (Total 100 µL)
+
+- Ptprc_a_F3cT3 (100 µM): 13.3 µL  
+- Ptprc_b_F3d (100 µM): 10 µL  
+- Ptprc_R3 (100 µM): 10 µL  
+- Water: 66.7 µL  
+
+Use **0.5 µL per 10 µL PCR reaction.**
+
+# Genomic DNA Preparation (HotSHOT)
+
+1. Add 50–75 µL alkaline buffer to ear/tail biopsy.  
+2. Heat 95°C × 30 min.  
+3. Chill and neutralize.  
+4. Spin briefly.  
+5. Use 1–2 µL supernatant per PCR.
+
+# PCR Reaction Setup (10 µL total)
+
+- 2 µL HOTSHOT DNA  
+- 5 µL 2× DreamTaq Green  
+- 0.5 µL Primer Mix  
+- 2.5 µL Water  
+
+# PCR Cycling Conditions
+
+**Standard cycling (recommended):**
+
+1. 94–95°C × 2 min  
+2. 36 cycles of:  
+   - 95°C × 30 s  
+   - **56°C × 30 s**  
+   - 72°C × 60 s  
+3. 72°C × 5 min  
+
+# Expected Amplicon Sizes
+
+| Genotype | Size |
+|----------|------|
+| Ptprc^b/b | **243 bp** |
+| Ptprc^a/a | **323 bp** |
+| Ptprc^a/b | 243 + 323 bp |
+
+# Gel Electrophoresis
+
+- 2–3% agarose  
+- Run until 200–350 bp resolves  
+- Load 5–10 µL PCR product  
+
+# Controls
+
+Include known:  
+- Ptprc^b/b  
+- Ptprc^a/a  
+- Ptprc^a/b  
+- NTC  
+
+# Troubleshooting
+
+- Weak bands → increase template or cycles.  
+- Allele dropout → check 56°C annealing temperature.  
+- Non-specific bands → small increase in annealing temperature.
+
+# Version History
+
+| Version | Date | Description |
+|---------|-------|-------------|
+| v1.0 | 2025-12-01 | Initial release. |
+
+# Citation
+
+Ryan CE et al. (2024). Single-tube Ptprc SNP genotyping assay.

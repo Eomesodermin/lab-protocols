@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
+<meta name="dcterms.date" content="2025-11-26">
 <meta name="description" content="Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications.">
 
 <title>Mouse Liver Digestion to Single-Cell Suspension – Protocol Library</title>
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -145,6 +174,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Mouse</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../templates/index.qmd" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -202,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">November 26, 2025</p>
     </div>
   </div>
   
@@ -215,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><strong>Protocol ID:</strong> MUS-LIV-DIG-001<br>
-<strong>Version:</strong> v1.0<br>
+<strong>Version:</strong> v1.1<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
@@ -225,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Critical notes (read before starting)</h1>
 <ul>
 <li>Keep all <strong>post-digestion washes cold</strong> (4 °C) where possible to preserve viability.</li>
-<li>Process <strong>one liver per 70 μm strainer</strong>; do not reuse strainers between livers.</li>
+<li>Process <strong>one liver per 70 µm strainer</strong>; do not reuse strainers between livers.</li>
 <li>Liver cell pellets are often <strong>loose</strong>; be careful when pouring supernatants.</li>
 <li>Do not over-digest; limit digestion to <strong>30 minutes at 37 °C</strong> with agitation.</li>
 <li>Percoll must be at <strong>room temperature</strong> and properly diluted to <strong>33%</strong> immediately before use.</li>
@@ -251,11 +287,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-1-liver-harvest-and-perfusion" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-liver-harvest-and-perfusion">STEP 1 – Liver harvest and perfusion</h2>
 <ol type="1">
+<li>Load a <strong>5 mL syringe</strong> with <strong>Liver Digestion Buffer</strong> and attach a <strong>27 G needle</strong>.</li>
 <li>Euthanise the mouse using <strong>CO₂ asphyxiation</strong> or another approved method (ensure compatibility if cardiac puncture is also performed in the experiment).</li>
 <li>Weigh the mouse and record the body weight.</li>
-<li>Perform a midline incision to open the abdominal cavity and expose the liver and portal vein.</li>
-<li>Load a <strong>5 mL syringe</strong> with <strong>Liver Digestion Buffer</strong> and attach a <strong>27 G needle</strong>.</li>
-<li>Perfuse the liver through the <strong>Inferior vena cava</strong> with approximately <strong>2 mL Liver Digestion Buffer per mouse</strong>, allowing blood and perfusate to drain into a petri dish or waste beaker.</li>
+<li>Perform a midline incision to open the abdominal cavity and expose the liver and Inferior vena cava.</li>
+<li>Perfuse the liver through the <strong>Inferior vena cava</strong> with approximately <strong>2 mL Liver Digestion Buffer per mouse</strong>.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -271,10 +307,10 @@ Warning
 </div>
 </div>
 <ol start="6" type="1">
-<li>Excise the liver and place it on <strong>filter paper</strong> to blot excess blood and buffer.</li>
+<li>Excise the liver (remove Gallbladder) and place it on <strong>filter paper</strong> to blot excess blood and buffer.</li>
 <li>Weigh the liver and record the weight.</li>
-<li>Transfer the liver to a <strong>10 cm petri dish</strong> and mince it roughly into small fragments using scissors or scalpels.</li>
-<li>Transfer the minced liver pieces into the <strong>pre-labeled 50 mL tube</strong> containing <strong>3 mL Liver Digestion Buffer</strong>.</li>
+<li>Transfer the liver to a <strong>10 cm petri dish</strong> and mince it roughly into small fragments using scissors or scalpel.</li>
+<li>Transfer the minced liver pieces into a <strong>pre-labeled 50 mL tube</strong> containing <strong>3 mL Liver Digestion Buffer</strong>.</li>
 </ol>
 </section>
 <section id="step-2-enzymatic-digestion" class="level2">
@@ -300,8 +336,8 @@ Note
 <section id="step-3-mechanical-dissociation-and-first-wash" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-mechanical-dissociation-and-first-wash">STEP 3 – Mechanical dissociation and first wash</h2>
 <ol type="1">
-<li>After the 30-minute digestion, add <strong>FACS/MACS Buffer</strong> to each 50 mL tube to a <strong>total volume of 25 mL</strong>.</li>
-<li>Place a <strong>70 μm cell strainer</strong> into a <strong>10 cm petri dish</strong>.</li>
+<li>After the 30-minute digestion, add <strong>FACS Buffer</strong> to each 50 mL tube to a <strong>total volume of 25 mL</strong>.</li>
+<li>Place a <strong>70 µm cell strainer</strong> into a <strong>10 cm petri dish</strong>.</li>
 <li>Pour the entire content of one liver tube onto the cell strainer, ensuring all tissue fragments are transferred.</li>
 <li>Using the <strong>back of a 5 mL syringe plunger</strong>, mechanically dissociate the liver through the strainer until no visible large fragments remain.</li>
 <li>Use a <strong>transfer pipette</strong> to:
@@ -336,6 +372,19 @@ Warning
 <p>Cell pellets from digested livers are often <strong>loose</strong>. When discarding supernatant by pouring, use a slow, controlled motion and avoid abrupt shaking or flicking.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Prepare Percoll solution during this wash by adding the required amount of 10X PBS and 1xPBS to Percoll to make up a 33% solution and aliquot as needed. See Buffer protocol BUF-PERC-33-v1.0</p>
+</div>
+</div>
 <ol start="11" type="1">
 <li>Carefully discard supernatant by pouring.</li>
 <li>Top up each tube again to <strong>50 mL with FACS buffer</strong>.</li>
@@ -346,7 +395,6 @@ Warning
 <section id="step-4-33-percoll-purification" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-33-percoll-purification">STEP 4 – 33% Percoll purification</h2>
 <ol type="1">
-<li>During the second centrifugation, prepare <strong>33% Percoll Solution</strong> according to its buffer protocol (BUF-PERC-33-v1.0).</li>
 <li>Aliquot <strong>10 mL of 33% Percoll Solution</strong> into <strong>pre-labeled 15 mL Falcon tubes</strong>, one tube per liver.</li>
 <li>After the centrifugation in STEP 3:
 <ul>
@@ -384,9 +432,9 @@ Note
 <section id="step-5-rbc-lysis" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-rbc-lysis">STEP 5 – RBC lysis</h2>
 <ol type="1">
-<li>Add <strong>0.5 mL HybriMax RBC lysis buffer</strong> (or equivalent; see BUF-RBC-HYB-v1.0) directly to each pellet in the 15 mL tubes.</li>
+<li>Add <strong>500 µL HybriMax RBC lysis buffer</strong> (or equivalent; see BUF-RBC-HYB-v1.0) directly to each pellet in the 15 mL tubes.</li>
 <li>Pipette up and down to fully resuspend the pellet in the lysis buffer.</li>
-<li>Incubate at <strong>room temperature for 7 minutes</strong>.</li>
+<li>Incubate at <strong>room temperature for 5 minutes</strong>.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -402,7 +450,7 @@ Warning
 </div>
 </div>
 <ol start="4" type="1">
-<li>After 7 minutes, top up each tube to <strong>10 mL with FACS buffer</strong>.</li>
+<li>After 5 minutes, top up each tube to <strong>10 mL with FACS buffer</strong>.</li>
 <li>Centrifuge at <strong>400 g for 5 minutes</strong> (4 °C recommended; standard braking).</li>
 </ol>
 </section>
@@ -445,7 +493,7 @@ Tip
 <ul>
 <li>DMEM (incomplete) + Collagenase D + DNase I at defined concentrations.</li>
 </ul></li>
-<li><strong>FACS/MACS Buffer</strong> – <code>BUF-FACS-v1.0</code>
+<li><strong>FACS Buffer</strong> – <code>BUF-FACS-v1.0</code>
 <ul>
 <li>PBS 1× + FCS + EDTA.</li>
 </ul></li>
@@ -485,7 +533,7 @@ Tip
 <td>Pre-warmed to 37 °C; 3 mL per liver + for perfusion</td>
 </tr>
 <tr class="even">
-<td>FACS/MACS Buffer</td>
+<td>FACS Buffer</td>
 <td>In-house (see buffer)</td>
 <td>Cold; used for washing and final resuspension</td>
 </tr>
@@ -539,7 +587,7 @@ Tip
 <td>1 per liver (mincing and straining)</td>
 </tr>
 <tr class="even">
-<td>70 μm cell strainers</td>
+<td>70 µm cell strainers</td>
 <td>1 per liver; do not reuse between livers</td>
 </tr>
 <tr class="odd">
@@ -645,7 +693,7 @@ Tip
 <tr class="odd">
 <td>High debris in suspension</td>
 <td>Incomplete mechanical dissociation/filtering</td>
-<td>Increase time mashing through 70 μm mesh; add extra wash</td>
+<td>Increase time mashing through 70 µm mesh; add extra wash</td>
 </tr>
 <tr class="even">
 <td>Poor viability</td>
@@ -689,8 +737,15 @@ Tip
 <td>Dillon Corvino</td>
 <td>Initial Quarto version based on SOP_001 (liver) from IEO</td>
 </tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-11-26</td>
+<td>Dillon Corvino</td>
+<td>Manual check and update protocol</td>
+</tr>
 </tbody>
 </table>
+
 
 
 </section>

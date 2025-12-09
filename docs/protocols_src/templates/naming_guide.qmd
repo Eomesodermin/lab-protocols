@@ -1,0 +1,216 @@
+---
+title: "Lab Naming and Versioning Guide"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+version: "v1.1"
+date: "2025-11-20"
+---
+
+# Purpose
+
+This document defines the **naming conventions** and **identifier system** used across the Corvino Lab protocol library. These rules ensure:
+
+- Consistency across all `.qmd` protocol and buffer files  
+- Stable, human-readable identifiers  
+- Clear separation of *identity* (`protocol_id`) from *versioning* (`version:`)  
+- Scalable indexing as the repository grows  
+
+This naming guide governs all **protocol**, **buffer**, and **supporting document** files.
+
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+
+# Identifier Principles
+
+Each file includes a **stable identifier** (`protocol_id`) that never changes once assigned.  
+Document **versions**, however, reflect revisions and updates over time.
+
+Identifiers are:
+
+- Human-readable  
+- Hierarchical  
+- Independent of filenames  
+- Independent of version numbers  
+
+---
+
+# Identifier Structure
+
+All identifiers follow this structure:
+
+```
+<DOMAIN>-<TOPIC>-<TYPE>-<ID>
+```
+
+Where:
+
+### DOMAIN
+Defines biological context or system  
+Examples:
+- `MUS` → mouse  
+- `HUM` → human  
+- `CELL` → cell-line–based procedure  
+- `GEN` → general or cross-species workflows  
+
+### TOPIC
+Defines the primary experimental or biological theme  
+Examples:
+- `LCMV` → LCMV virology workflows  
+- `PTPRC` → genotyping or CD45 locus assays  
+- `FLOW` → flow cytometry  
+- `RNA` → RNA extraction or analysis  
+
+### TYPE  
+A concise descriptor of the method class  
+Examples:
+- `PROD` → virus production  
+- `PLA` → plaque assay  
+- `FFA` → focus-forming assay  
+- `QPCR` → quantitative PCR  
+- `GENO` → genotyping  
+- `PROP` → propagation medium or cell maintenance  
+- `MED` → assay or experimental medium  
+
+### ID  
+A three-digit number (`001`, `002`, …) indicating discrete methods inside the same category.
+
+**Important:**  
+The ID increments only when a **new, distinct protocol or buffer** is added—not when updating or revising an existing file.
+
+---
+
+# Versioning
+
+Versions are tracked exclusively in the YAML header:
+
+```yaml
+version: "v1.0"
+```
+
+- Version increases reflect evolutionary changes to the *same* protocol or buffer.  
+- `protocol_id` remains **unchanged** across all updates.  
+
+Examples:
+- `v1.0` → initial release  
+- `v1.1` → minor modifications  
+- `v2.0` → major revision  
+
+Never encode the version inside the `protocol_id`.
+
+---
+
+# When to Assign a New ID (001 → 002)
+
+A new ID is assigned when:
+
+- The protocol constitutes a **novel method**, *not* just a revision  
+- The workflow differs in a functionally meaningful way  
+- A buffer has a **distinct formulation** or **different intended use**  
+- An assay variant is introduced (e.g., fluorescent plaque assay, alternate overlay formulation, new primer system)
+
+Examples:
+
+### Virus Production
+- `MUS-LCMV-PROD-001` → standard T75 BHK or L929 production  
+- `MUS-LCMV-PROD-002` → roller-bottle high-volume culture system  
+
+### Assays
+- `MUS-LCMV-PLA-001` → crystal violet plaque assay  
+- `MUS-LCMV-PLA-002` → fluorescent immunoplaque assay  
+
+### Genotyping
+- `MUS-PTPRC-GENO-001` → Ptprc SNP genotyping  
+- `MUS-PTPRC-GENO-002` → multiplexed three-primer allelic discrimination assay  
+
+### Buffers
+- `BUF-BHK-PROP-001` → standard BHK propagation medium  
+- `BUF-BHK-PROP-002` → serum-free BHK propagation medium  
+
+---
+
+# Filenames
+
+Filenames describe the file content and follow this structure:
+
+### Protocols
+```
+prot_<domain>_<topic>_<method>.qmd
+```
+
+Examples:
+- `prot_mus_lcmv_multi_strain_production.qmd`
+- `prot_mus_lcmv_plaque_assay_vero.qmd`
+- `prot_mus_lcmv_focus_forming_assay.qmd`
+- `prot_mus_genotyping_ptprc_jaxboy_single_tube.qmd`
+
+### Buffers
+```
+buf_<target>_<function>.qmd
+```
+
+Examples:
+- `buf_bhk_propagation_medium.qmd`
+- `buf_vero_propagation_medium.qmd`
+- `buf_lcmv_plaque_assay_medium.qmd`
+
+---
+
+# Required YAML Fields
+
+Each `.qmd` file must include:
+
+```yaml
+title:
+author:
+date:
+version:
+protocol_id:
+```
+
+Example:
+
+```yaml
+protocol_id: "MUS-LCMV-PROD-001"
+version: "v1.0"
+```
+
+---
+
+# Protocol ID Examples (Current Library)
+
+### LCMV Methods
+- `MUS-LCMV-PROD-001` → LCMV multi-strain production protocol  
+- `MUS-LCMV-PLA-001` → Vero cell plaque assay  
+- `MUS-LCMV-FFA-001` → Focus-forming assay  
+- `MUS-LCMV-QPCR-001` → GP-based qPCR viral load assay  
+
+### Genotyping
+- `MUS-PTPRC-GENO-001` → Ptprc (CD45.1/2) allele SNP genotyping  
+
+### Buffers
+- `BUF-BHK-PROP-001` → BHK propagation medium  
+- `BUF-VERO-PROP-001` → Vero propagation medium  
+- `BUF-LCMV-PLA-001` → LCMV plaque assay medium  
+
+---
+
+# Rules for Future Expansion
+
+1. Maintain readability: avoid unnecessary abbreviations.  
+2. Keep identifiers **short but descriptive**.  
+3. Ensure **no collisions** within each TOPIC–TYPE group.  
+4. Do not remove or reuse IDs, even if protocols become deprecated.  
+5. Always update the version number when content changes.  
+
+---
+
+# Version History
+
+| Version | Date | Description |
+|--------|------|-------------|
+| v1.0 | 2025-08-01 | Original naming guide. |
+| v1.1 | 2025-12-02 | Expanded to include LCMV protocol classes, buffer categories, and new genotyping schema. |

@@ -1,0 +1,45 @@
+---
+title: "BHK Cell and Virus Propagation Medium"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-BHK-PROP-001"
+version: "v1.0"
+date: "2025-12-01"
+description: "This medium is used for propagation of BHK-21 cells and for LCMV production workflows."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This medium is used for propagation of BHK-21 cells and for LCMV production workflows.
+
+# Components (Final Volume: 500 mL)
+
+| Component | Amount |
+|----------|--------|
+| DMEM, high glucose | 500 mL |
+| 200 mM L-glutamine | 10 mL |
+| Heat-inactivated FBS (56°C, 30 min) | 50 mL (10%) |
+| Tryptose phosphate broth | 25 mL (5%) |
+| Pen/Strep (10,000 U/mL penicillin G, 10,000 µg/mL streptomycin) | 5 mL |
+
+# Preparation
+
+1. Add DMEM to a sterile bottle.  
+2. Add 200 mM glutamine, FBS, tryptose phosphate broth, and Pen/Strep.  
+3. Mix gently by inversion.  
+4. Store at 4°C for up to 4 weeks.  
+
+# Notes
+
+- Do not filter-sterilize after adding FBS; use sterile technique during assembly.  
+- Warm medium to 37°C before use.  
+
+# Version history
+
+| Version | Date       | Author         | Changes                                  |
+|--------|------------|----------------|-------------------------------------------|
+| v1.0   | 2025-12-01 | Dillon Corvino | Initial Quarto buffer document |
+

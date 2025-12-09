@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -143,6 +172,13 @@ ul.task-list li input[type="checkbox"] {
   <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
 </i> 
  <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../templates/index.qmd" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
   </div>
 </li>
     </ul>
@@ -592,6 +628,7 @@ Warning
 </tr>
 </tbody>
 </table>
+
 
 
 </section>

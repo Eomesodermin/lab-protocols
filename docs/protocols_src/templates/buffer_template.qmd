@@ -1,0 +1,88 @@
+---
+title: "BUFFER TITLE HERE"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-XXX-XXX-vX.X"
+version: "vX.X"
+description: "Short one-sentence purpose"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Date:** YYYY-MM-DD
+
+# Purpose
+
+<Describe in 1–3 sentences why the buffer is used and in what type of protocols.>
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- <List relevant protocol IDs, e.g. `LIV-001`, `SPN-001`, etc.>
+
+# Composition
+
+<Describe the buffer composition, either per X mL or as % concentrations.>
+
+Example structure:
+
+| Component | Stock concentration | Volume for final | Final concentration | Notes |
+|----------|---------------------|------------------|---------------------|-------|
+|          |                     |                  |                     |       |
+|          |                     |                  |                     |       |
+|          |                     |                  |                     |       |
+
+::: {.callout-note}
+Add optional notes about working vs stock versions.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+<List clear, step-by-step instructions.>
+
+## B. Preparation of final working buffer
+
+<List final steps, adjustments, pre-warming notes, etc.>
+
+# Storage and stability
+
+- Describe storage of stock versions  
+- Describe storage of working solutions  
+- Provide any stability windows (e.g. “Use within 6 months”)  
+- Optional: note how thawing or aliquoting should be done  
+
+::: {.callout-note}
+Include any exceptions or internal validations here.
+:::
+
+# Reagent details
+
+Fill this table with supplier + catalogue info when known:
+
+| Component | Supplier | Cat# | Notes |
+|----------|----------|------|-------|
+|          | [TBD]    | [TBD]|       |
+|          | [TBD]    | [TBD]|       |
+|          | [TBD]    | [TBD]|       |
+
+# Safety (brief)
+
+<Summarize minimal safety notes: handling, enzymes, chemicals, waste stream.>
+
+# Version history
+
+| Version | Date       | Author          | Change summary |
+|---------|------------|-----------------|----------------|
+| vX.X    | YYYY-MM-DD | Dillon Corvino  | Initial version |

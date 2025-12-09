@@ -1,0 +1,354 @@
+---
+title: "LCMV Focus-Forming Assay (Immunofocus)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-LCMV-FFA-001"
+version: "v1.1"
+date: "2025-12-02"
+description: "Quantification of infectious titer (FFU/mL) of LCMV using antibody-based detection of infected foci on Vero cells with semi-solid overlay"
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes a **focus-forming assay (FFA)** for determining infectious titers of LCMV stocks using antibody-based detection of infected foci on **Vero cells** with a semi-solid overlay.
+
+Compared with a classic plaque assay, the FFA:
+
+- Uses **immunostaining** (e.g. anti-NP, VL-4) to visualize infected foci.
+- Can detect infection **earlier** (typically 48–72 h post infection).
+- Is useful for strains or conditions with limited cytopathic effect and for titrating experimental virus stocks.
+
+:::callout-warning
+## LCMV biosafety and handling
+
+LCMV is a zoonotic arenavirus capable of causing severe disease in humans, including meningitis and congenital infection. Work with live LCMV must:
+
+- Be conducted under the appropriate institutional **biosafety level (typically BSL-2 with additional local conditions)** and approved animal and biosafety protocols.
+- Use **dedicated infectious CO₂ incubators** and clearly labelled containment for all cultures and waste.
+- Include suitable **PPE** (lab coat/gown, gloves, eye protection as appropriate) and measures to avoid sharps injuries, aerosol formation, and spills.
+- Exclude or take special precautions for **pregnant or immunocompromised personnel** according to institutional policies.
+
+All waste (liquid and solid) must be inactivated according to local regulations (e.g. chemical disinfection and/or autoclaving) **before** disposal.
+:::
+
+# Approximate timing
+
+- Vero maintenance and expansion: **ongoing (split every 2–3 days as needed)**
+- Day −1: Vero seeding for infection (default method): **30–60 min**, depending on number of plates
+- Day 0: Virus dilution and infection, overlay addition: **1.5–2.5 h**, depending on number of samples and dilutions
+- Day 2–3: Fixation and immunostaining: **3–4 h** hands-on time (spread over incubation steps)
+- Focus counting and titer calculation: **30–60 min per plate**, depending on number of foci
+
+Total calendar time: **~2–3 days** from infection to readout, plus routine cell culture maintenance.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+
+# Principle
+
+- Serial **5-fold** dilutions of virus are prepared in a 24-well dilution plate and used to infect a suspension of Vero cells in a matching 24-well incubation plate.
+- After a short incubation (adsorption/infection phase), cells are overlaid with a **semi-solid methylcellulose/2× DMEM mix** and incubated for 60–72 h to allow local spread and formation of discrete foci.
+- Cells are fixed, permeabilized, and stained with **primary anti-LCMV antibody** (VL-4, rat anti-NP), followed by an HRP-conjugated goat anti-rat IgG secondary antibody.
+- Foci are visualized using an **OPD (o-phenylenediamine)** substrate and counted under a microscope.
+- FFU/mL is calculated from focus counts, dilution factor, and inoculum volume.
+
+# Materials
+
+## Cells and Media
+
+- **Vero cells** (African green monkey kidney)
+- **Vero propagation medium** (see `buf_vero_propagation_medium.qmd` for detailed recipe)
+- Trypsin-EDTA for passaging Vero cells
+- PBS without Ca²⁺/Mg²⁺
+- Infection/dilution medium (e.g. DMEM + 2% FCS/FBS) for virus dilutions
+
+## Overlay and Related Buffers
+
+- **2% methylcellulose** solution (w/v) in dH₂O, sterilized (e.g. autoclaved)
+- **2× DMEM** overlay medium, sterile
+- Optional: pre-warmed PBS for washing
+
+## Virus
+
+- LCMV stocks (e.g. Armstrong, Clone 13, WE, Docile) stored at −80°C in single-use aliquots
+
+## Antibodies and Detection Reagents
+
+- **Primary antibody**:
+  - VL-4 (rat anti-LCMV NP), stored and handled according to supplier or in-house conditions
+- **Secondary antibody**:
+  - Peroxidase AffiniPure Goat Anti-Rat IgG (HRP-conjugated), or equivalent
+- **Chromogenic substrate**:
+  - OPD (o-phenylenediamine) tablets or powder for HRP-based detection, with appropriate buffer (e.g. citrate-phosphate) and H₂O₂
+
+## Fixation and Permeabilization
+
+- 4% paraformaldehyde (PFA) in PBS
+- Permeabilization buffer:
+  - PBS + Triton X-100 (final concentration e.g. 0.1–0.3%)
+- Blocking/antibody diluent buffers:
+  - 5% FCS in PBS
+  - 2% FCS in PBS (for primary and secondary antibody dilutions)
+
+## General Reagents and Consumables
+
+- Sterile 24-well tissue culture plates:
+  - One or more **incubation plates** for Vero cells
+  - Matching **dilution plates** for virus serial dilutions
+- Sterile conical tubes (15 mL, 50 mL)
+- Microcentrifuge tubes
+- Micropipettes and **sterile filtered tips**
+- **Serological pipettes** (e.g. 5 mL, 10 mL, 25 mL)
+- Waste containers with freshly prepared disinfectant (e.g. 10% bleach)
+
+## Equipment
+
+- Class II biosafety cabinet
+- **Dedicated infectious CO₂ incubator** set to 37°C, 5% CO₂
+- Inverted light microscope
+- Humidified chamber for antibody incubations
+- Timer
+- Fume hood for OPD preparation and development
+
+:::callout-warning
+Always use a **designated infectious incubator** for LCMV work. Do not use the same CO₂ incubator for sterile cell culture expansion and virus-infected plates.
+:::
+
+# Preparation
+
+## Vero cell maintenance
+
+- Maintain Vero cells in Vero propagation medium (see `buf_vero_propagation_medium.qmd`) and passage every **2–3 days** when cells reach ~60–80% confluence.
+- For routine splitting:
+  - Aspirate medium.
+  - Wash with ~10 mL PBS.
+  - Add 5–7 mL trypsin-EDTA and incubate at 37°C for **5–10 min**, monitoring under the microscope until cells detach.
+  - Neutralize trypsin with 20–30 mL Vero propagation medium.
+  - Collect cells into a 50 mL tube and centrifuge at **4°C, 5 min, 1500 rpm**.
+  - Aspirate supernatant and resuspend the pellet in an appropriate volume (e.g. 5–10 mL) of fresh medium.
+  - Seed into flasks/plates at the desired density for continued expansion.
+
+## Cell seeding for FFA
+
+Two seeding strategies are described below. The **default method** seeds Vero cells the day before infection to form an adherent monolayer. The **alternative method** seeds Vero cells as a suspension immediately before infection, as described in the collaborator protocol.
+
+### Default method (recommended): Day −1 monolayer seeding
+
+1. One day before infection (**Day −1**), prepare a single-cell suspension of Vero cells from a near-confluent flask.
+2. Count cells using a hemocytometer or automated cell counter.
+3. Dilute cells in Vero propagation medium to reach **70–90% confluence** in 24-well plates on the day of infection (**Day 0**). As a starting point:
+   - Aim for ~1–2 × 10⁵ cells per well in 24-well plates.
+4. Seed cells in **24-well incubation plates** (e.g. 0.5–1 mL per well).
+5. Incubate overnight at 37°C, 5% CO₂ in the infectious incubator.
+
+### Alternative method: Same-day seeding and infection (suspension-based)
+
+This method is based on the collaborator’s protocol and may be useful when a tightly controlled cell number per well is desired.
+
+1. On **Day 0**, detach Vero cells from a near-confluent flask as described under maintenance.
+2. Resuspend cells in Vero propagation medium and count.
+3. Calculate total cell number in the suspension. For example, if a counted sample corresponds to `N` cells per defined volume, determine the concentration and total cells in the resuspension volume.
+4. Dilute the cell suspension to **8 × 10⁵ cells/mL** in Vero propagation medium.
+5. Keep the cell suspension on ice until seeding.
+6. For each well of the **24-well incubation plate**, add **200 µL** of this suspension (→ **1.6 × 10⁵ cells per well**).
+7. Proceed directly with virus addition and infection as described in the infection section.
+
+:::callout-tip
+The monolayer (Day −1) method may provide slightly more uniform adherence, while the same-day suspension method offers tightly controlled cell numbers per well. Choose one approach and use it consistently within a given experiment.
+:::
+
+# Overlay media
+
+## 2% methylcellulose
+
+- Prepare a **2% (w/v)** methylcellulose solution by dissolving 20 g methylcellulose in 1 L dH₂O.
+- Autoclave (if compatible with your methylcellulose product) or sterile-filter if possible.
+- Store at 4°C. Warm to room temperature before mixing with 2× DMEM.
+
+## 2× DMEM overlay medium
+
+Prepare **2× DMEM** as follows (example formulation; adapt to your laboratory’s standard buffer documents if applicable):
+
+- 1 bag **2× DMEM powder**
+- 10 mL FCS/FBS (to yield 10% final in the overlay)
+- 5 mL Pen/Strep (2%)
+- 1.1 g NaHCO₃
+- dH₂O to a final volume of **265 mL**
+
+Mix thoroughly and sterile-filter into appropriate storage bottles. Store at 4°C and warm to room temperature before use.
+
+## Overlay mixture
+
+- Immediately before use, mix equal volumes of **2× DMEM overlay medium** and **2% methylcellulose** to generate a **1× DMEM, 1% methylcellulose overlay**.
+- Keep at room temperature during the overlay step. The solution will be **viscous**.
+
+:::callout-tip
+Because the methylcellulose overlay is viscous, use a **cut pipette tip** (trimmed with sterile scissors) or a **serological pipette** to avoid bubbles and ensure accurate dispensing.
+:::
+
+# Virus dilution series (5-fold plate-based)
+
+1. Thaw a virus aliquot rapidly at 37°C and immediately transfer to ice.
+2. Prepare a **24-well dilution plate**:
+   - Add **400 µL** infection/dilution medium (e.g. DMEM + 2% FCS) to each well required for the serial dilution.
+3. For each virus stock:
+   - Add **100 µL** virus stock to the first well in the column (top row) to obtain a 1:5 dilution.
+   - Mix by pipetting up and down gently.
+4. Serial 5-fold dilutions:
+   - Transfer **100 µL** from the first well to the next well in the column containing 400 µL medium.
+   - Mix thoroughly by pipetting.
+   - Repeat down the column to achieve the desired range of 5-fold dilutions (e.g. dilutions 5¹ to 5⁵ or more, depending on expected titer).
+5. Use fresh tips for each transfer to avoid back-contamination.
+6. Keep the dilution plate on ice until infection.
+
+# Infection and incubation
+
+1. Ensure Vero cells are prepared according to your chosen seeding method (monolayer or same-day suspension) in the **24-well incubation plate**.
+2. For each virus dilution:
+   - Transfer **200 µL** from the corresponding well of the **dilution plate** onto the appropriate well of the **incubation plate**.
+   - Each infection well should now contain:
+     - **200 µL** Vero cell suspension (if using same-day method) or the monolayer in existing medium (if using Day −1 method; in that case, aspirate most of the medium first, leaving a thin layer to prevent drying).
+     - **200 µL** of virus dilution.
+3. Gently rock the plate to distribute the inoculum evenly.
+4. Incubate at 37°C, 5% CO₂ in the infectious incubator for **3 h** (adsorption/infection phase).
+5. After 3 h, without aspirating the inoculum, overlay each well with **400 µL** of the pre-mixed methylcellulose/2× DMEM overlay (see above).
+   - Use a **cut pipette tip** or **serological pipette** to handle the viscous overlay and avoid bubbles.
+6. Return the plates to the infectious incubator and incubate at 37°C, 5% CO₂ for **60–72 h**.
+   - Do not disturb the plates during this period to allow discrete foci to form.
+
+:::callout-tip
+A typical schedule is **Day 0: infection and overlay**, **Day 2–3: fixation and staining**. For example, Monday infection → Wednesday or Thursday readout.
+:::
+
+# Fixation
+
+From this point on, all steps are performed at **room temperature** (unless otherwise specified). Work in the biosafety cabinet until fixation is complete.
+
+1. After 60–72 h incubation, remove plates from the incubator and place them in the biosafety cabinet.
+2. Carefully aspirate the overlay and supernatant without touching the cell layer.
+3. Add **300–400 µL** of **4% PFA in PBS** to each well.
+4. Incubate for **30 min** at room temperature.
+5. Aspirate the fixative into a container containing an appropriate disinfectant (e.g. 10% bleach).
+6. Gently wash wells **2–3× with PBS**.
+
+Once fixation is complete and the plates have been washed, subsequent steps (permeabilization, antibody staining, OPD development) can be performed outside the BSL-2 cabinet if permitted by local biosafety regulations, but OPD handling must be done in a **fume hood**.
+
+# Permeabilization and priming
+
+1. Add **200 µL** of **Triton X-100 permeabilization solution** (e.g. PBS + 0.1–0.3% Triton X-100) to each well.
+2. Incubate for **20 min** at room temperature.
+3. Aspirate the permeabilization solution.
+4. Add **400 µL** of **5% FCS in PBS** to each well.
+5. Incubate for **~20 min** at room temperature.
+6. Aspirate the 5% FCS/PBS solution immediately before adding primary antibody.
+
+# Antibody staining
+
+## Primary antibody (VL-4)
+
+1. Prepare the primary antibody solution fresh on the day of use:
+   - Dilute **VL-4 (rat anti-LCMV NP)** **1:400** in **2% FCS in PBS**.
+   - Example: **50 µL VL-4** into **20 mL** 2% FCS/PBS (adjust volumes as needed).
+2. Aspirate the 5% FCS/PBS solution from each well.
+3. Add **200 µL** of the VL-4 working solution to each well.
+4. Incubate for **60 min** at room temperature in a humidified chamber (or covered to prevent evaporation).
+5. After incubation, wash wells **2× with PBS** (e.g. 5 min per wash).
+
+## Secondary antibody (HRP-conjugated goat anti-rat IgG)
+
+1. Prepare the secondary antibody solution fresh on the day of use:
+   - Dilute **Peroxidase AffiniPure Goat Anti-Rat IgG (HRP)** **1:100** in **2% FCS in PBS**.
+   - Example: **200 µL** secondary antibody into **20 mL** 2% FCS/PBS (adjust volumes as needed).
+2. Add **200 µL** of the secondary antibody solution to each well.
+3. Incubate for **60 min** at room temperature in a humidified chamber.
+4. Around **10 min before the end** of the secondary incubation, prepare the OPD substrate solution (see below).
+5. After incubation, wash wells **2× with PBS** (e.g. 5 min per wash).
+
+# OPD development and stopping the reaction
+
+:::callout-warning
+**OPD is hazardous** and must be handled in a **fume hood** with appropriate PPE. OPD solutions and contaminated consumables must be collected as **chemical hazardous waste** according to institutional regulations.
+:::
+
+1. Prepare the OPD substrate solution fresh approximately **10 min** before use, following the manufacturer’s instructions (e.g. OPD tablet in buffer with H₂O₂).
+2. Transfer the fixed, antibody-stained plates to a **fume hood**.
+3. Add **400 µL** of OPD substrate solution to each well.
+4. Incubate for **10–20 min** at room temperature, monitoring the development of foci periodically.
+   - Stop the reaction once plaques/foci are clearly visible with good contrast but before background staining becomes excessive.
+5. When development is complete:
+   - Aspirate OPD solution into a designated **chemical waste container** in the fume hood.
+6. Wash wells **2× with 400 µL PBS** to remove residual substrate.
+7. Plates can be kept in PBS until counting or allowed to air-dry if preferred.
+
+# Focus counting and titer calculation
+
+1. Examine wells under a light microscope at low magnification (e.g. 4× or 10× objective).
+2. Identify wells and dilutions that have **10–100 discrete foci** (well-separated, countable).
+3. For each suitable well, record:
+   - Dilution factor (e.g. 5³ = 125)
+   - Number of foci
+   - Volume of virus inoculum added per well (in mL; e.g. 0.2 mL from the dilution plate)
+
+4. Calculate focus-forming units per mL (FFU/mL)
+
+**Formula:**  
+**FFU/mL = (Number of foci × Dilution factor) / Volume of inoculum (mL)**
+
+**Example (5-fold dilution):**
+
+- 40 foci in a well  
+- Inoculated with **0.2 mL** of a **5⁴ dilution** (5⁴ = 625)
+
+**FFU/mL = (40 × 625) / 0.2 = 125,000 FFU/mL = 1.25 × 10⁵ FFU/mL**
+
+
+5. If multiple wells at the same dilution are counted (technical replicates), calculate the **mean FFU/mL** and optionally the standard deviation.
+6. Report titers as FFU/mL and record all raw counts and calculations in your lab notebook or electronic record.
+
+# Controls and quality checks
+
+- **Mock-infected wells** (no virus) to assess background staining and non-specific antibody binding.
+- **Positive control virus stock** of known titer to monitor assay performance across experiments.
+- Wells should exhibit:
+  - Minimal background staining in mock-infected controls.
+  - Clear, discrete foci in infected wells.
+- If background is high or foci are poorly defined:
+  - Check permeabilization and blocking conditions.
+  - Optimize primary and secondary antibody dilutions.
+  - Confirm that overlay viscosity and incubation time are appropriate.
+
+# Troubleshooting
+
+| Issue                                  | Possible cause                                           | Suggested action                                                     |
+|----------------------------------------|----------------------------------------------------------|-----------------------------------------------------------------------|
+| No foci at any dilution                | Virus inactive or dilutions too high                     | Test lower dilutions; verify virus storage and freeze–thaw history    |
+| Very high foci numbers in all wells    | Virus titer underestimated; dilutions too low            | Increase dilution range (more 5-fold steps)                           |
+| High background staining               | Inadequate blocking or washing; antibody too concentrated| Increase blocking time; add more/longer washes; titrate antibodies    |
+| Foci too small or faint                | Short incubation; suboptimal antibody concentration      | Extend incubation (up to 72 h); increase primary or secondary slightly|
+| Foci merging into large patches        | Incubation too long; inoculum too concentrated          | Shorten incubation; use higher (more dilute) dilutions                |
+| Uneven staining or edge effects        | Incomplete coverage during antibody or OPD steps         | Ensure sufficient volume and gentle rocking; avoid plate drying       |
+| Bubbles or holes in overlay            | Viscous overlay handled with narrow tips                 | Use cut tips or serological pipettes; avoid vigorous pipetting        |
+
+# Safety considerations
+
+- Confirm that all work with LCMV and infected animals/samples is covered by approved **biosafety and animal use protocols**.
+- Perform all live-virus manipulations (thawing virus stocks, infection steps, handling of unfixed plates) in a **certified Class II biosafety cabinet**.
+- Use **dedicated infectious incubators** and clearly label plates, flasks, and waste containers with the virus strain and date.
+- Wear appropriate **PPE** at all times (lab coat/gown, gloves, eye/face protection as required).
+- Decontaminate all liquid waste (e.g. with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.
+- OPD and its solutions are handled as **chemical hazardous waste**; follow chemical safety rules in addition to biosafety rules.
+- Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.
+
+# Version history
+
+| Version | Date       | Description                                                                 |
+|---------|-----------|-----------------------------------------------------------------------------|
+| v1.0    | 2025-12-01 | Initial LCMV focus-forming assay (FFA) SOP (generic, MC57G/Vero, DAB-based). |
+| v1.1    | 2025-12-02 | Updated to Vero-only FFA with methylcellulose overlay, VL-4/OPD staining, and revised timing. |

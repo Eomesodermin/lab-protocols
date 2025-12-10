@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - templates/*
+    - protocols_src/templates/*
 
 website:
   title: "Protocol Library"

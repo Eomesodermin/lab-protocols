@@ -1,0 +1,148 @@
+---
+title: "Communication Norms"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "GEN-LAB-COMM-001"
+version: "v1"
+date: "2025-12-20"
+description: "Guidelines for effective communication in the Abdullah Lab, covering channels, meetings, documentation, and escalation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This document defines **how communication works** in the Abdullah Lab.
+
+Clear communication supports:
+- Efficient day-to-day work
+- Productive supervision
+- Early identification of problems
+- A respectful and professional lab culture
+
+These norms apply to **all lab members**.
+
+---
+
+## General principles
+
+- Communicate clearly and proactively
+- Choose the appropriate channel for the topic
+- Share information that affects others
+- Raise issues early rather than letting them accumulate
+
+---
+
+## Communication channels
+
+### Mattermost (day-to-day communication)
+
+**Mattermost is the primary platform for day-to-day lab communication.**
+
+Use Mattermost for:
+- Quick questions
+- Coordination (e.g. equipment, schedules)
+- Short updates
+- Announcements relevant to the lab
+
+Keep messages concise and considerate of others’ time.
+
+---
+
+### Email (formal and external communication)
+
+Use email for:
+- Formal communication
+- Administrative matters
+- Communication with external collaborators
+- Topics requiring a clear written record
+
+Avoid using email for rapid back-and-forth discussion when Mattermost is more appropriate.
+
+---
+
+## Meetings
+
+### Supervisor meetings
+
+- PhD students are expected to have **regular supervisor meetings**
+- Meetings are typically **weekly or biweekly**, as agreed with the supervisor
+- Frequency and format may evolve over the course of the PhD
+
+### Preparing for meetings
+
+To make meetings effective:
+- Prepare key updates in advance
+- Identify questions or decisions that require input
+- Bring figures or data when relevant
+
+Meetings work best when both sides arrive prepared.
+
+---
+
+### Group meetings and discussions
+
+- Participate actively and respectfully
+- Ask questions and contribute constructively
+- Provide feedback focused on the science
+
+---
+
+## Documentation and follow-up
+
+Important decisions or outcomes should be:
+- Documented (e.g. notes, shared documents)
+- Reflected in project plans or records
+- Followed up where action is required
+
+Verbal agreements should be written down if they affect timelines, responsibilities, or experimental direction.
+
+---
+
+## Raising issues and concerns
+
+If you encounter problems:
+- Scientific (e.g. experiments not working)
+- Organisational (e.g. access, resources)
+- Interpersonal (e.g. communication difficulties)
+
+Raise them early.
+
+Where appropriate:
+- Start with direct discussion
+- Involve a supervisor or senior lab member if needed
+
+The goal is resolution and progress, not blame.
+
+---
+
+## Disagreements and feedback
+
+- Scientific disagreement is normal and expected
+- Discuss differences professionally and respectfully
+- Focus on data and reasoning rather than individuals
+
+Feedback should be constructive and aimed at improving outcomes.
+
+---
+
+## Scope and limitations
+
+This document:
+- Defines **how communication is handled**
+- Supports efficient collaboration
+
+It does **not**:
+- Replace institutional policies
+- Define performance evaluation
+- Specify response-time guarantees
+
+---
+
+## Notes
+
+These communication norms may evolve as the lab grows.  
+If something is unclear or not working well, raise it so expectations can be adjusted.

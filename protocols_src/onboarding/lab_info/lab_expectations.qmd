@@ -1,0 +1,178 @@
+---
+title: "Lab Expectations"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "GEN-LAB-EXP-001"
+version: "v1"
+date: "2025-12-20"
+description: "Shared expectations for professional conduct, communication, documentation, and responsible use of resources in the Abdullah Lab."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This document outlines the **shared expectations** for all members of the Abdullah Lab.
+
+Its purpose is to:
+- Provide clarity on how the lab functions day to day
+- Set common standards for conduct, communication, and responsibility
+- Support a professional, respectful, and productive research environment
+
+These expectations apply to **all lab members**, including PhD students, postdoctoral researchers, technicians, and visiting researchers.
+
+---
+
+## General principles
+
+The Abdullah Lab values:
+- Scientific integrity and reproducibility
+- Mutual respect and professionalism
+- Open communication
+- Shared responsibility for the lab environment
+
+Expectations are framed to support independence while ensuring that work remains transparent, collaborative, and reproducible.
+
+---
+
+## Professional conduct
+
+Lab members are expected to:
+- Treat colleagues with respect at all times
+- Communicate constructively, even in disagreement
+- Be reliable and follow through on agreed tasks
+- Contribute positively to the lab environment
+
+Discriminatory, dismissive, or unprofessional behaviour is not acceptable.  
+Concerns should be raised early, either directly or via a supervisor, before issues escalate.
+
+---
+
+## Scientific integrity and documentation
+
+All work conducted in the lab must meet high standards of scientific integrity.
+
+Expectations include:
+- Experiments are planned thoughtfully and documented clearly
+- Data are recorded contemporaneously and accurately
+- Deviations from protocols are noted
+- Data and reagents are traceable
+
+Lab members must follow the lab’s **Data Management and Reproducibility Standards**, including:
+- Use of experiment IDs
+- Consistent file and folder naming
+- Appropriate data storage
+- Clear reagent labelling
+
+Both **paper and electronic lab notebooks are acceptable**, provided records are complete, legible, and up to date.
+
+---
+
+## Communication norms
+
+### Day-to-day communication
+
+- **Mattermost** is the primary platform for day-to-day lab communication
+- Use Mattermost for quick questions, coordination, and updates
+- Email should be used for formal communication, external contacts, or administrative matters
+
+### Meetings
+
+- PhD students are expected to have **regular supervisor meetings**, typically **weekly or biweekly**, as agreed with their supervisor
+- Lab members should come prepared to meetings with:
+  - Key updates
+  - Questions or points requiring input
+  - Relevant figures or data when appropriate
+
+Meeting frequency and format may evolve over time and should be revisited as projects progress.
+
+---
+
+## Ownership and responsibility
+
+Lab members are expected to take ownership of their work.
+
+This includes responsibility for:
+- Experimental planning and execution
+- Proper documentation and data storage
+- Maintenance of personal reagents and samples
+- Cleaning up after experiments
+- Following up on results and action items
+
+Asking for help is encouraged, particularly when blocked or uncertain.  
+Waiting too long to raise issues can slow progress and create avoidable problems.
+
+---
+
+## Shared resources and lab citizenship
+
+The lab relies on shared resources, including equipment, reagents, and space.
+
+Expectations include:
+- Leaving shared equipment clean and ready for the next user
+- Returning reagents and consumables to their correct location
+- Clearly labelling personal materials
+- Reporting broken equipment, low stock, or safety issues promptly
+
+Good lab citizenship is essential for a functional and supportive environment.
+
+---
+
+## Safety and compliance
+
+All lab members must:
+- Follow applicable safety regulations and institutional requirements
+- Complete required inductions (e.g. S2, iFET) before performing relevant work
+- Adhere to animal facility rules when applicable
+
+If unsure about safety or compliance, lab members are expected to **pause work and ask**.  
+No experiment is urgent enough to justify unsafe practices.
+
+---
+
+## Expectations around supervision
+
+Supervision is a shared responsibility.
+
+Supervisors commit to:
+- Regular meetings and availability for discussion
+- Clear communication of priorities and expectations
+- Constructive feedback on data and progress
+- Support in training, troubleshooting, and career development
+- Guidance on publications, presentations, and PhD milestones
+
+Lab members are encouraged to communicate openly about challenges, workload, and progress.
+
+---
+
+## Raising issues and resolving problems
+
+If issues arise (scientific, organisational, or interpersonal):
+- Raise them early
+- Where possible, discuss directly with the relevant person
+- If needed, involve a supervisor or senior lab member
+
+The goal is resolution, not blame.
+
+---
+
+## Scope and limitations
+
+This document:
+- Describes **how the lab operates**
+- Sets shared expectations and norms
+
+It does **not**:
+- Replace institutional policies
+- Override safety regulations
+- Define employment contracts
+
+---
+
+## Notes
+
+These expectations are intended to evolve with the lab.  
+Suggestions for improvement or clarification are welcome and should be raised so this document remains accurate and useful.

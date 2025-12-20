@@ -1,0 +1,110 @@
+---
+title: "Institute Overview"
+subtitle: "IMMEI, University Hospital Bonn"
+protocol_id: "GEN-INST-OVR-001"
+version: "v2"
+date: "2025-12-20"
+description: "Overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI), including its mission, research focus, structure, and shared scientific environment."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This page provides a concise overview of the **Institute of Molecular Medicine and Experimental Immunology (IMMEI)** at the University Hospital Bonn.  
+It is intended to help new PhD students orient themselves within the broader research environment, understand the institute’s mission and structure, and identify opportunities for cross-group interaction and collaboration.
+
+---
+
+## Mission and scientific focus
+
+The Institute of Molecular Medicine and Experimental Immunology (IMMEI) was founded in 2002 and is located in the **Biomedical Center II** on the Venusberg Campus of the Medical Faculty at the University Hospital Bonn. Its mission is to understand the **molecular and cellular mechanisms controlling immune responses in tissues**, including how these responses lead to inflammation, immunity, or immune tolerance. Comprehensive mechanistic insight is essential to understand defence against infections, tumour immunity, and the avoidance of autoimmunity, with the ultimate goal of informing new therapeutic strategies that modulate local immune responses for patient benefit.
+
+---
+
+## Institute structure and research groups
+
+IMMEI hosts multiple **independent research groups**, each focused on specific immunological questions and disease contexts, collectively addressing immune mechanisms across organs and biological systems. Six core groups drive research at the institute, with additional guest groups from clinical departments.
+
+Key group leaders include:
+
+- **Prof. Dr. Christian Kurts** – Institute Director and expert in dendritic cell biology, peripheral tolerance, and immune regulation.  
+- **Prof. Dr. Zeinab Abdullah** – Studies chronic inflammation in the liver and its impact on adaptive immunity.  
+- **Prof. Dr. Veronika Lukacs-Kornek** – Investigates immunoregulation and tissue resilience in barrier organs (e.g., lung).  
+- **Prof. Dr. Natalio Garbi** – Scientific Core Facility Manager and research on immune cell interactions.  
+- **Prof. Dr. Tim Rollenske** – Focuses on B-cell and antibody responses and immune regulation.  
+- **Dr. Janine Becker-Gotot** – Junior research group leader with interest in immune tolerance mechanisms.   
+- **Prof. Dr. Axel Kallies** – Faculty collaborator (University of Melbourne) working on immune regulation. 
+
+In addition to core groups, clinical departments (e.g., Oncology, Anesthesiology, Nephrology) and collaborative guest researchers contribute to the scientific community at IMMEI.
+
+---
+
+## Research themes
+
+IMMEI’s research spans:
+- Immune regulation and tolerance
+- Mechanisms of inflammation in kidney, lung, liver, and vasculature
+- Immune responses to infection and tissue stress
+- Translational immunology bridging basic mechanisms and potential therapies
+
+Research integrates diverse biological systems and experimental approaches to address fundamental and disease-relevant immunological questions.
+
+---
+
+## Shared models and techniques
+
+Across the institute, a range of models and techniques support research and training, including:
+- Mouse models of infection, immune regulation, and chronic inflammation
+- Human immune cell phenotyping
+- Flow cytometry and cell sorting (via the Flow Cytometry Core Facility)
+- In vivo imaging modalities
+- Molecular and cellular assays
+- Transcriptomic and other high-dimensional data approaches
+
+PhD students are encouraged to explore techniques beyond their immediate project to broaden expertise and enable collaboration.
+
+---
+
+## Core facilities and collaborations
+
+IMMEI maintains and interacts with shared scientific infrastructure, such as:
+- The **Flow Cytometry Core Facility** (FCCF) for advanced cell analysis and sorting
+- Experimental therapy platforms
+- Immune profiling units
+
+The institute also participates in collaborative research consortia, including the **ImmunoSensation3** clusters of excellence, and DFG-funded collaborative research centres addressing topics such as metaflammation and nucleic acid immunity.
+
+---
+
+## Scientific environment at Bonn
+
+IMMEI is embedded in a larger biomedical research ecosystem involving the University of Bonn and University Hospital Bonn, offering access to additional core facilities, cross-institute collaborations, and clinical research partners. PhD students benefit from interaction with complementary expertise, resources, and training opportunities across the campus and extended networks.
+
+---
+
+## How this benefits PhD students
+
+As a new PhD student, understanding the institute context allows you to:
+- Identify potential collaborators and technical expertise
+- Navigate access to shared facilities
+- Situate your project within a broader scientific framework
+- Engage in cross-group discussions and seminars
+
+More detailed information on specific research groups and facilities can be found in dedicated onboarding pages.
+
+---
+
+## Scope
+
+This overview is intended as orientation and context. It does not prescribe scientific direction or define individual group projects.
+
+---
+
+## Notes
+
+Institute structure, personnel, and research focus evolve over time. If you notice gaps or have updates, please raise them so this document can be kept current.

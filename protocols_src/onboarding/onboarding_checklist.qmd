@@ -1,0 +1,128 @@
+---
+title: "Onboarding Checklist"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "GEN-ONB-PHD-001"
+version: "v1.0"
+date: "2025-12-20"
+description: "Checklist for onboarding new PhD students in the Abdullah Lab, covering access, inductions, lab expectations, data standards, and early PhD milestones."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This checklist defines the required steps for onboarding new PhD students in the Abdullah Lab.  
+It is organised by **timeframe** and separates **organisation of inductions** from **confirmation of completion**.
+
+---
+
+## How to use this checklist
+
+- Work through the checklist in order
+- Organise required inductions early
+- Confirm completion once inductions are finished
+- Review progress with your supervisor
+
+---
+
+## Week 0–1: Immediate essentials (organise)
+
+### Access and permissions
+- ☐ Institutional account active (UKB / University of Bonn)
+- ☐ Email access confirmed
+- ☐ **UKB ID card** received and activated
+- ☐ Access to laboratory spaces granted
+- ☐ Access to animal facility granted (if applicable)
+- ☐ **IMMEI onboarding procedure** completed
+- ☐ Access to **Zeinab Abdullah shared calendar**
+
+### Communication platforms
+- ☐ Added to lab **Mattermost** group(s)
+- ☐ Access to **Sciebo** shared folders
+- ☐ Access to **Quartzy**
+- ☐ Access to **PyRAT** (if applicable)
+
+### Lab orientation
+- ☐ Assigned **bench space**
+- ☐ Assigned **desk space**
+- ☐ Assigned storage space
+- ☐ Introduced to lab members
+- ☐ Emergency procedures explained (fire exits, first aid, incident reporting)
+- ☐ Read **Lab expectations**
+- ☐ Read **Lab etiquette**
+
+### Inductions to organise
+- ☐ **S2 induction** scheduled
+- ☐ **iFET induction** scheduled
+- ☐ **Flow cytometry core facility** introduction scheduled
+
+---
+
+## Week 1–2: Software and setup
+
+### Required software access
+
+Ensure access to the following software as relevant to your project:
+
+- ☐ **FlowJo**
+- ☐ **GraphPad Prism**
+- ☐ **R / RStudio**
+- ☐ **Microsoft Office** (Word, Excel, PowerPoint)
+- ☐ **Mattermost**
+- ☐ **Sciebo**
+
+### Data standards
+- ☐ Read **Data and reproducibility standards**
+
+---
+
+## Month 1: Training completion and PhD setup
+
+### Inductions and training (confirm completion)
+- ☐ **S2 induction completed**
+- ☐ **iFET induction completed**
+- ☐ **Flow cytometry core facility** introduction completed
+- ☐ Mouse handling training completed (if applicable)
+
+### Lab and institute integration
+- ☐ Familiar with core **lab models**
+- ☐ Familiar with core **lab techniques**
+- ☐ Aware of **institute-wide models and techniques**
+- ☐ Familiar with relevant research groups within the institute
+- ☐ Aware of institute **core facilities** and access pathways
+
+### Data and reproducibility
+- ☐ Understands experiment naming conventions
+- ☐ Understands file and folder naming rules
+- ☐ Knows where raw vs processed data must be stored
+- ☐ Understands reagent naming and lab-internal IDs
+- ☐ Knows backup and data retention expectations
+
+### PhD milestones
+- ☐ Draft **PhD project title**
+- ☐ Draft **project description / scope**
+- ☐ Identify potential **PhD committee members**
+- ☐ Discuss committee composition with supervisor
+- ☐ **Organise regular supervisor meetings**
+- ☐ Clarify expectations for PhD milestones and timelines
+
+---
+
+## Completion
+
+- ☐ Checklist reviewed with supervisor
+- ☐ Onboarding acknowledgement completed (if required)
+
+**Name:** _______________________________  
+**Date:** _______________________________
+
+---
+
+## Notes
+
+This checklist is a living document and may evolve as lab practices and institutional requirements change.  
+If steps are unclear or missing, raise this so the documentation can be updated.

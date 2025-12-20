@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-12-20">
+<meta name="description" content="Lab-wide standards for experiment identification, file and folder naming, reagent labelling, data storage, and reproducible record keeping.">
+
+<title>Data Management and Reproducibility Standards – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../protocols_src/onboarding/index.html">Onboarding</a></li><li class="breadcrumb-item"><a href="../../../protocols_src/onboarding/training/data_and_reproducibility.html">Data and reproducibility</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../../">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true"><i class="bi bi-person-check" role="img">
+</i> 
+ <span class="menu-text">Onboarding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/checklist.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/contacts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Key contacts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/access_and_accounts.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Access and accounts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/software.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/training/data_and_reproducibility.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data and reproducibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Lab information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/lab_info/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab information overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/lab_info/lab_expectations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab expectations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/lab_info/lab_etiquette.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab etiquette</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/lab_info/communication_norms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Communication norms</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Institute information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/institute/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Institute overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/institute/institute_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Institute overview page</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/institute/research_groups.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research groups</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/onboarding/institute/core_facilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Core facilities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#guiding-principles" id="toc-guiding-principles" class="nav-link" data-scroll-target="#guiding-principles">Guiding principles</a></li>
+  <li><a href="#experiment-identifiers" id="toc-experiment-identifiers" class="nav-link" data-scroll-target="#experiment-identifiers">Experiment identifiers</a>
+  <ul class="collapse">
+  <li><a href="#approved-formats" id="toc-approved-formats" class="nav-link" data-scroll-target="#approved-formats">Approved formats</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
+  </ul></li>
+  <li><a href="#file-and-folder-naming" id="toc-file-and-folder-naming" class="nav-link" data-scroll-target="#file-and-folder-naming">File and folder naming</a>
+  <ul class="collapse">
+  <li><a href="#general-rules" id="toc-general-rules" class="nav-link" data-scroll-target="#general-rules">General rules</a></li>
+  <li><a href="#recommended-folder-structure" id="toc-recommended-folder-structure" class="nav-link" data-scroll-target="#recommended-folder-structure">Recommended folder structure</a></li>
+  <li><a href="#file-naming" id="toc-file-naming" class="nav-link" data-scroll-target="#file-naming">File naming</a></li>
+  </ul></li>
+  <li><a href="#approved-data-storage-locations" id="toc-approved-data-storage-locations" class="nav-link" data-scroll-target="#approved-data-storage-locations">Approved data storage locations</a>
+  <ul class="collapse">
+  <li><a href="#sciebo-approved-primary-storage" id="toc-sciebo-approved-primary-storage" class="nav-link" data-scroll-target="#sciebo-approved-primary-storage">Sciebo (approved primary storage)</a></li>
+  <li><a href="#local-machines" id="toc-local-machines" class="nav-link" data-scroll-target="#local-machines">Local machines</a></li>
+  <li><a href="#prohibited-storage" id="toc-prohibited-storage" class="nav-link" data-scroll-target="#prohibited-storage">Prohibited storage</a></li>
+  </ul></li>
+  <li><a href="#raw-vs-processed-data" id="toc-raw-vs-processed-data" class="nav-link" data-scroll-target="#raw-vs-processed-data">Raw vs processed data</a>
+  <ul class="collapse">
+  <li><a href="#raw-data" id="toc-raw-data" class="nav-link" data-scroll-target="#raw-data">Raw data</a></li>
+  <li><a href="#processed-data" id="toc-processed-data" class="nav-link" data-scroll-target="#processed-data">Processed data</a></li>
+  </ul></li>
+  <li><a href="#reagent-labelling-standards" id="toc-reagent-labelling-standards" class="nav-link" data-scroll-target="#reagent-labelling-standards">Reagent labelling standards</a>
+  <ul class="collapse">
+  <li><a href="#required-information-on-reagent-labels" id="toc-required-information-on-reagent-labels" class="nav-link" data-scroll-target="#required-information-on-reagent-labels">Required information on reagent labels</a></li>
+  </ul></li>
+  <li><a href="#viral-stocks" id="toc-viral-stocks" class="nav-link" data-scroll-target="#viral-stocks">Viral stocks</a>
+  <ul class="collapse">
+  <li><a href="#recommended-format" id="toc-recommended-format" class="nav-link" data-scroll-target="#recommended-format">Recommended format</a></li>
+  </ul></li>
+  <li><a href="#cell-lines" id="toc-cell-lines" class="nav-link" data-scroll-target="#cell-lines">Cell lines</a>
+  <ul class="collapse">
+  <li><a href="#required-information" id="toc-required-information" class="nav-link" data-scroll-target="#required-information">Required information</a></li>
+  </ul></li>
+  <li><a href="#tissue-culture-flask-labelling" id="toc-tissue-culture-flask-labelling" class="nav-link" data-scroll-target="#tissue-culture-flask-labelling">Tissue culture flask labelling</a>
+  <ul class="collapse">
+  <li><a href="#required-information-on-flasks" id="toc-required-information-on-flasks" class="nav-link" data-scroll-target="#required-information-on-flasks">Required information on flasks</a></li>
+  </ul></li>
+  <li><a href="#media-and-reagent-modifications" id="toc-media-and-reagent-modifications" class="nav-link" data-scroll-target="#media-and-reagent-modifications">Media and reagent modifications</a>
+  <ul class="collapse">
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  </ul></li>
+  <li><a href="#record-keeping" id="toc-record-keeping" class="nav-link" data-scroll-target="#record-keeping">Record keeping</a></li>
+  <li><a href="#versioning" id="toc-versioning" class="nav-link" data-scroll-target="#versioning">Versioning</a></li>
+  <li><a href="#responsibilities" id="toc-responsibilities" class="nav-link" data-scroll-target="#responsibilities">Responsibilities</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="data_and_reproducibility.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../protocols_src/onboarding/index.html">Onboarding</a></li><li class="breadcrumb-item"><a href="../../../protocols_src/onboarding/training/data_and_reproducibility.html">Data and reproducibility</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Data Management and Reproducibility Standards</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+</div>
+
+<div>
+  <div class="description">
+    Lab-wide standards for experiment identification, file and folder naming, reagent labelling, data storage, and reproducible record keeping.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 20, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> GEN-DATA-STD-001<br>
+<strong>Version:</strong> v1<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<hr>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>This document defines the <strong>mandatory standards</strong> for data management and reproducibility in the Abdullah Lab.</p>
+<p>These standards ensure that: - Experiments can be understood and reproduced by others - Data remain interpretable over time - Projects can be transferred without loss of context - Reagents and materials are traceable</p>
+<p>All lab members are expected to follow these standards.</p>
+<hr>
+</section>
+<section id="guiding-principles" class="level2">
+<h2 class="anchored" data-anchor-id="guiding-principles">Guiding principles</h2>
+<ul>
+<li>Clarity over convenience</li>
+<li>Consistency across the lab</li>
+<li>One experiment → one clear identifier</li>
+<li>Raw data are never altered</li>
+<li>Physical labels must match digital records</li>
+</ul>
+<hr>
+</section>
+<section id="experiment-identifiers" class="level2">
+<h2 class="anchored" data-anchor-id="experiment-identifiers">Experiment identifiers</h2>
+<p>Every experiment must have a <strong>unique experiment ID</strong>.</p>
+<section id="approved-formats" class="level3">
+<h3 class="anchored" data-anchor-id="approved-formats">Approved formats</h3>
+<p>Experiment IDs must follow <strong>one of the following formats</strong>:</p>
+<pre><code>&lt;initials&gt;&lt;YY&gt;_&lt;NN&gt;
+&lt;initials&gt;&lt;NN&gt;</code></pre>
+<p>Where: - <code>&lt;initials&gt;</code> = experimenter initials (e.g.&nbsp;DC) - <code>&lt;YY&gt;</code> = two-digit year (e.g.&nbsp;25) - <code>&lt;NN&gt;</code> = sequential experiment number</p>
+</section>
+<section id="examples" class="level3">
+<h3 class="anchored" data-anchor-id="examples">Examples</h3>
+<pre><code>DC25_01
+DC25_02
+DC01
+DC02</code></pre>
+<p>The experiment ID must be used consistently across: - Folder names - File names - Lab notebook entries - Analysis scripts</p>
+<hr>
+</section>
+</section>
+<section id="file-and-folder-naming" class="level2">
+<h2 class="anchored" data-anchor-id="file-and-folder-naming">File and folder naming</h2>
+<section id="general-rules" class="level3">
+<h3 class="anchored" data-anchor-id="general-rules">General rules</h3>
+<ul>
+<li>Lowercase letters only</li>
+<li>Underscores (<code>_</code>) only</li>
+<li>No spaces or special characters</li>
+<li>Avoid vague terms such as:
+<ul>
+<li><code>final</code></li>
+<li><code>new</code></li>
+<li><code>test</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="recommended-folder-structure" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-folder-structure">Recommended folder structure</h3>
+<pre><code>experiment_id/
+├── raw/
+├── processed/
+├── analysis/
+├── figures/
+└── notes/</code></pre>
+</section>
+<section id="file-naming" class="level3">
+<h3 class="anchored" data-anchor-id="file-naming">File naming</h3>
+<p>Files should <strong>almost always include the experiment ID</strong> to ensure traceability outside the original folder context.</p>
+<p>The experiment ID should appear at the <strong>start of the filename</strong>, followed by a short descriptive suffix.</p>
+<p><strong>Examples</strong></p>
+<pre><code>DC25_01_gating_strategy.pdf
+DC25_01_analysis.wsp
+DC25_01_cell_counts.xlsx
+DC25_01_analysis_notes.md</code></pre>
+<p>Files that do not include the experiment ID should be the exception and must still be unambiguous in context.</p>
+<hr>
+</section>
+</section>
+<section id="approved-data-storage-locations" class="level2">
+<h2 class="anchored" data-anchor-id="approved-data-storage-locations">Approved data storage locations</h2>
+<section id="sciebo-approved-primary-storage" class="level3">
+<h3 class="anchored" data-anchor-id="sciebo-approved-primary-storage">Sciebo (approved primary storage)</h3>
+<p><strong>Sciebo is the approved storage location for lab data.</strong></p>
+<p>Use Sciebo for: - Raw experimental data - Processed data - Analysis outputs - Shared documents</p>
+</section>
+<section id="local-machines" class="level3">
+<h3 class="anchored" data-anchor-id="local-machines">Local machines</h3>
+<ul>
+<li>Allowed <strong>temporarily only</strong></li>
+<li>Raw data must be transferred to Sciebo promptly</li>
+<li>Local machines must not be the sole copy of data</li>
+</ul>
+</section>
+<section id="prohibited-storage" class="level3">
+<h3 class="anchored" data-anchor-id="prohibited-storage">Prohibited storage</h3>
+<ul>
+<li>Personal cloud services (e.g.&nbsp;Google Drive, Dropbox)</li>
+<li>USB sticks as primary or long-term storage</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="raw-vs-processed-data" class="level2">
+<h2 class="anchored" data-anchor-id="raw-vs-processed-data">Raw vs processed data</h2>
+<section id="raw-data" class="level3">
+<h3 class="anchored" data-anchor-id="raw-data">Raw data</h3>
+<ul>
+<li>Must remain unmodified</li>
+<li>Must retain original file formats</li>
+<li>Must be stored in a dedicated <code>raw/</code> directory</li>
+</ul>
+</section>
+<section id="processed-data" class="level3">
+<h3 class="anchored" data-anchor-id="processed-data">Processed data</h3>
+<ul>
+<li>Stored separately from raw data</li>
+<li>Processing steps must be documented</li>
+<li>Script-based processing is preferred</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="reagent-labelling-standards" class="level2">
+<h2 class="anchored" data-anchor-id="reagent-labelling-standards">Reagent labelling standards</h2>
+<p>All reagents must be clearly labelled at the time of preparation or opening.</p>
+<section id="required-information-on-reagent-labels" class="level3">
+<h3 class="anchored" data-anchor-id="required-information-on-reagent-labels">Required information on reagent labels</h3>
+<p>Each reagent container must include: - Reagent name <strong>or</strong> initials / identifier - Sterile or non-sterile status - Date opened or prepared - Initials of the person who prepared/opened it</p>
+<p>Unlabelled or ambiguously labelled reagents must not be used.</p>
+<hr>
+</section>
+</section>
+<section id="viral-stocks" class="level2">
+<h2 class="anchored" data-anchor-id="viral-stocks">Viral stocks</h2>
+<p>Viral stocks must be labelled with sufficient information to ensure traceability.</p>
+<section id="recommended-format" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-format">Recommended format</h3>
+<pre><code>virus_strain_passage_YYYY-MM-DD</code></pre>
+<p><strong>Example</strong></p>
+<pre><code>lcmv_we_p3_2025-02-10</code></pre>
+<p>Records must include: - Source - Passage number - Storage location</p>
+<hr>
+</section>
+</section>
+<section id="cell-lines" class="level2">
+<h2 class="anchored" data-anchor-id="cell-lines">Cell lines</h2>
+<p>Cell lines must be labelled in a <strong>similar manner to viral stocks</strong>, ensuring traceability.</p>
+<section id="required-information" class="level3">
+<h3 class="anchored" data-anchor-id="required-information">Required information</h3>
+<p>Cell line labels must include: - Cell line name - Passage number - Date - Initials</p>
+<p><strong>Example</strong></p>
+<pre><code>jurkat_p18_2025-03-04_DC</code></pre>
+<p>A master record should document: - Cell line source - Genetic modifications (if any) - Thaw date and passage history</p>
+<hr>
+</section>
+</section>
+<section id="tissue-culture-flask-labelling" class="level2">
+<h2 class="anchored" data-anchor-id="tissue-culture-flask-labelling">Tissue culture flask labelling</h2>
+<p>All tissue culture flasks must be clearly labelled.</p>
+<section id="required-information-on-flasks" class="level3">
+<h3 class="anchored" data-anchor-id="required-information-on-flasks">Required information on flasks</h3>
+<ul>
+<li>Cell line name</li>
+<li>Passage number</li>
+<li>Date</li>
+<li>Media used</li>
+<li>Initials</li>
+</ul>
+<p><strong>Example</strong></p>
+<pre><code>jurkat | p18 | 2025-03-04 | dmem+penstrep+neaas | DC</code></pre>
+<hr>
+</section>
+</section>
+<section id="media-and-reagent-modifications" class="level2">
+<h2 class="anchored" data-anchor-id="media-and-reagent-modifications">Media and reagent modifications</h2>
+<p>Any modification to base media must be recorded.</p>
+<section id="requirements" class="level3">
+<h3 class="anchored" data-anchor-id="requirements">Requirements</h3>
+<ul>
+<li>Record all additives (e.g.&nbsp;antibiotics, supplements)</li>
+<li>Use consistent shorthand</li>
+<li>Ensure the formulation is documented digitally</li>
+</ul>
+</section>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<pre><code>DMEM + Pen/Strep + NEAAs</code></pre>
+<p>If media composition differs from standard lab formulations, this must be clearly documented.</p>
+<hr>
+</section>
+</section>
+<section id="record-keeping" class="level2">
+<h2 class="anchored" data-anchor-id="record-keeping">Record keeping</h2>
+<p>At minimum, records for each experiment must include: - Experiment ID - Date - Operator - Biological material - Reagents used - Deviations from protocol</p>
+<p>Electronic or paper lab notebooks are acceptable, but records must be complete and legible.</p>
+<hr>
+</section>
+<section id="versioning" class="level2">
+<h2 class="anchored" data-anchor-id="versioning">Versioning</h2>
+<ul>
+<li>Use sequential versions: <code>v1</code>, <code>v2</code>, <code>v3</code></li>
+<li>Major changes require a new version</li>
+<li>Deprecated data or reagents must not be deleted without discussion</li>
+</ul>
+<hr>
+</section>
+<section id="responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="responsibilities">Responsibilities</h2>
+<ul>
+<li>Each experimenter is responsible for compliance</li>
+<li>Supervisors may review organisation and records</li>
+<li>Issues should be corrected promptly when identified</li>
+</ul>
+<hr>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<p>These standards are living guidelines and may evolve.<br>
+Any ambiguities or gaps should be raised so this document can be updated.</p>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

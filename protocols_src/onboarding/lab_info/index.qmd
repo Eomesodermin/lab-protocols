@@ -1,0 +1,36 @@
+---
+title: "Lab Information"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+---
+
+## Purpose
+
+This section describes **how the Abdullah Lab operates day to day**.
+
+It provides guidance on:
+- Expectations and responsibilities
+- Professional conduct and lab culture
+- Practical etiquette in shared lab spaces
+- Communication norms within the lab
+
+These pages are intended to make expectations explicit and to support a respectful, productive working environment.
+
+---
+
+## Pages in this section
+
+- **Lab Expectations**  
+  Shared standards for conduct, supervision, responsibility, and scientific integrity.
+
+- **Lab Etiquette**  
+  Practical guidance on day-to-day behaviour in shared spaces, including benches, equipment, and storage.
+
+- **Communication Norms**  
+  How communication works in the lab, including channels, meetings, and escalation.
+
+---
+
+## Scope
+
+This section focuses on **lab-level norms and practices**.  
+Institute-wide structure, facilities, and administration are covered separately under *Institute Information*.

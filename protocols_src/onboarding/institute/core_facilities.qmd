@@ -1,0 +1,128 @@
+---
+title: "Core Facilities"
+subtitle: "IMMEI, University Hospital Bonn"
+protocol_id: "ONB-CORE-FAC-001"
+version: "v1"
+date: "2025-12-20"
+description: "Overview of core facilities relevant to IMMEI and the Abdullah Lab, including access procedures and points of contact."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This page provides an overview of **core facilities** used by IMMEI research groups and the Abdullah Lab.
+
+It is intended to help new PhD students:
+- Understand which facilities exist
+- Know who to contact for access and training
+- Navigate required inductions and introductions
+
+This page describes **what facilities exist and how to access them**, not how to perform experiments.
+
+---
+
+## Flow Cytometry Core Facility (FCCF)
+
+The **Flow Cytometry Core Facility (FCCF)** provides flow cytometry analysis, high-parameter acquisition, and cell sorting services to IMMEI and the wider Medical Faculty.
+
+### Access and training
+
+Before using any FCCF instruments, users must:
+- Arrange an **induction and training**
+- Be approved for independent instrument use (where applicable)
+
+**Primary contact for induction and training:**  
+**Andreas Dolf**
+
+New users should contact Andreas Dolf early during onboarding to:
+- Schedule an introduction
+- Discuss training requirements
+- Clarify which instruments are appropriate for their project
+
+### Available instrumentation (overview)
+
+The FCCF hosts a range of flow cytometers and sorters, including:
+- Multi-laser analyzers for high-parameter flow cytometry
+- High-speed cell sorters suitable for:
+  - Immune cell sorting
+  - Rare population isolation
+  - Downstream functional and molecular assays
+
+Specific instrument availability, configurations, and booking procedures are maintained by the FCCF and may change over time.
+
+### FCCF staff
+
+The FCCF is supported by dedicated technical and scientific staff who:
+- Provide user training
+- Support experimental planning
+- Assist with complex sorting and analysis tasks
+
+Users are encouraged to engage with FCCF staff when planning demanding or non-standard experiments.
+
+### Further information
+
+Official FCCF information, updates, and contact details are available at:  
+https://www.medfak.uni-bonn.de/en/research/infrastructure/fccf/home
+
+---
+
+## Animal facility
+
+Animal work is conducted through the **central animal facility** at the University Hospital Bonn.
+
+### Access and introduction
+
+To obtain access:
+- Contact **Daniela Krauss**
+- Arrange required introductions and approvals
+- Complete any mandatory inductions before starting animal work
+
+### Mouse management
+
+- Mouse colonies and experimental records are managed using **PyRAT**
+- All mouse work must be recorded according to facility and institutional requirements
+
+Animal work must comply with all ethical approvals, institutional rules, and national regulations.
+
+---
+
+## Imaging facilities
+
+*(To be completed)*
+
+---
+
+## Proteomics facilities
+
+*(To be completed)*
+
+---
+
+## Sequencing and genomics facilities
+
+*(To be completed)*
+
+---
+
+## Scope and limitations
+
+This page:
+- Summarises **available infrastructure**
+- Provides **access pathways and contacts**
+
+It does **not**:
+- Replace facility-specific SOPs
+- Provide experimental protocols
+- Guarantee instrument availability
+
+---
+
+## Notes
+
+Core facilities evolve over time.  
+If access procedures or contacts change, this document should be updated accordingly.

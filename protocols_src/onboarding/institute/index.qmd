@@ -1,0 +1,33 @@
+---
+title: "Institute Information"
+subtitle: "IMMEI, University Hospital Bonn"
+---
+
+## Purpose
+
+This section provides an overview of the **Institute of Molecular Medicine and Experimental Immunology (IMMEI)**.
+
+It is intended to help new lab members:
+- Understand the institute’s structure and research environment
+- Identify research groups and their scientific focus
+- Navigate shared infrastructure and core facilities
+
+---
+
+## Pages in this section
+
+- **Institute Overview**  
+  Mission, structure, and scientific environment of IMMEI.
+
+- **Research Groups**  
+  Overview of research groups at IMMEI, including scientific focus, models, and approaches.
+
+- **Core Facilities**  
+  Shared infrastructure, access procedures, and key contacts for institute-level facilities.
+
+---
+
+## Scope
+
+This section describes **institute-level organisation and resources**.  
+Lab-specific practices and expectations are covered under *Lab Information*.

@@ -1,0 +1,164 @@
+---
+title: "Lab Etiquette"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "GEN-LAB-ETQ-001"
+version: "v1"
+date: "2025-12-20"
+description: "Practical guidelines for day-to-day behaviour in shared lab spaces, covering equipment use, cleanliness, storage, and consideration for others."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This document describes **day-to-day lab etiquette** in the Abdullah Lab.
+
+Its goal is to:
+- Prevent avoidable friction
+- Ensure shared spaces remain functional
+- Make expectations explicit rather than assumed
+
+These guidelines apply to **all lab members** and complement the broader principles described in *Lab Expectations*.
+
+---
+
+## General principle
+
+The lab is a **shared working environment**.
+
+A simple rule applies:
+> Leave spaces, equipment, and reagents in a state that you would be happy to find them.
+
+---
+
+## Benches and workspaces
+
+### Bench use
+- Keep benches as clear as possible
+- Only keep materials required for current work on the bench
+- Return shared items when finished
+
+### End of day expectations
+At the end of the day:
+- Dispose of waste appropriately
+- Wipe down the bench if work involved spills or biological material
+- Return equipment and reagents to their designated locations
+
+Benches should not accumulate long-term storage or unused items.
+
+---
+
+## Shared equipment
+
+### General use
+- Treat shared equipment with care
+- Follow posted instructions and lab norms
+- Do not modify settings without understanding the impact on others
+
+### After use
+- Clean equipment if required
+- Reset settings if you changed them
+- Report malfunctions or damage promptly
+
+If equipment is left unusable, the next user is delayed.
+
+---
+
+## Fridges, freezers, and storage
+
+### Labelling
+All stored items must be clearly labelled with:
+- Name or initials
+- Contents
+- Date
+
+Unlabelled or outdated items may be removed during clean-ups.
+
+### Organisation
+- Respect designated areas and shelves
+- Do not move or discard others’ samples without discussion
+- Avoid overcrowding shared storage
+
+---
+
+## Reagents and consumables
+
+- Close containers properly
+- Do not return contaminated reagents to stock
+- Inform the lab if common reagents are running low
+- Do not use unlabelled or expired reagents
+
+If unsure about a reagent’s status, ask before using it.
+
+---
+
+## Tissue culture areas
+
+- Follow sterile technique consistently
+- Clean work areas before and after use
+- Dispose of waste correctly
+- Do not leave flasks or plates without clear labelling
+
+Tissue culture spaces must be kept especially orderly to protect all users.
+
+---
+
+## Booking and fairness
+
+Where equipment or space is shared:
+- Be considerate of others’ time
+- Cancel bookings you do not need
+- Avoid monopolising resources
+
+If you need extended or unusual access, communicate this in advance.
+
+---
+
+## Noise, interruptions, and shared space awareness
+
+- Be mindful of noise levels in shared areas
+- Keep phone calls and meetings from disrupting others
+- Respect that others may be concentrating or running time-sensitive experiments
+
+---
+
+## Food, drink, and personal items
+
+- Follow safety rules regarding food and drink in lab areas
+- Keep personal items out of experimental spaces
+- Store food only in designated areas
+
+---
+
+## Problems, mistakes, and accountability
+
+Mistakes happen.
+
+If something goes wrong:
+- Inform relevant lab members promptly
+- Do not hide problems or hope they go unnoticed
+- Work collaboratively to resolve issues
+
+Early communication prevents small problems from becoming larger ones.
+
+---
+
+## Scope
+
+This document focuses on **practical etiquette**, not:
+- Scientific judgement
+- Performance evaluation
+- Institutional policy
+
+When in doubt, default to **clear communication and consideration for others**.
+
+---
+
+## Notes
+
+These guidelines reflect current lab practice and may evolve.  
+Suggestions for improvement are welcome and should be raised so expectations remain clear and fair.

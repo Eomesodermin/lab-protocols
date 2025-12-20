@@ -1,0 +1,80 @@
+---
+title: "Onboarding"
+---
+
+## Purpose
+
+This section contains all information required for onboarding new PhD students joining the lab.
+
+It is intended to:
+- Provide a clear onboarding pathway
+- Define expectations and standards
+- Centralise practical information needed to work effectively in the lab and institute
+
+This section complements (but does not replace) lab protocols and experimental SOPs.
+
+---
+
+## How to use this section
+
+### New PhD students
+1. Start with the **Onboarding checklist**
+2. Complete mandatory items in the first weeks
+3. Use the remaining pages as reference material
+
+### Supervisors and lab members
+- Use this section as the canonical reference for onboarding
+- Avoid duplicating onboarding instructions elsewhere
+- Update pages here rather than sharing ad hoc documents
+
+---
+
+## Core onboarding document
+
+- **Onboarding checklist**  
+  A time-ordered checklist covering access, training, expectations, and setup.
+
+---
+
+## Section overview
+
+### Access
+Account setup, software access, computing resources, and booking systems.
+
+### Lab information
+Day-to-day lab operation, expectations, etiquette, communication norms, and lab-specific models and techniques.
+
+### Institute
+Overview of the institute, research groups, shared models, techniques, and core facilities.
+
+### Training
+Mandatory training requirements and standards, including data handling and reproducibility.
+
+### Administration
+University and institute administrative information relevant to PhD students.
+
+### Templates
+Reusable forms and acknowledgement documents related to onboarding.
+
+---
+
+## Scope and boundaries
+
+This onboarding section:
+- Describes **what exists** and **what is expected**
+- Links to protocols and SOPs where appropriate
+
+It does **not**:
+- Contain experimental protocols
+- Replace safety or ethics training
+- Serve as a troubleshooting guide for experiments
+
+---
+
+## Questions or missing information
+
+If information is missing or unclear:
+- First, check whether it exists elsewhere in the documentation
+- If not, raise it with your supervisor or a senior lab member so it can be added here
+
+This onboarding documentation is intended to evolve with the lab.

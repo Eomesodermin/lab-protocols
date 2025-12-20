@@ -1,0 +1,105 @@
+---
+title: "Key Contacts"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "ONB-CONTACTS-001"
+version: "v1"
+date: "2025-12-20"
+description: "Key contacts for the Abdullah Lab and IMMEI, including who to contact for administrative, safety, facility, and scientific matters."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+---
+
+## Purpose
+
+This page lists **key contacts** relevant to PhD students and lab members at IMMEI.
+
+It is intended to:
+- Make it clear **who to contact for what**
+- Avoid delays caused by uncertainty or misdirected requests
+- Centralise institute and lab-level contact information
+
+If unsure who to contact, ask your supervisor or institute management.
+
+---
+
+
+## Institute administration and coordination
+
+### Institute Management
+
+**Lucie Hrvat-Delforge**
+
+Contact for:
+- Institute-level administrative questions  
+- Onboarding coordination at IMMEI  
+- Contracts, appointments, and general organisational matters  
+- Institute procedures and internal processes  
+
+---
+
+### Science Management / Safety Coordination
+
+**Dr. Johanna Breuer**
+
+Contact for:
+- **S2 induction organisation**
+- **Waste disposal procedures**
+- **Safety-related questions and compliance**
+- Guidance on biosafety, chemical safety, and institute regulations  
+- Coordination of safety trainings and documentation  
+
+If a topic relates to safety, waste, or regulatory compliance at IMMEI, Johanna is the correct first contact.
+
+---
+
+## Core facilities and technical infrastructure
+
+### Flow Cytometry Core Facility (FCCF)
+
+**Andreas Dolf**
+
+Contact for:
+- FCCF **induction and training**
+- Access to flow cytometry instruments
+- Questions about instrument suitability for a project
+- Scheduling introductions to FCCF workflows  
+
+All new users must arrange an introduction before using FCCF instruments.
+
+---
+
+## Animal facility
+
+### Animal Facility / iFET Management
+
+**Daniela Krauss**
+
+Contact for:
+- Access to the animal facility
+- Required inductions and approvals
+- General questions about animal work administration
+- Coordination of introductions for new users  
+
+Mouse colony and experiment management is handled via **PyRAT**.
+
+---
+
+## General guidance
+
+- For **scientific questions**, start with your supervisor  
+- For **administrative or onboarding issues**, contact institute management  
+- For **safety, waste, or regulatory matters**, contact science management  
+- For **facility access**, contact the relevant facility lead  
+
+If you are unsure who to contact, ask early—misdirected requests slow everyone down.
+
+---
+
+## Notes
+
+Contacts and responsibilities may evolve.  
+If a role changes or a new contact becomes relevant, this page should be updated to remain accurate.

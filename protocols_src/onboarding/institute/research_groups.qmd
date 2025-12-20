@@ -1,0 +1,176 @@
+---
+title: "Research Groups at IMMEI"
+subtitle: "Institute of Molecular Medicine & Experimental Immunology (IMMEI), University Hospital Bonn"
+protocol_id: "ONB-IMMEI-GROUPS-001"
+version: "v1"
+date: "2025-12-20"
+description: "Overview of IMMEI research groups, their scientific focus, and commonly used models and techniques, to support onboarding of new PhD students."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+## Institute administration and key contacts
+
+- **Institute Management:** Lucie Hrvat-Delforge  
+- **Science Management:** Dr. Johanna Breuer  
+- **Flow Cytometry Core Facility Manager:** Prof. Natalio Garbi  
+- **Technical Core Facility Manager:** Andreas Dolf  
+- **iFET Management:** Daniela Krauss  
+
+---
+
+## Research groups
+
+### Prof. Dr. Christian Kurts Laboratory
+
+**Core focus**  
+- Kidney immunology and inflammatory kidney disease mechanisms  
+- Antigen presentation and dendritic cell biology in tissue inflammation  
+- Translational immunology linking experimental models to clinical nephrology  
+
+**Typical models and approaches**  
+- Mouse models of glomerulonephritis and inflammatory kidney disease  
+- Flow cytometry–based immune phenotyping and tissue immunology  
+- Cleared tissue imaging and computational pathology  
+- Innate immune sensing and interferon-driven inflammatory pathways  
+
+**Selected recent/representative publications**  
+- *Kidney immunology from pathophysiology to clinical translation* — Nat Rev Immunol  
+- *Residence of mice in metabolic cages reduces experimental kidney inflammation through stress-induced glucocorticoids* — JCI Insight  
+- *Low-dose glucocorticoids attenuate crescentic glomerulonephritis by inhibiting the local differentiation of proinflammatory neutrophils* — Sci Transl Med  
+- *Monocyte-Derived Macrophages Aggravate Pulmonary Vasculitis via cGAS/STING/IFN-Mediated Nucleic Acid Sensing* — J Exp Med  
+- *Determining Individual Glomerular Proteinuria and Periglomerular Infiltration in a Cleared Murine Kidney by a 3D Fast Marching Algorithm* — Kidney Int  
+
+---
+
+### Prof. Dr. Natalio Garbi Laboratory
+
+**Core focus**  
+- Antigen presentation and immune regulation during infection and inflammation  
+- Balancing protective immunity with immune-mediated pathology  
+- Tissue-resident and infiltrating immune cell interactions  
+
+**Typical models and approaches**  
+- Mouse models of lung infection and inflammation  
+- Viral and bacterial infection systems  
+- Multi-parameter flow cytometry and tissue imaging  
+- Reporter mouse strains and conditional immune cell perturbation  
+
+**Selected recent/representative publications**  
+- *Opposing roles of resident and infiltrating immune cells in the defense against Legionella longbeachae via IL-18R/IFN-γ/ROS axis in mice* — Mucosal Immunology  
+- *Rapid Protection against Viral Infections by Chemokine-Accelerated Post-Exposure Vaccination* — Frontiers in Immunology  
+- *Conditional NKT Cell Depletion in Mice Reveals a Negative Feedback Loop That Regulates CTL Cross-Priming* — Journal of Immunology  
+- *Interferon-Induced IL-10 Drives Systemic T-Cell Dysfunction during Chronic Liver Injury* — Journal of Hepatology  
+- *Cigarette Smoke Depletes Alveolar Macrophages and Delays Clearance of Legionella pneumophila* — AJP Lung  
+
+---
+
+### Prof. Dr. Veronika Lukacs-Kornek Laboratory
+
+**Core focus**  
+- Immune–stromal interactions in tissue homeostasis and disease  
+- Stromal cell biology and extracellular matrix remodeling  
+- Chronic inflammatory disease contexts including liver and lung pathology  
+
+**Typical models and approaches**  
+- Mouse models of tissue inflammation and fibrosis  
+- Stromal cell isolation and high-dimensional flow cytometry  
+- Multi-omics approaches to tissue remodeling  
+- Liver and lung immunopathology  
+
+**Selected recent/representative publications**  
+- *Global matrisome changes in obese lung are linked to fibroblastic stroma and premature aging* — Cell Reports  
+- *Isolation, Purification, and Comprehensive Flow Cytometry Assessment of Lung Stromal Cells* — Current Protocols  
+- *Increased Type-I Interferon Level Is Associated with Liver Damage and Fibrosis in Primary Sclerosing Cholangitis* — Hepatology Communications  
+- *The role of dendritic cells in MASH: friends or foes?* — Frontiers in Immunology  
+- *Inflammatory responses on the road from NASH to HCC* — Frontiers in Immunology  
+
+---
+
+### Prof. Dr. Zeinab Abdullah Laboratory
+
+**Core focus**  
+- Adaptive immune regulation during chronic inflammation  
+- T cell differentiation and dysfunction in tissue environments  
+- Systemic immune consequences of chronic organ inflammation  
+
+**Typical models and approaches**  
+- Mouse models of chronic liver inflammation and injury  
+- Infection models including LCMV and bacterial challenge  
+- High-dimensional flow cytometry and functional T cell assays  
+- Tissue-resident versus systemic immune profiling  
+
+**Selected recent/representative publications**  
+- *Interferon-Induced IL-10 Drives Systemic T-Cell Dysfunction during Chronic Liver Injury* — Journal of Hepatology  
+- *Lymph nodes fuel KLF2-dependent effector CD8+ T cell differentiation during chronic infection and checkpoint blockade* — Nature Immunology  
+- *Transcriptional regulator SATB1 limits CD8+ T cell population expansion and effector differentiation in chronic infection and cancer* — Nature Immunology  
+- *Lymph-node-derived stem-like but not tumor-tissue-resident CD8+ T cells fuel anticancer immunity* — Nature Immunology  
+- *Determining Individual Glomerular Proteinuria and Periglomerular Infiltration in a Cleared Murine Kidney by a 3D Fast Marching Algorithm* — Kidney International  
+
+---
+
+### Prof. Dr. Tim Rollenske Laboratory
+
+**Core focus**  
+- Mucosal immunology and antibody-mediated host defense  
+- Functional antibody responses and host–microbiota interactions  
+- Antibody discovery and recombinant antibody engineering  
+
+**Typical models and approaches**  
+- Single-cell B cell isolation and antibody cloning  
+- Recombinant antibody expression and purification  
+- Mouse models of mucosal colonisation and immunity  
+- Functional antibody testing in vivo and in vitro  
+
+**Selected recent/representative publications**  
+- *Efficient Expression and Purification of Recombinant Mouse Dimeric IgA* — European Journal of Immunology  
+- *Expression Cloning of Antibodies from Single Human B Cells* — Methods in Molecular Biology  
+- *Parallelism of intestinal secretory IgA shapes functional microbial fitness* — Nature  
+- *“ELO, world!” – Early-life origins of B cells* — Immunity  
+- *Cross-specificity of protective human antibodies against Klebsiella pneumoniae* — Nature Medicine  
+
+---
+
+### Dr. Janine Becker-Gotot Laboratory
+
+**Core focus**  
+- Immune tolerance and regulatory T cell biology  
+- Antigen-specific immune regulation  
+- Mechanisms linking immune regulation and tissue pathology  
+
+**Typical models and approaches**  
+- Mouse models of immune tolerance and regulation  
+- Regulatory T cell phenotyping and functional assays  
+- Kidney and tissue inflammation models  
+- Translational immune tolerance contexts  
+
+**Selected recent/representative publications**  
+- *Immune Tolerance against Infused FVIII in Hemophilia A Is Mediated by PD-L1+ Regulatory T Cells* — Journal of Clinical Investigation  
+- *Renal IL-23–Dependent Type 3 Innate Lymphoid Cells Link Crystal-induced Inflammasome Activation with Kidney Fibrosis* — Journal of Immunology  
+- *Rapid Protection against Viral Infections by Chemokine-Accelerated Post-Exposure Vaccination* — Frontiers in Immunology  
+- *Antibody cross-reactivity between casein and myelin-associated glycoprotein results in central nervous system demyelination* — PNAS  
+- *Immune regulation in tissue inflammation* — representative recent work  
+
+---
+
+### Prof. Dr. Axel Kallies Laboratory
+
+**Core focus**  
+- T cell differentiation and fate decisions  
+- Stem-like and exhausted T cell states  
+- T cell function in chronic infection, cancer, and tissue contexts  
+
+**Typical models and approaches**  
+- Mouse models of chronic infection and cancer  
+- Tissue-resident versus lymphoid T cell compartment analysis  
+- Transcriptional regulation of T cell fate  
+- High-dimensional immune profiling  
+
+**Selected recent/representative publications**  
+- *Lymph-node-derived stem-like but not tumor-tissue-resident CD8+ T cells fuel anticancer immunity* — Nature Immunology  
+- *Lymph nodes fuel KLF2-dependent effector CD8+ T cell differentiation during chronic infection and checkpoint blockade* — Nature Immunology  
+- *Transcriptional regulator SATB1 limits CD8+ T cell population expansion and effector differentiation in chronic infection and cancer* — Nature Immunology  
+- *Stem-like tissue-resident memory T cells control functional heterogeneity and reactivation of T cell memory in the intestine* — Science Immunology  
+- *The co-inhibitory receptor TIGIT promotes tissue-protective functions in T cells* — Nature Immunology  

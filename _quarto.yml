@@ -15,6 +15,49 @@ website:
         text: "Overview"
         icon: house
 
+      - section: "Onboarding"
+        icon: person-check
+        contents:
+          - href: protocols_src/onboarding/index.qmd
+            text: "Onboarding overview"
+
+          - href: protocols_src/onboarding/checklist.qmd
+            text: "Onboarding checklist"
+
+          - href: protocols_src/onboarding/contacts.qmd
+            text: "Key contacts"
+
+          - href: protocols_src/onboarding/training/data_and_reproducibility.qmd
+            text: "Data and reproducibility"
+
+          - section: "Lab information"
+            contents:
+              - href: protocols_src/onboarding/lab_info/index.qmd
+                text: "Lab information overview"
+
+              - href: protocols_src/onboarding/lab_info/lab_expectations.qmd
+                text: "Lab expectations"
+
+              - href: protocols_src/onboarding/lab_info/lab_etiquette.qmd
+                text: "Lab etiquette"
+
+              - href: protocols_src/onboarding/lab_info/communication_norms.qmd
+                text: "Communication norms"
+
+          - section: "Institute information"
+            contents:
+              - href: protocols_src/onboarding/institute/index.qmd
+                text: "Institute overview"
+
+              - href: protocols_src/onboarding/institute/institute_overview.qmd
+                text: "Institute overview page"
+
+              - href: protocols_src/onboarding/institute/research_groups.qmd
+                text: "Research groups"
+
+              - href: protocols_src/onboarding/institute/core_facilities.qmd
+                text: "Core facilities"
+
       - href: protocols_src/buffers/index.qmd
         text: "Buffers"
         icon: droplet

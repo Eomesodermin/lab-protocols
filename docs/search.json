@@ -77,587 +77,488 @@
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html",
-    "title": "Communication Norms",
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html",
+    "title": "Lab Etiquette",
     "section": "",
-    "text": "Protocol ID: GEN-LAB-COMM-001\nVersion: v1\nAuthor: Dillon Corvino",
+    "text": "Protocol ID: GEN-LAB-ETQ-001\nVersion: v1\nAuthor: Dillon Corvino",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab etiquette"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#purpose",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#purpose",
-    "title": "Communication Norms",
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#purpose",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#purpose",
+    "title": "Lab Etiquette",
     "section": "Purpose",
-    "text": "Purpose\nThis document defines how communication works in the Abdullah Lab.\nClear communication supports: - Efficient day-to-day work - Productive supervision - Early identification of problems - A respectful and professional lab culture\nThese norms apply to all lab members.",
+    "text": "Purpose\nThis document describes day-to-day lab etiquette in the Abdullah Lab.\nIts goal is to: - Prevent avoidable friction - Ensure shared spaces remain functional - Make expectations explicit rather than assumed\nThese guidelines apply to all lab members and complement the broader principles described in Lab Expectations.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab etiquette"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#general-principles",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#general-principles",
-    "title": "Communication Norms",
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#general-principle",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#general-principle",
+    "title": "Lab Etiquette",
+    "section": "General principle",
+    "text": "General principle\nThe lab is a shared working environment.\nA simple rule applies: &gt; Leave spaces, equipment, and reagents in a state that you would be happy to find them.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#benches-and-workspaces",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#benches-and-workspaces",
+    "title": "Lab Etiquette",
+    "section": "Benches and workspaces",
+    "text": "Benches and workspaces\n\nBench use\n\nKeep benches as clear as possible\nOnly keep materials required for current work on the bench\nReturn shared items when finished\n\n\n\nEnd of day expectations\nAt the end of the day: - Dispose of waste appropriately - Wipe down the bench if work involved spills or biological material - Return equipment and reagents to their designated locations\nBenches should not accumulate long-term storage or unused items.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#shared-equipment",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#shared-equipment",
+    "title": "Lab Etiquette",
+    "section": "Shared equipment",
+    "text": "Shared equipment\n\nGeneral use\n\nTreat shared equipment with care\nFollow posted instructions and lab norms\nDo not modify settings without understanding the impact on others\n\n\n\nAfter use\n\nClean equipment if required\nReset settings if you changed them\nReport malfunctions or damage promptly\n\nIf equipment is left unusable, the next user is delayed.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#fridges-freezers-and-storage",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#fridges-freezers-and-storage",
+    "title": "Lab Etiquette",
+    "section": "Fridges, freezers, and storage",
+    "text": "Fridges, freezers, and storage\n\nLabelling\nAll stored items must be clearly labelled with: - Name or initials - Contents - Date\nUnlabelled or outdated items may be removed during clean-ups.\n\n\nOrganisation\n\nRespect designated areas and shelves\nDo not move or discard others’ samples without discussion\nAvoid overcrowding shared storage",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#reagents-and-consumables",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#reagents-and-consumables",
+    "title": "Lab Etiquette",
+    "section": "Reagents and consumables",
+    "text": "Reagents and consumables\n\nClose containers properly\nDo not return contaminated reagents to stock\nInform the lab if common reagents are running low\nDo not use unlabelled or expired reagents\n\nIf unsure about a reagent’s status, ask before using it.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#tissue-culture-areas",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#tissue-culture-areas",
+    "title": "Lab Etiquette",
+    "section": "Tissue culture areas",
+    "text": "Tissue culture areas\n\nFollow sterile technique consistently\nClean work areas before and after use\nDispose of waste correctly\nDo not leave flasks or plates without clear labelling\n\nTissue culture spaces must be kept especially orderly to protect all users.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#booking-and-fairness",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#booking-and-fairness",
+    "title": "Lab Etiquette",
+    "section": "Booking and fairness",
+    "text": "Booking and fairness\nWhere equipment or space is shared: - Be considerate of others’ time - Cancel bookings you do not need - Avoid monopolising resources\nIf you need extended or unusual access, communicate this in advance.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#noise-interruptions-and-shared-space-awareness",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#noise-interruptions-and-shared-space-awareness",
+    "title": "Lab Etiquette",
+    "section": "Noise, interruptions, and shared space awareness",
+    "text": "Noise, interruptions, and shared space awareness\n\nBe mindful of noise levels in shared areas\nKeep phone calls and meetings from disrupting others\nRespect that others may be concentrating or running time-sensitive experiments",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#food-drink-and-personal-items",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#food-drink-and-personal-items",
+    "title": "Lab Etiquette",
+    "section": "Food, drink, and personal items",
+    "text": "Food, drink, and personal items\n\nFollow safety rules regarding food and drink in lab areas\nKeep personal items out of experimental spaces\nStore food only in designated areas",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#problems-mistakes-and-accountability",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#problems-mistakes-and-accountability",
+    "title": "Lab Etiquette",
+    "section": "Problems, mistakes, and accountability",
+    "text": "Problems, mistakes, and accountability\nMistakes happen.\nIf something goes wrong: - Inform relevant lab members promptly - Do not hide problems or hope they go unnoticed - Work collaboratively to resolve issues\nEarly communication prevents small problems from becoming larger ones.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#scope",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#scope",
+    "title": "Lab Etiquette",
+    "section": "Scope",
+    "text": "Scope\nThis document focuses on practical etiquette, not: - Scientific judgement - Performance evaluation - Institutional policy\nWhen in doubt, default to clear communication and consideration for others.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#notes",
+    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#notes",
+    "title": "Lab Etiquette",
+    "section": "Notes",
+    "text": "Notes\nThese guidelines reflect current lab practice and may evolve.\nSuggestions for improvement are welcome and should be raised so expectations remain clear and fair.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab etiquette"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html",
+    "title": "Lab Expectations",
+    "section": "",
+    "text": "Protocol ID: GEN-LAB-EXP-001\nVersion: v1\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab expectations"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#purpose",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#purpose",
+    "title": "Lab Expectations",
+    "section": "Purpose",
+    "text": "Purpose\nThis document outlines the shared expectations for all members of the Abdullah Lab.\nIts purpose is to: - Provide clarity on how the lab functions day to day - Set common standards for conduct, communication, and responsibility - Support a professional, respectful, and productive research environment\nThese expectations apply to all lab members, including PhD students, postdoctoral researchers, technicians, and visiting researchers.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab expectations"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#general-principles",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#general-principles",
+    "title": "Lab Expectations",
     "section": "General principles",
-    "text": "General principles\n\nCommunicate clearly and proactively\nChoose the appropriate channel for the topic\nShare information that affects others\nRaise issues early rather than letting them accumulate",
+    "text": "General principles\nThe Abdullah Lab values: - Scientific integrity and reproducibility - Mutual respect and professionalism - Open communication - Shared responsibility for the lab environment\nExpectations are framed to support independence while ensuring that work remains transparent, collaborative, and reproducible.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#communication-channels",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#communication-channels",
-    "title": "Communication Norms",
-    "section": "Communication channels",
-    "text": "Communication channels\n\nMattermost (day-to-day communication)\nMattermost is the primary platform for day-to-day lab communication.\nUse Mattermost for: - Quick questions - Coordination (e.g. equipment, schedules) - Short updates - Announcements relevant to the lab\nKeep messages concise and considerate of others’ time.\n\n\n\nEmail (formal and external communication)\nUse email for: - Formal communication - Administrative matters - Communication with external collaborators - Topics requiring a clear written record\nAvoid using email for rapid back-and-forth discussion when Mattermost is more appropriate.",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#professional-conduct",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#professional-conduct",
+    "title": "Lab Expectations",
+    "section": "Professional conduct",
+    "text": "Professional conduct\nLab members are expected to: - Treat colleagues with respect at all times - Communicate constructively, even in disagreement - Be reliable and follow through on agreed tasks - Contribute positively to the lab environment\nDiscriminatory, dismissive, or unprofessional behaviour is not acceptable.\nConcerns should be raised early, either directly or via a supervisor, before issues escalate.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#meetings",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#meetings",
-    "title": "Communication Norms",
-    "section": "Meetings",
-    "text": "Meetings\n\nSupervisor meetings\n\nPhD students are expected to have regular supervisor meetings\nMeetings are typically weekly or biweekly, as agreed with the supervisor\nFrequency and format may evolve over the course of the PhD\n\n\n\nPreparing for meetings\nTo make meetings effective: - Prepare key updates in advance - Identify questions or decisions that require input - Bring figures or data when relevant\nMeetings work best when both sides arrive prepared.\n\n\n\nGroup meetings and discussions\n\nParticipate actively and respectfully\nAsk questions and contribute constructively\nProvide feedback focused on the science",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#scientific-integrity-and-documentation",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#scientific-integrity-and-documentation",
+    "title": "Lab Expectations",
+    "section": "Scientific integrity and documentation",
+    "text": "Scientific integrity and documentation\nAll work conducted in the lab must meet high standards of scientific integrity.\nExpectations include: - Experiments are planned thoughtfully and documented clearly - Data are recorded contemporaneously and accurately - Deviations from protocols are noted - Data and reagents are traceable\nLab members must follow the lab’s Data Management and Reproducibility Standards, including: - Use of experiment IDs - Consistent file and folder naming - Appropriate data storage - Clear reagent labelling\nBoth paper and electronic lab notebooks are acceptable, provided records are complete, legible, and up to date.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#documentation-and-follow-up",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#documentation-and-follow-up",
-    "title": "Communication Norms",
-    "section": "Documentation and follow-up",
-    "text": "Documentation and follow-up\nImportant decisions or outcomes should be: - Documented (e.g. notes, shared documents) - Reflected in project plans or records - Followed up where action is required\nVerbal agreements should be written down if they affect timelines, responsibilities, or experimental direction.",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#communication-norms",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#communication-norms",
+    "title": "Lab Expectations",
+    "section": "Communication norms",
+    "text": "Communication norms\n\nDay-to-day communication\n\nMattermost is the primary platform for day-to-day lab communication\nUse Mattermost for quick questions, coordination, and updates\nEmail should be used for formal communication, external contacts, or administrative matters\n\n\n\nMeetings\n\nPhD students are expected to have regular supervisor meetings, typically weekly or biweekly, as agreed with their supervisor\nLab members should come prepared to meetings with:\n\nKey updates\nQuestions or points requiring input\nRelevant figures or data when appropriate\n\n\nMeeting frequency and format may evolve over time and should be revisited as projects progress.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#raising-issues-and-concerns",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#raising-issues-and-concerns",
-    "title": "Communication Norms",
-    "section": "Raising issues and concerns",
-    "text": "Raising issues and concerns\nIf you encounter problems: - Scientific (e.g. experiments not working) - Organisational (e.g. access, resources) - Interpersonal (e.g. communication difficulties)\nRaise them early.\nWhere appropriate: - Start with direct discussion - Involve a supervisor or senior lab member if needed\nThe goal is resolution and progress, not blame.",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#ownership-and-responsibility",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#ownership-and-responsibility",
+    "title": "Lab Expectations",
+    "section": "Ownership and responsibility",
+    "text": "Ownership and responsibility\nLab members are expected to take ownership of their work.\nThis includes responsibility for: - Experimental planning and execution - Proper documentation and data storage - Maintenance of personal reagents and samples - Cleaning up after experiments - Following up on results and action items\nAsking for help is encouraged, particularly when blocked or uncertain.\nWaiting too long to raise issues can slow progress and create avoidable problems.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#disagreements-and-feedback",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#disagreements-and-feedback",
-    "title": "Communication Norms",
-    "section": "Disagreements and feedback",
-    "text": "Disagreements and feedback\n\nScientific disagreement is normal and expected\nDiscuss differences professionally and respectfully\nFocus on data and reasoning rather than individuals\n\nFeedback should be constructive and aimed at improving outcomes.",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#shared-resources-and-lab-citizenship",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#shared-resources-and-lab-citizenship",
+    "title": "Lab Expectations",
+    "section": "Shared resources and lab citizenship",
+    "text": "Shared resources and lab citizenship\nThe lab relies on shared resources, including equipment, reagents, and space.\nExpectations include: - Leaving shared equipment clean and ready for the next user - Returning reagents and consumables to their correct location - Clearly labelling personal materials - Reporting broken equipment, low stock, or safety issues promptly\nGood lab citizenship is essential for a functional and supportive environment.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#scope-and-limitations",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#scope-and-limitations",
-    "title": "Communication Norms",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#safety-and-compliance",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#safety-and-compliance",
+    "title": "Lab Expectations",
+    "section": "Safety and compliance",
+    "text": "Safety and compliance\nAll lab members must: - Follow applicable safety regulations and institutional requirements - Complete required inductions (e.g. S2, iFET) before performing relevant work - Adhere to animal facility rules when applicable\nIf unsure about safety or compliance, lab members are expected to pause work and ask.\nNo experiment is urgent enough to justify unsafe practices.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab expectations"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#expectations-around-supervision",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#expectations-around-supervision",
+    "title": "Lab Expectations",
+    "section": "Expectations around supervision",
+    "text": "Expectations around supervision\nSupervision is a shared responsibility.\nSupervisors commit to: - Regular meetings and availability for discussion - Clear communication of priorities and expectations - Constructive feedback on data and progress - Support in training, troubleshooting, and career development - Guidance on publications, presentations, and PhD milestones\nLab members are encouraged to communicate openly about challenges, workload, and progress.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab expectations"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#raising-issues-and-resolving-problems",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#raising-issues-and-resolving-problems",
+    "title": "Lab Expectations",
+    "section": "Raising issues and resolving problems",
+    "text": "Raising issues and resolving problems\nIf issues arise (scientific, organisational, or interpersonal): - Raise them early - Where possible, discuss directly with the relevant person - If needed, involve a supervisor or senior lab member\nThe goal is resolution, not blame.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab expectations"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#scope-and-limitations",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#scope-and-limitations",
+    "title": "Lab Expectations",
     "section": "Scope and limitations",
-    "text": "Scope and limitations\nThis document: - Defines how communication is handled - Supports efficient collaboration\nIt does not: - Replace institutional policies - Define performance evaluation - Specify response-time guarantees",
+    "text": "Scope and limitations\nThis document: - Describes how the lab operates - Sets shared expectations and norms\nIt does not: - Replace institutional policies - Override safety regulations - Define employment contracts",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#notes",
-    "href": "protocols_src/onboarding/lab_info/communication_norms.html#notes",
-    "title": "Communication Norms",
+    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#notes",
+    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#notes",
+    "title": "Lab Expectations",
     "section": "Notes",
-    "text": "Notes\nThese communication norms may evolve as the lab grows.\nIf something is unclear or not working well, raise it so expectations can be adjusted.",
+    "text": "Notes\nThese expectations are intended to evolve with the lab.\nSuggestions for improvement or clarification are welcome and should be raised so this document remains accurate and useful.",
     "crumbs": [
       "Onboarding",
       "Lab information",
-      "Communication norms"
+      "Lab expectations"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/index.html",
-    "href": "protocols_src/onboarding/lab_info/index.html",
-    "title": "Lab Information",
+    "objectID": "protocols_src/onboarding/index.html",
+    "href": "protocols_src/onboarding/index.html",
+    "title": "Onboarding",
     "section": "",
-    "text": "This section describes how the Abdullah Lab operates day to day.\nIt provides guidance on: - Expectations and responsibilities - Professional conduct and lab culture - Practical etiquette in shared lab spaces - Communication norms within the lab\nThese pages are intended to make expectations explicit and to support a respectful, productive working environment.",
+    "text": "This section contains all information required for onboarding new PhD students joining the lab.\nIt is intended to: - Provide a clear onboarding pathway - Define expectations and standards - Centralise practical information needed to work effectively in the lab and institute\nThis section complements (but does not replace) lab protocols and experimental SOPs.",
     "crumbs": [
       "Onboarding",
-      "Lab information",
-      "Lab information overview"
+      "Onboarding overview"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/index.html#purpose",
-    "href": "protocols_src/onboarding/lab_info/index.html#purpose",
-    "title": "Lab Information",
+    "objectID": "protocols_src/onboarding/index.html#purpose",
+    "href": "protocols_src/onboarding/index.html#purpose",
+    "title": "Onboarding",
     "section": "",
-    "text": "This section describes how the Abdullah Lab operates day to day.\nIt provides guidance on: - Expectations and responsibilities - Professional conduct and lab culture - Practical etiquette in shared lab spaces - Communication norms within the lab\nThese pages are intended to make expectations explicit and to support a respectful, productive working environment.",
+    "text": "This section contains all information required for onboarding new PhD students joining the lab.\nIt is intended to: - Provide a clear onboarding pathway - Define expectations and standards - Centralise practical information needed to work effectively in the lab and institute\nThis section complements (but does not replace) lab protocols and experimental SOPs.",
     "crumbs": [
       "Onboarding",
-      "Lab information",
-      "Lab information overview"
+      "Onboarding overview"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/index.html#pages-in-this-section",
-    "href": "protocols_src/onboarding/lab_info/index.html#pages-in-this-section",
-    "title": "Lab Information",
+    "objectID": "protocols_src/onboarding/index.html#how-to-use-this-section",
+    "href": "protocols_src/onboarding/index.html#how-to-use-this-section",
+    "title": "Onboarding",
+    "section": "How to use this section",
+    "text": "How to use this section\n\nNew PhD students\n\nStart with the Onboarding checklist\nComplete mandatory items in the first weeks\nUse the remaining pages as reference material\n\n\n\nSupervisors and lab members\n\nUse this section as the canonical reference for onboarding\nAvoid duplicating onboarding instructions elsewhere\nUpdate pages here rather than sharing ad hoc documents",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/index.html#core-onboarding-document",
+    "href": "protocols_src/onboarding/index.html#core-onboarding-document",
+    "title": "Onboarding",
+    "section": "Core onboarding document",
+    "text": "Core onboarding document\n\nOnboarding checklist\nA time-ordered checklist covering access, training, expectations, and setup.",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/index.html#section-overview",
+    "href": "protocols_src/onboarding/index.html#section-overview",
+    "title": "Onboarding",
+    "section": "Section overview",
+    "text": "Section overview\n\nAccess\nAccount setup, software access, computing resources, and booking systems.\n\n\nLab information\nDay-to-day lab operation, expectations, etiquette, communication norms, and lab-specific models and techniques.\n\n\nInstitute\nOverview of the institute, research groups, shared models, techniques, and core facilities.\n\n\nTraining\nMandatory training requirements and standards, including data handling and reproducibility.\n\n\nAdministration\nUniversity and institute administrative information relevant to PhD students.\n\n\nTemplates\nReusable forms and acknowledgement documents related to onboarding.",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/index.html#scope-and-boundaries",
+    "href": "protocols_src/onboarding/index.html#scope-and-boundaries",
+    "title": "Onboarding",
+    "section": "Scope and boundaries",
+    "text": "Scope and boundaries\nThis onboarding section: - Describes what exists and what is expected - Links to protocols and SOPs where appropriate\nIt does not: - Contain experimental protocols - Replace safety or ethics training - Serve as a troubleshooting guide for experiments",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/index.html#questions-or-missing-information",
+    "href": "protocols_src/onboarding/index.html#questions-or-missing-information",
+    "title": "Onboarding",
+    "section": "Questions or missing information",
+    "text": "Questions or missing information\nIf information is missing or unclear: - First, check whether it exists elsewhere in the documentation - If not, raise it with your supervisor or a senior lab member so it can be added here\nThis onboarding documentation is intended to evolve with the lab.",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/research_groups.html",
+    "href": "protocols_src/onboarding/institute/research_groups.html",
+    "title": "Research Groups at IMMEI",
+    "section": "",
+    "text": "Protocol ID: ONB-IMMEI-GROUPS-001\nVersion: v1\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Research groups"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/research_groups.html#institute-administration-and-key-contacts",
+    "href": "protocols_src/onboarding/institute/research_groups.html#institute-administration-and-key-contacts",
+    "title": "Research Groups at IMMEI",
+    "section": "Institute administration and key contacts",
+    "text": "Institute administration and key contacts\n\nInstitute Management: Lucie Hrvat-Delforge\n\nScience Management: Dr. Johanna Breuer\n\nFlow Cytometry Core Facility Manager: Prof. Natalio Garbi\n\nTechnical Core Facility Manager: Andreas Dolf\n\niFET Management: Daniela Krauss",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Research groups"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/research_groups.html#research-groups",
+    "href": "protocols_src/onboarding/institute/research_groups.html#research-groups",
+    "title": "Research Groups at IMMEI",
+    "section": "Research groups",
+    "text": "Research groups\n\nProf. Dr. Christian Kurts Laboratory\nCore focus\n- Kidney immunology and inflammatory kidney disease mechanisms\n- Antigen presentation and dendritic cell biology in tissue inflammation\n- Translational immunology linking experimental models to clinical nephrology\nTypical models and approaches\n- Mouse models of glomerulonephritis and inflammatory kidney disease\n- Flow cytometry–based immune phenotyping and tissue immunology\n- Cleared tissue imaging and computational pathology\n- Innate immune sensing and interferon-driven inflammatory pathways\nSelected recent/representative publications\n- Kidney immunology from pathophysiology to clinical translation — Nat Rev Immunol\n- Residence of mice in metabolic cages reduces experimental kidney inflammation through stress-induced glucocorticoids — JCI Insight\n- Low-dose glucocorticoids attenuate crescentic glomerulonephritis by inhibiting the local differentiation of proinflammatory neutrophils — Sci Transl Med\n- Monocyte-Derived Macrophages Aggravate Pulmonary Vasculitis via cGAS/STING/IFN-Mediated Nucleic Acid Sensing — J Exp Med\n- Determining Individual Glomerular Proteinuria and Periglomerular Infiltration in a Cleared Murine Kidney by a 3D Fast Marching Algorithm — Kidney Int\n\n\n\nProf. Dr. Natalio Garbi Laboratory\nCore focus\n- Antigen presentation and immune regulation during infection and inflammation\n- Balancing protective immunity with immune-mediated pathology\n- Tissue-resident and infiltrating immune cell interactions\nTypical models and approaches\n- Mouse models of lung infection and inflammation\n- Viral and bacterial infection systems\n- Multi-parameter flow cytometry and tissue imaging\n- Reporter mouse strains and conditional immune cell perturbation\nSelected recent/representative publications\n- Opposing roles of resident and infiltrating immune cells in the defense against Legionella longbeachae via IL-18R/IFN-γ/ROS axis in mice — Mucosal Immunology\n- Rapid Protection against Viral Infections by Chemokine-Accelerated Post-Exposure Vaccination — Frontiers in Immunology\n- Conditional NKT Cell Depletion in Mice Reveals a Negative Feedback Loop That Regulates CTL Cross-Priming — Journal of Immunology\n- Interferon-Induced IL-10 Drives Systemic T-Cell Dysfunction during Chronic Liver Injury — Journal of Hepatology\n- Cigarette Smoke Depletes Alveolar Macrophages and Delays Clearance of Legionella pneumophila — AJP Lung\n\n\n\nProf. Dr. Veronika Lukacs-Kornek Laboratory\nCore focus\n- Immune–stromal interactions in tissue homeostasis and disease\n- Stromal cell biology and extracellular matrix remodeling\n- Chronic inflammatory disease contexts including liver and lung pathology\nTypical models and approaches\n- Mouse models of tissue inflammation and fibrosis\n- Stromal cell isolation and high-dimensional flow cytometry\n- Multi-omics approaches to tissue remodeling\n- Liver and lung immunopathology\nSelected recent/representative publications\n- Global matrisome changes in obese lung are linked to fibroblastic stroma and premature aging — Cell Reports\n- Isolation, Purification, and Comprehensive Flow Cytometry Assessment of Lung Stromal Cells — Current Protocols\n- Increased Type-I Interferon Level Is Associated with Liver Damage and Fibrosis in Primary Sclerosing Cholangitis — Hepatology Communications\n- The role of dendritic cells in MASH: friends or foes? — Frontiers in Immunology\n- Inflammatory responses on the road from NASH to HCC — Frontiers in Immunology\n\n\n\nProf. Dr. Zeinab Abdullah Laboratory\nCore focus\n- Adaptive immune regulation during chronic inflammation\n- T cell differentiation and dysfunction in tissue environments\n- Systemic immune consequences of chronic organ inflammation\nTypical models and approaches\n- Mouse models of chronic liver inflammation and injury\n- Infection models including LCMV and bacterial challenge\n- High-dimensional flow cytometry and functional T cell assays\n- Tissue-resident versus systemic immune profiling\nSelected recent/representative publications\n- Interferon-Induced IL-10 Drives Systemic T-Cell Dysfunction during Chronic Liver Injury — Journal of Hepatology\n- Lymph nodes fuel KLF2-dependent effector CD8+ T cell differentiation during chronic infection and checkpoint blockade — Nature Immunology\n- Transcriptional regulator SATB1 limits CD8+ T cell population expansion and effector differentiation in chronic infection and cancer — Nature Immunology\n- Lymph-node-derived stem-like but not tumor-tissue-resident CD8+ T cells fuel anticancer immunity — Nature Immunology\n- Determining Individual Glomerular Proteinuria and Periglomerular Infiltration in a Cleared Murine Kidney by a 3D Fast Marching Algorithm — Kidney International\n\n\n\nProf. Dr. Tim Rollenske Laboratory\nCore focus\n- Mucosal immunology and antibody-mediated host defense\n- Functional antibody responses and host–microbiota interactions\n- Antibody discovery and recombinant antibody engineering\nTypical models and approaches\n- Single-cell B cell isolation and antibody cloning\n- Recombinant antibody expression and purification\n- Mouse models of mucosal colonisation and immunity\n- Functional antibody testing in vivo and in vitro\nSelected recent/representative publications\n- Efficient Expression and Purification of Recombinant Mouse Dimeric IgA — European Journal of Immunology\n- Expression Cloning of Antibodies from Single Human B Cells — Methods in Molecular Biology\n- Parallelism of intestinal secretory IgA shapes functional microbial fitness — Nature\n- “ELO, world!” – Early-life origins of B cells — Immunity\n- Cross-specificity of protective human antibodies against Klebsiella pneumoniae — Nature Medicine\n\n\n\nDr. Janine Becker-Gotot Laboratory\nCore focus\n- Immune tolerance and regulatory T cell biology\n- Antigen-specific immune regulation\n- Mechanisms linking immune regulation and tissue pathology\nTypical models and approaches\n- Mouse models of immune tolerance and regulation\n- Regulatory T cell phenotyping and functional assays\n- Kidney and tissue inflammation models\n- Translational immune tolerance contexts\nSelected recent/representative publications\n- Immune Tolerance against Infused FVIII in Hemophilia A Is Mediated by PD-L1+ Regulatory T Cells — Journal of Clinical Investigation\n- Renal IL-23–Dependent Type 3 Innate Lymphoid Cells Link Crystal-induced Inflammasome Activation with Kidney Fibrosis — Journal of Immunology\n- Rapid Protection against Viral Infections by Chemokine-Accelerated Post-Exposure Vaccination — Frontiers in Immunology\n- Antibody cross-reactivity between casein and myelin-associated glycoprotein results in central nervous system demyelination — PNAS\n- Immune regulation in tissue inflammation — representative recent work\n\n\n\nProf. Dr. Axel Kallies Laboratory\nCore focus\n- T cell differentiation and fate decisions\n- Stem-like and exhausted T cell states\n- T cell function in chronic infection, cancer, and tissue contexts\nTypical models and approaches\n- Mouse models of chronic infection and cancer\n- Tissue-resident versus lymphoid T cell compartment analysis\n- Transcriptional regulation of T cell fate\n- High-dimensional immune profiling\nSelected recent/representative publications\n- Lymph-node-derived stem-like but not tumor-tissue-resident CD8+ T cells fuel anticancer immunity — Nature Immunology\n- Lymph nodes fuel KLF2-dependent effector CD8+ T cell differentiation during chronic infection and checkpoint blockade — Nature Immunology\n- Transcriptional regulator SATB1 limits CD8+ T cell population expansion and effector differentiation in chronic infection and cancer — Nature Immunology\n- Stem-like tissue-resident memory T cells control functional heterogeneity and reactivation of T cell memory in the intestine — Science Immunology\n- The co-inhibitory receptor TIGIT promotes tissue-protective functions in T cells — Nature Immunology",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Research groups"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/index.html",
+    "href": "protocols_src/onboarding/institute/index.html",
+    "title": "Institute Information",
+    "section": "",
+    "text": "This section provides an overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI).\nIt is intended to help new lab members: - Understand the institute’s structure and research environment - Identify research groups and their scientific focus - Navigate shared infrastructure and core facilities",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/index.html#purpose",
+    "href": "protocols_src/onboarding/institute/index.html#purpose",
+    "title": "Institute Information",
+    "section": "",
+    "text": "This section provides an overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI).\nIt is intended to help new lab members: - Understand the institute’s structure and research environment - Identify research groups and their scientific focus - Navigate shared infrastructure and core facilities",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/index.html#pages-in-this-section",
+    "href": "protocols_src/onboarding/institute/index.html#pages-in-this-section",
+    "title": "Institute Information",
     "section": "Pages in this section",
-    "text": "Pages in this section\n\nLab Expectations\nShared standards for conduct, supervision, responsibility, and scientific integrity.\nLab Etiquette\nPractical guidance on day-to-day behaviour in shared spaces, including benches, equipment, and storage.\nCommunication Norms\nHow communication works in the lab, including channels, meetings, and escalation.",
+    "text": "Pages in this section\n\nInstitute Overview\nMission, structure, and scientific environment of IMMEI.\nResearch Groups\nOverview of research groups at IMMEI, including scientific focus, models, and approaches.\nCore Facilities\nShared infrastructure, access procedures, and key contacts for institute-level facilities.",
     "crumbs": [
       "Onboarding",
-      "Lab information",
-      "Lab information overview"
+      "Institute information",
+      "Institute overview"
     ]
   },
   {
-    "objectID": "protocols_src/onboarding/lab_info/index.html#scope",
-    "href": "protocols_src/onboarding/lab_info/index.html#scope",
-    "title": "Lab Information",
+    "objectID": "protocols_src/onboarding/institute/index.html#scope",
+    "href": "protocols_src/onboarding/institute/index.html#scope",
+    "title": "Institute Information",
     "section": "Scope",
-    "text": "Scope\nThis section focuses on lab-level norms and practices.\nInstitute-wide structure, facilities, and administration are covered separately under Institute Information.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab information overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "",
-    "text": "Protocol ID: GEN-DATA-STD-001\nVersion: v1\nAuthor: Dillon Corvino",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#purpose",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#purpose",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Purpose",
-    "text": "Purpose\nThis document defines the mandatory standards for data management and reproducibility in the Abdullah Lab.\nThese standards ensure that: - Experiments can be understood and reproduced by others - Data remain interpretable over time - Projects can be transferred without loss of context - Reagents and materials are traceable\nAll lab members are expected to follow these standards.",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#guiding-principles",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#guiding-principles",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Guiding principles",
-    "text": "Guiding principles\n\nClarity over convenience\nConsistency across the lab\nOne experiment → one clear identifier\nRaw data are never altered\nPhysical labels must match digital records",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#experiment-identifiers",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#experiment-identifiers",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Experiment identifiers",
-    "text": "Experiment identifiers\nEvery experiment must have a unique experiment ID.\n\nApproved formats\nExperiment IDs must follow one of the following formats:\n&lt;initials&gt;&lt;YY&gt;_&lt;NN&gt;\n&lt;initials&gt;&lt;NN&gt;\nWhere: - &lt;initials&gt; = experimenter initials (e.g. DC) - &lt;YY&gt; = two-digit year (e.g. 25) - &lt;NN&gt; = sequential experiment number\n\n\nExamples\nDC25_01\nDC25_02\nDC01\nDC02\nThe experiment ID must be used consistently across: - Folder names - File names - Lab notebook entries - Analysis scripts",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#file-and-folder-naming",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#file-and-folder-naming",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "File and folder naming",
-    "text": "File and folder naming\n\nGeneral rules\n\nLowercase letters only\nUnderscores (_) only\nNo spaces or special characters\nAvoid vague terms such as:\n\nfinal\nnew\ntest\n\n\n\n\nRecommended folder structure\nexperiment_id/\n├── raw/\n├── processed/\n├── analysis/\n├── figures/\n└── notes/\n\n\nFile naming\nFiles should almost always include the experiment ID to ensure traceability outside the original folder context.\nThe experiment ID should appear at the start of the filename, followed by a short descriptive suffix.\nExamples\nDC25_01_gating_strategy.pdf\nDC25_01_analysis.wsp\nDC25_01_cell_counts.xlsx\nDC25_01_analysis_notes.md\nFiles that do not include the experiment ID should be the exception and must still be unambiguous in context.",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#approved-data-storage-locations",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#approved-data-storage-locations",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Approved data storage locations",
-    "text": "Approved data storage locations\n\nSciebo (approved primary storage)\nSciebo is the approved storage location for lab data.\nUse Sciebo for: - Raw experimental data - Processed data - Analysis outputs - Shared documents\n\n\nLocal machines\n\nAllowed temporarily only\nRaw data must be transferred to Sciebo promptly\nLocal machines must not be the sole copy of data\n\n\n\nProhibited storage\n\nPersonal cloud services (e.g. Google Drive, Dropbox)\nUSB sticks as primary or long-term storage",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#raw-vs-processed-data",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#raw-vs-processed-data",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Raw vs processed data",
-    "text": "Raw vs processed data\n\nRaw data\n\nMust remain unmodified\nMust retain original file formats\nMust be stored in a dedicated raw/ directory\n\n\n\nProcessed data\n\nStored separately from raw data\nProcessing steps must be documented\nScript-based processing is preferred",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#reagent-labelling-standards",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#reagent-labelling-standards",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Reagent labelling standards",
-    "text": "Reagent labelling standards\nAll reagents must be clearly labelled at the time of preparation or opening.\n\nRequired information on reagent labels\nEach reagent container must include: - Reagent name or initials / identifier - Sterile or non-sterile status - Date opened or prepared - Initials of the person who prepared/opened it\nUnlabelled or ambiguously labelled reagents must not be used.",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#viral-stocks",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#viral-stocks",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Viral stocks",
-    "text": "Viral stocks\nViral stocks must be labelled with sufficient information to ensure traceability.\n\nRecommended format\nvirus_strain_passage_YYYY-MM-DD\nExample\nlcmv_we_p3_2025-02-10\nRecords must include: - Source - Passage number - Storage location",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#cell-lines",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#cell-lines",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Cell lines",
-    "text": "Cell lines\nCell lines must be labelled in a similar manner to viral stocks, ensuring traceability.\n\nRequired information\nCell line labels must include: - Cell line name - Passage number - Date - Initials\nExample\njurkat_p18_2025-03-04_DC\nA master record should document: - Cell line source - Genetic modifications (if any) - Thaw date and passage history",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#tissue-culture-flask-labelling",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#tissue-culture-flask-labelling",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Tissue culture flask labelling",
-    "text": "Tissue culture flask labelling\nAll tissue culture flasks must be clearly labelled.\n\nRequired information on flasks\n\nCell line name\nPassage number\nDate\nMedia used\nInitials\n\nExample\njurkat | p18 | 2025-03-04 | dmem+penstrep+neaas | DC",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#media-and-reagent-modifications",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#media-and-reagent-modifications",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Media and reagent modifications",
-    "text": "Media and reagent modifications\nAny modification to base media must be recorded.\n\nRequirements\n\nRecord all additives (e.g. antibiotics, supplements)\nUse consistent shorthand\nEnsure the formulation is documented digitally\n\n\n\nExample\nDMEM + Pen/Strep + NEAAs\nIf media composition differs from standard lab formulations, this must be clearly documented.",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#record-keeping",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#record-keeping",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Record keeping",
-    "text": "Record keeping\nAt minimum, records for each experiment must include: - Experiment ID - Date - Operator - Biological material - Reagents used - Deviations from protocol\nElectronic or paper lab notebooks are acceptable, but records must be complete and legible.",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#versioning",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#versioning",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Versioning",
-    "text": "Versioning\n\nUse sequential versions: v1, v2, v3\nMajor changes require a new version\nDeprecated data or reagents must not be deleted without discussion",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#responsibilities",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#responsibilities",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Responsibilities",
-    "text": "Responsibilities\n\nEach experimenter is responsible for compliance\nSupervisors may review organisation and records\nIssues should be corrected promptly when identified",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#notes",
-    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#notes",
-    "title": "Data Management and Reproducibility Standards",
-    "section": "Notes",
-    "text": "Notes\nThese standards are living guidelines and may evolve.\nAny ambiguities or gaps should be raised so this document can be updated.",
-    "crumbs": [
-      "Onboarding",
-      "Data and reproducibility"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html",
-    "href": "protocols_src/onboarding/institute/institute_overview.html",
-    "title": "Institute Overview",
-    "section": "",
-    "text": "Protocol ID: GEN-INST-OVR-001\nVersion: v2\nAuthor: Dillon Corvino",
+    "text": "Scope\nThis section describes institute-level organisation and resources.\nLab-specific practices and expectations are covered under Lab Information.",
     "crumbs": [
       "Onboarding",
       "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#purpose",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#purpose",
-    "title": "Institute Overview",
-    "section": "Purpose",
-    "text": "Purpose\nThis page provides a concise overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI) at the University Hospital Bonn.\nIt is intended to help new PhD students orient themselves within the broader research environment, understand the institute’s mission and structure, and identify opportunities for cross-group interaction and collaboration.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#mission-and-scientific-focus",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#mission-and-scientific-focus",
-    "title": "Institute Overview",
-    "section": "Mission and scientific focus",
-    "text": "Mission and scientific focus\nThe Institute of Molecular Medicine and Experimental Immunology (IMMEI) was founded in 2002 and is located in the Biomedical Center II on the Venusberg Campus of the Medical Faculty at the University Hospital Bonn. Its mission is to understand the molecular and cellular mechanisms controlling immune responses in tissues, including how these responses lead to inflammation, immunity, or immune tolerance. Comprehensive mechanistic insight is essential to understand defence against infections, tumour immunity, and the avoidance of autoimmunity, with the ultimate goal of informing new therapeutic strategies that modulate local immune responses for patient benefit.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#institute-structure-and-research-groups",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#institute-structure-and-research-groups",
-    "title": "Institute Overview",
-    "section": "Institute structure and research groups",
-    "text": "Institute structure and research groups\nIMMEI hosts multiple independent research groups, each focused on specific immunological questions and disease contexts, collectively addressing immune mechanisms across organs and biological systems. Six core groups drive research at the institute, with additional guest groups from clinical departments.\nKey group leaders include:\n\nProf. Dr. Christian Kurts – Institute Director and expert in dendritic cell biology, peripheral tolerance, and immune regulation.\n\nProf. Dr. Zeinab Abdullah – Studies chronic inflammation in the liver and its impact on adaptive immunity.\n\nProf. Dr. Veronika Lukacs-Kornek – Investigates immunoregulation and tissue resilience in barrier organs (e.g., lung).\n\nProf. Dr. Natalio Garbi – Scientific Core Facility Manager and research on immune cell interactions.\n\nProf. Dr. Tim Rollenske – Focuses on B-cell and antibody responses and immune regulation.\n\nDr. Janine Becker-Gotot – Junior research group leader with interest in immune tolerance mechanisms.\n\nProf. Dr. Axel Kallies – Faculty collaborator (University of Melbourne) working on immune regulation.\n\nIn addition to core groups, clinical departments (e.g., Oncology, Anesthesiology, Nephrology) and collaborative guest researchers contribute to the scientific community at IMMEI.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#research-themes",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#research-themes",
-    "title": "Institute Overview",
-    "section": "Research themes",
-    "text": "Research themes\nIMMEI’s research spans: - Immune regulation and tolerance - Mechanisms of inflammation in kidney, lung, liver, and vasculature - Immune responses to infection and tissue stress - Translational immunology bridging basic mechanisms and potential therapies\nResearch integrates diverse biological systems and experimental approaches to address fundamental and disease-relevant immunological questions.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#shared-models-and-techniques",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#shared-models-and-techniques",
-    "title": "Institute Overview",
-    "section": "Shared models and techniques",
-    "text": "Shared models and techniques\nAcross the institute, a range of models and techniques support research and training, including: - Mouse models of infection, immune regulation, and chronic inflammation - Human immune cell phenotyping - Flow cytometry and cell sorting (via the Flow Cytometry Core Facility) - In vivo imaging modalities - Molecular and cellular assays - Transcriptomic and other high-dimensional data approaches\nPhD students are encouraged to explore techniques beyond their immediate project to broaden expertise and enable collaboration.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#core-facilities-and-collaborations",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#core-facilities-and-collaborations",
-    "title": "Institute Overview",
-    "section": "Core facilities and collaborations",
-    "text": "Core facilities and collaborations\nIMMEI maintains and interacts with shared scientific infrastructure, such as: - The Flow Cytometry Core Facility (FCCF) for advanced cell analysis and sorting - Experimental therapy platforms - Immune profiling units\nThe institute also participates in collaborative research consortia, including the ImmunoSensation3 clusters of excellence, and DFG-funded collaborative research centres addressing topics such as metaflammation and nucleic acid immunity.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#scientific-environment-at-bonn",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#scientific-environment-at-bonn",
-    "title": "Institute Overview",
-    "section": "Scientific environment at Bonn",
-    "text": "Scientific environment at Bonn\nIMMEI is embedded in a larger biomedical research ecosystem involving the University of Bonn and University Hospital Bonn, offering access to additional core facilities, cross-institute collaborations, and clinical research partners. PhD students benefit from interaction with complementary expertise, resources, and training opportunities across the campus and extended networks.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#how-this-benefits-phd-students",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#how-this-benefits-phd-students",
-    "title": "Institute Overview",
-    "section": "How this benefits PhD students",
-    "text": "How this benefits PhD students\nAs a new PhD student, understanding the institute context allows you to: - Identify potential collaborators and technical expertise - Navigate access to shared facilities - Situate your project within a broader scientific framework - Engage in cross-group discussions and seminars\nMore detailed information on specific research groups and facilities can be found in dedicated onboarding pages.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#scope",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#scope",
-    "title": "Institute Overview",
-    "section": "Scope",
-    "text": "Scope\nThis overview is intended as orientation and context. It does not prescribe scientific direction or define individual group projects.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/institute_overview.html#notes",
-    "href": "protocols_src/onboarding/institute/institute_overview.html#notes",
-    "title": "Institute Overview",
-    "section": "Notes",
-    "text": "Notes\nInstitute structure, personnel, and research focus evolve over time. If you notice gaps or have updates, please raise them so this document can be kept current.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview page"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html",
-    "href": "protocols_src/onboarding/institute/core_facilities.html",
-    "title": "Core Facilities",
-    "section": "",
-    "text": "Protocol ID: ONB-CORE-FAC-001\nVersion: v1\nAuthor: Dillon Corvino",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#purpose",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#purpose",
-    "title": "Core Facilities",
-    "section": "Purpose",
-    "text": "Purpose\nThis page provides an overview of core facilities used by IMMEI research groups and the Abdullah Lab.\nIt is intended to help new PhD students: - Understand which facilities exist - Know who to contact for access and training - Navigate required inductions and introductions\nThis page describes what facilities exist and how to access them, not how to perform experiments.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#flow-cytometry-core-facility-fccf",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#flow-cytometry-core-facility-fccf",
-    "title": "Core Facilities",
-    "section": "Flow Cytometry Core Facility (FCCF)",
-    "text": "Flow Cytometry Core Facility (FCCF)\nThe Flow Cytometry Core Facility (FCCF) provides flow cytometry analysis, high-parameter acquisition, and cell sorting services to IMMEI and the wider Medical Faculty.\n\nAccess and training\nBefore using any FCCF instruments, users must: - Arrange an induction and training - Be approved for independent instrument use (where applicable)\nPrimary contact for induction and training:\nAndreas Dolf\nNew users should contact Andreas Dolf early during onboarding to: - Schedule an introduction - Discuss training requirements - Clarify which instruments are appropriate for their project\n\n\nAvailable instrumentation (overview)\nThe FCCF hosts a range of flow cytometers and sorters, including: - Multi-laser analyzers for high-parameter flow cytometry - High-speed cell sorters suitable for: - Immune cell sorting - Rare population isolation - Downstream functional and molecular assays\nSpecific instrument availability, configurations, and booking procedures are maintained by the FCCF and may change over time.\n\n\nFCCF staff\nThe FCCF is supported by dedicated technical and scientific staff who: - Provide user training - Support experimental planning - Assist with complex sorting and analysis tasks\nUsers are encouraged to engage with FCCF staff when planning demanding or non-standard experiments.\n\n\nFurther information\nOfficial FCCF information, updates, and contact details are available at:\nhttps://www.medfak.uni-bonn.de/en/research/infrastructure/fccf/home",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#animal-facility",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#animal-facility",
-    "title": "Core Facilities",
-    "section": "Animal facility",
-    "text": "Animal facility\nAnimal work is conducted through the central animal facility at the University Hospital Bonn.\n\nAccess and introduction\nTo obtain access: - Contact Daniela Krauss - Arrange required introductions and approvals - Complete any mandatory inductions before starting animal work\n\n\nMouse management\n\nMouse colonies and experimental records are managed using PyRAT\nAll mouse work must be recorded according to facility and institutional requirements\n\nAnimal work must comply with all ethical approvals, institutional rules, and national regulations.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#imaging-facilities",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#imaging-facilities",
-    "title": "Core Facilities",
-    "section": "Imaging facilities",
-    "text": "Imaging facilities\n(To be completed)",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#proteomics-facilities",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#proteomics-facilities",
-    "title": "Core Facilities",
-    "section": "Proteomics facilities",
-    "text": "Proteomics facilities\n(To be completed)",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#sequencing-and-genomics-facilities",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#sequencing-and-genomics-facilities",
-    "title": "Core Facilities",
-    "section": "Sequencing and genomics facilities",
-    "text": "Sequencing and genomics facilities\n(To be completed)",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#scope-and-limitations",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#scope-and-limitations",
-    "title": "Core Facilities",
-    "section": "Scope and limitations",
-    "text": "Scope and limitations\nThis page: - Summarises available infrastructure - Provides access pathways and contacts\nIt does not: - Replace facility-specific SOPs - Provide experimental protocols - Guarantee instrument availability",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/core_facilities.html#notes",
-    "href": "protocols_src/onboarding/institute/core_facilities.html#notes",
-    "title": "Core Facilities",
-    "section": "Notes",
-    "text": "Notes\nCore facilities evolve over time.\nIf access procedures or contacts change, this document should be updated accordingly.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Core facilities"
+      "Institute overview"
     ]
   },
   {
@@ -2305,544 +2206,675 @@
     "text": "Equipment\n\n\n\nEquipment\nSpecification / Notes\n\n\n\n\nCO₂ incubator\n37 °C, 5% CO₂\n\n\nBiological safety cabinet\nBSL2 work\n\n\nBenchtop centrifuge\n300 g for washing\n\n\nWater bath\n37 °C for thawing\n\n\nControlled-rate freezer\ne.g., Mr Frosty\n\n\n−70/−80 °C freezer\nFor initial freezing\n\n\nLiquid nitrogen storage\nLong-term storage\n\n\nCell counter/hemocytometer\nFor counting"
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html",
-    "href": "protocols_src/onboarding/onboarding_checklist.html",
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html",
+    "href": "protocols_src/onboarding/institute/core_facilities.html",
+    "title": "Core Facilities",
+    "section": "",
+    "text": "Protocol ID: ONB-CORE-FAC-001\nVersion: v1\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#purpose",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#purpose",
+    "title": "Core Facilities",
+    "section": "Purpose",
+    "text": "Purpose\nThis page provides an overview of core facilities used by IMMEI research groups and the Abdullah Lab.\nIt is intended to help new PhD students: - Understand which facilities exist - Know who to contact for access and training - Navigate required inductions and introductions\nThis page describes what facilities exist and how to access them, not how to perform experiments.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#flow-cytometry-core-facility-fccf",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#flow-cytometry-core-facility-fccf",
+    "title": "Core Facilities",
+    "section": "Flow Cytometry Core Facility (FCCF)",
+    "text": "Flow Cytometry Core Facility (FCCF)\nThe Flow Cytometry Core Facility (FCCF) provides flow cytometry analysis, high-parameter acquisition, and cell sorting services to IMMEI and the wider Medical Faculty.\n\nAccess and training\nBefore using any FCCF instruments, users must: - Arrange an induction and training - Be approved for independent instrument use (where applicable)\nPrimary contact for induction and training:\nAndreas Dolf\nNew users should contact Andreas Dolf early during onboarding to: - Schedule an introduction - Discuss training requirements - Clarify which instruments are appropriate for their project\n\n\nAvailable instrumentation (overview)\nThe FCCF hosts a range of flow cytometers and sorters, including: - Multi-laser analyzers for high-parameter flow cytometry - High-speed cell sorters suitable for: - Immune cell sorting - Rare population isolation - Downstream functional and molecular assays\nSpecific instrument availability, configurations, and booking procedures are maintained by the FCCF and may change over time.\n\n\nFCCF staff\nThe FCCF is supported by dedicated technical and scientific staff who: - Provide user training - Support experimental planning - Assist with complex sorting and analysis tasks\nUsers are encouraged to engage with FCCF staff when planning demanding or non-standard experiments.\n\n\nFurther information\nOfficial FCCF information, updates, and contact details are available at:\nhttps://www.medfak.uni-bonn.de/en/research/infrastructure/fccf/home",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#animal-facility",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#animal-facility",
+    "title": "Core Facilities",
+    "section": "Animal facility",
+    "text": "Animal facility\nAnimal work is conducted through the central animal facility at the University Hospital Bonn.\n\nAccess and introduction\nTo obtain access: - Contact Daniela Krauss - Arrange required introductions and approvals - Complete any mandatory inductions before starting animal work\n\n\nMouse management\n\nMouse colonies and experimental records are managed using PyRAT\nAll mouse work must be recorded according to facility and institutional requirements\n\nAnimal work must comply with all ethical approvals, institutional rules, and national regulations.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#imaging-facilities",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#imaging-facilities",
+    "title": "Core Facilities",
+    "section": "Imaging facilities",
+    "text": "Imaging facilities\n(To be completed)",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#proteomics-facilities",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#proteomics-facilities",
+    "title": "Core Facilities",
+    "section": "Proteomics facilities",
+    "text": "Proteomics facilities\n(To be completed)",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#sequencing-and-genomics-facilities",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#sequencing-and-genomics-facilities",
+    "title": "Core Facilities",
+    "section": "Sequencing and genomics facilities",
+    "text": "Sequencing and genomics facilities\n(To be completed)",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#scope-and-limitations",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#scope-and-limitations",
+    "title": "Core Facilities",
+    "section": "Scope and limitations",
+    "text": "Scope and limitations\nThis page: - Summarises available infrastructure - Provides access pathways and contacts\nIt does not: - Replace facility-specific SOPs - Provide experimental protocols - Guarantee instrument availability",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/core_facilities.html#notes",
+    "href": "protocols_src/onboarding/institute/core_facilities.html#notes",
+    "title": "Core Facilities",
+    "section": "Notes",
+    "text": "Notes\nCore facilities evolve over time.\nIf access procedures or contacts change, this document should be updated accordingly.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Core facilities"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html",
+    "href": "protocols_src/onboarding/institute/institute_overview.html",
+    "title": "Institute Overview",
+    "section": "",
+    "text": "Protocol ID: GEN-INST-OVR-001\nVersion: v2\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#purpose",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#purpose",
+    "title": "Institute Overview",
+    "section": "Purpose",
+    "text": "Purpose\nThis page provides a concise overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI) at the University Hospital Bonn.\nIt is intended to help new PhD students orient themselves within the broader research environment, understand the institute’s mission and structure, and identify opportunities for cross-group interaction and collaboration.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#mission-and-scientific-focus",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#mission-and-scientific-focus",
+    "title": "Institute Overview",
+    "section": "Mission and scientific focus",
+    "text": "Mission and scientific focus\nThe Institute of Molecular Medicine and Experimental Immunology (IMMEI) was founded in 2002 and is located in the Biomedical Center II on the Venusberg Campus of the Medical Faculty at the University Hospital Bonn. Its mission is to understand the molecular and cellular mechanisms controlling immune responses in tissues, including how these responses lead to inflammation, immunity, or immune tolerance. Comprehensive mechanistic insight is essential to understand defence against infections, tumour immunity, and the avoidance of autoimmunity, with the ultimate goal of informing new therapeutic strategies that modulate local immune responses for patient benefit.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#institute-structure-and-research-groups",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#institute-structure-and-research-groups",
+    "title": "Institute Overview",
+    "section": "Institute structure and research groups",
+    "text": "Institute structure and research groups\nIMMEI hosts multiple independent research groups, each focused on specific immunological questions and disease contexts, collectively addressing immune mechanisms across organs and biological systems. Six core groups drive research at the institute, with additional guest groups from clinical departments.\nKey group leaders include:\n\nProf. Dr. Christian Kurts – Institute Director and expert in dendritic cell biology, peripheral tolerance, and immune regulation.\n\nProf. Dr. Zeinab Abdullah – Studies chronic inflammation in the liver and its impact on adaptive immunity.\n\nProf. Dr. Veronika Lukacs-Kornek – Investigates immunoregulation and tissue resilience in barrier organs (e.g., lung).\n\nProf. Dr. Natalio Garbi – Scientific Core Facility Manager and research on immune cell interactions.\n\nProf. Dr. Tim Rollenske – Focuses on B-cell and antibody responses and immune regulation.\n\nDr. Janine Becker-Gotot – Junior research group leader with interest in immune tolerance mechanisms.\n\nProf. Dr. Axel Kallies – Faculty collaborator (University of Melbourne) working on immune regulation.\n\nIn addition to core groups, clinical departments (e.g., Oncology, Anesthesiology, Nephrology) and collaborative guest researchers contribute to the scientific community at IMMEI.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#research-themes",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#research-themes",
+    "title": "Institute Overview",
+    "section": "Research themes",
+    "text": "Research themes\nIMMEI’s research spans: - Immune regulation and tolerance - Mechanisms of inflammation in kidney, lung, liver, and vasculature - Immune responses to infection and tissue stress - Translational immunology bridging basic mechanisms and potential therapies\nResearch integrates diverse biological systems and experimental approaches to address fundamental and disease-relevant immunological questions.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#shared-models-and-techniques",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#shared-models-and-techniques",
+    "title": "Institute Overview",
+    "section": "Shared models and techniques",
+    "text": "Shared models and techniques\nAcross the institute, a range of models and techniques support research and training, including: - Mouse models of infection, immune regulation, and chronic inflammation - Human immune cell phenotyping - Flow cytometry and cell sorting (via the Flow Cytometry Core Facility) - In vivo imaging modalities - Molecular and cellular assays - Transcriptomic and other high-dimensional data approaches\nPhD students are encouraged to explore techniques beyond their immediate project to broaden expertise and enable collaboration.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#core-facilities-and-collaborations",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#core-facilities-and-collaborations",
+    "title": "Institute Overview",
+    "section": "Core facilities and collaborations",
+    "text": "Core facilities and collaborations\nIMMEI maintains and interacts with shared scientific infrastructure, such as: - The Flow Cytometry Core Facility (FCCF) for advanced cell analysis and sorting - Experimental therapy platforms - Immune profiling units\nThe institute also participates in collaborative research consortia, including the ImmunoSensation3 clusters of excellence, and DFG-funded collaborative research centres addressing topics such as metaflammation and nucleic acid immunity.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#scientific-environment-at-bonn",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#scientific-environment-at-bonn",
+    "title": "Institute Overview",
+    "section": "Scientific environment at Bonn",
+    "text": "Scientific environment at Bonn\nIMMEI is embedded in a larger biomedical research ecosystem involving the University of Bonn and University Hospital Bonn, offering access to additional core facilities, cross-institute collaborations, and clinical research partners. PhD students benefit from interaction with complementary expertise, resources, and training opportunities across the campus and extended networks.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#how-this-benefits-phd-students",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#how-this-benefits-phd-students",
+    "title": "Institute Overview",
+    "section": "How this benefits PhD students",
+    "text": "How this benefits PhD students\nAs a new PhD student, understanding the institute context allows you to: - Identify potential collaborators and technical expertise - Navigate access to shared facilities - Situate your project within a broader scientific framework - Engage in cross-group discussions and seminars\nMore detailed information on specific research groups and facilities can be found in dedicated onboarding pages.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#scope",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#scope",
+    "title": "Institute Overview",
+    "section": "Scope",
+    "text": "Scope\nThis overview is intended as orientation and context. It does not prescribe scientific direction or define individual group projects.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/institute/institute_overview.html#notes",
+    "href": "protocols_src/onboarding/institute/institute_overview.html#notes",
+    "title": "Institute Overview",
+    "section": "Notes",
+    "text": "Notes\nInstitute structure, personnel, and research focus evolve over time. If you notice gaps or have updates, please raise them so this document can be kept current.",
+    "crumbs": [
+      "Onboarding",
+      "Institute information",
+      "Institute overview page"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "",
+    "text": "Protocol ID: GEN-DATA-STD-001\nVersion: v1\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#purpose",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#purpose",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Purpose",
+    "text": "Purpose\nThis document defines the mandatory standards for data management and reproducibility in the Abdullah Lab.\nThese standards ensure that: - Experiments can be understood and reproduced by others - Data remain interpretable over time - Projects can be transferred without loss of context - Reagents and materials are traceable\nAll lab members are expected to follow these standards.",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#guiding-principles",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#guiding-principles",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Guiding principles",
+    "text": "Guiding principles\n\nClarity over convenience\nConsistency across the lab\nOne experiment → one clear identifier\nRaw data are never altered\nPhysical labels must match digital records",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#experiment-identifiers",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#experiment-identifiers",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Experiment identifiers",
+    "text": "Experiment identifiers\nEvery experiment must have a unique experiment ID.\n\nApproved formats\nExperiment IDs must follow one of the following formats:\n&lt;initials&gt;&lt;YY&gt;_&lt;NN&gt;\n&lt;initials&gt;&lt;NN&gt;\nWhere: - &lt;initials&gt; = experimenter initials (e.g. DC) - &lt;YY&gt; = two-digit year (e.g. 25) - &lt;NN&gt; = sequential experiment number\n\n\nExamples\nDC25_01\nDC25_02\nDC01\nDC02\nThe experiment ID must be used consistently across: - Folder names - File names - Lab notebook entries - Analysis scripts",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#file-and-folder-naming",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#file-and-folder-naming",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "File and folder naming",
+    "text": "File and folder naming\n\nGeneral rules\n\nLowercase letters only\nUnderscores (_) only\nNo spaces or special characters\nAvoid vague terms such as:\n\nfinal\nnew\ntest\n\n\n\n\nRecommended folder structure\nexperiment_id/\n├── raw/\n├── processed/\n├── analysis/\n├── figures/\n└── notes/\n\n\nFile naming\nFiles should almost always include the experiment ID to ensure traceability outside the original folder context.\nThe experiment ID should appear at the start of the filename, followed by a short descriptive suffix.\nExamples\nDC25_01_gating_strategy.pdf\nDC25_01_analysis.wsp\nDC25_01_cell_counts.xlsx\nDC25_01_analysis_notes.md\nFiles that do not include the experiment ID should be the exception and must still be unambiguous in context.",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#approved-data-storage-locations",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#approved-data-storage-locations",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Approved data storage locations",
+    "text": "Approved data storage locations\n\nSciebo (approved primary storage)\nSciebo is the approved storage location for lab data.\nUse Sciebo for: - Raw experimental data - Processed data - Analysis outputs - Shared documents\n\n\nLocal machines\n\nAllowed temporarily only\nRaw data must be transferred to Sciebo promptly\nLocal machines must not be the sole copy of data\n\n\n\nProhibited storage\n\nPersonal cloud services (e.g. Google Drive, Dropbox)\nUSB sticks as primary or long-term storage",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#raw-vs-processed-data",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#raw-vs-processed-data",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Raw vs processed data",
+    "text": "Raw vs processed data\n\nRaw data\n\nMust remain unmodified\nMust retain original file formats\nMust be stored in a dedicated raw/ directory\n\n\n\nProcessed data\n\nStored separately from raw data\nProcessing steps must be documented\nScript-based processing is preferred",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#reagent-labelling-standards",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#reagent-labelling-standards",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Reagent labelling standards",
+    "text": "Reagent labelling standards\nAll reagents must be clearly labelled at the time of preparation or opening.\n\nRequired information on reagent labels\nEach reagent container must include: - Reagent name or initials / identifier - Sterile or non-sterile status - Date opened or prepared - Initials of the person who prepared/opened it\nUnlabelled or ambiguously labelled reagents must not be used.",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#viral-stocks",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#viral-stocks",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Viral stocks",
+    "text": "Viral stocks\nViral stocks must be labelled with sufficient information to ensure traceability.\n\nRecommended format\nvirus_strain_passage_YYYY-MM-DD\nExample\nlcmv_we_p3_2025-02-10\nRecords must include: - Source - Passage number - Storage location",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#cell-lines",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#cell-lines",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Cell lines",
+    "text": "Cell lines\nCell lines must be labelled in a similar manner to viral stocks, ensuring traceability.\n\nRequired information\nCell line labels must include: - Cell line name - Passage number - Date - Initials\nExample\njurkat_p18_2025-03-04_DC\nA master record should document: - Cell line source - Genetic modifications (if any) - Thaw date and passage history",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#tissue-culture-flask-labelling",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#tissue-culture-flask-labelling",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Tissue culture flask labelling",
+    "text": "Tissue culture flask labelling\nAll tissue culture flasks must be clearly labelled.\n\nRequired information on flasks\n\nCell line name\nPassage number\nDate\nMedia used\nInitials\n\nExample\njurkat | p18 | 2025-03-04 | dmem+penstrep+neaas | DC",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#media-and-reagent-modifications",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#media-and-reagent-modifications",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Media and reagent modifications",
+    "text": "Media and reagent modifications\nAny modification to base media must be recorded.\n\nRequirements\n\nRecord all additives (e.g. antibiotics, supplements)\nUse consistent shorthand\nEnsure the formulation is documented digitally\n\n\n\nExample\nDMEM + Pen/Strep + NEAAs\nIf media composition differs from standard lab formulations, this must be clearly documented.",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#record-keeping",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#record-keeping",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Record keeping",
+    "text": "Record keeping\nAt minimum, records for each experiment must include: - Experiment ID - Date - Operator - Biological material - Reagents used - Deviations from protocol\nElectronic or paper lab notebooks are acceptable, but records must be complete and legible.",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#versioning",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#versioning",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Versioning",
+    "text": "Versioning\n\nUse sequential versions: v1, v2, v3\nMajor changes require a new version\nDeprecated data or reagents must not be deleted without discussion",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#responsibilities",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#responsibilities",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Responsibilities",
+    "text": "Responsibilities\n\nEach experimenter is responsible for compliance\nSupervisors may review organisation and records\nIssues should be corrected promptly when identified",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/training/data_and_reproducibility.html#notes",
+    "href": "protocols_src/onboarding/training/data_and_reproducibility.html#notes",
+    "title": "Data Management and Reproducibility Standards",
+    "section": "Notes",
+    "text": "Notes\nThese standards are living guidelines and may evolve.\nAny ambiguities or gaps should be raised so this document can be updated.",
+    "crumbs": [
+      "Onboarding",
+      "Data and reproducibility"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/index.html",
+    "href": "protocols_src/onboarding/lab_info/index.html",
+    "title": "Lab Information",
+    "section": "",
+    "text": "This section describes how the Abdullah Lab operates day to day.\nIt provides guidance on: - Expectations and responsibilities - Professional conduct and lab culture - Practical etiquette in shared lab spaces - Communication norms within the lab\nThese pages are intended to make expectations explicit and to support a respectful, productive working environment.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab information overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/index.html#purpose",
+    "href": "protocols_src/onboarding/lab_info/index.html#purpose",
+    "title": "Lab Information",
+    "section": "",
+    "text": "This section describes how the Abdullah Lab operates day to day.\nIt provides guidance on: - Expectations and responsibilities - Professional conduct and lab culture - Practical etiquette in shared lab spaces - Communication norms within the lab\nThese pages are intended to make expectations explicit and to support a respectful, productive working environment.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab information overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/index.html#pages-in-this-section",
+    "href": "protocols_src/onboarding/lab_info/index.html#pages-in-this-section",
+    "title": "Lab Information",
+    "section": "Pages in this section",
+    "text": "Pages in this section\n\nLab Expectations\nShared standards for conduct, supervision, responsibility, and scientific integrity.\nLab Etiquette\nPractical guidance on day-to-day behaviour in shared spaces, including benches, equipment, and storage.\nCommunication Norms\nHow communication works in the lab, including channels, meetings, and escalation.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab information overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/index.html#scope",
+    "href": "protocols_src/onboarding/lab_info/index.html#scope",
+    "title": "Lab Information",
+    "section": "Scope",
+    "text": "Scope\nThis section focuses on lab-level norms and practices.\nInstitute-wide structure, facilities, and administration are covered separately under Institute Information.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Lab information overview"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html",
+    "title": "Communication Norms",
+    "section": "",
+    "text": "Protocol ID: GEN-LAB-COMM-001\nVersion: v1\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#purpose",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#purpose",
+    "title": "Communication Norms",
+    "section": "Purpose",
+    "text": "Purpose\nThis document defines how communication works in the Abdullah Lab.\nClear communication supports: - Efficient day-to-day work - Productive supervision - Early identification of problems - A respectful and professional lab culture\nThese norms apply to all lab members.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#general-principles",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#general-principles",
+    "title": "Communication Norms",
+    "section": "General principles",
+    "text": "General principles\n\nCommunicate clearly and proactively\nChoose the appropriate channel for the topic\nShare information that affects others\nRaise issues early rather than letting them accumulate",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#communication-channels",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#communication-channels",
+    "title": "Communication Norms",
+    "section": "Communication channels",
+    "text": "Communication channels\n\nMattermost (day-to-day communication)\nMattermost is the primary platform for day-to-day lab communication.\nUse Mattermost for: - Quick questions - Coordination (e.g. equipment, schedules) - Short updates - Announcements relevant to the lab\nKeep messages concise and considerate of others’ time.\n\n\n\nEmail (formal and external communication)\nUse email for: - Formal communication - Administrative matters - Communication with external collaborators - Topics requiring a clear written record\nAvoid using email for rapid back-and-forth discussion when Mattermost is more appropriate.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#meetings",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#meetings",
+    "title": "Communication Norms",
+    "section": "Meetings",
+    "text": "Meetings\n\nSupervisor meetings\n\nPhD students are expected to have regular supervisor meetings\nMeetings are typically weekly or biweekly, as agreed with the supervisor\nFrequency and format may evolve over the course of the PhD\n\n\n\nPreparing for meetings\nTo make meetings effective: - Prepare key updates in advance - Identify questions or decisions that require input - Bring figures or data when relevant\nMeetings work best when both sides arrive prepared.\n\n\n\nGroup meetings and discussions\n\nParticipate actively and respectfully\nAsk questions and contribute constructively\nProvide feedback focused on the science",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#documentation-and-follow-up",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#documentation-and-follow-up",
+    "title": "Communication Norms",
+    "section": "Documentation and follow-up",
+    "text": "Documentation and follow-up\nImportant decisions or outcomes should be: - Documented (e.g. notes, shared documents) - Reflected in project plans or records - Followed up where action is required\nVerbal agreements should be written down if they affect timelines, responsibilities, or experimental direction.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#raising-issues-and-concerns",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#raising-issues-and-concerns",
+    "title": "Communication Norms",
+    "section": "Raising issues and concerns",
+    "text": "Raising issues and concerns\nIf you encounter problems: - Scientific (e.g. experiments not working) - Organisational (e.g. access, resources) - Interpersonal (e.g. communication difficulties)\nRaise them early.\nWhere appropriate: - Start with direct discussion - Involve a supervisor or senior lab member if needed\nThe goal is resolution and progress, not blame.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#disagreements-and-feedback",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#disagreements-and-feedback",
+    "title": "Communication Norms",
+    "section": "Disagreements and feedback",
+    "text": "Disagreements and feedback\n\nScientific disagreement is normal and expected\nDiscuss differences professionally and respectfully\nFocus on data and reasoning rather than individuals\n\nFeedback should be constructive and aimed at improving outcomes.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#scope-and-limitations",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#scope-and-limitations",
+    "title": "Communication Norms",
+    "section": "Scope and limitations",
+    "text": "Scope and limitations\nThis document: - Defines how communication is handled - Supports efficient collaboration\nIt does not: - Replace institutional policies - Define performance evaluation - Specify response-time guarantees",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/lab_info/communication_norms.html#notes",
+    "href": "protocols_src/onboarding/lab_info/communication_norms.html#notes",
+    "title": "Communication Norms",
+    "section": "Notes",
+    "text": "Notes\nThese communication norms may evolve as the lab grows.\nIf something is unclear or not working well, raise it so expectations can be adjusted.",
+    "crumbs": [
+      "Onboarding",
+      "Lab information",
+      "Communication norms"
+    ]
+  },
+  {
+    "objectID": "protocols_src/onboarding/checklist.html",
+    "href": "protocols_src/onboarding/checklist.html",
     "title": "Onboarding Checklist",
     "section": "",
-    "text": "Protocol ID: GEN-ONB-PHD-001\nVersion: v1.0\nAuthor: Dillon Corvino"
+    "text": "Protocol ID: GEN-ONB-PHD-001\nVersion: v1.0\nAuthor: Dillon Corvino",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#purpose",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#purpose",
+    "objectID": "protocols_src/onboarding/checklist.html#purpose",
+    "href": "protocols_src/onboarding/checklist.html#purpose",
     "title": "Onboarding Checklist",
     "section": "Purpose",
-    "text": "Purpose\nThis checklist defines the required steps for onboarding new PhD students in the Abdullah Lab.\nIt is organised by timeframe and separates organisation of inductions from confirmation of completion."
+    "text": "Purpose\nThis checklist defines the required steps for onboarding new PhD students in the Abdullah Lab.\nIt is organised by timeframe and separates organisation of inductions from confirmation of completion.",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#how-to-use-this-checklist",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#how-to-use-this-checklist",
+    "objectID": "protocols_src/onboarding/checklist.html#how-to-use-this-checklist",
+    "href": "protocols_src/onboarding/checklist.html#how-to-use-this-checklist",
     "title": "Onboarding Checklist",
     "section": "How to use this checklist",
-    "text": "How to use this checklist\n\nWork through the checklist in order\nOrganise required inductions early\nConfirm completion once inductions are finished\nReview progress with your supervisor"
+    "text": "How to use this checklist\n\nWork through the checklist in order\nOrganise required inductions early\nConfirm completion once inductions are finished\nReview progress with your supervisor",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#week-01-immediate-essentials-organise",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#week-01-immediate-essentials-organise",
+    "objectID": "protocols_src/onboarding/checklist.html#week-01-immediate-essentials-organise",
+    "href": "protocols_src/onboarding/checklist.html#week-01-immediate-essentials-organise",
     "title": "Onboarding Checklist",
     "section": "Week 0–1: Immediate essentials (organise)",
-    "text": "Week 0–1: Immediate essentials (organise)\n\nAccess and permissions\n\nInstitutional account active (UKB / University of Bonn)\nEmail access confirmed\nUKB ID card received and activated\nAccess to laboratory spaces granted\nAccess to animal facility granted (if applicable)\nIMMEI onboarding procedure completed\nAccess to Zeinab Abdullah shared calendar\n\n\n\nCommunication platforms\n\nAdded to lab Mattermost group(s)\nAccess to Sciebo shared folders\nAccess to Quartzy\nAccess to PyRAT (if applicable)\n\n\n\nLab orientation\n\nAssigned bench space\nAssigned desk space\nAssigned storage space\nIntroduced to lab members\nEmergency procedures explained (fire exits, first aid, incident reporting)\nRead Lab expectations\nRead Lab etiquette\n\n\n\nInductions to organise\n\nS2 induction scheduled\niFET induction scheduled\nFlow cytometry core facility introduction scheduled"
+    "text": "Week 0–1: Immediate essentials (organise)\n\nAccess and permissions\n\nInstitutional account active (UKB / University of Bonn)\nEmail access confirmed\nUKB ID card received and activated\nAccess to laboratory spaces granted\nAccess to animal facility granted (if applicable)\nIMMEI onboarding procedure completed\nAccess to Zeinab Abdullah shared calendar\n\n\n\nCommunication platforms\n\nAdded to lab Mattermost group(s)\nAccess to Sciebo shared folders\nAccess to Quartzy\nAccess to PyRAT (if applicable)\n\n\n\nLab orientation\n\nAssigned bench space\nAssigned desk space\nAssigned storage space\nIntroduced to lab members\nEmergency procedures explained (fire exits, first aid, incident reporting)\nRead Lab expectations\nRead Lab etiquette\n\n\n\nInductions to organise\n\nS2 induction scheduled\niFET induction scheduled\nFlow cytometry core facility introduction scheduled",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#week-12-software-and-setup",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#week-12-software-and-setup",
+    "objectID": "protocols_src/onboarding/checklist.html#week-12-software-and-setup",
+    "href": "protocols_src/onboarding/checklist.html#week-12-software-and-setup",
     "title": "Onboarding Checklist",
     "section": "Week 1–2: Software and setup",
-    "text": "Week 1–2: Software and setup\n\nRequired software access\nEnsure access to the following software as relevant to your project:\n\nFlowJo\nGraphPad Prism\nR / RStudio\nMicrosoft Office (Word, Excel, PowerPoint)\nMattermost\nSciebo\n\n\n\nData standards\n\nRead Data and reproducibility standards"
+    "text": "Week 1–2: Software and setup\n\nRequired software access\nEnsure access to the following software as relevant to your project:\n\nFlowJo\nGraphPad Prism\nR / RStudio\nMicrosoft Office (Word, Excel, PowerPoint)\nMattermost\nSciebo\n\n\n\nData standards\n\nRead Data and reproducibility standards",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#month-1-training-completion-and-phd-setup",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#month-1-training-completion-and-phd-setup",
+    "objectID": "protocols_src/onboarding/checklist.html#month-1-training-completion-and-phd-setup",
+    "href": "protocols_src/onboarding/checklist.html#month-1-training-completion-and-phd-setup",
     "title": "Onboarding Checklist",
     "section": "Month 1: Training completion and PhD setup",
-    "text": "Month 1: Training completion and PhD setup\n\nInductions and training (confirm completion)\n\nS2 induction completed\niFET induction completed\nFlow cytometry core facility introduction completed\nMouse handling training completed (if applicable)\n\n\n\nLab and institute integration\n\nFamiliar with core lab models\nFamiliar with core lab techniques\nAware of institute-wide models and techniques\nFamiliar with relevant research groups within the institute\nAware of institute core facilities and access pathways\n\n\n\nData and reproducibility\n\nUnderstands experiment naming conventions\nUnderstands file and folder naming rules\nKnows where raw vs processed data must be stored\nUnderstands reagent naming and lab-internal IDs\nKnows backup and data retention expectations\n\n\n\nPhD milestones\n\nDraft PhD project title\nDraft project description / scope\nIdentify potential PhD committee members\nDiscuss committee composition with supervisor\nOrganise regular supervisor meetings\nClarify expectations for PhD milestones and timelines"
+    "text": "Month 1: Training completion and PhD setup\n\nInductions and training (confirm completion)\n\nS2 induction completed\niFET induction completed\nFlow cytometry core facility introduction completed\nMouse handling training completed (if applicable)\n\n\n\nLab and institute integration\n\nFamiliar with core lab models\nFamiliar with core lab techniques\nAware of institute-wide models and techniques\nFamiliar with relevant research groups within the institute\nAware of institute core facilities and access pathways\n\n\n\nData and reproducibility\n\nUnderstands experiment naming conventions\nUnderstands file and folder naming rules\nKnows where raw vs processed data must be stored\nUnderstands reagent naming and lab-internal IDs\nKnows backup and data retention expectations\n\n\n\nPhD milestones\n\nDraft PhD project title\nDraft project description / scope\nIdentify potential PhD committee members\nDiscuss committee composition with supervisor\nOrganise regular supervisor meetings\nClarify expectations for PhD milestones and timelines",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#completion",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#completion",
+    "objectID": "protocols_src/onboarding/checklist.html#completion",
+    "href": "protocols_src/onboarding/checklist.html#completion",
     "title": "Onboarding Checklist",
     "section": "Completion",
-    "text": "Completion\n\nChecklist reviewed with supervisor\nOnboarding acknowledgement completed (if required)\n\nName: _______________________________\nDate: _______________________________"
+    "text": "Completion\n\nChecklist reviewed with supervisor\nOnboarding acknowledgement completed (if required)\n\nName: _______________________________\nDate: _______________________________",
+    "crumbs": [
+      "Onboarding",
+      "Onboarding checklist"
+    ]
   },
   {
-    "objectID": "protocols_src/onboarding/onboarding_checklist.html#notes",
-    "href": "protocols_src/onboarding/onboarding_checklist.html#notes",
+    "objectID": "protocols_src/onboarding/checklist.html#notes",
+    "href": "protocols_src/onboarding/checklist.html#notes",
     "title": "Onboarding Checklist",
     "section": "Notes",
-    "text": "Notes\nThis checklist is a living document and may evolve as lab practices and institutional requirements change.\nIf steps are unclear or missing, raise this so the documentation can be updated."
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/index.html",
-    "href": "protocols_src/onboarding/institute/index.html",
-    "title": "Institute Information",
-    "section": "",
-    "text": "This section provides an overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI).\nIt is intended to help new lab members: - Understand the institute’s structure and research environment - Identify research groups and their scientific focus - Navigate shared infrastructure and core facilities",
+    "text": "Notes\nThis checklist is a living document and may evolve as lab practices and institutional requirements change.\nIf steps are unclear or missing, raise this so the documentation can be updated.",
     "crumbs": [
       "Onboarding",
-      "Institute information",
-      "Institute overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/index.html#purpose",
-    "href": "protocols_src/onboarding/institute/index.html#purpose",
-    "title": "Institute Information",
-    "section": "",
-    "text": "This section provides an overview of the Institute of Molecular Medicine and Experimental Immunology (IMMEI).\nIt is intended to help new lab members: - Understand the institute’s structure and research environment - Identify research groups and their scientific focus - Navigate shared infrastructure and core facilities",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/index.html#pages-in-this-section",
-    "href": "protocols_src/onboarding/institute/index.html#pages-in-this-section",
-    "title": "Institute Information",
-    "section": "Pages in this section",
-    "text": "Pages in this section\n\nInstitute Overview\nMission, structure, and scientific environment of IMMEI.\nResearch Groups\nOverview of research groups at IMMEI, including scientific focus, models, and approaches.\nCore Facilities\nShared infrastructure, access procedures, and key contacts for institute-level facilities.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/index.html#scope",
-    "href": "protocols_src/onboarding/institute/index.html#scope",
-    "title": "Institute Information",
-    "section": "Scope",
-    "text": "Scope\nThis section describes institute-level organisation and resources.\nLab-specific practices and expectations are covered under Lab Information.",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Institute overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/research_groups.html",
-    "href": "protocols_src/onboarding/institute/research_groups.html",
-    "title": "Research Groups at IMMEI",
-    "section": "",
-    "text": "Protocol ID: ONB-IMMEI-GROUPS-001\nVersion: v1\nAuthor: Dillon Corvino",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Research groups"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/research_groups.html#institute-administration-and-key-contacts",
-    "href": "protocols_src/onboarding/institute/research_groups.html#institute-administration-and-key-contacts",
-    "title": "Research Groups at IMMEI",
-    "section": "Institute administration and key contacts",
-    "text": "Institute administration and key contacts\n\nInstitute Management: Lucie Hrvat-Delforge\n\nScience Management: Dr. Johanna Breuer\n\nFlow Cytometry Core Facility Manager: Prof. Natalio Garbi\n\nTechnical Core Facility Manager: Andreas Dolf\n\niFET Management: Daniela Krauss",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Research groups"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/institute/research_groups.html#research-groups",
-    "href": "protocols_src/onboarding/institute/research_groups.html#research-groups",
-    "title": "Research Groups at IMMEI",
-    "section": "Research groups",
-    "text": "Research groups\n\nProf. Dr. Christian Kurts Laboratory\nCore focus\n- Kidney immunology and inflammatory kidney disease mechanisms\n- Antigen presentation and dendritic cell biology in tissue inflammation\n- Translational immunology linking experimental models to clinical nephrology\nTypical models and approaches\n- Mouse models of glomerulonephritis and inflammatory kidney disease\n- Flow cytometry–based immune phenotyping and tissue immunology\n- Cleared tissue imaging and computational pathology\n- Innate immune sensing and interferon-driven inflammatory pathways\nSelected recent/representative publications\n- Kidney immunology from pathophysiology to clinical translation — Nat Rev Immunol\n- Residence of mice in metabolic cages reduces experimental kidney inflammation through stress-induced glucocorticoids — JCI Insight\n- Low-dose glucocorticoids attenuate crescentic glomerulonephritis by inhibiting the local differentiation of proinflammatory neutrophils — Sci Transl Med\n- Monocyte-Derived Macrophages Aggravate Pulmonary Vasculitis via cGAS/STING/IFN-Mediated Nucleic Acid Sensing — J Exp Med\n- Determining Individual Glomerular Proteinuria and Periglomerular Infiltration in a Cleared Murine Kidney by a 3D Fast Marching Algorithm — Kidney Int\n\n\n\nProf. Dr. Natalio Garbi Laboratory\nCore focus\n- Antigen presentation and immune regulation during infection and inflammation\n- Balancing protective immunity with immune-mediated pathology\n- Tissue-resident and infiltrating immune cell interactions\nTypical models and approaches\n- Mouse models of lung infection and inflammation\n- Viral and bacterial infection systems\n- Multi-parameter flow cytometry and tissue imaging\n- Reporter mouse strains and conditional immune cell perturbation\nSelected recent/representative publications\n- Opposing roles of resident and infiltrating immune cells in the defense against Legionella longbeachae via IL-18R/IFN-γ/ROS axis in mice — Mucosal Immunology\n- Rapid Protection against Viral Infections by Chemokine-Accelerated Post-Exposure Vaccination — Frontiers in Immunology\n- Conditional NKT Cell Depletion in Mice Reveals a Negative Feedback Loop That Regulates CTL Cross-Priming — Journal of Immunology\n- Interferon-Induced IL-10 Drives Systemic T-Cell Dysfunction during Chronic Liver Injury — Journal of Hepatology\n- Cigarette Smoke Depletes Alveolar Macrophages and Delays Clearance of Legionella pneumophila — AJP Lung\n\n\n\nProf. Dr. Veronika Lukacs-Kornek Laboratory\nCore focus\n- Immune–stromal interactions in tissue homeostasis and disease\n- Stromal cell biology and extracellular matrix remodeling\n- Chronic inflammatory disease contexts including liver and lung pathology\nTypical models and approaches\n- Mouse models of tissue inflammation and fibrosis\n- Stromal cell isolation and high-dimensional flow cytometry\n- Multi-omics approaches to tissue remodeling\n- Liver and lung immunopathology\nSelected recent/representative publications\n- Global matrisome changes in obese lung are linked to fibroblastic stroma and premature aging — Cell Reports\n- Isolation, Purification, and Comprehensive Flow Cytometry Assessment of Lung Stromal Cells — Current Protocols\n- Increased Type-I Interferon Level Is Associated with Liver Damage and Fibrosis in Primary Sclerosing Cholangitis — Hepatology Communications\n- The role of dendritic cells in MASH: friends or foes? — Frontiers in Immunology\n- Inflammatory responses on the road from NASH to HCC — Frontiers in Immunology\n\n\n\nProf. Dr. Zeinab Abdullah Laboratory\nCore focus\n- Adaptive immune regulation during chronic inflammation\n- T cell differentiation and dysfunction in tissue environments\n- Systemic immune consequences of chronic organ inflammation\nTypical models and approaches\n- Mouse models of chronic liver inflammation and injury\n- Infection models including LCMV and bacterial challenge\n- High-dimensional flow cytometry and functional T cell assays\n- Tissue-resident versus systemic immune profiling\nSelected recent/representative publications\n- Interferon-Induced IL-10 Drives Systemic T-Cell Dysfunction during Chronic Liver Injury — Journal of Hepatology\n- Lymph nodes fuel KLF2-dependent effector CD8+ T cell differentiation during chronic infection and checkpoint blockade — Nature Immunology\n- Transcriptional regulator SATB1 limits CD8+ T cell population expansion and effector differentiation in chronic infection and cancer — Nature Immunology\n- Lymph-node-derived stem-like but not tumor-tissue-resident CD8+ T cells fuel anticancer immunity — Nature Immunology\n- Determining Individual Glomerular Proteinuria and Periglomerular Infiltration in a Cleared Murine Kidney by a 3D Fast Marching Algorithm — Kidney International\n\n\n\nProf. Dr. Tim Rollenske Laboratory\nCore focus\n- Mucosal immunology and antibody-mediated host defense\n- Functional antibody responses and host–microbiota interactions\n- Antibody discovery and recombinant antibody engineering\nTypical models and approaches\n- Single-cell B cell isolation and antibody cloning\n- Recombinant antibody expression and purification\n- Mouse models of mucosal colonisation and immunity\n- Functional antibody testing in vivo and in vitro\nSelected recent/representative publications\n- Efficient Expression and Purification of Recombinant Mouse Dimeric IgA — European Journal of Immunology\n- Expression Cloning of Antibodies from Single Human B Cells — Methods in Molecular Biology\n- Parallelism of intestinal secretory IgA shapes functional microbial fitness — Nature\n- “ELO, world!” – Early-life origins of B cells — Immunity\n- Cross-specificity of protective human antibodies against Klebsiella pneumoniae — Nature Medicine\n\n\n\nDr. Janine Becker-Gotot Laboratory\nCore focus\n- Immune tolerance and regulatory T cell biology\n- Antigen-specific immune regulation\n- Mechanisms linking immune regulation and tissue pathology\nTypical models and approaches\n- Mouse models of immune tolerance and regulation\n- Regulatory T cell phenotyping and functional assays\n- Kidney and tissue inflammation models\n- Translational immune tolerance contexts\nSelected recent/representative publications\n- Immune Tolerance against Infused FVIII in Hemophilia A Is Mediated by PD-L1+ Regulatory T Cells — Journal of Clinical Investigation\n- Renal IL-23–Dependent Type 3 Innate Lymphoid Cells Link Crystal-induced Inflammasome Activation with Kidney Fibrosis — Journal of Immunology\n- Rapid Protection against Viral Infections by Chemokine-Accelerated Post-Exposure Vaccination — Frontiers in Immunology\n- Antibody cross-reactivity between casein and myelin-associated glycoprotein results in central nervous system demyelination — PNAS\n- Immune regulation in tissue inflammation — representative recent work\n\n\n\nProf. Dr. Axel Kallies Laboratory\nCore focus\n- T cell differentiation and fate decisions\n- Stem-like and exhausted T cell states\n- T cell function in chronic infection, cancer, and tissue contexts\nTypical models and approaches\n- Mouse models of chronic infection and cancer\n- Tissue-resident versus lymphoid T cell compartment analysis\n- Transcriptional regulation of T cell fate\n- High-dimensional immune profiling\nSelected recent/representative publications\n- Lymph-node-derived stem-like but not tumor-tissue-resident CD8+ T cells fuel anticancer immunity — Nature Immunology\n- Lymph nodes fuel KLF2-dependent effector CD8+ T cell differentiation during chronic infection and checkpoint blockade — Nature Immunology\n- Transcriptional regulator SATB1 limits CD8+ T cell population expansion and effector differentiation in chronic infection and cancer — Nature Immunology\n- Stem-like tissue-resident memory T cells control functional heterogeneity and reactivation of T cell memory in the intestine — Science Immunology\n- The co-inhibitory receptor TIGIT promotes tissue-protective functions in T cells — Nature Immunology",
-    "crumbs": [
-      "Onboarding",
-      "Institute information",
-      "Research groups"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html",
-    "href": "protocols_src/onboarding/index.html",
-    "title": "Onboarding",
-    "section": "",
-    "text": "This section contains all information required for onboarding new PhD students joining the lab.\nIt is intended to: - Provide a clear onboarding pathway - Define expectations and standards - Centralise practical information needed to work effectively in the lab and institute\nThis section complements (but does not replace) lab protocols and experimental SOPs.",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html#purpose",
-    "href": "protocols_src/onboarding/index.html#purpose",
-    "title": "Onboarding",
-    "section": "",
-    "text": "This section contains all information required for onboarding new PhD students joining the lab.\nIt is intended to: - Provide a clear onboarding pathway - Define expectations and standards - Centralise practical information needed to work effectively in the lab and institute\nThis section complements (but does not replace) lab protocols and experimental SOPs.",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html#how-to-use-this-section",
-    "href": "protocols_src/onboarding/index.html#how-to-use-this-section",
-    "title": "Onboarding",
-    "section": "How to use this section",
-    "text": "How to use this section\n\nNew PhD students\n\nStart with the Onboarding checklist\nComplete mandatory items in the first weeks\nUse the remaining pages as reference material\n\n\n\nSupervisors and lab members\n\nUse this section as the canonical reference for onboarding\nAvoid duplicating onboarding instructions elsewhere\nUpdate pages here rather than sharing ad hoc documents",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html#core-onboarding-document",
-    "href": "protocols_src/onboarding/index.html#core-onboarding-document",
-    "title": "Onboarding",
-    "section": "Core onboarding document",
-    "text": "Core onboarding document\n\nOnboarding checklist\nA time-ordered checklist covering access, training, expectations, and setup.",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html#section-overview",
-    "href": "protocols_src/onboarding/index.html#section-overview",
-    "title": "Onboarding",
-    "section": "Section overview",
-    "text": "Section overview\n\nAccess\nAccount setup, software access, computing resources, and booking systems.\n\n\nLab information\nDay-to-day lab operation, expectations, etiquette, communication norms, and lab-specific models and techniques.\n\n\nInstitute\nOverview of the institute, research groups, shared models, techniques, and core facilities.\n\n\nTraining\nMandatory training requirements and standards, including data handling and reproducibility.\n\n\nAdministration\nUniversity and institute administrative information relevant to PhD students.\n\n\nTemplates\nReusable forms and acknowledgement documents related to onboarding.",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html#scope-and-boundaries",
-    "href": "protocols_src/onboarding/index.html#scope-and-boundaries",
-    "title": "Onboarding",
-    "section": "Scope and boundaries",
-    "text": "Scope and boundaries\nThis onboarding section: - Describes what exists and what is expected - Links to protocols and SOPs where appropriate\nIt does not: - Contain experimental protocols - Replace safety or ethics training - Serve as a troubleshooting guide for experiments",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/index.html#questions-or-missing-information",
-    "href": "protocols_src/onboarding/index.html#questions-or-missing-information",
-    "title": "Onboarding",
-    "section": "Questions or missing information",
-    "text": "Questions or missing information\nIf information is missing or unclear: - First, check whether it exists elsewhere in the documentation - If not, raise it with your supervisor or a senior lab member so it can be added here\nThis onboarding documentation is intended to evolve with the lab.",
-    "crumbs": [
-      "Onboarding",
-      "Onboarding overview"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html",
-    "title": "Lab Expectations",
-    "section": "",
-    "text": "Protocol ID: GEN-LAB-EXP-001\nVersion: v1\nAuthor: Dillon Corvino",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#purpose",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#purpose",
-    "title": "Lab Expectations",
-    "section": "Purpose",
-    "text": "Purpose\nThis document outlines the shared expectations for all members of the Abdullah Lab.\nIts purpose is to: - Provide clarity on how the lab functions day to day - Set common standards for conduct, communication, and responsibility - Support a professional, respectful, and productive research environment\nThese expectations apply to all lab members, including PhD students, postdoctoral researchers, technicians, and visiting researchers.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#general-principles",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#general-principles",
-    "title": "Lab Expectations",
-    "section": "General principles",
-    "text": "General principles\nThe Abdullah Lab values: - Scientific integrity and reproducibility - Mutual respect and professionalism - Open communication - Shared responsibility for the lab environment\nExpectations are framed to support independence while ensuring that work remains transparent, collaborative, and reproducible.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#professional-conduct",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#professional-conduct",
-    "title": "Lab Expectations",
-    "section": "Professional conduct",
-    "text": "Professional conduct\nLab members are expected to: - Treat colleagues with respect at all times - Communicate constructively, even in disagreement - Be reliable and follow through on agreed tasks - Contribute positively to the lab environment\nDiscriminatory, dismissive, or unprofessional behaviour is not acceptable.\nConcerns should be raised early, either directly or via a supervisor, before issues escalate.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#scientific-integrity-and-documentation",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#scientific-integrity-and-documentation",
-    "title": "Lab Expectations",
-    "section": "Scientific integrity and documentation",
-    "text": "Scientific integrity and documentation\nAll work conducted in the lab must meet high standards of scientific integrity.\nExpectations include: - Experiments are planned thoughtfully and documented clearly - Data are recorded contemporaneously and accurately - Deviations from protocols are noted - Data and reagents are traceable\nLab members must follow the lab’s Data Management and Reproducibility Standards, including: - Use of experiment IDs - Consistent file and folder naming - Appropriate data storage - Clear reagent labelling\nBoth paper and electronic lab notebooks are acceptable, provided records are complete, legible, and up to date.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#communication-norms",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#communication-norms",
-    "title": "Lab Expectations",
-    "section": "Communication norms",
-    "text": "Communication norms\n\nDay-to-day communication\n\nMattermost is the primary platform for day-to-day lab communication\nUse Mattermost for quick questions, coordination, and updates\nEmail should be used for formal communication, external contacts, or administrative matters\n\n\n\nMeetings\n\nPhD students are expected to have regular supervisor meetings, typically weekly or biweekly, as agreed with their supervisor\nLab members should come prepared to meetings with:\n\nKey updates\nQuestions or points requiring input\nRelevant figures or data when appropriate\n\n\nMeeting frequency and format may evolve over time and should be revisited as projects progress.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#ownership-and-responsibility",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#ownership-and-responsibility",
-    "title": "Lab Expectations",
-    "section": "Ownership and responsibility",
-    "text": "Ownership and responsibility\nLab members are expected to take ownership of their work.\nThis includes responsibility for: - Experimental planning and execution - Proper documentation and data storage - Maintenance of personal reagents and samples - Cleaning up after experiments - Following up on results and action items\nAsking for help is encouraged, particularly when blocked or uncertain.\nWaiting too long to raise issues can slow progress and create avoidable problems.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#shared-resources-and-lab-citizenship",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#shared-resources-and-lab-citizenship",
-    "title": "Lab Expectations",
-    "section": "Shared resources and lab citizenship",
-    "text": "Shared resources and lab citizenship\nThe lab relies on shared resources, including equipment, reagents, and space.\nExpectations include: - Leaving shared equipment clean and ready for the next user - Returning reagents and consumables to their correct location - Clearly labelling personal materials - Reporting broken equipment, low stock, or safety issues promptly\nGood lab citizenship is essential for a functional and supportive environment.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#safety-and-compliance",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#safety-and-compliance",
-    "title": "Lab Expectations",
-    "section": "Safety and compliance",
-    "text": "Safety and compliance\nAll lab members must: - Follow applicable safety regulations and institutional requirements - Complete required inductions (e.g. S2, iFET) before performing relevant work - Adhere to animal facility rules when applicable\nIf unsure about safety or compliance, lab members are expected to pause work and ask.\nNo experiment is urgent enough to justify unsafe practices.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#expectations-around-supervision",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#expectations-around-supervision",
-    "title": "Lab Expectations",
-    "section": "Expectations around supervision",
-    "text": "Expectations around supervision\nSupervision is a shared responsibility.\nSupervisors commit to: - Regular meetings and availability for discussion - Clear communication of priorities and expectations - Constructive feedback on data and progress - Support in training, troubleshooting, and career development - Guidance on publications, presentations, and PhD milestones\nLab members are encouraged to communicate openly about challenges, workload, and progress.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#raising-issues-and-resolving-problems",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#raising-issues-and-resolving-problems",
-    "title": "Lab Expectations",
-    "section": "Raising issues and resolving problems",
-    "text": "Raising issues and resolving problems\nIf issues arise (scientific, organisational, or interpersonal): - Raise them early - Where possible, discuss directly with the relevant person - If needed, involve a supervisor or senior lab member\nThe goal is resolution, not blame.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#scope-and-limitations",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#scope-and-limitations",
-    "title": "Lab Expectations",
-    "section": "Scope and limitations",
-    "text": "Scope and limitations\nThis document: - Describes how the lab operates - Sets shared expectations and norms\nIt does not: - Replace institutional policies - Override safety regulations - Define employment contracts",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_expectations.html#notes",
-    "href": "protocols_src/onboarding/lab_info/lab_expectations.html#notes",
-    "title": "Lab Expectations",
-    "section": "Notes",
-    "text": "Notes\nThese expectations are intended to evolve with the lab.\nSuggestions for improvement or clarification are welcome and should be raised so this document remains accurate and useful.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab expectations"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html",
-    "title": "Lab Etiquette",
-    "section": "",
-    "text": "Protocol ID: GEN-LAB-ETQ-001\nVersion: v1\nAuthor: Dillon Corvino",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#purpose",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#purpose",
-    "title": "Lab Etiquette",
-    "section": "Purpose",
-    "text": "Purpose\nThis document describes day-to-day lab etiquette in the Abdullah Lab.\nIts goal is to: - Prevent avoidable friction - Ensure shared spaces remain functional - Make expectations explicit rather than assumed\nThese guidelines apply to all lab members and complement the broader principles described in Lab Expectations.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#general-principle",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#general-principle",
-    "title": "Lab Etiquette",
-    "section": "General principle",
-    "text": "General principle\nThe lab is a shared working environment.\nA simple rule applies: &gt; Leave spaces, equipment, and reagents in a state that you would be happy to find them.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#benches-and-workspaces",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#benches-and-workspaces",
-    "title": "Lab Etiquette",
-    "section": "Benches and workspaces",
-    "text": "Benches and workspaces\n\nBench use\n\nKeep benches as clear as possible\nOnly keep materials required for current work on the bench\nReturn shared items when finished\n\n\n\nEnd of day expectations\nAt the end of the day: - Dispose of waste appropriately - Wipe down the bench if work involved spills or biological material - Return equipment and reagents to their designated locations\nBenches should not accumulate long-term storage or unused items.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#shared-equipment",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#shared-equipment",
-    "title": "Lab Etiquette",
-    "section": "Shared equipment",
-    "text": "Shared equipment\n\nGeneral use\n\nTreat shared equipment with care\nFollow posted instructions and lab norms\nDo not modify settings without understanding the impact on others\n\n\n\nAfter use\n\nClean equipment if required\nReset settings if you changed them\nReport malfunctions or damage promptly\n\nIf equipment is left unusable, the next user is delayed.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#fridges-freezers-and-storage",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#fridges-freezers-and-storage",
-    "title": "Lab Etiquette",
-    "section": "Fridges, freezers, and storage",
-    "text": "Fridges, freezers, and storage\n\nLabelling\nAll stored items must be clearly labelled with: - Name or initials - Contents - Date\nUnlabelled or outdated items may be removed during clean-ups.\n\n\nOrganisation\n\nRespect designated areas and shelves\nDo not move or discard others’ samples without discussion\nAvoid overcrowding shared storage",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#reagents-and-consumables",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#reagents-and-consumables",
-    "title": "Lab Etiquette",
-    "section": "Reagents and consumables",
-    "text": "Reagents and consumables\n\nClose containers properly\nDo not return contaminated reagents to stock\nInform the lab if common reagents are running low\nDo not use unlabelled or expired reagents\n\nIf unsure about a reagent’s status, ask before using it.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#tissue-culture-areas",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#tissue-culture-areas",
-    "title": "Lab Etiquette",
-    "section": "Tissue culture areas",
-    "text": "Tissue culture areas\n\nFollow sterile technique consistently\nClean work areas before and after use\nDispose of waste correctly\nDo not leave flasks or plates without clear labelling\n\nTissue culture spaces must be kept especially orderly to protect all users.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#booking-and-fairness",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#booking-and-fairness",
-    "title": "Lab Etiquette",
-    "section": "Booking and fairness",
-    "text": "Booking and fairness\nWhere equipment or space is shared: - Be considerate of others’ time - Cancel bookings you do not need - Avoid monopolising resources\nIf you need extended or unusual access, communicate this in advance.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#noise-interruptions-and-shared-space-awareness",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#noise-interruptions-and-shared-space-awareness",
-    "title": "Lab Etiquette",
-    "section": "Noise, interruptions, and shared space awareness",
-    "text": "Noise, interruptions, and shared space awareness\n\nBe mindful of noise levels in shared areas\nKeep phone calls and meetings from disrupting others\nRespect that others may be concentrating or running time-sensitive experiments",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#food-drink-and-personal-items",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#food-drink-and-personal-items",
-    "title": "Lab Etiquette",
-    "section": "Food, drink, and personal items",
-    "text": "Food, drink, and personal items\n\nFollow safety rules regarding food and drink in lab areas\nKeep personal items out of experimental spaces\nStore food only in designated areas",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#problems-mistakes-and-accountability",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#problems-mistakes-and-accountability",
-    "title": "Lab Etiquette",
-    "section": "Problems, mistakes, and accountability",
-    "text": "Problems, mistakes, and accountability\nMistakes happen.\nIf something goes wrong: - Inform relevant lab members promptly - Do not hide problems or hope they go unnoticed - Work collaboratively to resolve issues\nEarly communication prevents small problems from becoming larger ones.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#scope",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#scope",
-    "title": "Lab Etiquette",
-    "section": "Scope",
-    "text": "Scope\nThis document focuses on practical etiquette, not: - Scientific judgement - Performance evaluation - Institutional policy\nWhen in doubt, default to clear communication and consideration for others.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
-    ]
-  },
-  {
-    "objectID": "protocols_src/onboarding/lab_info/lab_etiquette.html#notes",
-    "href": "protocols_src/onboarding/lab_info/lab_etiquette.html#notes",
-    "title": "Lab Etiquette",
-    "section": "Notes",
-    "text": "Notes\nThese guidelines reflect current lab practice and may evolve.\nSuggestions for improvement are welcome and should be raised so expectations remain clear and fair.",
-    "crumbs": [
-      "Onboarding",
-      "Lab information",
-      "Lab etiquette"
+      "Onboarding checklist"
     ]
   }
 ]

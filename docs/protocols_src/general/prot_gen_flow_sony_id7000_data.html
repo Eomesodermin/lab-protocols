@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-11-21">
+<meta name="description" content="Standard operating procedure for exporting, organizing, transferring, and deleting data generated on the Sony Spectral Cell Analyzer ID7000 systems, including FCS files, experiment files, and reference controls.">
+
+<title>Sony ID7000 Data Handling and Storage – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true"><i class="bi bi-person-check" role="img">
+</i> 
+ <span class="menu-text">Onboarding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/contacts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Key contacts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/training/data_and_reproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data and reproducibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Lab information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab information overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/lab_expectations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab expectations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/lab_etiquette.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab etiquette</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/communication_norms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Communication norms</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Institute information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Institute overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/institute_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Institute overview page</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/research_groups.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research groups</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/core_facilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Core facilities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
+  <li><a href="#core-rules-read-before-use" id="toc-core-rules-read-before-use" class="nav-link" data-scroll-target="#core-rules-read-before-use">Core rules (read before use)</a></li>
+  <li><a href="#data-types-and-definitions" id="toc-data-types-and-definitions" class="nav-link" data-scroll-target="#data-types-and-definitions">Data types and definitions</a></li>
+  <li><a href="#exporting-fcs-files" id="toc-exporting-fcs-files" class="nav-link" data-scroll-target="#exporting-fcs-files">Exporting FCS files</a>
+  <ul class="collapse">
+  <li><a href="#using-id7000-data-agent" id="toc-using-id7000-data-agent" class="nav-link" data-scroll-target="#using-id7000-data-agent">Using ID7000 Data Agent</a>
+  <ul class="collapse">
+  <li><a href="#monitoring-export-status" id="toc-monitoring-export-status" class="nav-link" data-scroll-target="#monitoring-export-status">Monitoring export status</a></li>
+  <li><a href="#opening-the-export-folder" id="toc-opening-the-export-folder" class="nav-link" data-scroll-target="#opening-the-export-folder">Opening the export folder</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#exporting-experiment-files-.exdat" id="toc-exporting-experiment-files-.exdat" class="nav-link" data-scroll-target="#exporting-experiment-files-.exdat">Exporting experiment files (.exdat)</a></li>
+  <li><a href="#folder-structure-and-organization" id="toc-folder-structure-and-organization" class="nav-link" data-scroll-target="#folder-structure-and-organization">Folder structure and organization</a>
+  <ul class="collapse">
+  <li><a href="#mandatory-folder-structure" id="toc-mandatory-folder-structure" class="nav-link" data-scroll-target="#mandatory-folder-structure">Mandatory folder structure</a></li>
+  </ul></li>
+  <li><a href="#data-deletion-and-cleanup" id="toc-data-deletion-and-cleanup" class="nav-link" data-scroll-target="#data-deletion-and-cleanup">Data deletion and cleanup</a></li>
+  <li><a href="#sharing-reference-controls" id="toc-sharing-reference-controls" class="nav-link" data-scroll-target="#sharing-reference-controls">Sharing reference controls</a></li>
+  <li><a href="#use-of-external-analysis-workstations" id="toc-use-of-external-analysis-workstations" class="nav-link" data-scroll-target="#use-of-external-analysis-workstations">Use of external analysis workstations</a>
+  <ul class="collapse">
+  <li><a href="#recommended-workflow-to-reduce-device-usage-time" id="toc-recommended-workflow-to-reduce-device-usage-time" class="nav-link" data-scroll-target="#recommended-workflow-to-reduce-device-usage-time">Recommended workflow to reduce device usage time</a></li>
+  </ul></li>
+  <li><a href="#long-term-storage-and-transfer" id="toc-long-term-storage-and-transfer" class="nav-link" data-scroll-target="#long-term-storage-and-transfer">Long-term storage and transfer</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_gen_flow_sony_id7000_data.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sony ID7000 Data Handling and Storage</h1>
+<p class="subtitle lead">Export, data management, and retention policy</p>
+</div>
+
+<div>
+  <div class="description">
+    Standard operating procedure for exporting, organizing, transferring, and deleting data generated on the Sony Spectral Cell Analyzer ID7000 systems, including FCS files, experiment files, and reference controls.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 21, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> GEN-FLOW-SONY-ID7000-DATA-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino<br>
+<strong>Adapted from:</strong> FCCF SOP – Data handling on Sony ID7000 systems fileciteturn1file0</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol defines mandatory rules and best practices for <strong>data export, organization, storage, sharing, and deletion</strong> for experiments performed on the <strong>Sony Spectral Cell Analyzer ID7000</strong>.</p>
+<p>The aim is to: - Prevent data loss - Avoid unnecessary duplication of experiments and unmixing matrices - Ensure compliance with FCCF data-retention policies - Reduce congestion on instrument and analysis workstations</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="scope" class="level1">
+<h1>Scope</h1>
+<p>This SOP applies to: - All users of the <strong>Sony ID7000</strong> - All <strong>instrument PCs</strong> and <strong>external analysis workstations I and II</strong> - All data types generated by the ID7000 software, including: - FCS files - Experiment files (<code>.exdat</code>) - Spectral reference controls</p>
+</section>
+<section id="core-rules-read-before-use" class="level1">
+<h1>Core rules (read before use)</h1>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Mandatory rules
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Failure to follow these rules may result in <strong>permanent data loss</strong> without notice.</p>
+</div>
+</div>
+<ul>
+<li><strong>Export FCS files and experiments immediately after each measurement</strong></li>
+<li><strong>Only store data inside your personal <code>USER</code> folder</strong></li>
+<li><strong>All data outside the <code>USER</code> folder will always be deleted</strong></li>
+<li>FCCF performs <strong>bi-weekly deletion</strong> of:
+<ul>
+<li>All experiments and library controls in the ID7000 software</li>
+<li>Exported experiments and FCS files in <code>USER</code> folders older than <strong>6 months</strong></li>
+</ul></li>
+<li>Users are responsible for <strong>early deletion of data no longer needed</strong></li>
+</ul>
+</section>
+<section id="data-types-and-definitions" class="level1">
+<h1>Data types and definitions</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data type</th>
+<th>File extension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FCS files</td>
+<td><code>.fcs</code></td>
+<td>Event-level flow cytometry data</td>
+</tr>
+<tr class="even">
+<td>Experiment files</td>
+<td><code>.exdat</code></td>
+<td>ID7000 experiment definitions, layouts, and settings</td>
+</tr>
+<tr class="odd">
+<td>Reference controls</td>
+<td>internal / exported</td>
+<td>Spectral reference controls stored in the library or exported</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exporting-fcs-files" class="level1">
+<h1>Exporting FCS files</h1>
+<section id="using-id7000-data-agent" class="level2">
+<h2 class="anchored" data-anchor-id="using-id7000-data-agent">Using ID7000 Data Agent</h2>
+<ul>
+<li>FCS file export is handled by the <strong>ID7000 Data Agent</strong></li>
+<li>The Data Agent starts automatically when FCS export is initiated</li>
+<li>The Data Agent icon appears in the <strong>task tray</strong></li>
+</ul>
+<section id="monitoring-export-status" class="level3">
+<h3 class="anchored" data-anchor-id="monitoring-export-status">Monitoring export status</h3>
+<ul>
+<li>Hover over the <strong>ID7000 Data Agent</strong> icon to view export progress and status</li>
+<li>A <strong>log file</strong> documenting the export is written to the output folder</li>
+</ul>
+</section>
+<section id="opening-the-export-folder" class="level3">
+<h3 class="anchored" data-anchor-id="opening-the-export-folder">Opening the export folder</h3>
+<ol type="1">
+<li>Right-click the <strong>ID7000 Data Agent</strong> icon</li>
+<li>Select <strong>Open Latest Output Folder</strong></li>
+<li>Review exported files and the associated log file</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="exporting-experiment-files-.exdat" class="level1">
+<h1>Exporting experiment files (.exdat)</h1>
+<ol type="1">
+<li>In the ID7000 software, go to:
+<ul>
+<li><strong>File</strong> → <strong>Database</strong></li>
+</ul></li>
+<li>Click <strong>Export</strong></li>
+<li>Select the experiment(s) to export</li>
+<li>Click <strong>Export</strong></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Unmixing matrices
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avoid creating multiple unnecessary unmixing matrices. Multiple matrices generate <strong>multiple datasets</strong> during FCS export and complicate downstream analysis.</p>
+</div>
+</div>
+</section>
+<section id="folder-structure-and-organization" class="level1">
+<h1>Folder structure and organization</h1>
+<section id="mandatory-folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="mandatory-folder-structure">Mandatory folder structure</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>One USER folder per user
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create <strong>one folder named with your username</strong> as a subfolder of <code>USER</code> on the desktop and <strong>use only this folder</strong> for all exports.</p>
+</div>
+</div>
+<p>Recommended structure:</p>
+<pre><code>USER/
+└── &lt;username&gt;/
+    ├── fcs/
+    ├── experiments/
+    ├── reference_controls/
+    ├── projects/
+    │   ├── project_A/
+    │   └── project_B/</code></pre>
+<ul>
+<li>You may save the export path in <strong>ID7000 Preferences</strong></li>
+<li>Use subfolders to separate:
+<ul>
+<li>FCS files</li>
+<li>Experiment files</li>
+<li>Reference controls</li>
+<li>Project-specific datasets</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="data-deletion-and-cleanup" class="level1">
+<h1>Data deletion and cleanup</h1>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Data deletion policy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>FCCF routinely deletes data without further notice.</p>
+</div>
+</div>
+<p>You must: - Delete <strong>old experiments</strong> immediately after analysis on the analysis PC - Delete <strong>already analyzed FCS files</strong> from all PCs - Delete unnecessary <strong>reference controls</strong> from the library after export</p>
+<p>Additional rules: - Do <strong>not</strong> make reference controls public (creates duplicates) - Export reference controls before deletion if they are still needed</p>
+</section>
+<section id="sharing-reference-controls" class="level1">
+<h1>Sharing reference controls</h1>
+<p>If you want to share reference controls with colleagues: - Export them to a <strong>dedicated folder</strong> - Include clear metadata: - Associated project - Experiment name - Date - Fluorochrome / antibody information</p>
+</section>
+<section id="use-of-external-analysis-workstations" class="level1">
+<h1>Use of external analysis workstations</h1>
+<p>All rules in this SOP apply equally to: - External Analysis Workstation I - External Analysis Workstation II</p>
+<section id="recommended-workflow-to-reduce-device-usage-time" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-workflow-to-reduce-device-usage-time">Recommended workflow to reduce device usage time</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Efficiency recommendation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To minimize time at the instrument PCs:</p>
+</div>
+</div>
+<ol type="1">
+<li>Perform <strong>experiment setup</strong> on:
+<ul>
+<li>External Analysis Workstation I (older, slower)</li>
+</ul></li>
+<li>Export the experiment file (<code>.exdat</code>)</li>
+<li>Import the experiment on the instrument PC</li>
+<li>Perform <strong>unmixing adjustments</strong> on:
+<ul>
+<li>External Analysis Workstation II (newer, faster)</li>
+</ul></li>
+<li>Export/import <code>.exdat</code> files as required</li>
+</ol>
+</section>
+</section>
+<section id="long-term-storage-and-transfer" class="level1">
+<h1>Long-term storage and transfer</h1>
+<ul>
+<li>The <strong>recommended storage location</strong> is the <strong>BTC data server</strong></li>
+<li>Instructions for access:
+<ul>
+<li><code>https://btc-community.uni-bonn.de/your-network/</code></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Best practice
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Transfer data to BTC as soon as possible after export and verify file integrity before deleting local copies.</p>
+</div>
+</div>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Likely cause</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Missing FCS files</td>
+<td>Export not completed</td>
+<td>Check Data Agent log and re-export</td>
+</tr>
+<tr class="even">
+<td>Duplicate datasets</td>
+<td>Multiple unmixing matrices</td>
+<td>Remove redundant matrices and re-export</td>
+</tr>
+<tr class="odd">
+<td>Data deleted unexpectedly</td>
+<td>Stored outside USER folder</td>
+<td>Always export into USER/<username>/</username></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-21</td>
+<td>Dillon Corvino</td>
+<td>Converted FCCF Sony ID7000 data handling SOP into Abdullah Lab Quarto protocol standard.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

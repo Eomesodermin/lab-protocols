@@ -9,21 +9,11 @@
       "/protocols_src/mouse/prot_mus_lcmv_multi_strain_production.html",
       "/protocols_src/mouse/prot_mus_lcmv_gp_qpcr_viral_load.html",
       "/protocols_src/mouse/prot_mus_liver_digestion.html",
-      "/protocols_src/mouse/prot_mus_liver_NLC_iso.html",
       "/protocols_src/mouse/prot_mus_lung_digestion.html",
       "/protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.html",
       "/protocols_src/mouse/prot_mus_spleen_dissociation.html",
       "/protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.html",
       "/protocols_src/mouse/prot_mus_tumour_digestion.html"
-    ]
-  },
-  {
-    "listing": "/protocols_src/general/index.html",
-    "items": [
-      "/protocols_src/general/prot_gen_CTV_stain.html",
-      "/protocols_src/general/prot_gen_flow_standard.html",
-      "/protocols_src/general/prot_gen_lymphocyte_nucleofection.html",
-      "/protocols_src/general/lab_contact_resource_guide.html"
     ]
   },
   {
@@ -34,14 +24,25 @@
       "/protocols_src/buffers/buf_facs_buffer.html",
       "/protocols_src/buffers/buf_freeze_mix_2x.html",
       "/protocols_src/buffers/buf_lcmv_plaque_assay_medium.html",
-      "/protocols_src/buffers/buf_liver_digestion.html",
-      "/protocols_src/buffers/buf_mus_liver_digestion_NLC.html",
+      "/protocols_src/buffers/buf_mus_liver_digestion_col_D.html",
+      "/protocols_src/buffers/buf_mus_liver_digestion_col_IV.html",
       "/protocols_src/buffers/buf_mus_NK_med.html",
-      "/protocols_src/buffers/buf_percoll_33pct.html",
+      "/protocols_src/buffers/buf_percoll_37pct.html",
       "/protocols_src/buffers/buf_R0_med.html",
       "/protocols_src/buffers/buf_R10_med.html",
       "/protocols_src/buffers/buf_rbc_lysis_hybrimax.html",
       "/protocols_src/buffers/buf_vero_propagation_medium.html"
+    ]
+  },
+  {
+    "listing": "/protocols_src/general/index.html",
+    "items": [
+      "/protocols_src/general/prot_gen_CTV_stain.html",
+      "/protocols_src/general/prot_gen_flow_sony_id7000.html",
+      "/protocols_src/general/prot_gen_flow_sony_id7000_data.html",
+      "/protocols_src/general/prot_gen_flow_standard.html",
+      "/protocols_src/general/prot_gen_lymphocyte_nucleofection.html",
+      "/protocols_src/general/lab_contact_resource_guide.html"
     ]
   },
   {

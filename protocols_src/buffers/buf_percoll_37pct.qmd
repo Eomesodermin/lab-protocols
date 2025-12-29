@@ -1,0 +1,203 @@
+---
+title: "37% Percoll Solution"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-PERC-37-001"
+version: "v1.2"
+date: "2025-12-29"
+description: "37% Percoll density solution for enrichment of leukocytes from digested liver tissue."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This buffer is used as a **37% Percoll solution** for density-based enrichment of leukocytes from digested liver tissue. During centrifugation, hepatocytes and debris remain in the supernatant, while leukocyte-enriched pellets form at the bottom of the tube.
+
+### Density vs osmolality (important conceptual note)
+
+Percoll provides **density**, not physiological salt content.  
+On its own, Percoll is **hypotonic** and unsuitable for live cells.
+
+- **Density** determines where cells separate during centrifugation.
+- **Osmolality** determines whether cells survive the procedure.
+
+To maintain **physiological (1× PBS) osmolality**, Percoll must be rendered **isotonic** by adding concentrated salts (10× PBS).  
+Once Percoll stock has been adjusted to isotonic conditions, **all subsequent working solutions can be prepared by dilution with 1× PBS only**.
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)
+
+---
+
+# Preparation of isotonic Percoll stock (required once per bottle)
+
+Percoll stock **must be rendered isotonic before use**. This step is performed **once per bottle** and must be done under **sterile conditions**.
+
+## Preparation from a 1000 mL Percoll bottle
+
+1. Under a **biosafety cabinet**, using sterile technique:
+   - Remove **100 mL Percoll** from the original 1000 mL bottle.
+   - Transfer this 100 mL into a **clean, sterile glass bottle** (retain for later use).
+2. To the original Percoll bottle, add **100 mL sterile 10× PBS**.
+3. Cap securely and mix thoroughly by gentle inversion.
+4. Clearly label the bottle with:
+   - **“Isotonic Percoll”**
+   - **“+100 mL 10× PBS”**
+   - Date of preparation
+   - Name or initials
+   - **“Sterile”**
+
+The remaining volume (~1000 mL) is now **isotonic Percoll stock**.
+
+## Making the reserved 100 mL Percoll aliquot isotonic
+
+1. To the previously removed **100 mL Percoll aliquot**, add:
+   - **11.11 mL sterile 10× PBS**
+2. Mix gently by inversion until homogeneous.
+3. Label clearly with:
+   - **“Isotonic Percoll”**
+   - **“+11.11 mL 10× PBS”**
+   - Date
+   - Name or initials
+   - **“Sterile”**
+
+This aliquot is now **functionally identical** to the main isotonic Percoll stock and can be used interchangeably.
+
+:::callout-warning
+Percoll stock and all derived solutions **must be kept sterile**.  
+:::
+
+---
+
+# Important note on isotonic Percoll usage
+
+All working Percoll solutions in this protocol assume that **input Percoll is already isotonic**.
+
+Therefore:
+- **Do not add 10× PBS** when preparing 37% Percoll working solutions.
+- Only **dilution with sterile 1× PBS** is required.
+
+---
+
+# Composition (per 10 mL 37% Percoll)
+
+| Component | Stock | Volume for 10 mL | Final composition | Notes |
+|------------------|-------|------------------|-------------------|-------|
+| Percoll (isotonic) | 100% | **3.70 mL** | 37% (v/v) | Pre-adjusted stock |
+| PBS 1× | — | **6.30 mL** | — | Diluent |
+
+---
+
+# Preparation of 37% Percoll working solution
+
+1. Equilibrate **isotonic Percoll stock** to **room temperature**.
+2. In a sterile 15 mL or 50 mL tube, add:
+   - **3.70 mL isotonic Percoll**
+   - **6.30 mL sterile PBS 1×**
+3. Mix gently by inversion until homogeneous.
+4. Prepare sufficient volume for the experiment (typically **10 mL per liver**).
+5. Aliquot immediately into labelled **15 mL conical tubes**.
+
+:::callout-note
+Prepare 37% Percoll fresh on the day of use for optimal separation performance and cell viability.
+:::
+
+---
+
+# Storage and stability
+
+- **37% Percoll working solution**: prepare fresh on the day of use.
+- Same-day storage at **room temperature** is acceptable.
+- Do not freeze working solutions.
+- **Isotonic Percoll stock** should be stored according to manufacturer’s instructions and maintained under sterile conditions.
+
+---
+
+# How isotonic Percoll calculations work (reference)
+
+This section explains why **10× PBS** is added to Percoll and how the required volume is calculated.
+
+## Definitions
+
+- **V_T** = total final volume  
+- **V_P** = volume of Percoll (contains no salts)  
+- **V_10x** = volume of 10× PBS  
+
+The remaining volume is **1× PBS**.
+
+## Salt balance logic
+
+The final solution must contain the same total amount of salt as **V_T mL of 1× PBS**.
+
+Salt contributions:
+- Percoll contributes **0×**
+- 1× PBS contributes **1×**
+- 10× PBS contributes **10×**
+
+### Step 1: Express total salt content
+
+```math
+(V_T - V_P - V_10x) + 10 · V_10x = V_T
+```
+
+### Step 2: Combine terms
+
+```math
+V_T - V_P + 9 · V_10x = V_T
+```
+
+### Step 3: Subtract V_T from both sides
+
+```math
+- V_P + 9 · V_10x = 0
+```
+
+### Step 4: Rearrange
+
+```math
+9 · V_10x = V_P
+```
+
+### Final rule
+
+```math
+V_10x = V_P / 9
+```
+
+**In words:**  
+For every **9 mL of Percoll**, add **1 mL of 10× PBS** to make the solution isotonic.
+
+---
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|----------------|----------|------|-------|
+| Percoll (100%) | TBD | TBD | Must be rendered isotonic and kept sterile |
+| PBS 1× | TBD | TBD | Sterile; Ca²⁺/Mg²⁺-free recommended |
+| PBS 10× | TBD | TBD | Used once for isotonic adjustment |
+
+---
+
+# Safety (brief)
+
+- Handle Percoll and PBS solutions with standard laboratory PPE.
+- Dispose of Percoll-containing waste according to chemical and biological safety regulations.
+- Avoid skin and eye contact; consult manufacturer SDS for details.
+
+---
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---------|------------|----------------|------------------------------------------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial buffer definition (33% Percoll) |
+| v1.1 | 2025-12-29 | Dillon Corvino | Updated to 37% Percoll; clarified isotonic prep |
+| v1.2 | 2025-12-29 | Dillon Corvino | Added stock isotonic prep, math explanation, sterility notes |

@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-21">
-<meta name="description" content="Preparation of collagenase IV and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue.">
+<meta name="description" content="Key references, platforms, and external tools used in the Abdullah Lab.">
 
-<title>Mouse Liver Digestion Buffer – Protocol Library</title>
+<title>Resources – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,9 +111,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      Protocol Library
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/resources/index.html">Resources</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -282,6 +279,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -297,32 +301,42 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#working-buffer-composition" id="toc-working-buffer-composition" class="nav-link" data-scroll-target="#working-buffer-composition">Working buffer composition</a></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <li><a href="#key-references" id="toc-key-references" class="nav-link active" data-scroll-target="#key-references">Key references</a>
   <ul class="collapse">
-  <li><a href="#stock-solutions" id="toc-stock-solutions" class="nav-link" data-scroll-target="#stock-solutions">Stock solutions</a></li>
-  <li><a href="#preparation-of-10-ml-working-buffer-2" id="toc-preparation-of-10-ml-working-buffer-2" class="nav-link" data-scroll-target="#preparation-of-10-ml-working-buffer-2">Preparation of <strong>10 mL working buffer (2×)</strong></a></li>
+  <li><a href="#flow-cytometry" id="toc-flow-cytometry" class="nav-link" data-scroll-target="#flow-cytometry">Flow cytometry</a></li>
   </ul></li>
-  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
-  <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
-  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety">Safety</a></li>
-  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  <li><a href="#core-lab-platforms-university-hospital-bonn" id="toc-core-lab-platforms-university-hospital-bonn" class="nav-link" data-scroll-target="#core-lab-platforms-university-hospital-bonn">Core lab platforms (University Hospital Bonn)</a>
+  <ul class="collapse">
+  <li><a href="#pyrat-animal-facility" id="toc-pyrat-animal-facility" class="nav-link" data-scroll-target="#pyrat-animal-facility">PyRAT (animal facility)</a></li>
+  <li><a href="#flow-cytometry-facility-tools" id="toc-flow-cytometry-facility-tools" class="nav-link" data-scroll-target="#flow-cytometry-facility-tools">Flow cytometry facility tools</a></li>
+  </ul></li>
+  <li><a href="#experimental-reagents-and-ordering" id="toc-experimental-reagents-and-ordering" class="nav-link" data-scroll-target="#experimental-reagents-and-ordering">Experimental reagents and ordering</a>
+  <ul class="collapse">
+  <li><a href="#lab-ordering-and-inventory" id="toc-lab-ordering-and-inventory" class="nav-link" data-scroll-target="#lab-ordering-and-inventory">Lab ordering and inventory</a></li>
+  </ul></li>
+  <li><a href="#computational-resources" id="toc-computational-resources" class="nav-link" data-scroll-target="#computational-resources">Computational resources</a>
+  <ul class="collapse">
+  <li><a href="#high-performance-computing-hpc" id="toc-high-performance-computing-hpc" class="nav-link" data-scroll-target="#high-performance-computing-hpc">High-performance computing (HPC)</a></li>
+  </ul></li>
+  <li><a href="#misc" id="toc-misc" class="nav-link" data-scroll-target="#misc">Misc</a>
+  <ul class="collapse">
+  <li><a href="#paper-deconstruction" id="toc-paper-deconstruction" class="nav-link" data-scroll-target="#paper-deconstruction">Paper deconstruction</a></li>
+  </ul></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_mus_liver_digestion_NLC.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mouse Liver Digestion Buffer</h1>
-<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+<h1 class="title">Resources</h1>
 </div>
 
 <div>
   <div class="description">
-    Preparation of collagenase IV and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue.
+    Key references, platforms, and external tools used in the Abdullah Lab.
   </div>
 </div>
 
@@ -330,12 +344,6 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 21, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -345,46 +353,67 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Protocol ID:</strong> BUF-MUS-LIV-DIG-001<br>
-<strong>Version:</strong> v1.0<br>
-<strong>Author:</strong> Dillon Corvino</p>
-<section id="purpose" class="level1">
-<h1>Purpose</h1>
-<p>This buffer is used for enzymatic digestion of mouse liver tissue to generate viable single-cell suspensions. It contains Collagenase IV and DNase I at working concentrations suitable for dissociating liver parenchyma while preserving lymphocyte viability.</p>
+<section id="key-references" class="level1">
+<h1>Key references</h1>
+<section id="flow-cytometry" class="level2">
+<h2 class="anchored" data-anchor-id="flow-cytometry">Flow cytometry</h2>
+<p>📄 <strong>Guidelines for the use of flow cytometry and cell sorting in immunological studies</strong><br>
+Cossarizza <em>et al.</em> (2021), <em>European Journal of Immunology</em> — Third Edition</p>
+<ul>
+<li><a href="https://github.com/Eomesodermin/lab-protocols/releases/tag/cossarizza-flow-2021-v3">Open PDF (GitHub Release)</a></li>
+</ul>
+<hr>
 </section>
-<section id="working-buffer-composition" class="level1">
-<h1>Working buffer composition</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 25%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Component</th>
-<th>Final concentration</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Collagenase IV</td>
-<td>0.5 mg/mL (example)</td>
-<td>Adjust per validated stock; see below</td>
-</tr>
-<tr class="even">
-<td>DNase I</td>
-<td>25–50 µg/mL</td>
-<td>Reduces clumping; protects viability</td>
-</tr>
-<tr class="odd">
-<td>PBS (1×), sterile</td>
-<td>—</td>
-<td>Solvent</td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="core-lab-platforms-university-hospital-bonn" class="level1">
+<h1>Core lab platforms (University Hospital Bonn)</h1>
+<section id="pyrat-animal-facility" class="level2">
+<h2 class="anchored" data-anchor-id="pyrat-animal-facility">PyRAT (animal facility)</h2>
+<ul>
+<li>🔐 <a href="https://pyrat.ukbonn.de/pyrat/frontend/session/login">PyRAT login</a></li>
+</ul>
+</section>
+<section id="flow-cytometry-facility-tools" class="level2">
+<h2 class="anchored" data-anchor-id="flow-cytometry-facility-tools">Flow cytometry facility tools</h2>
+<ul>
+<li>🔐 <a href="https://ppms.eu/uni-bonn/login/">PPMS login (University of Bonn)</a></li>
+<li>🧪 <a href="https://app.fluorofinder.com/bonn-fccf">FluoroFinder – Bonn FCCF</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="experimental-reagents-and-ordering" class="level1">
+<h1>Experimental reagents and ordering</h1>
+<section id="lab-ordering-and-inventory" class="level2">
+<h2 class="anchored" data-anchor-id="lab-ordering-and-inventory">Lab ordering and inventory</h2>
+<ul>
+<li>📦 <a href="https://app.quartzy.com/groups/256099/requests">Quartzy – Lab requests</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="computational-resources" class="level1">
+<h1>Computational resources</h1>
+<section id="high-performance-computing-hpc" class="level2">
+<h2 class="anchored" data-anchor-id="high-performance-computing-hpc">High-performance computing (HPC)</h2>
+<ul>
+<li>🖥️ <a href="https://wiki.hpc.uni-bonn.de">University of Bonn HPC Wiki</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="misc" class="level1">
+<h1>Misc</h1>
+<section id="paper-deconstruction" class="level2">
+<h2 class="anchored" data-anchor-id="paper-deconstruction">Paper deconstruction</h2>
+<ul>
+<li>🧬 <a href="https://www.qedscience.com">QED Bioscience</a></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="notes" class="level1">
+<h1>Notes</h1>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -395,150 +424,9 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The final working concentrations here follow the proportions described in the original SOP (100 µL Collagenase IV into 10 mL PBS + 50 µL DNase I). Adjust exact activity units according to vendor.</p>
+<p>Some platforms (e.g.&nbsp;PyRAT, PPMS, Quartzy) require institutional login or VPN access when off-site.</p>
 </div>
 </div>
-</section>
-<section id="preparation" class="level1">
-<h1>Preparation</h1>
-<section id="stock-solutions" class="level2">
-<h2 class="anchored" data-anchor-id="stock-solutions">Stock solutions</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 43%">
-<col style="width: 32%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Reagent</th>
-<th>Typical stock concentration</th>
-<th>Storage</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Collagenase IV</td>
-<td>100 mg/mL in PBS or HBSS</td>
-<td>Aliquoted at −20 °C</td>
-</tr>
-<tr class="even">
-<td>DNase I</td>
-<td>10 mg/mL in buffer (manufacturer)</td>
-<td>Aliquoted at −20 °C</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="preparation-of-10-ml-working-buffer-2" class="level2">
-<h2 class="anchored" data-anchor-id="preparation-of-10-ml-working-buffer-2">Preparation of <strong>10 mL working buffer (2×)</strong></h2>
-<ol type="1">
-<li>Thaw aliquots of Collagenase IV and DNase I on ice.<br>
-</li>
-<li>In a sterile tube, add:
-<ul>
-<li><strong>100 µL</strong> Collagenase IV stock<br>
-</li>
-<li><strong>50 µL</strong> DNase I stock<br>
-</li>
-</ul></li>
-<li>Add <strong>PBS up to 10 mL total volume</strong>.<br>
-</li>
-<li>Mix gently by inversion; <strong>do not vortex</strong>.</li>
-</ol>
-<p>This 2× buffer is diluted 1:1 with PBS at the time of digestion (2 mL 2× buffer + 2 mL PBS per liver sample).</p>
-</section>
-</section>
-<section id="storage-and-stability" class="level1">
-<h1>Storage and stability</h1>
-<ul>
-<li>Store freshly prepared digestion buffer <strong>on ice</strong> during use.<br>
-</li>
-<li>Do <strong>not</strong> freeze after mixing with enzymes.<br>
-</li>
-<li>Discard after same-day use.<br>
-</li>
-<li>Collagenase IV and DNase I <strong>stock solutions</strong>:
-<ul>
-<li>Store at <strong>−20 °C, aliquoted</strong>, avoid repeated freeze–thaw cycles.</li>
-</ul></li>
-</ul>
-</section>
-<section id="reagent-details" class="level1">
-<h1>Reagent details</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 23%">
-<col style="width: 20%">
-<col style="width: 11%">
-<col style="width: 44%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Reagent</th>
-<th>Supplier</th>
-<th>Cat. #</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Collagenase IV</td>
-<td>Various</td>
-<td>—</td>
-<td>Liver digestion enzyme</td>
-</tr>
-<tr class="even">
-<td>DNase I</td>
-<td>Various</td>
-<td>—</td>
-<td>Prevents clumping</td>
-</tr>
-<tr class="odd">
-<td>PBS, sterile</td>
-<td>Various</td>
-<td>—</td>
-<td>Solvent</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="safety" class="level1">
-<h1>Safety</h1>
-<ul>
-<li>Handle enzymes with gloves and eye protection to avoid skin or mucosal irritation.<br>
-</li>
-<li>Dispose of enzyme-containing waste as biological/chemical waste according to institutional guidelines.<br>
-</li>
-<li>Use sterile technique inside a biosafety cabinet.</li>
-</ul>
-</section>
-<section id="version-history" class="level1">
-<h1>Version history</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 17%">
-<col style="width: 22%">
-<col style="width: 48%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Version</th>
-<th>Date</th>
-<th>Author</th>
-<th>Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>v1.0</td>
-<td>2025-11-21</td>
-<td>Dillon Corvino</td>
-<td>Initial Quarto buffer document.</td>
-</tr>
-</tbody>
-</table>
 
 
 

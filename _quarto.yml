@@ -74,6 +74,10 @@ website:
         text: "Mouse"
         icon: mouse
 
+      - href: protocols_src/resources/index.qmd
+        text: "Resources"
+        icon: link-45deg
+
       - href: protocols_src/templates/index.qmd
         text: "Templates"
         icon: file-earmark-spreadsheet

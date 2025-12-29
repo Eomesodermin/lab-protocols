@@ -1,0 +1,173 @@
+---
+title: "Mouse Liver Digestion Buffer with Collagenase D"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-MUS-LIV-DIG-COL-D-001"
+version: "v1.1"
+date: "2025-12-29"
+description: "Enzymatic digestion buffer for mouse liver dissociation prior to single-cell preparation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This buffer is used for enzymatic digestion of mouse liver tissue prior to preparation of single-cell suspensions. It supports efficient dissociation while aiming to preserve cell viability for downstream flow cytometry, FACS sorting, and single-cell omics workflows.
+
+\tableofcontents
+
+# Linked protocols
+
+This buffer is used in:
+
+- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)
+
+---
+
+# Composition (final working buffer)
+
+Final working-buffer composition per **5 mL**:
+
+| Component          | Stock concentration | Volume for 5 mL | Final concentration (approx.) | Notes                                |
+|-------------------|---------------------|-----------------|-------------------------------|--------------------------------------|
+| DMEM (incomplete) | —                   | to 5 mL         | N/A                           | Base medium                          |
+| Collagenase D     | 100 mg/mL           | 10 µL           | 1 mg/mL                       | Reconstituted from powder stock      |
+| DNase I           | 10 mg/mL            | 1 µL            | 10 µg/mL                      | Added on day of use                  |
+
+:::callout-note
+The table above describes the **final working buffer** used in the protocol. In practice, a **stock digestion buffer without DNase** is prepared and frozen in aliquots, and DNase is added only on the day of use (see Preparation and Storage sections).
+:::
+
+---
+
+# Reconstitution of Collagenase D powder (stock preparation)
+
+Collagenase D is supplied as a **lyophilised powder** and must be reconstituted to generate a concentrated stock solution for preparation of liver digestion buffer.
+
+1. Perform all steps **under a biosafety cabinet** using sterile technique.
+2. Add **1 mL sterile PBS (1×)** directly to a vial containing **100 mg Collagenase D powder**.
+3. Recap the vial securely and **invert gently several times** until all powder is fully dissolved.
+   - Avoid vigorous shaking or vortexing.
+   - Inspect the vial to ensure no undissolved powder remains on the walls or cap.
+4. This yields a **100 mg/mL Collagenase D stock solution**.
+5. Aliquot the stock into **sterile 1.5 mL microcentrifuge tubes**, typically **100 µL per tube**.
+6. Label aliquots with:
+   - “Collagenase D 100 mg/mL”
+   - Date of preparation
+   - Initials
+7. Freeze aliquots at **−20 °C** for long-term storage.
+
+:::callout-warning
+Collagenase powder is a **respiratory and skin irritant**.  
+Handle the dry powder carefully, avoid aerosol generation, and always work under a biosafety cabinet while wearing appropriate PPE (lab coat, gloves, and eye protection).
+:::
+
+:::callout-note
+Aliquoting into single-use volumes avoids repeated freeze–thaw cycles, which can reduce enzymatic activity and introduce variability between experiments.
+:::
+
+---
+
+# Preparation
+
+## A. Prepare “Liver Digestion Buffer (no DNase)”
+
+This buffer is DMEM + Collagenase D, **without DNase**. It is frozen in aliquots for convenient use.
+
+:::callout-note
+Collagenase and DNase I are **proteins and mechanically sensitive**. Avoid vigorous vortexing or shaking, as this can denature the enzymes and reduce activity. Mix by gentle inversion or slow pipetting to preserve enzymatic function.
+:::
+
+1. Thaw a **Collagenase D 100 mg/mL stock aliquot** on ice or at 4 °C.
+2. In a sterile tube, prepare the digestion stock for the desired number of aliquots, for example:
+
+   - For each **5 mL** stock aliquot:
+     - Add **5 mL** DMEM (incomplete).
+     - Add **10 µL** Collagenase D stock (100 mg/mL).
+     - Mix gently by inversion (avoid foaming).
+
+3. Aliquot the digestion buffer into sterile tubes (e.g. **5–10 mL per aliquot**, depending on typical experimental usage, note: 5 mL per liver).
+4. Label aliquots clearly with:
+   - “Liver Digestion Buffer (no DNase)”
+   - Date
+   - Initials
+5. Freeze aliquots at **−20 °C**.
+
+## B. Prepare final working Liver Digestion Buffer (day of use)
+
+1. Remove the required number of **Liver Digestion Buffer (no DNase)** aliquots from −20 °C and **thaw** at room temperature or 4 °C.
+2. For each **5 mL** of final working buffer needed:
+   1. Ensure the thawed buffer is well mixed (gentle inversion).
+   2. Add **1 µL DNase I stock (10 mg/mL)** to **5 mL** digestion buffer
+   3. Mix gently by inversion.
+3. Pre-warm the final working buffer to **37 °C** before use (e.g. water bath or incubator).
+4. If desired, pre-aliquot **5 mL** of the final working buffer into pre-labelled 50 mL tubes for liver digestion.
+
+:::callout-tip
+To minimise variability, prepare all working-buffer aliquots for a given experiment at the **same time** using the **same DNase stock**, and keep buffers at 37 °C only for as long as required during digestion.
+:::
+
+:::callout-note
+DNase I is added **only on the day of use** because prolonged storage in digestion buffer containing active collagenase can lead to **proteolytic degradation of DNase**.
+:::
+
+---
+
+# Storage and stability
+
+## Liver Digestion Stock (no DNase)
+
+- **Composition:** DMEM (incomplete) + Collagenase D (1 mg/mL final when diluted as described).
+- **Storage:** Store aliquots at **−20 °C**.
+- **Stability:** Use within **3–6 months** of preparation, or according to internal lab validation.
+- **Handling:** Avoid repeated freeze–thaw cycles; thaw gently and mix before use.
+
+## Final working Liver Digestion Buffer (with DNase)
+
+- Prepared from thawed **Liver Digestion Stock (no DNase)** + DNase I.
+- **Use on the same day** as preparation.
+- Keep at **37 °C** only during active digestion; otherwise keep at room temperature briefly.
+- Do not refreeze once DNase has been added; discard unused buffer at the end of the day.
+
+## Stock reagents
+
+- **Collagenase D stock (100 mg/mL)**  
+  - Store at **−20 °C** in aliquots.  
+  - Avoid repeated freeze–thaw cycles.
+
+- **DNase I stock (10 mg/mL)**  
+  - Store at **−20 °C** according to manufacturer’s instructions.  
+  - Avoid repeated freeze–thaw cycles.
+
+- **DMEM (incomplete)**  
+  - Store at **4 °C**, protected from light.  
+  - Respect manufacturer’s expiry date.
+
+---
+
+# Reagent details
+
+| Component          | Supplier | Cat#        | Notes |
+|-------------------|----------|-------------|-------|
+| DMEM (incomplete) | TBD      | TBD         | High-glucose DMEM without supplements |
+| Collagenase D     | Roche    | 11088858001 | Supplied as powder; reconstituted to 100 mg/mL in sterile PBS |
+| DNase I           | TBD      | TBD         | Prepare 10 mg/mL stock; avoid repeated thawing |
+
+---
+
+# Safety (brief)
+
+- Handle mouse tissues and digestion buffers in accordance with institutional biosafety rules (S1/S2 as applicable).
+- Enzymes such as collagenase and DNase can cause irritation; wear appropriate PPE.
+- Avoid inhalation of powders and contact with eyes or damaged skin.
+- Dispose of digestion buffers and contaminated consumables as **biohazardous waste** according to local regulations.
+
+---
+
+# Version history
+
+| Version | Date       | Author          | Change summary |
+|---------|------------|-----------------|----------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial buffer definition |
+| v1.1    | 2025-12-29 | Dillon Corvino  | Added collagenase powder reconstitution and safety notes |

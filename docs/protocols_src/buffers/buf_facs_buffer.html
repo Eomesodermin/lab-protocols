@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
-<meta name="description" content="Buffer for washing, staining, and handling cells for flow cytometry and magnetic separation.">
+<meta name="dcterms.date" content="2025-12-29">
+<meta name="description" content="Buffers for washing, staining, and handling cells for flow cytometry (FACS) and magnetic separation (MACS).">
 
-<title>FACS/MACS Buffer – Protocol Library</title>
+<title>FACS Buffer and MACS Buffer – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -282,6 +282,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -299,8 +306,16 @@ window.Quarto = {
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#linked-protocols" id="toc-linked-protocols" class="nav-link" data-scroll-target="#linked-protocols">Linked protocols</a></li>
-  <li><a href="#composition-1-facsmacs-buffer" id="toc-composition-1-facsmacs-buffer" class="nav-link" data-scroll-target="#composition-1-facsmacs-buffer">Composition (1× FACS/MACS Buffer)</a></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#buffer-definitions-important" id="toc-buffer-definitions-important" class="nav-link" data-scroll-target="#buffer-definitions-important">Buffer definitions (important)</a></li>
+  <li><a href="#composition" id="toc-composition" class="nav-link" data-scroll-target="#composition">Composition</a>
+  <ul class="collapse">
+  <li><a href="#facs-buffer-1" id="toc-facs-buffer-1" class="nav-link" data-scroll-target="#facs-buffer-1">FACS Buffer (1×)</a></li>
+  <li><a href="#macs-buffer-1" id="toc-macs-buffer-1" class="nav-link" data-scroll-target="#macs-buffer-1">MACS Buffer (1×)</a></li>
+  </ul></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <ul class="collapse">
+  <li><a href="#general" id="toc-general" class="nav-link" data-scroll-target="#general">General</a></li>
+  </ul></li>
   <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
   <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
   <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
@@ -313,13 +328,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FACS/MACS Buffer</h1>
+<h1 class="title">FACS Buffer and MACS Buffer</h1>
 <p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
 <div>
   <div class="description">
-    Buffer for washing, staining, and handling cells for flow cytometry and magnetic separation.
+    Buffers for washing, staining, and handling cells for flow cytometry (FACS) and magnetic separation (MACS).
   </div>
 </div>
 
@@ -330,7 +345,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">December 29, 2025</p>
     </div>
   </div>
   
@@ -342,32 +357,69 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Protocol ID:</strong> BUF-FACS-v1.0<br>
-<strong>Version:</strong> v1.0<br>
+<p><strong>Protocol ID:</strong> BUF-FACS-MACS-v1.1<br>
+<strong>Version:</strong> v1.1<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
-<p>This buffer is used for washing and resuspending cells during flow cytometry staining, FACS sorting, and MACS-based enrichment. It helps maintain cell viability, prevents clumping, and minimises nonspecific binding.</p>
+<p>These buffers are used for washing, resuspending, and handling cells during <strong>flow cytometry staining and sorting (FACS)</strong> and <strong>magnetic-activated cell sorting (MACS)</strong>.</p>
+<ul>
+<li><strong>FACS Buffer</strong> is optimized for antibody staining and cytometric analysis.</li>
+<li><strong>MACS Buffer</strong> includes EDTA to prevent cell clumping and nonspecific aggregation during magnetic separation.</li>
+</ul>
 </section>
 <section id="linked-protocols" class="level1">
 <h1>Linked protocols</h1>
-<p>This buffer is used in:</p>
+<p>These buffers are used in:</p>
 <ul>
 <li><strong>Mouse Liver Dissociation to Single-Cell Suspension</strong> – <code>LIV-001</code> (v1.0)<br>
 </li>
-<li>Additional protocols as needed.</li>
+<li>Additional staining, sorting, and enrichment protocols as required.</li>
 </ul>
+<hr>
 </section>
-<section id="composition-1-facsmacs-buffer" class="level1">
-<h1>Composition (1× FACS/MACS Buffer)</h1>
-<p>Typical preparation for <strong>500 mL</strong> of buffer:</p>
+<section id="buffer-definitions-important" class="level1">
+<h1>Buffer definitions (important)</h1>
+<ul>
+<li><strong>FACS Buffer</strong>
+<ul>
+<li><strong>PBS + FCS</strong><br>
+</li>
+<li><em>No EDTA</em></li>
+</ul></li>
+<li><strong>MACS Buffer</strong>
+<ul>
+<li><strong>PBS + FCS + EDTA</strong></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>EDTA is excluded from FACS buffer by default to avoid potential interference with certain staining reagents or downstream functional assays.<br>
+EDTA is included in MACS buffer to minimize cell clumping and improve recovery during magnetic separation.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="composition" class="level1">
+<h1>Composition</h1>
+<section id="facs-buffer-1" class="level2">
+<h2 class="anchored" data-anchor-id="facs-buffer-1">FACS Buffer (1×)</h2>
+<p>Typical preparation for <strong>500 mL</strong>:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 12%">
-<col style="width: 23%">
-<col style="width: 21%">
-<col style="width: 23%">
-<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 8%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -382,7 +434,7 @@ window.Quarto = {
 <tr class="odd">
 <td>PBS 1×</td>
 <td>—</td>
-<td>500 mL</td>
+<td>490 mL</td>
 <td>—</td>
 <td>Base buffer</td>
 </tr>
@@ -391,7 +443,46 @@ window.Quarto = {
 <td>—</td>
 <td>10 mL</td>
 <td>2% (v/v)</td>
-<td>Heat-inactivated, if used</td>
+<td>Heat-inactivated if required</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="macs-buffer-1" class="level2">
+<h2 class="anchored" data-anchor-id="macs-buffer-1">MACS Buffer (1×)</h2>
+<p>Typical preparation for <strong>500 mL</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 26%">
+<col style="width: 24%">
+<col style="width: 26%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Stock concentration</th>
+<th>Volume for 500 mL</th>
+<th>Final concentration</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PBS 1×</td>
+<td>—</td>
+<td>488 mL</td>
+<td>—</td>
+<td>Base buffer</td>
+</tr>
+<tr class="even">
+<td>FCS</td>
+<td>—</td>
+<td>10 mL</td>
+<td>2% (v/v)</td>
+<td>Heat-inactivated if required</td>
 </tr>
 <tr class="odd">
 <td>EDTA</td>
@@ -402,55 +493,43 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>(Volumes above reflect the original SOP recipe: PBS 1× 500 mL, FCS 10 mL, EDTA (0.5 M) 2 mL.)</p>
+<hr>
+</section>
 </section>
 <section id="preparation" class="level1">
 <h1>Preparation</h1>
+<section id="general" class="level2">
+<h2 class="anchored" data-anchor-id="general">General</h2>
 <ol type="1">
-<li>Start with <strong>500 mL PBS 1×</strong> in a sterile bottle.</li>
-<li>Add <strong>10 mL FCS</strong> (to achieve 2% v/v final).</li>
-<li>Add <strong>2 mL EDTA 0.5 M stock</strong> (to achieve 2 mM final).</li>
+<li>Start with sterile <strong>PBS 1×</strong> in an appropriate bottle.</li>
+<li>Add <strong>FCS</strong> to achieve <strong>2% (v/v)</strong>.</li>
+<li>For <strong>MACS buffer only</strong>, add <strong>EDTA</strong> to a final concentration of <strong>2 mM</strong>.</li>
 <li>Mix gently by inversion.</li>
-<li>If sterility is required, filter the buffer through a <strong>0.22 µm filter</strong> into a sterile storage bottle.</li>
-<li>Label with:
+<li>If sterility is required, filter through a <strong>0.22 µm filter</strong> into a sterile storage bottle.</li>
+<li>Label clearly with:
 <ul>
-<li>“FACS/MACS Buffer (PBS + 2% FCS + 2 mM EDTA)”</li>
+<li>“FACS Buffer” <strong>or</strong> “MACS Buffer”</li>
 <li>Date of preparation</li>
-<li>Version (<code>BUF-FACS-v1.0</code>)</li>
+<li>Initials</li>
+<li>“Sterile” <strong>or</strong> “Non-Sterile”</li>
 </ul></li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For highly sensitive applications (e.g.&nbsp;scRNA-seq, FACS of rare populations), prepare fresh or use small aliquots to minimise repeated warming/cooling cycles and contamination risk.</p>
-</div>
-</div>
+<hr>
+</section>
 </section>
 <section id="storage-and-stability" class="level1">
 <h1>Storage and stability</h1>
 <ul>
-<li>Store at <strong>4 °C</strong>, protected from light if possible.</li>
-<li>Recommended to use within <strong>4–6 weeks</strong>, or according to internal lab validation and microbial QC.</li>
-<li>Before use, invert gently to resuspend any settled components.</li>
-<li>Avoid repeated temperature cycling; if frequent bench use is expected, consider preparing smaller working aliquots.</li>
+<li>Store buffers at <strong>4 °C</strong>.</li>
+<li>Recommended use within <strong>4–6 weeks</strong>, subject to internal QC and sterility checks.</li>
+<li>Invert gently before use to resuspend any settled components.</li>
+<li>Avoid repeated temperature cycling; prepare smaller working aliquots if buffers are accessed frequently.</li>
 </ul>
+<hr>
 </section>
 <section id="reagent-details" class="level1">
 <h1>Reagent details</h1>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 32%">
-<col style="width: 29%">
-<col style="width: 17%">
-<col style="width: 20%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Component</th>
@@ -462,36 +541,44 @@ Tip
 <tbody>
 <tr class="odd">
 <td>PBS 1×</td>
-<td>[TBD]</td>
-<td>[TBD]</td>
+<td>TBD</td>
+<td>TBD</td>
 <td>Sterile, Ca²⁺/Mg²⁺-free recommended</td>
 </tr>
 <tr class="even">
 <td>FCS</td>
-<td>[TBD]</td>
-<td>[TBD]</td>
-<td>Heat-inactivated if required by downstream applications</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Heat-inactivated if required</td>
 </tr>
 <tr class="odd">
 <td>EDTA 0.5 M</td>
-<td>[TBD]</td>
-<td>[TBD]</td>
-<td>Sterile stock solution; pH ~8.0</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Sterile stock; pH ~8.0</td>
 </tr>
 </tbody>
 </table>
+<hr>
 </section>
 <section id="safety-brief" class="level1">
 <h1>Safety (brief)</h1>
 <ul>
-<li>Handle biological samples in FACS buffer according to institutional biosafety rules.</li>
-<li>FCS is of animal origin; treat as a potential biohazard.</li>
-<li>EDTA is of low toxicity at working concentrations but should be handled with standard lab PPE.</li>
+<li>Handle biological samples in FACS and MACS buffers according to institutional biosafety rules.</li>
+<li>FCS is of animal origin and should be treated as a potential biohazard.</li>
+<li>EDTA is of low toxicity at working concentrations but should be handled with standard laboratory PPE.</li>
 </ul>
+<hr>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 56%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Version</th>
@@ -506,6 +593,12 @@ Tip
 <td>2025-11-20</td>
 <td>Dillon Corvino</td>
 <td>Initial buffer definition</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-12-29</td>
+<td>Dillon Corvino</td>
+<td>Explicit separation of FACS vs MACS buffer usage</td>
 </tr>
 </tbody>
 </table>

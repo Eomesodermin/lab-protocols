@@ -282,6 +282,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -434,13 +441,17 @@ Note
 <section id="step-4-rbc-lysis" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-rbc-lysis">STEP 4 – RBC lysis</h2>
 <ol type="1">
-<li>Add <strong>1 mL HybriMax RBC Lysis Buffer</strong> (or equivalent) <strong>per spleen</strong> to the pellet.<br>
+<li>Add <strong>RBC lysis buffer</strong> to the cell pellet (<strong>1 mL per spleen</strong>):
+<ul>
+<li><strong>ACK lysis buffer:</strong> incubate for <strong>1.5–2 minutes at room temperature</strong>, <strong>or</strong><br>
 </li>
-<li>Gently resuspend the pellet by pipetting or flicking.<br>
+<li><strong>HybriMax RBC Lysis Buffer:</strong> incubate for <strong>4–5 minutes at room temperature</strong>.<br>
 </li>
-<li>Incubate for <strong>5 minutes at room temperature</strong>.<br>
+</ul></li>
+<li>Gently resuspend immediately by pipetting or flicking to ensure uniform lysis.<br>
 </li>
-<li>Top up to <strong>50 mL</strong> with <strong>FACS Buffer</strong>.</li>
+<li>Quench the reaction by topping up to <strong>50 mL with FACS Buffer</strong>.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -452,7 +463,20 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Avoid over-lysis (&gt;5 minutes) as this can reduce leukocyte viability.</p>
+<p>Do not exceed the indicated incubation times. Over-incubation is the most common cause of reduced leukocyte viability. If red cells remain, repeat a <strong>short second lysis</strong> rather than extending the incubation.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>ACK lysis buffer is <strong>stronger and faster</strong> but less forgiving. HybriMax is <strong>milder and preferred</strong> when viability is critical (e.g.&nbsp;downstream scRNA-seq or adoptive transfer).</p>
 </div>
 </div>
 </section>

@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-21">
-<meta name="description" content="Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry using FACS buffer, Fc block, live/dead dyes, and commercial fixation/permeabilization kits.">
+<meta name="dcterms.date" content="2025-12-29">
+<meta name="description" content="Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry, including optional tetramer staining.">
 
 <title>Standard Flow Cytometry Staining (Surface, Intracellular, Intranuclear) – Protocol Library</title>
 <style>
@@ -282,6 +282,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -298,33 +305,32 @@ window.Quarto = {
    
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#buffer-nomenclature-important" id="toc-buffer-nomenclature-important" class="nav-link" data-scroll-target="#buffer-nomenclature-important">Buffer nomenclature (important)</a></li>
   <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
   <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
   <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
   <ul class="collapse">
-  <li><a href="#step-1-plate-setup-and-facs-buffer" id="toc-step-1-plate-setup-and-facs-buffer" class="nav-link" data-scroll-target="#step-1-plate-setup-and-facs-buffer">Step 1 – Plate setup and FACS buffer</a></li>
-  <li><a href="#step-2-fc-block-and-livedead-staining" id="toc-step-2-fc-block-and-livedead-staining" class="nav-link" data-scroll-target="#step-2-fc-block-and-livedead-staining">Step 2 – Fc block and live/dead staining</a></li>
-  <li><a href="#step-3-surface-staining" id="toc-step-3-surface-staining" class="nav-link" data-scroll-target="#step-3-surface-staining">Step 3 – Surface staining</a>
+  <li><a href="#step-1-plate-setup-and-buffers" id="toc-step-1-plate-setup-and-buffers" class="nav-link" data-scroll-target="#step-1-plate-setup-and-buffers">Step 1 – Plate setup and buffers</a></li>
+  <li><a href="#step-2-tetramer-staining-optional-if-applicable" id="toc-step-2-tetramer-staining-optional-if-applicable" class="nav-link" data-scroll-target="#step-2-tetramer-staining-optional-if-applicable">Step 2 – Tetramer staining (optional, if applicable)</a></li>
+  <li><a href="#step-3-surface-staining-with-livedead" id="toc-step-3-surface-staining-with-livedead" class="nav-link" data-scroll-target="#step-3-surface-staining-with-livedead">Step 3 – Surface staining (with live/dead)</a>
   <ul class="collapse">
-  <li><a href="#if-only-surface-staining-is-required" id="toc-if-only-surface-staining-is-required" class="nav-link" data-scroll-target="#if-only-surface-staining-is-required">3.1 If only surface staining is required</a></li>
+  <li><a href="#if-tetramer-staining-was-performed-from-step-2" id="toc-if-tetramer-staining-was-performed-from-step-2" class="nav-link" data-scroll-target="#if-tetramer-staining-was-performed-from-step-2">3.1 If tetramer staining was performed (from Step 2)</a></li>
+  <li><a href="#if-no-tetramer-staining-was-performed" id="toc-if-no-tetramer-staining-was-performed" class="nav-link" data-scroll-target="#if-no-tetramer-staining-was-performed">3.2 If no tetramer staining was performed</a></li>
+  <li><a href="#wash-steps-both-cases" id="toc-wash-steps-both-cases" class="nav-link" data-scroll-target="#wash-steps-both-cases">3.3 Wash steps (both cases)</a></li>
+  <li><a href="#surface-staining-only" id="toc-surface-staining-only" class="nav-link" data-scroll-target="#surface-staining-only">3.1 Surface staining only</a></li>
   </ul></li>
-  <li><a href="#step-4-fixation-and-permeabilization-for-intracellular-or-intranuclear-staining" id="toc-step-4-fixation-and-permeabilization-for-intracellular-or-intranuclear-staining" class="nav-link" data-scroll-target="#step-4-fixation-and-permeabilization-for-intracellular-or-intranuclear-staining">Step 4 – Fixation and permeabilization for intracellular or intranuclear staining</a>
+  <li><a href="#step-4-fixation-and-permeabilization" id="toc-step-4-fixation-and-permeabilization" class="nav-link" data-scroll-target="#step-4-fixation-and-permeabilization">Step 4 – Fixation and permeabilization</a>
   <ul class="collapse">
-  <li><a href="#initial-fixperm" id="toc-initial-fixperm" class="nav-link" data-scroll-target="#initial-fixperm">4.1 Initial fix/perm</a></li>
-  <li><a href="#pause-point-optional-overnight" id="toc-pause-point-optional-overnight" class="nav-link" data-scroll-target="#pause-point-optional-overnight">4.2 Pause point (optional, overnight)</a></li>
-  <li><a href="#re-permeabilization-before-intranuclear-staining-if-using-foxp3-kit" id="toc-re-permeabilization-before-intranuclear-staining-if-using-foxp3-kit" class="nav-link" data-scroll-target="#re-permeabilization-before-intranuclear-staining-if-using-foxp3-kit">4.3 Re-permeabilization before intranuclear staining (if using FOXP3 kit)</a></li>
+  <li><a href="#initial-fixationpermeabilization" id="toc-initial-fixationpermeabilization" class="nav-link" data-scroll-target="#initial-fixationpermeabilization">4.1 Initial fixation/permeabilization</a></li>
+  <li><a href="#optional-pause-point" id="toc-optional-pause-point" class="nav-link" data-scroll-target="#optional-pause-point">4.2 Optional pause point</a></li>
   </ul></li>
   <li><a href="#step-5-intracellular-or-intranuclear-staining" id="toc-step-5-intracellular-or-intranuclear-staining" class="nav-link" data-scroll-target="#step-5-intracellular-or-intranuclear-staining">Step 5 – Intracellular or intranuclear staining</a></li>
   </ul></li>
   <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
   <ul class="collapse">
   <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
-  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
-  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
   </ul></li>
   <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
-  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_gen_flow_standard.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -340,7 +346,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry using FACS buffer, Fc block, live/dead dyes, and commercial fixation/permeabilization kits.
+    Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry, including optional tetramer staining.
   </div>
 </div>
 
@@ -351,7 +357,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 21, 2025</p>
+      <p class="date">December 29, 2025</p>
     </div>
   </div>
   
@@ -364,12 +370,14 @@ window.Quarto = {
 
 
 <p><strong>Protocol ID:</strong> GEN-FLOW-STD-001<br>
-<strong>Version:</strong> v1.0<br>
+<strong>Version:</strong> v1.1<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
 <p>This protocol describes a standard flow cytometry staining workflow for suspension cells, including:</p>
 <ul>
+<li>Optional <strong>tetramer staining</strong>.<br>
+</li>
 <li>Surface staining with Fc block and live/dead dye.<br>
 </li>
 <li>Optional intracellular staining (e.g.&nbsp;BD Cytofix/Cytoperm-based).<br>
@@ -377,16 +385,27 @@ window.Quarto = {
 <li>Optional intranuclear staining (e.g.&nbsp;eBioscience FOXP3 fix/perm-based).</li>
 </ul>
 <p>It is intended as a general framework for murine or human samples and can be adapted to specific panels and antibody combinations.</p>
+<hr>
+</section>
+<section id="buffer-nomenclature-important" class="level1">
+<h1>Buffer nomenclature (important)</h1>
+<ul>
+<li><strong>FACS Buffer</strong> = PBS + FCS<br>
+</li>
+<li><strong>MACS Buffer</strong> = PBS + FCS + EDTA</li>
+</ul>
+<p>Unless otherwise specified, <strong>MACS buffer is used throughout this protocol</strong> to minimise cell clumping during staining and washing.</p>
+<p>Tetramer staining is a specific exception (see below).</p>
+<hr>
 </section>
 <section id="critical-notes-read-before-starting" class="level1">
 <h1>Critical notes (read before starting)</h1>
 <ul>
 <li>Keep cells and antibody mixes cold (on ice or at 4 °C) and protected from light whenever possible.</li>
-<li>Use FACS buffer containing EDTA to reduce cell aggregation during staining and washing.</li>
-<li>Do not exceed the recommended maximum of ~5 × 10⁵ cells per well in 96-well plates to ensure effective staining and washing.</li>
-<li>Always include appropriate controls (unstained, live/dead only, FMO, single-colour controls, etc.) for panel design and compensation.</li>
-<li>Fixation and permeabilization conditions must be compatible with the antibodies and fluorochromes used (consult datasheets).</li>
-<li>If using commercial fixation/permeabilization kits, follow the manufacturer’s instructions for dilution and incubation times.</li>
+<li>Default staining range: <strong>2 × 10⁵ – 1 × 10⁶ cells per well</strong> (96-well format).</li>
+<li>Always include appropriate controls (unstained, live/dead only, FMO, single-colour controls).</li>
+<li>Fixation and permeabilization conditions must be compatible with antibodies and fluorochromes used.</li>
+<li>Commercial fixation/permeabilization kits should be used according to manufacturer instructions.</li>
 </ul>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -398,7 +417,22 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Improper fixation/permeabilization or using incompatible buffers can destroy epitopes and fluorochromes, leading to poor or misleading intracellular/intranuclear staining. Verify kit compatibility with your antibodies and fluorochromes before use.</p>
+<p>Improper fixation/permeabilization or incompatible buffers can destroy epitopes and fluorochromes, leading to misleading intracellular or intranuclear staining.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Antibodies and tetramers are <strong>protein reagents and mechanically sensitive</strong>.<br>
+Do <strong>not vortex</strong>, as this can denature proteins and promote aggregation.<br>
+Instead, mix gently by pipetting or inversion. If needed, briefly spin reagents in a <strong>mini “pulse” centrifuge (quick spin)</strong> to collect liquid and pellet aggregates before use.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -411,129 +445,60 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Where possible, stain surface markers (including live/dead) first, then fix and permeabilize for intracellular/intranuclear staining. This often yields more robust surface staining and simplifies panel design.</p>
+<p>Surface markers (including live/dead dyes and tetramers) should generally be stained <strong>before fixation/permeabilization</strong> for best performance.</p>
 </div>
 </div>
+<hr>
 </section>
 <section id="approximate-timing" class="level1">
 <h1>Approximate timing</h1>
 <ul>
-<li>Plate setup and Fc block + live/dead: 20–30 min<br>
+<li>Tetramer staining (optional): 20 min<br>
 </li>
-<li>Surface staining: 30–45 min<br>
+<li>Plate setup and Fc block: 10–15 min<br>
+</li>
+<li>Surface staining: 30 min<br>
 </li>
 <li>Fixation only (no intracellular): 15–20 min<br>
 </li>
-<li>Fix + permeabilization + intracellular/intranuclear staining (same day): 1.5–2 hours<br>
+<li>Fix + permeabilization + intracellular/intranuclear staining: 1.5–2 h<br>
 </li>
-<li>Optional overnight pause (after initial fix/perm): adds 1 day</li>
+<li>Optional overnight intranuclear stain: +1 day</li>
 </ul>
-<p><strong>Total approximate time (surface only):</strong> ~1 hour.<br>
-<strong>Total approximate time (full intracellular/intranuclear workflow):</strong> ~3–4 hours over 1–2 days.</p>
+<p><strong>Total (surface only):</strong> ~1–1.5 h<br>
+<strong>Total (full workflow):</strong> ~3–4 h (or overnight)</p>
 <div style="page-break-after: always;"></div>
 <div style="page-break-after: always;"></div>
 </section>
 <section id="procedure" class="level1">
 <h1>Procedure</h1>
-<section id="step-1-plate-setup-and-facs-buffer" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-plate-setup-and-facs-buffer">Step 1 – Plate setup and FACS buffer</h2>
+<section id="step-1-plate-setup-and-buffers" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-plate-setup-and-buffers">Step 1 – Plate setup and buffers</h2>
 <ol type="1">
-<li>Prepare FACS buffer (BUF-GEN-FACS-BUF-001):
+<li>Prepare buffers:
 <ul>
-<li>PBS, 1×<br>
-</li>
-<li>2 % FCS (heat-inactivated)<br>
-</li>
-<li>2 mM EDTA<br>
-</li>
+<li><strong>FACS buffer</strong> (PBS + 2% FCS) — <em>for tetramer staining only</em>.</li>
+<li><strong>MACS buffer</strong> (PBS + 2% FCS + 2 mM EDTA) — <em>default buffer for all other steps</em>.</li>
 </ul></li>
-<li>Prepare single-cell suspensions of the desired samples.</li>
-<li>Count cells and adjust concentration so that you can plate up to <strong>5 × 10⁵ cells per well</strong> of a 96-well U-bottom or V-bottom plate.</li>
-<li>Aliquot cells into the plate (typically 5 × 10⁵ cells per well or less).</li>
-<li>Keep plates on ice (or at 4 °C) until staining begins.</li>
+<li>Prepare single-cell suspensions.</li>
+<li>Count cells and adjust concentration to plate <strong>2 × 10⁵ – 1 × 10⁶ cells per well</strong>.</li>
+<li>Aliquot cells into a 96-well U- or V-bottom plate.</li>
+<li>Keep plates on ice or at 4 °C.</li>
 </ol>
+<hr>
 </section>
-<section id="step-2-fc-block-and-livedead-staining" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-fc-block-and-livedead-staining">Step 2 – Fc block and live/dead staining</h2>
+<section id="step-2-tetramer-staining-optional-if-applicable" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-tetramer-staining-optional-if-applicable">Step 2 – Tetramer staining (optional, if applicable)</h2>
+<p>This step applies when staining with MR1 or CD1d tetramers.</p>
 <ol type="1">
-<li><p>Prepare a staining mix in FACS buffer containing Fc block and live/dead dye:</p>
+<li>Prepare a <strong>tetramer staining mix in FACS buffer (no EDTA)</strong>:
 <ul>
-<li>Fc block: <strong>1:200</strong> dilution.<br>
-</li>
-<li>Live/dead dye: <strong>1:100</strong> dilution.<br>
-</li>
-<li>Final volume: <strong>50 µL per well</strong>.</li>
+<li>Fc block: <strong>1:100</strong></li>
+<li>Tetramer(s): per manufacturer recommendation</li>
+<li>Final volume: <strong>50 µL per well</strong></li>
 </ul></li>
-<li><p>Add <strong>50 µL</strong> of this Fc block + live/dead mix to each well containing cells.</p></li>
-<li><p>Gently tap or briefly pulse-centrifuge the plate if needed to ensure mixing.</p></li>
-<li><p>Incubate on ice (or at 4 °C) for the time recommended by the live/dead reagent manufacturer (typically 15–20 min), protected from light.</p></li>
-<li><p>Centrifuge the plate at <strong>1000 g for 2 min</strong>.</p></li>
-<li><p>Quickly flick off the supernatant into a suitable waste container.</p></li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Live/dead dyes are light-sensitive and can be toxic at high concentrations or with prolonged incubation. Avoid direct light and adhere to the manufacturer’s recommended dilution and incubation times.</p>
-</div>
-</div>
-</section>
-<section id="step-3-surface-staining" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-surface-staining">Step 3 – Surface staining</h2>
-<ol type="1">
-<li>Prepare a surface staining master mix in FACS buffer with all desired surface antibodies:
-<ul>
-<li>Total volume: <strong>50 µL per well</strong>.</li>
-<li>Antibody dilutions according to titration data (commonly 1:50–1:200).</li>
-</ul></li>
-<li>Resuspend cell pellets in <strong>50 µL</strong> surface stain master mix per well.</li>
-<li>Incubate the plate on ice for <strong>30 min</strong>, protected from light.</li>
-<li>After incubation, top up each well to <strong>200 µL</strong> with FACS buffer.</li>
-<li>Centrifuge the plate at <strong>400 g for 2 min</strong>.</li>
-<li>Flick off the supernatant.</li>
-<li>Wash the cells by adding <strong>200 µL</strong> FACS buffer to each well, gently resuspending the pellet, and centrifuging again at <strong>400 g for 2 min</strong>.</li>
-<li>Flick off the supernatant.</li>
-</ol>
-<section id="if-only-surface-staining-is-required" class="level3">
-<h3 class="anchored" data-anchor-id="if-only-surface-staining-is-required">3.1 If only surface staining is required</h3>
-<ol type="1">
-<li>Resuspend each pellet in <strong>100–200 µL</strong> of 4 % PFA solution (or appropriate fixative) in PBS.</li>
-<li>Store plates at 4 °C, protected from light, until acquisition.</li>
-</ol>
-</section>
-</section>
-<section id="step-4-fixation-and-permeabilization-for-intracellular-or-intranuclear-staining" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-fixation-and-permeabilization-for-intracellular-or-intranuclear-staining">Step 4 – Fixation and permeabilization for intracellular or intranuclear staining</h2>
-<p>This step assumes the use of:</p>
-<ul>
-<li><strong>BD</strong> intracellular staining kit (e.g.&nbsp;Cytofix/Cytoperm) for cytoplasmic targets, or<br>
-</li>
-<li><strong>eBioscience FOXP3</strong> or equivalent intranuclear staining kit for transcription factors.</li>
-</ul>
-<p>Always consult the kit manuals; the steps below mirror the original SOP structure.</p>
-<section id="initial-fixperm" class="level3">
-<h3 class="anchored" data-anchor-id="initial-fixperm">4.1 Initial fix/perm</h3>
-<ol type="1">
-<li>Add <strong>100 µL</strong> of BD fix/perm solution (e.g.&nbsp;Cytofix/Cytoperm) <strong>or</strong> eBioscience FOXP3 fix/perm solution (typically 1:4 concentrate with 3:4 diluent) to each well.</li>
+<li>Add <strong>50 µL</strong> tetramer mix to each well.</li>
 <li>Incubate for <strong>20 min on ice</strong>, protected from light.</li>
-<li>Top up each well to <strong>200 µL</strong> with 1× PermWash (diluted in water, according to the kit instructions).</li>
-<li>Centrifuge the plate and flick off the supernatant.</li>
-<li>Resuspend each pellet in <strong>200 µL</strong> 1× PermWash.</li>
-<li>Centrifuge the plate and flick off the supernatant.</li>
-</ol>
-</section>
-<section id="pause-point-optional-overnight" class="level3">
-<h3 class="anchored" data-anchor-id="pause-point-optional-overnight">4.2 Pause point (optional, overnight)</h3>
-<ol type="1">
-<li>Resuspend each pellet in <strong>200 µL</strong> FACS buffer.</li>
-<li>Seal and label the plate clearly.</li>
-<li>Store at <strong>4 °C</strong> overnight, protected from light.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -545,36 +510,168 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>An overnight pause at this stage can be convenient for scheduling, but confirm that your antigen of interest and fluorochromes are stable under these conditions.</p>
+<p>Tetramer staining is performed in <strong>FACS buffer without EDTA</strong> to avoid potential interference with multimer–TCR interactions.<br>
+Whether EDTA exclusion is strictly necessary remains under investigation and will be tested within the lab.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>MR1–5-OP-RU tetramer can be added together with surface antibody staining.<br>
+For CD1d tetramers, compatibility with simultaneous surface staining is currently unclear and will be empirically tested.</p>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Without washing, proceed directly to Step 3.</li>
+</ol>
+<hr>
+</section>
+<section id="step-3-surface-staining-with-livedead" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-surface-staining-with-livedead">Step 3 – Surface staining (with live/dead)</h2>
+<p><strong>Antibody titration guidance (applies to all surface staining):</strong> - Surface antibodies: default <strong>1:200</strong> if titration data are unavailable. - Transcription factors or weakly expressed markers: default <strong>1:50</strong>.</p>
+<section id="if-tetramer-staining-was-performed-from-step-2" class="level3">
+<h3 class="anchored" data-anchor-id="if-tetramer-staining-was-performed-from-step-2">3.1 If tetramer staining was performed (from Step 2)</h3>
+<ol type="1">
+<li>Prepare a <strong>2× surface staining master mix in MACS buffer</strong> containing:
+<ul>
+<li>Live/dead dye (2× final concentration)</li>
+<li>Surface antibodies (2× final concentration)</li>
+</ul></li>
+<li>Add <strong>50 µL</strong> of the 2× surface mix to each well already containing <strong>50 µL tetramer mix</strong><br>
+→ <strong>Final volume: 100 µL per well (1× final concentration)</strong>.</li>
+<li>Incubate for <strong>30 min at 4 °C</strong>, protected from light.</li>
+</ol>
+</section>
+<section id="if-no-tetramer-staining-was-performed" class="level3">
+<h3 class="anchored" data-anchor-id="if-no-tetramer-staining-was-performed">3.2 If no tetramer staining was performed</h3>
+<ol type="1">
+<li>Prepare a <strong>1× surface staining master mix in MACS buffer</strong> containing:
+<ul>
+<li>Live/dead dye (1× final concentration)</li>
+<li>Surface antibodies (1× final concentration)</li>
+</ul></li>
+<li>Add <strong>50 µL</strong> of the 1× surface mix directly to each well.</li>
+<li>Incubate for <strong>30 min at 4 °C</strong>, protected from light.</li>
+</ol>
+</section>
+<section id="wash-steps-both-cases" class="level3">
+<h3 class="anchored" data-anchor-id="wash-steps-both-cases">3.3 Wash steps (both cases)</h3>
+<ol type="1">
+<li>Top up each well to <strong>200 µL</strong> with MACS buffer.</li>
+<li>Centrifuge at <strong>400 g for 2 min</strong>.</li>
+<li>Flick off the supernatant.</li>
+<li>Wash once more with <strong>200 µL MACS buffer</strong>, centrifuge, and flick.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All antibodies should be titrated for optimal performance. Default dilutions are provided as a starting point only.</p>
 </div>
 </div>
 </section>
-<section id="re-permeabilization-before-intranuclear-staining-if-using-foxp3-kit" class="level3">
-<h3 class="anchored" data-anchor-id="re-permeabilization-before-intranuclear-staining-if-using-foxp3-kit">4.3 Re-permeabilization before intranuclear staining (if using FOXP3 kit)</h3>
+<section id="surface-staining-only" class="level3">
+<h3 class="anchored" data-anchor-id="surface-staining-only">3.1 Surface staining only</h3>
 <ol type="1">
-<li>The following day, centrifuge the plate at <strong>1000 g for 2 min</strong> and flick off the supernatant.</li>
-<li>Resuspend pellets in <strong>200 µL</strong> 1× PermWash (FOXP3 kit).</li>
-<li>Incubate for <strong>30 min on ice</strong>, protected from light.</li>
-<li>Centrifuge and flick off the supernatant.</li>
+<li>Resuspend pellets in <strong>100–200 µL 4% PFA in PBS</strong>.</li>
+<li>Store at <strong>4 °C</strong>, protected from light, until acquisition.</li>
 </ol>
+<hr>
+</section>
+</section>
+<section id="step-4-fixation-and-permeabilization" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-fixation-and-permeabilization">Step 4 – Fixation and permeabilization</h2>
+<p>This step assumes use of: - <strong>BD Cytofix/Cytoperm</strong> (cytoplasmic targets), or<br>
+- <strong>eBioscience FOXP3 fix/perm</strong> (intranuclear targets).</p>
+<section id="initial-fixationpermeabilization" class="level3">
+<h3 class="anchored" data-anchor-id="initial-fixationpermeabilization">4.1 Initial fixation/permeabilization</h3>
+<ol type="1">
+<li>Add <strong>100 µL</strong> fix/perm solution per well.</li>
+<li>Incubate <strong>20 min on ice</strong>, protected from light.</li>
+<li>Top up to <strong>200 µL</strong> with 1× PermWash.</li>
+<li>Centrifuge and flick.</li>
+<li>Resuspend in <strong>200 µL</strong> PermWash.</li>
+<li>Centrifuge and flick.</li>
+</ol>
+</section>
+<section id="optional-pause-point" class="level3">
+<h3 class="anchored" data-anchor-id="optional-pause-point">4.2 Optional pause point</h3>
+<ol type="1">
+<li>Resuspend pellets in <strong>200 µL MACS buffer</strong>.</li>
+<li>Store at <strong>4 °C overnight</strong>, protected from light.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This pause point is compatible with most intracellular workflows, but antigen stability should be confirmed for each marker.</p>
+</div>
+</div>
+<hr>
 </section>
 </section>
 <section id="step-5-intracellular-or-intranuclear-staining" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-intracellular-or-intranuclear-staining">Step 5 – Intracellular or intranuclear staining</h2>
 <ol type="1">
-<li>Prepare an intracellular or intranuclear staining master mix in the appropriate PermWash (kit-specific):
+<li>Prepare an <strong>intracellular or intranuclear antibody master mix</strong> in the appropriate <strong>PermWash</strong> buffer (kit-specific):
 <ul>
-<li>Total volume: <strong>50 µL per well</strong>.</li>
-<li>Antibody dilutions according to titration data (typically 1:50–1:200).</li>
+<li>Final volume: <strong>50 µL per well</strong></li>
 </ul></li>
-<li>Resuspend each pellet in <strong>50 µL</strong> of the master mix.</li>
-<li>Incubate on ice for <strong>30 min</strong>, protected from light.</li>
+<li>Resuspend each cell pellet in <strong>50 µL</strong> of the antibody master mix.</li>
+<li>Incubate <strong>30 min on ice</strong>, protected from light, <strong>or</strong> incubate <strong>overnight at 4 °C</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For <strong>intranuclear targets</strong> (e.g.&nbsp;<strong>FOXP3, Helios, T-bet, Eomes</strong>), overnight antibody incubation at <strong>4 °C</strong> can improve signal intensity, particularly for low-abundance or epitope-masked transcription factors.<br>
+Ensure plates are <strong>well sealed, clearly labelled, and protected from light</strong> during overnight incubation.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Overnight antibody incubation is <strong>not recommended for cytoplasmic intracellular targets</strong> (e.g.&nbsp;cytokines, granzymes, perforin). Prolonged incubation can increase background staining and does not typically improve signal for these antigens. Use <strong>30–60 min</strong> incubations for intracellular (non-nuclear) targets.</p>
+</div>
+</div>
+<ol start="4" type="1">
 <li>Top up each well to <strong>200 µL</strong> with PermWash.</li>
 <li>Centrifuge and flick off the supernatant.</li>
-<li>Wash once more with <strong>200 µL</strong> PermWash and centrifuge.</li>
-<li>Flick off the supernatant.</li>
-<li>Resuspend each pellet in <strong>100–200 µL</strong> of 4 % PFA solution (or other appropriate fixative) in PBS.</li>
-<li>Store plates at 4 °C, protected from light, until acquisition.</li>
+<li>Wash once more with <strong>200 µL PermWash</strong>, centrifuge, and flick.</li>
+<li>Resuspend each pellet in <strong>100–200 µL 4% PFA in PBS</strong>.</li>
+<li>Store at <strong>4 °C</strong>, protected from light, until acquisition.</li>
 </ol>
 </section>
 </section>
@@ -583,261 +680,82 @@ Note
 <section id="reagents" class="level2">
 <h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 16%">
-<col style="width: 5%">
-<col style="width: 44%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Reagent</th>
-<th>Supplier</th>
-<th>Cat. #</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>PBS, sterile, 1×</td>
-<td>Various</td>
-<td>–</td>
-<td>Base for FACS buffer</td>
+<td>PBS 1×</td>
+<td>Ca²⁺/Mg²⁺-free</td>
 </tr>
 <tr class="even">
-<td>Fetal calf serum (FCS), heat-inactivated</td>
-<td>Various</td>
-<td>–</td>
-<td>2 % v/v in BUF-GEN-FACS-BUF-001</td>
+<td>FCS (heat-inactivated)</td>
+<td>2% v/v</td>
 </tr>
 <tr class="odd">
-<td>EDTA, 0.5 M stock</td>
-<td>Various</td>
-<td>–</td>
-<td>2 mM final in BUF-GEN-FACS-BUF-001</td>
+<td>EDTA</td>
+<td>2 mM (MACS buffer only)</td>
 </tr>
 <tr class="even">
-<td>Fc block (e.g.&nbsp;anti-CD16/CD32 for mouse)</td>
-<td>Various (e.g.&nbsp;BD)</td>
-<td>–</td>
-<td>Used at 1:200 in FACS buffer</td>
+<td>Fc block</td>
+<td>Mouse: anti-CD16/32</td>
 </tr>
 <tr class="odd">
-<td>Live/dead viability dye</td>
-<td>Various (e.g.&nbsp;Invitrogen)</td>
-<td>–</td>
-<td>Used at 1:100 in FACS buffer</td>
+<td>Live/dead dye</td>
+<td>As per manufacturer</td>
 </tr>
 <tr class="even">
-<td>Surface antibodies (various fluorochromes)</td>
-<td>Various</td>
-<td>–</td>
-<td>Titration required for each antibody</td>
+<td>Tetramers (e.g.&nbsp;MR1–5-OP-RU, CD1d)</td>
+<td>Optional</td>
 </tr>
 <tr class="odd">
-<td>Intracellular antibodies</td>
-<td>Various</td>
-<td>–</td>
-<td>Compatible with BD fix/perm</td>
+<td>Surface antibodies</td>
+<td>Titrate individually</td>
 </tr>
 <tr class="even">
-<td>Intranuclear antibodies (e.g.&nbsp;FOXP3)</td>
-<td>Various</td>
-<td>–</td>
-<td>Compatible with FOXP3 fix/perm kit</td>
+<td>Intracellular/intranuclear antibodies</td>
+<td>Kit-compatible</td>
 </tr>
 <tr class="odd">
-<td>BD fix/perm kit (e.g.&nbsp;Cytofix/Cytoperm)</td>
-<td>BD Biosciences</td>
-<td>–</td>
-<td>For intracellular staining</td>
+<td>Fix/perm kits</td>
+<td>BD or eBioscience</td>
 </tr>
 <tr class="even">
-<td>eBioscience FOXP3 fix/perm kit</td>
-<td>eBioscience/Thermo</td>
-<td>–</td>
-<td>For intranuclear staining</td>
-</tr>
-<tr class="odd">
-<td>1× PermWash (BD, FOXP3 kit)</td>
-<td>From kits</td>
-<td>–</td>
-<td>Used according to manufacturer</td>
-</tr>
-<tr class="even">
-<td>4 % PFA in PBS</td>
-<td>Various / in-house</td>
-<td>–</td>
-<td>For fixation prior to acquisition</td>
+<td>4% PFA</td>
+<td>Fixation</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="disposables" class="level2">
-<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 49%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Specification</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>96-well U-bottom or V-bottom plates</td>
-<td>Sterile, for staining</td>
-</tr>
-<tr class="even">
-<td>Pipette tips (10 µL, 200 µL, 1000 µL)</td>
-<td>Sterile</td>
-</tr>
-<tr class="odd">
-<td>Serological pipettes</td>
-<td>For buffer and media handling</td>
-</tr>
-<tr class="even">
-<td>Microcentrifuge tubes</td>
-<td>For master mixes and controls</td>
-</tr>
-<tr class="odd">
-<td>Tube strips or FACS tubes</td>
-<td>For compensation/single-colour controls</td>
-</tr>
-<tr class="even">
-<td>Waste containers</td>
-<td>For liquid and solid biohazard waste</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="equipment" class="level2">
-<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 44%">
-<col style="width: 55%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Equipment</th>
-<th>Specification / Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Benchtop plate centrifuge</td>
-<td>Able to reach 1000 g for 96-well plates</td>
-</tr>
-<tr class="even">
-<td>CO₂ incubator</td>
-<td>If cells require incubation before/after staining</td>
-</tr>
-<tr class="odd">
-<td>Biological safety cabinet</td>
-<td>For safe handling of biological samples</td>
-</tr>
-<tr class="even">
-<td>Vortex mixer</td>
-<td>For mixing master mixes (low speed for cells)</td>
-</tr>
-<tr class="odd">
-<td>Flow cytometer</td>
-<td>e.g.&nbsp;Cytek Aurora, BD FACSCanto, etc.</td>
-</tr>
-</tbody>
-</table>
+<hr>
 </section>
 </section>
 <section id="buffers-used" class="level1">
 <h1>Buffers used</h1>
 <ul>
-<li><strong>BUF-GEN-FACS-BUF-001</strong> – FACS buffer (PBS + 2 % FCS + 2 mM EDTA).<br>
+<li><strong>FACS buffer</strong> – PBS + 2% FCS (tetramers only)<br>
 </li>
-<li>Commercial kit buffers:
-<ul>
-<li>BD fix/perm and 1× PermWash (per manufacturer).<br>
-</li>
-<li>eBioscience FOXP3 fix/perm and 1× PermWash (per manufacturer).</li>
-</ul></li>
+<li><strong>MACS buffer</strong> – PBS + 2% FCS + 2 mM EDTA (default)</li>
 </ul>
-</section>
-<section id="troubleshooting" class="level1">
-<h1>Troubleshooting</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 32%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Problem</th>
-<th>Possible cause</th>
-<th>Suggested solution</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>High background staining</td>
-<td>Antibody over-titration; inadequate washing; Fc block insufficient</td>
-<td>Titrate antibodies; ensure thorough washes; increase Fc block if appropriate.</td>
-</tr>
-<tr class="even">
-<td>Poor separation of positive/negative populations</td>
-<td>Suboptimal antibody concentration; insufficient incubation time</td>
-<td>Re-titrate antibodies; extend incubation (e.g.&nbsp;up to 40–45 min).</td>
-</tr>
-<tr class="odd">
-<td>Extensive cell clumping</td>
-<td>No EDTA; high cell density; dead cells present</td>
-<td>Use FACS buffer with EDTA; reduce cells per well; filter cells if necessary.</td>
-</tr>
-<tr class="even">
-<td>Poor intracellular/intranuclear staining</td>
-<td>Inadequate fixation/permeabilization; incompatible buffers</td>
-<td>Confirm kit protocol; ensure correct fix/perm times; use recommended buffers.</td>
-</tr>
-<tr class="odd">
-<td>Loss of surface staining after fixation</td>
-<td>Antibodies or epitopes not fixation-stable</td>
-<td>Move sensitive markers to “post-fixation” staining if compatible, or use fix-stable clones/fluorochromes.</td>
-</tr>
-<tr class="even">
-<td>Low viability</td>
-<td>Over-handling; extended time at room temperature</td>
-<td>Minimize processing time; keep cells on ice when possible; avoid harsh pipetting.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="safety-brief" class="level1">
-<h1>Safety (brief)</h1>
-<ul>
-<li>Handle all biological samples under appropriate biosafety conditions (e.g.&nbsp;BSL2) and follow institutional guidelines.</li>
-<li>Wear standard PPE (lab coat, gloves, eye protection) when handling cells, antibodies, and fixatives.</li>
-<li>4 % PFA and commercial fixatives should be handled in a fume hood or well-ventilated area; avoid skin and eye contact.</li>
-<li>Dispose of plates, tubes, tips, and liquids contaminated with biological material or fixatives as chemical/biological hazardous waste according to local regulations.</li>
-</ul>
+<hr>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 11%">
+<col style="width: 21%">
 <col style="width: 15%">
-<col style="width: 66%">
+<col style="width: 21%">
+<col style="width: 42%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Version</th>
 <th>Date</th>
 <th>Author</th>
-<th>Changes</th>
+<th>Change summary</th>
 </tr>
 </thead>
 <tbody>
@@ -845,7 +763,13 @@ Note
 <td>v1.0</td>
 <td>2025-11-21</td>
 <td>Dillon Corvino</td>
-<td>First Quarto protocol version for standard flow cytometry staining.</td>
+<td>Initial version</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-12-29</td>
+<td>Dillon Corvino</td>
+<td>Added tetramer workflow, clarified buffers, titration defaults, overnight intranuclear staining</td>
 </tr>
 </tbody>
 </table>

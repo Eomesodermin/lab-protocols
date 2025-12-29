@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-11-21">
-<meta name="description" content="Enzymatic digestion of mouse liver and density-based enrichment to isolate liver-associated lymphocytes (LALs), including NK-like T cells (NLCs), for downstream flow cytometry, sorting, and functional assays.">
+<meta name="description" content="Standard operating procedure for startup, daily QC, experiment setup, single-stain acquisition and spectral unmixing, sample acquisition, data export, and cleaning/shutdown of the Sony Spectral Cell Analyzer ID7000 at the Flow Cytometry Core Facility (FCCF), University Hospital Bonn.">
 
-<title>Isolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver – Protocol Library</title>
+<title>Sony Spectral Cell Analyzer ID7000 – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -282,6 +282,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -298,43 +305,60 @@ window.Quarto = {
    
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
-  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
-  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
+  <li><a href="#hazards-and-safety" id="toc-hazards-and-safety" class="nav-link" data-scroll-target="#hazards-and-safety">Hazards and safety</a>
   <ul class="collapse">
-  <li><a href="#step-1-preparation-and-setup" id="toc-step-1-preparation-and-setup" class="nav-link" data-scroll-target="#step-1-preparation-and-setup">Step 1 – Preparation and setup</a></li>
-  <li><a href="#step-2-mouse-sacrifice-and-liver-perfusion" id="toc-step-2-mouse-sacrifice-and-liver-perfusion" class="nav-link" data-scroll-target="#step-2-mouse-sacrifice-and-liver-perfusion">Step 2 – Mouse sacrifice and liver perfusion</a></li>
-  <li><a href="#step-3-liver-collection-and-mincing" id="toc-step-3-liver-collection-and-mincing" class="nav-link" data-scroll-target="#step-3-liver-collection-and-mincing">Step 3 – Liver collection and mincing</a></li>
-  <li><a href="#step-5-removal-of-hepatocytes-and-washing" id="toc-step-5-removal-of-hepatocytes-and-washing" class="nav-link" data-scroll-target="#step-5-removal-of-hepatocytes-and-washing">Step 5 – Removal of hepatocytes and washing</a></li>
-  <li><a href="#step-6-37-percoll-enrichment-of-liver-associated-lymphocytes" id="toc-step-6-37-percoll-enrichment-of-liver-associated-lymphocytes" class="nav-link" data-scroll-target="#step-6-37-percoll-enrichment-of-liver-associated-lymphocytes">Step 6 – 37 % Percoll enrichment of liver-associated lymphocytes</a></li>
-  <li><a href="#step-7-red-blood-cell-lysis-and-filtration" id="toc-step-7-red-blood-cell-lysis-and-filtration" class="nav-link" data-scroll-target="#step-7-red-blood-cell-lysis-and-filtration">Step 7 – Red blood cell lysis and filtration</a></li>
-  <li><a href="#step-8-final-wash-and-resuspension" id="toc-step-8-final-wash-and-resuspension" class="nav-link" data-scroll-target="#step-8-final-wash-and-resuspension">Step 8 – Final wash and resuspension</a></li>
+  <li><a href="#hazards" id="toc-hazards" class="nav-link" data-scroll-target="#hazards">Hazards</a></li>
+  <li><a href="#controls" id="toc-controls" class="nav-link" data-scroll-target="#controls">Controls</a></li>
+  <li><a href="#ppe" id="toc-ppe" class="nav-link" data-scroll-target="#ppe">PPE</a></li>
   </ul></li>
-  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <li><a href="#reagents-consumables-equipment-and-buffers" id="toc-reagents-consumables-equipment-and-buffers" class="nav-link" data-scroll-target="#reagents-consumables-equipment-and-buffers">Reagents, consumables, equipment, and buffers</a>
   <ul class="collapse">
   <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
-  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#consumables" id="toc-consumables" class="nav-link" data-scroll-target="#consumables">Consumables</a></li>
   <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  <li><a href="#buffers-and-facility-liquids" id="toc-buffers-and-facility-liquids" class="nav-link" data-scroll-target="#buffers-and-facility-liquids">Buffers and facility liquids</a></li>
   </ul></li>
-  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
+  <li><a href="#general-notes" id="toc-general-notes" class="nav-link" data-scroll-target="#general-notes">General notes</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#a.-startup-and-when-required-daily-qc" id="toc-a.-startup-and-when-required-daily-qc" class="nav-link" data-scroll-target="#a.-startup-and-when-required-daily-qc">A. Startup and (when required) daily QC</a></li>
+  <li><a href="#b.-experiment-setup" id="toc-b.-experiment-setup" class="nav-link" data-scroll-target="#b.-experiment-setup">B. Experiment setup</a></li>
+  <li><a href="#c.-acquire-single-stains-and-perform-unmixing" id="toc-c.-acquire-single-stains-and-perform-unmixing" class="nav-link" data-scroll-target="#c.-acquire-single-stains-and-perform-unmixing">C. Acquire single stains and perform unmixing</a>
+  <ul class="collapse">
+  <li><a href="#c1.-load-single-stains" id="toc-c1.-load-single-stains" class="nav-link" data-scroll-target="#c1.-load-single-stains">C1. Load single stains</a></li>
+  <li><a href="#c2.-instrument-settings-for-single-stains-example-values" id="toc-c2.-instrument-settings-for-single-stains-example-values" class="nav-link" data-scroll-target="#c2.-instrument-settings-for-single-stains-example-values">C2. Instrument settings for single stains (example values)</a></li>
+  <li><a href="#c3.-stopping-condition-for-single-stains" id="toc-c3.-stopping-condition-for-single-stains" class="nav-link" data-scroll-target="#c3.-stopping-condition-for-single-stains">C3. Stopping condition for single stains</a></li>
+  <li><a href="#c4.-preview-and-gate-setup" id="toc-c4.-preview-and-gate-setup" class="nav-link" data-scroll-target="#c4.-preview-and-gate-setup">C4. Preview and gate setup</a></li>
+  <li><a href="#c5.-record-single-stains" id="toc-c5.-record-single-stains" class="nav-link" data-scroll-target="#c5.-record-single-stains">C5. Record single stains</a></li>
+  <li><a href="#c6.-unmixing" id="toc-c6.-unmixing" class="nav-link" data-scroll-target="#c6.-unmixing">C6. Unmixing</a></li>
+  </ul></li>
+  <li><a href="#d.-acquire-samples" id="toc-d.-acquire-samples" class="nav-link" data-scroll-target="#d.-acquire-samples">D. Acquire samples</a></li>
+  <li><a href="#e.-export-and-transfer-data" id="toc-e.-export-and-transfer-data" class="nav-link" data-scroll-target="#e.-export-and-transfer-data">E. Export and transfer data</a></li>
+  <li><a href="#f.-cleaning-and-shutdown" id="toc-f.-cleaning-and-shutdown" class="nav-link" data-scroll-target="#f.-cleaning-and-shutdown">F. Cleaning and shutdown</a>
+  <ul class="collapse">
+  <li><a href="#f1.-if-another-user-is-booked-after-you" id="toc-f1.-if-another-user-is-booked-after-you" class="nav-link" data-scroll-target="#f1.-if-another-user-is-booked-after-you">F1. If another user is booked after you</a></li>
+  <li><a href="#f2.-if-you-are-the-last-user-for-the-day" id="toc-f2.-if-you-are-the-last-user-for-the-day" class="nav-link" data-scroll-target="#f2.-if-you-are-the-last-user-for-the-day">F2. If you are the last user for the day</a></li>
+  </ul></li>
+  </ul></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
-  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#references-and-links" id="toc-references-and-links" class="nav-link" data-scroll-target="#references-and-links">References and links</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_liver_NLC_iso.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_gen_flow_sony_id7000.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Isolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver</h1>
-<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+<h1 class="title">Sony Spectral Cell Analyzer ID7000</h1>
+<p class="subtitle lead">Sample acquisition, spectral unmixing, and shutdown</p>
 </div>
 
 <div>
   <div class="description">
-    Enzymatic digestion of mouse liver and density-based enrichment to isolate liver-associated lymphocytes (LALs), including NK-like T cells (NLCs), for downstream flow cytometry, sorting, and functional assays.
+    Standard operating procedure for startup, daily QC, experiment setup, single-stain acquisition and spectral unmixing, sample acquisition, data export, and cleaning/shutdown of the Sony Spectral Cell Analyzer ID7000 at the Flow Cytometry Core Facility (FCCF), University Hospital Bonn.
   </div>
 </div>
 
@@ -357,142 +381,315 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Protocol ID:</strong> MUS-LIV-NLC-ISO-001<br>
+<p><strong>Protocol ID:</strong> GEN-FLOW-SONY-ID7000-001<br>
 <strong>Version:</strong> v1.0<br>
-<strong>Author:</strong> Dillon Corvino</p>
+<strong>Author:</strong> Dillon Corvino<br>
+<strong>Adapted from:</strong> Surace Lab SOP #001 (Sony ID7000), University Hospital Bonn (v1; 17/08/2023; revised 18/08/2023).</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
-<p>This protocol describes the isolation of liver-associated lymphocytes (LALs), including NK-like T cells (NLCs), from mouse liver. Livers are perfused, minced, enzymatically digested with collagenase IV and DNase I, and processed using low-speed centrifugation to remove hepatocytes, followed by 37% Percoll density enrichment and ACK lysis to obtain a viable single-cell suspension enriched for LALs/NLCs.</p>
-<p>The protocol is restricted to liver processing only and does not cover spleen processing or flow cytometry staining panels.</p>
-</section>
-<section id="critical-notes-read-before-starting" class="level1">
-<h1>Critical notes (read before starting)</h1>
+<p>Provide a standardized workflow to operate the <strong>Sony Spectral Cell Analyzer ID7000</strong> for spectral flow cytometry, including:</p>
 <ul>
-<li>Keep livers and cell suspensions cold (on ice or at 4 °C) wherever possible, except during enzymatic digestion.</li>
-<li>Ensure thorough perfusion of the liver with ice-cold PBS to reduce blood contamination and improve Percoll separation.</li>
-<li>Avoid over-digestion; prolonged incubation with collagenase/DNase can damage lymphocytes and reduce NLC yield.</li>
-<li>The low-speed centrifugation step (50 g) is critical to remove hepatocytes without pelleting lymphocytes.</li>
-<li>Use gentle acceleration and minimal braking for Percoll spins to preserve the gradient.</li>
-<li>Perform ACK lysis only for the specified time to avoid damaging leukocytes.</li>
-<li>Process livers promptly after harvest to preserve cell viability.</li>
+<li>Instrument startup and (when required) daily QC</li>
+<li>Experiment setup and instrument settings</li>
+<li>Acquisition of single-stain controls and spectral unmixing</li>
+<li>Acquisition of samples</li>
+<li>Export of FCS files and data transfer</li>
+<li>Cleaning/decontamination and shutdown</li>
 </ul>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="scope" class="level1">
+<h1>Scope</h1>
+<p>This protocol applies to users performing flow cytometry analyses on the <strong>Sony Spectral Cell Analyzer ID7000</strong> located at the <strong>Flow Cytometry Core Facility (FCCF), BMZII, University Hospital Bonn</strong>.</p>
+<p>It covers operation in <strong>Normal mode</strong> and assumes users have completed FCCF induction/training and have appropriate authorization to use the instrument.</p>
+</section>
+<section id="hazards-and-safety" class="level1">
+<h1>Hazards and safety</h1>
+<section id="hazards" class="level2">
+<h2 class="anchored" data-anchor-id="hazards">Hazards</h2>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+<span class="screen-reader-only">Warning</span>Chemical hazards
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Over-digestion, harsh centrifugation, or prolonged ACK lysis can markedly reduce lymphocyte viability and recovery. Strictly adhere to the indicated incubation times and centrifugation settings.</p>
+<p>This workflow may involve exposure to the following chemicals (toxic/irritant). Consult local MSDS and FCCF safety guidance before use.</p>
+<ul>
+<li><strong>ROTI®Histofix 4%</strong> (4% formaldehyde; Carl Roth; Cat. No.&nbsp;P087.1)</li>
+<li><strong>Bleach</strong> (sodium hypochlorite, NaOCl)</li>
+<li><strong>Mucocit® T</strong> (Schülke &amp; Mayr GmbH)</li>
+</ul>
 </div>
 </div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Biological hazards
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Samples may be classified as <strong>S2</strong>.</li>
+<li><strong>S2 samples must be fixed prior to acquisition</strong> (e.g., ROTI®Histofix 4%, ICS, 4% PFA), according to FCCF and institutional biosafety rules.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="controls" class="level2">
+<h2 class="anchored" data-anchor-id="controls">Controls</h2>
+<ul>
+<li>Wear full PPE (see below).</li>
+<li>Handle chemical reagents in accordance with MSDS and facility guidance.</li>
+<li>Follow FCCF instructions for waste handling and decontamination.</li>
+</ul>
+</section>
+<section id="ppe" class="level2">
+<h2 class="anchored" data-anchor-id="ppe">PPE</h2>
+<ul>
+<li>Long-sleeved lab coat</li>
+<li>Enclosed footwear</li>
+<li>Gloves</li>
+<li>Additional PPE as required by sample type and local risk assessment</li>
+</ul>
+</section>
+</section>
+<section id="reagents-consumables-equipment-and-buffers" class="level1">
+<h1>Reagents, consumables, equipment, and buffers</h1>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Manufacturer</th>
+<th>Cat. No.</th>
+<th>Location/notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AlignCheck Particles</td>
+<td>Sony Biotechnology</td>
+<td>AE700510</td>
+<td>FCCF fridge; in foil packet</td>
+</tr>
+<tr class="even">
+<td>8 Peak Beads</td>
+<td>Sony Biotechnology</td>
+<td>AE700522</td>
+<td>FCCF fridge; in foil packet</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="consumables" class="level2">
+<h2 class="anchored" data-anchor-id="consumables">Consumables</h2>
+<ul>
+<li>FACS tubes (Sarstedt; Cat. No.&nbsp;55.1579) <strong>or</strong> 96-well U-bottom plates (TPP®; Cat. No.&nbsp;92697)</li>
+<li>Aluminum foil</li>
+</ul>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<ul>
+<li>Sony Spectral Cell Analyzer ID7000 (FCCF, BMZII)</li>
+<li>ID7000 computer + ID7000 software</li>
+<li>If running samples in tubes:
+<ul>
+<li>FACS tube rack</li>
+<li>24-position 5 mL tube rack (Sony Biotechnology; stored in FCCF fridge)</li>
+</ul></li>
+</ul>
+</section>
+<section id="buffers-and-facility-liquids" class="level2">
+<h2 class="anchored" data-anchor-id="buffers-and-facility-liquids">Buffers and facility liquids</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Use</th>
+<th>Name</th>
+<th>Notes / location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sheath</td>
+<td>MilliQ water</td>
+<td>Used to fill sheath tank</td>
+</tr>
+<tr class="even">
+<td>Clean</td>
+<td>Bleach</td>
+<td>Prepared by FCCF; white squeeze bottles labelled “Bleach”</td>
+</tr>
+<tr class="odd">
+<td>Rinse</td>
+<td>Rinse solution</td>
+<td>Prepared by FCCF; blue squeeze bottles</td>
+</tr>
+<tr class="even">
+<td>Running buffer</td>
+<td>FACS Flow</td>
+<td>Prepared by FCCF; dispenser tanks next to sink</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="general-notes" class="level1">
+<h1>General notes</h1>
+<ul>
+<li>Use of the Sony ID7000 is subject to <strong>FCCF induction and approval</strong> (FCCF contact person noted in the source SOP: Andreas Dolf). Training can be booked on PPMS.</li>
+<li>FCCF recommends <strong>bead-based single stains</strong> (e.g., UltraComp eBeads Plus), including for <strong>fixable amine-reactive viability dyes</strong> (e.g., ArC Amine-reactive beads).
+<ul>
+<li>For ArC viability dye single stains: include a matching tube of <strong>unstained ArC beads</strong>.</li>
+</ul></li>
+<li>Use an <strong>unstained single-cell suspension</strong> (from your tissue of interest) to identify and unmix <strong>autofluorescence</strong> where relevant.
+<ul>
+<li>Reference: Wanner et al., 2022 (Frontiers in Bioengineering and Biotechnology; doi: 10.3389/fbioe.2022.827987).</li>
+</ul></li>
+</ul>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="a.-startup-and-when-required-daily-qc" class="level2">
+<h2 class="anchored" data-anchor-id="a.-startup-and-when-required-daily-qc">A. Startup and (when required) daily QC</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>When to run daily QC
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On weekdays, FCCF staff typically perform daily QC by <strong>09:00</strong>. Run the daily QC yourself if: - you start <strong>before</strong> FCCF operating hours, or - you use the machine <strong>on weekends</strong>.</p>
+</div>
+</div>
+<ol type="1">
+<li>Check the <strong>left side</strong> of the instrument and ensure <strong>both black switches</strong> are on.</li>
+<li>Check <strong>Waste</strong> and <strong>Sheath</strong> tank levels. If necessary:
+<ul>
+<li>Empty waste into sink, then add <strong>2 pumps of Mucocit® T</strong> to the empty waste tank.</li>
+<li>Refill <strong>Sheath</strong> tank with <strong>MilliQ water</strong>.</li>
+</ul></li>
+<li>Press the <strong>Power</strong> button on the front of the instrument (green light should turn on).</li>
+<li>Turn on the computer.</li>
+<li>Log in with your FCCF account.</li>
+<li>Start the <strong>ID7000 software</strong> (desktop icon).</li>
+<li>Log into the software.
+<ul>
+<li>If using a shared lab account containing saved controls, log into that account (as applicable).</li>
+</ul></li>
+<li>Confirm the ID7000 connects to the computer (bottom right of software). Wait a couple of minutes.</li>
+<li>The <strong>Priming Wizard</strong> should open automatically. Click <strong>Start</strong>.</li>
+<li>While priming runs, prepare QC beads in FACS tubes:
+<ul>
+<li><strong>AlignCheck beads:</strong> 450 µL FACS Flow + 2 drops beads</li>
+<li><strong>Sony 8-peak beads:</strong> 350 µL FACS Flow + 1 drop beads</li>
+</ul></li>
+<li>When priming is complete, close the QC window if it pops up.</li>
+<li>Click <strong>Start Daily and Performance QC</strong>.</li>
+<li>Open the instrument door.</li>
+<li>Remove <strong>Clean</strong> and <strong>Rinse</strong> tubes from the tube station.</li>
+<li>Place <strong>AlignCheck</strong> and <strong>8-peak</strong> bead tubes into the tube station in the order shown in the QC window.</li>
+<li>Close the door and follow prompts to run QC.</li>
+</ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Tip</span>If QC fails due to pressure
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Prepare all buffers, label tubes, and pre-cool the centrifuge before starting animal work to minimize delays once livers are harvested.</p>
+<p>A pressure-related error can cause QC failure. Re-check <strong>Waste</strong> and <strong>Sheath</strong> tank levels and correct if needed, then re-run QC.</p>
 </div>
 </div>
 </section>
-<section id="approximate-timing" class="level1">
-<h1>Approximate timing</h1>
+<section id="b.-experiment-setup" class="level2">
+<h2 class="anchored" data-anchor-id="b.-experiment-setup">B. Experiment setup</h2>
+<ol type="1">
+<li>After QC passes, go to <strong>Experiment</strong> tab.</li>
+<li>Click <strong>Experiment designer</strong>.</li>
+<li>Confirm required laser lines are enabled (checkmarks). Enable if needed:
 <ul>
-<li>Preparation and setup: 10–15 min<br>
-</li>
-<li>Mouse sacrifice and liver perfusion: 10–15 min<br>
-</li>
-<li>Liver mincing, digestion, and gentleMACS processing: 30–40 min<br>
-</li>
-<li>Hepatocyte removal and washing: 30 min<br>
-</li>
-<li>Percoll gradient and enrichment: 30 min<br>
-</li>
-<li>ACK lysis, filtration, and final wash: 20–30 min</li>
+<li>355 nm</li>
+<li>405 nm</li>
+<li>488 nm</li>
+<li>561 nm</li>
+<li>637 nm</li>
+</ul></li>
+<li>Add fluorochromes (e.g., FITC, APC, PE) by typing and clicking <strong>Add</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Order of fluorochromes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>If acquiring single stains in <strong>tubes</strong>, fluorochrome add-order does not matter.</li>
+<li>If acquiring single stains in a <strong>plate</strong>, match fluorochrome order to the plate layout.</li>
+<li>If using previously saved single-stain controls from the library and no new controls are needed, you may skip Section C.</li>
 </ul>
-<p><strong>Total approximate time:</strong> 2–2.5 hours for 1–4 livers (processed in parallel).</p>
-<div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
-</section>
-<section id="procedure" class="level1">
-<h1>Procedure</h1>
-<section id="step-1-preparation-and-setup" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-preparation-and-setup">Step 1 – Preparation and setup</h2>
-<ol type="1">
-<li><strong>Pre-cool solutions</strong>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Fill in metadata (Marker, Species, Clone, Lot number, etc.).</li>
+<li>Click <strong>Next</strong> until <strong>Instrument Settings</strong> step.</li>
+<li>Click <strong>Import</strong> and import:
 <ul>
-<li>Pre-cool PBS on ice for liver perfusion and transport.</li>
+<li><code>Desktop -&gt; Import Master Setting -&gt; SONY_Master Settings normal.xml</code></li>
 </ul></li>
-<li><strong>Label collection vessels (choose one option per experiment)</strong>
-<ul>
-<li><strong>Option A: 6-well plate collection</strong>
-<ul>
-<li>Label one well per mouse in a 6-well plate.</li>
-<li>Add ~3–5 mL ice-cold PBS per well.</li>
-</ul></li>
-<li><strong>Option B: 50 mL tube collection</strong>
-<ul>
-<li>Label one 50 mL conical tube per liver.</li>
-<li>Add 5 mL ice-cold PBS per tube.</li>
-</ul></li>
-</ul></li>
-<li><strong>Label dissociation and processing tubes</strong>
-<ul>
-<li>Label gentleMACS C-tubes (or equivalent) for each liver.</li>
-<li>Label additional 50 mL tubes as required for downstream steps.</li>
-</ul></li>
-<li><strong>Prepare buffers</strong> (see separate buffer protocols)
-<ul>
-<li>Liver digestion buffer (BUF-MUS-LIV-DIG-001; collagenase IV + DNase I in PBS).</li>
-<li>37% Percoll working solution (BUF-GEN-PERC-37PCT-001).</li>
-<li>ACK lysis buffer (BUF-GEN-ACK-LYSIS-001).</li>
-<li>FACS buffer (BUF-GEN-FACS-BUF-001), if required for downstream applications.</li>
-</ul></li>
-<li><strong>Warm digestion components</strong>
-<ul>
-<li>Turn on a water bath and set to <strong>37 °C</strong>.</li>
-<li>Place an aliquot of <strong>liver digestion buffer</strong> in the water bath to pre-warm.</li>
-<li>If digestion buffer will be prepared later, pre-warm <strong>DMEM or PBS</strong> instead.</li>
-</ul></li>
-<li><strong>Equipment setup</strong>
-<ul>
-<li>Set a refrigerated benchtop centrifuge to <strong>4 °C</strong>.</li>
-<li>Ensure access to a gentleMACS instrument with an appropriate liver dissociation program.</li>
-</ul></li>
-<li><strong>Items to take to the animal facility</strong>
-<ul>
-<li>Ice bucket with ice-cold PBS.</li>
-<li>6-well plates <em>and/or</em> pre-filled 50 mL tubes (as chosen above).</li>
-<li>Sterile scissors and forceps.</li>
-<li>10 mL syringes (one per mouse or per treatment group).</li>
-<li>Needles for liver perfusion (recommended <strong>25G or 26G</strong>).</li>
-<li>Absorbent pads and waste container for perfusion runoff.</li>
-</ul></li>
+<li>Click <strong>Next</strong> and select acquisition order: <strong>From left-to-right</strong>.</li>
+<li>Click <strong>Next</strong> and complete experiment details.</li>
+<li>Click <strong>Create Experiment</strong>.</li>
+<li>Under <strong>Acquisition</strong> tab, click <strong>Layout Editor</strong> (Plate section).</li>
+<li>Hold <strong>Ctrl</strong> and select the unassigned positions corresponding to the number of samples.</li>
+<li>Set <strong>Sample Group</strong> to <code>Sample Group - 1</code>.</li>
+<li>Optionally check <strong>Auto acquisition target</strong>.</li>
+<li>Name each sample position under <strong>Sample Information</strong>.</li>
+<li>Close Layout Editor.</li>
 </ol>
 </section>
-<section id="step-2-mouse-sacrifice-and-liver-perfusion" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-mouse-sacrifice-and-liver-perfusion">Step 2 – Mouse sacrifice and liver perfusion</h2>
+<section id="c.-acquire-single-stains-and-perform-unmixing" class="level2">
+<h2 class="anchored" data-anchor-id="c.-acquire-single-stains-and-perform-unmixing">C. Acquire single stains and perform unmixing</h2>
+<section id="c1.-load-single-stains" class="level3">
+<h3 class="anchored" data-anchor-id="c1.-load-single-stains">C1. Load single stains</h3>
 <ol type="1">
-<li>Sacrifice mice according to institutional and ethical guidelines (e.g.&nbsp;CO₂ asphyxiation followed by cervical dislocation, as approved).</li>
-<li>Place the mouse in a supine position on a suitable surface.</li>
-<li>Open the abdominal cavity to expose the liver and major vessels.</li>
-<li>Perfuse the liver with ice-cold PBS via one of the following routes:
+<li>If using tubes:
 <ul>
-<li>Inferior vena cava<br>
-</li>
-<li>Portal vein<br>
-</li>
-<li>Directly via the heart</li>
+<li>Retrieve the <strong>24-position 5 mL tube rack</strong> from FCCF fridge.</li>
+<li>The <strong>notch</strong> marks <strong>A1</strong>.</li>
 </ul></li>
-<li>Gently insert a needle into the chosen vessel and perfuse with PBS until the liver visibly blanches (typically ~5–10 mL per mouse).</li>
+<li>Arrange single-stain tubes (or plate) in the order shown in the software layout.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -500,425 +697,277 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>ArC beads for fixable viability dyes
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Efficient perfusion reduces blood content and improves the quality of density separation and downstream staining.</p>
-</div>
-</div>
-<ol start="6" type="1">
-<li>After perfusion, proceed immediately to liver collection.</li>
-</ol>
-</section>
-<section id="step-3-liver-collection-and-mincing" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-liver-collection-and-mincing">Step 3 – Liver collection and mincing</h2>
-<ol type="1">
-<li>Excise the perfused liver using sterile, autoclaved instruments.</li>
-<li>Transfer the liver to the pre-labelled <strong>50 mL conical tube</strong> <em>or</em> to the appropriate <strong>well of a 6-well plate</strong> containing ice-cold PBS.</li>
-<li>Keep the tube or plate on ice at all times.</li>
-<li><em>(Optional but highly recommended)</em> <strong>Weigh the liver</strong>
-<ul>
-<li>Briefly place the liver on blotting paper to wick off excess liquid.</li>
-<li>Weigh the liver and record the weight in the lab book.</li>
-</ul></li>
-<li>Add <strong>4 mL of pre-warmed liver digestion buffer</strong> to a labelled gentleMACS C-tube (one tube per liver).</li>
-<li>Transfer the liver into the gentleMACS C-tube containing digestion buffer.</li>
-<li>Using sterile <strong>curved scissors</strong>, mince the liver directly within the gentleMACS C-tube until tissue fragments are approximately ~2–3 mm.</li>
-<li>Secure the C-tube onto the gentleMACS instrument.</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ensure all tissue pieces are fully submerged in digestion buffer and not stuck to the walls or base of the tube.</p>
-</div>
-</div>
-<ol start="9" type="1">
-<li>Place the warming sleeve over the tube.</li>
-<li>Run program <strong>HH17</strong> (17-minute digestion).</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>After starting the run, confirm that all tubes are correctly seated and rotating properly.<br>
-If a tube is not spinning, stop the run, remove the tube, reseat it, and restart the program.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do <strong>not</strong> leave livers in digestion buffer for prolonged periods. Over-digestion can strip surface epitopes and negatively impact downstream staining and phenotyping.<br>
-Note: the gentleMACS instrument does <strong>not</strong> beep when the program finishes—set a timer or alarm before starting the run.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Make sure the gentleMACS C-tube is firmly closed and correctly positioned. Leaks during the run can lead to sample loss and contamination of the instrument.</p>
-</div>
-</div>
-</section>
-<section id="step-5-removal-of-hepatocytes-and-washing" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-removal-of-hepatocytes-and-washing">Step 5 – Removal of hepatocytes and washing</h2>
-<ol type="1">
-<li>After digestion, transfer the liver cell suspension from the C-tube into a 50 mL conical tube.</li>
-<li>Rinse the C-tube with ice-cold PBS and add the rinse to the same 50 mL tube to maximize yield.</li>
-<li>Bring the volume up to 50 mL with ice-cold PBS.</li>
-<li>Centrifuge at 50 g for 2 min at 4 °C to sediment hepatocytes.</li>
-<li>Carefully transfer the supernatant (containing lymphocytes and smaller cells) to a fresh 50 mL tube without disturbing the hepatocyte pellet.</li>
-<li>Adjust the volume to 50 mL with ice-cold PBS.</li>
-<li>Centrifuge at 550 g for 10 min at 4 °C.</li>
-<li>Discard the supernatant and keep the cell pellet on ice.</li>
-</ol>
-</section>
-<section id="step-6-37-percoll-enrichment-of-liver-associated-lymphocytes" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-37-percoll-enrichment-of-liver-associated-lymphocytes">Step 6 – 37 % Percoll enrichment of liver-associated lymphocytes</h2>
-<ol type="1">
-<li>While the liver samples are pelleting, aliquot <strong>10 mL of 37% Percoll</strong> (BUF-GEN-PERC-37PCT-001, prepared in PBS) into <strong>labelled 15 mL conical tubes</strong> (one tube per liver).</li>
-<li>Carefully aspirate the supernatant from the liver cell pellet in the 50 mL tube.</li>
-<li>Using a <strong>transfer pipette, 1 mL pipette, or serological pipette</strong>, take up approximately <strong>1 mL of 37% Percoll</strong> from the corresponding 15 mL tube and use it to gently resuspend the liver cell pellet in the 50 mL tube.</li>
-<li>Transfer the resuspended cells back into the labelled 15 mL Percoll tube.</li>
-<li>Repeat the rinse once or twice with additional small volumes of Percoll, if needed, to ensure all remaining liver cells are recovered from the 50 mL tube.</li>
-<li>Cap the 15 mL tube and <strong>invert gently 2–3 times</strong> to ensure complete mixing.</li>
-<li>Centrifuge at <strong>800 × g for 20 min at room temperature (RT; ~20–22 °C)</strong> using:
-<ul>
-<li><strong>Moderate acceleration</strong> (e.g.&nbsp;acc 7)</li>
-<li><strong>Minimal brake</strong> (e.g.&nbsp;br 1) to avoid disturbing the gradient</li>
-</ul></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do <strong>not</strong> leave liver samples in Percoll for longer than necessary. Prolonged exposure can reduce cell viability and negatively impact downstream applications. Plan spins and downstream steps in advance.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Avoid high brake settings during Percoll centrifugation. Abrupt braking can disrupt the gradient and reduce lymphocyte enrichment.</p>
-</div>
-</div>
-<ol start="8" type="1">
-<li>After centrifugation, carefully asiprate the supernatant.</li>
-<li>Resuspend the enriched lymphocyte pellet in 20–30 mL ice-cold PBS.</li>
-<li>Centrifuge at 550 g) for 10 min at 4 °C.</li>
-<li>Discard the supernatant and keep the pellet on ice.</li>
-</ol>
-</section>
-<section id="step-7-red-blood-cell-lysis-and-filtration" class="level2">
-<h2 class="anchored" data-anchor-id="step-7-red-blood-cell-lysis-and-filtration">Step 7 – Red blood cell lysis and filtration</h2>
-<ol type="1">
-<li>Gently resuspend the cell pellet in 2 mL ACK lysis buffer (BUF-GEN-ACK-LYSIS-001) at room temperature.</li>
-<li>Incubate for 2 min at room temperature, gently inverting once.</li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do not exceed 2–3 min in ACK buffer. Prolonged exposure can damage lymphocytes and reduce viability.</p>
+<p>If using ArC beads stained with a fixable amine-reactive viability dye, also add <strong>unstained ArC beads</strong> as a separate tube. In the software: - Acquisition -&gt; Layout Editor -&gt; select tube position - Name it (e.g., “Unstained ArC beads”) - Under Sample Settings: - Sample Group: <strong>Single Positive Controls</strong> - Check <strong>Auto acquisition target</strong></p>
 </div>
 </div>
 <ol start="3" type="1">
-<li>Quench the lysis by adding 20 mL ice-cold PBS.</li>
-<li>Pass the suspension through a 70 µm cell strainer into a fresh 50 mL tube kept on ice.</li>
-<li>Rinse the strainer with an additional 5–10 mL PBS if needed to recover remaining cells.</li>
-<li>Centrifuge at 550 g for 10 min at 4 °C.</li>
-<li>Discard the supernatant and keep the pellet on ice.</li>
-</ol>
-</section>
-<section id="step-8-final-wash-and-resuspension" class="level2">
-<h2 class="anchored" data-anchor-id="step-8-final-wash-and-resuspension">Step 8 – Final wash and resuspension</h2>
-<ol type="1">
-<li>Resuspend the cell pellet in 10 mL ice-cold PBS.</li>
-<li>Count cells and assess viability (e.g.&nbsp;trypan blue) as required.</li>
-<li>Proceed with downstream applications (e.g.&nbsp;flow cytometry, sorting, or culture of NLCs).</li>
-</ol>
-</section>
-</section>
-<section id="materials" class="level1">
-<h1>Materials</h1>
-<section id="reagents" class="level2">
-<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 35%">
-<col style="width: 18%">
-<col style="width: 6%">
-<col style="width: 39%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Reagent</th>
-<th>Supplier</th>
-<th>Cat. #</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PBS, sterile, 1×</td>
-<td>Various</td>
-<td>–</td>
-<td>Perfusion, washes, resuspension</td>
-</tr>
-<tr class="even">
-<td>Collagenase IV</td>
-<td>Various</td>
-<td>–</td>
-<td>Component of BUF-MUS-LIV-DIG-001</td>
-</tr>
-<tr class="odd">
-<td>DNase I</td>
-<td>Various</td>
-<td>–</td>
-<td>Component of BUF-MUS-LIV-DIG-001</td>
-</tr>
-<tr class="even">
-<td>Percoll</td>
-<td>Cytiva/GE or similar</td>
-<td>–</td>
-<td>Component of BUF-GEN-PERC-37PCT-001</td>
-</tr>
-<tr class="odd">
-<td>ACK lysis buffer</td>
-<td>Various / in-house</td>
-<td>–</td>
-<td>BUF-GEN-ACK-LYSIS-001</td>
-</tr>
-<tr class="even">
-<td>Fetal calf serum (FCS), heat-inactivated</td>
-<td>Various</td>
-<td>–</td>
-<td>For BUF-GEN-FACS-BUF-001 or culture medium</td>
-</tr>
-<tr class="odd">
-<td>EDTA, 0.5 M stock</td>
-<td>Various</td>
-<td>–</td>
-<td>For BUF-GEN-FACS-BUF-001</td>
-</tr>
-<tr class="even">
-<td>Appropriate culture medium (e.g.&nbsp;RPMI 1640)</td>
-<td>Various</td>
-<td>–</td>
-<td>For downstream cultures, if required</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="disposables" class="level2">
-<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Specification</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>50 mL conical tubes</td>
-<td>Sterile</td>
-</tr>
-<tr class="even">
-<td>GentleMACS C-tubes or equivalent</td>
-<td>For tissue dissociation</td>
-</tr>
-<tr class="odd">
-<td>Sterile Petri dishes</td>
-<td>For liver mincing</td>
-</tr>
-<tr class="even">
-<td>70 µm cell strainers</td>
-<td>For filtration</td>
-</tr>
-<tr class="odd">
-<td>Pipette tips (10 µL, 200 µL, 1000 µL)</td>
-<td>Sterile</td>
-</tr>
-<tr class="even">
-<td>Syringes and needles</td>
-<td>For liver perfusion</td>
-</tr>
-<tr class="odd">
-<td>Waste containers and sharps bins</td>
-<td>According to local regulations</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="equipment" class="level2">
-<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 42%">
-<col style="width: 57%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Equipment</th>
-<th>Specification / Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CO₂ chamber and euthanasia setup</td>
-<td>As per institutional animal welfare guidelines</td>
-</tr>
-<tr class="even">
-<td>Dissection instruments</td>
-<td>Scissors, forceps, autoclaved</td>
-</tr>
-<tr class="odd">
-<td>GentleMACS dissociator (or equivalent)</td>
-<td>With liver-optimized program</td>
-</tr>
-<tr class="even">
-<td>Refrigerated centrifuge</td>
-<td>4 °C, swing-out rotor for 50 mL tubes</td>
-</tr>
-<tr class="odd">
-<td>Biological safety cabinet</td>
-<td>For aseptic handling of tissues and cell suspensions</td>
-</tr>
-<tr class="even">
-<td>Ice bucket</td>
-<td>To maintain samples on ice</td>
-</tr>
-<tr class="odd">
-<td>Cell counter or hemocytometer</td>
-<td>For cell counting</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="buffers-used" class="level1">
-<h1>Buffers used</h1>
+<li>Open door, orient rack/plate with <strong>A1 notch</strong> at bottom left, place on AutoSampler.</li>
+<li>Close door and click <strong>Load</strong>.
 <ul>
-<li><strong>BUF-MUS-LIV-DIG-001</strong> – Liver digestion buffer (collagenase IV + DNase I in PBS).<br>
-</li>
-<li><strong>BUF-GEN-PERC-37PCT-001</strong> – 37 % Percoll working solution in PBS.<br>
-</li>
-<li><strong>BUF-GEN-ACK-LYSIS-001</strong> – ACK red blood cell lysis buffer.<br>
-</li>
-<li><strong>BUF-GEN-FACS-BUF-001</strong> – FACS buffer (PBS + 2 % FCS + 2 mM EDTA), if used for downstream staining.</li>
+<li>If “Cooling sample stage is in progress” appears, click <strong>Yes</strong>.</li>
+</ul></li>
+</ol>
+</section>
+<section id="c2.-instrument-settings-for-single-stains-example-values" class="level3">
+<h3 class="anchored" data-anchor-id="c2.-instrument-settings-for-single-stains-example-values">C2. Instrument settings for single stains (example values)</h3>
+<ol type="1">
+<li>Open <strong>Instrument Settings</strong>.</li>
+<li>Under <strong>Detector and Threshold</strong>:
+<ul>
+<li>FSC Gain = <strong>17</strong> (example for fixed/permeabilized PBMCs)</li>
+<li>SSC Voltage (%) = <strong>37.5</strong> (example for fixed/permeabilized PBMCs)</li>
+</ul></li>
+<li>Under <strong>Flow Control</strong>:
+<ul>
+<li>Sample Flow Rate = <strong>3.0</strong></li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Adjust for your sample type
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The FSC/SSC and flow rate values above are examples given for fixed/permeabilized PBMCs. Adjust for other cell types and staining conditions.</p>
+</div>
+</div>
+</section>
+<section id="c3.-stopping-condition-for-single-stains" class="level3">
+<h3 class="anchored" data-anchor-id="c3.-stopping-condition-for-single-stains">C3. Stopping condition for single stains</h3>
+<ol type="1">
+<li>Open <strong>Stopping Condition</strong>.</li>
+<li>Set <strong>Total Events = 5,000</strong> (single stains).</li>
+<li>Click <strong>Sync stopping conditions</strong> to apply to all.</li>
+</ol>
+</section>
+<section id="c4.-preview-and-gate-setup" class="level3">
+<h3 class="anchored" data-anchor-id="c4.-preview-and-gate-setup">C4. Preview and gate setup</h3>
+<ol type="1">
+<li>Preview each single stain using <strong>Preview</strong>.</li>
+<li>Adjust gates (“A” and “Positive”) as needed.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Gate and scale consistency
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Apply the same “A” gate to all single stains using <strong>Sync Scale and Gate</strong>.</li>
+<li>The “Positive” gate should be tight and placed on the highest-intensity events.</li>
 </ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Off-scale events and voltage changes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If a conjugate is off-scale, reducing PMT voltage can be used to complete acquisition, but the preferred long-term fix is to <strong>reduce antibody concentration</strong> in future experiments.</p>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Click <strong>Stop</strong> to move to the next sample.
+<ul>
+<li>If it does not advance: right-click tube position -&gt; <strong>Set Current Position</strong>.</li>
+</ul></li>
+</ol>
+</section>
+<section id="c5.-record-single-stains" class="level3">
+<h3 class="anchored" data-anchor-id="c5.-record-single-stains">C5. Record single stains</h3>
+<ol type="1">
+<li>Right-click the first tube (usually “Unstained”) -&gt; <strong>Set Current Position</strong>.</li>
+<li>Acquire single stains:
+<ul>
+<li>Manual: <strong>Acquire</strong></li>
+<li>Automated: <strong>Auto Acquire</strong> (requires Auto acquisition targets)</li>
+</ul></li>
+</ol>
+</section>
+<section id="c6.-unmixing" class="level3">
+<h3 class="anchored" data-anchor-id="c6.-unmixing">C6. Unmixing</h3>
+<ol type="1">
+<li>Go to <strong>Unmixing</strong> tab.</li>
+<li>Click <strong>Unmixing Settings</strong>.</li>
+<li>If you added an unstained ArC bead control as the negative gate for the live/dead single stain, confirm the negative reference is correctly assigned.</li>
+<li>Click <strong>Calculate</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Saturation warnings during unmixing
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If prompted that saturation of x% is observed: - Small % (e.g., &lt;0.1%): Continue - Large %: the single stain is too bright - Re-run single stain with reduced voltage (Instrument Settings -&gt; Detector &amp; Threshold -&gt; PMT Voltage (%) -&gt; Synchronous Voltage Adjustment) - Preferably: plan to reduce antibody concentration in future experiments</p>
+</div>
+</div>
+<ol start="5" type="1">
+<li>When prompted to apply spectral references to other sample groups with the same laser settings, click <strong>Apply</strong>.</li>
+<li>Confirm the <strong>Unmixing</strong> toggle (top right) is <strong>ON</strong> (blue).</li>
+</ol>
+</section>
+</section>
+<section id="d.-acquire-samples" class="level2">
+<h2 class="anchored" data-anchor-id="d.-acquire-samples">D. Acquire samples</h2>
+<ol type="1">
+<li>If single stains were already acquired and you are switching racks/plates:
+<ul>
+<li>Click <strong>Unload</strong> and wait for “Plate Unloaded”</li>
+<li>Open door, remove rack/plate, close door</li>
+</ul></li>
+<li>Place your sample tubes in the rack according to your Layout Editor assignments.</li>
+<li>Open door, load rack onto AutoSampler, close door, click <strong>Load</strong>.</li>
+<li>Confirm <strong>Unmixing</strong> toggle is <strong>ON</strong> (blue).</li>
+<li>Set/confirm instrument settings (adjust as needed):
+<ul>
+<li>Detector &amp; Threshold: FSC Gain and SSC Voltage appropriate for sample</li>
+<li>Flow Control:
+<ul>
+<li>Sample Flow Rate = <strong>3.0</strong> for previewing ~5 x 10^5 cells in 100 µL</li>
+<li>Sample Flow Rate = <strong>8.0</strong> for recording ~5 x 10^5 cells in 100 µL</li>
+</ul></li>
+<li>Agitation: enable, pattern <strong>Cyclic</strong>, mode <strong>Normal</strong></li>
+<li>Event Check: <strong>On</strong></li>
+</ul></li>
+<li>Set stopping condition (events or time) according to your experimental requirements.</li>
+<li>Draw/confirm gating strategy in the worksheet area.</li>
+<li>Select the sample to run first: right-click -&gt; <strong>Set Current Position</strong>.</li>
+<li>Click <strong>Preview</strong> (green arrow) to verify signals are on scale.</li>
+<li>Click <strong>Record</strong> (red circle) to record selected sample, or <strong>Auto Acquire</strong> to run all auto targets.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Avoid running samples dry
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you need time to adjust axes or gates, stop acquisition to prevent samples running dry.</p>
+</div>
+</div>
+</section>
+<section id="e.-export-and-transfer-data" class="level2">
+<h2 class="anchored" data-anchor-id="e.-export-and-transfer-data">E. Export and transfer data</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>No external drives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not plug external devices (e.g., USB drives) into FCCF computers. Transfer data via approved methods (e.g., BTC cloud), per facility policy.</p>
+</div>
+</div>
+<ol type="1">
+<li>Under the Experiment pane, click the experiment name (top item in hierarchy).</li>
+<li>Right-click -&gt; <strong>Export to FCS file</strong>.</li>
+<li>Export settings:
+<ul>
+<li>Under “Pulse Type (for fluorescence)”: uncheck <strong>Height</strong> and <strong>Width</strong></li>
+<li>Ensure <strong>FCS version = 3.1</strong></li>
+<li>Set export location under <strong>Save in</strong></li>
+</ul></li>
+<li>Click <strong>Export</strong> and wait for export progress to complete.</li>
+<li>Confirm export has started/completed via the popup and/or log file in output folder.</li>
+<li>Transfer exported files to your BTC cloud account (or other approved location).</li>
+</ol>
+</section>
+<section id="f.-cleaning-and-shutdown" class="level2">
+<h2 class="anchored" data-anchor-id="f.-cleaning-and-shutdown">F. Cleaning and shutdown</h2>
+<section id="f1.-if-another-user-is-booked-after-you" class="level3">
+<h3 class="anchored" data-anchor-id="f1.-if-another-user-is-booked-after-you">F1. If another user is booked after you</h3>
+<ol type="1">
+<li>Click <strong>Unload</strong>.</li>
+<li>Remove rack/plate from AutoSampler.</li>
+<li>Go to <strong>Cytometer</strong> tab -&gt; <strong>Decontamination</strong>.</li>
+<li>Select <strong>Bleach Cleaning and Rinse</strong> and follow prompts to completion.</li>
+<li>Remove samples, return tube rack to FCCF fridge.</li>
+<li>Close ID7000 software.</li>
+<li>Ensure:
+<ul>
+<li>Waste tank is empty</li>
+<li>Sheath tank is full for next user</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Red error light after closing software
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After the software closes, a red “Error” light on the ID7000 is normal and indicates the instrument is not connected to the computer.</p>
+</div>
+</div>
+</section>
+<section id="f2.-if-you-are-the-last-user-for-the-day" class="level3">
+<h3 class="anchored" data-anchor-id="f2.-if-you-are-the-last-user-for-the-day">F2. If you are the last user for the day</h3>
+<ol type="1">
+<li>Click <strong>Unload</strong>.</li>
+<li>Remove rack/plate from AutoSampler.</li>
+<li>Go to <strong>Cytometer</strong> tab -&gt; <strong>Hardware Shutdown</strong>.</li>
+<li>Select <strong>Bleach Cleaning and Rinse</strong> and follow prompts to complete decontamination and shutdown.</li>
+<li>Remove samples, return tube rack to FCCF fridge.</li>
+<li>After shutdown completes and cytometer switches off automatically, close the software.</li>
+<li>Ensure waste is empty and sheath is full for next user.</li>
+</ol>
+</section>
+</section>
 </section>
 <section id="troubleshooting" class="level1">
 <h1>Troubleshooting</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 32%">
-<col style="width: 40%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Problem</th>
-<th>Possible cause</th>
-<th>Suggested solution</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Low lymphocyte yield</td>
-<td>Incomplete perfusion or digestion</td>
-<td>Confirm efficient perfusion; ensure thorough mincing and full 17 min digestion.</td>
-</tr>
-<tr class="even">
-<td>High red blood cell contamination</td>
-<td>Insufficient or ineffective ACK lysis</td>
-<td>Repeat ACK lysis briefly (≤2 min) and quench immediately with excess PBS.</td>
-</tr>
-<tr class="odd">
-<td>Poor Percoll separation or indistinct pellet</td>
-<td>Incorrect Percoll concentration or harsh braking</td>
-<td>Prepare fresh 37 % Percoll; confirm centrifuge settings; reduce brake.</td>
-</tr>
-<tr class="even">
-<td>Low cell viability</td>
-<td>Over-digestion, prolonged ACK exposure, or warm handling</td>
-<td>Shorten digestion and ACK steps; keep samples on ice; process promptly.</td>
-</tr>
-<tr class="odd">
-<td>Excessive debris or clumps</td>
-<td>Inadequate filtration or DNase activity</td>
-<td>Confirm DNase in digestion buffer; pass suspension through 70 µm strainer.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="safety-brief" class="level1">
-<h1>Safety (brief)</h1>
 <ul>
-<li>Perform all animal procedures in accordance with approved animal licences and institutional animal welfare regulations.</li>
-<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
-<li>Use caution when handling sharps (needles, scalpels); dispose of them in designated sharps containers.</li>
-<li>Work in a biological safety cabinet when handling tissues and cell suspensions to maintain sterility and operator safety.</li>
-<li>Dispose of animal tissues, cell suspensions, and contaminated consumables as biological waste according to local guidelines.</li>
+<li><strong>QC fails due to pressure:</strong> re-check waste/sheath levels and re-run QC.</li>
+<li><strong>Single stain saturation during unmixing:</strong> re-run with reduced PMT voltage short-term; reduce antibody concentration long-term.</li>
+<li><strong>Software does not advance tube position:</strong> right-click the tube position -&gt; <strong>Set Current Position</strong>.</li>
+</ul>
+</section>
+<section id="references-and-links" class="level1">
+<h1>References and links</h1>
+<ul>
+<li>Booking (PPMS): <code>https://ppms.eu/uni-bonn/login/?pf=2</code></li>
+<li>Sony ID7000 Spectral Viewer: <code>https://www.sonybiotechnology.com/us/instruments/id7000-spectral-cell-analyzer/spectra-viewer/</code></li>
+<li>Autofluorescence reference: Wanner et al., 2022. Front Bioeng Biotechnol. doi: <code>10.3389/fbioe.2022.827987</code></li>
 </ul>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 11%">
-<col style="width: 14%">
-<col style="width: 66%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -930,16 +979,10 @@ Important
 </thead>
 <tbody>
 <tr class="odd">
-<td>v1.1</td>
-<td>2025-12-12</td>
-<td>Dillon Corvino</td>
-<td>Updated liver collection to allow 6-well plate or 50 mL tube handling; added liver weighing, refined gentleMACS digestion workflow, and clarified Percoll resuspension and centrifugation steps.</td>
-</tr>
-<tr class="even">
 <td>v1.0</td>
 <td>2025-11-21</td>
 <td>Dillon Corvino</td>
-<td>First Quarto protocol version for LAL/NLC isolation from mouse liver.</td>
+<td>Converted Sony ID7000 SOP into Abdullah Lab Quarto protocol standard.</td>
 </tr>
 </tbody>
 </table>

@@ -1,0 +1,357 @@
+---
+title: "Sony Spectral Cell Analyzer ID7000"
+subtitle: "Sample acquisition, spectral unmixing, and shutdown"
+protocol_id: "GEN-FLOW-SONY-ID7000-001"
+version: "v1.0"
+date: "2025-11-21"
+description: "Standard operating procedure for startup, daily QC, experiment setup, single-stain acquisition and spectral unmixing, sample acquisition, data export, and cleaning/shutdown of the Sony Spectral Cell Analyzer ID7000 at the Flow Cytometry Core Facility (FCCF), University Hospital Bonn."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+**Adapted from:** Surace Lab SOP #001 (Sony ID7000), University Hospital Bonn (v1; 17/08/2023; revised 18/08/2023).
+
+# Purpose
+
+Provide a standardized workflow to operate the **Sony Spectral Cell Analyzer ID7000** for spectral flow cytometry, including:
+
+- Instrument startup and (when required) daily QC
+- Experiment setup and instrument settings
+- Acquisition of single-stain controls and spectral unmixing
+- Acquisition of samples
+- Export of FCS files and data transfer
+- Cleaning/decontamination and shutdown
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Scope
+
+This protocol applies to users performing flow cytometry analyses on the **Sony Spectral Cell Analyzer ID7000** located at the **Flow Cytometry Core Facility (FCCF), BMZII, University Hospital Bonn**.
+
+It covers operation in **Normal mode** and assumes users have completed FCCF induction/training and have appropriate authorization to use the instrument.
+
+# Hazards and safety
+
+## Hazards
+
+::: callout-warning
+## Chemical hazards
+This workflow may involve exposure to the following chemicals (toxic/irritant). Consult local MSDS and FCCF safety guidance before use.
+
+- **ROTI®Histofix 4%** (4% formaldehyde; Carl Roth; Cat. No. P087.1)
+- **Bleach** (sodium hypochlorite, NaOCl)
+- **Mucocit® T** (Schülke & Mayr GmbH)
+:::
+
+::: callout-warning
+## Biological hazards
+- Samples may be classified as **S2**.
+- **S2 samples must be fixed prior to acquisition** (e.g., ROTI®Histofix 4%, ICS, 4% PFA), according to FCCF and institutional biosafety rules.
+:::
+
+## Controls
+
+- Wear full PPE (see below).
+- Handle chemical reagents in accordance with MSDS and facility guidance.
+- Follow FCCF instructions for waste handling and decontamination.
+
+## PPE
+
+- Long-sleeved lab coat
+- Enclosed footwear
+- Gloves
+- Additional PPE as required by sample type and local risk assessment
+
+# Reagents, consumables, equipment, and buffers
+
+## Reagents
+
+| Item | Manufacturer | Cat. No. | Location/notes |
+|---|---|---|---|
+| AlignCheck Particles | Sony Biotechnology | AE700510 | FCCF fridge; in foil packet |
+| 8 Peak Beads | Sony Biotechnology | AE700522 | FCCF fridge; in foil packet |
+
+## Consumables
+
+- FACS tubes (Sarstedt; Cat. No. 55.1579) **or** 96-well U-bottom plates (TPP®; Cat. No. 92697)
+- Aluminum foil
+
+## Equipment
+
+- Sony Spectral Cell Analyzer ID7000 (FCCF, BMZII)
+- ID7000 computer + ID7000 software
+- If running samples in tubes:
+  - FACS tube rack
+  - 24-position 5 mL tube rack (Sony Biotechnology; stored in FCCF fridge)
+
+## Buffers and facility liquids
+
+| Use | Name | Notes / location |
+|---|---|---|
+| Sheath | MilliQ water | Used to fill sheath tank |
+| Clean | Bleach | Prepared by FCCF; white squeeze bottles labelled “Bleach” |
+| Rinse | Rinse solution | Prepared by FCCF; blue squeeze bottles |
+| Running buffer | FACS Flow | Prepared by FCCF; dispenser tanks next to sink |
+
+# General notes
+
+- Use of the Sony ID7000 is subject to **FCCF induction and approval** (FCCF contact person noted in the source SOP: Andreas Dolf). Training can be booked on PPMS.
+- FCCF recommends **bead-based single stains** (e.g., UltraComp eBeads Plus), including for **fixable amine-reactive viability dyes** (e.g., ArC Amine-reactive beads).
+  - For ArC viability dye single stains: include a matching tube of **unstained ArC beads**.
+- Use an **unstained single-cell suspension** (from your tissue of interest) to identify and unmix **autofluorescence** where relevant.
+  - Reference: Wanner et al., 2022 (Frontiers in Bioengineering and Biotechnology; doi: 10.3389/fbioe.2022.827987).
+
+# Procedure
+
+## A. Startup and (when required) daily QC
+
+::: callout-note
+## When to run daily QC
+On weekdays, FCCF staff typically perform daily QC by **09:00**. Run the daily QC yourself if:
+- you start **before** FCCF operating hours, or
+- you use the machine **on weekends**.
+:::
+
+1. Check the **left side** of the instrument and ensure **both black switches** are on.
+2. Check **Waste** and **Sheath** tank levels. If necessary:
+   - Empty waste into sink, then add **2 pumps of Mucocit® T** to the empty waste tank.
+   - Refill **Sheath** tank with **MilliQ water**.
+3. Press the **Power** button on the front of the instrument (green light should turn on).
+4. Turn on the computer.
+5. Log in with your FCCF account.
+6. Start the **ID7000 software** (desktop icon).
+7. Log into the software.
+   - If using a shared lab account containing saved controls, log into that account (as applicable).
+8. Confirm the ID7000 connects to the computer (bottom right of software). Wait a couple of minutes.
+9. The **Priming Wizard** should open automatically. Click **Start**.
+10. While priming runs, prepare QC beads in FACS tubes:
+    - **AlignCheck beads:** 450 µL FACS Flow + 2 drops beads
+    - **Sony 8-peak beads:** 350 µL FACS Flow + 1 drop beads
+11. When priming is complete, close the QC window if it pops up.
+12. Click **Start Daily and Performance QC**.
+13. Open the instrument door.
+14. Remove **Clean** and **Rinse** tubes from the tube station.
+15. Place **AlignCheck** and **8-peak** bead tubes into the tube station in the order shown in the QC window.
+16. Close the door and follow prompts to run QC.
+
+::: callout-tip
+## If QC fails due to pressure
+A pressure-related error can cause QC failure. Re-check **Waste** and **Sheath** tank levels and correct if needed, then re-run QC.
+:::
+
+## B. Experiment setup
+
+1. After QC passes, go to **Experiment** tab.
+2. Click **Experiment designer**.
+3. Confirm required laser lines are enabled (checkmarks). Enable if needed:
+   - 355 nm
+   - 405 nm
+   - 488 nm
+   - 561 nm
+   - 637 nm
+4. Add fluorochromes (e.g., FITC, APC, PE) by typing and clicking **Add**.
+
+::: callout-note
+## Order of fluorochromes
+- If acquiring single stains in **tubes**, fluorochrome add-order does not matter.
+- If acquiring single stains in a **plate**, match fluorochrome order to the plate layout.
+- If using previously saved single-stain controls from the library and no new controls are needed, you may skip Section C.
+:::
+
+5. Fill in metadata (Marker, Species, Clone, Lot number, etc.).
+6. Click **Next** until **Instrument Settings** step.
+7. Click **Import** and import:
+   - `Desktop -> Import Master Setting -> SONY_Master Settings normal.xml`
+8. Click **Next** and select acquisition order: **From left-to-right**.
+9. Click **Next** and complete experiment details.
+10. Click **Create Experiment**.
+11. Under **Acquisition** tab, click **Layout Editor** (Plate section).
+12. Hold **Ctrl** and select the unassigned positions corresponding to the number of samples.
+13. Set **Sample Group** to `Sample Group - 1`.
+14. Optionally check **Auto acquisition target**.
+15. Name each sample position under **Sample Information**.
+16. Close Layout Editor.
+
+## C. Acquire single stains and perform unmixing
+
+### C1. Load single stains
+
+1. If using tubes:
+   - Retrieve the **24-position 5 mL tube rack** from FCCF fridge.
+   - The **notch** marks **A1**.
+2. Arrange single-stain tubes (or plate) in the order shown in the software layout.
+
+::: callout-note
+## ArC beads for fixable viability dyes
+If using ArC beads stained with a fixable amine-reactive viability dye, also add **unstained ArC beads** as a separate tube.
+In the software:
+- Acquisition -> Layout Editor -> select tube position
+- Name it (e.g., "Unstained ArC beads")
+- Under Sample Settings:
+  - Sample Group: **Single Positive Controls**
+  - Check **Auto acquisition target**
+:::
+
+3. Open door, orient rack/plate with **A1 notch** at bottom left, place on AutoSampler.
+4. Close door and click **Load**.
+   - If “Cooling sample stage is in progress” appears, click **Yes**.
+
+### C2. Instrument settings for single stains (example values)
+
+1. Open **Instrument Settings**.
+2. Under **Detector and Threshold**:
+   - FSC Gain = **17** (example for fixed/permeabilized PBMCs)
+   - SSC Voltage (%) = **37.5** (example for fixed/permeabilized PBMCs)
+3. Under **Flow Control**:
+   - Sample Flow Rate = **3.0**
+
+::: callout-note
+## Adjust for your sample type
+The FSC/SSC and flow rate values above are examples given for fixed/permeabilized PBMCs. Adjust for other cell types and staining conditions.
+:::
+
+### C3. Stopping condition for single stains
+
+1. Open **Stopping Condition**.
+2. Set **Total Events = 5,000** (single stains).
+3. Click **Sync stopping conditions** to apply to all.
+
+### C4. Preview and gate setup
+
+1. Preview each single stain using **Preview**.
+2. Adjust gates (“A” and “Positive”) as needed.
+
+::: callout-tip
+## Gate and scale consistency
+- Apply the same “A” gate to all single stains using **Sync Scale and Gate**.
+- The “Positive” gate should be tight and placed on the highest-intensity events.
+:::
+
+::: callout-warning
+## Off-scale events and voltage changes
+If a conjugate is off-scale, reducing PMT voltage can be used to complete acquisition, but the preferred long-term fix is to **reduce antibody concentration** in future experiments.
+:::
+
+3. Click **Stop** to move to the next sample.
+   - If it does not advance: right-click tube position -> **Set Current Position**.
+
+### C5. Record single stains
+
+1. Right-click the first tube (usually “Unstained”) -> **Set Current Position**.
+2. Acquire single stains:
+   - Manual: **Acquire**
+   - Automated: **Auto Acquire** (requires Auto acquisition targets)
+
+### C6. Unmixing
+
+1. Go to **Unmixing** tab.
+2. Click **Unmixing Settings**.
+3. If you added an unstained ArC bead control as the negative gate for the live/dead single stain, confirm the negative reference is correctly assigned.
+4. Click **Calculate**.
+
+::: callout-note
+## Saturation warnings during unmixing
+If prompted that saturation of x% is observed:
+- Small % (e.g., <0.1%): Continue
+- Large %: the single stain is too bright
+  - Re-run single stain with reduced voltage (Instrument Settings -> Detector & Threshold -> PMT Voltage (%) -> Synchronous Voltage Adjustment)
+  - Preferably: plan to reduce antibody concentration in future experiments
+:::
+
+5. When prompted to apply spectral references to other sample groups with the same laser settings, click **Apply**.
+6. Confirm the **Unmixing** toggle (top right) is **ON** (blue).
+
+## D. Acquire samples
+
+1. If single stains were already acquired and you are switching racks/plates:
+   - Click **Unload** and wait for “Plate Unloaded”
+   - Open door, remove rack/plate, close door
+2. Place your sample tubes in the rack according to your Layout Editor assignments.
+3. Open door, load rack onto AutoSampler, close door, click **Load**.
+4. Confirm **Unmixing** toggle is **ON** (blue).
+5. Set/confirm instrument settings (adjust as needed):
+   - Detector & Threshold: FSC Gain and SSC Voltage appropriate for sample
+   - Flow Control:
+     - Sample Flow Rate = **3.0** for previewing ~5 x 10^5 cells in 100 µL
+     - Sample Flow Rate = **8.0** for recording ~5 x 10^5 cells in 100 µL
+   - Agitation: enable, pattern **Cyclic**, mode **Normal**
+   - Event Check: **On**
+6. Set stopping condition (events or time) according to your experimental requirements.
+7. Draw/confirm gating strategy in the worksheet area.
+8. Select the sample to run first: right-click -> **Set Current Position**.
+9. Click **Preview** (green arrow) to verify signals are on scale.
+10. Click **Record** (red circle) to record selected sample, or **Auto Acquire** to run all auto targets.
+
+::: callout-warning
+## Avoid running samples dry
+If you need time to adjust axes or gates, stop acquisition to prevent samples running dry.
+:::
+
+## E. Export and transfer data
+
+::: callout-warning
+## No external drives
+Do not plug external devices (e.g., USB drives) into FCCF computers. Transfer data via approved methods (e.g., BTC cloud), per facility policy.
+:::
+
+1. Under the Experiment pane, click the experiment name (top item in hierarchy).
+2. Right-click -> **Export to FCS file**.
+3. Export settings:
+   - Under “Pulse Type (for fluorescence)”: uncheck **Height** and **Width**
+   - Ensure **FCS version = 3.1**
+   - Set export location under **Save in**
+4. Click **Export** and wait for export progress to complete.
+5. Confirm export has started/completed via the popup and/or log file in output folder.
+6. Transfer exported files to your BTC cloud account (or other approved location).
+
+## F. Cleaning and shutdown
+
+### F1. If another user is booked after you
+
+1. Click **Unload**.
+2. Remove rack/plate from AutoSampler.
+3. Go to **Cytometer** tab -> **Decontamination**.
+4. Select **Bleach Cleaning and Rinse** and follow prompts to completion.
+5. Remove samples, return tube rack to FCCF fridge.
+6. Close ID7000 software.
+7. Ensure:
+   - Waste tank is empty
+   - Sheath tank is full for next user
+
+::: callout-note
+## Red error light after closing software
+After the software closes, a red “Error” light on the ID7000 is normal and indicates the instrument is not connected to the computer.
+:::
+
+### F2. If you are the last user for the day
+
+1. Click **Unload**.
+2. Remove rack/plate from AutoSampler.
+3. Go to **Cytometer** tab -> **Hardware Shutdown**.
+4. Select **Bleach Cleaning and Rinse** and follow prompts to complete decontamination and shutdown.
+5. Remove samples, return tube rack to FCCF fridge.
+6. After shutdown completes and cytometer switches off automatically, close the software.
+7. Ensure waste is empty and sheath is full for next user.
+
+# Troubleshooting
+
+- **QC fails due to pressure:** re-check waste/sheath levels and re-run QC.
+- **Single stain saturation during unmixing:** re-run with reduced PMT voltage short-term; reduce antibody concentration long-term.
+- **Software does not advance tube position:** right-click the tube position -> **Set Current Position**.
+
+# References and links
+
+- Booking (PPMS): `https://ppms.eu/uni-bonn/login/?pf=2`
+- Sony ID7000 Spectral Viewer: `https://www.sonybiotechnology.com/us/instruments/id7000-spectral-cell-analyzer/spectra-viewer/`
+- Autofluorescence reference: Wanner et al., 2022. Front Bioeng Biotechnol. doi: `10.3389/fbioe.2022.827987`
+
+# Version history
+
+| Version | Date | Author | Changes |
+|---|---|---|---|
+| v1.0 | 2025-11-21 | Dillon Corvino | Converted Sony ID7000 SOP into Abdullah Lab Quarto protocol standard. |

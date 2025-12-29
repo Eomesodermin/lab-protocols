@@ -1,7 +1,7 @@
 ---
-title: "Isolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver"
+title: "ARCHIVAL Isolation of Liver-Associated Lymphocytes (LALs) Including NLCs from Mouse Liver"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-LIV-NLC-ISO-001"
+protocol_id: "ARCHIVAL-MUS-LIV-NLC-ISO-001"
 version: "v1.0"
 date: "2025-11-21"
 description: "Enzymatic digestion of mouse liver and density-based enrichment to isolate liver-associated lymphocytes (LALs), including NK-like T cells (NLCs), for downstream flow cytometry, sorting, and functional assays."
@@ -181,16 +181,18 @@ Avoid high brake settings during Percoll centrifugation. Abrupt braking can disr
 10. Centrifuge at 550 g) for 10 min at 4 °C.
 11. Discard the supernatant and keep the pellet on ice.
 
-## Step 7 – Red blood cell lysis and filtration
+## STEP 7 – RBC lysis and filtration
 
-1. Gently resuspend the cell pellet in 2 mL ACK lysis buffer (BUF-GEN-ACK-LYSIS-001) at room temperature.
-2. Incubate for 2 min at room temperature, gently inverting once.
+1. Add **1 mL RBC lysis buffer per liver** to the cell pellet:  
+   - **HybriMax RBC Lysis Buffer:** incubate for **5 minutes at room temperature**, **or**  
+   - **ACK lysis buffer:** incubate for **2 minutes at room temperature**.  
+2. Gently resuspend the pellet by pipetting or flicking immediately after adding buffer.  
+3. After incubation, quench the lysis by topping up to **50 mL with FACS Buffer**.
 
-::: callout-important
-Do not exceed 2–3 min in ACK buffer. Prolonged exposure can damage lymphocytes and reduce viability.
+:::callout-warning
+Do not exceed the indicated incubation times. Over-lysis (particularly >5 minutes with HybriMax or >2 minutes with ACK) can reduce leukocyte viability.
 :::
 
-3. Quench the lysis by adding 20 mL ice-cold PBS.
 4. Pass the suspension through a 70 µm cell strainer into a fresh 50 mL tube kept on ice.
 5. Rinse the strainer with an additional 5–10 mL PBS if needed to recover remaining cells.
 6. Centrifuge at 550 g for 10 min at 4 °C.

@@ -63,14 +63,21 @@ Max of 2 spleens per tube/strainer
 
 ## STEP 4 – RBC lysis
 
-1. Add **1 mL HybriMax RBC Lysis Buffer** (or equivalent) **per spleen** to the pellet.  
-2. Gently resuspend the pellet by pipetting or flicking.  
-3. Incubate for **5 minutes at room temperature**.  
-4. Top up to **50 mL** with **FACS Buffer**.
+1. Add **RBC lysis buffer** to the cell pellet (**1 mL per spleen**):  
+   - **ACK lysis buffer:** incubate for **1.5–2 minutes at room temperature**, **or**  
+   - **HybriMax RBC Lysis Buffer:** incubate for **4–5 minutes at room temperature**.  
+2. Gently resuspend immediately by pipetting or flicking to ensure uniform lysis.  
+3. Quench the reaction by topping up to **50 mL with FACS Buffer**.
+4. Centrifuge at **400 g for 5 minutes at 4 °C**.
 
-::: callout-warning
-Avoid over-lysis (>5 minutes) as this can reduce leukocyte viability.
+:::callout-warning
+Do not exceed the indicated incubation times. Over-incubation is the most common cause of reduced leukocyte viability. If red cells remain, repeat a **short second lysis** rather than extending the incubation.
 :::
+
+:::callout-note
+ACK lysis buffer is **stronger and faster** but less forgiving. HybriMax is **milder and preferred** when viability is critical (e.g. downstream scRNA-seq or adoptive transfer).
+:::
+
 
 ## STEP 5 – Filtration and final wash
 

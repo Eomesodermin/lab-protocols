@@ -2,9 +2,9 @@
 title: "Standard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "GEN-FLOW-STD-001"
-version: "v1.0"
-date: "2025-11-21"
-description: "Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry using FACS buffer, Fc block, live/dead dyes, and commercial fixation/permeabilization kits."
+version: "v1.1"
+date: "2025-12-29"
+description: "Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry, including optional tetramer staining."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
@@ -15,39 +15,61 @@ description: "Standard workflow for surface, intracellular, and intranuclear sta
 
 This protocol describes a standard flow cytometry staining workflow for suspension cells, including:
 
+- Optional **tetramer staining**.  
 - Surface staining with Fc block and live/dead dye.  
 - Optional intracellular staining (e.g. BD Cytofix/Cytoperm-based).  
 - Optional intranuclear staining (e.g. eBioscience FOXP3 fix/perm-based).
 
 It is intended as a general framework for murine or human samples and can be adapted to specific panels and antibody combinations.
 
+---
+
+# Buffer nomenclature (important)
+
+- **FACS Buffer** = PBS + FCS  
+- **MACS Buffer** = PBS + FCS + EDTA  
+
+Unless otherwise specified, **MACS buffer is used throughout this protocol** to minimise cell clumping during staining and washing.
+
+Tetramer staining is a specific exception (see below).
+
+---
+
 # Critical notes (read before starting)
 
 - Keep cells and antibody mixes cold (on ice or at 4 °C) and protected from light whenever possible.
-- Use FACS buffer containing EDTA to reduce cell aggregation during staining and washing.
-- Do not exceed the recommended maximum of ~5 × 10⁵ cells per well in 96-well plates to ensure effective staining and washing.
-- Always include appropriate controls (unstained, live/dead only, FMO, single-colour controls, etc.) for panel design and compensation.
-- Fixation and permeabilization conditions must be compatible with the antibodies and fluorochromes used (consult datasheets).
-- If using commercial fixation/permeabilization kits, follow the manufacturer’s instructions for dilution and incubation times.
+- Default staining range: **2 × 10⁵ – 1 × 10⁶ cells per well** (96-well format).
+- Always include appropriate controls (unstained, live/dead only, FMO, single-colour controls).
+- Fixation and permeabilization conditions must be compatible with antibodies and fluorochromes used.
+- Commercial fixation/permeabilization kits should be used according to manufacturer instructions.
 
-::: callout-warning
-Improper fixation/permeabilization or using incompatible buffers can destroy epitopes and fluorochromes, leading to poor or misleading intracellular/intranuclear staining. Verify kit compatibility with your antibodies and fluorochromes before use.
+:::callout-warning
+Improper fixation/permeabilization or incompatible buffers can destroy epitopes and fluorochromes, leading to misleading intracellular or intranuclear staining.
 :::
 
-::: callout-tip
-Where possible, stain surface markers (including live/dead) first, then fix and permeabilize for intracellular/intranuclear staining. This often yields more robust surface staining and simplifies panel design.
+:::callout-warning
+Antibodies and tetramers are **protein reagents and mechanically sensitive**.  
+Do **not vortex**, as this can denature proteins and promote aggregation.  
+Instead, mix gently by pipetting or inversion. If needed, briefly spin reagents in a **mini “pulse” centrifuge (quick spin)** to collect liquid and pellet aggregates before use.
 :::
+
+:::callout-tip
+Surface markers (including live/dead dyes and tetramers) should generally be stained **before fixation/permeabilization** for best performance.
+:::
+
+---
 
 # Approximate timing
 
-- Plate setup and Fc block + live/dead: 20–30 min  
-- Surface staining: 30–45 min  
+- Tetramer staining (optional): 20 min  
+- Plate setup and Fc block: 10–15 min  
+- Surface staining: 30 min  
 - Fixation only (no intracellular): 15–20 min  
-- Fix + permeabilization + intracellular/intranuclear staining (same day): 1.5–2 hours  
-- Optional overnight pause (after initial fix/perm): adds 1 day  
+- Fix + permeabilization + intracellular/intranuclear staining: 1.5–2 h  
+- Optional overnight intranuclear stain: +1 day  
 
-**Total approximate time (surface only):** ~1 hour.  
-**Total approximate time (full intracellular/intranuclear workflow):** ~3–4 hours over 1–2 days.
+**Total (surface only):** ~1–1.5 h  
+**Total (full workflow):** ~3–4 h (or overnight)
 
 {{< pagebreak >}}
 
@@ -57,169 +79,162 @@ Where possible, stain surface markers (including live/dead) first, then fix and 
 
 # Procedure
 
-## Step 1 – Plate setup and FACS buffer
+## Step 1 – Plate setup and buffers
 
-1. Prepare FACS buffer (BUF-GEN-FACS-BUF-001):  
-   - PBS, 1×  
-   - 2 % FCS (heat-inactivated)  
-   - 2 mM EDTA  
-2. Prepare single-cell suspensions of the desired samples.
-3. Count cells and adjust concentration so that you can plate up to **5 × 10⁵ cells per well** of a 96-well U-bottom or V-bottom plate.
-4. Aliquot cells into the plate (typically 5 × 10⁵ cells per well or less).
-5. Keep plates on ice (or at 4 °C) until staining begins.
+1. Prepare buffers:
+   - **FACS buffer** (PBS + 2% FCS) — *for tetramer staining only*.
+   - **MACS buffer** (PBS + 2% FCS + 2 mM EDTA) — *default buffer for all other steps*.
+2. Prepare single-cell suspensions.
+3. Count cells and adjust concentration to plate **2 × 10⁵ – 1 × 10⁶ cells per well**.
+4. Aliquot cells into a 96-well U- or V-bottom plate.
+5. Keep plates on ice or at 4 °C.
 
-## Step 2 – Fc block and live/dead staining
+---
 
-1. Prepare a staining mix in FACS buffer containing Fc block and live/dead dye:
+## Step 2 – Tetramer staining (optional, if applicable)
 
-   - Fc block: **1:200** dilution.  
-   - Live/dead dye: **1:100** dilution.  
-   - Final volume: **50 µL per well**.
+This step applies when staining with MR1 or CD1d tetramers.
 
-2. Add **50 µL** of this Fc block + live/dead mix to each well containing cells.
-3. Gently tap or briefly pulse-centrifuge the plate if needed to ensure mixing.
-4. Incubate on ice (or at 4 °C) for the time recommended by the live/dead reagent manufacturer (typically 15–20 min), protected from light.
-5. Centrifuge the plate at **1000 g for 2 min**.
-6. Quickly flick off the supernatant into a suitable waste container.
+1. Prepare a **tetramer staining mix in FACS buffer (no EDTA)**:
+   - Fc block: **1:100**
+   - Tetramer(s): per manufacturer recommendation
+   - Final volume: **50 µL per well**
+2. Add **50 µL** tetramer mix to each well.
+3. Incubate for **20 min on ice**, protected from light.
 
-::: callout-warning
-Live/dead dyes are light-sensitive and can be toxic at high concentrations or with prolonged incubation. Avoid direct light and adhere to the manufacturer’s recommended dilution and incubation times.
+:::callout-note
+Tetramer staining is performed in **FACS buffer without EDTA** to avoid potential interference with multimer–TCR interactions.  
+Whether EDTA exclusion is strictly necessary remains under investigation and will be tested within the lab.
 :::
 
-## Step 3 – Surface staining
-
-1. Prepare a surface staining master mix in FACS buffer with all desired surface antibodies:
-   - Total volume: **50 µL per well**.
-   - Antibody dilutions according to titration data (commonly 1:50–1:200).
-2. Resuspend cell pellets in **50 µL** surface stain master mix per well.
-3. Incubate the plate on ice for **30 min**, protected from light.
-4. After incubation, top up each well to **200 µL** with FACS buffer.
-5. Centrifuge the plate at **400 g for 2 min**.
-6. Flick off the supernatant.
-7. Wash the cells by adding **200 µL** FACS buffer to each well, gently resuspending the pellet, and centrifuging again at **400 g for 2 min**.
-8. Flick off the supernatant.
-
-### 3.1 If only surface staining is required
-
-1. Resuspend each pellet in **100–200 µL** of 4 % PFA solution (or appropriate fixative) in PBS.
-2. Store plates at 4 °C, protected from light, until acquisition.
-
-## Step 4 – Fixation and permeabilization for intracellular or intranuclear staining
-
-This step assumes the use of:
-
-- **BD** intracellular staining kit (e.g. Cytofix/Cytoperm) for cytoplasmic targets, or  
-- **eBioscience FOXP3** or equivalent intranuclear staining kit for transcription factors.
-
-Always consult the kit manuals; the steps below mirror the original SOP structure.
-
-### 4.1 Initial fix/perm
-
-1. Add **100 µL** of BD fix/perm solution (e.g. Cytofix/Cytoperm) **or** eBioscience FOXP3 fix/perm solution (typically 1:4 concentrate with 3:4 diluent) to each well.
-2. Incubate for **20 min on ice**, protected from light.
-3. Top up each well to **200 µL** with 1× PermWash (diluted in water, according to the kit instructions).
-4. Centrifuge the plate and flick off the supernatant.
-5. Resuspend each pellet in **200 µL** 1× PermWash.
-6. Centrifuge the plate and flick off the supernatant.
-
-### 4.2 Pause point (optional, overnight)
-
-1. Resuspend each pellet in **200 µL** FACS buffer.
-2. Seal and label the plate clearly.
-3. Store at **4 °C** overnight, protected from light.
-
-::: callout-note
-An overnight pause at this stage can be convenient for scheduling, but confirm that your antigen of interest and fluorochromes are stable under these conditions.
+:::callout-note
+MR1–5-OP-RU tetramer can be added together with surface antibody staining.  
+For CD1d tetramers, compatibility with simultaneous surface staining is currently unclear and will be empirically tested.
 :::
 
-### 4.3 Re-permeabilization before intranuclear staining (if using FOXP3 kit)
+4. Without washing, proceed directly to Step 3.
 
-1. The following day, centrifuge the plate at **1000 g for 2 min** and flick off the supernatant.
-2. Resuspend pellets in **200 µL** 1× PermWash (FOXP3 kit).
-3. Incubate for **30 min on ice**, protected from light.
-4. Centrifuge and flick off the supernatant.
+---
+
+## Step 3 – Surface staining (with live/dead)
+
+**Antibody titration guidance (applies to all surface staining):**
+- Surface antibodies: default **1:200** if titration data are unavailable.
+- Transcription factors or weakly expressed markers: default **1:50**.
+
+### 3.1 If tetramer staining was performed (from Step 2)
+
+1. Prepare a **2× surface staining master mix in MACS buffer** containing:
+   - Live/dead dye (2× final concentration)
+   - Surface antibodies (2× final concentration)
+2. Add **50 µL** of the 2× surface mix to each well already containing **50 µL tetramer mix**  
+   → **Final volume: 100 µL per well (1× final concentration)**.
+3. Incubate for **30 min at 4 °C**, protected from light.
+
+### 3.2 If no tetramer staining was performed
+
+1. Prepare a **1× surface staining master mix in MACS buffer** containing:
+   - Live/dead dye (1× final concentration)
+   - Surface antibodies (1× final concentration)
+2. Add **50 µL** of the 1× surface mix directly to each well.
+3. Incubate for **30 min at 4 °C**, protected from light.
+
+### 3.3 Wash steps (both cases)
+
+1. Top up each well to **200 µL** with MACS buffer.
+2. Centrifuge at **400 g for 2 min**.
+3. Flick off the supernatant.
+4. Wash once more with **200 µL MACS buffer**, centrifuge, and flick.
+
+:::callout-note
+All antibodies should be titrated for optimal performance. Default dilutions are provided as a starting point only.
+:::
+
+### 3.1 Surface staining only
+
+1. Resuspend pellets in **100–200 µL 4% PFA in PBS**.
+2. Store at **4 °C**, protected from light, until acquisition.
+
+---
+
+## Step 4 – Fixation and permeabilization
+
+This step assumes use of:
+- **BD Cytofix/Cytoperm** (cytoplasmic targets), or  
+- **eBioscience FOXP3 fix/perm** (intranuclear targets).
+
+### 4.1 Initial fixation/permeabilization
+
+1. Add **100 µL** fix/perm solution per well.
+2. Incubate **20 min on ice**, protected from light.
+3. Top up to **200 µL** with 1× PermWash.
+4. Centrifuge and flick.
+5. Resuspend in **200 µL** PermWash.
+6. Centrifuge and flick.
+
+### 4.2 Optional pause point
+
+1. Resuspend pellets in **200 µL MACS buffer**.
+2. Store at **4 °C overnight**, protected from light.
+
+:::callout-note
+This pause point is compatible with most intracellular workflows, but antigen stability should be confirmed for each marker.
+:::
+
+---
 
 ## Step 5 – Intracellular or intranuclear staining
 
-1. Prepare an intracellular or intranuclear staining master mix in the appropriate PermWash (kit-specific):
-   - Total volume: **50 µL per well**.
-   - Antibody dilutions according to titration data (typically 1:50–1:200).
-2. Resuspend each pellet in **50 µL** of the master mix.
-3. Incubate on ice for **30 min**, protected from light.
+1. Prepare an **intracellular or intranuclear antibody master mix** in the appropriate **PermWash** buffer (kit-specific):
+   - Final volume: **50 µL per well**
+2. Resuspend each cell pellet in **50 µL** of the antibody master mix.
+3. Incubate **30 min on ice**, protected from light, **or** incubate **overnight at 4 °C**.
+
+:::callout-tip
+For **intranuclear targets** (e.g. **FOXP3, Helios, T-bet, Eomes**), overnight antibody incubation at **4 °C** can improve signal intensity, particularly for low-abundance or epitope-masked transcription factors.  
+Ensure plates are **well sealed, clearly labelled, and protected from light** during overnight incubation.
+:::
+
+:::callout-warning
+Overnight antibody incubation is **not recommended for cytoplasmic intracellular targets** (e.g. cytokines, granzymes, perforin). Prolonged incubation can increase background staining and does not typically improve signal for these antigens. Use **30–60 min** incubations for intracellular (non-nuclear) targets.
+:::
+
 4. Top up each well to **200 µL** with PermWash.
 5. Centrifuge and flick off the supernatant.
-6. Wash once more with **200 µL** PermWash and centrifuge.
-7. Flick off the supernatant.
-8. Resuspend each pellet in **100–200 µL** of 4 % PFA solution (or other appropriate fixative) in PBS.
-9. Store plates at 4 °C, protected from light, until acquisition.
+6. Wash once more with **200 µL PermWash**, centrifuge, and flick.
+7. Resuspend each pellet in **100–200 µL 4% PFA in PBS**.
+8. Store at **4 °C**, protected from light, until acquisition.
+
 
 # Materials
 
 ## Reagents
 
-| Reagent                                      | Supplier             | Cat. # | Notes                                                     |
-|---------------------------------------------|----------------------|--------|-----------------------------------------------------------|
-| PBS, sterile, 1×                            | Various              | –      | Base for FACS buffer                                     |
-| Fetal calf serum (FCS), heat-inactivated    | Various              | –      | 2 % v/v in BUF-GEN-FACS-BUF-001                          |
-| EDTA, 0.5 M stock                           | Various              | –      | 2 mM final in BUF-GEN-FACS-BUF-001                       |
-| Fc block (e.g. anti-CD16/CD32 for mouse)    | Various (e.g. BD)    | –      | Used at 1:200 in FACS buffer                             |
-| Live/dead viability dye                     | Various (e.g. Invitrogen) | – | Used at 1:100 in FACS buffer                             |
-| Surface antibodies (various fluorochromes)  | Various              | –      | Titration required for each antibody                     |
-| Intracellular antibodies                    | Various              | –      | Compatible with BD fix/perm                              |
-| Intranuclear antibodies (e.g. FOXP3)        | Various              | –      | Compatible with FOXP3 fix/perm kit                       |
-| BD fix/perm kit (e.g. Cytofix/Cytoperm)     | BD Biosciences       | –      | For intracellular staining                               |
-| eBioscience FOXP3 fix/perm kit              | eBioscience/Thermo   | –      | For intranuclear staining                                |
-| 1× PermWash (BD, FOXP3 kit)                 | From kits            | –      | Used according to manufacturer                           |
-| 4 % PFA in PBS                               | Various / in-house   | –      | For fixation prior to acquisition                        |
+| Reagent | Notes |
+|--------|-------|
+| PBS 1× | Ca²⁺/Mg²⁺-free |
+| FCS (heat-inactivated) | 2% v/v |
+| EDTA | 2 mM (MACS buffer only) |
+| Fc block | Mouse: anti-CD16/32 |
+| Live/dead dye | As per manufacturer |
+| Tetramers (e.g. MR1–5-OP-RU, CD1d) | Optional |
+| Surface antibodies | Titrate individually |
+| Intracellular/intranuclear antibodies | Kit-compatible |
+| Fix/perm kits | BD or eBioscience |
+| 4% PFA | Fixation |
 
-## Disposables
-
-| Item                                | Specification                         |
-|-------------------------------------|--------------------------------------|
-| 96-well U-bottom or V-bottom plates | Sterile, for staining                |
-| Pipette tips (10 µL, 200 µL, 1000 µL)| Sterile                             |
-| Serological pipettes                | For buffer and media handling        |
-| Microcentrifuge tubes               | For master mixes and controls        |
-| Tube strips or FACS tubes           | For compensation/single-colour controls |
-| Waste containers                    | For liquid and solid biohazard waste |
-
-## Equipment
-
-| Equipment                            | Specification / Notes                           |
-|--------------------------------------|------------------------------------------------|
-| Benchtop plate centrifuge            | Able to reach 1000 g for 96-well plates        |
-| CO₂ incubator                        | If cells require incubation before/after staining |
-| Biological safety cabinet            | For safe handling of biological samples         |
-| Vortex mixer                         | For mixing master mixes (low speed for cells)   |
-| Flow cytometer                       | e.g. Cytek Aurora, BD FACSCanto, etc.          |
+---
 
 # Buffers used
 
-- **BUF-GEN-FACS-BUF-001** – FACS buffer (PBS + 2 % FCS + 2 mM EDTA).  
-- Commercial kit buffers:
-  - BD fix/perm and 1× PermWash (per manufacturer).  
-  - eBioscience FOXP3 fix/perm and 1× PermWash (per manufacturer).
+- **FACS buffer** – PBS + 2% FCS (tetramers only)  
+- **MACS buffer** – PBS + 2% FCS + 2 mM EDTA (default)
 
-# Troubleshooting
-
-| Problem                                      | Possible cause                                        | Suggested solution                                                  |
-|---------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------|
-| High background staining                    | Antibody over-titration; inadequate washing; Fc block insufficient | Titrate antibodies; ensure thorough washes; increase Fc block if appropriate. |
-| Poor separation of positive/negative populations | Suboptimal antibody concentration; insufficient incubation time | Re-titrate antibodies; extend incubation (e.g. up to 40–45 min).    |
-| Extensive cell clumping                     | No EDTA; high cell density; dead cells present       | Use FACS buffer with EDTA; reduce cells per well; filter cells if necessary. |
-| Poor intracellular/intranuclear staining    | Inadequate fixation/permeabilization; incompatible buffers | Confirm kit protocol; ensure correct fix/perm times; use recommended buffers. |
-| Loss of surface staining after fixation     | Antibodies or epitopes not fixation-stable           | Move sensitive markers to “post-fixation” staining if compatible, or use fix-stable clones/fluorochromes. |
-| Low viability                               | Over-handling; extended time at room temperature     | Minimize processing time; keep cells on ice when possible; avoid harsh pipetting. |
-
-# Safety (brief)
-
-- Handle all biological samples under appropriate biosafety conditions (e.g. BSL2) and follow institutional guidelines.
-- Wear standard PPE (lab coat, gloves, eye protection) when handling cells, antibodies, and fixatives.
-- 4 % PFA and commercial fixatives should be handled in a fume hood or well-ventilated area; avoid skin and eye contact.
-- Dispose of plates, tubes, tips, and liquids contaminated with biological material or fixatives as chemical/biological hazardous waste according to local regulations.
+---
 
 # Version history
 
-| Version | Date       | Author         | Changes                                                              |
-|--------|------------|----------------|----------------------------------------------------------------------|
-| v1.0   | 2025-11-21 | Dillon Corvino | First Quarto protocol version for standard flow cytometry staining.  |
+| Version | Date | Author | Change summary |
+|--------|------|--------|----------------|
+| v1.0 | 2025-11-21 | Dillon Corvino | Initial version |
+| v1.1 | 2025-12-29 | Dillon Corvino | Added tetramer workflow, clarified buffers, titration defaults, overnight intranuclear staining |

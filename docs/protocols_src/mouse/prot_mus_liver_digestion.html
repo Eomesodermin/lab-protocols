@@ -282,6 +282,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -302,21 +309,21 @@ window.Quarto = {
   <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
   <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
   <ul class="collapse">
-  <li><a href="#step-1-liver-harvest-and-perfusion" id="toc-step-1-liver-harvest-and-perfusion" class="nav-link" data-scroll-target="#step-1-liver-harvest-and-perfusion">STEP 1 – Liver harvest and perfusion</a></li>
-  <li><a href="#step-2-enzymatic-digestion" id="toc-step-2-enzymatic-digestion" class="nav-link" data-scroll-target="#step-2-enzymatic-digestion">STEP 2 – Enzymatic digestion</a></li>
-  <li><a href="#step-3-mechanical-dissociation-and-first-wash" id="toc-step-3-mechanical-dissociation-and-first-wash" class="nav-link" data-scroll-target="#step-3-mechanical-dissociation-and-first-wash">STEP 3 – Mechanical dissociation and first wash</a></li>
-  <li><a href="#step-4-33-percoll-purification" id="toc-step-4-33-percoll-purification" class="nav-link" data-scroll-target="#step-4-33-percoll-purification">STEP 4 – 33% Percoll purification</a></li>
+  <li><a href="#step-1-preparation-and-setup" id="toc-step-1-preparation-and-setup" class="nav-link" data-scroll-target="#step-1-preparation-and-setup">STEP 1 – Preparation and setup</a></li>
+  <li><a href="#step-2-liver-harvest-and-perfusion" id="toc-step-2-liver-harvest-and-perfusion" class="nav-link" data-scroll-target="#step-2-liver-harvest-and-perfusion">STEP 2 – Liver harvest and perfusion</a></li>
+  <li><a href="#step-3-liver-collection-weighing-and-mincing" id="toc-step-3-liver-collection-weighing-and-mincing" class="nav-link" data-scroll-target="#step-3-liver-collection-weighing-and-mincing">STEP 3 – Liver collection, weighing, and mincing</a></li>
+  <li><a href="#step-4-hepatocyte-removal-and-washing" id="toc-step-4-hepatocyte-removal-and-washing" class="nav-link" data-scroll-target="#step-4-hepatocyte-removal-and-washing">STEP 4 – Hepatocyte removal and washing</a></li>
+  <li><a href="#step-5-37-percoll-enrichment" id="toc-step-5-37-percoll-enrichment" class="nav-link" data-scroll-target="#step-5-37-percoll-enrichment">STEP 5 – 37% Percoll enrichment</a></li>
   <li><a href="#step-5-rbc-lysis" id="toc-step-5-rbc-lysis" class="nav-link" data-scroll-target="#step-5-rbc-lysis">STEP 5 – RBC lysis</a></li>
-  <li><a href="#step-6-final-wash-and-resuspension" id="toc-step-6-final-wash-and-resuspension" class="nav-link" data-scroll-target="#step-6-final-wash-and-resuspension">STEP 6 – Final wash and resuspension</a></li>
+  <li><a href="#step-6-final-resuspension" id="toc-step-6-final-resuspension" class="nav-link" data-scroll-target="#step-6-final-resuspension">STEP 6 – Final resuspension</a></li>
   </ul></li>
-  <li><a href="#buffers-used-defined-in-separate-buffer-protocols" id="toc-buffers-used-defined-in-separate-buffer-protocols" class="nav-link" data-scroll-target="#buffers-used-defined-in-separate-buffer-protocols">Buffers used (defined in separate buffer protocols)</a></li>
   <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
   <ul class="collapse">
   <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
   <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
   <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
   </ul></li>
-  <li><a href="#troubleshooting-selected-examples" id="toc-troubleshooting-selected-examples" class="nav-link" data-scroll-target="#troubleshooting-selected-examples">Troubleshooting (selected examples)</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
   <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
@@ -370,151 +377,97 @@ window.Quarto = {
 <li>Process <strong>one liver per 70 µm strainer</strong>; do not reuse strainers between livers.</li>
 <li>Liver cell pellets are often <strong>loose</strong>; be careful when pouring supernatants.</li>
 <li>Do not over-digest; limit digestion to <strong>30 minutes at 37 °C</strong> with agitation.</li>
-<li>Percoll must be at <strong>room temperature</strong> and properly diluted to <strong>33%</strong> immediately before use.</li>
-<li>Ensure RBC lysis is <strong>time-limited (7 minutes)</strong> to avoid damaging leukocytes.</li>
+<li>Percoll must be at <strong>room temperature</strong> and properly diluted to <strong>37%</strong> immediately before use.</li>
+<li>Ensure RBC lysis is <strong>time-limited (2-5 minutes)</strong> to avoid damaging leukocytes.</li>
 </ul>
 </section>
 <section id="approximate-timing" class="level1">
 <h1>Approximate timing</h1>
 <ul>
+<li>Preparation and setup: <strong>10–15 min</strong></li>
 <li>Mouse euthanasia, perfusion, and liver dissection: <strong>5–10 min per mouse</strong></li>
 <li>Liver mincing and transfer into digestion buffer: <strong>5 min per mouse</strong></li>
-<li>Enzymatic digestion: <strong>30 min</strong></li>
-<li>Mechanical dissociation and initial washes: <strong>15–20 min</strong></li>
-<li>Percoll centrifugation and cleanup: <strong>25–30 min</strong></li>
-<li>RBC lysis and final resuspension: <strong>15–20 min</strong></li>
+<li>Enzymatic digestion (including gentleMACS where applicable): <strong>30–40 min</strong></li>
+<li>Mechanical dissociation, hepatocyte removal, and washes: <strong>20–30 min</strong></li>
+<li>Percoll gradient centrifugation and leukocyte enrichment: <strong>25–30 min</strong></li>
+<li>RBC lysis (if required), filtration, and final resuspension: <strong>15–20 min</strong></li>
 </ul>
-<p>Total hands-on time per liver (excluding setup): <strong>~60–90 minutes</strong>, depending on batching and operator experience.</p>
+<p><strong>Total approximate time:</strong> <strong>~2–2.5 hours for 1–4 livers processed in parallel</strong><br>
+(Effective hands-on time per liver is ~60–90 minutes, depending on batching and operator experience.)</p>
 <div style="page-break-after: always;"></div>
 <div style="page-break-after: always;"></div>
 </section>
 <section id="procedure" class="level1">
 <h1>Procedure</h1>
-<section id="step-1-liver-harvest-and-perfusion" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-liver-harvest-and-perfusion">STEP 1 – Liver harvest and perfusion</h2>
+<section id="step-1-preparation-and-setup" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-preparation-and-setup">STEP 1 – Preparation and setup</h2>
 <ol type="1">
-<li>Load a <strong>5 mL syringe</strong> with <strong>Liver Digestion Buffer</strong> and attach a <strong>27 G needle</strong>.</li>
-<li>Euthanise the mouse using <strong>CO₂ asphyxiation</strong> or another approved method (ensure compatibility if cardiac puncture is also performed in the experiment).</li>
-<li>Weigh the mouse and record the body weight.</li>
-<li>Perform a midline incision to open the abdominal cavity and expose the liver and Inferior vena cava.</li>
-<li>Perfuse the liver through the <strong>Inferior vena cava</strong> with approximately <strong>2 mL Liver Digestion Buffer per mouse</strong>.</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Handle needles and sharps carefully and dispose of them directly into an approved sharps container after perfusion.</p>
-</div>
-</div>
-<ol start="6" type="1">
-<li>Excise the liver (remove Gallbladder) and place it on <strong>filter paper</strong> to blot excess blood and buffer.</li>
-<li>Weigh the liver and record the weight.</li>
-<li>Transfer the liver to a <strong>10 cm petri dish</strong> and mince it roughly into small fragments using scissors or scalpel.</li>
-<li>Transfer the minced liver pieces into a <strong>pre-labeled 50 mL tube</strong> containing <strong>3 mL Liver Digestion Buffer</strong>.</li>
+<li><strong>Pre-cool collection solutions</strong>
+<ul>
+<li>Pre-cool <strong>PBS or FACS buffer</strong> on ice for liver perfusion and tissue collection.</li>
+</ul></li>
+<li><strong>Label collection vessels (choose one option per experiment)</strong>
+<ul>
+<li><strong>Option A: 6-well plate collection</strong>
+<ul>
+<li>Label one well per mouse in a 6-well plate.</li>
+<li>Add <strong>3–5 mL ice-cold PBS or FACS buffer</strong> per well.</li>
+</ul></li>
+<li><strong>Option B: 50 mL tube collection</strong>
+<ul>
+<li>Label one <strong>50 mL conical tube per liver</strong>.</li>
+<li>Add <strong>5 mL ice-cold PBS or FACS buffer</strong> per tube.</li>
+</ul></li>
+</ul></li>
+<li><strong>Label dissociation and processing tubes</strong>
+<ul>
+<li>Label <strong>gentleMACS C-tubes</strong> (or equivalent) for each liver.</li>
+<li>Label additional <strong>50 mL tubes</strong> as required for downstream processing steps.</li>
+</ul></li>
+<li><strong>Prepare buffers</strong>
+<ul>
+<li><strong>Liver digestion buffer</strong>.</li>
+<li><strong>37% Percoll working solution</strong>.</li>
+<li><strong>ACK lysis buffer</strong>, if required.</li>
+<li><strong>FACS buffer</strong> for washes and final resuspension.</li>
+</ul></li>
+<li><strong>Warm digestion components</strong>
+<ul>
+<li>Pre-warm a water bath to <strong>37 °C</strong>.</li>
+<li>Place an aliquot of <strong>liver digestion buffer</strong> in the water bath to equilibrate.</li>
+<li>If digestion buffer will be prepared immediately before use, pre-warm <strong>DMEM</strong> instead.</li>
+</ul></li>
+<li><strong>Equipment setup</strong>
+<ul>
+<li>Pre-cool a benchtop centrifuge to <strong>4 °C</strong>.</li>
+<li>Ensure access to a <strong>gentleMACS</strong> instrument with an appropriate liver dissociation program.</li>
+</ul></li>
+<li><strong>Items to take to the animal facility</strong>
+<ul>
+<li>Ice bucket with ice-cold <strong>PBS or FACS buffer</strong>.</li>
+<li>6-well plates <em>and/or</em> pre-filled <strong>50 mL tubes</strong> (as selected above).</li>
+<li>Sterile scissors and forceps.</li>
+<li><strong>10 mL syringes</strong> (one per mouse or per treatment group).</li>
+<li>Needles for liver perfusion (<strong>25G or 26G recommended</strong>).</li>
+<li>Absorbent pads and a waste container for perfusion runoff.</li>
+</ul></li>
 </ol>
 </section>
-<section id="step-2-enzymatic-digestion" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-enzymatic-digestion">STEP 2 – Enzymatic digestion</h2>
+<section id="step-2-liver-harvest-and-perfusion" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-liver-harvest-and-perfusion">STEP 2 – Liver harvest and perfusion</h2>
 <ol type="1">
-<li>Place the 50 mL tubes containing minced liver in <strong>3 mL Liver Digestion Buffer</strong> on a <strong>37 °C benchtop shaker</strong>.</li>
-<li>Incubate at <strong>37 °C, 250 rpm for 30 minutes</strong>.</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ensure tubes are securely capped and properly balanced in the shaker to avoid leakage and uneven mixing.</p>
-</div>
-</div>
-</section>
-<section id="step-3-mechanical-dissociation-and-first-wash" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-mechanical-dissociation-and-first-wash">STEP 3 – Mechanical dissociation and first wash</h2>
-<ol type="1">
-<li>After the 30-minute digestion, add <strong>FACS Buffer</strong> to each 50 mL tube to a <strong>total volume of 25 mL</strong>.</li>
-<li>Place a <strong>70 µm cell strainer</strong> into a <strong>10 cm petri dish</strong>.</li>
-<li>Pour the entire content of one liver tube onto the cell strainer, ensuring all tissue fragments are transferred.</li>
-<li>Using the <strong>back of a 5 mL syringe plunger</strong>, mechanically dissociate the liver through the strainer until no visible large fragments remain.</li>
-<li>Use a <strong>transfer pipette</strong> to:
+<li>Euthanise the mouse according to institutional and ethical guidelines (e.g.&nbsp;<strong>CO₂ asphyxiation</strong> or other approved method).</li>
+<li>Place the mouse in a supine position and perform a midline incision to open the abdominal cavity.</li>
+<li>Expose the liver and major vessels (<strong>Inferior vena cava and portal vein</strong>).</li>
+<li>Load a <strong>5 mL syringe</strong> with <strong>ice-cold FACS buffer</strong> and attach a <strong>25–27 G needle</strong>.</li>
+<li>Perfuse the liver via one of the following routes:
 <ul>
-<li>Rinse remaining material on the strainer with FACS buffer.</li>
-<li>Help pass residual clumps through the mesh.</li>
-</ul></li>
-<li>Once the sample is fully dissociated:
-<ul>
-<li>Pour the cell suspension from the petri dish back into the <strong>corresponding 50 mL tube</strong>.</li>
-</ul></li>
-<li>Add additional FACS buffer to the petri dish:
-<ul>
-<li>Dab the bottom of the strainer in the buffer to wash off remaining cells.</li>
-<li>Rinse the syringe plunger in the buffer to recover residual cells.</li>
-<li>Use a transfer pipette to collect all remaining liquid and return it to the 50 mL tube.</li>
-</ul></li>
-<li>Repeat steps 2–7 for each liver.</li>
-<li>Top up each 50 mL tube to <strong>50 mL with FACS buffer</strong>.</li>
-<li>Centrifuge at <strong>400 g for 5 minutes</strong> (4 °C recommended).</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Cell pellets from digested livers are often <strong>loose</strong>. When discarding supernatant by pouring, use a slow, controlled motion and avoid abrupt shaking or flicking.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Prepare Percoll solution during this wash by adding the required amount of 10X PBS and 1xPBS to Percoll to make up a 33% solution and aliquot as needed. See Buffer protocol BUF-PERC-33-v1.0</p>
-</div>
-</div>
-<ol start="11" type="1">
-<li>Carefully discard supernatant by pouring.</li>
-<li>Top up each tube again to <strong>50 mL with FACS buffer</strong>.</li>
-<li>Resuspend pellets by gentle inversion or a brief controlled shake.</li>
-<li>Centrifuge again at <strong>400 g for 5 minutes</strong> (4 °C recommended).</li>
-</ol>
-</section>
-<section id="step-4-33-percoll-purification" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-33-percoll-purification">STEP 4 – 33% Percoll purification</h2>
-<ol type="1">
-<li>Aliquot <strong>10 mL of 33% Percoll Solution</strong> into <strong>pre-labeled 15 mL Falcon tubes</strong>, one tube per liver.</li>
-<li>After the centrifugation in STEP 3:
-<ul>
-<li>Carefully discard the supernatant from each 50 mL tube by pouring.</li>
-</ul></li>
-<li>Use the remaining <strong>dead volume</strong> in each tube to resuspend the cell pellet with a <strong>transfer pipette</strong>.</li>
-<li>Transfer the resuspended cells into the corresponding <strong>15 mL tube</strong> containing <strong>10 mL 33% Percoll Solution</strong>.</li>
-<li>Gently invert the 15 mL tubes to ensure an even cell suspension in Percoll.</li>
-<li>Centrifuge the Percoll suspensions at <strong>1700 rpm for 15 minutes at room temperature</strong>
-<ul>
-<li>Acceleration: <strong>9</strong><br>
+<li><strong>Inferior vena cava</strong> (preferred)<br>
 </li>
-<li>Brake: <strong>1</strong> (minimal braking to preserve gradient).</li>
+<li><strong>Portal vein</strong></li>
+<li><strong>Directly via the heart</strong></li>
 </ul></li>
+<li>Slowly perfuse with <strong>~5–10 mL FACS buffer per mouse</strong> until the liver visibly blanches.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -526,21 +479,179 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>After the Percoll spin, a <strong>hepatocyte-rich layer</strong> typically floats on top, while a <strong>lymphocyte + erythrocyte pellet</strong> forms at the bottom.</p>
+<p>Efficient perfusion reduces blood content and improves hepatocyte removal, density separation, and downstream staining quality.</p>
 </div>
 </div>
-<ol start="8" type="1">
-<li>Prepare several layers of paper towels near a sink or waste container.</li>
-<li>In one smooth motion, pour off the <strong>hepatocyte layer and supernatant</strong> from each 15 mL tube.</li>
-<li>Keep tubes inverted and gently dab the tube openings on paper towels to wick off residual liquid, avoiding disturbance of the pellet.</li>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Handle needles and sharps carefully and dispose of them immediately into an approved sharps container after perfusion.</p>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Excise the liver carefully, <strong>removing the gallbladder</strong>.</li>
+<li>Place the liver briefly on <strong>filter paper</strong> to blot excess buffer.</li>
+</ol>
+</section>
+<section id="step-3-liver-collection-weighing-and-mincing" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-liver-collection-weighing-and-mincing">STEP 3 – Liver collection, weighing, and mincing</h2>
+<ol type="1">
+<li>Transfer the perfused liver to a <strong>pre-labelled collection vessel</strong> (on ice).</li>
+<li><em>(Recommended)</em> <strong>Weigh the liver</strong>:
+<ul>
+<li>Briefly blot on filter paper to remove excess liquid.</li>
+<li>Record the liver weight.</li>
+</ul></li>
+<li>Add <strong>5 mL pre-warmed liver digestion buffer (in DMEM)</strong> to a <strong>labelled gentleMACS C-tube</strong>.</li>
+<li>Transfer the liver into the gentleMACS C-tube.</li>
+<li>Using sterile scissors, mince the liver <strong>directly in the C-tube</strong> until fragments are approximately <strong>2–3 mm</strong> in size.</li>
+<li>Ensure all tissue pieces are fully submerged in digestion buffer and not stuck to the tube walls.</li>
+<li>Secure the C-tube onto the <strong>gentleMACS instrument</strong> and place the warming sleeve over the tube.</li>
+<li>Run the appropriate <strong>liver digestion program</strong> (e.g.&nbsp;<strong>HH17</strong>, ~17 min).</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Confirm that each C-tube is correctly seated and rotating before leaving the instrument.<br>
+If a tube is not spinning, stop the run, reseat the tube, and restart the program.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do <strong>not</strong> leave livers in digestion buffer beyond the programmed digestion time.<br>
+Over-digestion can strip surface epitopes and negatively impact downstream phenotyping.<br>
+Note: the gentleMACS instrument does <strong>not</strong> beep when the program finishes—set a timer before starting.</p>
+</div>
+</div>
+</section>
+<section id="step-4-hepatocyte-removal-and-washing" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-hepatocyte-removal-and-washing">STEP 4 – Hepatocyte removal and washing</h2>
+<ol type="1">
+<li>After digestion, transfer the entire liver cell suspension from the gentleMACS C-tube into a <strong>50 mL conical tube</strong>.</li>
+<li>Rinse the C-tube with <strong>ice-cold FACS buffer</strong> and add the rinse to the same tube to maximize yield.</li>
+<li>Bring the volume up to <strong>50 mL with ice-cold FACS buffer</strong>.</li>
+<li>Centrifuge at <strong>50 g for 2 minutes at 4 °C</strong> to sediment hepatocytes.</li>
+<li>Carefully transfer the <strong>supernatant</strong> (containing leukocytes) to a fresh <strong>50 mL tube</strong>, avoiding disturbance of the hepatocyte pellet.</li>
+<li>Adjust the volume to <strong>50 mL with ice-cold FACS buffer</strong>.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.</li>
+<li>Discard the supernatant and keep the leukocyte pellet <strong>on ice</strong> for downstream processing.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cell pellets from digested liver are often <strong>loose and poorly compacted</strong>.<br>
+When discarding supernatant by pouring, do so <strong>scarefully</strong>. Avoid flicking, shaking, or abrupt movements.</p>
+</div>
+</div>
+</section>
+<section id="step-5-37-percoll-enrichment" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-37-percoll-enrichment">STEP 5 – 37% Percoll enrichment</h2>
+<ol type="1">
+<li>Aliquot <strong>10 mL of 37% Percoll</strong> into <strong>pre-labelled 15 mL conical tubes</strong> (one tube per liver).</li>
+<li>Using a <strong>transfer pipette</strong>, resuspend the cell pellet using the small remaining <strong>dead volume</strong>.</li>
+<li>Take up approximately <strong>1 mL of 37% Percoll</strong> from the corresponding 15 mL tube and use it to <strong>rinse the 50 mL tube</strong>, resuspending any remaining cells.</li>
+<li>Transfer the resuspended cells into the corresponding <strong>15 mL tube</strong> containing <strong>10 mL 37% Percoll</strong>.</li>
+<li>Repeat the rinse <strong>1–2 times</strong> with additional small volumes of Percoll (as needed) to recover all remaining cells from the 50 mL tube.</li>
+<li>Cap the 15 mL tubes and <strong>invert gently 2–3 times</strong> to ensure an even cell suspension.</li>
+<li>Centrifuge at <strong>800 g for 20 minutes at room temperature (20–22 °C)</strong> using:
+<ul>
+<li>Acceleration: <strong>moderate</strong> (e.g.&nbsp;<strong>acc 7</strong>)</li>
+<li>Brake: <strong>minimal</strong> (e.g.&nbsp;<strong>br 1</strong>)</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avoid high brake settings during Percoll centrifugation. Abrupt braking can disrupt the gradient and reduce lymphocyte enrichment.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not leave liver samples in Percoll longer than necessary. Prolonged exposure can reduce viability and negatively impact downstream applications. Plan spins and next steps in advance.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After the Percoll spin, a debris/hepatocyte-rich layer typically remains in the supernatant, while an enriched leukocyte pellet forms at the bottom of the tube.</p>
+</div>
+</div>
+<ol start="9" type="1">
+<li>Carefully aspirate or pour off the supernatant in one smooth motion without disturbing the pellet.</li>
+<li>Keep tubes inverted briefly and gently dab the rim on paper towel to wick residual Percoll (avoid touching or dislodging the pellet).</li>
+<li>Resuspend the pellet in <strong>20–30 mL ice-cold FACS buffer</strong>.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.</li>
+<li>Discard the supernatant and keep the enriched leukocyte pellet <strong>on ice</strong> for downstream steps.</li>
 </ol>
 </section>
 <section id="step-5-rbc-lysis" class="level2">
 <h2 class="anchored" data-anchor-id="step-5-rbc-lysis">STEP 5 – RBC lysis</h2>
 <ol type="1">
-<li>Add <strong>500 µL HybriMax RBC lysis buffer</strong> (or equivalent; see BUF-RBC-HYB-v1.0) directly to each pellet in the 15 mL tubes.</li>
-<li>Pipette up and down to fully resuspend the pellet in the lysis buffer.</li>
-<li>Incubate at <strong>room temperature for 5 minutes</strong>.</li>
+<li>Add <strong>RBC lysis buffer</strong> to the cell pellet (<strong>0.5–1 mL per liver</strong>):
+<ul>
+<li><strong>ACK lysis buffer:</strong> incubate for <strong>30–60 seconds at room temperature</strong>, <strong>or</strong><br>
+</li>
+<li><strong>HybriMax RBC Lysis Buffer:</strong> incubate for <strong>2–3 minutes at room temperature</strong>.<br>
+</li>
+</ul></li>
+<li>Gently resuspend immediately to distribute the buffer evenly.<br>
+</li>
+<li>Quench the reaction by topping up to <strong>15 mL with FACS Buffer</strong>.</li>
+<li>Pass the suspension through a 70 µm cell strainer into a fresh 50 mL tube kept on ice.</li>
+<li>Rinse the strainer with an additional 5–10 mL FACS Buffer if needed to recover remaining cells.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong>.</li>
+<li>Discard the supernatant and keep the pellet on ice.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -552,28 +663,29 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>RBC lysis buffers often contain sodium azide and other toxic components. Avoid skin contact and inhalation. Dispose of lysis waste in accordance with institutional chemical safety rules.</p>
+<p>Liver leukocytes are particularly sensitive to over-lysis. Do not exceed the stated incubation times, especially after enzymatic digestion or Percoll separation.</p>
 </div>
 </div>
-<ol start="4" type="1">
-<li>After 5 minutes, top up each tube to <strong>10 mL with FACS buffer</strong>.</li>
-<li>Centrifuge at <strong>400 g for 5 minutes</strong> (4 °C recommended; standard braking).</li>
-</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>RBC lysis is often unnecessary for liver samples when a Percoll gradient is used. If lysis is required, HybriMax is generally preferred due to its gentler action compared to ACK.</p>
+</div>
+</div>
 </section>
-<section id="step-6-final-wash-and-resuspension" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-final-wash-and-resuspension">STEP 6 – Final wash and resuspension</h2>
+<section id="step-6-final-resuspension" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-final-resuspension">STEP 6 – Final resuspension</h2>
 <ol type="1">
-<li>Prepare several layers of paper towel near your waste container.</li>
-<li>Discard supernatant from each tube by careful pouring and dab the opening on paper towels to remove residual liquid.</li>
-<li>Loosen each pellet in the remaining dead volume by brief vortexing or gentle flicking.</li>
-<li>Resuspend each pellet in <strong>5 mL FACS buffer</strong> (or another desired final volume) to obtain the final single-cell suspension.</li>
-<li>Proceed immediately to:
-<ul>
-<li>Cell counting and viability assessment.</li>
-<li>Flow cytometry staining and/or FACS sorting.</li>
-<li>Sample freezing (e.g.&nbsp;in FBS + 10% DMSO) if required.</li>
-<li>Downstream single-cell workflows (e.g.&nbsp;scRNA-seq, scTCR-seq) with appropriate QC.</li>
-</ul></li>
+<li>Resuspend the cell pellet in 1-5 mL ice-cold FACS Buffer</li>
+<li>Count cells and assess viability (e.g.&nbsp;trypan blue) as required.</li>
+<li>Proceed with downstream applications (e.g.&nbsp;flow cytometry, sorting, or culture of NLCs).</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -591,74 +703,65 @@ Tip
 <div style="page-break-after: always;"></div>
 </section>
 </section>
-<section id="buffers-used-defined-in-separate-buffer-protocols" class="level1">
-<h1>Buffers used (defined in separate buffer protocols)</h1>
-<p>This protocol relies on the following buffers, each defined in its own buffer file:</p>
-<ul>
-<li><strong>Liver Digestion Buffer</strong> – <code>BUF-LIV-DIG-v1.0</code>
-<ul>
-<li>DMEM (incomplete) + Collagenase D + DNase I at defined concentrations.</li>
-</ul></li>
-<li><strong>FACS Buffer</strong> – <code>BUF-FACS-v1.0</code>
-<ul>
-<li>PBS 1× + FCS + EDTA.</li>
-</ul></li>
-<li><strong>33% Percoll Solution</strong> – <code>BUF-PERC-33-v1.0</code>
-<ul>
-<li>Sterile Percoll + PBS (1× and 10×), prepared at 33% (v/v) on the day of use.</li>
-</ul></li>
-<li><strong>RBC Lysis Buffer (Hybrimax)</strong> – <code>BUF-RBC-HYB-v1.0</code>
-<ul>
-<li>Commercial HybriMax buffer or equivalent, used according to manufacturer and in-house specifications.</li>
-</ul></li>
-</ul>
-<p>Each buffer file should include preparation, storage conditions, shelf-life, and safety notes.</p>
-<div style="page-break-after: always;"></div>
-</section>
 <section id="materials" class="level1">
 <h1>Materials</h1>
 <section id="reagents" class="level2">
 <h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 32%">
-<col style="width: 24%">
-<col style="width: 42%">
+<col style="width: 34%">
+<col style="width: 17%">
+<col style="width: 48%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Reagent</th>
-<th>Supplier / Cat#</th>
+<th>Supplier</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Liver Digestion Buffer</td>
-<td>In-house (see buffer)</td>
-<td>Pre-warmed to 37 °C; 3 mL per liver + for perfusion</td>
+<td>FACS buffer</td>
+<td>In-house / various</td>
+<td>Used for perfusion, washes, and final resuspension; kept cold</td>
 </tr>
 <tr class="even">
-<td>FACS Buffer</td>
-<td>In-house (see buffer)</td>
-<td>Cold; used for washing and final resuspension</td>
+<td>Liver digestion buffer</td>
+<td>In-house</td>
+<td>DMEM-based; contains collagenase and DNase I; pre-warmed to 37 °C</td>
 </tr>
 <tr class="odd">
-<td>33% Percoll Solution</td>
-<td>In-house (see buffer)</td>
-<td>10 mL per liver; prepared fresh at RT</td>
+<td>Collagenase (e.g.&nbsp;Collagenase IV or D)</td>
+<td>Various</td>
+<td>Component of liver digestion buffer</td>
 </tr>
 <tr class="even">
-<td>HybriMax RBC lysis buffer</td>
-<td>Sigma, etc.</td>
-<td>0.5 mL per sample</td>
+<td>DNase I</td>
+<td>Various</td>
+<td>Component of liver digestion buffer</td>
 </tr>
 <tr class="odd">
-<td>PBS 1×</td>
-<td>Any</td>
-<td>For tissue handling and washes</td>
+<td>Percoll</td>
+<td>Cytiva/GE or similar</td>
+<td>Prepared as a <strong>37% working solution</strong> on day of use</td>
 </tr>
 <tr class="even">
+<td>ACK lysis buffer</td>
+<td>Commercial or in-house</td>
+<td>Optional; for RBC removal if required</td>
+</tr>
+<tr class="odd">
+<td>Fetal calf serum (FCS), heat-inactivated</td>
+<td>Various</td>
+<td>Component of FACS buffer</td>
+</tr>
+<tr class="even">
+<td>EDTA</td>
+<td>Various</td>
+<td>Component of FACS buffer</td>
+</tr>
+<tr class="odd">
 <td>CO₂ or approved euthanasia agent</td>
 <td>Facility supply</td>
 <td>For mouse sacrifice</td>
@@ -671,7 +774,7 @@ Tip
 <table class="caption-top table">
 <colgroup>
 <col style="width: 40%">
-<col style="width: 60%">
+<col style="width: 59%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -681,44 +784,48 @@ Tip
 </thead>
 <tbody>
 <tr class="odd">
-<td>50 mL Falcon tubes</td>
-<td>1 per liver (collection and processing)</td>
+<td>50 mL conical tubes</td>
+<td>Liver collection and processing</td>
 </tr>
 <tr class="even">
-<td>15 mL Falcon tubes</td>
-<td>1 per liver (Percoll gradient)</td>
+<td>15 mL conical tubes</td>
+<td>Percoll enrichment (one per liver)</td>
 </tr>
 <tr class="odd">
-<td>10 cm petri dishes</td>
-<td>1 per liver (mincing and straining)</td>
+<td>gentleMACS C-tubes (or equivalent)</td>
+<td>Enzymatic and mechanical dissociation</td>
 </tr>
 <tr class="even">
+<td>Sterile Petri dishes (10 cm)</td>
+<td>Backup mincing / straining if required</td>
+</tr>
+<tr class="odd">
 <td>70 µm cell strainers</td>
-<td>1 per liver; do not reuse between livers</td>
-</tr>
-<tr class="odd">
-<td>5 mL syringes</td>
-<td>1 per liver</td>
+<td>Filtration of digested tissue</td>
 </tr>
 <tr class="even">
-<td>27 G needles</td>
-<td>1 per liver (portal vein perfusion)</td>
+<td>Syringes (5–10 mL)</td>
+<td>Liver perfusion</td>
 </tr>
 <tr class="odd">
+<td>Needles (25–27 G)</td>
+<td>Inferior vena cava or portal vein perfusion</td>
+</tr>
+<tr class="even">
 <td>Transfer pipettes</td>
-<td>Several per experiment</td>
-</tr>
-<tr class="even">
-<td>Filter paper</td>
-<td>For blotting liver</td>
+<td>Resuspension and Percoll transfer</td>
 </tr>
 <tr class="odd">
-<td>Paper towels / bench wipes</td>
-<td>For cleanup and wicking supernatants</td>
+<td>Filter paper</td>
+<td>Blotting liver prior to weighing</td>
 </tr>
 <tr class="even">
-<td>Gloves, sharps container</td>
-<td>Standard lab safety items</td>
+<td>Paper towels / bench wipes</td>
+<td>Wicking supernatants after Percoll</td>
+</tr>
+<tr class="odd">
+<td>Gloves and sharps container</td>
+<td>Standard laboratory safety</td>
 </tr>
 </tbody>
 </table>
@@ -727,8 +834,8 @@ Tip
 <h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 35%">
-<col style="width: 64%">
+<col style="width: 38%">
+<col style="width: 61%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -739,48 +846,56 @@ Tip
 <tbody>
 <tr class="odd">
 <td>CO₂ chamber or euthanasia setup</td>
-<td>As per ethics approval</td>
+<td>As per animal ethics approval</td>
 </tr>
 <tr class="even">
-<td>Surgical scissors and forceps</td>
-<td>For dissection</td>
+<td>Dissection instruments</td>
+<td>Scissors and forceps</td>
 </tr>
 <tr class="odd">
-<td>Benchtop shaker/incubator</td>
-<td>37 °C, 250 rpm</td>
+<td>gentleMACS dissociator</td>
+<td>With liver-appropriate digestion program</td>
 </tr>
 <tr class="even">
-<td>Benchtop centrifuge</td>
-<td>Compatible with 50 mL and 15 mL tubes; 400 g and 1700 rpm</td>
+<td>Refrigerated centrifuge</td>
+<td>Compatible with 15 mL and 50 mL tubes; adjustable brake</td>
 </tr>
 <tr class="odd">
+<td>Benchtop incubator or heating sleeve</td>
+<td>37 °C for enzymatic digestion</td>
+</tr>
+<tr class="even">
 <td>Analytical balance</td>
 <td>For weighing mice and livers</td>
 </tr>
+<tr class="odd">
+<td>Biological safety cabinet (Class II)</td>
+<td>Recommended for tissue and cell handling</td>
+</tr>
 <tr class="even">
-<td>Biosafety cabinet (Class II)</td>
-<td>Recommended for tissue processing</td>
+<td>Ice bucket</td>
+<td>To keep samples cold between steps</td>
 </tr>
 <tr class="odd">
 <td>Timer</td>
-<td>For digestion and lysis steps</td>
+<td>Critical for digestion, Percoll, and lysis steps</td>
 </tr>
 </tbody>
 </table>
 <div style="page-break-after: always;"></div>
 </section>
 </section>
-<section id="troubleshooting-selected-examples" class="level1">
-<h1>Troubleshooting (selected examples)</h1>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 27%">
-<col style="width: 31%">
-<col style="width: 41%">
+<col style="width: 25%">
+<col style="width: 34%">
+<col style="width: 40%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Issue</th>
+<th>Problem</th>
 <th>Possible cause</th>
 <th>Suggested solution</th>
 </tr>
@@ -788,23 +903,33 @@ Tip
 <tbody>
 <tr class="odd">
 <td>Low lymphocyte yield</td>
-<td>Over-digestion or harsh centrifugation</td>
-<td>Limit digestion to 30 min; ensure 400 g spins; gentle brake</td>
+<td>Incomplete perfusion or digestion</td>
+<td>Ensure liver blanches during perfusion; mince thoroughly; avoid under-digestion</td>
 </tr>
 <tr class="even">
-<td>Very loose pellets, loss of cells</td>
-<td>Aggressive pouring of supernatant</td>
-<td>Practice slow, continuous pouring; dab tube on paper towel</td>
+<td>High red blood cell contamination</td>
+<td>Insufficient or skipped RBC lysis</td>
+<td>Perform brief ACK lysis (≤2 min) and quench immediately</td>
 </tr>
 <tr class="odd">
-<td>High debris in suspension</td>
-<td>Incomplete mechanical dissociation/filtering</td>
-<td>Increase time mashing through 70 µm mesh; add extra wash</td>
+<td>Poor Percoll separation or weak pellet</td>
+<td>Incorrect Percoll concentration or harsh braking</td>
+<td>Use fresh <strong>37% Percoll</strong>; confirm centrifuge settings; minimise brake</td>
 </tr>
 <tr class="even">
-<td>Poor viability</td>
-<td>Prolonged handling at RT post-digestion</td>
-<td>Keep washes cold; minimise processing time; work on ice</td>
+<td>Loose pellets and cell loss</td>
+<td>Aggressive pouring of supernatant</td>
+<td>Pour slowly in one smooth motion; wick residual liquid gently</td>
+</tr>
+<tr class="odd">
+<td>Low viability</td>
+<td>Over-digestion or prolonged handling at RT</td>
+<td>Limit digestion time; keep washes cold; process promptly</td>
+</tr>
+<tr class="even">
+<td>Excess debris or clumping</td>
+<td>Inadequate DNase activity or filtration</td>
+<td>Confirm DNase in digestion buffer; filter through 70 µm mesh</td>
 </tr>
 </tbody>
 </table>
@@ -813,10 +938,11 @@ Tip
 <section id="safety-brief" class="level1">
 <h1>Safety (brief)</h1>
 <ul>
-<li>Follow institutional S1/S2 safety rules and animal ethics regulations at all times.</li>
-<li>Handle mouse tissues and potentially infectious material in appropriate containment (preferably Class II biosafety cabinet when required).</li>
-<li>RBC lysis buffers and Percoll are chemical hazards; avoid contact with skin and eyes, and dispose of waste according to local chemical safety guidelines.</li>
-<li>Dispose of needles, blades, and other sharps immediately into approved sharps containers.</li>
+<li>All animal procedures must comply with approved animal licences and institutional regulations.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
+<li>Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.</li>
+<li>Perform tissue and cell handling in a biological safety cabinet where appropriate.</li>
+<li>Percoll and RBC lysis buffers are chemical hazards; avoid skin and eye contact and dispose of waste according to local safety guidelines.</li>
 </ul>
 </section>
 <section id="version-history" class="level1">
@@ -848,6 +974,12 @@ Tip
 <td>2025-11-26</td>
 <td>Dillon Corvino</td>
 <td>Manual check and update protocol</td>
+</tr>
+<tr class="odd">
+<td>v1.2</td>
+<td>2025-12-29</td>
+<td>Dillon Corvino</td>
+<td>Unified with Abdullah lab protocol</td>
 </tr>
 </tbody>
 </table>

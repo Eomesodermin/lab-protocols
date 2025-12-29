@@ -1,7 +1,7 @@
 ---
-title: "Mouse Liver Digestion Buffer"
+title: "Mouse Liver Digestion Buffer with Collagenase IV"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-MUS-LIV-DIG-001"
+protocol_id: "BUF-MUS-LIV-DIG-COL-IV-001"
 version: "v1.0"
 date: "2025-11-21"
 description: "Preparation of collagenase IV and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue."

@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-20">
-<meta name="description" content="Enzymatic digestion buffer for mouse liver dissociation prior to single-cell preparation.">
+<meta name="dcterms.date" content="2025-12-29">
+<meta name="description" content="37% Percoll density solution for enrichment of leukocytes from digested liver tissue.">
 
-<title>Liver Digestion Buffer – Protocol Library</title>
+<title>37% Percoll Solution – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -282,6 +282,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
 </i> 
  <span class="menu-text">Templates</span></a>
@@ -297,38 +304,50 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#linked-protocols" id="toc-linked-protocols" class="nav-link" data-scroll-target="#linked-protocols">Linked protocols</a></li>
-  <li><a href="#composition-final-working-buffer" id="toc-composition-final-working-buffer" class="nav-link" data-scroll-target="#composition-final-working-buffer">Composition (final working buffer)</a></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a>
   <ul class="collapse">
-  <li><a href="#a.-prepare-liver-digestion-stock-no-dnase" id="toc-a.-prepare-liver-digestion-stock-no-dnase" class="nav-link" data-scroll-target="#a.-prepare-liver-digestion-stock-no-dnase">A. Prepare “Liver Digestion Stock (no DNase)”</a></li>
-  <li><a href="#b.-prepare-final-working-liver-digestion-buffer-day-of-use" id="toc-b.-prepare-final-working-liver-digestion-buffer-day-of-use" class="nav-link" data-scroll-target="#b.-prepare-final-working-liver-digestion-buffer-day-of-use">B. Prepare final working Liver Digestion Buffer (day of use)</a></li>
+  <li><a href="#density-vs-osmolality-important-conceptual-note" id="toc-density-vs-osmolality-important-conceptual-note" class="nav-link" data-scroll-target="#density-vs-osmolality-important-conceptual-note">Density vs osmolality (important conceptual note)</a></li>
   </ul></li>
-  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a>
+  <li><a href="#linked-protocols" id="toc-linked-protocols" class="nav-link" data-scroll-target="#linked-protocols">Linked protocols</a></li>
+  <li><a href="#preparation-of-isotonic-percoll-stock-required-once-per-bottle" id="toc-preparation-of-isotonic-percoll-stock-required-once-per-bottle" class="nav-link" data-scroll-target="#preparation-of-isotonic-percoll-stock-required-once-per-bottle">Preparation of isotonic Percoll stock (required once per bottle)</a>
   <ul class="collapse">
-  <li><a href="#liver-digestion-stock-no-dnase" id="toc-liver-digestion-stock-no-dnase" class="nav-link" data-scroll-target="#liver-digestion-stock-no-dnase">Liver Digestion Stock (no DNase)</a></li>
-  <li><a href="#final-working-liver-digestion-buffer-with-dnase" id="toc-final-working-liver-digestion-buffer-with-dnase" class="nav-link" data-scroll-target="#final-working-liver-digestion-buffer-with-dnase">Final working Liver Digestion Buffer (with DNase)</a></li>
-  <li><a href="#stock-reagents" id="toc-stock-reagents" class="nav-link" data-scroll-target="#stock-reagents">Stock reagents</a></li>
+  <li><a href="#preparation-from-a-1000-ml-percoll-bottle" id="toc-preparation-from-a-1000-ml-percoll-bottle" class="nav-link" data-scroll-target="#preparation-from-a-1000-ml-percoll-bottle">Preparation from a 1000 mL Percoll bottle</a></li>
+  <li><a href="#making-the-reserved-100-ml-percoll-aliquot-isotonic" id="toc-making-the-reserved-100-ml-percoll-aliquot-isotonic" class="nav-link" data-scroll-target="#making-the-reserved-100-ml-percoll-aliquot-isotonic">Making the reserved 100 mL Percoll aliquot isotonic</a></li>
+  </ul></li>
+  <li><a href="#important-note-on-isotonic-percoll-usage" id="toc-important-note-on-isotonic-percoll-usage" class="nav-link" data-scroll-target="#important-note-on-isotonic-percoll-usage">Important note on isotonic Percoll usage</a></li>
+  <li><a href="#composition-per-10-ml-37-percoll" id="toc-composition-per-10-ml-37-percoll" class="nav-link" data-scroll-target="#composition-per-10-ml-37-percoll">Composition (per 10 mL 37% Percoll)</a></li>
+  <li><a href="#preparation-of-37-percoll-working-solution" id="toc-preparation-of-37-percoll-working-solution" class="nav-link" data-scroll-target="#preparation-of-37-percoll-working-solution">Preparation of 37% Percoll working solution</a></li>
+  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
+  <li><a href="#how-isotonic-percoll-calculations-work-reference" id="toc-how-isotonic-percoll-calculations-work-reference" class="nav-link" data-scroll-target="#how-isotonic-percoll-calculations-work-reference">How isotonic Percoll calculations work (reference)</a>
+  <ul class="collapse">
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
+  <li><a href="#salt-balance-logic" id="toc-salt-balance-logic" class="nav-link" data-scroll-target="#salt-balance-logic">Salt balance logic</a>
+  <ul class="collapse">
+  <li><a href="#step-1-express-total-salt-content" id="toc-step-1-express-total-salt-content" class="nav-link" data-scroll-target="#step-1-express-total-salt-content">Step 1: Express total salt content</a></li>
+  <li><a href="#step-2-combine-terms" id="toc-step-2-combine-terms" class="nav-link" data-scroll-target="#step-2-combine-terms">Step 2: Combine terms</a></li>
+  <li><a href="#step-3-subtract-v_t-from-both-sides" id="toc-step-3-subtract-v_t-from-both-sides" class="nav-link" data-scroll-target="#step-3-subtract-v_t-from-both-sides">Step 3: Subtract V_T from both sides</a></li>
+  <li><a href="#step-4-rearrange" id="toc-step-4-rearrange" class="nav-link" data-scroll-target="#step-4-rearrange">Step 4: Rearrange</a></li>
+  <li><a href="#final-rule" id="toc-final-rule" class="nav-link" data-scroll-target="#final-rule">Final rule</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
   <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_liver_digestion.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_percoll_37pct.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Liver Digestion Buffer</h1>
+<h1 class="title">37% Percoll Solution</h1>
 <p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
 <div>
   <div class="description">
-    Enzymatic digestion buffer for mouse liver dissociation prior to single-cell preparation.
+    37% Percoll density solution for enrichment of leukocytes from digested liver tissue.
   </div>
 </div>
 
@@ -339,7 +358,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 20, 2025</p>
+      <p class="date">December 29, 2025</p>
     </div>
   </div>
   
@@ -351,12 +370,23 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Protocol ID:</strong> BUF-LIV-DIG-v1.0<br>
-<strong>Version:</strong> v1.0<br>
+<p><strong>Protocol ID:</strong> BUF-PERC-37-001<br>
+<strong>Version:</strong> v1.2<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
-<p>This buffer is used for enzymatic digestion of mouse liver tissue prior to preparation of single-cell suspensions. It supports efficient dissociation while aiming to preserve cell viability for downstream flow cytometry, FACS sorting, and single-cell omics workflows.</p>
+<p>This buffer is used as a <strong>37% Percoll solution</strong> for density-based enrichment of leukocytes from digested liver tissue. During centrifugation, hepatocytes and debris remain in the supernatant, while leukocyte-enriched pellets form at the bottom of the tube.</p>
+<section id="density-vs-osmolality-important-conceptual-note" class="level3">
+<h3 class="anchored" data-anchor-id="density-vs-osmolality-important-conceptual-note">Density vs osmolality (important conceptual note)</h3>
+<p>Percoll provides <strong>density</strong>, not physiological salt content.<br>
+On its own, Percoll is <strong>hypotonic</strong> and unsuitable for live cells.</p>
+<ul>
+<li><strong>Density</strong> determines where cells separate during centrifugation.</li>
+<li><strong>Osmolality</strong> determines whether cells survive the procedure.</li>
+</ul>
+<p>To maintain <strong>physiological (1× PBS) osmolality</strong>, Percoll must be rendered <strong>isotonic</strong> by adding concentrated salts (10× PBS).<br>
+Once Percoll stock has been adjusted to isotonic conditions, <strong>all subsequent working solutions can be prepared by dilution with 1× PBS only</strong>.</p>
+</section>
 </section>
 <section id="linked-protocols" class="level1">
 <h1>Linked protocols</h1>
@@ -364,51 +394,123 @@ window.Quarto = {
 <ul>
 <li><strong>Mouse Liver Dissociation to Single-Cell Suspension</strong> – <code>LIV-001</code> (v1.0)</li>
 </ul>
+<hr>
 </section>
-<section id="composition-final-working-buffer" class="level1">
-<h1>Composition (final working buffer)</h1>
-<p>Final working-buffer composition per <strong>5 mL</strong>:</p>
+<section id="preparation-of-isotonic-percoll-stock-required-once-per-bottle" class="level1">
+<h1>Preparation of isotonic Percoll stock (required once per bottle)</h1>
+<p>Percoll stock <strong>must be rendered isotonic before use</strong>. This step is performed <strong>once per bottle</strong> and must be done under <strong>sterile conditions</strong>.</p>
+<section id="preparation-from-a-1000-ml-percoll-bottle" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-from-a-1000-ml-percoll-bottle">Preparation from a 1000 mL Percoll bottle</h2>
+<ol type="1">
+<li>Under a <strong>biosafety cabinet</strong>, using sterile technique:
+<ul>
+<li>Remove <strong>100 mL Percoll</strong> from the original 1000 mL bottle.</li>
+<li>Transfer this 100 mL into a <strong>clean, sterile glass bottle</strong> (retain for later use).</li>
+</ul></li>
+<li>To the original Percoll bottle, add <strong>100 mL sterile 10× PBS</strong>.</li>
+<li>Cap securely and mix thoroughly by gentle inversion.</li>
+<li>Clearly label the bottle with:
+<ul>
+<li><strong>“Isotonic Percoll”</strong></li>
+<li><strong>“+100 mL 10× PBS”</strong></li>
+<li>Date of preparation</li>
+<li>Name or initials</li>
+<li><strong>“Sterile”</strong></li>
+</ul></li>
+</ol>
+<p>The remaining volume (~1000 mL) is now <strong>isotonic Percoll stock</strong>.</p>
+</section>
+<section id="making-the-reserved-100-ml-percoll-aliquot-isotonic" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-reserved-100-ml-percoll-aliquot-isotonic">Making the reserved 100 mL Percoll aliquot isotonic</h2>
+<ol type="1">
+<li>To the previously removed <strong>100 mL Percoll aliquot</strong>, add:
+<ul>
+<li><strong>11.11 mL sterile 10× PBS</strong></li>
+</ul></li>
+<li>Mix gently by inversion until homogeneous.</li>
+<li>Label clearly with:
+<ul>
+<li><strong>“Isotonic Percoll”</strong></li>
+<li><strong>“+11.11 mL 10× PBS”</strong></li>
+<li>Date</li>
+<li>Name or initials</li>
+<li><strong>“Sterile”</strong></li>
+</ul></li>
+</ol>
+<p>This aliquot is now <strong>functionally identical</strong> to the main isotonic Percoll stock and can be used interchangeably.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Percoll stock and all derived solutions <strong>must be kept sterile</strong>.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="important-note-on-isotonic-percoll-usage" class="level1">
+<h1>Important note on isotonic Percoll usage</h1>
+<p>All working Percoll solutions in this protocol assume that <strong>input Percoll is already isotonic</strong>.</p>
+<p>Therefore: - <strong>Do not add 10× PBS</strong> when preparing 37% Percoll working solutions. - Only <strong>dilution with sterile 1× PBS</strong> is required.</p>
+<hr>
+</section>
+<section id="composition-per-10-ml-37-percoll" class="level1">
+<h1>Composition (per 10 mL 37% Percoll)</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 16%">
-<col style="width: 13%">
-<col style="width: 24%">
-<col style="width: 30%">
+<col style="width: 26%">
+<col style="width: 10%">
+<col style="width: 26%">
+<col style="width: 27%">
+<col style="width: 10%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Component</th>
-<th>Stock concentration</th>
-<th>Volume for 5 mL</th>
-<th>Final concentration (approx.)</th>
+<th>Stock</th>
+<th>Volume for 10 mL</th>
+<th>Final composition</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>DMEM (incomplete)</td>
-<td>—</td>
-<td>to 5 mL</td>
-<td>N/A</td>
-<td>Base medium</td>
+<td>Percoll (isotonic)</td>
+<td>100%</td>
+<td><strong>3.70 mL</strong></td>
+<td>37% (v/v)</td>
+<td>Pre-adjusted stock</td>
 </tr>
 <tr class="even">
-<td>Collagenase D</td>
-<td>100 mg/mL</td>
-<td>10 µL</td>
-<td>1 mg/mL</td>
-<td>From frozen stock</td>
-</tr>
-<tr class="odd">
-<td>DNase I</td>
-<td>10 mg/mL</td>
-<td>1 µL</td>
-<td>10 µg/mL</td>
-<td>Added on day of use</td>
+<td>PBS 1×</td>
+<td>—</td>
+<td><strong>6.30 mL</strong></td>
+<td>—</td>
+<td>Diluent</td>
 </tr>
 </tbody>
 </table>
+<hr>
+</section>
+<section id="preparation-of-37-percoll-working-solution" class="level1">
+<h1>Preparation of 37% Percoll working solution</h1>
+<ol type="1">
+<li>Equilibrate <strong>isotonic Percoll stock</strong> to <strong>room temperature</strong>.</li>
+<li>In a sterile 15 mL or 50 mL tube, add:
+<ul>
+<li><strong>3.70 mL isotonic Percoll</strong></li>
+<li><strong>6.30 mL sterile PBS 1×</strong></li>
+</ul></li>
+<li>Mix gently by inversion until homogeneous.</li>
+<li>Prepare sufficient volume for the experiment (typically <strong>10 mL per liver</strong>).</li>
+<li>Aliquot immediately into labelled <strong>15 mL conical tubes</strong>.</li>
+</ol>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -419,142 +521,72 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The table above describes the <strong>final working buffer</strong> used in the protocol. In practice, a <strong>stock digestion buffer without DNase</strong> is prepared and frozen in aliquots, and DNase is added only on the day of use (see Preparation and Storage sections).</p>
+<p>Prepare 37% Percoll fresh on the day of use for optimal separation performance and cell viability.</p>
 </div>
 </div>
-</section>
-<section id="preparation" class="level1">
-<h1>Preparation</h1>
-<section id="a.-prepare-liver-digestion-stock-no-dnase" class="level2">
-<h2 class="anchored" data-anchor-id="a.-prepare-liver-digestion-stock-no-dnase">A. Prepare “Liver Digestion Stock (no DNase)”</h2>
-<p>This stock is DMEM + Collagenase D, <strong>without DNase</strong>. It is frozen in aliquots for convenient use.</p>
-<ol type="1">
-<li><p>Thaw <strong>Collagenase D</strong> stock (100 mg/mL) on ice or at 4 °C.</p></li>
-<li><p>In a sterile tube, prepare the digestion stock for the desired number of aliquots, for example:</p>
-<ul>
-<li>For each <strong>5 mL</strong> stock aliquot:
-<ul>
-<li>Add <strong>~4 mL</strong> DMEM (incomplete).</li>
-<li>Add <strong>10 µL</strong> Collagenase D stock (100 mg/mL).</li>
-<li>Mix gently by inversion (avoid foaming).</li>
-<li>Bring volume to <strong>5 mL</strong> with DMEM (incomplete).</li>
-</ul></li>
-</ul></li>
-<li><p>Aliquot the digestion stock into sterile tubes (e.g.&nbsp;<strong>3–5 mL per aliquot</strong>, depending on typical experimental usage).</p></li>
-<li><p>Label aliquots clearly with:</p>
-<ul>
-<li>“Liver Digestion Stock (no DNase)”</li>
-<li>Concentration</li>
-<li>Date</li>
-<li>Version (<code>BUF-LIV-DIG-v1.0</code>)</li>
-</ul></li>
-<li><p>Freeze aliquots at <strong>−20 °C</strong>.</p></li>
-</ol>
-</section>
-<section id="b.-prepare-final-working-liver-digestion-buffer-day-of-use" class="level2">
-<h2 class="anchored" data-anchor-id="b.-prepare-final-working-liver-digestion-buffer-day-of-use">B. Prepare final working Liver Digestion Buffer (day of use)</h2>
-<ol type="1">
-<li>Remove the required number of <strong>Liver Digestion Stock (no DNase)</strong> aliquots from −20 °C and <strong>thaw</strong> at room temperature or 4 °C.</li>
-<li>For each <strong>5 mL</strong> of final working buffer needed:
-<ol type="1">
-<li>Ensure the thawed stock is well mixed (gentle inversion).</li>
-<li>Add <strong>1 µL</strong> of DNase I stock (10 mg/mL) to <strong>5 mL</strong> digestion stock.</li>
-<li>Mix gently by inversion.</li>
-</ol></li>
-<li>Pre-warm the final working buffer to <strong>37 °C</strong> before use (e.g.&nbsp;by placing tubes in a 37 °C water bath or incubator).</li>
-<li>If desired, pre-aliquot <strong>3 mL</strong> of the final working buffer into pre-labeled 50 mL liver collection tubes, and retain additional buffer in a separate tube for perfusion.</li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>To minimise variability, prepare all working-buffer aliquots for a given experiment at the <strong>same time</strong> using the <strong>same DNase stock</strong> and keep them at 37 °C only for as long as required during the digestion step.</p>
-</div>
-</div>
-</section>
+<hr>
 </section>
 <section id="storage-and-stability" class="level1">
 <h1>Storage and stability</h1>
-<section id="liver-digestion-stock-no-dnase" class="level2">
-<h2 class="anchored" data-anchor-id="liver-digestion-stock-no-dnase">Liver Digestion Stock (no DNase)</h2>
 <ul>
-<li><strong>Composition</strong>: DMEM (incomplete) + Collagenase D at 1 mg/mL final (when diluted as described).</li>
-<li><strong>Storage</strong>:
-<ul>
-<li>Store aliquots at <strong>−20 °C</strong>.</li>
-<li>Avoid repeated freeze–thaw cycles (use single-use aliquots where possible).</li>
-</ul></li>
-<li><strong>Stability</strong>:
-<ul>
-<li>Recommended to use within <strong>3–6 months</strong> of preparation, or according to internal lab validation.</li>
-</ul></li>
-<li>Before use:
-<ul>
-<li>Thaw at room temperature or 4 °C.</li>
-<li>Mix gently to ensure homogeneity.</li>
-</ul></li>
+<li><strong>37% Percoll working solution</strong>: prepare fresh on the day of use.</li>
+<li>Same-day storage at <strong>room temperature</strong> is acceptable.</li>
+<li>Do not freeze working solutions.</li>
+<li><strong>Isotonic Percoll stock</strong> should be stored according to manufacturer’s instructions and maintained under sterile conditions.</li>
 </ul>
+<hr>
 </section>
-<section id="final-working-liver-digestion-buffer-with-dnase" class="level2">
-<h2 class="anchored" data-anchor-id="final-working-liver-digestion-buffer-with-dnase">Final working Liver Digestion Buffer (with DNase)</h2>
+<section id="how-isotonic-percoll-calculations-work-reference" class="level1">
+<h1>How isotonic Percoll calculations work (reference)</h1>
+<p>This section explains why <strong>10× PBS</strong> is added to Percoll and how the required volume is calculated.</p>
+<section id="definitions" class="level2">
+<h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
 <ul>
-<li>Prepared from thawed <strong>Liver Digestion Stock (no DNase)</strong> + DNase I.</li>
-<li><strong>Use on the same day</strong> as preparation.</li>
-<li>Keep at <strong>37 °C</strong> only during active digestion steps; otherwise, keep at room temperature for short periods.</li>
-<li>Do not refreeze working buffer once DNase has been added; discard any unused working buffer at the end of the day.</li>
+<li><strong>V_T</strong> = total final volume<br>
+</li>
+<li><strong>V_P</strong> = volume of Percoll (contains no salts)<br>
+</li>
+<li><strong>V_10x</strong> = volume of 10× PBS</li>
 </ul>
+<p>The remaining volume is <strong>1× PBS</strong>.</p>
 </section>
-<section id="stock-reagents" class="level2">
-<h2 class="anchored" data-anchor-id="stock-reagents">Stock reagents</h2>
-<ul>
-<li><strong>Collagenase D stock (100 mg/mL)</strong>
-<ul>
-<li>Store as recommended by the manufacturer (typically <strong>−20 °C</strong> in aliquots).<br>
-</li>
-<li>Avoid repeated freeze–thaw cycles.</li>
-</ul></li>
-<li><strong>DNase I stock (10 mg/mL)</strong>
-<ul>
-<li>Store according to manufacturer’s instructions (often <strong>−20 °C</strong>).<br>
-</li>
-<li>Avoid repeated freeze–thaw cycles.</li>
-</ul></li>
-<li><strong>DMEM (incomplete)</strong>
-<ul>
-<li>Store at <strong>4 °C</strong>, protected from light.<br>
-</li>
-<li>Respect manufacturer’s expiry date.</li>
-</ul></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If the lab validates alternative storage conditions (e.g.&nbsp;short-term storage of working buffer at 4 °C), document the conditions and update the version number and description accordingly.</p>
-</div>
-</div>
+<section id="salt-balance-logic" class="level2">
+<h2 class="anchored" data-anchor-id="salt-balance-logic">Salt balance logic</h2>
+<p>The final solution must contain the same total amount of salt as <strong>V_T mL of 1× PBS</strong>.</p>
+<p>Salt contributions: - Percoll contributes <strong>0×</strong> - 1× PBS contributes <strong>1×</strong> - 10× PBS contributes <strong>10×</strong></p>
+<section id="step-1-express-total-salt-content" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-express-total-salt-content">Step 1: Express total salt content</h3>
+<pre class="math"><code>(V_T - V_P - V_10x) + 10 · V_10x = V_T</code></pre>
+</section>
+<section id="step-2-combine-terms" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-combine-terms">Step 2: Combine terms</h3>
+<pre class="math"><code>V_T - V_P + 9 · V_10x = V_T</code></pre>
+</section>
+<section id="step-3-subtract-v_t-from-both-sides" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-subtract-v_t-from-both-sides">Step 3: Subtract V_T from both sides</h3>
+<pre class="math"><code>- V_P + 9 · V_10x = 0</code></pre>
+</section>
+<section id="step-4-rearrange" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-rearrange">Step 4: Rearrange</h3>
+<pre class="math"><code>9 · V_10x = V_P</code></pre>
+</section>
+<section id="final-rule" class="level3">
+<h3 class="anchored" data-anchor-id="final-rule">Final rule</h3>
+<pre class="math"><code>V_10x = V_P / 9</code></pre>
+<p><strong>In words:</strong><br>
+For every <strong>9 mL of Percoll</strong>, add <strong>1 mL of 10× PBS</strong> to make the solution isotonic.</p>
+<hr>
+</section>
 </section>
 </section>
 <section id="reagent-details" class="level1">
 <h1>Reagent details</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 45%">
-<col style="width: 23%">
-<col style="width: 14%">
-<col style="width: 16%">
+<col style="width: 41%">
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -566,37 +598,45 @@ Note
 </thead>
 <tbody>
 <tr class="odd">
-<td>DMEM (incomplete)</td>
-<td>[TBD]</td>
-<td>[TBD]</td>
-<td>High-glucose DMEM without supplements</td>
+<td>Percoll (100%)</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Must be rendered isotonic and kept sterile</td>
 </tr>
 <tr class="even">
-<td>Collagenase D</td>
-<td>[TBD]</td>
-<td>[TBD]</td>
-<td>Prepare 100 mg/mL stock according to manufacturer</td>
+<td>PBS 1×</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Sterile; Ca²⁺/Mg²⁺-free recommended</td>
 </tr>
 <tr class="odd">
-<td>DNase I</td>
-<td>[TBD]</td>
-<td>[TBD]</td>
-<td>Prepare 10 mg/mL stock; avoid repeated thawing</td>
+<td>PBS 10×</td>
+<td>TBD</td>
+<td>TBD</td>
+<td>Used once for isotonic adjustment</td>
 </tr>
 </tbody>
 </table>
+<hr>
 </section>
 <section id="safety-brief" class="level1">
 <h1>Safety (brief)</h1>
 <ul>
-<li>Handle mouse tissues and enzymatic digestion buffers in accordance with institutional biosafety rules (S1/S2 as applicable).</li>
-<li>Collagenase and DNase are enzymes; avoid inhalation of powders and minimise contact with eyes or damaged skin.</li>
-<li>Dispose of buffer waste and contaminated consumables in appropriate <strong>biohazard</strong> or <strong>chemical</strong> waste streams, as determined by local regulations.</li>
+<li>Handle Percoll and PBS solutions with standard laboratory PPE.</li>
+<li>Dispose of Percoll-containing waste according to chemical and biological safety regulations.</li>
+<li>Avoid skin and eye contact; consult manufacturer SDS for details.</li>
 </ul>
+<hr>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 14%">
+<col style="width: 18%">
+<col style="width: 56%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Version</th>
@@ -610,7 +650,19 @@ Note
 <td>v1.0</td>
 <td>2025-11-20</td>
 <td>Dillon Corvino</td>
-<td>Initial buffer definition</td>
+<td>Initial buffer definition (33% Percoll)</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-12-29</td>
+<td>Dillon Corvino</td>
+<td>Updated to 37% Percoll; clarified isotonic prep</td>
+</tr>
+<tr class="odd">
+<td>v1.2</td>
+<td>2025-12-29</td>
+<td>Dillon Corvino</td>
+<td>Added stock isotonic prep, math explanation, sterility notes</td>
 </tr>
 </tbody>
 </table>

@@ -926,7 +926,7 @@
     "href": "protocols_src/mouse/index.html",
     "title": "Mouse protocols",
     "section": "",
-    "text": "Mouse processing, tissue digestion, and functional assays.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Protocol\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProtocol ID\n\n\n\nProtocol\n\n\n\nVersion\n\n\n\nDate\n\n\n\n\n\n\n\n\nMUS-BLD-PRC-001\n\n\nMouse Blood Processing to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-BM-ISO-001\n\n\nMouse Bone Marrow Isolation to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-LCMV-FFA-001\n\n\nLCMV Focus-Forming Assay (Immunofocus)\n\n\nv1.1\n\n\nDec 2, 2025\n\n\n\n\n\n\nMUS-LCMV-PLA-001\n\n\nLCMV Plaque Assay on Vero Cells\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-LCMV-PROD-001\n\n\nLCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-LCMV-QPCR-001\n\n\nLCMV Viral Load Quantification by GP-Based SYBR Green qPCR\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-LIV-DIG-001\n\n\nMouse Liver Digestion to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-LNG-DIG-001\n\n\nMouse Lung Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-PTPRC-GENO-001\n\n\nSingle-Tube PCR Genotyping of Ptprca (JAXBoy, CD45.1) and Ptprcb (C57BL/6J, CD45.2)\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-SPL-DIS-001\n\n\nMouse Spleen Dissociation to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-SPL-NK-PROLIF-001\n\n\nIn vitro NK Cell Proliferation Assay Using CellTrace Dyes\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nMUS-TMR-DIG-001\n\n\nMouse Tumour Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nNo matching items",
+    "text": "Mouse processing, tissue digestion, and functional assays.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Protocol\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProtocol ID\n\n\n\nProtocol\n\n\n\nVersion\n\n\n\nDate\n\n\n\n\n\n\n\n\nMUS-BLD-PRC-001\n\n\nMouse Blood Processing to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-BM-ISO-001\n\n\nMouse Bone Marrow Isolation to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-INF-LCMV-001\n\n\nLCMV Infection Models (WE, Clone 13, Docile, Armstrong)\n\n\nv1.0\n\n\nJan 9, 2026\n\n\n\n\n\n\nMUS-LCMV-FFA-001\n\n\nLCMV Focus-Forming Assay (Immunofocus)\n\n\nv1.1\n\n\nDec 2, 2025\n\n\n\n\n\n\nMUS-LCMV-PLA-001\n\n\nLCMV Plaque Assay on Vero Cells\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-LCMV-PROD-001\n\n\nLCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-LCMV-QPCR-001\n\n\nLCMV Viral Load Quantification by GP-Based SYBR Green qPCR\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-LIV-DIG-001\n\n\nMouse Liver Digestion to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-LNG-DIG-001\n\n\nMouse Lung Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nMUS-P14-ACT-001\n\n\nP14 Adoptive Transfer (GP33-specific CD8 T cells)\n\n\nv1.0\n\n\nJan 9, 2026\n\n\n\n\n\n\nMUS-PTPRC-GENO-001\n\n\nSingle-Tube PCR Genotyping of Ptprca (JAXBoy, CD45.1) and Ptprcb (C57BL/6J, CD45.2)\n\n\nv1.0\n\n\nDec 1, 2025\n\n\n\n\n\n\nMUS-SPL-DIS-001\n\n\nMouse Spleen Dissociation to Single-Cell Suspension\n\n\nv1.1\n\n\nNov 26, 2025\n\n\n\n\n\n\nMUS-SPL-NK-PROLIF-001\n\n\nIn vitro NK Cell Proliferation Assay Using CellTrace Dyes\n\n\nv1.0\n\n\nNov 21, 2025\n\n\n\n\n\n\nMUS-TMR-DIG-001\n\n\nMouse Tumour Digestion to Single-Cell Suspension\n\n\nv1.0\n\n\nNov 20, 2025\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Mouse"
     ]
@@ -3121,5 +3121,96 @@
       "Onboarding",
       "Onboarding checklist"
     ]
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_lcmv_infection.html",
+    "href": "protocols_src/mouse/prot_mus_lcmv_infection.html",
+    "title": "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)",
+    "section": "",
+    "text": "Protocol ID: MUS-INF-LCMV-001\nVersion: v1.0\nAuthor: Dillon Corvino"
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_lcmv_infection.html#virus-stock-handling-and-preparation",
+    "href": "protocols_src/mouse/prot_mus_lcmv_infection.html#virus-stock-handling-and-preparation",
+    "title": "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)",
+    "section": "Virus stock handling and preparation",
+    "text": "Virus stock handling and preparation\nLCMV-WE, LCMV-Clone 13, LCMV-Docile, and LCMV-Armstrong virus stocks are propagated and titrated as previously described in the literature and internal Abdullah Lab SOPs.\n\nVirus stocks are stored at −80 °C in single-use aliquots.\nRepeated freeze–thaw cycles must be avoided.\n\n\nThawing\n\nVirus aliquots are rapidly thawed immediately before use.\nThawing is performed in a 37 °C water bath until the aliquot is just thawed.\nAliquots are removed promptly from the water bath and placed immediately on ice.\nVirus is kept on ice during dilution and injection.\nRepeated freeze–thaw cycles must be avoided.\n\n\n\nDilution buffer\n\nVirus stocks are diluted in sterile, endotoxin-free PBS.\nNo serum or supplements are added unless explicitly required by internal SOP.\nDilutions are prepared fresh on the day of infection."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_lcmv_infection.html#infection-doses-and-routes",
+    "href": "protocols_src/mouse/prot_mus_lcmv_infection.html#infection-doses-and-routes",
+    "title": "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)",
+    "section": "Infection doses and routes",
+    "text": "Infection doses and routes\nMice are infected intravenously (i.v.) via the lateral tail vein using the following Abdullah Lab standard doses:\n\nLCMV-Clone 13: 2 × 10⁶ plaque-forming units (PFU)\nLCMV-WE: 2 × 10⁴ plaque-forming units (PFU)\n\nOther strains (Docile, Armstrong) are included for reference and comparative studies as outlined below.\n\nInjection parameters\n\nInjection volume: 200 µL per mouse\nSyringe: insulin syringe\nNeedle gauge: 27G–30G\nInjections are performed slowly to ensure proper intravenous delivery.\nSuccessful i.v. injection is confirmed by lack of resistance and absence of subcutaneous bleb formation."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_lcmv_infection.html#post-infection-monitoring",
+    "href": "protocols_src/mouse/prot_mus_lcmv_infection.html#post-infection-monitoring",
+    "title": "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)",
+    "section": "Post-infection monitoring",
+    "text": "Post-infection monitoring\n\nBody weight and general health are monitored daily during the first week post infection.\nMonitoring frequency is adjusted according to infection severity and institutional guidelines.\nHumane endpoints are applied as defined in approved protocols."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_lcmv_infection.html#lcmv-we-2-10⁴-pfu-i.v.",
+    "href": "protocols_src/mouse/prot_mus_lcmv_infection.html#lcmv-we-2-10⁴-pfu-i.v.",
+    "title": "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)",
+    "section": "LCMV-WE (2 × 10⁴ PFU i.v.)",
+    "text": "LCMV-WE (2 × 10⁴ PFU i.v.)\n\nNLCs accumulate prominently in the liver.\nPeak frequency occurs at approximately day 7 post infection.\nElevated NLC levels are maintained through at least day 30 post infection.\nThis model supports both early and long-term NLC analyses."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_lcmv_infection.html#lcmv-clone-13-2-10⁶-pfu-i.v.",
+    "href": "protocols_src/mouse/prot_mus_lcmv_infection.html#lcmv-clone-13-2-10⁶-pfu-i.v.",
+    "title": "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)",
+    "section": "LCMV-Clone 13 (2 × 10⁶ PFU i.v.)",
+    "text": "LCMV-Clone 13 (2 × 10⁶ PFU i.v.)\n\nNLCs peak early, around day 5 post infection.\nA sharp contraction occurs by ~day 7, followed by gradual decline through day 30.\nThe effective experimental window for NLC analysis is day 4–7 post infection.\nSampling outside this window will substantially underestimate NLC abundance."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "",
+    "text": "Protocol ID: MUS-P14-ACT-001\nVersion: v1.0\nAuthor: Dillon Corvino"
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html#overview-of-standard-experimental-timing",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html#overview-of-standard-experimental-timing",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "Overview of standard experimental timing",
+    "text": "Overview of standard experimental timing\nAbdullah Lab standard: transfer 5,000 naive P14 CD8 T cells 24 hours before infection (Day −1), followed by LCMV infection on Day 0.\nNote: In prior experiments, Kostas has used both 5,000 and 10,000 P14 cells depending on experimental context. For standardization within the Abdullah Lab, 5,000 transferred P14 cells is the default unless explicitly stated otherwise.\nThis aligns with commonly used “physiologic precursor” transfers (low thousands to ten-thousands) in the modern LCMV literature."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html#prepare-donor-p14-cells-high-level",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html#prepare-donor-p14-cells-high-level",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "Prepare donor P14 cells (high-level)",
+    "text": "Prepare donor P14 cells (high-level)\n\nHarvest spleen (± peripheral lymph nodes) from naive P14 donor mouse/mice.\nPrepare single-cell suspension by gentle mechanical disruption through a 70 µm strainer into cold buffer.\nIf RBC contamination is present, perform RBC lysis according to internal SOP, then wash cells.\n\n\nOptional enrichment / purification choices\nUse one of the following approaches depending on the experiment:\n\nLow-input physiologic transfers (recommended for most LCMV tracking experiments):\n\nEnrich CD8 T cells by negative selection (e.g., magnetic enrichment), then identify naive P14 as CD8+ CD44^low (plus congenic markers if used).\n\nHigh-purity transfers or downstream transcriptomics:\n\nFACS sort live CD8+ CD44^low P14 cells (plus congenic markers) to a defined purity target (set locally).\n\nHigh precursor frequency “stress test” transfers (use with explicit rationale):\n\nHigher input cell numbers are used in some studies to amplify rare states or enforce competition regimes; these are not directly comparable to low-dose transfers."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html#count-cells-and-prepare-for-injection",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html#count-cells-and-prepare-for-injection",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "Count cells and prepare for injection",
+    "text": "Count cells and prepare for injection\n\nCount cells using hemocytometer or automated counter, using a viability dye method as per internal SOP.\nDilute cells in sterile PBS to the target concentration.\n\nCommon injection buffer in the literature: sterile PBS."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html#intravenous-adoptive-transfer-tail-vein",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html#intravenous-adoptive-transfer-tail-vein",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "Intravenous adoptive transfer (tail vein)",
+    "text": "Intravenous adoptive transfer (tail vein)\n\nRoute: Intravenous (tail vein)\nInjection volume: 200 µL per mouse is widely used for P14 transfers.\nNeedle: insulin syringe, typically 27G–30G for tail vein i.v. injections (select per operator preference and animal size).\nKeep cells on ice and mix gently to maintain a uniform suspension during the injection series."
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html#transfer-dose-table-literature-ranges-rationale-and-expected-outcome",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html#transfer-dose-table-literature-ranges-rationale-and-expected-outcome",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "Transfer dose table: literature ranges, rationale, and expected outcome",
+    "text": "Transfer dose table: literature ranges, rationale, and expected outcome\nChoose dose based on whether you want a near-physiologic precursor frequency vs high precursor frequency for increased signal.\n\n\n\n\n\n\n\n\n\nTransfer dose (naive P14)\nTypical use-case\nExpected outcome / considerations\nExample sources\n\n\n\n\n~1,000\nVery low precursor frequency; minimizes perturbation\nClosest to “endogenous-like” frequency; may reduce detection sensitivity in some tissues/timepoints\n1,000 P14 used in Armstrong experiments\n\n\n1,000–10,000\nStandard tracking in many modern LCMV studies\nGood balance: trackable response with limited precursor-frequency artefacts; comparable across studies when infection model is matched\n1,000–10,000 in 200 µL PBS (tail vein) ; 2,000–10,000 in primary transfers\n\n\n5,000\nAbdullah Lab standard\nDefault for internal consistency; supports robust tracking without extreme precursor-frequency effects\nInternal standard; consistent with modern literature low-dose range\n\n\n~50,000 (5 × 10^4)\nHigher precursor frequency to boost signal\nIncreased detectability; higher chance of competition/altered differentiation; must be justified when comparing to “low-dose” studies\nExample: 5 × 10^4 used one day before acute LCMV in some contexts ; also shown in a recent Nature Immunology schematic\n\n\n~500,000 (5 × 10^5)\nHigh-input experimental designs (specialized)\nStrong perturbation potential; not directly comparable to low-dose physiology; used for specific mechanistic questions\nExample: 5 × 10^5 total P14 transferred in a SciImmunol study"
+  },
+  {
+    "objectID": "protocols_src/mouse/prot_mus_P14_transfer.html#prepare-donor-p14-cells-standard-method",
+    "href": "protocols_src/mouse/prot_mus_P14_transfer.html#prepare-donor-p14-cells-standard-method",
+    "title": "P14 Adoptive Transfer (GP33-specific CD8 T cells)",
+    "section": "Prepare donor P14 cells (standard method)",
+    "text": "Prepare donor P14 cells (standard method)\n\nHarvest spleen from naive P14 donor mouse/mice.\nPrepare a single-cell suspension by gentle mechanical dissociation through a 70 µm strainer into cold buffer.\nPerform RBC lysis if required according to internal SOP, followed by washing.\nEnrich naive CD8 T cells by magnetic negative selection.\nCount viable cells using an approved counting method.\nDilute cells in sterile PBS and inject 5,000 naive CD8 T cells per recipient mouse.\n\nThis magnetic enrichment–based approach is the Abdullah Lab standard for generating naive P14 donor cells and avoids additional activation or stress associated with FACS sorting."
   }
 ]

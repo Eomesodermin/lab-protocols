@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-09">
+<meta name="description" content="Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes.">
 
-<title>Mouse protocols – Protocol Library</title>
+<title>LCMV Infection Models (WE, Clone 13, Docile, Armstrong) – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -141,7 +112,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/mouse/index.html">Mouse</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -302,7 +275,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-mouse" role="img">
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
 </i> 
  <span class="menu-text">Mouse</span></a>
   </div>
@@ -326,22 +299,64 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#virus-stock-handling-and-preparation" id="toc-virus-stock-handling-and-preparation" class="nav-link" data-scroll-target="#virus-stock-handling-and-preparation">Virus stock handling and preparation</a>
+  <ul class="collapse">
+  <li><a href="#thawing" id="toc-thawing" class="nav-link" data-scroll-target="#thawing">Thawing</a></li>
+  <li><a href="#dilution-buffer" id="toc-dilution-buffer" class="nav-link" data-scroll-target="#dilution-buffer">Dilution buffer</a></li>
+  </ul></li>
+  <li><a href="#infection-doses-and-routes" id="toc-infection-doses-and-routes" class="nav-link" data-scroll-target="#infection-doses-and-routes">Infection doses and routes</a>
+  <ul class="collapse">
+  <li><a href="#injection-parameters" id="toc-injection-parameters" class="nav-link" data-scroll-target="#injection-parameters">Injection parameters</a></li>
+  </ul></li>
+  <li><a href="#post-infection-monitoring" id="toc-post-infection-monitoring" class="nav-link" data-scroll-target="#post-infection-monitoring">Post-infection monitoring</a></li>
+  </ul></li>
+  <li><a href="#infection-dose-ranges-rationale-and-expected-outcomes" id="toc-infection-dose-ranges-rationale-and-expected-outcomes" class="nav-link" data-scroll-target="#infection-dose-ranges-rationale-and-expected-outcomes">Infection dose ranges, rationale, and expected outcomes</a></li>
+  <li><a href="#expected-nlc-dynamics-in-the-liver" id="toc-expected-nlc-dynamics-in-the-liver" class="nav-link" data-scroll-target="#expected-nlc-dynamics-in-the-liver">Expected NLC dynamics in the liver</a>
+  <ul class="collapse">
+  <li><a href="#lcmv-we-2-10⁴-pfu-i.v." id="toc-lcmv-we-2-10⁴-pfu-i.v." class="nav-link" data-scroll-target="#lcmv-we-2-10⁴-pfu-i.v.">LCMV-WE (2 × 10⁴ PFU i.v.)</a></li>
+  <li><a href="#lcmv-clone-13-2-10⁶-pfu-i.v." id="toc-lcmv-clone-13-2-10⁶-pfu-i.v." class="nav-link" data-scroll-target="#lcmv-clone-13-2-10⁶-pfu-i.v.">LCMV-Clone 13 (2 × 10⁶ PFU i.v.)</a></li>
+  </ul></li>
+  <li><a href="#experimental-design-guidance" id="toc-experimental-design-guidance" class="nav-link" data-scroll-target="#experimental-design-guidance">Experimental design guidance</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_lcmv_infection.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mouse protocols</h1>
+<h1 class="title">LCMV Infection Models (WE, Clone 13, Docile, Armstrong)</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 9, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -351,287 +366,234 @@ window.Quarto = {
 </header>
 
 
-<p>Mouse processing, tissue digestion, and functional assays.</p>
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
+<p><strong>Protocol ID:</strong> MUS-INF-LCMV-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes standardized mouse infection procedures using lymphocytic choriomeningitis virus (LCMV), with primary emphasis on <strong>LCMV-WE</strong> and <strong>LCMV-Clone 13</strong>, and additional reference to <strong>LCMV-Docile</strong> and <strong>LCMV-Armstrong</strong>.</p>
+<p>The protocol defines virus handling, dilution, injection parameters, infection doses, and sampling windows, with specific annotation of <strong>liver NLC (NK-like cell) dynamics</strong> to guide optimal experimental design.</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>All LCMV work must be performed under <strong>approved animal and biosafety protocols</strong>.</li>
+<li>Virus stocks must be <strong>titered, aliquoted, and freeze–thaw limited</strong>.</li>
+<li>Infection dose and route strongly influence antigen load and immune kinetics.</li>
+<li><strong>NLC dynamics differ markedly between WE and Clone 13</strong>, requiring strain-specific sampling strategies.</li>
+<li>Late timepoints (&gt; day 7) in Clone 13 infection are <strong>suboptimal for NLC-focused analyses</strong>.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Virus thawing and dilution: <strong>5–10 min</strong></li>
+<li>Intravenous injection: <strong>~1–2 min per mouse</strong></li>
+<li>Acute infection window: <strong>days 0–15</strong></li>
+<li>Chronic infection window: <strong>days 0–30+</strong></li>
+</ul>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="virus-stock-handling-and-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="virus-stock-handling-and-preparation">Virus stock handling and preparation</h2>
+<p>LCMV-WE, LCMV-Clone 13, LCMV-Docile, and LCMV-Armstrong virus stocks are propagated and titrated as previously described in the literature and internal Abdullah Lab SOPs.</p>
+<ul>
+<li>Virus stocks are stored at <strong>−80 °C</strong> in single-use aliquots.</li>
+<li>Repeated freeze–thaw cycles must be avoided.</li>
+</ul>
+<section id="thawing" class="level3">
+<h3 class="anchored" data-anchor-id="thawing">Thawing</h3>
+<ul>
+<li>Virus aliquots are <strong>rapidly thawed immediately before use</strong>.</li>
+<li>Thawing is performed in a <strong>37 °C water bath</strong> until the aliquot is just thawed.</li>
+<li>Aliquots are removed promptly from the water bath and placed <strong>immediately on ice</strong>.</li>
+<li>Virus is kept on ice during dilution and injection.</li>
+<li>Repeated freeze–thaw cycles must be avoided.</li>
+</ul>
+</section>
+<section id="dilution-buffer" class="level3">
+<h3 class="anchored" data-anchor-id="dilution-buffer">Dilution buffer</h3>
+<ul>
+<li>Virus stocks are diluted in <strong>sterile, endotoxin-free PBS</strong>.</li>
+<li>No serum or supplements are added unless explicitly required by internal SOP.</li>
+<li>Dilutions are prepared <strong>fresh on the day of infection</strong>.</li>
+</ul>
+</section>
+</section>
+<section id="infection-doses-and-routes" class="level2">
+<h2 class="anchored" data-anchor-id="infection-doses-and-routes">Infection doses and routes</h2>
+<p>Mice are infected <strong>intravenously (i.v.)</strong> via the lateral tail vein using the following Abdullah Lab standard doses:</p>
+<ul>
+<li><strong>LCMV-Clone 13:</strong> <strong>2 × 10⁶ plaque-forming units (PFU)</strong></li>
+<li><strong>LCMV-WE:</strong> <strong>2 × 10⁴ plaque-forming units (PFU)</strong></li>
+</ul>
+<p>Other strains (Docile, Armstrong) are included for reference and comparative studies as outlined below.</p>
+<section id="injection-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="injection-parameters">Injection parameters</h3>
+<ul>
+<li><strong>Injection volume:</strong> <strong>200 µL per mouse</strong></li>
+<li><strong>Syringe:</strong> insulin syringe</li>
+<li><strong>Needle gauge:</strong> <strong>27G–30G</strong></li>
+<li>Injections are performed slowly to ensure proper intravenous delivery.</li>
+<li>Successful i.v. injection is confirmed by lack of resistance and absence of subcutaneous bleb formation.</li>
+</ul>
+</section>
+</section>
+<section id="post-infection-monitoring" class="level2">
+<h2 class="anchored" data-anchor-id="post-infection-monitoring">Post-infection monitoring</h2>
+<ul>
+<li>Body weight and general health are monitored daily during the first week post infection.</li>
+<li>Monitoring frequency is adjusted according to infection severity and institutional guidelines.</li>
+<li>Humane endpoints are applied as defined in approved protocols.</li>
+</ul>
+</section>
+</section>
+<section id="infection-dose-ranges-rationale-and-expected-outcomes" class="level1">
+<h1>Infection dose ranges, rationale, and expected outcomes</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 25%">
+<col style="width: 27%">
+<col style="width: 15%">
+<col style="width: 20%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th>Virus strain</th>
+<th>Dose range (PFU, literature)</th>
+<th>Rationale for low vs high dose</th>
+<th>Expected outcome</th>
+<th>Abdullah Lab standard</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1764149077690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="851" data-listing-title-sort="Mouse Blood Processing to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-BLD-PRC-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_blood_processing.html" class="title listing-title">Mouse Blood Processing to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td><strong>Armstrong</strong></td>
+<td>~1 × 10⁴ – 2 × 10⁵</td>
+<td>Low–moderate dose to induce acute infection with rapid immune control</td>
+<td>Acute infection; strong effector CD8 response; viral clearance and memory formation</td>
+<td>Not standard</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1764149076025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077" data-listing-title-sort="Mouse Bone Marrow Isolation to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-BM-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_bone_marrow_isolation.html" class="title listing-title">Mouse Bone Marrow Isolation to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
+<tr class="even">
+<td><strong>WE</strong></td>
+<td>~1 × 10² – 1 × 10³</td>
+<td>Minimal acute infection</td>
+<td>Rapid clearance; limited systemic and hepatic involvement</td>
+<td>–</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767947514726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="863" data-listing-title-sort="LCMV Infection Models (WE, Clone 13, Docile, Armstrong)">
-<td>
-<span class="listing-protocol_id">MUS-INF-LCMV-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_infection.html" class="title listing-title">LCMV Infection Models (WE, Clone 13, Docile, Armstrong)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Jan 9, 2026</span>
-</td>
-
+<tr class="odd">
+<td></td>
+<td><strong>2 × 10⁴</strong></td>
+<td>Intermediate dose to ensure robust systemic infection without chronic persistence</td>
+<td>Strong liver immune response; sustained NLC accumulation</td>
+<td><strong>Yes</strong></td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1764630000000" data-listing-file-modified-sort="1764666660054" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3153" data-listing-title-sort="LCMV Focus-Forming Assay (Immunofocus)">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-FFA-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_focus_forming_assay.html" class="title listing-title">LCMV Focus-Forming Assay (Immunofocus)</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Dec 2, 2025</span>
-</td>
-
+<tr class="even">
+<td></td>
+<td>~1 × 10⁶</td>
+<td>High-dose systemic challenge used in comparative studies</td>
+<td>Severe acute disease; heightened inflammation</td>
+<td>No</td>
 </tr>
-
-<tr data-index="4" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667036660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1444" data-listing-title-sort="LCMV Plaque Assay on Vero Cells">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-PLA-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_plaque_assay_vero.html" class="title listing-title">LCMV Plaque Assay on Vero Cells</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
+<tr class="odd">
+<td><strong>Clone 13</strong></td>
+<td><strong>2 × 10⁶</strong></td>
+<td>High antigen load to enforce chronic infection and exhaustion</td>
+<td>Persistent infection; CD8 exhaustion program</td>
+<td><strong>Yes</strong></td>
 </tr>
-
-<tr data-index="5" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667031567" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2343" data-listing-title-sort="LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-PROD-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_multi_strain_production.html" class="title listing-title">LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
+<tr class="even">
+<td><strong>Docile</strong></td>
+<td>~1 × 10⁵</td>
+<td>Moderate dose allowing partial control</td>
+<td>Semi-chronic infection; intermediate exhaustion</td>
+<td>–</td>
 </tr>
-
-<tr data-index="6" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667017534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1577" data-listing-title-sort="LCMV Viral Load Quantification by GP-Based SYBR Green qPCR">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-QPCR-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_gp_qpcr_viral_load.html" class="title listing-title">LCMV Viral Load Quantification by GP-Based SYBR Green qPCR</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
+<tr class="odd">
+<td></td>
+<td><strong>2 × 10⁶</strong></td>
+<td>High-dose infection to drive persistent antigen exposure</td>
+<td>Chronic infection; exhaustion-prone immune response</td>
+<td><strong>Yes</strong></td>
 </tr>
-
-<tr data-index="7" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1767000958357" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3997" data-listing-title-sort="Mouse Liver Digestion to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-LIV-DIG-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_liver_digestion.html" class="title listing-title">Mouse Liver Digestion to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1764147951077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="854" data-listing-title-sort="Mouse Lung Digestion to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-LNG-DIG-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lung_digestion.html" class="title listing-title">Mouse Lung Digestion to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 20, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767949495597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="901" data-listing-title-sort="P14 Adoptive Transfer (GP33-specific CD8 T cells)">
-<td>
-<span class="listing-protocol_id">MUS-P14-ACT-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_P14_transfer.html" class="title listing-title">P14 Adoptive Transfer (GP33-specific CD8 T cells)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Jan 9, 2026</span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764598401557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="435" data-listing-title-sort="Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)">
-<td>
-<span class="listing-protocol_id">MUS-PTPRC-GENO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.html" class="title listing-title">Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1766998310440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="767" data-listing-title-sort="Mouse Spleen Dissociation to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-SPL-DIS-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_spleen_dissociation.html" class="title listing-title">Mouse Spleen Dissociation to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766892252" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4717" data-listing-title-sort="In vitro NK Cell Proliferation Assay Using CellTrace Dyes">
-<td>
-<span class="listing-protocol_id">MUS-SPL-NK-PROLIF-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.html" class="title listing-title">In vitro NK Cell Proliferation Assay Using CellTrace Dyes</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763766878209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="904" data-listing-title-sort="Mouse Tumour Digestion to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-TMR-DIG-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_tumour_digestion.html" class="title listing-title">Mouse Tumour Digestion to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 20, 2025</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+<section id="expected-nlc-dynamics-in-the-liver" class="level1">
+<h1>Expected NLC dynamics in the liver</h1>
+<section id="lcmv-we-2-10⁴-pfu-i.v." class="level2">
+<h2 class="anchored" data-anchor-id="lcmv-we-2-10⁴-pfu-i.v.">LCMV-WE (2 × 10⁴ PFU i.v.)</h2>
+<ul>
+<li>NLCs accumulate prominently in the liver.</li>
+<li>Peak frequency occurs at approximately <strong>day 7 post infection</strong>.</li>
+<li>Elevated NLC levels are <strong>maintained through at least day 30 post infection</strong>.</li>
+<li>This model supports <strong>both early and long-term NLC analyses</strong>.</li>
+</ul>
+</section>
+<section id="lcmv-clone-13-2-10⁶-pfu-i.v." class="level2">
+<h2 class="anchored" data-anchor-id="lcmv-clone-13-2-10⁶-pfu-i.v.">LCMV-Clone 13 (2 × 10⁶ PFU i.v.)</h2>
+<ul>
+<li>NLCs peak <strong>early</strong>, around <strong>day 5 post infection</strong>.</li>
+<li>A <strong>sharp contraction occurs by ~day 7</strong>, followed by gradual decline through day 30.</li>
+<li>The effective experimental window for NLC analysis is <strong>day 4–7 post infection</strong>.</li>
+<li>Sampling outside this window will substantially underestimate NLC abundance.</li>
+</ul>
+</section>
+</section>
+<section id="experimental-design-guidance" class="level1">
+<h1>Experimental design guidance</h1>
+<ul>
+<li>For studies requiring <strong>broad or late NLC sampling</strong>, LCMV-WE is preferred.</li>
+<li>For studies focused on <strong>early inflammatory or antigen-rich environments</strong>, Clone 13 is appropriate but requires tight temporal control.</li>
+<li>Direct comparisons between WE and Clone 13 must account for <strong>non-overlapping NLC kinetics</strong>.</li>
+</ul>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>All animal procedures must comply with approved animal licences and institutional regulations.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
+<li>Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.</li>
+<li>Perform virus handling, injections, and tissue processing in accordance with institutional biosafety guidelines.</li>
+<li>Dispose of viral waste and contaminated materials according to local biosafety regulations.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2026-01-09</td>
+<td>Dillon Corvino</td>
+<td>Initial LCMV infection protocol (WE, Clone 13, Docile, Armstrong)</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

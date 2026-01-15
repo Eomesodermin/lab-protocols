@@ -1,0 +1,150 @@
+---
+title: "NLC Adoptive Transfer (Liver-derived NK-like Cells)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-NLC-ACT-001"
+version: "v1.0"
+date: "2026-01-09"
+description: "Adoptive transfer of liver-derived NLCs for downstream phenotyping and functional studies, including planning calculations for donor requirements and standard timelines for LCMV- and BDL+LCMV-based experiments."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes adoptive transfer of **liver-derived NLCs (NK-like cells)** into recipient mice, with emphasis on:
+
+- Expected **donor yield per liver** and planning calculations for donor requirements
+- Target **NLC transfer dose** per recipient
+- Standard experimental timelines for:
+    - LCMV-based experiments with prior P14 transfer
+    - BDL + LCMV-WE experiments
+
+# Critical notes (read before starting)
+
+- NLC recovery varies by infection model, timepoint, operator, and digestion quality; plan donors with buffer.
+- Keep cells cold after final wash and minimize time between final resuspension and injection.
+- Use congenic markers (CD45.1/CD45.2) where possible to track transferred NLCs.
+- Final injection buffer should be sterile PBS unless internal SOP specifies otherwise.
+- All procedures must comply with approved animal licences and biosafety regulations.
+
+# Approximate timing
+
+- Donor liver harvest to single-cell suspension: **~2–2.5 h** (see liver digestion protocol)
+- Enrichment / sort (if used): **~30–180 min** (method-dependent)
+- Counting + preparation for injection: **10–20 min**
+- Transfer (tail vein i.v.): **~1–2 min per mouse**
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Standard yields and transfer dose (for planning)
+
+### Expected donor yield
+
+- **Expected NLC yield per donor liver:** **5,000–8,000 NLCs per mouse liver**
+
+### Target recipient dose
+
+- **Adoptive transfer dose:** **60,000–80,000 NLCs per recipient**
+
+## Donor requirement planning table
+
+Assumptions for planning:
+- Low yield = **5,000 NLCs per donor liver**
+- High yield = **8,000 NLCs per donor liver**
+- Low transfer dose = **60,000 NLCs per recipient**
+- High transfer dose = **80,000 NLCs per recipient**
+- Donor livers required are rounded **up** to whole livers
+
+| Recipient transfer dose | Donor yield per liver | Donor livers needed **per recipient** | Example calculation |
+|---:|---:|---:|---|
+| 60,000 | 8,000 | 8 | 60,000 / 8,000 = 7.5 → **8** |
+| 60,000 | 5,000 | 12 | 60,000 / 5,000 = 12 → **12** |
+| 80,000 | 8,000 | 10 | 80,000 / 8,000 = 10 → **10** |
+| 80,000 | 5,000 | 16 | 80,000 / 5,000 = 16 → **16** |
+
+**Practical note:** For multi-recipient experiments, multiply the “donor livers per recipient” by the number of recipients, then add an additional buffer (recommended) to account for losses during processing and sorting.
+
+## Donor cell preparation (high-level)
+
+1. Harvest donor livers from mice at the defined experimental timepoint.
+2. Prepare single-cell suspensions using the lab-standard liver digestion workflow (perfusion, enzymatic digestion, density enrichment, RBC lysis as needed).
+3. Enrich or sort NLCs according to the experimental design (bulk enrichment vs FACS for high purity).
+4. Count viable cells and prepare the final injection suspension in sterile PBS.
+5. Transfer **60,000–80,000 NLCs per recipient** by i.v. tail vein injection.
+
+### Intravenous adoptive transfer parameters
+
+- **Route:** i.v. (tail vein)
+- **Injection volume:** **200 µL per mouse**
+- **Needle:** insulin syringe, typically **27G–30G**
+- Keep cells on ice and gently mix to maintain a uniform suspension during injection series.
+
+# Experiment timelines
+
+## LCMV experiment timeline (P14 → LCMV → NLC transfer)
+
+Design:
+- P14 transfer on Day 0
+- LCMV infection on Day 1
+- NLC transfer **20 days after infection**
+- Assessment **5 days after NLC transfer**
+
+### Timeline table (absolute and relative)
+
+| Absolute day | Relative description | Event |
+|---:|---|---|
+| **Day 0** | Start | Transfer P14 cells |
+| **Day 1** | **24 hours later** | Infect with LCMV |
+| **Day 21** | **20 days after infection** | Transfer NLCs |
+| **Day 26** | **5 days after NLC transfer** | Harvest / assessment (organs, flow, etc.) |
+
+## BDL + LCMV-WE infection timeline (BDL → LCMV → NLC transfer → harvest)
+
+Design:
+- BDL on Day 0
+- Infect with LCMV-WE approximately 9 days later
+- Transfer NLCs at **4–6 days post infection (dpi)**
+- Harvest organs at **9 dpi**
+
+### Timeline table (absolute and relative)
+
+| Absolute day | Relative description | Event |
+|---:|---|---|
+| **Day 0** | Start | BDL surgery |
+| **Day 9** | **~9 days later** | Infect with LCMV-WE |
+| **Day 13–15** | **4–6 dpi** | Transfer NLCs |
+| **Day 18** | **9 dpi** | Harvest organs for analysis |
+
+**Interpretation of spacing:**
+- If NLC transfer occurs at **4 dpi**, harvest at 9 dpi is **5 days after transfer**.
+- If NLC transfer occurs at **6 dpi**, harvest at 9 dpi is **3 days after transfer**.
+- Choose dpi for transfer based on the desired window between transfer and analysis.
+
+# Typical readouts (minimal set)
+
+- Tracking of transferred NLCs by congenic markers (frequency, phenotype) in liver ± spleen/blood
+- Recipient immune context (key lymphoid/myeloid compartments as relevant to model)
+- Functional assays as needed (e.g., ex vivo stimulation / cytokines, cytotoxicity surrogates)
+- Infection-context readouts (use lab-standard viral load or surrogate readouts where applicable)
+
+# Safety (brief)
+
+- All animal procedures must comply with approved animal licences and institutional regulations.
+- Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+- Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.
+- Perform tissue and cell handling in a biological safety cabinet where appropriate.
+- Dispose of viral waste and contaminated materials according to local biosafety regulations.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|-------------|-------------|-------------|-----------------------------------|
+| v1.0 | 2026-01-09 | Dillon Corvino | Initial NLC adoptive transfer protocol (planning yields, donor requirements, and standard timelines for LCMV and BDL+LCMV designs) |

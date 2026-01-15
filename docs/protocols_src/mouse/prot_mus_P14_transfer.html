@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-09">
+<meta name="description" content="Adoptive transfer of congenically marked naive P14 CD8 T cells for tracking antigen-specific responses in LCMV infection models. Focus on transfer dose, timing, injection preparation, and core readouts.">
 
-<title>Mouse protocols – Protocol Library</title>
+<title>P14 Adoptive Transfer (GP33-specific CD8 T cells) – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-protocol_id','listing-title','listing-version','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -141,7 +112,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/mouse/index.html">Mouse</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -302,7 +275,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-mouse" role="img">
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
 </i> 
  <span class="menu-text">Mouse</span></a>
   </div>
@@ -326,22 +299,54 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#overview-of-standard-experimental-timing" id="toc-overview-of-standard-experimental-timing" class="nav-link" data-scroll-target="#overview-of-standard-experimental-timing">Overview of standard experimental timing</a></li>
+  <li><a href="#prepare-donor-p14-cells-standard-method" id="toc-prepare-donor-p14-cells-standard-method" class="nav-link" data-scroll-target="#prepare-donor-p14-cells-standard-method">Prepare donor P14 cells (standard method)</a></li>
+  <li><a href="#count-cells-and-prepare-for-injection" id="toc-count-cells-and-prepare-for-injection" class="nav-link" data-scroll-target="#count-cells-and-prepare-for-injection">Count cells and prepare for injection</a></li>
+  <li><a href="#intravenous-adoptive-transfer-tail-vein" id="toc-intravenous-adoptive-transfer-tail-vein" class="nav-link" data-scroll-target="#intravenous-adoptive-transfer-tail-vein">Intravenous adoptive transfer (tail vein)</a></li>
+  <li><a href="#transfer-dose-table-literature-ranges-rationale-and-expected-outcome" id="toc-transfer-dose-table-literature-ranges-rationale-and-expected-outcome" class="nav-link" data-scroll-target="#transfer-dose-table-literature-ranges-rationale-and-expected-outcome">Transfer dose table: literature ranges, rationale, and expected outcome</a></li>
+  </ul></li>
+  <li><a href="#recommended-timing-relative-to-infection" id="toc-recommended-timing-relative-to-infection" class="nav-link" data-scroll-target="#recommended-timing-relative-to-infection">Recommended timing relative to infection</a></li>
+  <li><a href="#typical-downstream-readouts-minimal-set" id="toc-typical-downstream-readouts-minimal-set" class="nav-link" data-scroll-target="#typical-downstream-readouts-minimal-set">Typical downstream readouts (minimal set)</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_P14_transfer.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mouse protocols</h1>
+<h1 class="title">P14 Adoptive Transfer (GP33-specific CD8 T cells)</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
+<div>
+  <div class="description">
+    Adoptive transfer of congenically marked naive P14 CD8 T cells for tracking antigen-specific responses in LCMV infection models. Focus on transfer dose, timing, injection preparation, and core readouts.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 9, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -351,287 +356,181 @@ window.Quarto = {
 </header>
 
 
-<p>Mouse processing, tissue digestion, and functional assays.</p>
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-date-sort" data-direction="asc">
-        Date - Oldest
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Protocol
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<table class="quarto-listing-table table">
+<p><strong>Protocol ID:</strong> MUS-P14-ACT-001<br>
+<strong>Version:</strong> v1.0<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes adoptive transfer of <strong>TCR-transgenic P14 (GP33-specific) CD8 T cells</strong> into recipient mice to enable standardized tracking of antigen-specific CD8 T-cell responses during LCMV infection.</p>
+<p>This document focuses on: - Transfer <strong>dose ranges used in the literature</strong> and what they are used for - <strong>Abdullah Lab / Kostas standard</strong> transfer dose and timing - Cell preparation, dilution buffer, and <strong>i.v. injection parameters</strong> - Typical downstream readouts and timepoints</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>Use <strong>congenic markers</strong> (e.g., CD45.1/CD45.2 and/or Thy1.1) to unambiguously identify transferred P14 cells.</li>
+<li>Transfer dose strongly affects biology (competition, precursor frequency effects). Choose dose intentionally and report it explicitly.</li>
+<li>Keep cells <strong>cold after final wash</strong> and minimize time between final resuspension and injection.</li>
+<li>Use <strong>sterile PBS</strong> for final cell dilution unless internal SOP specifies otherwise.</li>
+<li>Tail-vein injections should be performed by trained personnel and follow institutional animal handling requirements.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Donor harvest to single-cell suspension: <strong>15–25 min</strong></li>
+<li>Enrichment / sorting (optional): <strong>20–120 min</strong> (method-dependent)</li>
+<li>Counting + preparation for injection: <strong>10–15 min</strong></li>
+<li>Tail-vein injection: <strong>~1–2 min per mouse</strong></li>
+</ul>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="overview-of-standard-experimental-timing" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-standard-experimental-timing">Overview of standard experimental timing</h2>
+<p><strong>Abdullah Lab standard:</strong> transfer <strong>5,000 naive P14 CD8 T cells</strong> <strong>24 hours before infection</strong> (Day −1), followed by LCMV infection on Day 0.</p>
+<p><strong>Note:</strong> In prior experiments, <strong>Kostas has used both 5,000 and 10,000 P14 cells</strong> depending on experimental context. For standardization within the Abdullah Lab, <strong>5,000 transferred P14 cells is the default</strong> unless explicitly stated otherwise.</p>
+<p>This aligns with commonly used “physiologic precursor” transfers (low thousands to ten-thousands) in the modern LCMV literature.</p>
+</section>
+<section id="prepare-donor-p14-cells-standard-method" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-donor-p14-cells-standard-method">Prepare donor P14 cells (standard method)</h2>
+<ol type="1">
+<li>Harvest spleen from naive P14 donor mouse/mice.</li>
+<li>Prepare a single-cell suspension by gentle mechanical dissociation through a 70 µm strainer into cold buffer.</li>
+<li>Perform RBC lysis if required according to internal SOP, followed by washing.</li>
+<li>Enrich <strong>naive CD8 T cells by magnetic negative selection</strong>.</li>
+<li>Count viable cells using an approved counting method.</li>
+<li>Dilute cells in sterile PBS and <strong>inject 5,000 naive CD8 T cells per recipient mouse</strong>.</li>
+</ol>
+<p>This magnetic enrichment–based approach is the <strong>Abdullah Lab standard</strong> for generating naive P14 donor cells and avoids additional activation or stress associated with FACS sorting.</p>
+</section>
+<section id="count-cells-and-prepare-for-injection" class="level2">
+<h2 class="anchored" data-anchor-id="count-cells-and-prepare-for-injection">Count cells and prepare for injection</h2>
+<ol type="1">
+<li>Count cells using hemocytometer or automated counter, using a viability dye method as per internal SOP.</li>
+<li>Dilute cells in <strong>sterile PBS</strong> to the target concentration.</li>
+</ol>
+<p><strong>Common injection buffer in the literature:</strong> sterile PBS.</p>
+</section>
+<section id="intravenous-adoptive-transfer-tail-vein" class="level2">
+<h2 class="anchored" data-anchor-id="intravenous-adoptive-transfer-tail-vein">Intravenous adoptive transfer (tail vein)</h2>
+<ul>
+<li><strong>Route:</strong> Intravenous (tail vein)</li>
+<li><strong>Injection volume:</strong> <strong>200 µL per mouse</strong> is widely used for P14 transfers.</li>
+<li><strong>Needle:</strong> insulin syringe, typically <strong>27G–30G</strong> for tail vein i.v. injections (select per operator preference and animal size).</li>
+<li>Keep cells on ice and mix gently to maintain a uniform suspension during the injection series.</li>
+</ul>
+</section>
+<section id="transfer-dose-table-literature-ranges-rationale-and-expected-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="transfer-dose-table-literature-ranges-rationale-and-expected-outcome">Transfer dose table: literature ranges, rationale, and expected outcome</h2>
+<p>Choose dose based on whether you want a <strong>near-physiologic precursor frequency</strong> vs <strong>high precursor frequency</strong> for increased signal.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Protocol ID
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Protocol</a>
-</th>
-
-<th>
-Version
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-
+<tr class="header">
+<th style="text-align: right;">Transfer dose (naive P14)</th>
+<th>Typical use-case</th>
+<th>Expected outcome / considerations</th>
+<th>Example sources</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1764149077690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="851" data-listing-title-sort="Mouse Blood Processing to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-BLD-PRC-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_blood_processing.html" class="title listing-title">Mouse Blood Processing to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><strong>~1,000</strong></td>
+<td>Very low precursor frequency; minimizes perturbation</td>
+<td>Closest to “endogenous-like” frequency; may reduce detection sensitivity in some tissues/timepoints</td>
+<td>1,000 P14 used in Armstrong experiments</td>
 </tr>
-
-<tr data-index="1" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1764149076025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077" data-listing-title-sort="Mouse Bone Marrow Isolation to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-BM-ISO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_bone_marrow_isolation.html" class="title listing-title">Mouse Bone Marrow Isolation to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
+<tr class="even">
+<td style="text-align: right;"><strong>1,000–10,000</strong></td>
+<td>Standard tracking in many modern LCMV studies</td>
+<td>Good balance: trackable response with limited precursor-frequency artefacts; comparable across studies when infection model is matched</td>
+<td>1,000–10,000 in 200 µL PBS (tail vein) ; 2,000–10,000 in primary transfers</td>
 </tr>
-
-<tr data-index="2" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767947514726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="863" data-listing-title-sort="LCMV Infection Models (WE, Clone 13, Docile, Armstrong)">
-<td>
-<span class="listing-protocol_id">MUS-INF-LCMV-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_infection.html" class="title listing-title">LCMV Infection Models (WE, Clone 13, Docile, Armstrong)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Jan 9, 2026</span>
-</td>
-
+<tr class="odd">
+<td style="text-align: right;"><strong>5,000</strong></td>
+<td><strong>Abdullah Lab standard</strong></td>
+<td>Default for internal consistency; supports robust tracking without extreme precursor-frequency effects</td>
+<td>Internal standard; consistent with modern literature low-dose range</td>
 </tr>
-
-<tr data-index="3" data-listing-date-sort="1764630000000" data-listing-file-modified-sort="1764666660054" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3153" data-listing-title-sort="LCMV Focus-Forming Assay (Immunofocus)">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-FFA-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_focus_forming_assay.html" class="title listing-title">LCMV Focus-Forming Assay (Immunofocus)</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Dec 2, 2025</span>
-</td>
-
+<tr class="even">
+<td style="text-align: right;"><strong>~50,000 (5 × 10^4)</strong></td>
+<td>Higher precursor frequency to boost signal</td>
+<td>Increased detectability; higher chance of competition/altered differentiation; must be justified when comparing to “low-dose” studies</td>
+<td>Example: 5 × 10^4 used one day before acute LCMV in some contexts ; also shown in a recent Nature Immunology schematic</td>
 </tr>
-
-<tr data-index="4" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667036660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1444" data-listing-title-sort="LCMV Plaque Assay on Vero Cells">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-PLA-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_plaque_assay_vero.html" class="title listing-title">LCMV Plaque Assay on Vero Cells</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
+<tr class="odd">
+<td style="text-align: right;"><strong>~500,000 (5 × 10^5)</strong></td>
+<td>High-input experimental designs (specialized)</td>
+<td>Strong perturbation potential; not directly comparable to low-dose physiology; used for specific mechanistic questions</td>
+<td>Example: 5 × 10^5 total P14 transferred in a SciImmunol study</td>
 </tr>
-
-<tr data-index="5" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667031567" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2343" data-listing-title-sort="LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-PROD-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_multi_strain_production.html" class="title listing-title">LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667017534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1577" data-listing-title-sort="LCMV Viral Load Quantification by GP-Based SYBR Green qPCR">
-<td>
-<span class="listing-protocol_id">MUS-LCMV-QPCR-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lcmv_gp_qpcr_viral_load.html" class="title listing-title">LCMV Viral Load Quantification by GP-Based SYBR Green qPCR</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1767000958357" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3997" data-listing-title-sort="Mouse Liver Digestion to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-LIV-DIG-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_liver_digestion.html" class="title listing-title">Mouse Liver Digestion to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1764147951077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="854" data-listing-title-sort="Mouse Lung Digestion to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-LNG-DIG-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_lung_digestion.html" class="title listing-title">Mouse Lung Digestion to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 20, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767949495597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="901" data-listing-title-sort="P14 Adoptive Transfer (GP33-specific CD8 T cells)">
-<td>
-<span class="listing-protocol_id">MUS-P14-ACT-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_P14_transfer.html" class="title listing-title">P14 Adoptive Transfer (GP33-specific CD8 T cells)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Jan 9, 2026</span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764598401557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="435" data-listing-title-sort="Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)">
-<td>
-<span class="listing-protocol_id">MUS-PTPRC-GENO-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.html" class="title listing-title">Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Dec 1, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1766998310440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="767" data-listing-title-sort="Mouse Spleen Dissociation to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-SPL-DIS-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_spleen_dissociation.html" class="title listing-title">Mouse Spleen Dissociation to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.1</span>
-</td>
-<td>
-<span class="listing-date">Nov 26, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766892252" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4717" data-listing-title-sort="In vitro NK Cell Proliferation Assay Using CellTrace Dyes">
-<td>
-<span class="listing-protocol_id">MUS-SPL-NK-PROLIF-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.html" class="title listing-title">In vitro NK Cell Proliferation Assay Using CellTrace Dyes</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 21, 2025</span>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763766878209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="904" data-listing-title-sort="Mouse Tumour Digestion to Single-Cell Suspension">
-<td>
-<span class="listing-protocol_id">MUS-TMR-DIG-001</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_mus_tumour_digestion.html" class="title listing-title">Mouse Tumour Digestion to Single-Cell Suspension</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">Nov 20, 2025</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</section>
+</section>
+<section id="recommended-timing-relative-to-infection" class="level1">
+<h1>Recommended timing relative to infection</h1>
+<p><strong>Default (Abdullah Lab / Kostas):</strong> - <strong>Day −1:</strong> P14 transfer (5,000–10,000 cells, i.v.) - <strong>Day 0:</strong> LCMV infection</p>
+<p><strong>Common acute infection readouts:</strong> - <strong>Day 7–8:</strong> peak effector response (Armstrong-style kinetics) - <strong>Day 15:</strong> contraction phase - <strong>Day 30+:</strong> memory timepoints</p>
+<p><strong>Common chronic infection readouts (Clone 13 / Docile-type kinetics):</strong> - <strong>Day 8:</strong> early exhaustion trajectory / effector peak context-dependent - <strong>Day 15–21:</strong> set point / Tex compartment structure - <strong>Day 30+:</strong> longer-term exhaustion / maintenance</p>
+</section>
+<section id="typical-downstream-readouts-minimal-set" class="level1">
+<h1>Typical downstream readouts (minimal set)</h1>
+<ul>
+<li>Flow cytometry tracking of P14 frequency and phenotype (blood, spleen, LN, liver as needed)</li>
+<li>Effector function: peptide restimulation + ICS (IFNg, TNFa, IL-2) as per lab practice</li>
+<li>Differentiation states relevant to model (e.g., progenitor-like vs terminal exhaustion markers in chronic settings)</li>
+<li>Viral load readouts (if required; use lab-standard assay)</li>
+</ul>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>All animal procedures must comply with approved animal licences and institutional regulations.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
+<li>Handle sharps (needles) with care and dispose of immediately in approved sharps containers.</li>
+<li>Treat animal tissues and cell suspensions as potentially biohazardous; dispose of waste according to local biosafety guidelines.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2026-01-09</td>
+<td>Dillon Corvino</td>
+<td>Initial P14 adoptive transfer protocol (dose/timing-focused) with Abdullah/Kostas standard and literature dose range table</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

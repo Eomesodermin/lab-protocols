@@ -1,0 +1,128 @@
+---
+title: "P14 Adoptive Transfer (GP33-specific CD8 T cells)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-P14-ACT-001"
+version: "v1.0"
+date: "2026-01-09"
+description: "Adoptive transfer of congenically marked naive P14 CD8 T cells for tracking antigen-specific responses in LCMV infection models. Focus on transfer dose, timing, injection preparation, and core readouts."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes adoptive transfer of **TCR-transgenic P14 (GP33-specific) CD8 T cells** into recipient mice to enable standardized tracking of antigen-specific CD8 T-cell responses during LCMV infection.
+
+This document focuses on:
+- Transfer **dose ranges used in the literature** and what they are used for
+- **Abdullah Lab / Kostas standard** transfer dose and timing
+- Cell preparation, dilution buffer, and **i.v. injection parameters**
+- Typical downstream readouts and timepoints
+
+# Critical notes (read before starting)
+
+- Use **congenic markers** (e.g., CD45.1/CD45.2 and/or Thy1.1) to unambiguously identify transferred P14 cells.
+- Transfer dose strongly affects biology (competition, precursor frequency effects). Choose dose intentionally and report it explicitly.
+- Keep cells **cold after final wash** and minimize time between final resuspension and injection.
+- Use **sterile PBS** for final cell dilution unless internal SOP specifies otherwise.
+- Tail-vein injections should be performed by trained personnel and follow institutional animal handling requirements.
+
+# Approximate timing
+
+- Donor harvest to single-cell suspension: **15–25 min**
+- Enrichment / sorting (optional): **20–120 min** (method-dependent)
+- Counting + preparation for injection: **10–15 min**
+- Tail-vein injection: **~1–2 min per mouse**
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Overview of standard experimental timing
+
+**Abdullah Lab standard:** transfer **5,000 naive P14 CD8 T cells** **24 hours before infection** (Day −1), followed by LCMV infection on Day 0.
+
+**Note:** In prior experiments, **Kostas has used both 5,000 and 10,000 P14 cells** depending on experimental context. For standardization within the Abdullah Lab, **5,000 transferred P14 cells is the default** unless explicitly stated otherwise.
+
+
+This aligns with commonly used “physiologic precursor” transfers (low thousands to ten-thousands) in the modern LCMV literature. 
+
+## Prepare donor P14 cells (standard method)
+
+1. Harvest spleen from naive P14 donor mouse/mice.
+2. Prepare a single-cell suspension by gentle mechanical dissociation through a 70 µm strainer into cold buffer.
+3. Perform RBC lysis if required according to internal SOP, followed by washing.
+4. Enrich **naive CD8 T cells by magnetic negative selection**.
+5. Count viable cells using an approved counting method.
+6. Dilute cells in sterile PBS and **inject 5,000 naive CD8 T cells per recipient mouse**.
+
+This magnetic enrichment–based approach is the **Abdullah Lab standard** for generating naive P14 donor cells and avoids additional activation or stress associated with FACS sorting.
+
+
+## Count cells and prepare for injection
+
+1. Count cells using hemocytometer or automated counter, using a viability dye method as per internal SOP.
+2. Dilute cells in **sterile PBS** to the target concentration.
+
+**Common injection buffer in the literature:** sterile PBS.
+
+## Intravenous adoptive transfer (tail vein)
+
+- **Route:** Intravenous (tail vein)
+- **Injection volume:** **200 µL per mouse** is widely used for P14 transfers. 
+- **Needle:** insulin syringe, typically **27G–30G** for tail vein i.v. injections (select per operator preference and animal size).
+- Keep cells on ice and mix gently to maintain a uniform suspension during the injection series.
+
+## Transfer dose table: literature ranges, rationale, and expected outcome
+
+Choose dose based on whether you want a **near-physiologic precursor frequency** vs **high precursor frequency** for increased signal.
+
+| Transfer dose (naive P14) | Typical use-case | Expected outcome / considerations | Example sources |
+|---:|---|---|---|
+| **~1,000** | Very low precursor frequency; minimizes perturbation | Closest to “endogenous-like” frequency; may reduce detection sensitivity in some tissues/timepoints | 1,000 P14 used in Armstrong experiments  |
+| **1,000–10,000** | Standard tracking in many modern LCMV studies | Good balance: trackable response with limited precursor-frequency artefacts; comparable across studies when infection model is matched | 1,000–10,000 in 200 µL PBS (tail vein) ; 2,000–10,000 in primary transfers  |
+| **5,000** | **Abdullah Lab standard** | Default for internal consistency; supports robust tracking without extreme precursor-frequency effects | Internal standard; consistent with modern literature low-dose range  |
+| **~50,000 (5 × 10^4)** | Higher precursor frequency to boost signal | Increased detectability; higher chance of competition/altered differentiation; must be justified when comparing to “low-dose” studies | Example: 5 × 10^4 used one day before acute LCMV in some contexts ; also shown in a recent Nature Immunology schematic  |
+| **~500,000 (5 × 10^5)** | High-input experimental designs (specialized) | Strong perturbation potential; not directly comparable to low-dose physiology; used for specific mechanistic questions | Example: 5 × 10^5 total P14 transferred in a SciImmunol study  |
+
+# Recommended timing relative to infection
+
+**Default (Abdullah Lab / Kostas):**
+- **Day −1:** P14 transfer (5,000 cells, i.v.)
+- **Day 0:** LCMV infection
+
+**Common acute infection readouts:**
+- **Day 7–8:** peak effector response (Armstrong-style kinetics)
+- **Day 15:** contraction phase
+- **Day 30+:** memory timepoints
+
+**Common chronic infection readouts (Clone 13 / Docile-type kinetics):**
+- **Day 8:** early exhaustion trajectory / effector peak context-dependent
+- **Day 15–21:** set point / Tex compartment structure
+- **Day 30+:** longer-term exhaustion / maintenance
+
+# Typical downstream readouts (minimal set)
+
+- Flow cytometry tracking of P14 frequency and phenotype (blood, spleen, LN, liver as needed)
+- Effector function: peptide restimulation + ICS (IFNg, TNFa, IL-2) as per lab practice
+- Differentiation states relevant to model (e.g., progenitor-like vs terminal exhaustion markers in chronic settings)
+- Viral load readouts (if required; use lab-standard assay)
+
+# Safety (brief)
+
+- All animal procedures must comply with approved animal licences and institutional regulations.
+- Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+- Handle sharps (needles) with care and dispose of immediately in approved sharps containers.
+- Treat animal tissues and cell suspensions as potentially biohazardous; dispose of waste according to local biosafety guidelines.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|-------------|-------------|-------------|-----------------------------------|
+| v1.0 | 2026-01-09 | Dillon Corvino | Initial P14 adoptive transfer protocol (dose/timing-focused) with Abdullah/Kostas standard and literature dose range table |

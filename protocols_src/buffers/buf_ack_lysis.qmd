@@ -2,8 +2,8 @@
 title: "ACK Red Blood Cell Lysis Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "BUF-ACK-LYSIS-001"
-version: "v1.0"
-date: "2025-11-21"
+version: "v1.1"
+date: "2026-01-09"
 description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions."
 ---
 
@@ -13,71 +13,71 @@ description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for se
 
 # Purpose
 
-ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g. liver digests, spleen, PBMC preparations). The reagent maintains leukocyte integrity while efficiently removing red blood cells during brief room-temperature incubation.
+ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g. liver digests, spleen, PBMC preparations). Under brief incubation, the buffer efficiently removes red blood cells while preserving leukocyte viability and integrity.
 
 # Working buffer composition
 
-| Component                    | Final concentration  | Notes                                      |
-|-----------------------------|----------------------|--------------------------------------------|
-| Ammonium chloride (NH₄Cl)   | 150 mM               | Primary erythrocyte-lysing component       |
-| Potassium bicarbonate (KHCO₃)| 10 mM               | Buffering capacity                          |
-| Disodium EDTA (Na₂EDTA)     | 0.1 mM               | Chelates divalent cations; prevents clumping |
-| Sterile distilled water     | —                    | Solvent                                    |
+| Component                     | Final concentration | Notes                                                    |
+|------------------------------|---------------------|----------------------------------------------------------|
+| Ammonium chloride (NH₄Cl)    |  X mM             | Primary erythrocyte-lysing component                     |
+| Potassium bicarbonate (KHCO₃)| X mM               | Buffering capacity                                      |
+| EDTA       | X mM              | Chelates divalent cations; reduces cell clumping         |
+| Sterile distilled water      | —                   | Solvent                                                  |
+| pH                            | 7.2                 | Adjusted after dissolution                               |
 
 ::: callout-note
-This composition matches the standard formulation used in immunology workflows (commonly referred to as “ACK lysis buffer” or “RBC lysis buffer”).
+This formulation reflects the standard ACK buffer used in immunology workflows, with explicit pH adjustment to ensure reproducibility across batches.
 :::
 
 # Preparation
 
-## Reagent stocks
+## Reagents
 
-| Reagent               | Stock concentration | Notes                                  |
-|-----------------------|---------------------|----------------------------------------|
-| NH₄Cl                 | Powder              | Prepare fresh solution                 |
-| KHCO₃                 | Powder              | CO₂-reactive; store desiccated         |
-| Na₂EDTA (disodium)    | Powder              | Use ultrapure cell-culture grade       |
-| Sterile distilled water | —                 | For dissolution                        |
+| Reagent                | Form   | Notes                                      |
+|------------------------|--------|--------------------------------------------|
+| NH₄Cl                  | Powder | Analytical or cell-culture grade            |
+| KHCO₃                  | Powder | Hygroscopic; store tightly sealed           |
+| EDTA     | Powder | Cell-culture grade                          |
+| Distilled water        | —      | Sterile (bidest)                            |
+| HCl                    | —      | For pH adjustment                           |
 
 ## Preparation of **1 L ACK lysis buffer**
 
-1. Add the following to a 1 L glass bottle or beaker:
-   - **8.02 g NH₄Cl** (150 mM)  
-   - **1.00 g KHCO₃** (10 mM)  
-   - **0.037 g Na₂EDTA** (0.1 mM)
-2. Add ~800 mL sterile distilled water.
-3. Stir or gently swirl until fully dissolved.
-4. Adjust the final volume to **1 L** with sterile distilled water.
-5. Filter-sterilize using a **0.22 µm PES or PVDF filter**.
-6. Aliquot if desired.
+1. Use a clean **1 L glass bottle** or beaker.
+2. Add the following dry reagents:
+   - **8.26 g NH₄Cl**
+   - **1.00 g KHCO₃**
+   - **0.037 g (37 mg) EDTA**
+3. Add **1 L sterile distilled (bidest) water**.
+4. Mix thoroughly by stirring or gentle swirling until all components are fully dissolved.
+5. Measure pH and **adjust to pH 7.2** using dilute HCl.
+6. **Sterile-filter** the solution using a **0.22 µm vacuum filter unit**.
+7. Aliquot if desired under sterile conditions.
 
-### pH adjustment  
-- Typically **no pH adjustment is required**; the solution should be at pH ~7.2–7.4.  
-- If necessary, adjust minimally with sterile HCl or NaOH.
+# Labelling
+
+Clearly label each bottle or aliquot with:
+- Buffer name: **ACK Lysis Buffer**
+- Date of preparation
+- Preparer initials
+- **Sterile**
+- **pH adjusted to 7.2**
 
 # Storage and stability
 
-- Store at **4 °C** for up to **3 months**.  
-- Aliquots stored sterilely remain stable for common immunology workflows.  
-- **Do not freeze**; precipitation and performance changes may occur.
+- Store at **4 °C**.
+- Stable for up to **3 months** when sterile.
+- **Do not freeze**, as freezing may alter buffer performance.
 
-# Reagent details
+# Safety and handling
 
-| Reagent                       | Supplier | Cat. # | Notes                                  |
-|------------------------------|----------|--------|----------------------------------------|
-| Ammonium chloride            | Various  | —      | Analytical or cell-culture grade       |
-| Potassium bicarbonate        | Various  | —      | Store tightly sealed                   |
-| Disodium EDTA (Na₂EDTA)      | Various  | —      | Chelates divalent cations              |
-| Sterile distilled water      | —        | —      | Solvent                                |
-
-# Safety
-
-- Wear gloves and eye protection; NH₄Cl is an irritant.  
-- Dispose of unused buffer and erythrocyte-containing waste as biological/chemical waste.  
-- Prepare and filter-sterilize the buffer in a biosafety cabinet when used for primary tissue processing.
+- Wear gloves and eye protection; ammonium chloride is an irritant.
+- Dispose of unused buffer and erythrocyte-containing waste according to biological/chemical waste regulations.
+- For use in primary tissue processing, preparation and sterile filtration should be performed using appropriate aseptic technique.
 
 # Version history
 
-| Version | Date       | Author         | Changes                                  |
-|--------|------------|----------------|-------------------------------------------|
-| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto buffer document for ACK lysis buffer. |
+| Version | Date       | Author         | Changes                                                         |
+|--------|------------|----------------|-----------------------------------------------------------------|
+| v1.1   | 2026-01-09 | Dillon Corvino | Corrected concentrations, explicit pH adjustment, clarified sterility and labelling requirements |
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto buffer document for ACK lysis buffer             |

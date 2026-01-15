@@ -1,0 +1,135 @@
+---
+title: "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-INF-LCMV-001"
+version: "v1.0"
+date: "2026-01-09"
+description: "Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes standardized mouse infection procedures using lymphocytic choriomeningitis virus (LCMV), with primary emphasis on **LCMV-WE** and **LCMV-Clone 13**, and additional reference to **LCMV-Docile** and **LCMV-Armstrong**.
+
+The protocol defines virus handling, dilution, injection parameters, infection doses, and sampling windows, with specific annotation of **liver NLC (NK-like cell) dynamics** to guide optimal experimental design.
+
+# Critical notes (read before starting)
+
+-   All LCMV work must be performed under **approved animal and biosafety protocols**.
+-   Virus stocks must be **titered, aliquoted, and freeze–thaw limited**.
+-   Infection dose and route strongly influence antigen load and immune kinetics.
+-   **NLC dynamics differ markedly between WE and Clone 13**, requiring strain-specific sampling strategies.
+-   Late timepoints (> day 7) in Clone 13 infection are **suboptimal for NLC-focused analyses**.
+
+# Approximate timing
+
+- Virus thawing and dilution: **5–10 min**
+- Intravenous injection: **~1–2 min per mouse**
+- Acute infection window: **days 0–15**
+- Chronic infection window: **days 0–30+**
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Procedure
+
+## Virus stock handling and preparation
+
+LCMV-WE, LCMV-Clone 13, LCMV-Docile, and LCMV-Armstrong virus stocks are propagated and titrated as previously described in the literature and internal Abdullah Lab SOPs.
+
+- Virus stocks are stored at **−80 °C** in single-use aliquots.
+- Repeated freeze–thaw cycles must be avoided.
+
+### Thawing
+
+- Virus aliquots are **rapidly thawed immediately before use**.
+- Thawing is performed in a **37 °C water bath** until the aliquot is just thawed.
+- Aliquots are removed promptly from the water bath and placed **immediately on ice**.
+- Virus is kept on ice during dilution and injection.
+- Repeated freeze–thaw cycles must be avoided.
+
+### Dilution buffer
+
+- Virus stocks are diluted in **sterile, endotoxin-free PBS**.
+- No serum or supplements are added unless explicitly required by internal SOP.
+- Dilutions are prepared **fresh on the day of infection**.
+
+## Infection doses and routes
+
+Mice are infected **intravenously (i.v.)** via the lateral tail vein using the following Abdullah Lab standard doses:
+
+- **LCMV-Clone 13:** **2 × 10⁶ plaque-forming units (PFU)**
+- **LCMV-WE:** **2 × 10⁴ plaque-forming units (PFU)**
+
+Other strains (Docile, Armstrong) are included for reference and comparative studies as outlined below.
+
+### Injection parameters
+
+- **Injection volume:** **200 µL per mouse**
+- **Syringe:** insulin syringe
+- **Needle gauge:** **27G–30G**
+- Injections are performed slowly to ensure proper intravenous delivery.
+- Successful i.v. injection is confirmed by lack of resistance and absence of subcutaneous bleb formation.
+
+## Post-infection monitoring
+
+- Body weight and general health are monitored daily during the first week post infection.
+- Monitoring frequency is adjusted according to infection severity and institutional guidelines.
+- Humane endpoints are applied as defined in approved protocols.
+
+# Infection dose ranges, rationale, and expected outcomes
+
+| Virus strain | Dose range (PFU, literature) | Rationale for low vs high dose | Expected outcome | Abdullah Lab standard |
+|-------------|-----------------------------|-------------------------------|------------------|-----------------------|
+| **Armstrong** | ~1 × 10⁴ – 2 × 10⁵ | Low–moderate dose to induce acute infection with rapid immune control | Acute infection; strong effector CD8 response; viral clearance and memory formation | Not standard |
+| **WE** | ~1 × 10² – 1 × 10³ | Minimal acute infection | Rapid clearance; limited systemic and hepatic involvement | – |
+|  | **2 × 10⁴** | Intermediate dose to ensure robust systemic infection without chronic persistence | Strong liver immune response; sustained NLC accumulation | **Yes** |
+|  | ~1 × 10⁶ | High-dose systemic challenge used in comparative studies | Severe acute disease; heightened inflammation | No |
+| **Clone 13** | **2 × 10⁶** | High antigen load to enforce chronic infection and exhaustion | Persistent infection; CD8 exhaustion program | **Yes** |
+| **Docile** | ~1 × 10⁵ | Moderate dose allowing partial control | Semi-chronic infection; intermediate exhaustion | – |
+|  | **2 × 10⁶** | High-dose infection to drive persistent antigen exposure | Chronic infection; exhaustion-prone immune response | **Yes** |
+
+# Expected NLC dynamics in the liver
+
+## LCMV-WE (2 × 10⁴ PFU i.v.)
+
+- NLCs accumulate prominently in the liver.
+- Peak frequency occurs at approximately **day 7 post infection**.
+- Elevated NLC levels are **maintained through at least day 30 post infection**.
+- This model supports **both early and long-term NLC analyses**.
+
+## LCMV-Clone 13 (2 × 10⁶ PFU i.v.)
+
+- NLCs peak **early**, around **day 5 post infection**.
+- A **sharp contraction occurs by ~day 7**, followed by gradual decline through day 30.
+- The effective experimental window for NLC analysis is **day 4–7 post infection**.
+- Sampling outside this window will substantially underestimate NLC abundance.
+
+# Experimental design guidance
+
+- For studies requiring **broad or late NLC sampling**, LCMV-WE is preferred.
+- For studies focused on **early inflammatory or antigen-rich environments**, Clone 13 is appropriate but requires tight temporal control.
+- Direct comparisons between WE and Clone 13 must account for **non-overlapping NLC kinetics**.
+
+# Safety (brief)
+
+- All animal procedures must comply with approved animal licences and institutional regulations.
+- Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+- Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.
+- Perform virus handling, injections, and tissue processing in accordance with institutional biosafety guidelines.
+- Dispose of viral waste and contaminated materials according to local biosafety regulations.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|-------------|-------------|-------------|-----------------------------------|
+| v1.0 | 2026-01-09 | Dillon Corvino | Initial LCMV infection protocol (WE, Clone 13, Docile, Armstrong) |
+
+

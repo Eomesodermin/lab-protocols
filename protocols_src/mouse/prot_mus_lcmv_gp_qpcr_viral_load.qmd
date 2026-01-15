@@ -7,27 +7,26 @@ date: "2025-12-01"
 description: "qPCR viral titre"
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}  
-**Version:** {{< meta version >}}  
-**Author:** Dillon Corvino  
+**Protocol ID:** {{< meta protocol_id >}}\
+**Version:** {{< meta version >}}\
+**Author:** Dillon Corvino
 
 # Purpose
 
 This protocol describes a quantitative PCR (qPCR) assay for measuring lymphocytic choriomeningitis virus (LCMV) RNA in mouse serum and tissues, adapted from McCausland and Crotty, J Virol Methods 2008. The assay uses gene-specific reverse transcription with SuperScript III and SYBR Green qPCR targeting the GP segment, which provides improved specificity and sensitivity compared with NP-based assays.
 
-:::callout-warning
+::: callout-warning
 ## LCMV biosafety and handling
 
 LCMV is a zoonotic arenavirus capable of causing severe disease in humans, including meningitis and congenital infection. Work with live LCMV must:
 
-- Be conducted under the appropriate institutional **biosafety level (typically BSL-2 with additional local conditions)** and approved animal and biosafety protocols.
-- Use **dedicated infectious CO₂ incubators** and clearly labelled containment for all cultures and waste.
-- Include suitable **PPE** (lab coat/gown, gloves, eye protection as appropriate) and measures to avoid sharps injuries, aerosol formation, and spills.
-- Exclude or take special precautions for **pregnant or immunocompromised personnel** according to institutional policies.
+-   Be conducted under the appropriate institutional **biosafety level (typically BSL-2 with additional local conditions)** and approved animal and biosafety protocols.
+-   Use **dedicated infectious CO₂ incubators** and clearly labelled containment for all cultures and waste.
+-   Include suitable **PPE** (lab coat/gown, gloves, eye protection as appropriate) and measures to avoid sharps injuries, aerosol formation, and spills.
+-   Exclude or take special precautions for **pregnant or immunocompromised personnel** according to institutional policies.
 
 All waste (liquid and solid) must be inactivated according to local regulations (e.g. chemical disinfection and/or autoclaving) **before** disposal.
 :::
-
 
 {{< pagebreak >}}
 
@@ -35,46 +34,45 @@ All waste (liquid and solid) must be inactivated according to local regulations 
 
 {{< pagebreak >}}
 
-
 # Principle
 
-- Total RNA is isolated from serum or homogenized tissue.
-- cDNA is generated using SuperScript III and a gene-specific primer (GP-R).
-- qPCR is performed with SYBR Green detection using GP-specific primers (GP-F and GP-R).
-- Absolute viral RNA copy numbers are calculated from a plasmid standard curve containing the LCMV GP gene (e.g. pSG5-GP).
+-   Total RNA is isolated from serum or homogenized tissue.
+-   cDNA is generated using SuperScript III and a gene-specific primer (GP-R).
+-   qPCR is performed with SYBR Green detection using GP-specific primers (GP-F and GP-R).
+-   Absolute viral RNA copy numbers are calculated from a plasmid standard curve containing the LCMV GP gene (e.g. pSG5-GP).
 
 # Sample Types
 
-- Serum (typically 50 uL per sample).
-- Tissue homogenates:
-  - Spleen: 10 mg
-  - Liver: 50 mg
-  - Kidney: 50 mg
-  - Brain: 50 mg
-  - Lymph node: 5 mg
+-   Serum (typically 50 uL per sample).
+-   Tissue homogenates:
+    -   Spleen: 10 mg
+    -   Liver: 50 mg
+    -   Kidney: 50 mg
+    -   Brain: 50 mg
+    -   Lymph node: 5 mg
 
 All values are taken from the Methods section of McCausland & Crotty. Samples were snap-frozen on dry ice at harvest and stored at -80 C until RNA extraction.
 
 # Reagents and Consumables
 
-- LCMV-infected mouse tissues or serum.
-- RNAqueous Mini Kit (Ambion) or equivalent silica spin-column RNA kit.
-- SuperScript III Reverse Transcriptase (Invitrogen).
-- iTaq SYBR Green Supermix with ROX (Bio-Rad) or similar SYBR Green master mix with ROX passive reference.
-- Gene-specific primers (see below).
-- Plasmid standard containing the LCMV GP gene (e.g. pSG5-GP).
-- Nuclease-free water.
-- 1.5 mL microcentrifuge tubes.
-- 0.2 mL PCR tubes or 96-well qPCR plates with optical seals.
+-   LCMV-infected mouse tissues or serum.
+-   RNAqueous Mini Kit (Ambion) or equivalent silica spin-column RNA kit.
+-   SuperScript III Reverse Transcriptase (Invitrogen).
+-   iTaq SYBR Green Supermix with ROX (Bio-Rad) or similar SYBR Green master mix with ROX passive reference.
+-   Gene-specific primers (see below).
+-   Plasmid standard containing the LCMV GP gene (e.g. pSG5-GP).
+-   Nuclease-free water.
+-   1.5 mL microcentrifuge tubes.
+-   0.2 mL PCR tubes or 96-well qPCR plates with optical seals.
 
 # Equipment
 
-- Tissue homogenizer (e.g. Tissuemiser or similar rotor-stator homogenizer).
-- Microcentrifuge (refrigerated).
-- Class II biosafety cabinet or laminar flow hood.
-- qPCR instrument capable of SYBR Green detection (e.g. ABI GeneAmp 5700 or equivalent).
-- Standard laboratory pipettes and filtered tips.
-- -80 C freezer.
+-   Tissue homogenizer (e.g. Tissuemiser or similar rotor-stator homogenizer).
+-   Microcentrifuge (refrigerated).
+-   Class II biosafety cabinet or laminar flow hood.
+-   qPCR instrument capable of SYBR Green detection (e.g. ABI GeneAmp 5700 or equivalent).
+-   Standard laboratory pipettes and filtered tips.
+-   -80 C freezer.
 
 # Primers
 
@@ -82,173 +80,164 @@ All primer sequences are taken from the "LCMV viral load quantitative PCR (QPCR)
 
 Recommended **GP primers (optimized set)**:
 
-- GP-F (S 877–901):  
-  `CATTCACCTGGACTTTGTCAGACTC`
+-   GP-F (S 877–901):\
+    `CATTCACCTGGACTTTGTCAGACTC`
 
-- GP-R (S 970–991):  
-  `GCAACTGCTGTGTTCCCGAAAC`
+-   GP-R (S 970–991):\
+    `GCAACTGCTGTGTTCCCGAAAC`
 
 Alternative NP-based primer sets (historical, not recommended for new assays):
 
-- NP2-F (S 2601–2623):  
-  `CAGAAATGTTGATGCTGGACTGC`
+-   NP2-F (S 2601–2623):\
+    `CAGAAATGTTGATGCTGGACTGC`
 
-- NP2-R (S 2697–2720):  
-  `CAGACCTTGGCTTGCTTTACACAG`
+-   NP2-R (S 2697–2720):\
+    `CAGACCTTGGCTTGCTTTACACAG`
 
 Use GP-F and GP-R for all new experiments unless you have a specific reason to reproduce NP-based data.
 
 # Primer Stocks
 
-- Prepare 100 uM stocks of GP-F and GP-R in nuclease-free water.
-- Prepare 10 uM working stocks for routine use.
+-   Prepare 100 uM stocks of GP-F and GP-R in nuclease-free water.
+-   Prepare 10 uM working stocks for routine use.
 
 # Sample Collection
 
-1. **Serum**
-   - Collect whole blood via retro-orbital bleed under appropriate anesthesia (e.g. isoflurane).
-   - Use heparinized capillary tubes.
-   - Transfer to 1.5 mL tubes and centrifuge 20 min at 12,000 g, 4 C.
-   - Aliquot serum (minimum 50 uL) and store at -80 C.
-
-2. **Tissues**
-   - Harvest tissues with sterile instruments.
-   - Wipe instruments with 70 percent ethanol between mice and always process uninfected controls first.
-   - For qPCR, immediately snap-freeze small tissue pieces on dry ice.
-   - Store at -80 C.
+1.  **Serum**
+    -   Collect whole blood via retro-orbital bleed under appropriate anesthesia (e.g. isoflurane).
+    -   Use heparinized capillary tubes.
+    -   Transfer to 1.5 mL tubes and centrifuge 20 min at 12,000 g, 4 C.
+    -   Aliquot serum (minimum 50 uL) and store at -80 C.
+2.  **Tissues**
+    -   Harvest tissues with sterile instruments.
+    -   Wipe instruments with 70 percent ethanol between mice and always process uninfected controls first.
+    -   For qPCR, immediately snap-freeze small tissue pieces on dry ice.
+    -   Store at -80 C.
 
 # RNA Isolation
 
 Based on RNAqueous Mini Kit usage:
 
-1. Thaw serum or tissue on ice.
-2. For serum:
-   - Use 50 uL serum directly in the kit lysis buffer according to manufacturer instructions.
-3. For tissues:
-   - Weigh 5–50 mg tissue into appropriate tubes.
-   - Add lysis buffer from the RNAqueous kit.
-   - Homogenize thoroughly with a rotor-stator homogenizer.
-
-4. **Critical decontamination step for homogenizer** between samples:
-   - Wash once with PBS.
-   - Wash once with 10 percent bleach.
-   - Wash once again with PBS.
-   - Do not rely on ethanol + PBS alone; this was reported as insufficient to prevent cross-contamination.
-
-5. Proceed with the RNAqueous spin-column protocol.
-6. Elute RNA in **20 uL** nuclease-free water.
-7. Store RNA at -80 C until use.
+1.  Thaw serum or tissue on ice.
+2.  For serum:
+    -   Use 50 uL serum directly in the kit lysis buffer according to manufacturer instructions.
+3.  For tissues:
+    -   Weigh 5–50 mg tissue into appropriate tubes.
+    -   Add lysis buffer from the RNAqueous kit.
+    -   Homogenize thoroughly with a rotor-stator homogenizer.
+4.  **Critical decontamination step for homogenizer** between samples:
+    -   Wash once with PBS.
+    -   Wash once with 10 percent bleach.
+    -   Wash once again with PBS.
+    -   Do not rely on ethanol + PBS alone; this was reported as insufficient to prevent cross-contamination.
+5.  Proceed with the RNAqueous spin-column protocol.
+6.  Elute RNA in **20 uL** nuclease-free water.
+7.  Store RNA at -80 C until use.
 
 # cDNA Synthesis (Reverse Transcription)
 
 Using SuperScript III and gene-specific priming:
 
-1. For each sample, set up a **20 uL** RT reaction containing:
-   - 10 uL RNA (from the 20 uL eluate).
-   - 1 gene-specific primer (usually GP-R at 0.5–1 uM final).
-   - dNTPs (as supplied or 0.5 mM each).
-   - Reaction buffer and DTT per SuperScript III instructions.
-   - SuperScript III Reverse Transcriptase (as per manufacturer recommendation, often 200 U per reaction).
-
-2. Incubate:
-   - 55 C for 60 min (50 C can also be used but 55 C is preferred in the paper for specificity).
-   - Then inactivate at 70 C for 15 min or according to kit instructions.
-3. Include:
-   - At least two tissue-matched RNA samples from uninfected mice (negative controls).
-   - No-template control (water instead of RNA).
-4. Store cDNA at -20 C if not used immediately.
+1.  For each sample, set up a **20 uL** RT reaction containing:
+    -   10 uL RNA (from the 20 uL eluate).
+    -   1 gene-specific primer (usually GP-R at 0.5–1 uM final).
+    -   dNTPs (as supplied or 0.5 mM each).
+    -   Reaction buffer and DTT per SuperScript III instructions.
+    -   SuperScript III Reverse Transcriptase (as per manufacturer recommendation, often 200 U per reaction).
+2.  Incubate:
+    -   55 C for 60 min (50 C can also be used but 55 C is preferred in the paper for specificity).
+    -   Then inactivate at 70 C for 15 min or according to kit instructions.
+3.  Include:
+    -   At least two tissue-matched RNA samples from uninfected mice (negative controls).
+    -   No-template control (water instead of RNA).
+4.  Store cDNA at -20 C if not used immediately.
 
 # qPCR Reaction Setup
 
 Standard reaction (25 uL total volume):
 
-- 5 uL cDNA template.
-- 12.5 uL iTaq SYBR Green Supermix with ROX (2x).
-- 0.5 uL GP-F (10 uM; final 0.2 uM).
-- 0.5 uL GP-R (10 uM; final 0.2 uM).
-- 6.5 uL nuclease-free water.
+-   5 uL cDNA template.
+-   12.5 uL iTaq SYBR Green Supermix with ROX (2x).
+-   0.5 uL GP-F (10 uM; final 0.2 uM).
+-   0.5 uL GP-R (10 uM; final 0.2 uM).
+-   6.5 uL nuclease-free water.
 
-Notes:
-- 50 uL reactions can also be used; scale reagents proportionally.
-- Prepare a master mix for all wells to minimise pipetting error.
-- Run all samples in **duplicate**.
+Notes: - 50 uL reactions can also be used; scale reagents proportionally. - Prepare a master mix for all wells to minimise pipetting error. - Run all samples in **duplicate**.
 
 # qPCR Cycling Conditions
 
 On ABI GeneAmp 5700 or similar:
 
-- Initial denaturation: 95 C, 3 min (or per master mix recommendations).
-- 40 cycles of:
-  - 95 C, 15 s
-  - 60 C, 30 s (combined annealing/extension; fluorescence read step)
+-   Initial denaturation: 95 C, 3 min (or per master mix recommendations).
+-   40 cycles of:
+    -   95 C, 15 s
+    -   60 C, 30 s (combined annealing/extension; fluorescence read step)
 
 After amplification, perform a melt-curve analysis to verify a single specific product.
 
 # Plasmid Standard Curve
 
-1. Use a plasmid containing the LCMV GP gene (e.g. pSG5-GP).
-2. Linearize the plasmid with an appropriate restriction enzyme.
-3. Quantify DNA by gel electrophoresis against known DNA standards.
-4. Convert mass to copy number using molecular weight.
-5. Prepare 10-fold serial dilutions covering the desired range (e.g. 10^7 to 10^0 genome copies per reaction).
-6. Aliquot each dilution and store at -80 C (single-use aliquots).
-7. In every run:
-   - Thaw a fresh aliquot series.
-   - Run each standard in duplicate.
-8. Generate a Ct vs log10(copy number) standard curve; R^2 should typically be > 0.98.
+1.  Use a plasmid containing the LCMV GP gene (e.g. pSG5-GP).
+2.  Linearize the plasmid with an appropriate restriction enzyme.
+3.  Quantify DNA by gel electrophoresis against known DNA standards.
+4.  Convert mass to copy number using molecular weight.
+5.  Prepare 10-fold serial dilutions covering the desired range (e.g. 10\^7 to 10\^0 genome copies per reaction).
+6.  Aliquot each dilution and store at -80 C (single-use aliquots).
+7.  In every run:
+    -   Thaw a fresh aliquot series.
+    -   Run each standard in duplicate.
+8.  Generate a Ct vs log10(copy number) standard curve; R\^2 should typically be \> 0.98.
 
 # Data Analysis
 
-1. For each plate, fit a linear regression of Ct versus log10(copy number) using the plasmid standards.
-2. For each sample, convert Ct to copy number using the standard curve.
-3. Correct for:
-   - Fraction of RNA used (10 uL of 20 uL).
-   - Volume or mass of starting material.
-4. Report viral load as:
-   - LCMV RNA copies per mL serum, or
-   - LCMV RNA copies per mg tissue.
-
-5. Limit of detection:
-   - The assay reproducibly detects approximately 1–5 LCMV genomes per qPCR reaction.
-   - In practice, set a Ct cutoff at 35–36 cycles; values above this should be considered below detection limit or flagged as unreliable.
-6. Use negative controls (uninfected tissue and no-template wells) to define background; any sample with signal overlapping control levels should be treated as negative.
+1.  For each plate, fit a linear regression of Ct versus log10(copy number) using the plasmid standards.
+2.  For each sample, convert Ct to copy number using the standard curve.
+3.  Correct for:
+    -   Fraction of RNA used (10 uL of 20 uL).
+    -   Volume or mass of starting material.
+4.  Report viral load as:
+    -   LCMV RNA copies per mL serum, or
+    -   LCMV RNA copies per mg tissue.
+5.  Limit of detection:
+    -   The assay reproducibly detects approximately 1–5 LCMV genomes per qPCR reaction.
+    -   In practice, set a Ct cutoff at 35–36 cycles; values above this should be considered below detection limit or flagged as unreliable.
+6.  Use negative controls (uninfected tissue and no-template wells) to define background; any sample with signal overlapping control levels should be treated as negative.
 
 # Controls and QC
 
 Include in every run:
 
-- No-template controls (water instead of cDNA).
-- At least two uninfected control tissue samples per tissue type.
-- A positive control cDNA sample from a known LCMV-positive tissue.
-- Full plasmid standard curve.
+-   No-template controls (water instead of cDNA).
+-   At least two uninfected control tissue samples per tissue type.
+-   A positive control cDNA sample from a known LCMV-positive tissue.
+-   Full plasmid standard curve.
 
 Check:
 
-- Single peak in melt curve for all positive wells.
-- No amplification in no-template controls within the Ct window used for positivity.
+-   Single peak in melt curve for all positive wells.
+-   No amplification in no-template controls within the Ct window used for positivity.
 
 # Notes and Tips
 
-- Work in a laminar flow hood where possible; use UV decontamination between runs.
-- Handle plasmid standards last and avoid placing them adjacent to unknown samples on the plate.
-- For very high viral loads, a 1:200 dilution of cDNA may be required to bring Ct values into the dynamic range of the standard curve.
+-   Work in a laminar flow hood where possible; use UV decontamination between runs.
+-   Handle plasmid standards last and avoid placing them adjacent to unknown samples on the plate.
+-   For very high viral loads, a 1:200 dilution of cDNA may be required to bring Ct values into the dynamic range of the standard curve.
 
 # Safety considerations
 
-- Confirm that all work with LCMV and infected animals/samples is covered by approved **biosafety and animal use protocols**.
-- Perform all live-virus manipulations (thawing virus stocks, infection steps, handling of unfixed plates) in a **certified Class II biosafety cabinet**.
-- Use **dedicated infectious incubators** and clearly label plates, flasks, and waste containers with the virus strain and date.
-- Wear appropriate **PPE** at all times (lab coat/gown, gloves, eye/face protection as required).
-- Decontaminate all liquid waste (e.g. with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.
-- OPD and its solutions are handled as **chemical hazardous waste**; follow chemical safety rules in addition to biosafety rules.
-- Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.
-
+-   Confirm that all work with LCMV and infected animals/samples is covered by approved **biosafety and animal use protocols**.
+-   Perform all live-virus manipulations (thawing virus stocks, infection steps, handling of unfixed plates) in a **certified Class II biosafety cabinet**.
+-   Use **dedicated infectious incubators** and clearly label plates, flasks, and waste containers with the virus strain and date.
+-   Wear appropriate **PPE** at all times (lab coat/gown, gloves, eye/face protection as required).
+-   Decontaminate all liquid waste (e.g. with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.
+-   OPD and its solutions are handled as **chemical hazardous waste**; follow chemical safety rules in addition to biosafety rules.
+-   Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.
 
 # Version History
 
-| Version | Date       | Description                            |
-|---------|------------|----------------------------------------|
-| v1.0    | 2025-12-01 | Initial adaptation of McCausland & Crotty GP qPCR assay. |
+| Version | Date | Description |
+|----|----|----|
+| v1.0 | 2025-12-01 | Initial adaptation of McCausland & Crotty GP qPCR assay. |
 
 # Citation
 

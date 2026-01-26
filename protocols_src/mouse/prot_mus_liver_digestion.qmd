@@ -177,7 +177,7 @@ After the Percoll spin, a debris/hepatocyte-rich layer typically remains in the 
 
 9. Carefully aspirate or pour off the supernatant in one smooth motion without disturbing the pellet.
 10. Keep tubes inverted briefly and gently dab the rim on paper towel to wick residual Percoll (avoid touching or dislodging the pellet).
-11. Resuspend the pellet in **20–30 mL ice-cold FACS buffer**.
+11. Resuspend the pellet in **10–15 mL ice-cold FACS buffer**.
 12. Centrifuge at **400 g for 5 minutes at 4 °C**.
 13. Discard the supernatant and keep the enriched leukocyte pellet **on ice** for downstream steps.
 

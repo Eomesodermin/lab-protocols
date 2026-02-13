@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-29">
-<meta name="description" content="Buffers for washing, staining, and handling cells for flow cytometry (FACS) and magnetic separation (MACS).">
+<meta name="dcterms.date" content="2026-01-09">
+<meta name="description" content="Adoptive transfer of liver-derived NLCs for downstream phenotyping and functional studies, including planning calculations for donor requirements and standard timelines for LCMV- and BDL+LCMV-based experiments.">
 
-<title>FACS Buffer and MACS Buffer – Protocol Library</title>
+<title>NLC Adoptive Transfer (Liver-derived NK-like Cells) – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -305,36 +305,50 @@ window.Quarto = {
    
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#linked-protocols" id="toc-linked-protocols" class="nav-link" data-scroll-target="#linked-protocols">Linked protocols</a></li>
-  <li><a href="#buffer-definitions-important" id="toc-buffer-definitions-important" class="nav-link" data-scroll-target="#buffer-definitions-important">Buffer definitions (important)</a></li>
-  <li><a href="#composition" id="toc-composition" class="nav-link" data-scroll-target="#composition">Composition</a>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
   <ul class="collapse">
-  <li><a href="#facs-buffer-1" id="toc-facs-buffer-1" class="nav-link" data-scroll-target="#facs-buffer-1">FACS Buffer (1×)</a></li>
-  <li><a href="#macs-buffer-1" id="toc-macs-buffer-1" class="nav-link" data-scroll-target="#macs-buffer-1">MACS Buffer (1×)</a></li>
-  </ul></li>
-  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
+  <li><a href="#standard-yields-and-transfer-dose-for-planning" id="toc-standard-yields-and-transfer-dose-for-planning" class="nav-link" data-scroll-target="#standard-yields-and-transfer-dose-for-planning">Standard yields and transfer dose (for planning)</a>
   <ul class="collapse">
-  <li><a href="#general" id="toc-general" class="nav-link" data-scroll-target="#general">General</a></li>
+  <li><a href="#expected-donor-yield" id="toc-expected-donor-yield" class="nav-link" data-scroll-target="#expected-donor-yield">Expected donor yield</a></li>
+  <li><a href="#target-recipient-dose" id="toc-target-recipient-dose" class="nav-link" data-scroll-target="#target-recipient-dose">Target recipient dose</a></li>
   </ul></li>
-  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
-  <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
+  <li><a href="#donor-requirement-planning-table" id="toc-donor-requirement-planning-table" class="nav-link" data-scroll-target="#donor-requirement-planning-table">Donor requirement planning table</a></li>
+  <li><a href="#donor-cell-preparation-high-level" id="toc-donor-cell-preparation-high-level" class="nav-link" data-scroll-target="#donor-cell-preparation-high-level">Donor cell preparation (high-level)</a>
+  <ul class="collapse">
+  <li><a href="#intravenous-adoptive-transfer-parameters" id="toc-intravenous-adoptive-transfer-parameters" class="nav-link" data-scroll-target="#intravenous-adoptive-transfer-parameters">Intravenous adoptive transfer parameters</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#experiment-timelines" id="toc-experiment-timelines" class="nav-link" data-scroll-target="#experiment-timelines">Experiment timelines</a>
+  <ul class="collapse">
+  <li><a href="#lcmv-experiment-timeline-p14-lcmv-nlc-transfer" id="toc-lcmv-experiment-timeline-p14-lcmv-nlc-transfer" class="nav-link" data-scroll-target="#lcmv-experiment-timeline-p14-lcmv-nlc-transfer">LCMV experiment timeline (P14 → LCMV → NLC transfer)</a>
+  <ul class="collapse">
+  <li><a href="#timeline-table-absolute-and-relative" id="toc-timeline-table-absolute-and-relative" class="nav-link" data-scroll-target="#timeline-table-absolute-and-relative">Timeline table (absolute and relative)</a></li>
+  </ul></li>
+  <li><a href="#bdl-lcmv-we-infection-timeline-bdl-lcmv-nlc-transfer-harvest" id="toc-bdl-lcmv-we-infection-timeline-bdl-lcmv-nlc-transfer-harvest" class="nav-link" data-scroll-target="#bdl-lcmv-we-infection-timeline-bdl-lcmv-nlc-transfer-harvest">BDL + LCMV-WE infection timeline (BDL → LCMV → NLC transfer → harvest)</a>
+  <ul class="collapse">
+  <li><a href="#timeline-table-absolute-and-relative-1" id="toc-timeline-table-absolute-and-relative-1" class="nav-link" data-scroll-target="#timeline-table-absolute-and-relative-1">Timeline table (absolute and relative)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#typical-readouts-minimal-set" id="toc-typical-readouts-minimal-set" class="nav-link" data-scroll-target="#typical-readouts-minimal-set">Typical readouts (minimal set)</a></li>
   <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_facs_buffer.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_NLC_ACT.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FACS Buffer and MACS Buffer</h1>
+<h1 class="title">NLC Adoptive Transfer (Liver-derived NK-like Cells)</h1>
 <p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
 <div>
   <div class="description">
-    Buffers for washing, staining, and handling cells for flow cytometry (FACS) and magnetic separation (MACS).
+    Adoptive transfer of liver-derived NLCs for downstream phenotyping and functional studies, including planning calculations for donor requirements and standard timelines for LCMV- and BDL+LCMV-based experiments.
   </div>
 </div>
 
@@ -345,7 +359,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 29, 2025</p>
+      <p class="date">January 9, 2026</p>
     </div>
   </div>
   
@@ -357,227 +371,239 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Protocol ID:</strong> BUF-FACS-MACS-v1.1<br>
-<strong>Version:</strong> v1.1<br>
+<p><strong>Protocol ID:</strong> MUS-NLC-ACT-001<br>
+<strong>Version:</strong> v1.0<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
-<p>These buffers are used for washing, resuspending, and handling cells during <strong>flow cytometry staining and sorting (FACS)</strong> and <strong>magnetic-activated cell sorting (MACS)</strong>.</p>
+<p>This protocol describes adoptive transfer of <strong>liver-derived NLCs (NK-like cells)</strong> into recipient mice, with emphasis on:</p>
 <ul>
-<li><strong>FACS Buffer</strong> is optimized for antibody staining and cytometric analysis.</li>
-<li><strong>MACS Buffer</strong> includes EDTA to prevent cell clumping and nonspecific aggregation during magnetic separation.</li>
-</ul>
-</section>
-<section id="linked-protocols" class="level1">
-<h1>Linked protocols</h1>
-<p>These buffers are used in:</p>
+<li>Expected <strong>donor yield per liver</strong> and planning calculations for donor requirements</li>
+<li>Target <strong>NLC transfer dose</strong> per recipient</li>
+<li>Standard experimental timelines for:
 <ul>
-<li><strong>Mouse Liver Dissociation to Single-Cell Suspension</strong> – <code>LIV-001</code> (v1.0)<br>
-</li>
-<li>Additional staining, sorting, and enrichment protocols as required.</li>
-</ul>
-<hr>
-</section>
-<section id="buffer-definitions-important" class="level1">
-<h1>Buffer definitions (important)</h1>
-<ul>
-<li><strong>FACS Buffer</strong>
-<ul>
-<li><strong>PBS + FCS</strong><br>
-</li>
-<li><em>No EDTA</em></li>
-</ul></li>
-<li><strong>MACS Buffer</strong>
-<ul>
-<li><strong>PBS + FCS + EDTA</strong></li>
+<li>LCMV-based experiments with prior P14 transfer</li>
+<li>BDL + LCMV-WE experiments</li>
 </ul></li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>EDTA is excluded from FACS buffer by default to avoid potential interference with certain staining reagents or downstream functional assays.<br>
-EDTA is included in MACS buffer to minimize cell clumping and improve recovery during magnetic separation.</p>
-</div>
-</div>
-<hr>
 </section>
-<section id="composition" class="level1">
-<h1>Composition</h1>
-<section id="facs-buffer-1" class="level2">
-<h2 class="anchored" data-anchor-id="facs-buffer-1">FACS Buffer (1×)</h2>
-<p>Typical preparation for <strong>500 mL</strong>:</p>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li>NLC recovery varies by infection model, timepoint, operator, and digestion quality; plan donors with buffer.</li>
+<li>Keep cells cold after final wash and minimize time between final resuspension and injection.</li>
+<li>Use congenic markers (CD45.1/CD45.2) where possible to track transferred NLCs.</li>
+<li>Final injection buffer should be sterile PBS unless internal SOP specifies otherwise.</li>
+<li>All procedures must comply with approved animal licences and biosafety regulations.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Donor liver harvest to single-cell suspension: <strong>~2–2.5 h</strong> (see liver digestion protocol)</li>
+<li>Enrichment / sort (if used): <strong>~30–180 min</strong> (method-dependent)</li>
+<li>Counting + preparation for injection: <strong>10–20 min</strong></li>
+<li>Transfer (tail vein i.v.): <strong>~1–2 min per mouse</strong></li>
+</ul>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="standard-yields-and-transfer-dose-for-planning" class="level2">
+<h2 class="anchored" data-anchor-id="standard-yields-and-transfer-dose-for-planning">Standard yields and transfer dose (for planning)</h2>
+<section id="expected-donor-yield" class="level3">
+<h3 class="anchored" data-anchor-id="expected-donor-yield">Expected donor yield</h3>
+<ul>
+<li><strong>Expected NLC yield per donor liver:</strong> <strong>5,000–8,000 NLCs per mouse liver</strong></li>
+</ul>
+</section>
+<section id="target-recipient-dose" class="level3">
+<h3 class="anchored" data-anchor-id="target-recipient-dose">Target recipient dose</h3>
+<ul>
+<li><strong>Adoptive transfer dose:</strong> <strong>60,000–80,000 NLCs per recipient</strong></li>
+</ul>
+</section>
+</section>
+<section id="donor-requirement-planning-table" class="level2">
+<h2 class="anchored" data-anchor-id="donor-requirement-planning-table">Donor requirement planning table</h2>
+<p>Assumptions for planning: - Low yield = <strong>5,000 NLCs per donor liver</strong> - High yield = <strong>8,000 NLCs per donor liver</strong> - Low transfer dose = <strong>60,000 NLCs per recipient</strong> - High transfer dose = <strong>80,000 NLCs per recipient</strong> - Donor livers required are rounded <strong>up</strong> to whole livers</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 12%">
 <col style="width: 26%">
-<col style="width: 24%">
 <col style="width: 26%">
-<col style="width: 8%">
+<col style="width: 26%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Component</th>
-<th>Stock concentration</th>
-<th>Volume for 500 mL</th>
-<th>Final concentration</th>
-<th>Notes</th>
+<th style="text-align: right;">Recipient transfer dose</th>
+<th style="text-align: right;">Donor yield per liver</th>
+<th style="text-align: right;">Donor livers needed <strong>per recipient</strong></th>
+<th>Example calculation</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>PBS 1×</td>
-<td>—</td>
-<td>490 mL</td>
-<td>—</td>
-<td>Base buffer</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;">8,000</td>
+<td style="text-align: right;">8</td>
+<td>60,000 / 8,000 = 7.5 → <strong>8</strong></td>
 </tr>
 <tr class="even">
-<td>FCS</td>
-<td>—</td>
-<td>10 mL</td>
-<td>2% (v/v)</td>
-<td>Heat-inactivated if required</td>
+<td style="text-align: right;">60,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">12</td>
+<td>60,000 / 5,000 = 12 → <strong>12</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">80,000</td>
+<td style="text-align: right;">8,000</td>
+<td style="text-align: right;">10</td>
+<td>80,000 / 8,000 = 10 → <strong>10</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">80,000</td>
+<td style="text-align: right;">5,000</td>
+<td style="text-align: right;">16</td>
+<td>80,000 / 5,000 = 16 → <strong>16</strong></td>
 </tr>
 </tbody>
 </table>
-<hr>
+<p><strong>Practical note:</strong> For multi-recipient experiments, multiply the “donor livers per recipient” by the number of recipients, then add an additional buffer (recommended) to account for losses during processing and sorting.</p>
 </section>
-<section id="macs-buffer-1" class="level2">
-<h2 class="anchored" data-anchor-id="macs-buffer-1">MACS Buffer (1×)</h2>
-<p>Typical preparation for <strong>500 mL</strong>:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 26%">
-<col style="width: 24%">
-<col style="width: 26%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Component</th>
-<th>Stock concentration</th>
-<th>Volume for 500 mL</th>
-<th>Final concentration</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PBS 1×</td>
-<td>—</td>
-<td>488 mL</td>
-<td>—</td>
-<td>Base buffer</td>
-</tr>
-<tr class="even">
-<td>FCS</td>
-<td>—</td>
-<td>10 mL</td>
-<td>2% (v/v)</td>
-<td>Heat-inactivated if required</td>
-</tr>
-<tr class="odd">
-<td>EDTA</td>
-<td>0.5 M</td>
-<td>2 mL</td>
-<td>2 mM</td>
-<td>Sterile stock</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-</section>
-<section id="preparation" class="level1">
-<h1>Preparation</h1>
-<section id="general" class="level2">
-<h2 class="anchored" data-anchor-id="general">General</h2>
+<section id="donor-cell-preparation-high-level" class="level2">
+<h2 class="anchored" data-anchor-id="donor-cell-preparation-high-level">Donor cell preparation (high-level)</h2>
 <ol type="1">
-<li>Start with sterile <strong>PBS 1×</strong> in an appropriate bottle.</li>
-<li>Add <strong>FCS</strong> to achieve <strong>2% (v/v)</strong>.</li>
-<li>For <strong>MACS buffer only</strong>, add <strong>EDTA</strong> to a final concentration of <strong>2 mM</strong>.</li>
-<li>Mix gently by inversion.</li>
-<li>If sterility is required, filter through a <strong>0.22 µm filter</strong> into a sterile storage bottle.</li>
-<li>Label clearly with:
-<ul>
-<li>“FACS Buffer” <strong>or</strong> “MACS Buffer”</li>
-<li>Date of preparation</li>
-<li>Initials</li>
-<li>“Sterile” <strong>or</strong> “Non-Sterile”</li>
-</ul></li>
+<li>Harvest donor livers from mice at the defined experimental timepoint.</li>
+<li>Prepare single-cell suspensions using the lab-standard liver digestion workflow (perfusion, enzymatic digestion, density enrichment, RBC lysis as needed).</li>
+<li>Enrich or sort NLCs according to the experimental design (bulk enrichment vs FACS for high purity).</li>
+<li>Count viable cells and prepare the final injection suspension in sterile PBS.</li>
+<li>Transfer <strong>60,000–80,000 NLCs per recipient</strong> by i.v. tail vein injection.</li>
 </ol>
-<hr>
-</section>
-</section>
-<section id="storage-and-stability" class="level1">
-<h1>Storage and stability</h1>
+<section id="intravenous-adoptive-transfer-parameters" class="level3">
+<h3 class="anchored" data-anchor-id="intravenous-adoptive-transfer-parameters">Intravenous adoptive transfer parameters</h3>
 <ul>
-<li>Store buffers at <strong>4 °C</strong>.</li>
-<li>Recommended use within <strong>4–6 weeks</strong>, subject to internal QC and sterility checks.</li>
-<li>Invert gently before use to resuspend any settled components.</li>
-<li>Avoid repeated temperature cycling; prepare smaller working aliquots if buffers are accessed frequently.</li>
+<li><strong>Route:</strong> i.v. (tail vein)</li>
+<li><strong>Injection volume:</strong> <strong>200 µL per mouse</strong></li>
+<li><strong>Needle:</strong> insulin syringe, typically <strong>27G–30G</strong></li>
+<li>Keep cells on ice and gently mix to maintain a uniform suspension during injection series.</li>
 </ul>
-<hr>
 </section>
-<section id="reagent-details" class="level1">
-<h1>Reagent details</h1>
+</section>
+</section>
+<section id="experiment-timelines" class="level1">
+<h1>Experiment timelines</h1>
+<section id="lcmv-experiment-timeline-p14-lcmv-nlc-transfer" class="level2">
+<h2 class="anchored" data-anchor-id="lcmv-experiment-timeline-p14-lcmv-nlc-transfer">LCMV experiment timeline (P14 → LCMV → NLC transfer)</h2>
+<p>Design: - P14 transfer on Day 0 - LCMV infection on Day 1 - NLC transfer <strong>20 days after infection</strong> - Assessment <strong>5 days after NLC transfer</strong></p>
+<section id="timeline-table-absolute-and-relative" class="level3">
+<h3 class="anchored" data-anchor-id="timeline-table-absolute-and-relative">Timeline table (absolute and relative)</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 30%">
+<col style="width: 30%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Component</th>
-<th>Supplier</th>
-<th>Cat#</th>
-<th>Notes</th>
+<th style="text-align: right;">Absolute day</th>
+<th>Relative description</th>
+<th>Event</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>PBS 1×</td>
-<td>TBD</td>
-<td>TBD</td>
-<td>Sterile, Ca²⁺/Mg²⁺-free recommended</td>
+<td style="text-align: right;"><strong>Day 0</strong></td>
+<td>Start</td>
+<td>Transfer P14 cells</td>
 </tr>
 <tr class="even">
-<td>FCS</td>
-<td>TBD</td>
-<td>TBD</td>
-<td>Heat-inactivated if required</td>
+<td style="text-align: right;"><strong>Day 1</strong></td>
+<td><strong>24 hours later</strong></td>
+<td>Infect with LCMV</td>
 </tr>
 <tr class="odd">
-<td>EDTA 0.5 M</td>
-<td>TBD</td>
-<td>TBD</td>
-<td>Sterile stock; pH ~8.0</td>
+<td style="text-align: right;"><strong>Day 21</strong></td>
+<td><strong>20 days after infection</strong></td>
+<td>Transfer NLCs</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><strong>Day 26</strong></td>
+<td><strong>5 days after NLC transfer</strong></td>
+<td>Harvest / assessment (organs, flow, etc.)</td>
 </tr>
 </tbody>
 </table>
-<hr>
+</section>
+</section>
+<section id="bdl-lcmv-we-infection-timeline-bdl-lcmv-nlc-transfer-harvest" class="level2">
+<h2 class="anchored" data-anchor-id="bdl-lcmv-we-infection-timeline-bdl-lcmv-nlc-transfer-harvest">BDL + LCMV-WE infection timeline (BDL → LCMV → NLC transfer → harvest)</h2>
+<p>Design: - BDL on Day 0 - Infect with LCMV-WE approximately 9 days later - Transfer NLCs at <strong>4–6 days post infection (dpi)</strong> - Harvest organs at <strong>9 dpi</strong></p>
+<section id="timeline-table-absolute-and-relative-1" class="level3">
+<h3 class="anchored" data-anchor-id="timeline-table-absolute-and-relative-1">Timeline table (absolute and relative)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Absolute day</th>
+<th>Relative description</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><strong>Day 0</strong></td>
+<td>Start</td>
+<td>BDL surgery</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><strong>Day 9</strong></td>
+<td><strong>~9 days later</strong></td>
+<td>Infect with LCMV-WE</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><strong>Day 13–15</strong></td>
+<td><strong>4–6 dpi</strong></td>
+<td>Transfer NLCs</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><strong>Day 18</strong></td>
+<td><strong>9 dpi</strong></td>
+<td>Harvest organs for analysis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation of spacing:</strong> - If NLC transfer occurs at <strong>4 dpi</strong>, harvest at 9 dpi is <strong>5 days after transfer</strong>. - If NLC transfer occurs at <strong>6 dpi</strong>, harvest at 9 dpi is <strong>3 days after transfer</strong>. - Choose dpi for transfer based on the desired window between transfer and analysis.</p>
+</section>
+</section>
+</section>
+<section id="typical-readouts-minimal-set" class="level1">
+<h1>Typical readouts (minimal set)</h1>
+<ul>
+<li>Tracking of transferred NLCs by congenic markers (frequency, phenotype) in liver ± spleen/blood</li>
+<li>Recipient immune context (key lymphoid/myeloid compartments as relevant to model)</li>
+<li>Functional assays as needed (e.g., ex vivo stimulation / cytokines, cytotoxicity surrogates)</li>
+<li>Infection-context readouts (use lab-standard viral load or surrogate readouts where applicable)</li>
+</ul>
 </section>
 <section id="safety-brief" class="level1">
 <h1>Safety (brief)</h1>
 <ul>
-<li>Handle biological samples in FACS and MACS buffers according to institutional biosafety rules.</li>
-<li>FCS is of animal origin and should be treated as a potential biohazard.</li>
-<li>EDTA is of low toxicity at working concentrations but should be handled with standard laboratory PPE.</li>
+<li>All animal procedures must comply with approved animal licences and institutional regulations.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
+<li>Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.</li>
+<li>Perform tissue and cell handling in a biological safety cabinet where appropriate.</li>
+<li>Dispose of viral waste and contaminated materials according to local biosafety regulations.</li>
 </ul>
-<hr>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
-<col style="width: 13%">
-<col style="width: 19%">
-<col style="width: 56%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 47%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -590,15 +616,9 @@ EDTA is included in MACS buffer to minimize cell clumping and improve recovery d
 <tbody>
 <tr class="odd">
 <td>v1.0</td>
-<td>2025-11-20</td>
+<td>2026-01-09</td>
 <td>Dillon Corvino</td>
-<td>Initial buffer definition</td>
-</tr>
-<tr class="even">
-<td>v1.1</td>
-<td>2025-12-29</td>
-<td>Dillon Corvino</td>
-<td>Explicit separation of FACS vs MACS buffer usage</td>
+<td>Initial NLC adoptive transfer protocol (planning yields, donor requirements, and standard timelines for LCMV and BDL+LCMV designs)</td>
 </tr>
 </tbody>
 </table>

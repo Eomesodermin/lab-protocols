@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-21">
+<meta name="dcterms.date" content="2026-01-09">
 <meta name="description" content="Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions.">
 
 <title>ACK Red Blood Cell Lysis Buffer – Protocol Library</title>
@@ -308,15 +308,12 @@ window.Quarto = {
   <li><a href="#working-buffer-composition" id="toc-working-buffer-composition" class="nav-link" data-scroll-target="#working-buffer-composition">Working buffer composition</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
   <ul class="collapse">
-  <li><a href="#reagent-stocks" id="toc-reagent-stocks" class="nav-link" data-scroll-target="#reagent-stocks">Reagent stocks</a></li>
-  <li><a href="#preparation-of-1-l-ack-lysis-buffer" id="toc-preparation-of-1-l-ack-lysis-buffer" class="nav-link" data-scroll-target="#preparation-of-1-l-ack-lysis-buffer">Preparation of <strong>1 L ACK lysis buffer</strong></a>
-  <ul class="collapse">
-  <li><a href="#ph-adjustment" id="toc-ph-adjustment" class="nav-link" data-scroll-target="#ph-adjustment">pH adjustment</a></li>
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#preparation-of-1-l-ack-lysis-buffer" id="toc-preparation-of-1-l-ack-lysis-buffer" class="nav-link" data-scroll-target="#preparation-of-1-l-ack-lysis-buffer">Preparation of <strong>1 L ACK lysis buffer</strong></a></li>
   </ul></li>
-  </ul></li>
+  <li><a href="#labelling" id="toc-labelling" class="nav-link" data-scroll-target="#labelling">Labelling</a></li>
   <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
-  <li><a href="#reagent-details" id="toc-reagent-details" class="nav-link" data-scroll-target="#reagent-details">Reagent details</a></li>
-  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety">Safety</a></li>
+  <li><a href="#safety-and-handling" id="toc-safety-and-handling" class="nav-link" data-scroll-target="#safety-and-handling">Safety and handling</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_ack_lysis.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -343,7 +340,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 21, 2025</p>
+      <p class="date">January 9, 2026</p>
     </div>
   </div>
   
@@ -356,19 +353,19 @@ window.Quarto = {
 
 
 <p><strong>Protocol ID:</strong> BUF-ACK-LYSIS-001<br>
-<strong>Version:</strong> v1.0<br>
+<strong>Version:</strong> v1.1<br>
 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
-<p>ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g.&nbsp;liver digests, spleen, PBMC preparations). The reagent maintains leukocyte integrity while efficiently removing red blood cells during brief room-temperature incubation.</p>
+<p>ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g.&nbsp;liver digests, spleen, PBMC preparations). Under brief incubation, the buffer efficiently removes red blood cells while preserving leukocyte viability and integrity.</p>
 </section>
 <section id="working-buffer-composition" class="level1">
 <h1>Working buffer composition</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 23%">
-<col style="width: 46%">
+<col style="width: 27%">
+<col style="width: 19%">
+<col style="width: 53%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -380,23 +377,28 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td>Ammonium chloride (NH₄Cl)</td>
-<td>150 mM</td>
+<td>X mM</td>
 <td>Primary erythrocyte-lysing component</td>
 </tr>
 <tr class="even">
 <td>Potassium bicarbonate (KHCO₃)</td>
-<td>10 mM</td>
+<td>X mM</td>
 <td>Buffering capacity</td>
 </tr>
 <tr class="odd">
-<td>Disodium EDTA (Na₂EDTA)</td>
-<td>0.1 mM</td>
-<td>Chelates divalent cations; prevents clumping</td>
+<td>EDTA</td>
+<td>X mM</td>
+<td>Chelates divalent cations; reduces cell clumping</td>
 </tr>
 <tr class="even">
 <td>Sterile distilled water</td>
 <td>—</td>
 <td>Solvent</td>
+</tr>
+<tr class="odd">
+<td>pH</td>
+<td>7.2</td>
+<td>Adjusted after dissolution</td>
 </tr>
 </tbody>
 </table>
@@ -410,24 +412,24 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This composition matches the standard formulation used in immunology workflows (commonly referred to as “ACK lysis buffer” or “RBC lysis buffer”).</p>
+<p>This formulation reflects the standard ACK buffer used in immunology workflows, with explicit pH adjustment to ensure reproducibility across batches.</p>
 </div>
 </div>
 </section>
 <section id="preparation" class="level1">
 <h1>Preparation</h1>
-<section id="reagent-stocks" class="level2">
-<h2 class="anchored" data-anchor-id="reagent-stocks">Reagent stocks</h2>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 27%">
-<col style="width: 25%">
-<col style="width: 47%">
+<col style="width: 31%">
+<col style="width: 10%">
+<col style="width: 57%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Reagent</th>
-<th>Stock concentration</th>
+<th>Form</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -435,22 +437,27 @@ Note
 <tr class="odd">
 <td>NH₄Cl</td>
 <td>Powder</td>
-<td>Prepare fresh solution</td>
+<td>Analytical or cell-culture grade</td>
 </tr>
 <tr class="even">
 <td>KHCO₃</td>
 <td>Powder</td>
-<td>CO₂-reactive; store desiccated</td>
+<td>Hygroscopic; store tightly sealed</td>
 </tr>
 <tr class="odd">
-<td>Na₂EDTA (disodium)</td>
+<td>EDTA</td>
 <td>Powder</td>
-<td>Use ultrapure cell-culture grade</td>
+<td>Cell-culture grade</td>
 </tr>
 <tr class="even">
-<td>Sterile distilled water</td>
+<td>Distilled water</td>
 <td>—</td>
-<td>For dissolution</td>
+<td>Sterile (bidest)</td>
+</tr>
+<tr class="odd">
+<td>HCl</td>
+<td>—</td>
+<td>For pH adjustment</td>
 </tr>
 </tbody>
 </table>
@@ -458,103 +465,49 @@ Note
 <section id="preparation-of-1-l-ack-lysis-buffer" class="level2">
 <h2 class="anchored" data-anchor-id="preparation-of-1-l-ack-lysis-buffer">Preparation of <strong>1 L ACK lysis buffer</strong></h2>
 <ol type="1">
-<li>Add the following to a 1 L glass bottle or beaker:
+<li>Use a clean <strong>1 L glass bottle</strong> or beaker.</li>
+<li>Add the following dry reagents:
 <ul>
-<li><strong>8.02 g NH₄Cl</strong> (150 mM)<br>
-</li>
-<li><strong>1.00 g KHCO₃</strong> (10 mM)<br>
-</li>
-<li><strong>0.037 g Na₂EDTA</strong> (0.1 mM)</li>
+<li><strong>8.26 g NH₄Cl</strong></li>
+<li><strong>1.00 g KHCO₃</strong></li>
+<li><strong>0.037 g (37 mg) EDTA</strong></li>
 </ul></li>
-<li>Add ~800 mL sterile distilled water.</li>
-<li>Stir or gently swirl until fully dissolved.</li>
-<li>Adjust the final volume to <strong>1 L</strong> with sterile distilled water.</li>
-<li>Filter-sterilize using a <strong>0.22 µm PES or PVDF filter</strong>.</li>
-<li>Aliquot if desired.</li>
+<li>Add <strong>1 L sterile distilled (bidest) water</strong>.</li>
+<li>Mix thoroughly by stirring or gentle swirling until all components are fully dissolved.</li>
+<li>Measure pH and <strong>adjust to pH 7.2</strong> using dilute HCl.</li>
+<li><strong>Sterile-filter</strong> the solution using a <strong>0.22 µm vacuum filter unit</strong>.</li>
+<li>Aliquot if desired under sterile conditions.</li>
 </ol>
-<section id="ph-adjustment" class="level3">
-<h3 class="anchored" data-anchor-id="ph-adjustment">pH adjustment</h3>
-<ul>
-<li>Typically <strong>no pH adjustment is required</strong>; the solution should be at pH ~7.2–7.4.<br>
-</li>
-<li>If necessary, adjust minimally with sterile HCl or NaOH.</li>
-</ul>
 </section>
 </section>
+<section id="labelling" class="level1">
+<h1>Labelling</h1>
+<p>Clearly label each bottle or aliquot with: - Buffer name: <strong>ACK Lysis Buffer</strong> - Date of preparation - Preparer initials - <strong>Sterile</strong> - <strong>pH adjusted to 7.2</strong></p>
 </section>
 <section id="storage-and-stability" class="level1">
 <h1>Storage and stability</h1>
 <ul>
-<li>Store at <strong>4 °C</strong> for up to <strong>3 months</strong>.<br>
-</li>
-<li>Aliquots stored sterilely remain stable for common immunology workflows.<br>
-</li>
-<li><strong>Do not freeze</strong>; precipitation and performance changes may occur.</li>
+<li>Store at <strong>4 °C</strong>.</li>
+<li>Stable for up to <strong>3 months</strong> when sterile.</li>
+<li><strong>Do not freeze</strong>, as freezing may alter buffer performance.</li>
 </ul>
 </section>
-<section id="reagent-details" class="level1">
-<h1>Reagent details</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 34%">
-<col style="width: 11%">
-<col style="width: 9%">
-<col style="width: 45%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Reagent</th>
-<th>Supplier</th>
-<th>Cat. #</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ammonium chloride</td>
-<td>Various</td>
-<td>—</td>
-<td>Analytical or cell-culture grade</td>
-</tr>
-<tr class="even">
-<td>Potassium bicarbonate</td>
-<td>Various</td>
-<td>—</td>
-<td>Store tightly sealed</td>
-</tr>
-<tr class="odd">
-<td>Disodium EDTA (Na₂EDTA)</td>
-<td>Various</td>
-<td>—</td>
-<td>Chelates divalent cations</td>
-</tr>
-<tr class="even">
-<td>Sterile distilled water</td>
-<td>—</td>
-<td>—</td>
-<td>Solvent</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="safety" class="level1">
-<h1>Safety</h1>
+<section id="safety-and-handling" class="level1">
+<h1>Safety and handling</h1>
 <ul>
-<li>Wear gloves and eye protection; NH₄Cl is an irritant.<br>
-</li>
-<li>Dispose of unused buffer and erythrocyte-containing waste as biological/chemical waste.<br>
-</li>
-<li>Prepare and filter-sterilize the buffer in a biosafety cabinet when used for primary tissue processing.</li>
+<li>Wear gloves and eye protection; ammonium chloride is an irritant.</li>
+<li>Dispose of unused buffer and erythrocyte-containing waste according to biological/chemical waste regulations.</li>
+<li>For use in primary tissue processing, preparation and sterile filtration should be performed using appropriate aseptic technique.</li>
 </ul>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 10%">
+<col style="width: 7%">
+<col style="width: 11%">
 <col style="width: 15%">
-<col style="width: 20%">
-<col style="width: 54%">
+<col style="width: 64%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -566,10 +519,16 @@ Note
 </thead>
 <tbody>
 <tr class="odd">
+<td>v1.1</td>
+<td>2026-01-09</td>
+<td>Dillon Corvino</td>
+<td>Corrected concentrations, explicit pH adjustment, clarified sterility and labelling requirements</td>
+</tr>
+<tr class="even">
 <td>v1.0</td>
 <td>2025-11-21</td>
 <td>Dillon Corvino</td>
-<td>Initial Quarto buffer document for ACK lysis buffer.</td>
+<td>Initial Quarto buffer document for ACK lysis buffer</td>
 </tr>
 </tbody>
 </table>

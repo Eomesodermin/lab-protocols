@@ -329,8 +329,14 @@ window.Quarto = {
   <li><a href="#overlay-media" id="toc-overlay-media" class="nav-link" data-scroll-target="#overlay-media">Overlay media</a>
   <ul class="collapse">
   <li><a href="#methylcellulose" id="toc-methylcellulose" class="nav-link" data-scroll-target="#methylcellulose">2% methylcellulose</a></li>
-  <li><a href="#dmem-overlay-medium" id="toc-dmem-overlay-medium" class="nav-link" data-scroll-target="#dmem-overlay-medium">2× DMEM overlay medium</a></li>
-  <li><a href="#overlay-mixture" id="toc-overlay-mixture" class="nav-link" data-scroll-target="#overlay-mixture">Overlay mixture</a></li>
+  <li><a href="#dmem-overlay-medium" id="toc-dmem-overlay-medium" class="nav-link" data-scroll-target="#dmem-overlay-medium">2× DMEM overlay medium</a>
+  <ul class="collapse">
+  <li><a href="#final-concentrations" id="toc-final-concentrations" class="nav-link" data-scroll-target="#final-concentrations">Final concentrations</a></li>
+  </ul></li>
+  <li><a href="#overlay-mixture" id="toc-overlay-mixture" class="nav-link" data-scroll-target="#overlay-mixture">Overlay mixture</a>
+  <ul class="collapse">
+  <li><a href="#example-preparation" id="toc-example-preparation" class="nav-link" data-scroll-target="#example-preparation">Example preparation</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#virus-dilution-series-5-fold-plate-based" id="toc-virus-dilution-series-5-fold-plate-based" class="nav-link" data-scroll-target="#virus-dilution-series-5-fold-plate-based">Virus dilution series (5-fold plate-based)</a></li>
   <li><a href="#infection-and-incubation" id="toc-infection-and-incubation" class="nav-link" data-scroll-target="#infection-and-incubation">Infection and incubation</a></li>
@@ -446,10 +452,14 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="cells-and-media">Cells and Media</h2>
 <ul>
 <li><strong>Vero cells</strong> (African green monkey kidney)</li>
-<li><strong>Vero propagation medium</strong> (see <code>buf_vero_propagation_medium.qmd</code> for detailed recipe)</li>
+<li><strong>Vero propagation medium</strong> (see <code>buf_vero_propagation_medium.qmd</code> for detailed recipe)
+<ul>
+<li>Essentially (DMEM + 10% FCS + 2-mercaptoethanol)</li>
+<li>Always use green label AG Abdullah viral titre tested FCS</li>
+</ul></li>
 <li>Trypsin-EDTA for passaging Vero cells</li>
-<li>PBS without Ca²⁺/Mg²⁺</li>
-<li>Infection/dilution medium (e.g.&nbsp;DMEM + 2% FCS/FBS) for virus dilutions</li>
+<li>PBS without Ca<sup>2+/Mg</sup>2+</li>
+<li>Infection/dilution medium (e.g.&nbsp;DMEM + 10% FCS + 2% Pen/Strep) for virus dilutions</li>
 </ul>
 </section>
 <section id="overlay-and-related-buffers" class="level2">
@@ -540,6 +550,19 @@ Warning
 </section>
 <section id="preparation" class="level1">
 <h1>Preparation</h1>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always use a AG Abdullah (Green label) virus titre tested FCS</p>
+</div>
+</div>
 <section id="vero-cell-maintenance" class="level2">
 <h2 class="anchored" data-anchor-id="vero-cell-maintenance">Vero cell maintenance</h2>
 <ul>
@@ -548,9 +571,9 @@ Warning
 <ul>
 <li>Aspirate medium.</li>
 <li>Wash with ~10 mL PBS.</li>
-<li>Add 5–7 mL trypsin-EDTA and incubate at 37°C for <strong>5–10 min</strong>, monitoring under the microscope until cells detach.</li>
+<li>Add 5–7 mL trypsin-EDTA and incubate at 37°C for <strong>5 min</strong>, monitoring under the microscope until cells detach.</li>
 <li>Neutralize trypsin with 20–30 mL Vero propagation medium.</li>
-<li>Collect cells into a 50 mL tube and centrifuge at <strong>4°C, 5 min, 1500 rpm</strong>.</li>
+<li>Collect cells into a 50 mL tube and centrifuge at <strong>20°C, 10 min, 400-500g</strong>.</li>
 <li>Aspirate supernatant and resuspend the pellet in an appropriate volume (e.g.&nbsp;5–10 mL) of fresh medium.</li>
 <li>Seed into flasks/plates at the desired density for continued expansion.</li>
 </ul></li>
@@ -566,7 +589,7 @@ Warning
 <li>Count cells using a hemocytometer or automated cell counter.</li>
 <li>Dilute cells in Vero propagation medium to reach <strong>70–90% confluence</strong> in 24-well plates on the day of infection (<strong>Day 0</strong>). As a starting point:
 <ul>
-<li>Aim for ~1–2 × 10⁵ cells per well in 24-well plates.</li>
+<li>Aim for ~1–2 × 10^5 cells per well in 24-well plates.</li>
 </ul></li>
 <li>Seed cells in <strong>24-well incubation plates</strong> (e.g.&nbsp;0.5–1 mL per well).</li>
 <li>Incubate overnight at 37°C, 5% CO₂ in the infectious incubator.</li>
@@ -579,9 +602,9 @@ Warning
 <li>On <strong>Day 0</strong>, detach Vero cells from a near-confluent flask as described under maintenance.</li>
 <li>Resuspend cells in Vero propagation medium and count.</li>
 <li>Calculate total cell number in the suspension. For example, if a counted sample corresponds to <code>N</code> cells per defined volume, determine the concentration and total cells in the resuspension volume.</li>
-<li>Dilute the cell suspension to <strong>8 × 10⁵ cells/mL</strong> in Vero propagation medium.</li>
+<li>Dilute the cell suspension to <strong>8 × 10^5 cells/mL</strong> in Vero propagation medium.</li>
 <li>Keep the cell suspension on ice until seeding.</li>
-<li>For each well of the <strong>24-well incubation plate</strong>, add <strong>200 µL</strong> of this suspension (→ <strong>1.6 × 10⁵ cells per well</strong>).</li>
+<li>For each well of the <strong>24-well incubation plate</strong>, add <strong>200 µL</strong> of this suspension (→ <strong>1.6 × 10^5 cells per well</strong>).</li>
 <li>Proceed directly with virus addition and infection as described in the infection section.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -607,27 +630,104 @@ Tip
 <ul>
 <li>Prepare a <strong>2% (w/v)</strong> methylcellulose solution by dissolving 20 g methylcellulose in 1 L dH₂O.</li>
 <li>Autoclave (if compatible with your methylcellulose product) or sterile-filter if possible.</li>
-<li>Store at 4°C. Warm to room temperature before mixing with 2× DMEM.</li>
+<li>Store at Room Temperature.</li>
+<li>Place on a magnetic stirrer to mix thoroughly before combining with 2× DMEM.</li>
+<li>Do <strong>not</strong> invert or vortex vigorously, as this can introduce bubbles.</li>
 </ul>
 </section>
 <section id="dmem-overlay-medium" class="level2">
 <h2 class="anchored" data-anchor-id="dmem-overlay-medium">2× DMEM overlay medium</h2>
-<p>Prepare <strong>2× DMEM</strong> as follows (example formulation; adapt to your laboratory’s standard buffer documents if applicable):</p>
+<p>Prepare <strong>2× DMEM overlay medium</strong> using <strong>10× DMEM base lacking L-glutamine, sodium pyruvate, and NaHCO₃</strong>, and supplement with the following components:</p>
 <ul>
-<li>1 bag <strong>2× DMEM powder</strong></li>
-<li>10 mL FCS/FBS (to yield 10% final in the overlay)</li>
-<li>5 mL Pen/Strep (2%)</li>
-<li>1.1 g NaHCO₃</li>
-<li>dH₂O to a final volume of <strong>265 mL</strong></li>
+<li><strong>10× DMEM base</strong> (no L-glutamine, no sodium pyruvate, no NaHCO₃)</li>
+<li><strong>Sodium pyruvate</strong> (100 mM stock)</li>
+<li><strong>NaHCO₃</strong> (74 g/L stock solution)</li>
+<li><strong>L-glutamine</strong> (200 mM stock)</li>
+<li><strong>Penicillin/Streptomycin</strong> (100× stock)</li>
+<li><strong>FCS</strong> (use green label AG Abdullah viral titre-tested FCS)</li>
+<li><strong>Bidest water</strong> (to adjust to final volume)</li>
 </ul>
-<p>Mix thoroughly and sterile-filter into appropriate storage bottles. Store at 4°C and warm to room temperature before use.</p>
+<p>Adjust volumes according to the desired final preparation volume and concentrations (see table below).</p>
+<section id="final-concentrations" class="level3">
+<h3 class="anchored" data-anchor-id="final-concentrations">Final concentrations</h3>
+<p>The overlay is later mixed <strong>1:1</strong> with 2% methylcellulose, so all concentrations halve in the final <strong>1× overlay</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Stock</th>
+<th>In 25 mL 2× DMEM</th>
+<th>Final in <strong>2× DMEM</strong></th>
+<th>Final in <strong>1× overlay</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DMEM base</td>
+<td>10×</td>
+<td>5.00 mL</td>
+<td><strong>2×</strong></td>
+<td><strong>1×</strong></td>
+</tr>
+<tr class="even">
+<td>Sodium pyruvate</td>
+<td>100 mM</td>
+<td>0.50 mL</td>
+<td><strong>2 mM</strong></td>
+<td><strong>1 mM</strong></td>
+</tr>
+<tr class="odd">
+<td>NaHCO₃</td>
+<td>74 g/L (880.84 mM)</td>
+<td>4.94 mL</td>
+<td><strong>14.62 g/L (174 mM)</strong></td>
+<td><strong>7.3 g/L (86.89 mM)</strong></td>
+</tr>
+<tr class="even">
+<td>L-glutamine</td>
+<td>200 mM</td>
+<td>0.50 mL</td>
+<td><strong>4 mM</strong></td>
+<td><strong>2 mM</strong></td>
+</tr>
+<tr class="odd">
+<td>Pen/Strep</td>
+<td>100×</td>
+<td>0.50 mL</td>
+<td><strong>2× (2% v/v)</strong></td>
+<td><strong>1× (1% v/v)</strong></td>
+</tr>
+<tr class="even">
+<td>FCS</td>
+<td>—</td>
+<td>2.50 mL</td>
+<td><strong>10% (v/v)</strong></td>
+<td><strong>5% (v/v)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Mix thoroughly. Store at <strong>4 °C</strong> and warm to <strong>room temperature or 37 °C</strong> before use.</p>
+<hr>
+</section>
 </section>
 <section id="overlay-mixture" class="level2">
 <h2 class="anchored" data-anchor-id="overlay-mixture">Overlay mixture</h2>
+<p>The overlay is prepared as a nominal <strong>1:1 mix</strong> of <strong>2× DMEM</strong> and <strong>2% methylcellulose</strong>, yielding a final <strong>1× DMEM, 1% methylcellulose overlay</strong>.</p>
+<p>Because methylcellulose is viscous and adheres to vessel walls, prepare with <strong>~10% excess methylcellulose</strong> to ensure correct final volume.</p>
+<section id="example-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="example-preparation">Example preparation</h3>
 <ul>
-<li>Immediately before use, mix equal volumes of <strong>2× DMEM overlay medium</strong> and <strong>2% methylcellulose</strong> to generate a <strong>1× DMEM, 1% methylcellulose overlay</strong>.</li>
-<li>Keep at room temperature during the overlay step. The solution will be <strong>viscous</strong>.</li>
+<li><strong>25 mL 2× DMEM overlay medium</strong></li>
+<li><strong>27.5 mL 2% methylcellulose</strong></li>
 </ul>
+<p>Vigorously shake to homogenize, then place in a <strong>37 °C water bath</strong> to remove bubbles and equilibrate before use.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -638,18 +738,32 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Because the methylcellulose overlay is viscous, use a <strong>cut pipette tip</strong> (trimmed with sterile scissors) or a <strong>serological pipette</strong> to avoid bubbles and ensure accurate dispensing.</p>
+<p>Because the methylcellulose overlay is viscous, use a <strong>cut pipette tip</strong> (trimmed with sterile scissors) or a <strong>serological pipette</strong> to avoid bubbles and ensure accurate dispensing. Note: it can also be pipetted normally with a 200ul or 1,000ul pipette tip</p>
 </div>
 </div>
+</section>
 </section>
 </section>
 <section id="virus-dilution-series-5-fold-plate-based" class="level1">
 <h1>Virus dilution series (5-fold plate-based)</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Perform titration in duplicate</p>
+</div>
+</div>
 <ol type="1">
-<li>Thaw a virus aliquot rapidly at 37°C and immediately transfer to ice.</li>
+<li>Thaw a virus aliquot AG Abdullah protocol = on ice slowly Other published protocols = rapidly at 37°C and immediately transfer to ice.</li>
 <li>Prepare a <strong>24-well dilution plate</strong>:
 <ul>
-<li>Add <strong>400 µL</strong> infection/dilution medium (e.g.&nbsp;DMEM + 2% FCS) to each well required for the serial dilution.</li>
+<li>Add <strong>400 µL</strong> infection/dilution medium (e.g.&nbsp;DMEM + 10% FCS + 1% Pen/Srep) to each well required for the serial dilution.</li>
 </ul></li>
 <li>For each virus stock:
 <ul>
@@ -660,9 +774,10 @@ Tip
 <ul>
 <li>Transfer <strong>100 µL</strong> from the first well to the next well in the column containing 400 µL medium.</li>
 <li>Mix thoroughly by pipetting.</li>
-<li>Repeat down the column to achieve the desired range of 5-fold dilutions (e.g.&nbsp;dilutions 5¹ to 5⁵ or more, depending on expected titer).</li>
+<li>Repeat down the column to achieve the desired range of 5-fold dilutions (e.g.&nbsp;dilutions 5^1 to 5^5 or more, depending on expected titer).</li>
 </ul></li>
 <li>Use fresh tips for each transfer to avoid back-contamination.</li>
+<li>Include a no-virus control</li>
 <li>Keep the dilution plate on ice until infection.</li>
 </ol>
 </section>
@@ -680,7 +795,7 @@ Tip
 </ul></li>
 </ul></li>
 <li>Gently rock the plate to distribute the inoculum evenly.</li>
-<li>Incubate at 37°C, 5% CO₂ in the infectious incubator for <strong>3 h</strong> (adsorption/infection phase).</li>
+<li>Incubate at 37°C, 5% CO₂ in the infectious incubator for <strong>3 h</strong>, gently mixing in a figure-eight pattern every <strong>15 mins</strong> (adsorption/infection phase).</li>
 <li>After 3 h, without aspirating the inoculum, overlay each well with <strong>400 µL</strong> of the pre-mixed methylcellulose/2× DMEM overlay (see above).
 <ul>
 <li>Use a <strong>cut pipette tip</strong> or <strong>serological pipette</strong> to handle the viscous overlay and avoid bubbles.</li>
@@ -797,7 +912,7 @@ Warning
 <li>Identify wells and dilutions that have <strong>10–100 discrete foci</strong> (well-separated, countable).</li>
 <li>For each suitable well, record:
 <ul>
-<li>Dilution factor (e.g.&nbsp;5³ = 125)</li>
+<li>Dilution factor (e.g.&nbsp;5^3 = 125)</li>
 <li>Number of foci</li>
 <li>Volume of virus inoculum added per well (in mL; e.g.&nbsp;0.2 mL from the dilution plate)</li>
 </ul></li>
@@ -809,9 +924,9 @@ Warning
 <ul>
 <li>40 foci in a well<br>
 </li>
-<li>Inoculated with <strong>0.2 mL</strong> of a <strong>5⁴ dilution</strong> (5⁴ = 625)</li>
+<li>Inoculated with <strong>0.2 mL</strong> of a <strong>5^4 dilution</strong> (5^4 = 625)</li>
 </ul>
-<p><strong>FFU/mL = (40 × 625) / 0.2 = 125,000 FFU/mL = 1.25 × 10⁵ FFU/mL</strong></p>
+<p><strong>FFU/mL = (40 × 625) / 0.2 = 125,000 FFU/mL = 1.25 × 10^5 FFU/mL</strong></p>
 <ol start="5" type="1">
 <li>If multiple wells at the same dilution are counted (technical replicates), calculate the <strong>mean FFU/mL</strong> and optionally the standard deviation.</li>
 <li>Report titers as FFU/mL and record all raw counts and calculations in your lab notebook or electronic record.</li>

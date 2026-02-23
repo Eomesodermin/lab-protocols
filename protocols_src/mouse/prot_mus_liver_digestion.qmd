@@ -2,7 +2,7 @@
 title: "Mouse Liver Digestion to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-LIV-DIG-001"
-version: "v1.1"
+version: "v1.2"
 date: "2025-11-26"
 description: "Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications."
 ---
@@ -116,12 +116,18 @@ Handle needles and sharps carefully and dispose of them immediately into an appr
 2. *(Recommended)* **Weigh the liver**:
    - Briefly blot on filter paper to remove excess liquid.
    - Record the liver weight.
-3. Add **5 mL pre-warmed liver digestion buffer (in DMEM)** to a **labelled gentleMACS C-tube**.
-4. Transfer the liver into the gentleMACS C-tube.
-5. Using sterile scissors, mince the liver **directly in the C-tube** until fragments are approximately **2–3 mm** in size.
-6. Ensure all tissue pieces are fully submerged in digestion buffer and not stuck to the tube walls.
-7. Secure the C-tube onto the **gentleMACS instrument** and place the warming sleeve over the tube.
-8. Run the appropriate **liver digestion program** (e.g. **HH17**, ~17 min).
+   
+
+## STEP 4 – enzymatic and mechanical dissociation
+
+### Option A - GentleMACS C-tube 
+   
+1. Add **5 mL pre-warmed liver digestion buffer (with DNAse)** to a **labelled gentleMACS C-tube**.
+2. Transfer the liver into the gentleMACS C-tube.
+3. Using sterile scissors, mince the liver **directly in the C-tube** until fragments are approximately **2–3 mm** in size.
+4. Ensure all tissue pieces are fully submerged in digestion buffer and not stuck to the tube walls.
+5. Secure the C-tube onto the **gentleMACS instrument** and place the warming sleeve over the tube.
+6. Run the appropriate **liver digestion program** (e.g. **HH17**, ~17 min).
 
 :::callout-warning
 Confirm that each C-tube is correctly seated and rotating before leaving the instrument.  
@@ -134,24 +140,58 @@ Over-digestion can strip surface epitopes and negatively impact downstream pheno
 Note: the gentleMACS instrument does **not** beep when the program finishes—set a timer before starting.
 :::
 
-## STEP 4 – Hepatocyte removal and washing
+7. After completion of the program, transfer the entire liver cell suspension into a **50 mL conical tube**.
+8. Rinse the C-tube with **ice-cold FACS buffer** and add the rinse to the same 50 mL tube to maximise yield.
+9. Bring the total volume to **50 mL with ice-cold FACS buffer**.
 
-1. After digestion, transfer the entire liver cell suspension from the gentleMACS C-tube into a **50 mL conical tube**.
-2. Rinse the C-tube with **ice-cold FACS buffer** and add the rinse to the same tube to maximize yield.
-3. Bring the volume up to **50 mL with ice-cold FACS buffer**.
-4. Centrifuge at **50 g for 2 minutes at 4 °C** to sediment hepatocytes.
-5. Carefully transfer the **supernatant** (containing leukocytes) to a fresh **50 mL tube**, avoiding disturbance of the hepatocyte pellet.
-6. Adjust the volume to **50 mL with ice-cold FACS buffer**.
-7. Centrifuge at **400 g for 5 minutes at 4 °C**.
-8. Discard the supernatant and keep the leukocyte pellet **on ice** for downstream processing.
+Proceed directly to **STEP 5 – Hepatocyte removal and washing**.
+
+### Option B – Manual mechanical dissociation
+
+1. Add **5 mL pre-warmed liver digestion buffer (with DNAse)** to a **labelled 50 mL tube**.
+2. Transfer the liver into the 50 mL tube.
+3. Using sterile scissors, mince the liver **directly in the tube** until fragments are approximately **2–3 mm** in size.
+4. Ensure all tissue pieces are fully submerged in digestion buffer and not adhered to the tube walls.
+5. Place the tube horizontally on a **37°C shaking incubator (250 rpm)** and incubate for **30 minutes**.
+
+:::callout-important
+Ensure tubes are tightly closed and positioned securely on the shaker.  
+Set a timer — prolonged digestion can reduce viability and affect surface marker integrity.
+:::
+
+6. After incubation, place a **70 μm cell strainer** into a clean petri dish.
+7. Pour the digestion mixture through the strainer.
+8. Using the back of a **5 mL syringe plunger**, gently press the tissue through the strainer to mechanically dissociate remaining fragments.
+9. Rinse the strainer with **2% FCS in PBS/DPBS** while continuing gentle mechanical disruption until no visible fragments remain.
+10. Pour the single-cell suspension from the petri dish back into the corresponding **50 mL tube**.
+
+To maximise recovery:
+
+11. Add **5–10 mL 2% FCS.PBS** into the petri dish.
+12. Dab the underside of the strainer in the buffer to release trapped cells.
+13. Rinse the syringe plunger in the same buffer to wash off adherent cells.
+14. Use a transfer pipette to collect remaining suspension from the underside of the strainer and plunger and add to the corresponding **50 mL tube**.
+15. Swirl the buffer in the petri dish to wash out residual cells and pour into the same tube.
+16. Bring the volume to **50 mL with ice-cold FACS buffer**.
+
+Proceed directly to **STEP 5 – Hepatocyte removal and washing**.
+
+
+
+## STEP 5 – Hepatocyte removal and washing
+
+1. Centrifuge at **50 g for 2 minutes at 4 °C** to sediment hepatocytes.
+2. Carefully transfer the **supernatant** (containing leukocytes) to a fresh **50 mL tube**, avoiding disturbance of the hepatocyte pellet.
+3. Adjust the volume to **50 mL with ice-cold FACS buffer**.
+4. Centrifuge at **400 g for 5 minutes at 4 °C**.
+5. Discard the supernatant and keep the leukocyte pellet **on ice** for downstream processing.
 
 :::callout-warning
 Cell pellets from digested liver are often **loose and poorly compacted**.  
-When discarding supernatant by pouring, do so **scarefully**. Avoid flicking, shaking, or abrupt movements.
+When discarding supernatant by pouring, do so carefully. Avoid flicking, shaking, or abrupt movements.
 :::
 
-
-## STEP 5 – 37% Percoll enrichment
+## STEP 6 – 37% Percoll enrichment
 
 1. Aliquot **10 mL of 37% Percoll** into **pre-labelled 15 mL conical tubes** (one tube per liver).
 2. Using a **transfer pipette**, resuspend the cell pellet using the small remaining **dead volume**.
@@ -181,7 +221,7 @@ After the Percoll spin, a debris/hepatocyte-rich layer typically remains in the 
 12. Centrifuge at **400 g for 5 minutes at 4 °C**.
 13. Discard the supernatant and keep the enriched leukocyte pellet **on ice** for downstream steps.
 
-## STEP 5 – RBC lysis
+## STEP 7 – RBC lysis
 
 1. Add **RBC lysis buffer** to the cell pellet (**0.5–1 mL per liver**):  
    - **ACK lysis buffer:** incubate for **30–60 seconds at room temperature**, **or**  
@@ -202,7 +242,7 @@ RBC lysis is often unnecessary for liver samples when a Percoll gradient is used
 :::
 
 
-## STEP 6 – Final resuspension
+## STEP 8 – Final resuspension
 
 1. Resuspend the cell pellet in 1-5 mL ice-cold FACS Buffer
 2. Count cells and assess viability (e.g. trypan blue) as required.

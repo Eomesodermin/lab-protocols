@@ -1,0 +1,95 @@
+---
+title: "Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "PROT-NLC-STIM-001"
+version: "v1.0"
+description: "Simple 96-well plate-bound stimulation of sorted NLCs for 3 days followed by IL-2-driven expansion."
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+---
+
+**Protocol ID:** {< meta protocol_id >}  
+**Version:** {< meta version >}  
+**Author:** Dillon Corvino  
+**Date:** 2026-03-02
+
+# Purpose
+
+To stimulate sorted NLCs in 96-well plates using plate-bound anti-CD3e and/or anti-NK1.1 with soluble anti-CD28, then transfer cells to uncoated wells for IL-2-driven expansion.
+
+# Critical notes (read before starting)
+
+- Use sterile technique throughout.
+- Coat plates at 4 °C overnight for consistent binding.
+- anti-CD28 is **soluble** (add in media; do not coat).
+- After stimulation, transfer cells to **uncoated** wells to avoid continued plate-bound signaling.
+
+# Working concentrations
+
+## Stimulation phase (in culture)
+
+| Reagent | Final concentration | Notes |
+|---|---:|---|
+| anti-CD3e | 2 µg/mL | plate-bound |
+| anti-NK1.1 | 10 µg/mL | plate-bound |
+| anti-CD28 | 5 µg/mL | soluble (in media) |
+| Mouse IL-2 | 1 ng/mL | during stimulation |
+
+## Expansion phase (post-stimulation)
+
+| Reagent | Final concentration | Notes |
+|---|---:|---|
+| Mouse IL-2 | 100 IU/mL | in fresh complete T cell medium |
+
+# Plate and seeding
+
+- Plate type: 96-well **U-bottom** or **flat-bottom**
+- Seeding density: **10,000–50,000 cells per well**
+- Coating volume: **200 µL/well PBS** (sterile)
+
+# Procedure
+
+## Plate coating (Day -1)
+
+1. Prepare coating solutions in **sterile PBS** (200 µL per well):  
+   - anti-CD3e (as needed per condition)  
+   - anti-NK1.1 (as needed per condition)  
+   *(Do not include anti-CD28.)*
+2. Add **200 µL** coating solution per well.
+3. Incubate **overnight at 4 °C**.
+
+## Stimulation (Day 0)
+
+1. Remove coating solution.
+2. Wash wells **2×** with **sterile PBS**.
+3. Add cells in complete T cell medium, seeding **10–50K cells/well**.
+4. Add soluble reagents to culture medium (per condition):  
+   - anti-CD28 to **5 µg/mL**  
+   - mouse IL-2 to **1 ng/mL**
+5. Incubate **3 days** at 37 °C, 5% CO2.
+
+## Transfer to expansion (Day 3 → Day 4)
+
+1. Gently resuspend cells and transfer the full well contents to **uncoated** wells (new 96-well plate).
+2. Culture in fresh complete T cell medium containing mouse IL-2 at **100 IU/mL**.
+
+# Storage and stability
+
+- Coated plates can be prepared the day before and kept at **4 °C overnight** until use.
+- Prepare antibody working solutions fresh where possible.
+
+# Safety
+
+- Handle all primary cells and culture waste using appropriate biosafety procedures.
+- Dispose of liquid waste containing cells as biohazardous waste.
+
+# Version history
+
+| Version | Date | Author | Changes |
+|---|---|---|---|
+| v1.0 | 2026-03-02 | Dillon Corvino | Initial simple stimulation protocol. |

@@ -25,6 +25,7 @@
       "/protocols_src/buffers/buf_R0_med.html",
       "/protocols_src/buffers/buf_R10_med.html",
       "/protocols_src/buffers/buf_rbc_lysis_hybrimax.html",
+      "/protocols_src/buffers/buf_Tcell_med.html",
       "/protocols_src/buffers/buf_vero_propagation_medium.html"
     ]
   },

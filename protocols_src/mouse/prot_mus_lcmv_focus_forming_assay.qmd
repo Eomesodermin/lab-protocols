@@ -263,7 +263,7 @@ Perform titration in duplicate
 4. Incubate at 37°C, 5% CO₂ in the infectious incubator for **3 h**, gently mixing in a figure-eight pattern every **15 mins** (adsorption/infection phase).
 5. After 3 h, without aspirating the inoculum, overlay each well with **400 µL** of the pre-mixed methylcellulose/2× DMEM overlay (see above).
    - Use a **cut pipette tip** or **serological pipette** to handle the viscous overlay and avoid bubbles.
-6. Return the plates to the infectious incubator and incubate at 37°C, 5% CO₂ for **60–72 h**.
+6. Return the plates to the infectious incubator and incubate at 37°C, 5% CO₂ for **48–72 h**. N.B Anna finds better foci at 48 hour incubation
    - Do not disturb the plates during this period to allow discrete foci to form.
 
 :::callout-tip
@@ -274,7 +274,7 @@ A typical schedule is **Day 0: infection and overlay**, **Day 2–3: fixation an
 
 From this point on, all steps are performed at **room temperature** (unless otherwise specified). Work in the biosafety cabinet until fixation is complete.
 
-1. After 60–72 h incubation, remove plates from the incubator and place them in the biosafety cabinet.
+1. After 48–72 h incubation, remove plates from the incubator and place them in the biosafety cabinet.
 2. Carefully aspirate the overlay and supernatant without touching the cell layer.
 3. Add **300–400 µL** of **4% PFA in PBS** to each well.
 4. Incubate for **30 min** at room temperature.
@@ -285,7 +285,7 @@ Once fixation is complete and the plates have been washed, subsequent steps (per
 
 # Permeabilization and priming
 
-1. Add **200 µL** of **Triton X-100 permeabilization solution** (e.g. PBS + 0.1–0.3% Triton X-100) to each well.
+1. Add **200 µL** of **1% Triton X-100 permeabilization solution** (Diluted in PBS) to each well.
 2. Incubate for **20 min** at room temperature.
 3. Aspirate the permeabilization solution.
 4. Add **400 µL** of **5% FCS in PBS** to each well.
@@ -298,21 +298,20 @@ Once fixation is complete and the plates have been washed, subsequent steps (per
 
 1. Prepare the primary antibody solution fresh on the day of use:
    - Dilute **VL-4 (rat anti-LCMV NP)** **1:400** in **2% FCS in PBS**.
-   - Example: **50 µL VL-4** into **20 mL** 2% FCS/PBS (adjust volumes as needed).
-2. Aspirate the 5% FCS/PBS solution from each well.
-3. Add **200 µL** of the VL-4 working solution to each well.
-4. Incubate for **60 min** at room temperature in a humidified chamber (or covered to prevent evaporation).
-5. After incubation, wash wells **2× with PBS** (e.g. 5 min per wash).
+   - location: VL-4 antibody is found in Paula's personal fridge, DO NOT USE THE OLD VIAL
+2. Add **200 µL** of the VL-4 working solution to each well.
+3. Incubate for **60 min** at room temperature covered to prevent evaporation.
+4. After incubation, wash wells **2× with 300 µL PBS**.
 
 ## Secondary antibody (HRP-conjugated goat anti-rat IgG)
 
 1. Prepare the secondary antibody solution fresh on the day of use:
-   - Dilute **Peroxidase AffiniPure Goat Anti-Rat IgG (HRP)** **1:100** in **2% FCS in PBS**.
-   - Example: **200 µL** secondary antibody into **20 mL** 2% FCS/PBS (adjust volumes as needed).
+   - Dilute **anti-rat IgG-POX** **1:100** in **2% FCS in PBS**.
+   - Location: Paula's -20 freezer.
 2. Add **200 µL** of the secondary antibody solution to each well.
-3. Incubate for **60 min** at room temperature in a humidified chamber.
+3. Incubate for **60 min** at room temperature covered to prevent evaporation.
 4. Around **10 min before the end** of the secondary incubation, prepare the OPD substrate solution (see below).
-5. After incubation, wash wells **2× with PBS** (e.g. 5 min per wash).
+5. After incubation, wash wells **2× with 300 µL PBS**.
 
 # OPD development and stopping the reaction
 
@@ -320,7 +319,9 @@ Once fixation is complete and the plates have been washed, subsequent steps (per
 **OPD is hazardous** and must be handled in a **fume hood** with appropriate PPE. OPD solutions and contaminated consumables must be collected as **chemical hazardous waste** according to institutional regulations.
 :::
 
-1. Prepare the OPD substrate solution fresh approximately **10 min** before use, following the manufacturer’s instructions (e.g. OPD tablet in buffer with H₂O₂).
+1. Prepare the OPD substrate solution fresh approximately **10 min** before use. **Perform under fume hood**
+  - Dissolve 1 tablet (20 mg) in 50 ml of 0.05M Phospho Citrate buffer
+  - Add 20 µL of 30% H2O2 (Add just before use) 
 2. Transfer the fixed, antibody-stained plates to a **fume hood**.
 3. Add **400 µL** of OPD substrate solution to each well.
 4. Incubate for **10–20 min** at room temperature, monitoring the development of foci periodically.
@@ -328,7 +329,7 @@ Once fixation is complete and the plates have been washed, subsequent steps (per
 5. When development is complete:
    - Aspirate OPD solution into a designated **chemical waste container** in the fume hood.
 6. Wash wells **2× with 400 µL PBS** to remove residual substrate.
-7. Plates can be kept in PBS until counting or allowed to air-dry if preferred.
+7. Air-dry plates in fume hood for ~24 hours.
 
 # Focus counting and titer calculation
 

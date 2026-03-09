@@ -1,0 +1,99 @@
+---
+title: "T Cell Medium (RPMI + 10% FCS + Supplements)"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-TCELL-MED-001"
+version: "v1.0"
+date: "2026-03-02"
+description: "Complete RPMI 1640 medium supplemented with FCS, Penicillin/Streptomycin, beta-mercaptoethanol, L-glutamine, and sodium pyruvate for mouse T cell and NLC culture."
+---
+
+**Protocol ID:** {< meta protocol_id >}  
+**Version:** {< meta version >}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+Complete T cell medium based on RPMI 1640, supplemented for optimal survival, activation, and expansion of mouse T cells and NLCs in vitro.
+
+# Working buffer composition
+
+| Component                 | Final concentration | Notes                          |
+|---------------------------|--------------------|--------------------------------|
+| RPMI 1640                 | —                  | Base medium                   |
+| Fetal calf serum (FCS)    | 10% (v/v)          | Heat-inactivated              |
+| Penicillin/Streptomycin   | 1% (v/v)           | 100× stock → 1× final         |
+| L-glutamine               | 2 mM               | From 200 mM stock             |
+| Sodium pyruvate           | 1 mM               | From 100 mM stock             |
+| beta-mercaptoethanol      | 50 µM              | From 50 mM stock              |
+
+# Preparation
+
+## Stock solutions required
+
+| Reagent                    | Stock concentration | Dilution to final |
+|----------------------------|--------------------|------------------|
+| Fetal calf serum (FCS)     | —                  | 10% (v/v)        |
+| Penicillin/Streptomycin    | 100×               | 1:100            |
+| L-glutamine                | 200 mM             | 1:100            |
+| Sodium pyruvate            | 100 mM             | 1:100            |
+| beta-mercaptoethanol       | 50 mM              | 1:1000           |
+| RPMI 1640                  | —                  | Base medium      |
+
+## Volume calculations
+
+Dilution logic:
+
+- 10% FCS → 1:10  
+- 1% Pen/Strep (100×) → 1:100  
+- 2 mM L-glut from 200 mM → 1:100  
+- 1 mM sodium pyruvate from 100 mM → 1:100  
+- 50 µM beta-mercaptoethanol from 50 mM → 1:1000  
+
+## Preparation table
+
+| Reagent        | 10 mL | 50 mL | 100 mL | 200 mL | 500 mL |
+| -------------- | ----- | ----- | ------ | ------ | ------ |
+| RPMI (mL)      | 8.69  | 43.45 | 86.9   | 173.8  | 434.5  |
+| FCS (mL)       | 1.0   | 5.0   | 10.0   | 20.0   | 50.0   |
+| Pen/Strep (ul) | 100   | 500   | 1,000    | 2,000   | 5,000    |
+| L-glut (uL)    | 100   | 500   | 1,000    | 2,000   | 5,000    |
+| Pyruvate (uL)  | 100   | 500   | 1,000    | 2,000   | 5,000    |
+| beta-ME (uL)   | 10  | 50  | 100    | 200    | 500    |
+
+Label with:
+   - *T Cell Complete Medium*  
+   - Date of preparation  
+   - Expiry (4 weeks after preparation)
+
+::: callout-tip
+Add beta-mercaptoethanol fresh where possible for optimal T cell viability.
+:::
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.  
+- Use within **4 weeks** after preparation.  
+- Do not freeze.
+
+# Reagent details
+
+| Reagent                 | Supplier | Cat. # | Notes |
+|-------------------------|----------|--------|-------|
+| RPMI 1640               | Various  | —      | Base medium |
+| Fetal calf serum        | Various  | —      | Heat-inactivated |
+| Pen/Strep (100×)        | Various  | —      | Antibiotics |
+| L-glutamine (200 mM)    | Various  | —      | Stable stock |
+| Sodium pyruvate (100 mM)| Various  | —      | Optional supplement |
+| beta-mercaptoethanol    | Various  | —      | Handle in hood |
+
+# Safety
+
+- Handle medium aseptically in a biosafety cabinet.  
+- beta-mercaptoethanol is toxic and volatile; handle in a chemical hood.  
+- Dispose of expired or contaminated medium as biohazardous waste.
+
+# Version history
+
+| Version | Date       | Author         | Changes |
+|--------|------------|----------------|---------|
+| v1.0   | 2026-03-02 | Dillon Corvino | Initial T cell medium document. |

@@ -1,0 +1,27 @@
+### Mice used
+
+```{r}
+library(tidyverse)
+
+experimentDate <- as.Date("YYYY-MM-DD")  # from YAML date field — edit here
+
+mice.df <- tibble::tibble(
+  mouseId   = c(NA_character_),
+  sex       = c(NA_character_),
+  genotype  = c(NA_character_),
+  dob       = as.Date(c(NA_character_)),
+  treatment = c(NA_character_)
+) |>
+  dplyr::mutate(
+    ageWeeks = as.integer(difftime(experimentDate, dob, units = "weeks"))
+  ) |>
+  dplyr::select(mouseId, sex, genotype, dob, ageWeeks, treatment)
+
+knitr::kable(
+  mice.df,
+  align = "l",
+  col.names = c("Mouse ID", "Sex", "Genotype", "DOB", "Age (weeks)", "Treatment")
+)
+```
+
+---

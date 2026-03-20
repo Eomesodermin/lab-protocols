@@ -1,0 +1,19 @@
+### Sort strategy
+
+- **Instrument:** [sorter name]
+- **Nozzle:** [size um]
+- **Sort mode:** [e.g. 2-way, 4-way]
+- **Collection vessel:** [tube type and buffer]
+- **Collection conditions:** [cooled / RT / FCS-coated]
+
+**Gate hierarchy:**
+
+1. FSC/SSC — lymphocytes
+2. Singlets
+3. Live cells
+4. [Population gate]
+5. [Target sort gate]
+
+**Sorted population:** [full phenotype description]
+
+---

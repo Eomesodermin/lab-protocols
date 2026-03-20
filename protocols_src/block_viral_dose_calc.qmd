@@ -1,0 +1,39 @@
+### Viral dose calculation
+
+```{r}
+# ---- inputs (edit here) ----
+# viralDosePfu must be defined in the Doses block above
+virusCol <- "receivesVirus"  # boolean column in groups.df — edit if different
+
+virusRecipients <- as.integer(sum(groups.df$n[groups.df[[virusCol]]]))
+
+viralAssumptions.df <- tibble::tibble(
+  assumption = c("Viral dose per recipient", "Recipients receiving virus"),
+  value      = c(scales::scientific(viralDosePfu), virusRecipients),
+  notes      = c("from Doses block", paste0("sum(n) where ", virusCol, " == TRUE"))
+)
+
+knitr::kable(
+  viralAssumptions.df,
+  align = "l",
+  col.names = c("Assumption", "Value", "Notes")
+)
+```
+
+```{r}
+totalVirusPfu <- viralDosePfu * virusRecipients
+
+viralOutputs.df <- tibble::tibble(
+  metric = "Total viral PFU required",
+  value  = scales::scientific(totalVirusPfu),
+  notes  = "viralDosePfu x recipients"
+)
+
+knitr::kable(
+  viralOutputs.df,
+  align = "l",
+  col.names = c("Metric", "Value", "Notes")
+)
+```
+
+---

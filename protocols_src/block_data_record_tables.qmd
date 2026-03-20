@@ -1,0 +1,9 @@
+### Data record — [experiment phase, e.g. harvest]
+
+| Mouse ID | [Measure 1] | [Measure 2] | [Measure 3] | Notes |
+|---|---|---|---|---|
+| | | | | |
+| | | | | |
+| | | | | |
+
+---

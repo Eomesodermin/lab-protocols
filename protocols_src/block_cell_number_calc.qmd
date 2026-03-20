@@ -1,0 +1,68 @@
+### Cell number calculation
+
+```{r}
+# ---- inputs (edit here) ----
+transferCol  <- "receivesTransfer"  # boolean column in groups.df
+donorCol     <- "donorGenotype"     # donor genotype column in groups.df
+# dosePerRecipient must be defined in the Doses block above
+overheadFrac <- 0.15  # fraction to cover handling/sorting losses; edit as needed
+
+yield.df <- tibble::tibble(
+  donorGenotype  = c(NA_character_),  # one row per donor genotype; must match groups.df values
+  yieldPerDonor  = c(NA_real_)        # estimated cells per donor organ
+)
+
+recipientsByDonor.df <- groups.df |>
+  dplyr::filter(.data[[transferCol]]) |>
+  dplyr::group_by(dplyr::across(dplyr::all_of(donorCol))) |>
+  dplyr::summarise(nRecipients = sum(n), .groups = "drop") |>
+  dplyr::rename(donorGenotype = dplyr::all_of(donorCol))
+
+assumptions.df <- tibble::tibble(
+  assumption = c(
+    "Target dose per recipient",
+    "Overhead fraction",
+    "Recipients per donor genotype",
+    "Expected yield per donor (by genotype)"
+  ),
+  value = c(
+    scales::scientific(dosePerRecipient),
+    scales::percent(overheadFrac, accuracy = 1),
+    paste0(recipientsByDonor.df$donorGenotype, ": ", recipientsByDonor.df$nRecipients, collapse = " | "),
+    paste0(yield.df$donorGenotype, ": ", scales::scientific(yield.df$yieldPerDonor), collapse = " | ")
+  ),
+  notes = c(
+    "from Doses block",
+    "accounts for handling/sorting losses",
+    "derived from groups table",
+    "cells per donor organ"
+  )
+)
+
+knitr::kable(
+  assumptions.df,
+  align = "l",
+  col.names = c("Assumption", "Value", "Notes")
+)
+```
+
+```{r}
+outputsByDonor.df <- recipientsByDonor.df |>
+  dplyr::left_join(yield.df, by = "donorGenotype") |>
+  dplyr::mutate(
+    totalCellsNeeded = dosePerRecipient * nRecipients * (1 + overheadFrac),
+    donorsNeeded     = ceiling(totalCellsNeeded / yieldPerDonor)
+  ) |>
+  dplyr::transmute(
+    `Donor genotype`                     = donorGenotype,
+    `Recipients`                         = as.integer(nRecipients),
+    `Dose per recipient`                 = scales::scientific(dosePerRecipient),
+    `Total cells needed (incl. overhead)` = scales::comma(as.integer(round(totalCellsNeeded))),
+    `Yield per donor`                    = scales::scientific(yieldPerDonor),
+    `Donors required`                    = as.integer(donorsNeeded)
+  )
+
+knitr::kable(outputsByDonor.df, align = "l")
+```
+
+---

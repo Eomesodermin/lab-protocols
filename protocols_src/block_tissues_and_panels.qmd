@@ -1,0 +1,40 @@
+### Tissues and panels
+
+#### Organs to collect
+
+```{r}
+library(tidyverse)
+
+organs.df <- tibble::tibble(
+  sample          = c(NA_character_),
+  primaryReadouts = c(NA_character_),
+  secondaryReadout = c(NA_character_),
+  weighOrgan      = c(NA),
+  notes           = c(NA_character_)
+)
+
+knitr::kable(
+  organs.df,
+  align = "l",
+  col.names = c("Sample / organ", "Primary readouts", "Secondary readout", "Weigh organ", "Notes")
+)
+```
+
+#### Flow panels
+
+```{r}
+panels.df <- tibble::tibble(
+  panelId   = c(NA_character_),
+  panelName = c(NA_character_),
+  usedFor   = c(NA_character_),
+  notes     = c(NA_character_)
+)
+
+knitr::kable(
+  panels.df,
+  align = "l",
+  col.names = c("Panel ID", "Panel name", "Used for", "Notes")
+)
+```
+
+---

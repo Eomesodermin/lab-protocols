@@ -1,0 +1,20 @@
+### Doses
+
+```{r}
+# ---- inputs (edit here) ----
+doses.df <- tibble::tibble(
+  item  = c(NA_character_),   # e.g. "P14 transfer", "LCMV Clone 13", "NLC transfer"
+  dose  = c(NA_real_),        # numeric value
+  units = c(NA_character_),   # e.g. "cells / recipient", "PFU / recipient"
+  route = c(NA_character_),   # e.g. "i.v.", "i.p."
+  notes = c(NA_character_)
+)
+
+knitr::kable(
+  doses.df,
+  align = "l",
+  col.names = c("Item", "Dose", "Units", "Route", "Notes")
+)
+```
+
+---

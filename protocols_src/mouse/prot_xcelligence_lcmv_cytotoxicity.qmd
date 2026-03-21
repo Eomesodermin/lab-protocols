@@ -1,0 +1,385 @@
+---
+title: "xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "PROT-XCELL-LCMV-001"
+version: "v1.0"
+date: "2026-03-18"
+description: "Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure CD8+ T cell and NLC killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Includes fibroblast infection, xCELLigence plate setup, effector cell isolation, and real-time cytotoxicity measurement."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes a real-time impedance-based cytotoxicity assay using the xCELLigence RTCA system to measure the killing activity of **CD8+ T cells** and **NK-like cells (NLCs)** against LCMV-infected and uninfected **C57BL/6J embryonic fibroblasts**.
+
+The protocol integrates **in vitro LCMV infection** of target fibroblasts, **effector cell isolation** from infected mice, and **real-time cytotoxicity measurement** using label-free impedance monitoring over 4-24 hours.
+
+# Critical notes (read before starting)
+
+-   **xCELLigence E-Plates are required** - standard tissue culture plates cannot substitute.
+-   **Fibroblasts must be infected 48 hours before cytotoxicity assay** to allow proper viral protein expression.
+-   **Effector cells are isolated from LCMV-infected mice**: NLCs at **day 3** post-infection, CD8+ T cells at **day 7** post-infection.
+-   **Temperature stability is critical** - pre-warm all media to 37°C before addition to plates.
+-   **Minimize plate handling** once the assay begins to avoid impedance artifacts.
+-   **Target cell confluence should be 60-80%** at the time of effector addition for optimal impedance signal.
+
+# Approximate timing
+
+**Day -2:** Fibroblast seeding and infection setup (**2-3 hours**)  
+**Day -1:** LCMV infection of fibroblasts (**1 hour**)  
+**Day 0:** xCELLigence plate setup (**3-4 hours**), effector isolation (**2-3 hours**), assay start (**1 hour**)  
+**Real-time monitoring:** **4-24 hours** (continuous)  
+**Data analysis:** **1-2 hours**
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Materials
+
+## Fibroblasts and infection materials
+
+**Target cells:**
+- C57BL/6J embryonic fibroblasts (primary or immortalized)
+- RPMI 1640 + 5% FCS + 1% P/S (complete fibroblast medium)
+- DMEM + 5% FCS + 1% P/S (adsorption medium for infection)
+
+**Virus:**
+- LCMV-WE stock (titered, stored at -80°C)
+- Sterile PBS (endotoxin-free)
+
+## xCELLigence system
+
+**Hardware:**
+- xCELLigence RTCA instrument (SP, MP, or DP)
+- E-Plate 96 (catalog: ACEA Biosciences)
+- Standard CO₂ incubator (37°C, 5% CO₂)
+
+**xCELLigence plate configuration:**
+- **Instrument capacity:** 3 plates simultaneously
+- **Plate format:** Each plate = 2 columns × 8 rows = **16 wells/samples per plate**
+- **Total capacity:** 48 samples across 3 plates
+- **Recommended replication:** Minimum duplicate wells for each condition
+
+**Software:**
+- xCELLigence RTCA Software
+- Data analysis software (Excel, GraphPad Prism)
+
+## Effector cell isolation
+
+**From LCMV-infected mice:**
+- CD8+ T Cell Isolation Kit (Miltenyi Biotec) *[placeholder: confirm kit]*
+- NK cell isolation reagents for NLCs *[placeholder: specify isolation method]*
+- MACS separation columns and magnets
+
+**Buffers:**
+- MACS buffer: PBS + 0.5% BSA + 2 mM EDTA
+- FACS buffer: PBS + 2% FCS + 1 mM EDTA
+
+## Controls and reagents
+
+**Controls:**
+- Uninfected fibroblasts (negative target control)
+- Medium only wells (background impedance)
+- Target cells + medium (spontaneous death)
+- Triton X-100, 1% in PBS (maximal lysis control)
+
+**Cytotoxicity reagents:**
+- Effector cell medium: RPMI 1640 + 10% FCS + 1% P/S
+
+# Procedure
+
+## Day -2: Fibroblast culture and preparation
+
+### Fibroblast expansion
+
+1. **Thaw and expand C57BL/6J fibroblasts** in complete medium according to standard protocols.
+2. **Passage cells** to achieve optimal density for infection.
+3. **Count cells** and prepare for seeding.
+
+### Target cell seeding for infection
+
+Based on laboratory experience with xCELLigence assays (previously validated with B16F10 and MCA1956 tumor cells), optimal target cell density is **25,000 cells per well**.
+
+1. **Prepare cell suspension:** Adjust fibroblasts to **5 × 10⁵ cells/mL** in complete medium.
+2. **Seed in standard 96-well plates:** Add **50 μL per well** (= **25,000 cells/well**).
+3. **Plate layout for infection:**
+   - **Wells A1-H6:** For LCMV infection
+   - **Wells A7-H12:** For uninfected controls
+4. **Incubate overnight** at 37°C, 5% CO₂.
+
+## Day -1: LCMV infection of fibroblasts
+
+### Virus preparation
+
+1. **Thaw LCMV-WE stock** rapidly in 37°C water bath.
+2. **Dilute virus** in adsorption medium to achieve **MOI 0.01**.
+   - *For 25,000 cells/well: use **250 PFU per well***
+   - *Calculate total virus needed based on number of wells*
+
+### Infection procedure
+
+1. **Remove culture medium** from infection wells.
+2. **Add 50 μL infection medium** (MOI 0.01) to designated wells.
+3. **Add 50 μL fresh medium** to control wells.
+4. **Incubate for 1 hour** at 37°C with gentle rocking every 15 minutes.
+5. **Remove infection medium** and wash wells **2× with warm PBS**.
+6. **Add 100 μL complete medium** to all wells.
+7. **Incubate 48 hours** for viral protein expression.
+
+## Day 0: xCELLigence setup and cytotoxicity assay
+
+### xCELLigence E-Plate preparation
+
+Background scanning of E-plates with medium alone is essential before cell seeding. Based on laboratory experience, this procedure has been validated with B16F10 and MCA1956 tumor cells.
+
+1. **Add 50 μL RPMI complete medium** to each well of E-Plate.
+2. **Place plate in xCELLigence** instrument.
+3. **Perform background read** to establish baseline impedance.
+4. **Remove plate** and proceed with target cell seeding.
+
+### Target cell transfer to E-Plates
+
+1. **Harvest infected fibroblasts:**
+   - Remove medium, wash with PBS
+   - Add 50 μL trypsin/EDTA per well
+   - Incubate 2-3 minutes until cells detach
+   - Add 100 μL complete medium to neutralize trypsin
+   - Transfer to microtubes
+
+2. **Count cells** and adjust to **5 × 10⁵ cells/mL**.
+
+3. **Seed E-Plate wells:**
+   - **50 μL per well** (= **25,000 cells/well**)
+   - **Always include target-alone controls** (no effector addition)
+   - **Perform in at least duplicate** for each condition
+
+4. **Allow to sit at room temperature in hood** for **30 minutes** (cell settling).
+5. **Transfer to xCELLigence** instrument and begin scanning.
+6. **Record start time** and perform **15-minute sweeps** for **24-48 hours**.
+
+### Target cell adherence monitoring
+
+Target cells typically require 24 hours to reach optimal confluence for cytotoxicity assays.
+
+1. **Monitor cell index (CI)** every 15 minutes for **24 hours**.
+2. **Proceed with effector addition** after 24 hours of target cell monitoring.
+
+### Effector cell isolation
+
+#### Mouse sacrifice and tissue collection
+
+**Timing:** Perform when target cells approach optimal confluence.
+
+**From LCMV-WE infected C57BL/6J mice:**
+- **Day 3 post-infection:** For NLC isolation
+- **Day 7 post-infection:** For CD8+ T cell isolation
+
+1. **Sacrifice mice** according to institutional protocols.
+2. **Harvest liver** (for NLCs) or **spleen** (for CD8+ T cells).
+3. **Process tissues** according to established laboratory protocols.
+
+#### NLC isolation *(placeholder: specify isolation method)*
+
+*[Note: Specific NLC isolation protocol should be referenced from established lab SOPs]*
+
+1. **Digest liver tissue** using standard protocols.
+2. **Isolate mononuclear cells** via density gradient centrifugation.
+3. **Enrichment method:** *[placeholder: specify whether MACS, FACS, or other method]*
+4. **Target purity:** >85% NK1.1+ CD3- cells.
+
+#### CD8+ T cell isolation
+
+CD8+ T cells can be isolated using negative selection kits with >90% purity.
+
+1. **Process spleen:** Prepare single-cell suspension.
+2. **Use CD8+ T Cell Isolation Kit** according to manufacturer's protocol.
+3. **Expected purity:** >90% CD8+ cells.
+4. **Cell viability:** >95% by trypan blue exclusion.
+
+### Effector cell preparation for assay
+
+1. **Count effector cells** and assess viability.
+2. **Resuspend in complete medium** at appropriate concentrations:
+
+**Effector:Target (E:T) ratios to test:**
+
+**Based on laboratory experience:**
+- **CD160 NK cell experiments:** E:T ratios of **1:1** and **2:1** worked well
+- **NLC chromium release data (Kostas):** E:T ratios of **3.125:1**, **6.25:1**, **12.5:1**, and **25:1** were effective
+
+**Recommended starting ratios for this protocol:**
+- **25:1** (high cytotoxicity, based on NLC data)
+- **12.5:1** (moderate cytotoxicity)  
+- **6.25:1** (low-moderate cytotoxicity)
+- **3.125:1** (low cytotoxicity)
+- **2:1** (minimal cytotoxicity, based on NK data)
+- **1:1** (baseline cytotoxicity)
+
+3. **Calculate cell concentrations for effector addition:**
+   
+   **Important:** Effectors are added in **100 μL at 2× concentration** (to account for final dilution with existing 50 μL target cell volume = 150 μL total).
+   
+   *For 25,000 target cells/well:*
+   - **E:T 25:1** = 1.25 × 10⁶ effectors/mL (2× stock)
+   - **E:T 12.5:1** = 6.25 × 10⁵ effectors/mL (2× stock)
+   - **E:T 6.25:1** = 3.125 × 10⁵ effectors/mL (2× stock)
+   - **E:T 3.125:1** = 1.56 × 10⁵ effectors/mL (2× stock)
+   - **E:T 2:1** = 1 × 10⁵ effectors/mL (2× stock)
+   - **E:T 1:1** = 5 × 10⁴ effectors/mL (2× stock)
+
+### Effector addition and assay start
+
+**Critical timing:** Effectors are added **24 hours** after target cell seeding and continuous monitoring.
+
+**Critical:** Pre-warm effector cell suspensions to 37°C before addition to minimize temperature artifacts.
+
+1. **After 24 hours of target monitoring:** Pause impedance monitoring in xCELLigence software.
+2. **Remove E-Plate** from instrument.
+3. **Add effector cells:**
+   - **100 μL effector suspension** per well at **2× concentration** (accounts for dilution)
+   - **Final well volume:** 150 μL (50 μL targets + 100 μL effectors)
+   - **Do NOT mix wells** - pipette gently to avoid disturbing adherent targets
+
+4. **Add controls:**
+   - **100 μL medium only** to target-alone controls
+   - **Include cytokines if needed:** IL-2 or IL-15 at 2× concentration in effector medium
+   - **Optional:** 100 μL Triton X-100 (1% final) to maximal lysis control wells
+
+5. **Return plate to instrument** and resume monitoring for **additional 24-48 hours**.
+
+### Real-time monitoring
+
+Cytotoxicity is typically monitored for 4-24 hours with data collection every 15 minutes.
+
+**Monitoring parameters:**
+- **Data collection interval:** Every **15 minutes**
+- **Total duration:** **24 hours** (can be extended to 48 hours)
+- **Expected timeline:** Cytotoxicity typically begins 1-4 hours post-effector addition
+
+**Real-time observations:**
+- **Baseline:** Stable CI in target-only wells
+- **Cytotoxicity:** Decreasing CI in effector-containing wells
+- **Maximal lysis:** Rapid CI decrease in Triton-treated wells
+
+# Data analysis
+
+## Cytotoxicity calculation
+
+Standard cytotoxicity formula adapted for impedance-based assays:
+
+**% Specific Lysis = ((CI_target - CI_experimental) / (CI_target - CI_maximal)) × 100**
+
+Where:
+- **CI_target** = Cell Index of target cells alone
+- **CI_experimental** = Cell Index of target + effector wells
+- **CI_maximal** = Cell Index of Triton X-100 treated wells (complete lysis)
+
+## Data processing steps
+
+1. **Export raw data** from xCELLigence software.
+2. **Normalize cell index** to time of effector addition (t=0).
+3. **Calculate specific lysis** at multiple time points.
+4. **Generate dose-response curves** (% lysis vs. E:T ratio).
+5. **Statistical analysis** using appropriate software.
+
+## Key parameters to report
+
+- **Time to 50% lysis (LT50)** for each E:T ratio
+- **Maximum cytotoxicity achieved** at 24 hours
+- **Area under the curve (AUC)** for kinetic analysis
+- **EC50 values** (E:T ratio causing 50% lysis)
+
+## Quality control criteria
+
+**Acceptable assay parameters:**
+- **Target cell CI at assay start:** 1.5-2.5
+- **Coefficient of variation between replicates:** <15%
+- **Spontaneous lysis (target only):** <10% at 24 hours
+- **Maximal lysis (Triton):** >90% at 4 hours
+
+# Experimental design considerations
+
+## Plate layout and replication
+
+**xCELLigence plate capacity:** Each plate accommodates **16 wells** (2 columns × 8 rows), with **3 plates total** = **48 wells maximum**.
+
+**Recommended layout per plate:**
+- **Wells 1-2:** LCMV-infected fibroblasts + effectors (duplicate)
+- **Wells 3-4:** Uninfected fibroblasts + effectors (duplicate)  
+- **Wells 5-6:** LCMV-infected fibroblasts alone (target control, duplicate)
+- **Wells 7-8:** Uninfected fibroblasts alone (target control, duplicate)
+- **Wells 9-16:** Additional E:T ratios or different effector types
+
+**Replication requirements:**
+- **Minimum duplicate wells** for each condition within plates
+- **Minimum 3 independent experiments** using different mouse donors
+- **Always include target-alone controls** for each target cell type (infected vs. uninfected)
+
+## Controls required
+
+**Target cell controls:**
+- Infected fibroblasts alone
+- Uninfected fibroblasts alone  
+- Medium-only wells (background)
+
+**Cytotoxicity controls:**
+- Triton X-100 (complete lysis)
+- Heat-killed effectors (negative control)
+- *[Placeholder: positive control effectors if available]*
+
+## Statistical considerations
+
+- **Power analysis** to determine sample size
+- **Appropriate statistical tests** for repeated measures
+- **Multiple comparison corrections** when testing multiple E:T ratios
+
+# Troubleshooting
+
+| Problem | Possible cause | Solution |
+|---------|---------------|----------|
+| High spontaneous lysis | Over-confluence, poor cell health | Optimize seeding density, check cell viability |
+| No cytotoxicity | Ineffective effectors, wrong E:T ratio | Verify effector activation, increase E:T ratio |
+| Variable impedance | Temperature fluctuations | Pre-warm all reagents, minimize plate handling |
+| Poor target adhesion | Suboptimal seeding conditions | Optimize cell density, check plate coating |
+| High background noise | Electrical interference | Check instrument calibration, shield from vibrations |
+
+# Expected outcomes
+
+## LCMV-specific cytotoxicity
+
+**CD8+ T cells (day 7 p.i.):**
+- **Infected targets:** Significant lysis (40-80% at E:T 25:1)
+- **Uninfected targets:** Minimal lysis (<10%)
+- **Kinetics:** Cytotoxicity begins 2-4 hours, plateaus by 12-16 hours
+
+**NLCs (day 3 p.i.):**
+- **Infected targets:** Moderate lysis (20-50% at E:T 25:1)
+- **Uninfected targets:** Low baseline lysis (5-15%)
+- **Kinetics:** Earlier onset (1-2 hours), may be more sustained
+
+## Dose-response relationships
+
+- **Clear E:T ratio dependence** in infected target lysis
+- **Sigmoidal dose-response curves** when plotting E:T vs. % lysis
+- **Higher EC50 values** for uninfected vs. infected targets
+
+# Safety
+
+- Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+- Handle LCMV according to institutional biosafety guidelines (typically BSL-2).
+- Dispose of contaminated materials according to local regulations.
+- xCELLigence instrument electrical safety: ensure proper grounding and avoid liquid contact with electronics.
+- Follow institutional guidelines for animal sacrifice and tissue collection.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---------|------|--------|----------------|
+| v1.0 | 2026-03-18 | Dillon Corvino | Initial xCELLigence LCMV cytotoxicity protocol |
+

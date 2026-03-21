@@ -1,0 +1,480 @@
+---
+title: "Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "MUS-IEL-ISO-001"
+version: "v1.1"
+date: "2026-03-20"
+description: "Isolation of intraepithelial lymphocytes (IELs) from the mouse small intestine for flow cytometry and immunophenotyping, using DTT/EDTA epithelial stripping, mechanical agitation, and Percoll density centrifugation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
+
+# Purpose
+
+This protocol describes the isolation of **intraepithelial lymphocytes (IELs)** from the mouse small intestine for downstream flow cytometry. IELs reside within the intestinal epithelial layer, intercalated between epithelial cells, and are physically distinct from lamina propria lymphocytes (LPLs).
+
+The protocol uses DTT/EDTA-based epithelial stripping combined with mechanical agitation to release the epithelial fraction, followed by Percoll density centrifugation to enrich lymphocytes. An optional ACK RBC lysis step is included.
+
+# Background: gut anatomy, immune compartments, and isolation logic
+
+This section provides an anatomical and immunological reference for the intestinal tract relevant to IEL isolation. It is intended as orientation for researchers new to gut immunology and as a practical guide for experimental design decisions (segment choice, compartment targeting, downstream assay selection).
+
+## Overview of the intestinal tract
+
+The mouse intestinal tract runs approximately 30 cm in total and is divided into the **small intestine** and **large intestine**, each with distinct anatomy, function, and immune composition.
+
+### Small intestine
+
+The small intestine comprises three contiguous segments, running proximal to distal:
+
+| Segment | Approximate proportion | Key anatomical features | Primary function |
+|---|---|---|---|
+| **Duodenum** | ~5% of SI length | Short; receives bile and pancreatic secretions; long villi (villus:crypt ~3–5:1) | Digestion of fats, carbohydrates, protein; iron absorption |
+| **Jejunum** | ~40% of SI length | Longest segment; most active absorption; longest and densest villi | Primary nutrient absorption |
+| **Ileum** | ~55% of SI length | Shorter villi; highest density of Peyer's patches; terminal segment before cecum | Vitamin B12 and bile acid reabsorption; immune sampling |
+
+The small intestinal epithelium is organised into **finger-like villi** projecting into the lumen (absent in the large intestine) and **crypts of Lieberkühn** at the base of the villi. This villus–crypt architecture dramatically increases luminal surface area and is the structural context within which IELs reside.
+
+### Large intestine
+
+The large intestine follows the small intestine and comprises:
+
+| Segment | Notes |
+|---|---|
+| **Cecum** | Blind-ended pouch at the SI–LI junction; largest microbial reservoir; enlarged in germ-free mice |
+| **Colon** (proximal → distal) | Lacks villi; has crypts only; much thicker mucus layer than SI; primary site of water reabsorption |
+| **Rectum / anus** | Terminal segment |
+
+The large intestine has a far higher microbial load than the small intestine (bacterial density increases ~1,000-fold from duodenum to colon) and a correspondingly distinct immune environment dominated by regulatory and microbiota-responsive cells.
+
+::: callout-note
+IEL density is substantially higher in the small intestine than the large intestine. The large intestine has approximately 5–10× fewer IELs per epithelial cell than the small intestine under steady-state conditions. This protocol targets **small intestinal IELs only**.
+:::
+
+## Wall architecture and immune compartments
+
+The intestinal wall is organised into concentric layers. Moving from the lumen outward:
+
+```
+Lumen
+  │
+  ▼
+Epithelium          ← IELs live here (within the epithelial layer)
+  │
+Basement membrane
+  │
+Lamina propria      ← LPLs, DCs, macrophages, mast cells, ILCs
+  │
+Muscularis mucosae
+  │
+Submucosa           ← Nerve plexus, blood and lymphatic vessels
+  │
+Muscularis externa  ← Smooth muscle (inner circular + outer longitudinal)
+  │
+Serosa / mesentery
+```
+
+For immunological purposes, the two most important layers are the epithelium and the lamina propria.
+
+### Epithelial layer and the IEL compartment
+
+The intestinal epithelium is a **single-cell-thick monolayer** of epithelial cells (primarily enterocytes) that lines the entire luminal surface. IELs are embedded within this monolayer, sitting between neighbouring epithelial cells with their cell bodies typically below the tight junctions but above the basement membrane. They are in direct contact with the epithelium and sample the luminal environment.
+
+In the small intestine, there is approximately **1 IEL per 5–10 epithelial cells**, making the gut epithelium one of the largest T cell compartments in the body by cell number. IELs are long-lived, largely non-recirculating tissue-resident cells.
+
+**How to access IELs:** Because IELs are mechanically held within the epithelial layer by integrin interactions (primarily αEβ7/CD103), they are released by disrupting epithelial junctions with EDTA (chelates calcium, destabilising E-cadherin-based junctions) and DTT (reduces disulfide bonds in mucus), combined with mechanical agitation. This is the stripping step in this protocol.
+
+### Lamina propria and the LPL compartment
+
+The lamina propria is the loose connective tissue layer immediately beneath the epithelium, separated from it by the basement membrane. It contains:
+
+- **T cells** — predominantly CD4+ T helper cells; also CD8+ effector T cells; Tregs
+- **B cells and plasma cells** — IgA-secreting plasma cells are abundant; responsible for secretory IgA production
+- **Dendritic cells** — CD11b+CD8α− DCs predominate in the small intestinal LP; important for antigen sampling and T cell priming
+- **Macrophages** — major phagocytic and tolerogenic population; form close contacts with the epithelium
+- **Mast cells** — involved in helminth responses and barrier defence
+- **Innate lymphoid cells (ILCs)** — ILC1, ILC2, ILC3 populations present; ILC3s produce IL-22 for barrier maintenance
+
+**How to access LPLs:** The basement membrane must be disrupted after removing the epithelial layer. This requires **enzymatic digestion** of the remaining tissue with collagenase (± DNase), typically at 37 °C with agitation. LPL isolation is a separate workflow from IEL isolation and is not covered in this protocol. The intestinal pieces remaining after the stripping and shake steps in this protocol can be used directly as input for LP digestion.
+
+### Peyer's patches
+
+Peyer's patches are **organised lymphoid follicles** embedded in the intestinal wall, predominantly in the ileum. They are visible as pale, dome-shaped nodules on the anti-mesenteric surface. They contain:
+
+- Dense **B cell follicles** (B220+ B cells)
+- **Germinal centre** reactions for IgA class switching
+- **T cell zones** with CD4+ T cells
+- **Specialised M cells** (microfold cells) in the overlying follicle-associated epithelium for antigen transcytosis
+
+Peyer's patches are **not part of the IEL or LP compartments** and must be removed before processing. If retained, the B cell-rich follicular content heavily contaminates IEL preparations and distorts flow cytometry data.
+
+## Segment-specific immune cell composition
+
+### Small intestinal IEL subsets by segment
+
+IEL subset distribution is not uniform along the small intestine. The two major functional categories of IELs are:
+
+- **Natural IELs (nIELs)** — arise from thymic precursors; present in germ-free mice; include TCRγδ+ IELs and TCRαβ+ CD8αα+ IELs. More abundant in the **proximal SI (duodenum/jejunum)**.
+- **Peripheral/induced IELs (pIELs)** — arise from conventional peripheral T cells that downregulate CD8αβ and upregulate CD8αα (or become CD4+CD8αα+) upon entry into the epithelium. Enriched in the **ileum**, driven by microbiota-dependent signals including high MHC-II and PD-L1 expression in that region.
+
+| IEL subset | TCR | CD8 form | Segment enriched | Microbiota-dependent? |
+|---|---|---|---|---|
+| nIEL type a | TCRγδ | CD8αα or DN | Proximal SI | No (present in GF) |
+| nIEL type b | TCRαβ | CD8αα | Proximal SI | No (present in GF) |
+| pIEL (induced) | TCRαβ | CD4+CD8αα+ | Ileum | Yes (absent/low in GF) |
+| pIEL (induced) | TCRαβ | CD8αβ → CD8αα | Ileum | Yes |
+
+For most standard CD8αα IEL analyses, the **whole small intestine** is used to maximise yield. Segment-specific harvest is appropriate only when subset enrichment is the experimental goal.
+
+### Lamina propria immune cell composition by segment
+
+LP immune composition also differs significantly by segment:
+
+| Cell type | Proximal SI (duodenum/jejunum) | Ileum | Colon |
+|---|---|---|---|
+| CD4+ T cells (Th1/Th2) | Present | Present | Present |
+| Th17 cells | Low | **Enriched** (SFB-driven in SPF mice) | Moderate |
+| Tregs | Present | Present | **Enriched** |
+| IgA plasma cells | Moderate | High | **Highest** |
+| DCs | CD11b+CD8α− predominate | CD11b+CD8α− | Fewer DCs in homeostasis |
+| Macrophages | Present | Present | Present; recruited upon inflammation |
+| ILC3 / IL-22 producers | Present | Present | Present |
+
+### Large intestinal immune environment
+
+The colon has a distinct immune composition compared with the small intestine:
+
+- **Thicker, stratified mucus layer** — creates a physical exclusion zone separating bacteria from the epithelium; much more prominent than in SI.
+- **Higher regulatory T cell frequency** — the colon is more tolerogenic overall.
+- **Microbiota-dependent immune cell shaping** — colonic immune cell composition is more severely disrupted in germ-free conditions than SI.
+- **Fewer IELs and DCs** — under homeostatic conditions; both are recruited upon inflammation.
+- **No villi** — crypts only; different epithelial cell organisation affects IEL numbers and accessibility.
+
+## How isolation strategy maps to compartment
+
+| Target population | Compartment | Isolation strategy | When to use |
+|---|---|---|---|
+| IELs | Epithelium | EDTA/DTT stripping + mechanical agitation → Percoll | This protocol |
+| LPLs | Lamina propria | Enzymatic digestion (collagenase/DNase) of post-strip tissue | Separate LP protocol |
+| Peyer's patch cells | Organised follicles | Mechanical dissociation through strainer (separate from SI processing) | Lymphoid follicle studies |
+| MLN cells | Mesenteric lymph nodes | Mechanical dissociation through strainer | Draining lymph node studies |
+| Combined IEL + LP | Both | Sequential: strip first → digest remainder | Full mucosal immune profiling |
+
+::: callout-note
+This protocol uses the **whole small intestine** as the default. If segment-specific enrichment is required (e.g. ileum only for pIEL studies, or proximal SI for nIEL studies), dissect and process each segment separately. Label clearly: duodenum begins immediately distal to the pyloric sphincter; the ileum ends at the ileocecal junction; the jejunum is the long intervening segment.
+:::
+
+# Critical notes (read before starting)
+
+- Remove **all Peyer's patches** before processing — they are B-cell-rich and will contaminate the IEL fraction if retained.
+- **Open the intestine longitudinally** and wash thoroughly before stripping — residual luminal contents and mucus inhibit stripping efficiency and reduce recovery.
+- DTT reduces disulfide bonds in mucus and epithelial junctions, improving IEL release; **do not exceed recommended concentration or incubation time** as overdose can reduce viability.
+- The **stripping step uses a magnetic stirrer at 37 °C** — this is a key feature of this protocol and improves IEL yield compared with passive incubation.
+- The **manual shake step** after stripping further mechanically dislodges IELs; perform it vigorously.
+- **Percoll enrichment is essential** — without it, the preparation will be heavily contaminated with epithelial cells.
+- Process samples promptly; keep samples on ice between active steps.
+
+# Approximate timing
+
+- Intestine harvest, opening, and washing: **15–20 min per mouse**
+- DTT/EDTA stripping (37 °C stir): **20 min**
+- Manual shake steps (×2): **5 min**
+- Centrifugation and Percoll enrichment: **40–50 min**
+- ACK lysis, wash, and final resuspension: **15 min**
+
+**Total approximate time:** **~1.5–2 hours per mouse** (batching 2–4 mice in parallel is feasible with practice)
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Buffers
+
+Prepare all buffers fresh on the day of use. See Buffers section for compositions.
+
+| Buffer | Use |
+|---|---|
+| 3% Medium | Initial wash of intestine after opening |
+| Strip Medium (DTT/EDTA in 3% Medium) | Epithelial stripping at 37 °C |
+| Shake Medium (EDTA in RPMI) | Mechanical agitation washes post-stripping |
+| 35% Percoll | Lymphocyte enrichment by density centrifugation |
+| PBS | General washes |
+| ACK lysis buffer | RBC removal (optional) |
+
+# Procedure
+
+## STEP 1 – Preparation and setup
+
+1. Prepare all buffers fresh (see Buffers section). Pre-warm **Strip Medium** to **37 °C** in a water bath. Keep all other buffers on ice.
+2. Set up a **magnetic stir plate at 37 °C** with a stir bar and a beaker — this is used for the stripping step.
+3. Prepare a **metal strainer** over a large collection beaker for filtering after stripping.
+4. Label 50 mL tubes for each mouse: one for stripping collection, one for downstream processing.
+5. Pre-cool the centrifuge to **4 °C**.
+6. Prepare **35% Percoll working solution** (see Buffers section) at room temperature.
+
+## STEP 2 – Intestine harvest and preparation
+
+1. Euthanise the mouse by an approved method.
+2. Open the abdominal cavity and locate the small intestine.
+3. Excise the **entire small intestine**, cutting just distal to the pyloric sphincter (stomach) and at the ileocecal junction.
+4. Remove all attached **mesenteric fat and connective tissue** along the intestinal length.
+5. Identify and excise all **Peyer's patches** (pale, dome-shaped lymphoid nodules on the anti-mesenteric border). Cut them away and discard.
+
+::: callout-warning
+Peyer's patches must be removed completely. They contain a distinct lymphoid population that will contaminate the IEL fraction.
+:::
+
+6. Cut the intestine **open longitudinally** along its entire length using fine scissors.
+7. **Wash the opened intestine once with 3% Medium** and then **once with PBS** to remove luminal contents and mucus.
+8. After washing, transfer the intestinal tissue to a 50 mL Falcon tube with a small volume of 3% Medium to keep it moist until the next step.
+
+::: callout-note
+Thorough washing after opening is critical. Residual mucus reduces stripping efficiency.
+:::
+
+## STEP 3 – DTT/EDTA stripping (37 °C magnetic stir)
+
+1. Cut the washed intestinal tissue into approximately **5 pieces** of roughly equal length.
+2. Place the pieces into the pre-warmed **beaker** (on the magnetic stir plate at 37 °C) containing **20 mL Strip Medium** (RPMI/3% FCS + 1 mM DTT + 5 mM EDTA, pre-warmed to 37 °C).
+3. Add a **magnetic stir bar** to the beaker. Cover with **aluminium foil**.
+4. Incubate at **37 °C for 20 minutes** with continuous stirring at **250 rpm**.
+
+::: callout-warning
+Do not exceed the 20-minute incubation or increase DTT concentration above 1 mM. Over-exposure to DTT reduces leukocyte viability.
+:::
+
+5. After incubation, strain the contents through the **metal strainer** into the collection beaker to collect the stripped epithelial fraction.
+6. Keep the intestinal pieces on the strainer for the manual shake step (STEP 4).
+
+## STEP 4 – Manual shake washes
+
+The mechanical shake step dislodges residual IELs from the tissue and maximises recovery.
+
+### Shake round 1
+
+1. Transfer the intestinal pieces from the metal strainer into a **50 mL Falcon tube** containing **10 mL Shake Medium** (RPMI + 1% glutamine + 1% Pen/Strep + 2% HEPES + 2 mM EDTA).
+2. Cap the tube and **shake vigorously by hand for 30 seconds**.
+3. Pour the tube contents back through the **metal strainer** into the collection beaker.
+
+### Shake round 2
+
+1. Return the intestinal pieces to the Falcon tube with a fresh **10 mL Shake Medium**.
+2. Shake vigorously for 30 seconds as before.
+3. Pour back through the **metal strainer** into the collection beaker.
+
+The collection beaker now contains the pooled stripping and shake fractions. The intestinal tissue pieces can be discarded or retained for LP isolation.
+
+## STEP 5 – Transfer and centrifugation
+
+1. Transfer the total cell suspension from the collection beaker into a **50 mL Falcon tube**.
+2. Centrifuge at **[placeholder: ~400 g], 4 °C, 10 minutes**.
+
+::: callout-note
+The colleague protocol reports 1600 rpm for this step. Standard published IEL protocols use 400 × g for this wash spin. Confirm with your local centrifuge rotor to determine the exact g value corresponding to your instrument settings.
+:::
+
+3. Discard the supernatant.
+
+## STEP 6 – 35% Percoll enrichment
+
+1. Resuspend the pellet in **10 mL of 35% Percoll**.
+
+::: callout-note
+**On Percoll percentage:** This protocol uses **35% Percoll** as per the collaborator protocol. Literature precedent for mouse IEL isolation varies: single-density pellet-through protocols typically use **35–44%**, while discontinuous gradient protocols use **44%/67%** (interface collection) for higher purity. The 44/67% discontinuous gradient consistently yields 30–80% CD45+ lymphocytes post-separation and is used in the most widely cited murine IEL protocols (Lefrancois & Lycke 2001; Bhatt & Bhatt 2022 PMC8128104). A 37% single-density pellet-through (the concentration used in the lab for liver) should also work for IEL and is compatible with this workflow; lymphocytes pellet while many epithelial cells and debris remain in the supernatant. If purity is insufficient with 35–37%, consider switching to the 44/67% discontinuous gradient approach.
+:::
+
+2. Centrifuge at **800 g, 25 minutes, room temperature (20–22 °C)**:
+   - Acceleration: **moderate (acc 7)**
+   - Brake: **minimal (br 1)**
+
+::: callout-warning
+Do not use high brake — abrupt deceleration disrupts the interface and reduces enrichment.
+:::
+
+3. After centrifugation:
+   - **Lymphocytes pellet** at the bottom.
+   - Epithelial cells, debris, and dead cells remain in the supernatant.
+4. Carefully aspirate and discard the supernatant in one smooth motion.
+5. Wash the pellet: resuspend in **PBS**, centrifuge at **[placeholder: ~400 g], 4 °C, 10 minutes**. Discard supernatant.
+
+## STEP 7 – ACK RBC lysis (optional)
+
+::: callout-note
+RBC contamination in IEL preparations is generally low because the intestinal epithelial compartment contains few red blood cells. This step can often be omitted, particularly if a Percoll gradient has been performed. Include if the pellet appears visibly red.
+:::
+
+1. Resuspend the cell pellet in **7 mL ACK lysis buffer**.
+2. Incubate for approximately **10 minutes at room temperature**.
+3. Pass the suspension through a **40 µm cell strainer** into a fresh 50 mL tube.
+4. Top up to **30 mL with PBS**.
+5. Centrifuge at **[placeholder: ~400 g], 4 °C, 10 minutes**.
+6. Discard the supernatant.
+
+## STEP 8 – Final resuspension and staining
+
+1. Resuspend the cell pellet in **300 µL PBS**.
+2. Count cells and assess viability as required.
+3. Use **100 µL of suspension per flow cytometry panel**.
+4. Add **100 µL antibody master mix** and stain for **20 minutes** (on ice, protected from light, as per staining SOP).
+5. After staining, resuspend in **200 µL PBS** for acquisition.
+
+::: callout-tip
+Expected yield from one small intestine: approximately **3–6 × 10⁶ total IEL** from an 8–12-week-old naïve C57BL/6 mouse after Percoll enrichment (literature estimate; actual yield depends on mouse age, strain, and protocol execution). Contaminating epithelial cells can be excluded in flow cytometry using **EpCAM (CD326)** in the dump channel.
+:::
+
+{{< pagebreak >}}
+
+# Buffers
+
+All buffers are prepared fresh on the day of use unless otherwise stated.
+
+## 3% Medium
+
+Base wash and collection medium.
+
+| Component | Final concentration / amount |
+|---|---|
+| RPMI 1640 | Base |
+| FCS | 3% (v/v) |
+| HEPES | 2% (v/v) from 1 M stock |
+| Penicillin/Streptomycin | 1% (v/v) from 100× stock |
+| L-glutamine | 1% (v/v) from 200 mM stock |
+
+## Strip Medium
+
+Used for the DTT/EDTA epithelial stripping step. Prepare fresh and pre-warm to 37 °C before use.
+
+| Component | Final concentration |
+|---|---|
+| 3% Medium (see above) | Base |
+| DTT (dithiothreitol) | 1 mM |
+| EDTA | 5 mM |
+
+::: callout-warning
+Prepare Strip Medium fresh and pre-warm to 37 °C immediately before use. DTT is unstable in solution and loses activity over time. Do not store.
+:::
+
+## Shake Medium
+
+Used for the mechanical agitation wash steps post-stripping.
+
+| Component | Final concentration |
+|---|---|
+| RPMI 1640 | Base |
+| L-glutamine | 1% (v/v) from 200 mM stock |
+| Penicillin/Streptomycin | 1% (v/v) from 100× stock |
+| HEPES | 2% (v/v) from 1 M stock |
+| EDTA | 2 mM |
+
+## 35% Percoll working solution
+
+Prepare from isotonic Percoll stock (see `BUF-PERC-37-001` for isotonic Percoll preparation; the same isotonic stock is used here, diluted to 35% instead of 37%).
+
+| Component | Volume for 10 mL |
+|---|---|
+| Isotonic Percoll (100%) | 3.5 mL |
+| PBS 1× (sterile) | 6.5 mL |
+
+Prepare fresh on day of use at room temperature.
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier / Cat# | Notes |
+|---|---|---|
+| RPMI 1640 | Various | Base for all three buffers |
+| FCS | Various | 3% in 3% Medium and Strip Medium |
+| HEPES (1 M stock) | Various | 2% v/v final |
+| L-glutamine (200 mM stock) | Various | 1% v/v final |
+| Penicillin/Streptomycin (100×) | Various | 1% v/v final |
+| DTT (dithiothreitol) | Various | Prepare 1 M stock in water; add fresh to Strip Medium |
+| EDTA (0.5 M stock) | Various | 5 mM in Strip Medium; 2 mM in Shake Medium |
+| Percoll (isotonic stock) | Cytiva / GE | See `BUF-PERC-37-001` for isotonic prep |
+| PBS 1× (Ca²⁺/Mg²⁺-free) | Various | For washes |
+| ACK lysis buffer | Commercial or in-house | Optional RBC lysis |
+
+## Disposables
+
+| Item | Notes |
+|---|---|
+| 50 mL Falcon tubes | Multiple per mouse |
+| 15 mL conical tubes | Optional, for Percoll if using smaller volume |
+| Metal strainer | For stripping and shake washes |
+| Collection beaker | For pooling fractions |
+| 40 µm cell strainer | For filtering post-ACK lysis |
+| Fine scissors | For opening intestine longitudinally |
+| Forceps | For tissue handling |
+| Magnetic stir bar | For 37 °C stripping step |
+| Aluminium foil | To cover beaker during stripping |
+| Transfer pipettes | For resuspension and transfers |
+
+## Equipment
+
+| Equipment | Notes |
+|---|---|
+| Magnetic stir plate with heating | 37 °C, 250 rpm — critical for stripping step |
+| Water bath (37 °C) | Pre-warming Strip Medium |
+| Refrigerated centrifuge | Compatible with 50 mL tubes; adjustable brake |
+| Biosafety cabinet (Class II) | Recommended |
+| Ice bucket | Keep samples cold between steps |
+| Timer | For stripping and lysis timing |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Problem | Possible cause | Suggested solution |
+|---|---|---|
+| Low IEL yield | Incomplete intestinal opening or washing; insufficient stirring speed | Open intestine fully; wash thoroughly before stripping; confirm stir plate is at 250 rpm |
+| High epithelial cell contamination | Percoll % too low; lysis insufficient | Consider increasing to 40–44% Percoll single density or switching to 44/67% discontinuous gradient; use EpCAM dump in flow panel |
+| Poor viability | DTT over-exposure; prolonged room-temperature handling | Do not exceed 20 min stripping or 1 mM DTT; keep post-stripping steps cold |
+| Mucus clumping / strainer blockage | Insufficient pre-wash | Increase washing steps after intestinal opening; DTT helps but is not a substitute for mechanical mucus removal |
+| Peyer's patch contamination | Incomplete removal | Systematically inspect anti-mesenteric border and excise all visible nodules before stripping |
+| Red pellet after Percoll | RBC contamination (uncommon for IEL) | Perform ACK lysis step (STEP 7) |
+| Low purity (few CD45+ cells) | 35% Percoll insufficient for separation | Trial 40–44% single gradient or 44/67% discontinuous gradient |
+
+{{< pagebreak >}}
+
+# Notes on Percoll percentage and protocol variants
+
+## 35% vs 37% vs 40–44% for IEL isolation
+
+The Percoll concentration used for IEL enrichment varies across published protocols:
+
+- **35%** — used by some groups (including this collaborator protocol) as a single-density pellet-through. Lymphocytes pellet; many epithelial cells remain in the supernatant. Simpler but lower purity.
+- **37%** — the lab standard for liver leukocyte enrichment (`BUF-PERC-37-001`). Compatible with IEL isolation and can be used as a practical alternative to 35% without changing the isotonic Percoll stock preparation.
+- **40–44%** — more widely used in published murine IEL protocols. Higher Percoll density improves separation of lymphocytes from epithelial cells and increases preparation purity.
+- **44%/67% discontinuous gradient** — the gold standard in the most widely cited protocols (Lefrancois & Lycke 2001; Bhatt & Bhatt 2022). IELs are collected from the 44/67% interface rather than as a pellet, yielding 30–80% CD45+ purity. Requires underlaying 67% Percoll and more careful technique but gives the cleanest preparations.
+
+**Practical recommendation:** Start with 35% (as in this protocol, matching the collaborator method). If purity is insufficient for your flow panel or gating (assess by EpCAM vs CD45 plot), escalate to a 44/67% discontinuous gradient.
+
+## nIELs vs pIELs and segment choice
+
+| IEL subset | Segment enriched | Notes |
+|---|---|---|
+| nIELs (TCRγδ, CD8αα TCRαβ) | Duodenum / proximal jejunum | More abundant proximally in SPF mice |
+| pIELs (CD4+CD8αα+) | Ileum | Driven by microbial signals; highest in distal SI |
+| Total IEL yield | Whole small intestine | Standard for most panels; maximises cell numbers |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+- All animal procedures must comply with approved animal licences and institutional regulations.
+- Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+- DTT is a reducing agent with a strong odour; handle in a well-ventilated area and avoid inhalation.
+- Dispose of biological waste and sharps according to institutional biosafety guidelines.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---|---|---|---|
+| v1.0 | 2026-03-19 | Dillon Corvino | Initial IEL isolation protocol for small intestine; adapted from collaborator protocol with literature integration |
+| v1.1 | 2026-03-20 | Dillon Corvino | Added comprehensive gut anatomy and immune compartment reference section |

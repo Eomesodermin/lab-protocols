@@ -27,13 +27,12 @@ This buffer is used in:
 
 # Composition (final working buffer)
 
-Final working-buffer composition per **5 mL**:
+| Component          | Stock concentration | Volume for 1 mL | Volume for 5 mL | Final concentration | Notes                                |
+|-------------------|---------------------|-----------------|-----------------|-------------------------------|--------------------------------------|
+| DMEM (incomplete) | —                   | to 1 mL         | to 5 mL         | N/A                           | Base medium                          |
+| Collagenase D     | 100 mg/mL           | 10 µL            | 50 µL           | 1 mg/mL                       | Reconstituted from powder stock      |
+| DNase I           | 10 mg/mL            | 1 µL          | 5 µL            | 10 µg/mL                      | Added on day of use                  |
 
-| Component          | Stock concentration | Volume for 5 mL | Final concentration (approx.) | Notes                                |
-|-------------------|---------------------|-----------------|-------------------------------|--------------------------------------|
-| DMEM (incomplete) | —                   | to 5 mL         | N/A                           | Base medium                          |
-| Collagenase D     | 100 mg/mL           | 10 µL           | 1 mg/mL                       | Reconstituted from powder stock      |
-| DNase I           | 10 mg/mL            | 1 µL            | 10 µg/mL                      | Added on day of use                  |
 
 :::callout-note
 The table above describes the **final working buffer** used in the protocol. In practice, a **stock digestion buffer without DNase** is prepared and frozen in aliquots, and DNase is added only on the day of use (see Preparation and Storage sections).
@@ -84,7 +83,7 @@ Collagenase and DNase I are **proteins and mechanically sensitive**. Avoid vigor
 
    - For each **5 mL** stock aliquot:
      - Add **5 mL** DMEM (incomplete).
-     - Add **10 µL** Collagenase D stock (100 mg/mL).
+     - Add **50 µL** Collagenase D stock (100 mg/mL).
      - Mix gently by inversion (avoid foaming).
 
 3. Aliquot the digestion buffer into sterile tubes (e.g. **5–10 mL per aliquot**, depending on typical experimental usage, note: 5 mL per liver).
@@ -99,7 +98,7 @@ Collagenase and DNase I are **proteins and mechanically sensitive**. Avoid vigor
 1. Remove the required number of **Liver Digestion Buffer (no DNase)** aliquots from −20 °C and **thaw** at room temperature or 4 °C.
 2. For each **5 mL** of final working buffer needed:
    1. Ensure the thawed buffer is well mixed (gentle inversion).
-   2. Add **1 µL DNase I stock (10 mg/mL)** to **5 mL** digestion buffer
+   2. Add **5 µL DNase I stock (10 mg/mL)** to **5 mL** digestion buffer
    3. Mix gently by inversion.
 3. Pre-warm the final working buffer to **37 °C** before use (e.g. water bath or incubator).
 4. If desired, pre-aliquot **5 mL** of the final working buffer into pre-labelled 50 mL tubes for liver digestion.
@@ -118,7 +117,7 @@ DNase I is added **only on the day of use** because prolonged storage in digesti
 
 ## Liver Digestion Stock (no DNase)
 
-- **Composition:** DMEM (incomplete) + Collagenase D (1 mg/mL final when diluted as described).
+- **Composition:** DMEM (incomplete) + Collagenase D (1 mg/mL).
 - **Storage:** Store aliquots at **−20 °C**.
 - **Stability:** Use within **3–6 months** of preparation, or according to internal lab validation.
 - **Handling:** Avoid repeated freeze–thaw cycles; thaw gently and mix before use.

@@ -3,6 +3,10 @@ project:
   output-dir: docs
   resources:
     - protocols_src/templates/*
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
+    - "!protocols_src/templates/blocks/"
 
 website:
   title: "Protocol Library"

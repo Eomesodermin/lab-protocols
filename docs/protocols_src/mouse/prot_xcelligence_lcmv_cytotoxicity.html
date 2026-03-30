@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-03-26">
+<meta name="description" content="Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure effector cell killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Covers fibroblast culture, in vitro LCMV infection, E-plate setup, and real-time cytotoxicity measurement.">
+
+<title>xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Protocol Library
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Protocol Library</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true"><i class="bi bi-person-check" role="img">
+</i> 
+ <span class="menu-text">Onboarding</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/contacts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Key contacts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/training/data_and_reproducibility.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data and reproducibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Lab information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab information overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/lab_expectations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab expectations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/lab_etiquette.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab etiquette</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/lab_info/communication_norms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Communication norms</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Institute information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Institute overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/institute_overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Institute overview page</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/research_groups.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research groups</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/onboarding/institute/core_facilities.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Core facilities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#fibroblasts-and-culture-reagents" id="toc-fibroblasts-and-culture-reagents" class="nav-link" data-scroll-target="#fibroblasts-and-culture-reagents">Fibroblasts and culture reagents</a></li>
+  <li><a href="#xcelligence-system" id="toc-xcelligence-system" class="nav-link" data-scroll-target="#xcelligence-system">xCELLigence system</a></li>
+  <li><a href="#controls-and-reagents" id="toc-controls-and-reagents" class="nav-link" data-scroll-target="#controls-and-reagents">Controls and reagents</a></li>
+  </ul></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-mef-culture-and-seeding-for-infection" id="toc-step-1-mef-culture-and-seeding-for-infection" class="nav-link" data-scroll-target="#step-1-mef-culture-and-seeding-for-infection">STEP 1 — MEF culture and seeding for infection</a>
+  <ul class="collapse">
+  <li><a href="#background-mef-culture-conditions" id="toc-background-mef-culture-conditions" class="nav-link" data-scroll-target="#background-mef-culture-conditions">Background: MEF culture conditions</a></li>
+  <li><a href="#passaging-seeding-procedure" id="toc-passaging-seeding-procedure" class="nav-link" data-scroll-target="#passaging-seeding-procedure">Passaging / seeding procedure</a></li>
+  </ul></li>
+  <li><a href="#step-2-lcmv-infection-of-fibroblasts" id="toc-step-2-lcmv-infection-of-fibroblasts" class="nav-link" data-scroll-target="#step-2-lcmv-infection-of-fibroblasts">STEP 2 — LCMV infection of fibroblasts</a>
+  <ul class="collapse">
+  <li><a href="#virus-preparation" id="toc-virus-preparation" class="nav-link" data-scroll-target="#virus-preparation">Virus preparation</a></li>
+  <li><a href="#infection-procedure" id="toc-infection-procedure" class="nav-link" data-scroll-target="#infection-procedure">Infection procedure</a></li>
+  </ul></li>
+  <li><a href="#step-3-harvest-infected-fibroblasts-and-seed-e-plates" id="toc-step-3-harvest-infected-fibroblasts-and-seed-e-plates" class="nav-link" data-scroll-target="#step-3-harvest-infected-fibroblasts-and-seed-e-plates">STEP 3 — Harvest infected fibroblasts and seed E-Plates</a>
+  <ul class="collapse">
+  <li><a href="#fibroblast-harvest" id="toc-fibroblast-harvest" class="nav-link" data-scroll-target="#fibroblast-harvest">Fibroblast harvest</a></li>
+  <li><a href="#e-plate-background-measurement" id="toc-e-plate-background-measurement" class="nav-link" data-scroll-target="#e-plate-background-measurement">E-Plate background measurement</a></li>
+  <li><a href="#target-cell-seeding-into-e-plates" id="toc-target-cell-seeding-into-e-plates" class="nav-link" data-scroll-target="#target-cell-seeding-into-e-plates">Target cell seeding into E-Plates</a></li>
+  </ul></li>
+  <li><a href="#step-4-effector-cell-addition-and-cytotoxicity-assay" id="toc-step-4-effector-cell-addition-and-cytotoxicity-assay" class="nav-link" data-scroll-target="#step-4-effector-cell-addition-and-cytotoxicity-assay">STEP 4 — Effector cell addition and cytotoxicity assay</a>
+  <ul class="collapse">
+  <li><a href="#et-ratio-guidance" id="toc-et-ratio-guidance" class="nav-link" data-scroll-target="#et-ratio-guidance">E:T ratio guidance</a></li>
+  <li><a href="#effector-cell-concentration-calculation" id="toc-effector-cell-concentration-calculation" class="nav-link" data-scroll-target="#effector-cell-concentration-calculation">Effector cell concentration calculation</a></li>
+  <li><a href="#effector-addition" id="toc-effector-addition" class="nav-link" data-scroll-target="#effector-addition">Effector addition</a></li>
+  </ul></li>
+  <li><a href="#step-5-real-time-monitoring" id="toc-step-5-real-time-monitoring" class="nav-link" data-scroll-target="#step-5-real-time-monitoring">STEP 5 — Real-time monitoring</a></li>
+  </ul></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a>
+  <ul class="collapse">
+  <li><a href="#cytotoxicity-calculation" id="toc-cytotoxicity-calculation" class="nav-link" data-scroll-target="#cytotoxicity-calculation">Cytotoxicity calculation</a></li>
+  <li><a href="#data-processing-steps" id="toc-data-processing-steps" class="nav-link" data-scroll-target="#data-processing-steps">Data processing steps</a></li>
+  <li><a href="#key-parameters-to-report" id="toc-key-parameters-to-report" class="nav-link" data-scroll-target="#key-parameters-to-report">Key parameters to report</a></li>
+  <li><a href="#quality-control-criteria" id="toc-quality-control-criteria" class="nav-link" data-scroll-target="#quality-control-criteria">Quality control criteria</a></li>
+  </ul></li>
+  <li><a href="#experimental-design-and-plate-layout" id="toc-experimental-design-and-plate-layout" class="nav-link" data-scroll-target="#experimental-design-and-plate-layout">Experimental design and plate layout</a>
+  <ul class="collapse">
+  <li><a href="#required-controls" id="toc-required-controls" class="nav-link" data-scroll-target="#required-controls">Required controls</a></li>
+  <li><a href="#plate-maps" id="toc-plate-maps" class="nav-link" data-scroll-target="#plate-maps">Plate maps</a></li>
+  <li><a href="#replication" id="toc-replication" class="nav-link" data-scroll-target="#replication">Replication</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety">Safety</a></li>
+  <li><a href="#protocols-used" id="toc-protocols-used" class="nav-link" data-scroll-target="#protocols-used">Protocols used</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_xcelligence_lcmv_cytotoxicity.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts</h1>
+<p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
+</div>
+
+<div>
+  <div class="description">
+    Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure effector cell killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Covers fibroblast culture, in vitro LCMV infection, E-plate setup, and real-time cytotoxicity measurement.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 26, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> PROT-XCELL-LCMV-001<br>
+<strong>Version:</strong> v1.4<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes a real-time impedance-based cytotoxicity assay using the xCELLigence RTCA system to measure the killing activity of cytotoxic effector cells against LCMV-infected and uninfected <strong>C57BL/6J fibroblasts (MEFs)</strong>.</p>
+<p>The protocol covers <strong>in vitro LCMV infection</strong> of target fibroblasts and <strong>real-time cytotoxicity measurement</strong> using label-free impedance monitoring. Effector cells are not described here — they should be prepared according to relevant isolation protocols and added as described in <strong>STEP 3</strong>.</p>
+<p>Example effectors: NLCs or CD8+ T cells sorted from LCMV-WE infected C57BL/6J mice (NLCs typically at day 3 p.i., CD8+ T cells at day 7 p.i.).</p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li><strong>xCELLigence E-Plates are required</strong> — standard tissue culture plates cannot substitute.</li>
+<li><strong>Fibroblasts must be seeded, allowed to adhere, then infected</strong> when at ~50% confluence. After 48 hours of infection, they are harvested, counted, and re-plated into E-Plates.</li>
+<li><strong>MEFs are cultured in DMEM + 10% FBS + 1% P/S</strong> (see STEP 1). Do not use RPMI for MEFs.</li>
+<li><strong>Target cell density in E-Plates is critical</strong> — aim for 60–80% confluence at the time of effector addition, not at seeding.</li>
+<li><strong>Temperature stability is critical</strong> — pre-warm all media to 37°C before addition to E-Plates.</li>
+<li><strong>Minimize plate handling</strong> once the assay begins to avoid impedance artifacts.</li>
+<li><strong>Do not over-confluent MEFs before infection</strong> — cells should be in active growth phase (~50% confluent) for optimal viral uptake.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<p><strong>Day -3:</strong> Fibroblast seeding for infection (<strong>30-60 min</strong>)<br>
+<strong>Day -1 (48 h later):</strong> LCMV infection of fibroblasts (<strong>1-2 hours</strong>)<br>
+<strong>Day +1 (48 h post-infection):</strong> Harvest infected fibroblasts, E-Plate setup, target cell seeding (<strong>2-3 hours</strong>)<br>
+<strong>Day +2 (24 h later):</strong> Effector addition and assay start (<strong>1-2 hours</strong>)<br>
+<strong>Real-time monitoring:</strong> <strong>24-48 hours</strong> (continuous)<br>
+<strong>Data analysis:</strong> <strong>1-2 hours</strong></p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="fibroblasts-and-culture-reagents" class="level2">
+<h2 class="anchored" data-anchor-id="fibroblasts-and-culture-reagents">Fibroblasts and culture reagents</h2>
+<p><strong>Target cells:</strong></p>
+<ul>
+<li>C57BL/6J embryonic fibroblasts (primary or immortalized MEFs)</li>
+</ul>
+<p><strong>MEF complete medium (standard culture):</strong></p>
+<ul>
+<li>DMEM high glucose</li>
+<li>10% FBS</li>
+<li>1% Penicillin/Streptomycin</li>
+<li>Optional: 1% L-glutamine or GlutaMAX, 1% NEAA (recommended for primary MEFs)</li>
+</ul>
+<p><strong>Virus infection:</strong></p>
+<ul>
+<li>LCMV-WE stock (titered, stored at -80°C)</li>
+<li>Low-serum adsorption medium: DMEM + 2% FCS (for virus adsorption step)</li>
+<li>Sterile PBS (endotoxin-free)</li>
+</ul>
+<p><strong>Passaging:</strong></p>
+<ul>
+<li>0.25% Trypsin-EDTA (pre-warmed to 37°C)</li>
+</ul>
+</section>
+<section id="xcelligence-system" class="level2">
+<h2 class="anchored" data-anchor-id="xcelligence-system">xCELLigence system</h2>
+<p><strong>Hardware:</strong></p>
+<ul>
+<li>xCELLigence RTCA instrument (SP, MP, or DP)</li>
+<li>E-Plate 96 (Agilent/ACEA Biosciences)</li>
+<li>Standard CO2 incubator (37°C, 5% CO2)</li>
+</ul>
+<p><strong>Plate configuration:</strong></p>
+<ul>
+<li>Each plate: 2 columns x 8 rows = 16 wells per plate</li>
+<li>3 plates simultaneously = 48 wells total capacity</li>
+<li>Minimum duplicate wells recommended per condition</li>
+</ul>
+<p><strong>Software:</strong></p>
+<ul>
+<li>xCELLigence RTCA Software (for data acquisition and %Cytolysis calculation)</li>
+<li>Data analysis: R / GraphPad Prism</li>
+</ul>
+</section>
+<section id="controls-and-reagents" class="level2">
+<h2 class="anchored" data-anchor-id="controls-and-reagents">Controls and reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Medium only wells</td>
+<td>Background impedance</td>
+</tr>
+<tr class="even">
+<td>Uninfected MEFs + medium</td>
+<td>Spontaneous target death (no effector)</td>
+</tr>
+<tr class="odd">
+<td>LCMV-infected MEFs + medium</td>
+<td>Spontaneous target death in infected targets</td>
+</tr>
+<tr class="even">
+<td>Uninfected MEFs + effectors</td>
+<td>Non-specific/MHC-unrestricted killing</td>
+</tr>
+<tr class="odd">
+<td>Triton X-100, 1% in PBS</td>
+<td>Maximum lysis control</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-mef-culture-and-seeding-for-infection" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-mef-culture-and-seeding-for-infection">STEP 1 — MEF culture and seeding for infection</h2>
+<section id="background-mef-culture-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="background-mef-culture-conditions">Background: MEF culture conditions</h3>
+<p>MEFs are adherent fibroblasts and are maintained in <strong>DMEM + 10% FBS + 1% P/S</strong> at 37°C, 5% CO2. Primary MEFs should not be passaged beyond P4-5, as proliferative capacity decreases. Cells are subcultured at <strong>70-85% confluence</strong> — do not allow full confluence before passaging, as contact inhibition impairs subsequent growth.</p>
+</section>
+<section id="passaging-seeding-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="passaging-seeding-procedure">Passaging / seeding procedure</h3>
+<ol type="1">
+<li><strong>Aspirate medium</strong> and wash monolayer with warm PBS (1x).</li>
+<li><strong>Add 0.25% Trypsin-EDTA</strong> — for a T75 flask, add ~2-3 mL. For a 6-well plate, 0.3-0.5 mL per well.</li>
+<li><strong>Incubate at 37°C for 3-5 min.</strong> Monitor under microscope — do not over-trypsinize (reduces viability).</li>
+<li><strong>Neutralize trypsin</strong> by adding 2-3x volume of complete DMEM (FBS inactivates trypsin).</li>
+<li><strong>Transfer to a centrifuge tube</strong> and spin at 300 x g, 5 min, RT.</li>
+<li><strong>Aspirate supernatant</strong> and resuspend in complete medium.</li>
+<li><strong>Count cells</strong> using trypan blue exclusion.</li>
+<li><strong>Seed into standard 6-well plates or T25 flasks</strong> at a density that will yield ~50% confluence within 24-48 h.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For infection, cells should be actively dividing and at <strong>~50% confluence</strong> — this is the optimal state for LCMV uptake. Avoid seeding into E-Plates at this stage; E-Plate seeding follows post-infection (STEP 2).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="step-2-lcmv-infection-of-fibroblasts" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-lcmv-infection-of-fibroblasts">STEP 2 — LCMV infection of fibroblasts</h2>
+<p><strong>Timing:</strong> Infect when cells are at ~50% confluence (~24-48 h after seeding). Infection runs for 48 hours.</p>
+<section id="virus-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="virus-preparation">Virus preparation</h3>
+<ol type="1">
+<li><p><strong>Thaw LCMV-WE stock</strong> rapidly in 37°C water bath. Transfer immediately to ice.</p></li>
+<li><p><strong>Count cells</strong> in the wells to be infected, or estimate based on prior seeding density and expected doubling.</p></li>
+<li><p><strong>Calculate MOI and required PFU:</strong></p>
+<p>MOI (multiplicity of infection) is defined as the number of virus particles (PFU) per cell:</p>
+<blockquote class="blockquote">
+<p><strong>PFU required = MOI x number of cells</strong></p>
+<p><strong>Volume of virus stock = PFU required / stock titer (PFU/mL)</strong></p>
+</blockquote>
+<p>Example: MOI 0.01, 4 x 10^5 cells, stock titer 1 x 10^8 PFU/mL<br>
+→ PFU required = 0.01 x 400,000 = <strong>4,000 PFU</strong><br>
+→ Volume of stock = 4,000 / 1 x 10^8 = <strong>0.04 uL</strong> — dilute into adsorption medium to a workable volume (e.g.&nbsp;0.5-1 mL per well)</p></li>
+<li><p><strong>Dilute virus</strong> in low-serum adsorption medium (DMEM + 2% FCS) to the calculated concentration.</p></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A MOI range of <strong>0.01-0.1 PFU/cell</strong> is appropriate for LCMV infection of actively growing fibroblasts at ~50% confluence. <strong>Kostas previously used MOI 0.01</strong> for this assay, which gives moderate infection rates and minimal cytopathic effect at 48 h — a reasonable starting point. Higher MOI (up to 0.1) will increase infection efficiency but may cause more target cell death before the assay begins.</p>
+</div>
+</div>
+</section>
+<section id="infection-procedure" class="level3">
+<h3 class="anchored" data-anchor-id="infection-procedure">Infection procedure</h3>
+<ol type="1">
+<li><strong>Remove culture medium</strong> from wells.</li>
+<li><strong>Add infection volume</strong> (0.5-1 mL per well for 6-well; scale accordingly): virus diluted in adsorption medium.</li>
+<li><strong>Add equivalent volume of adsorption medium</strong> (no virus) to control wells.</li>
+<li><strong>Incubate 1 hour</strong> at 37°C. Rock plate gently every 15 min to distribute virus evenly.</li>
+<li><strong>Remove virus-containing medium</strong> and wash wells <strong>2x with warm PBS</strong>.</li>
+<li><strong>Add complete DMEM</strong> (normal culture volume).</li>
+<li><strong>Incubate 48 hours</strong> at 37°C, 5% CO2. This allows viral protein expression and presentation on target cell surface.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All steps involving live LCMV must be performed in a certified Class II biosafety cabinet. Decontaminate all liquid waste with freshly prepared bleach before disposal. Follow institutional BSL-2 guidelines.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="step-3-harvest-infected-fibroblasts-and-seed-e-plates" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-harvest-infected-fibroblasts-and-seed-e-plates">STEP 3 — Harvest infected fibroblasts and seed E-Plates</h2>
+<p><strong>Timing:</strong> 48 hours post-infection.</p>
+<section id="fibroblast-harvest" class="level3">
+<h3 class="anchored" data-anchor-id="fibroblast-harvest">Fibroblast harvest</h3>
+<ol type="1">
+<li><strong>Visually inspect wells</strong> under microscope — infected MEFs should appear morphologically intact but may show subtle changes. Significant cytopathic effect at this stage indicates infection was too high (reduce MOI).</li>
+<li><strong>Aspirate medium</strong> from all wells (infected and uninfected controls).</li>
+<li><strong>Wash once with warm PBS.</strong></li>
+<li><strong>Add pre-warmed 0.25% Trypsin-EDTA</strong> (0.3-0.5 mL per well of a 6-well plate).</li>
+<li><strong>Incubate 3-5 min at 37°C.</strong> Monitor — do not over-trypsinize infected cells, which may be more fragile.</li>
+<li><strong>Neutralize with complete DMEM</strong> (2-3x trypsin volume).</li>
+<li><strong>Transfer to 15 mL tube</strong> and centrifuge at 300 x g, 5 min, RT.</li>
+<li><strong>Resuspend in complete DMEM</strong> and count. Assess viability by trypan blue exclusion — aim for &gt;85% viability.</li>
+</ol>
+</section>
+<section id="e-plate-background-measurement" class="level3">
+<h3 class="anchored" data-anchor-id="e-plate-background-measurement">E-Plate background measurement</h3>
+<ol type="1">
+<li><strong>Add 50 uL complete DMEM</strong> to each well of the E-Plate.</li>
+<li><strong>Place plate in xCELLigence</strong> instrument.</li>
+<li><strong>Perform background read</strong> to establish baseline impedance.</li>
+<li><strong>Remove plate</strong> from instrument and proceed immediately to cell seeding.</li>
+</ol>
+</section>
+<section id="target-cell-seeding-into-e-plates" class="level3">
+<h3 class="anchored" data-anchor-id="target-cell-seeding-into-e-plates">Target cell seeding into E-Plates</h3>
+<p><strong>Choosing target cell number:</strong> Prior lab xCELLigence experiments (CD160, B16F10/MCA1956 targets) used <strong>25,000 cells/well</strong>. However, given that effector cell numbers are limiting in this assay, reducing target cell number is desirable to keep E:T ratios achievable. Published literature supports lower seeding densities: an optimization study using porcine fibroblasts as targets found <strong>7,500 cells/well</strong> generated a robust Cell Index within 10 hours (Galli et al., 2013, <em>Xenotransplantation</em>). A validated range for adherent targets in 96-well E-Plates across published xCELLigence cytotoxicity protocols is broadly <strong>7,500-25,000 cells/well</strong>.</p>
+<p><strong>Recommended starting point for MEFs in this assay: 10,000-15,000 cells/well.</strong> This reduces effector demand approximately 2-fold compared to 25,000 targets while maintaining sufficient impedance signal. Validate CI at 24 h before committing to a final density.</p>
+<ol type="1">
+<li><strong>Adjust cell concentration</strong> to the target density in complete DMEM (e.g.&nbsp;2 x 10^5 cells/mL for 10,000 cells/well in 50 uL).</li>
+<li><strong>Add 50 uL per well</strong> to E-Plate wells (total volume = 100 uL with background medium already present).</li>
+<li><strong>Assign wells:</strong>
+<ul>
+<li>LCMV-infected MEFs (effector wells + target-alone control wells)</li>
+<li>Uninfected MEFs (effector wells + target-alone control wells)</li>
+<li>Medium-only wells (background)</li>
+</ul></li>
+<li><strong>Allow plate to sit at room temperature in hood for 30 min</strong> — permits cell settling before scanning begins.</li>
+<li><strong>Transfer to xCELLigence instrument</strong> and begin scanning (every 15 min).</li>
+<li><strong>Monitor target cell adherence</strong> for 24 h before adding effectors.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Target cells should reach a Cell Index of ~1.5-2.5 at the time of effector addition, corresponding to approximately 60-80% confluence. MEFs spread well and may reach this CI faster than tumor lines. If cells over-confluent before 24 h, reduce seeding density for future experiments.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="step-4-effector-cell-addition-and-cytotoxicity-assay" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-effector-cell-addition-and-cytotoxicity-assay">STEP 4 — Effector cell addition and cytotoxicity assay</h2>
+<p><strong>Timing:</strong> 24 hours after E-Plate seeding (once targets are 60-80% confluent).</p>
+<p>Effectors should be prepared according to the appropriate isolation protocol and brought to the required cell concentration immediately before use. Examples of typical effectors for this assay:</p>
+<ul>
+<li><strong>NLCs</strong> sorted or enriched from liver of LCMV-WE infected mice, day 3 p.i.</li>
+<li><strong>CD8+ T cells</strong> sorted or enriched from spleen of LCMV-WE infected mice, day 7 p.i.</li>
+</ul>
+<section id="et-ratio-guidance" class="level3">
+<h3 class="anchored" data-anchor-id="et-ratio-guidance">E:T ratio guidance</h3>
+<p>Published xCELLigence cytotoxicity assays using enriched NK or CD8+ T cells against adherent targets typically span <strong>1:1 to 10:1</strong> for sorted/enriched primary effectors, with higher ratios (up to 25:1–50:1) used for bulk mixed populations (e.g.&nbsp;splenocytes, PBMCs). For sorted NLCs or CD8+ T cells, the biologically informative range is generally <strong>1:1 to 10:1</strong>; ratios above this are useful for establishing the assay ceiling but are not always necessary with potent effectors.</p>
+<p>Recommended E:T ratios to test in this assay:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>E:T ratio</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10:1</td>
+<td>Upper range for sorted primary effectors</td>
+</tr>
+<tr class="even">
+<td>5:1</td>
+<td>Standard; good mid-point</td>
+</tr>
+<tr class="odd">
+<td>2.5:1</td>
+<td>Low-moderate</td>
+</tr>
+<tr class="even">
+<td>1:1</td>
+<td>Lower limit; sensitivity check</td>
+</tr>
+</tbody>
+</table>
+<p>If effector numbers allow, extending to 20:1 or 25:1 provides useful upper-bound data.</p>
+</section>
+<section id="effector-cell-concentration-calculation" class="level3">
+<h3 class="anchored" data-anchor-id="effector-cell-concentration-calculation">Effector cell concentration calculation</h3>
+<p>Effectors are added in <strong>100 uL at 2x concentration</strong> (final well volume = 150 uL after addition to 50 uL remaining medium).</p>
+<p>The tables below give 2x stock concentrations for two recommended target densities. Use the column matching your chosen target number.</p>
+<p><strong>For 10,000 target cells/well:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>E:T ratio</th>
+<th>Effectors/well</th>
+<th>2x stock concentration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10:1</td>
+<td>100,000</td>
+<td>2.0 x 10^6 /mL</td>
+</tr>
+<tr class="even">
+<td>5:1</td>
+<td>50,000</td>
+<td>1.0 x 10^6 /mL</td>
+</tr>
+<tr class="odd">
+<td>2.5:1</td>
+<td>25,000</td>
+<td>5.0 x 10^5 /mL</td>
+</tr>
+<tr class="even">
+<td>1:1</td>
+<td>10,000</td>
+<td>2.0 x 10^5 /mL</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For 15,000 target cells/well:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>E:T ratio</th>
+<th>Effectors/well</th>
+<th>2x stock concentration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10:1</td>
+<td>150,000</td>
+<td>3.0 x 10^6 /mL</td>
+</tr>
+<tr class="even">
+<td>5:1</td>
+<td>75,000</td>
+<td>1.5 x 10^6 /mL</td>
+</tr>
+<tr class="odd">
+<td>2.5:1</td>
+<td>37,500</td>
+<td>7.5 x 10^5 /mL</td>
+</tr>
+<tr class="even">
+<td>1:1</td>
+<td>15,000</td>
+<td>3.0 x 10^5 /mL</td>
+</tr>
+</tbody>
+</table>
+<p><strong>For 25,000 target cells/well</strong> (original density, for reference):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>E:T ratio</th>
+<th>Effectors/well</th>
+<th>2x stock concentration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10:1</td>
+<td>250,000</td>
+<td>5.0 x 10^6 /mL</td>
+</tr>
+<tr class="even">
+<td>5:1</td>
+<td>125,000</td>
+<td>2.5 x 10^6 /mL</td>
+</tr>
+<tr class="odd">
+<td>2.5:1</td>
+<td>62,500</td>
+<td>1.25 x 10^6 /mL</td>
+</tr>
+<tr class="even">
+<td>1:1</td>
+<td>25,000</td>
+<td>5.0 x 10^5 /mL</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="effector-addition" class="level3">
+<h3 class="anchored" data-anchor-id="effector-addition">Effector addition</h3>
+<ol type="1">
+<li><strong>Pause impedance monitoring</strong> in xCELLigence software.</li>
+<li><strong>Remove E-Plate</strong> from instrument.</li>
+<li><strong>Pre-warm effector suspensions</strong> to 37°C (place tubes briefly in water bath or incubator).</li>
+<li><strong>Add 100 uL effector suspension</strong> per well at 2x concentration. Pipette gently — do <strong>not</strong> mix or disturb the target monolayer.</li>
+<li><strong>Add 100 uL complete medium</strong> to target-alone control wells (no effectors).</li>
+<li><strong>Add 100 uL Triton X-100 (2% stock)</strong> to maximum lysis control wells (final 1%).</li>
+<li><strong>Return plate to instrument</strong> and resume monitoring for 24-48 hours.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not mix wells after effector addition. Pipetting vigorously against the monolayer will disrupt impedance and create artifacts indistinguishable from cytotoxicity.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="step-5-real-time-monitoring" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-real-time-monitoring">STEP 5 — Real-time monitoring</h2>
+<p><strong>Monitoring parameters:</strong></p>
+<ul>
+<li>Data collection interval: every 15 min</li>
+<li>Total duration: 24 h (extendable to 48 h)</li>
+<li>Cytotoxicity typically begins 1-4 h post-effector addition</li>
+</ul>
+<p><strong>What to observe:</strong></p>
+<ul>
+<li>Stable CI in target-alone wells = healthy monolayer, assay running correctly</li>
+<li>Decreasing CI in effector-containing wells = cytotoxicity</li>
+<li>Rapid CI drop in Triton wells = expected; confirms instrument sensitivity</li>
+</ul>
+</section>
+</section>
+<section id="data-analysis" class="level1">
+<h1>Data analysis</h1>
+<section id="cytotoxicity-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="cytotoxicity-calculation">Cytotoxicity calculation</h2>
+<p>Standard formula adapted for impedance-based assays:</p>
+<p><strong>% Specific Lysis = ((CI_target - CI_experimental) / (CI_target - CI_maximal)) x 100</strong></p>
+<p>Where:</p>
+<ul>
+<li><strong>CI_target</strong> = Cell Index of target cells alone at each timepoint</li>
+<li><strong>CI_experimental</strong> = Cell Index of target + effector wells</li>
+<li><strong>CI_maximal</strong> = Cell Index of Triton X-100 treated wells (complete lysis)</li>
+</ul>
+</section>
+<section id="data-processing-steps" class="level2">
+<h2 class="anchored" data-anchor-id="data-processing-steps">Data processing steps</h2>
+<ol type="1">
+<li>Export raw data from xCELLigence software.</li>
+<li>Normalize Cell Index to the time of effector addition (t = 0).</li>
+<li>Calculate % specific lysis at multiple time points (e.g.&nbsp;4 h, 12 h, 24 h).</li>
+<li>Generate dose-response curves: % lysis vs.&nbsp;E:T ratio.</li>
+<li>Statistical analysis in R or GraphPad Prism.</li>
+</ol>
+</section>
+<section id="key-parameters-to-report" class="level2">
+<h2 class="anchored" data-anchor-id="key-parameters-to-report">Key parameters to report</h2>
+<ul>
+<li>Time to 50% lysis (LT50) for each E:T ratio</li>
+<li>Maximum cytotoxicity at 24 h</li>
+<li>Area under the curve (AUC) for kinetic analysis</li>
+<li>EC50 (E:T ratio causing 50% lysis)</li>
+</ul>
+</section>
+<section id="quality-control-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="quality-control-criteria">Quality control criteria</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Acceptable range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Target cell CI at effector addition</td>
+<td>1.5-2.5</td>
+</tr>
+<tr class="even">
+<td>CV between replicate wells</td>
+<td>&lt;15%</td>
+</tr>
+<tr class="odd">
+<td>Spontaneous lysis (targets alone) at 24 h</td>
+<td>&lt;10%</td>
+</tr>
+<tr class="even">
+<td>Maximum lysis (Triton) at 4 h</td>
+<td>&gt;90%</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="experimental-design-and-plate-layout" class="level1">
+<h1>Experimental design and plate layout</h1>
+<section id="required-controls" class="level2">
+<h2 class="anchored" data-anchor-id="required-controls">Required controls</h2>
+<p>Every run must include the following. These are non-negotiable for data interpretation:</p>
+<ul>
+<li><strong>LCMV-infected MEFs alone</strong> — spontaneous death of infected targets; required to calculate specific lysis</li>
+<li><strong>Uninfected MEFs alone</strong> — spontaneous death baseline for uninfected targets</li>
+<li><strong>Uninfected MEFs + effectors</strong> — non-specific / MHC-unrestricted killing; should be low</li>
+<li><strong>Medium only</strong> — background impedance; floor reference</li>
+<li><strong>Triton X-100 (1% final)</strong> — maximum lysis; required for % specific lysis formula</li>
+<li><strong>Effector cells alone</strong> — confirms effectors do not adhere and contribute artifactually to CI; run during initial assay validation</li>
+</ul>
+<p>All controls in duplicate minimum.</p>
+</section>
+<section id="plate-maps" class="level2">
+<h2 class="anchored" data-anchor-id="plate-maps">Plate maps</h2>
+<p>Each E-Plate is <strong>2 columns (1–2) × 8 rows (A–H) = 16 wells</strong>. The instrument holds 3 plates simultaneously (48 wells total). Fill in conditions below before each experiment.</p>
+<pre><code>PLATE 1                    PLATE 2                    PLATE 3
+                                                       
+     Col 1   Col 2              Col 1   Col 2              Col 1   Col 2
+  +-------+-------+          +-------+-------+          +-------+-------+
+A |       |       |       A  |       |       |       A  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+B |       |       |       B  |       |       |       B  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+C |       |       |       C  |       |       |       C  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+D |       |       |       D  |       |       |       D  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+E |       |       |       E  |       |       |       E  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+F |       |       |       F  |       |       |       F  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+G |       |       |       G  |       |       |       G  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+
+H |       |       |       H  |       |       |       H  |       |       |
+  +-------+-------+          +-------+-------+          +-------+-------+</code></pre>
+</section>
+<section id="replication" class="level2">
+<h2 class="anchored" data-anchor-id="replication">Replication</h2>
+<ul>
+<li>Minimum duplicate wells per condition (one row = one condition in duplicate)</li>
+<li>Minimum 3 independent experiments using different mouse donors</li>
+<li>Always include target-alone controls for both infected and uninfected conditions on every plate</li>
+</ul>
+</section>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Possible cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High spontaneous lysis</td>
+<td>Over-confluence or poor MEF health post-infection</td>
+<td>Reduce seeding density; check post-infection viability</td>
+</tr>
+<tr class="even">
+<td>No cytotoxicity</td>
+<td>Effector dysfunction, wrong timepoint, too low E:T</td>
+<td>Verify effector activation; increase E:T ratio; check infection efficiency</td>
+</tr>
+<tr class="odd">
+<td>Variable impedance between replicates</td>
+<td>Temperature fluctuations; uneven seeding</td>
+<td>Pre-warm all reagents; mix cell suspension well before seeding each well</td>
+</tr>
+<tr class="even">
+<td>Poor target adhesion</td>
+<td>Suboptimal cell density; trypsin damage</td>
+<td>Optimize seeding density; do not over-trypsinize</td>
+</tr>
+<tr class="odd">
+<td>CI drop in target-alone wells</td>
+<td>Overconfluence and detachment; infected cell death</td>
+<td>Reduce seeding density; confirm post-infection viability</td>
+</tr>
+<tr class="even">
+<td>High background noise</td>
+<td>Electrical interference; bubbles in wells</td>
+<td>Check instrument calibration; centrifuge E-Plate briefly before scanning</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="safety" class="level1">
+<h1>Safety</h1>
+<ul>
+<li>Handle LCMV according to institutional BSL-2 biosafety guidelines in a certified Class II biosafety cabinet.</li>
+<li>Decontaminate all liquid waste with freshly prepared 10% bleach before disposal. Autoclave solid infectious waste.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) throughout.</li>
+<li>Label all infectious plates, tubes, and waste containers with virus strain and date.</li>
+<li>xCELLigence instrument: ensure proper grounding; avoid liquid contact with electronics.</li>
+</ul>
+</section>
+<section id="protocols-used" class="level1">
+<h1>Protocols used</h1>
+<ul>
+<li>Effector isolation protocol (NLC or CD8+ T cell, as applicable) — refer to lab SOP</li>
+<li>LCMV-WE stock production — <code>MUS-LCMV-PROD-001</code></li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2026-03-18</td>
+<td>Dillon Corvino</td>
+<td>Initial xCELLigence LCMV cytotoxicity protocol</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2026-03-26</td>
+<td>Dillon Corvino</td>
+<td>Removed effector isolation sections; corrected infection/seeding workflow to seed-infect-harvest-re-plate sequence; added MEF culture conditions and trypsin passaging; added LCMV MOI guidance for fibroblasts; clarified E:T concentration table</td>
+</tr>
+<tr class="odd">
+<td>v1.2</td>
+<td>2026-03-26</td>
+<td>Dillon Corvino</td>
+<td>Added MOI calculation formula with worked example; noted Kostas MOI 0.01 as reference starting point; updated MOI range note</td>
+</tr>
+<tr class="even">
+<td>v1.3</td>
+<td>2026-03-26</td>
+<td>Dillon Corvino</td>
+<td>Reduced recommended target cell density to 10,000-15,000 cells/well to reduce effector demand; added literature context (Galli 2013) and comparison to prior lab density (25,000); updated E:T ratio guidance to 1:1-10:1 range for sorted effectors; added three-density concentration calculation tables</td>
+</tr>
+<tr class="odd">
+<td>v1.4</td>
+<td>2026-03-26</td>
+<td>Dillon Corvino</td>
+<td>Replaced list-based plate layout with blank visual plate maps (3x E-Plate grids, 2 col x 8 row); added required controls section</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

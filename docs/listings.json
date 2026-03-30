@@ -34,6 +34,7 @@
     "items": [
       "/protocols_src/mouse/prot_mus_blood_processing.html",
       "/protocols_src/mouse/prot_mus_bone_marrow_isolation.html",
+      "/protocols_src/mouse/prot_mus_iel_isolation.html",
       "/protocols_src/mouse/prot_mus_lcmv_infection.html",
       "/protocols_src/mouse/prot_mus_lcmv_focus_forming_assay.html",
       "/protocols_src/mouse/prot_mus_lcmv_plaque_assay_vero.html",
@@ -46,7 +47,9 @@
       "/protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.html",
       "/protocols_src/mouse/prot_mus_spleen_dissociation.html",
       "/protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.html",
-      "/protocols_src/mouse/prot_mus_tumour_digestion.html"
+      "/protocols_src/mouse/prot_mus_tumour_digestion.html",
+      "/protocols_src/mouse/prot_nlc_plate_stimulation.pdf",
+      "/protocols_src/mouse/prot_xcelligence_lcmv_cytotoxicity.html"
     ]
   },
   {

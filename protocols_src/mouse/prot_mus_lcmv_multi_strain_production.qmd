@@ -2,8 +2,8 @@
 title: "LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-LCMV-PROD-001"
-version: "v1.0"
-date: "2025-12-01"
+version: "v1.2"
+date: "2026-03-28"
 description: "Propagation on fibroblast cell lines and harvest of high-titer stocks."
 ---
 
@@ -20,7 +20,7 @@ This protocol describes a unified approach for **in vitro propagation of lymphoc
 - LCMV **WE**
 - LCMV **Docile** (WE-derived persistent variant)
 
-The procedure is based primarily on *Welsh & Seedhom, Curr Protoc Microbiol 2008 (LCMV: Propagation, Quantitation, and Storage)* and adapted using production conditions reported in high-impact immunology studies (e.g. Recher *et al.*, Nat Med 2007; Bergthaler *et al.*, PNAS 2010; Macal *et al.*, Immunity 2018).
+The procedure is based primarily on *Welsh & Seedhom, Curr Protoc Microbiol 2008 (LCMV: Propagation, Quantitation, and Storage)* and adapted using production conditions reported in high-impact immunology studies (e.g. Recher *et al.*, Nat Med 2007; Bergthaler *et al.*, PNAS 2010; Macal *et al.*, Immunity 2018). The core infection and harvest workflow reflects the validated Cologne production protocol.
 
 All strains are propagated on **fibroblast-like cell lines (BHK-21 or L929)** under BSL-2 conditions, with strain-specific preferences summarized below.
 
@@ -30,7 +30,7 @@ All strains are propagated on **fibroblast-like cell lines (BHK-21 or L929)** un
 LCMV is a zoonotic arenavirus capable of causing severe disease in humans, including meningitis and congenital infection. Work with live LCMV must:
 
 - Be conducted under the appropriate institutional **biosafety level (typically BSL-2 with additional local conditions)** and approved animal and biosafety protocols.
-- Use **dedicated infectious CO₂ incubators** and clearly labelled containment for all cultures and waste.
+- Use **dedicated infectious CO2 incubators** and clearly labelled containment for all cultures and waste.
 - Include suitable **PPE** (lab coat/gown, gloves, eye protection as appropriate) and measures to avoid sharps injuries, aerosol formation, and spills.
 - Exclude or take special precautions for **pregnant or immunocompromised personnel** according to institutional policies.
 
@@ -53,12 +53,12 @@ LCMV can cause meningitis and febrile illness in humans. Handle infectious mater
 
 LCMV can grow in many adherent cell lines, but fibroblast/epithelial lines give the best yields. BHK-21 cells are the standard for most strains; WE and Docile are also frequently grown on L929 cells.
 
-| Strain      | Phenotype in mice       | Parent strain | Preferred producer cell line(s) | Typical use |
-|------------|-------------------------|--------------|----------------------------------|-------------|
-| Armstrong  | Acute, self-limited     | —            | **BHK-21** (also L929 possible) | Acute infection model |
-| Clone 13   | Chronic systemic        | Armstrong    | **BHK-21** (sometimes L929/BHK) | Chronic infection, T cell exhaustion |
-| WE         | Typically acute/visceral| WE           | **L929** or BHK-21              | Acute / hemorrhagic-like models |
-| Docile     | Chronic / persistent    | WE           | **BHK-21** or L929              | Chronic WE-derived infection |
+| Strain      | Phenotype in mice        | Parent strain | Preferred producer cell line(s)  | Typical use                          |
+|------------|--------------------------|--------------|-----------------------------------|--------------------------------------|
+| Armstrong  | Acute, self-limited      | —            | **BHK-21** (also L929 possible)  | Acute infection model                |
+| Clone 13   | Chronic systemic         | Armstrong    | **BHK-21** (sometimes L929/BHK) | Chronic infection, T cell exhaustion |
+| WE         | Typically acute/visceral | WE           | **L929** or BHK-21               | Acute / hemorrhagic-like models      |
+| Docile     | Chronic / persistent     | WE           | **BHK-21** or L929               | Chronic WE-derived infection         |
 
 In practice:
 
@@ -68,22 +68,35 @@ In practice:
 
 # Overview of Workflow
 
-1. Prepare producer cells (BHK-21 or L929) to the appropriate confluency.
-2. Infect at low multiplicity of infection (MOI **0.01–0.1** infectious units per cell).
-3. Allow virus to replicate **48–72 h** depending on strain and MOI.
-4. Harvest and clarify virus-containing supernatant.
-5. Aliquot and store at **−80 °C**.
-6. Titrate by plaque assay (Vero cells) or focus-forming assay (MC57G or Vero).
+1. Detach, count, and seed producer cells into a T-75 at 5 x 10^6 cells in 15 mL.
+2. Allow 3–4 h for attachment.
+3. Remove 5 mL medium and infect at strain-specific MOI in remaining volume.
+4. Incubate 48 h.
+5. Harvest clarified supernatant carefully without disturbing the cell layer.
+6. Centrifuge, transfer to ice, aliquot at strain-specific volumes, and place directly at -80°C.
+7. Titrate by plaque assay (Vero cells) or focus-forming assay (MC57G or Vero).
 
 # Materials
 
 ## Cell lines
 
-- **BHK-21** (baby hamster kidney) cells
-- **L929** (mouse fibroblast) cells
-- Cell culture medium:
-  - DMEM (or MEM for L929) + 10% heat-inactivated FBS
-  - 1% Pen/Strep (optional; omit during infection, if desired)
+**BHK-21** (baby hamster kidney, Syrian hamster fibroblast-like)
+
+- Standard producer line for LCMV Armstrong, Clone 13, and Docile.
+- Maintenance medium: **DMEM high glucose + 10% heat-inactivated FBS**, +/- 1% Pen/Strep.
+- Fast-dividing; can undergo up to two divisions per day at 37°C, 5% CO2.
+- Use low-passage stocks; regularly test for mycoplasma.
+
+**L929** (mouse connective tissue fibroblast)
+
+- Preferred producer line for LCMV WE and Docile; also used for Armstrong and Clone 13.
+- Maintenance medium: **DMEM + 5% FBS**, +/- 1% Pen/Strep.
+- Grows more slowly than BHK-21; adjust seeding density and attachment time accordingly.
+- Use low-passage stocks; regularly test for mycoplasma.
+
+:::callout-note
+Omit Pen/Strep from the production medium during infection if desired, as antibiotics can mask low-level contamination. Ensure all reagents and technique are sterile before removing antibiotic cover.
+:::
 
 ## Virus
 
@@ -97,93 +110,138 @@ In practice:
 
 - Phosphate-buffered saline (PBS), sterile
 - Trypsin-EDTA
+- Trypan blue (for cell counting)
 - 15 mL and 50 mL conical tubes
-- 0.22 µm filters (optional, for final clarification if needed)
+- 10 mL stripettes
 - Cryovials for viral aliquots
 - Bleach (10% freshly prepared) and 70% ethanol for disinfection
+- Isopropanol freezing container (e.g. Mr. Frosty) — optional, see Freezing section
 
 ## Equipment
 
 - Class II biological safety cabinet (laminar flow hood)
-- CO₂ incubator (37 °C, 5% CO₂)
-- Tissue culture flasks (T25, T75, T175) or roller bottles
-- Tabletop centrifuge capable of 300–500 × g at 4 °C
+- CO2 incubator (37°C, 5% CO2)
+- Tissue culture flasks (T-25, T-75, T-150, or T-175 depending on scale)
+- Tabletop centrifuge (capable of 1500 rpm / ~400 × g at 4°C)
+- Haemocytometer or automated cell counter
 - Inverted microscope
-- −80 °C freezer
+- -80°C freezer
 
 # Producer Cell Preparation
 
-1. Thaw BHK-21 or L929 cells and expand in complete medium until healthy and log-phase.
-2. Seed flasks such that they reach the required confluency on the **day of infection**:
-   - For infection, aim for **50–75% confluency** (Welsh & Seedhom; BHK-21 grow fast).
-3. Maintain cells at 37 °C, 5% CO₂.
+All work in the biosafety cabinet.
+
+1. Detach producer cells (BHK-21 or L929) using trypsin-EDTA and collect into a conical tube.
+2. Centrifuge **5 min, 400 × g, 20°C**.
+3. Aspirate supernatant. Resuspend in 5 mL medium and count: use **20 µL cells in 180 µL trypan blue** (1:10 dilution).
+4. Seed cells in complete medium into the production flask — see scaling table below for cell numbers and volumes per flask size.
+5. Incubate at 37°C, 5% CO2 for **3–4 h** to allow attachment.
 
 :::callout-tip
-For high-titer preparations, it is better to infect slightly **subconfluent** (50–75%) rather than fully confluent monolayers.
+At this seeding density, cells will be approximately 50% confluent after attachment — the optimal density for infection. Infecting fully confluent monolayers reduces viral yield.
 :::
 
 # Infection Conditions by Strain
 
-Use the following as starting conditions; fine-tune for your own cell lines and incubators.
+| Strain     | Producer line  | MOI (PFU/cell) | Harvest time |
+|-----------|----------------|----------------|--------------|
+| Armstrong | BHK-21         | 0.01           | 48 h         |
+| Clone 13  | BHK-21         | 0.001          | 48 h         |
+| WE        | L929 (or BHK)  | 0.01           | 48 h         |
+| Docile    | BHK-21 / L929  | 0.01           | 48 h         |
 
-| Strain      | Producer line | Suggested MOI (PFU/cell) | Typical harvest time | Expected titer (order of magnitude) |
-|------------|---------------|--------------------------|----------------------|-------------------------------------|
-| Armstrong  | BHK-21        | 0.01–0.1                 | 48 h                 | 10⁷–10⁸ PFU/mL                      |
-| Clone 13   | BHK-21        | 0.05–0.1                 | 48–72 h              | 10⁷–10⁸ PFU/mL                      |
-| WE         | L929 (or BHK) | 0.01–0.1                 | 48 h                 | 10⁶–10⁷ PFU/mL                      |
-| Docile     | BHK-21/L929   | 0.01–0.1                 | 48–72 h              | 10⁶–10⁷ PFU/mL                      |
+:::callout-note
+**MOI reference:** Values above reflect the validated Cologne production protocol for WE (MOI 0.01) and Clone 13 (MOI 0.001). Published literature and some institutional SOPs use higher MOIs for Clone 13 (0.05–0.1) and a broader range for other strains (0.01–0.1). Lower MOI with a fixed 48 h harvest limits DI particle accumulation and tends to give more consistent titers. If yields are low, increasing MOI to 0.01–0.1 is a reasonable first troubleshooting step.
+:::
 
-Notes:
+# Infection Procedure
 
-- Lower MOI (0.01) with longer incubation (72 h) can yield slightly higher titers but risks more cell death and DI particle accumulation.
-- For routine stocks, **MOI 0.05–0.1** and **48 h harvest** are a good compromise.
+All work in the biosafety cabinet.
 
-# Infection Procedure (All Strains)
+1. Thaw a virus aliquot rapidly at 37°C and place immediately on ice.
+2. Remove **5 mL of medium** from the flask — do not disturb the cell layer.
+3. Dilute the appropriate volume of virus in **5 mL of medium** to achieve the target MOI and add to the flask. Total volume is **15 mL**. Gently tilt to distribute.
+4. Return flask to incubator. Incubate for **48 h** at 37°C, 5% CO2 without further medium change.
 
-The following steps apply to all four strains; choose the appropriate cell line and MOI per the table above.
+## Scaling to larger flasks
 
-1. **Prepare inoculum**
-   - Thaw a virus aliquot rapidly at 37 °C and place immediately on ice.
-   - Dilute virus in pre-warmed serum-containing medium to achieve the desired MOI in a minimal volume:
-     - ~3–5 mL for a T75 flask
-     - ~8–12 mL for a T175 flask
+The Cologne protocol is defined for a T-75. Scale proportionally by surface area for larger flasks — cell number, seeding volume, and production volume all scale together. The 5 mL used to prepare the inoculum is always replaced with 5 mL fresh medium containing virus, so total volume is maintained throughout.
 
-2. **Remove growth medium**
-   - Aspirate medium from producer cell flasks.
-   - Rinse once with room-temperature PBS (optional, especially if serum-free inoculum is used).
+| Flask  | Surface area | Seeding cells   | Seeding volume | Production volume | Welsh & Seedhom reference volume |
+|-------|--------------|-----------------|----------------|-------------------|----------------------------------|
+| T-25  | 25 cm2       | ~2 x 10^6       | 5 mL           | 5 mL              | ~10 mL                           |
+| T-75  | 75 cm2       | **5 x 10^6**    | **15 mL**      | **15 mL**         | 30–40 mL                         |
+| T-150 | 150 cm2      | ~10 x 10^6      | 30 mL          | 30 mL             | 60 mL                            |
+| T-175 | 175 cm2      | ~12 x 10^6      | 35 mL          | 35 mL             | ~70 mL                           |
 
-3. **Inoculate cells**
-   - Add the virus inoculum to each flask.
-   - Gently rock to distribute evenly.
-   - Incubate **1 h at 37 °C**, rocking every 10–15 min.
-
-4. **Add production medium**
-   - After adsorption, top up with pre-warmed complete medium:
-     - T75: total 15–20 mL
-     - T175: total 30–40 mL
-   - Return flasks to incubator at 37 °C, 5% CO₂.
-
-5. **Incubation**
-   - Monitor daily under the microscope.
-   - Typical observations:
-     - Slight rounding and increased refractility of cells by 24–48 h.
-     - For Clone 13 and Docile, some strains show more pronounced cytopathic changes by 72 h.
-
-6. **Harvest**
-   - At the chosen timepoint (e.g. 48 h for most strains):
-     - Gently tap flask to detach loosely adherent cells into the supernatant.
-     - Transfer culture supernatant to 50 mL tubes on ice.
-
-# Clarification and Aliquoting
-
-1. Centrifuge collected supernatant at **300–500 × g, 10 min, 4 °C** to pellet cells and debris.
-2. Carefully transfer clarified supernatant to new tubes.
-3. Optional: pass through a **0.22 µm filter** if you require additional debris removal.
-4. Aliquot into cryovials (e.g. 0.5–1.0 mL per vial).
-5. Snap-freeze on dry ice or in an isopropanol freezing container and transfer to **−80 °C**.
+:::callout-note
+Welsh & Seedhom use significantly larger production volumes (30–40 mL in a T-75), with a 1 h adsorption step followed by top-up to full volume. This gives more total PFU per run but a more dilute harvest. The Cologne volumes are lower and keep virion concentration in the harvest higher. For scale-up beyond T-175, topping up toward the Welsh & Seedhom volumes is reasonable to prevent nutrient limitation over 48 h.
+:::
 
 :::callout-tip
-Avoid repeated freeze–thaw cycles. Use multiple small aliquots and thaw each only once.
+**Alternative adsorption approach (some protocols):** Aspirate all medium, add inoculum in a minimal volume (3–5 mL for a T-75), incubate 1 h at 37°C rocking every 10–15 min, then top up to the full production volume. This maximises early virus-cell contact. The Cologne protocol avoids full aspiration — it removes only 5 mL and replaces with 5 mL containing virus, keeping cells submerged throughout.
+:::
+
+# Harvest
+
+All work in the biosafety cabinet. Keep tubes on ice throughout.
+
+1. Using a **10 mL stripette**, carefully remove all medium from the flask. Do **not** touch the cell layer.
+2. Transfer medium to a 15 or 50 mL conical tube.
+3. Centrifuge **5 min, 1500 rpm (~400 × g), 4°C** to pellet cells and debris.
+4. Carefully transfer the clarified supernatant to a new Falcon tube and place on ice inside the hood.
+
+:::callout-tip
+**Alternative clarification:** Some protocols use 300–500 × g for 10 min at 4°C, followed by optional filtration through a 0.22 µm membrane. This gives cleaner supernatant but is not necessary for standard production runs. Avoid filtration if titer is borderline, as some infectivity may be lost.
+:::
+
+:::callout-tip
+**Gently tapping the flask** before harvest to dislodge loosely adherent/infected cells into the supernatant is an option used in some protocols; the Cologne approach avoids this to minimise cell debris in the harvest.
+:::
+
+# Aliquoting and Freezing
+
+## Aliquot volumes
+
+Aliquot sizes are strain-specific, based on typical experimental dose requirements:
+
+| Strain     | Aliquot volume |
+|-----------|----------------|
+| WE        | 50 µL          |
+| Clone 13  | 200–300 µL     |
+| Armstrong | 200–500 µL     |
+| Docile    | 200–300 µL     |
+
+:::callout-tip
+For high-titer stocks or when effectors are not limiting (e.g. cell-line-based production), larger aliquots (0.5–1 mL) may be practical. Adjust to match expected experimental doses and number of uses per vial.
+:::
+
+## Freezing
+
+**Snap-freeze aliquots in a dry ice / isopropanol bath**, then transfer to -80°C for storage.
+
+**To prepare the bath:**
+
+1. Add dry ice to a suitable container (e.g. a small polystyrene box or ice bucket — do not use glass or material that will crack at -78°C).
+2. Crush or break the dry ice into smaller pieces to maximise surface contact.
+3. Pour isopropanol (or 100% ethanol) over the dry ice until it covers the pieces. The bath will initially "boil" vigorously as CO2 sublimates — this is normal. Wait until bubbling slows before use (~1–2 min). The bath reaches approximately **-78°C** with isopropanol or ethanol; substituting acetone gives ~-86°C.
+4. Submerge cryovials in the bath. Small aliquots (50–500 µL) will be solid within **~30–60 seconds**.
+5. Transfer frozen vials immediately to -80°C storage.
+
+:::callout-warning
+Use insulated gloves or forceps — the bath is -78°C. Work in a ventilated area or fume hood; isopropanol and ethanol vapour are flammable. Keep away from open flame.
+:::
+
+:::callout-tip
+**Direct -80°C (Cologne approach):** Placing aliquots directly into -80°C without a snap-freeze bath is simpler and used routinely in the Cologne protocol. Freezing rate at -80°C is slower (~-1°C to -5°C/min depending on vial placement and freezer load) but adequate for standard production runs where stocks contain 10% FBS as a cryoprotectant.
+:::
+
+:::callout-tip
+**Controlled-rate alternative (Mr. Frosty):** An isopropanol-based controlled-rate freezing container (e.g. Mr. Frosty) gives a defined -1°C/min rate — optimal for cells but unnecessarily slow for virus stocks and not recommended here.
+:::
+
+:::callout-warning
+Avoid repeated freeze–thaw cycles. Use multiple small aliquots and thaw each vial only once. Expect approximately 50% loss of infectivity per freeze–thaw even with FBS present.
 :::
 
 # Titration of Virus Stocks
@@ -192,78 +250,69 @@ Avoid repeated freeze–thaw cycles. Use multiple small aliquots and thaw each o
 - Record titers as PFU/mL (plaque assay) or FFU/mL (focus-forming assay).
 - Use the same assay type consistently across experiments.
 
-Separate Quarto protocols can be created for:
+Separate Quarto protocols exist for:
 
-- **LCMV plaque assay on Vero cells**.
+- **LCMV plaque assay on Vero cells** (`prot_mus_lcmv_focus_forming_assay.qmd` — adapt as needed).
 - **LCMV focus-forming assay (immunofocus) on MC57G or Vero cells**.
-
 
 # Storage of LCMV Stocks
 
-LCMV is a heat-labile enveloped virus and must be stored under conditions that preserve infectivity.
-
-- Store viral stocks at **−70 to −80 °C**.
-- Include a **protein stabilizer** (e.g., **10% FBS**) in the viral supernatant to improve freeze–thaw stability.
-- Expect approximately **50% loss of titer with each freeze–thaw cycle**, even when protein is present.
-- **Avoid repeated freeze–thawing** by preparing multiple small aliquots and using each vial only once.
-- Highly purified, protein-poor virus preparations are **extremely unstable** on freeze–thaw unless the viral protein concentration is high enough to stabilize the envelope.
-- When thawing an aliquot:
-  - Thaw **rapidly at 37 °C**.
-  - Immediately transfer the tube to **ice** and keep cold during all handling.
-
-These practices minimize infectivity loss and ensure consistent titers across experiments.
-
+- Store viral stocks at **-70 to -80°C**.
+- Include a **protein stabilizer** (e.g. 10% FBS in the viral supernatant) to improve freeze–thaw stability.
+- Highly purified, protein-poor preparations are extremely unstable on freeze–thaw.
+- When thawing: thaw **rapidly at 37°C**, then immediately transfer to **ice** for all downstream handling.
 
 # Troubleshooting
 
-| Problem                    | Possible cause                                 | Suggested solution                         |
-|---------------------------|-----------------------------------------------|--------------------------------------------|
-| Very low titer            | Cells too confluent or unhealthy; MOI too low | Infect at 50–75% confluency; MOI 0.05–0.1; check cell line mycoplasma status |
-| Massive cell detachment   | Infection too long or MOI too high            | Shorten incubation to 48 h; reduce MOI     |
-| Inconsistent titers       | Variable cell density or incubation time      | Standardize seeding density and harvest time |
-| Suspected contamination   | Poor aseptic technique                        | Review BSL-2 practices; discard contaminated stock and repeat |
+| Problem                    | Possible cause                                  | Suggested solution                                                         |
+|---------------------------|------------------------------------------------|----------------------------------------------------------------------------|
+| Very low titer            | Cells too confluent or unhealthy; MOI too low  | Confirm ~50% confluency at infection; try MOI 0.05–0.1; check mycoplasma  |
+| Massive cell detachment   | Infection too long or MOI too high             | Shorten to 48 h; reduce MOI                                               |
+| Inconsistent titers       | Variable cell density or incubation time       | Standardise seeding density (5 x 10^6 / T-75) and harvest time            |
+| Suspected contamination   | Poor aseptic technique                         | Review BSL-2 practices; discard contaminated stock and repeat              |
 
 # Strain-Specific Notes
 
 ## Armstrong
 
 - Classical acute strain.
-- Often propagated on BHK-21 cells at MOI 0.01–0.1 for 48 h.
-- Frequently used to generate high-titer stocks for i.p. or i.v. infections in the 2 × 10⁵–2 × 10⁶ PFU range.
+- Propagated on BHK-21 cells at MOI 0.01 for 48 h.
+- Frequently used to generate high-titer stocks for i.p. or i.v. infections in the 2 x 10^5–2 x 10^6 PFU range.
 
 ## Clone 13
 
 - Armstrong-derived chronic strain with enhanced visceral tropism.
-- Grows well on BHK-21 cells; titers similar to or slightly lower than Armstrong for the same MOI/time.
-- For chronic infection models, typical i.v. doses are 2 × 10⁶ to 2 × 10⁷ PFU, depending on experimental design.
+- Cologne MOI: **0.001** — lower than many published protocols (0.05–0.1) to reduce DI particle burden and improve stock quality.
+- For chronic infection models, typical i.v. doses are 2 x 10^6 to 2 x 10^7 PFU depending on experimental design.
 
 ## WE
 
-- WE strain is viscerotropic and often used as an acute systemic infection model.
-- Commonly propagated on **L929 cells**, though BHK-21 also supports growth.
+- Viscerotropic; commonly used as an acute systemic infection model.
+- Propagated on **L929 cells**, though BHK-21 also supports growth.
 - For hemorrhagic-like disease models, stock quality and titer consistency are critical.
 
 ## Docile
 
 - WE-derived persistent variant.
 - Grows on BHK-21 and L929 cells; replication in vitro may be slightly slower than WE in some systems.
-- Used for chronic infection models alternative to Clone 13.
+- Used for chronic infection models as an alternative to Clone 13.
 
-# Safety considerations
+# Safety Considerations
 
 - Confirm that all work with LCMV and infected animals/samples is covered by approved **biosafety and animal use protocols**.
-- Perform all live-virus manipulations (thawing virus stocks, infection steps, handling of unfixed plates) in a **certified Class II biosafety cabinet**.
-- Use **dedicated infectious incubators** and clearly label plates, flasks, and waste containers with the virus strain and date.
+- Perform all live-virus manipulations in a **certified Class II biosafety cabinet**.
+- Use **dedicated infectious incubators** and clearly label flasks and waste containers with strain and date.
 - Wear appropriate **PPE** at all times (lab coat/gown, gloves, eye/face protection as required).
-- Decontaminate all liquid waste (e.g. with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.
-- OPD and its solutions are handled as **chemical hazardous waste**; follow chemical safety rules in addition to biosafety rules.
+- Decontaminate all liquid waste (e.g. freshly prepared 10% bleach) before disposal. Solid waste must be autoclaved or inactivated per institutional guidelines.
 - Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.
 
 # Version History
 
-| Version | Date       | Description                                                  |
-|---------|------------|--------------------------------------------------------------|
-| v1.0    | 2025-12-01 | Initial unified LCMV (ARM, Cl13, WE, Docile) production SOP. |
+| Version | Date       | Description                                                                                         |
+|---------|------------|-----------------------------------------------------------------------------------------------------|
+| v1.0    | 2025-12-01 | Initial unified LCMV (ARM, Cl13, WE, Docile) production SOP.                                       |
+| v1.1    | 2026-03-28 | Cologne production protocol adopted as primary procedure. MOIs updated (Cl13 0.001, WE 0.01). Seeding density and harvest steps made explicit. Strain-specific aliquot volumes added. Original protocol details preserved as callout-tips. |
+| v1.2    | 2026-03-28 | Cell line section expanded: L929 medium corrected to DMEM + 5% FBS; BHK-21 and L929 descriptions added. Production volume table added per flask size (T-25 through T-175) with Cologne vs. Welsh & Seedhom comparison. Freezing section corrected: snap-freeze in dry ice/isopropanol bath now primary method with setup instructions; Mr. Frosty noted as alternative; direct -80°C (Cologne) retained as simplified option. |
 
 # Suggested Citations
 

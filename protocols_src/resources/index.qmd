@@ -44,9 +44,13 @@ Cossarizza *et al.* (2021), *European Journal of Immunology* — Third Edition
 
 # Misc
 
+## Mouse identification
+
+- [Mouse ear notch ID guide](mouse_ear_notch_id.html)
+
 ## Paper deconstruction
 
-- 🧬 [QED Bioscience](https://www.qedscience.com)
+- [QED Bioscience](https://www.qedscience.com)
 
 ---
 # Notes

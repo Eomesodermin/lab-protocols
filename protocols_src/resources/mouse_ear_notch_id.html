@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Ear Notch ID System</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --surface: #ffffff;
+      --border: #d8d5cc;
+      --text: #1a1814;
+      --muted: #6b6760;
+      --accent: #2d5a8e;
+      --accent-light: #e8f0f9;
+      --notch: #c0392b;
+      --notch-light: #fdecea;
+      --punch: #1a6b3c;
+      --punch-light: #e8f5ee;
+      --right-col: #2d5a8e;
+      --left-col: #7b3fa0;
+      --ear-fill: #f5ede3;
+      --ear-stroke: #8b6a4a;
+      --nose: #d4a5a5;
+      --face: #f0e4d4;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1.5rem 4rem;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.25rem;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    /* ── SVG diagram ── */
+    .diagram-card {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    svg.mouse-face {
+      width: 100%;
+      max-width: 560px;
+      height: auto;
+    }
+
+    /* ── Reference tables ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.82rem;
+    }
+
+    th {
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.5rem;
+      border-bottom: 2px solid var(--border);
+      color: var(--muted);
+    }
+
+    td {
+      padding: 0.35rem 0.5rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .badge-notch {
+      background: var(--notch-light);
+      color: var(--notch);
+    }
+
+    .badge-punch {
+      background: var(--punch-light);
+      color: var(--punch);
+    }
+
+    .right-val { color: var(--right-col); font-weight: 600; }
+    .left-val  { color: var(--left-col);  font-weight: 600; }
+
+    /* ── Example worked calculation ── */
+    .example-card { background: #1a1814; color: #f7f6f2; border-color: #1a1814; }
+    .example-card h2 { color: #888; }
+
+    .example-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .ex-block { }
+
+    .ex-block .label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 0.4rem;
+    }
+
+    .ex-block .big {
+      font-size: 2.2rem;
+      font-weight: 600;
+      font-family: 'IBM Plex Mono', monospace;
+      line-height: 1;
+    }
+
+    .ex-block .marks {
+      margin-top: 0.5rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.8rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .ex-block .marks span {
+      display: inline-block;
+      padding: 0.05rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      margin-right: 0.2rem;
+      font-weight: 600;
+    }
+
+    .tag-r { background: #1e3a5f; color: #7ab3e8; }
+    .tag-l { background: #3d1f5c; color: #c48fe8; }
+    .tag-plus { color: #888; }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #555;
+      padding-top: 0.5rem;
+    }
+
+    /* ── Quick lookup ── */
+    .lookup-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.3rem;
+    }
+
+    .lookup-cell {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.3rem 0.2rem;
+      text-align: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+    }
+
+    .lookup-cell .num {
+      font-weight: 600;
+      font-size: 0.85rem;
+      display: block;
+    }
+
+    .lookup-cell .combo {
+      color: var(--muted);
+      font-size: 0.65rem;
+      line-height: 1.3;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .example-grid { grid-template-columns: 1fr; }
+      .lookup-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    @media print {
+      body { background: white; padding: 1rem; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mouse Ear Notch ID System</h1>
+  <p>Abdullah Lab · IMMEI · University Hospital Bonn</p>
+</header>
+
+<!-- ── Diagram ── -->
+<div style="margin-bottom:1.5rem;">
+  <div class="card diagram-card">
+    <h2>Ear mark positions &amp; values</h2>
+
+    <svg class="mouse-face" viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" aria-label="Mouse face showing ear notch positions">
+      <!--
+        Layout:
+          Face:      cx=340, cy=230, rx=75, ry=90  → left edge x=265, right edge x=415
+          Right ear: cx=200, cy=195, rx=66, ry=78  → right edge x=266 meets face left edge
+          Left ear:  cx=480, cy=195, rx=66, ry=78  → left edge x=414 meets face right edge
+
+        Outer edge of RIGHT ear is the LEFT side (away from face):
+          Leftmost (middle): x=134, y=195
+          Top-outer: on ellipse at ~-135deg from right → approx x=153, y=140
+          Bot-outer: on ellipse at ~+135deg from right → approx x=153, y=250
+
+        Semicircle notches: a filled circle centred exactly on the ear rim,
+        clipped so only the half that bites INTO the ear is visible.
+        Achieved by drawing filled circle over the ear — background colour of
+        circle matches page bg (#f7f6f2) to "punch" through — but simpler:
+        draw a filled circle the ear bg colour with a stroke, centred on the rim point.
+        The outer half sticks out past the ear edge and looks like a notch bite.
+        Actually best approach: use clipPath on the ear ellipse, then draw
+        a circle centred on rim — only the inner half shows = semicircle notch.
+      -->
+
+      <defs>
+        <!-- Clip to right ear interior so notch circles only show inside ear -->
+        <clipPath id="rearClip">
+          <ellipse cx="200" cy="195" rx="66" ry="78"/>
+        </clipPath>
+        <!-- Clip to left ear interior -->
+        <clipPath id="learClip">
+          <ellipse cx="480" cy="195" rx="66" ry="78"/>
+        </clipPath>
+      </defs>
+
+      <!-- ═══ RIGHT EAR headers (above ear) ═══ -->
+      <text x="200" y="88" font-family="IBM Plex Mono,monospace" font-size="15" font-weight="700" fill="#2d5a8e" text-anchor="middle">RIGHT EAR</text>
+      <text x="200" y="105" font-family="IBM Plex Mono,monospace" font-size="12" fill="#6b6760" text-anchor="middle">ones (1–9)</text>
+
+      <!-- ═══ LEFT EAR headers (above ear) ═══ -->
+      <text x="480" y="88" font-family="IBM Plex Mono,monospace" font-size="15" font-weight="700" fill="#7b3fa0" text-anchor="middle">LEFT EAR</text>
+      <text x="480" y="105" font-family="IBM Plex Mono,monospace" font-size="12" fill="#6b6760" text-anchor="middle">tens (10–90)</text>
+
+      <!-- ═══ RIGHT EAR body ═══ -->
+      <ellipse cx="200" cy="195" rx="66" ry="78" fill="#f5ede3" stroke="#8b6a4a" stroke-width="2.5"/>
+
+      <!--
+        Right ear outer rim points (left/outer side of ellipse):
+          Middle (leftmost):   x=134, y=195
+          Top outer (~-135°):  parametric: x=200+66*cos(135°)=200-46.7=153, y=195+78*sin(-135°)=195-55.2=140  → (153, 140)
+          Bot outer (~+135°):  x=153, y=250
+
+        Semicircle notch = circle of r=12 centred ON the rim, clipped to ear interior.
+        The circle centre sits exactly on the ellipse edge.
+        With clip, only the inner hemisphere is visible → clean semicircle bite.
+      -->
+
+      <!-- TOP notch (value 1) — outer rim upper-left of right ear, centre at (153,140) -->
+      <circle cx="153" cy="140" r="13" fill="#c0392b" clip-path="url(#rearClip)"/>
+      <!-- MIDDLE notch (value 2) — leftmost point of right ear, centre at (134,195) -->
+      <circle cx="134" cy="195" r="13" fill="#c0392b" clip-path="url(#rearClip)"/>
+      <!-- BOTTOM notch (value 4) — outer rim lower-left of right ear, centre at (153,250) -->
+      <circle cx="153" cy="250" r="13" fill="#c0392b" clip-path="url(#rearClip)"/>
+      <!-- CENTRE punch (value 8) -->
+      <circle cx="200" cy="195" r="14" fill="#1a6b3c" opacity="0.20"/>
+      <circle cx="200" cy="195" r="14" fill="none" stroke="#1a6b3c" stroke-width="2.5" stroke-dasharray="5,3"/>
+
+      <!-- RIGHT EAR labels (to the left, lines from notch centres outward) -->
+      <!-- value 1 — from (153,140) leftward -->
+      <line x1="140" y1="140" x2="76" y2="130" stroke="#c0392b" stroke-width="1" opacity="0.5"/>
+      <text x="72" y="134" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#c0392b" text-anchor="end">1</text>
+      <!-- value 2 — from (134,195) leftward -->
+      <line x1="134" y1="195" x2="72" y2="195" stroke="#c0392b" stroke-width="1" opacity="0.5"/>
+      <text x="68" y="200" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#c0392b" text-anchor="end">2</text>
+      <!-- value 4 — from (153,250) leftward -->
+      <line x1="140" y1="250" x2="76" y2="260" stroke="#c0392b" stroke-width="1" opacity="0.5"/>
+      <text x="72" y="264" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#c0392b" text-anchor="end">4</text>
+      <!-- value 8 — from centre, line down-left -->
+      <line x1="190" y1="205" x2="90" y2="320" stroke="#1a6b3c" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+      <text x="86" y="324" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#1a6b3c" text-anchor="end">8</text>
+
+      <!-- ═══ LEFT EAR body ═══ -->
+      <ellipse cx="480" cy="195" rx="66" ry="78" fill="#f5ede3" stroke="#8b6a4a" stroke-width="2.5"/>
+
+      <!--
+        Left ear outer rim points (right/outer side):
+          Middle (rightmost):  x=546, y=195
+          Top outer (~-45°):   x=480+66*cos(45°)=480+46.7=527, y=195+78*sin(-45°)=195-55.2=140  → (527, 140)
+          Bot outer (~+45°):   x=527, y=250
+      -->
+
+      <!-- TOP notch (value 10) — outer rim upper-right of left ear, centre at (527,140) -->
+      <circle cx="527" cy="140" r="13" fill="#7b3fa0" clip-path="url(#learClip)"/>
+      <!-- MIDDLE notch (value 20) — rightmost point of left ear, centre at (546,195) -->
+      <circle cx="546" cy="195" r="13" fill="#7b3fa0" clip-path="url(#learClip)"/>
+      <!-- BOTTOM notch (value 40) — outer rim lower-right of left ear, centre at (527,250) -->
+      <circle cx="527" cy="250" r="13" fill="#7b3fa0" clip-path="url(#learClip)"/>
+      <!-- CENTRE punch (value 80) -->
+      <circle cx="480" cy="195" r="14" fill="#1a6b3c" opacity="0.20"/>
+      <circle cx="480" cy="195" r="14" fill="none" stroke="#1a6b3c" stroke-width="2.5" stroke-dasharray="5,3"/>
+
+      <!-- LEFT EAR labels (to the right) -->
+      <!-- value 10 -->
+      <line x1="540" y1="140" x2="604" y2="130" stroke="#7b3fa0" stroke-width="1" opacity="0.5"/>
+      <text x="608" y="134" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#7b3fa0">10</text>
+      <!-- value 20 -->
+      <line x1="546" y1="195" x2="608" y2="195" stroke="#7b3fa0" stroke-width="1" opacity="0.5"/>
+      <text x="612" y="200" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#7b3fa0">20</text>
+      <!-- value 40 -->
+      <line x1="540" y1="250" x2="604" y2="260" stroke="#7b3fa0" stroke-width="1" opacity="0.5"/>
+      <text x="608" y="264" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#7b3fa0">40</text>
+      <!-- value 80 -->
+      <line x1="490" y1="205" x2="590" y2="320" stroke="#1a6b3c" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+      <text x="594" y="324" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#1a6b3c">80</text>
+
+      <!-- ═══ FACE (drawn last to cover ear join) ═══ -->
+      <ellipse cx="340" cy="230" rx="75" ry="90" fill="#f0e4d4" stroke="#8b6a4a" stroke-width="2.5"/>
+      <!-- snout -->
+      <ellipse cx="340" cy="288" rx="32" ry="24" fill="#e8d5c0" stroke="#8b6a4a" stroke-width="1.8"/>
+      <!-- nose -->
+      <ellipse cx="340" cy="280" rx="10" ry="7" fill="#d4a5a5" stroke="#b07878" stroke-width="1.2"/>
+      <!-- eyes -->
+      <circle cx="314" cy="232" r="8" fill="#1a1814"/>
+      <circle cx="366" cy="232" r="8" fill="#1a1814"/>
+      <circle cx="316" cy="230" r="2.5" fill="white"/>
+      <circle cx="368" cy="230" r="2.5" fill="white"/>
+      <!-- whiskers right -->
+      <line x1="372" y1="282" x2="416" y2="275" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="372" y1="288" x2="420" y2="288" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="372" y1="294" x2="416" y2="301" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <!-- whiskers left -->
+      <line x1="308" y1="282" x2="264" y2="275" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="308" y1="288" x2="260" y2="288" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="308" y1="294" x2="264" y2="301" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ── Example ID 37 ── -->
+<div style="margin-bottom:1.5rem;">
+  <div class="card diagram-card">
+    <h2>Example — ID 37 (right ear: 1+2+4=7 · left ear: 10+20=30)</h2>
+
+    <svg class="mouse-face" viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" aria-label="Example mouse ID 37">
+
+      <defs>
+        <clipPath id="rearClip2">
+          <ellipse cx="200" cy="195" rx="66" ry="78"/>
+        </clipPath>
+        <clipPath id="learClip2">
+          <ellipse cx="480" cy="195" rx="66" ry="78"/>
+        </clipPath>
+      </defs>
+
+      <!-- RIGHT EAR headers -->
+      <text x="200" y="88" font-family="IBM Plex Mono,monospace" font-size="15" font-weight="700" fill="#2d5a8e" text-anchor="middle">RIGHT EAR</text>
+      <text x="200" y="105" font-family="IBM Plex Mono,monospace" font-size="12" fill="#6b6760" text-anchor="middle">ones (1–9)</text>
+
+      <!-- LEFT EAR headers -->
+      <text x="480" y="88" font-family="IBM Plex Mono,monospace" font-size="15" font-weight="700" fill="#7b3fa0" text-anchor="middle">LEFT EAR</text>
+      <text x="480" y="105" font-family="IBM Plex Mono,monospace" font-size="12" fill="#6b6760" text-anchor="middle">tens (10–90)</text>
+
+      <!-- RIGHT EAR body -->
+      <ellipse cx="200" cy="195" rx="66" ry="78" fill="#f5ede3" stroke="#8b6a4a" stroke-width="2.5"/>
+      <!-- top notch (1) — active -->
+      <circle cx="153" cy="140" r="13" fill="#c0392b" clip-path="url(#rearClip2)"/>
+      <!-- mid notch (2) — active -->
+      <circle cx="134" cy="195" r="13" fill="#c0392b" clip-path="url(#rearClip2)"/>
+      <!-- bot notch (4) — active -->
+      <circle cx="153" cy="250" r="13" fill="#c0392b" clip-path="url(#rearClip2)"/>
+      <!-- centre punch (8) — NOT present for ID 37, omitted -->
+
+      <!-- RIGHT EAR labels -->
+      <line x1="140" y1="140" x2="76" y2="130" stroke="#c0392b" stroke-width="1" opacity="0.5"/>
+      <text x="72" y="134" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#c0392b" text-anchor="end">1</text>
+      <line x1="134" y1="195" x2="72" y2="195" stroke="#c0392b" stroke-width="1" opacity="0.5"/>
+      <text x="68" y="200" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#c0392b" text-anchor="end">2</text>
+      <line x1="140" y1="250" x2="76" y2="260" stroke="#c0392b" stroke-width="1" opacity="0.5"/>
+      <text x="72" y="264" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#c0392b" text-anchor="end">4</text>
+
+      <!-- LEFT EAR body -->
+      <ellipse cx="480" cy="195" rx="66" ry="78" fill="#f5ede3" stroke="#8b6a4a" stroke-width="2.5"/>
+      <!-- top notch (10) — active -->
+      <circle cx="527" cy="140" r="13" fill="#7b3fa0" clip-path="url(#learClip2)"/>
+      <!-- mid notch (20) — active -->
+      <circle cx="546" cy="195" r="13" fill="#7b3fa0" clip-path="url(#learClip2)"/>
+      <!-- bot notch (40) — NOT present for ID 37, omitted -->
+      <!-- centre punch (80) — NOT present for ID 37, omitted -->
+
+      <!-- LEFT EAR labels -->
+      <line x1="540" y1="140" x2="604" y2="130" stroke="#7b3fa0" stroke-width="1" opacity="0.5"/>
+      <text x="608" y="134" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#7b3fa0">10</text>
+      <line x1="546" y1="195" x2="608" y2="195" stroke="#7b3fa0" stroke-width="1" opacity="0.5"/>
+      <text x="612" y="200" font-family="IBM Plex Mono,monospace" font-size="16" font-weight="700" fill="#7b3fa0">20</text>
+
+      <!-- FACE -->
+      <ellipse cx="340" cy="230" rx="75" ry="90" fill="#f0e4d4" stroke="#8b6a4a" stroke-width="2.5"/>
+      <ellipse cx="340" cy="288" rx="32" ry="24" fill="#e8d5c0" stroke="#8b6a4a" stroke-width="1.8"/>
+      <ellipse cx="340" cy="280" rx="10" ry="7" fill="#d4a5a5" stroke="#b07878" stroke-width="1.2"/>
+      <circle cx="314" cy="232" r="8" fill="#1a1814"/>
+      <circle cx="366" cy="232" r="8" fill="#1a1814"/>
+      <circle cx="316" cy="230" r="2.5" fill="white"/>
+      <circle cx="368" cy="230" r="2.5" fill="white"/>
+      <line x1="372" y1="282" x2="416" y2="275" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="372" y1="288" x2="420" y2="288" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="372" y1="294" x2="416" y2="301" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="308" y1="282" x2="264" y2="275" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="308" y1="288" x2="260" y2="288" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+      <line x1="308" y1="294" x2="264" y2="301" stroke="#8b6a4a" stroke-width="1.2" opacity="0.55"/>
+    </svg>
+  </div>
+</div>
+
+<footer>
+  <span>Abdullah Lab · IMMEI · University Hospital Bonn</span>
+  <span>mouse_ear_notch_id.html</span>
+</footer>
+
+</body>
+</html>

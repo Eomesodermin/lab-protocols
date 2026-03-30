@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - protocols_src/templates/*
+    - protocols_src/resources/*.html
   render:
     - "*.qmd"
     - "**/*.qmd"

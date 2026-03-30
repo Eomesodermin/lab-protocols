@@ -2131,7 +2131,7 @@
     "href": "protocols_src/resources/index.html#paper-deconstruction",
     "title": "Resources",
     "section": "Paper deconstruction",
-    "text": "Paper deconstruction\n\n🧬 QED Bioscience",
+    "text": "Paper deconstruction\n\nQED Bioscience",
     "crumbs": [
       "Resources"
     ]
@@ -3590,5 +3590,15 @@
     "title": "xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts",
     "section": "Replication",
     "text": "Replication\n\nMinimum duplicate wells per condition (one row = one condition in duplicate)\nMinimum 3 independent experiments using different mouse donors\nAlways include target-alone controls for both infected and uninfected conditions on every plate"
+  },
+  {
+    "objectID": "protocols_src/resources/index.html#mouse-identification",
+    "href": "protocols_src/resources/index.html#mouse-identification",
+    "title": "Resources",
+    "section": "Mouse identification",
+    "text": "Mouse identification\n\nMouse ear notch ID guide",
+    "crumbs": [
+      "Resources"
+    ]
   }
 ]

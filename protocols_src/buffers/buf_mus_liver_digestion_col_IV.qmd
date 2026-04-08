@@ -1,7 +1,7 @@
 ---
 title: "Mouse Liver Digestion Buffer with Collagenase IV"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-MUS-LIV-DIG-COL-IV-001"
+protocol_id: "BUF-LIV-DIG-COL-IV"
 version: "v1.0"
 date: "2025-11-21"
 description: "Preparation of collagenase IV and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue."
@@ -14,6 +14,35 @@ description: "Preparation of collagenase IV and DNase I digestion buffer for enz
 # Purpose
 
 This buffer is used for enzymatic digestion of mouse liver tissue to generate viable single-cell suspensions. It contains Collagenase IV and DNase I at working concentrations suitable for dissociating liver parenchyma while preserving lymphocyte viability.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
+---
 
 # Working buffer composition
 

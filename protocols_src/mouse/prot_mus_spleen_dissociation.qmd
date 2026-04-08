@@ -1,7 +1,7 @@
 ---
 title: "Mouse Spleen Dissociation to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-SPL-DIS-001"
+protocol_id: "MUS-SPL-DIS"
 version: "v1.1"
 date: "2025-11-26"
 description: "Preparation of mouse spleen single-cell suspensions for flow cytometry, sorting, and downstream immunological assays."
@@ -101,8 +101,29 @@ Keep cells **on ice** until use.
 
 # Buffers used
 
-- **FACS Buffer** – `BUF-FACS-v1.0`  
-- **RBC Lysis Buffer (HybriMax)** – `BUF-RBC-HYB-v1.0`  
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 {{< pagebreak >}}
 

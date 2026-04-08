@@ -1,7 +1,7 @@
 ---
 title: "NK-92 Cell Line Culture Protocol"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "HUM-NK92-CULTURE-001"
+protocol_id: "HUM-NK92-CULTURE"
 version: "v1.0"
 date: "2025-11-21"
 description: "Culture and maintenance of the human NK-92 cell line, including thawing, IL-2–supplemented culture, routine passaging, and cryopreservation."
@@ -168,8 +168,29 @@ Fresh IL-2 medium is essential after any decline in viability; NK-92 responds ra
 
 # Buffers used
 
-- **BUF-GEN-FREEZE-MIX-001** – 2× freezing medium (for final 10% DMSO)  
-- PBS (laboratory standard)
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

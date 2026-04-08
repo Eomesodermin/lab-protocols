@@ -1,7 +1,7 @@
 ---
 title: "CellTrace Violet (CTV) Staining of Lymphocytes"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "GEN-CTV-STAIN-001"
+protocol_id: "GEN-CTV-STAIN"
 version: "v1.0"
 date: "2025-11-21"
 description: "Staining of lymphocytes (e.g. PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry."
@@ -142,8 +142,29 @@ Do not stain cells in R10 or other serum-containing media. Proteins in the mediu
 
 # Buffers used
 
-- **BUF-GEN-R10-MED-001** – Complete RPMI 1640 medium with 10 % FCS, Pen/Strep (R10).  
-- **PBS, 1× (no FCS)** – Protein-free staining buffer (no dedicated buffer ID if defined as standard lab PBS).
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

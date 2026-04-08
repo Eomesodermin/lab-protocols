@@ -1,7 +1,7 @@
 ---
 title: "37% Percoll Solution"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-PERC-37-001"
+protocol_id: "BUF-PERC-37"
 version: "v1.2"
 date: "2025-12-29"
 description: "37% Percoll density solution for enrichment of leukocytes from digested liver tissue."
@@ -30,9 +30,28 @@ Once Percoll stock has been adjusted to isotonic conditions, **all subsequent wo
 
 # Linked protocols
 
-This buffer is used in:
+```{r}
+#| echo: false
+#| message: false
 
-- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 ---
 

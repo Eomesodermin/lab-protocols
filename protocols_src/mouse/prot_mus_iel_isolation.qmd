@@ -1,21 +1,27 @@
 ---
 title: "Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-IEL-ISO-001"
-version: "v1.1"
-date: "2026-03-20"
+protocol_id: "MUS-IEL-ISO"
+version: "v1.2"
+date: "2026-04-08"
 description: "Isolation of intraepithelial lymphocytes (IELs) from the mouse small intestine for flow cytometry and immunophenotyping, using DTT/EDTA epithelial stripping, mechanical agitation, and Percoll density centrifugation."
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
-**Author:** Dillon Corvino  
+**Author:** Dillon Corvino   
 
 # Purpose
 
 This protocol describes the isolation of **intraepithelial lymphocytes (IELs)** from the mouse small intestine for downstream flow cytometry. IELs reside within the intestinal epithelial layer, intercalated between epithelial cells, and are physically distinct from lamina propria lymphocytes (LPLs).
 
 The protocol uses DTT/EDTA-based epithelial stripping combined with mechanical agitation to release the epithelial fraction, followed by Percoll density centrifugation to enrich lymphocytes. An optional ACK RBC lysis step is included.
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
 
 # Background: gut anatomy, immune compartments, and isolation logic
 
@@ -188,22 +194,18 @@ This protocol uses the **whole small intestine** as the default. If segment-spec
 
 {{< pagebreak >}}
 
-\tableofcontents
-
-{{< pagebreak >}}
-
 # Buffers
 
 Prepare all buffers fresh on the day of use. See Buffers section for compositions.
 
-| Buffer | Use |
-|---|---|
-| 3% Medium | Initial wash of intestine after opening |
-| Strip Medium (DTT/EDTA in 3% Medium) | Epithelial stripping at 37 °C |
-| Shake Medium (EDTA in RPMI) | Mechanical agitation washes post-stripping |
-| 35% Percoll | Lymphocyte enrichment by density centrifugation |
-| PBS | General washes |
-| ACK lysis buffer | RBC removal (optional) |
+| Buffer | Use | Volume per mouse |
+|---|---|---|
+| 3% Medium | Initial wash of intestine after opening; base for Strip Medium | 50 mL |
+| Strip Medium (DTT/EDTA in 3% Medium) | Epithelial stripping at 37 °C | 20 mL |
+| Shake Medium (EDTA in RPMI) | Mechanical agitation washes post-stripping | 25 mL |
+| 35% Percoll | Lymphocyte enrichment by density centrifugation | 10 mL |
+| PBS | General washes | as needed |
+| ACK lysis buffer | RBC removal (optional) | 7 mL |
 
 # Procedure
 
@@ -271,10 +273,10 @@ The collection beaker now contains the pooled stripping and shake fractions. The
 ## STEP 5 – Transfer and centrifugation
 
 1. Transfer the total cell suspension from the collection beaker into a **50 mL Falcon tube**.
-2. Centrifuge at **[placeholder: ~400 g], 4 °C, 10 minutes**.
+2. Centrifuge at **400 g, 4 °C, 10 minutes**.
 
 ::: callout-note
-The colleague protocol reports 1600 rpm for this step. Standard published IEL protocols use 400 × g for this wash spin. Confirm with your local centrifuge rotor to determine the exact g value corresponding to your instrument settings.
+The colleague protocol reports 550 g for this step. Standard published IEL protocols use 400 × g for this wash spin. Confirm with your local centrifuge rotor to determine the exact rpm corresponding to your instrument settings.
 :::
 
 3. Discard the supernatant.
@@ -299,7 +301,7 @@ Do not use high brake — abrupt deceleration disrupts the interface and reduces
    - **Lymphocytes pellet** at the bottom.
    - Epithelial cells, debris, and dead cells remain in the supernatant.
 4. Carefully aspirate and discard the supernatant in one smooth motion.
-5. Wash the pellet: resuspend in **PBS**, centrifuge at **[placeholder: ~400 g], 4 °C, 10 minutes**. Discard supernatant.
+5. Wash the pellet: resuspend in **PBS**, centrifuge at **400 g, 4 °C, 10 minutes**. Discard supernatant.
 
 ## STEP 7 – ACK RBC lysis (optional)
 
@@ -309,9 +311,9 @@ RBC contamination in IEL preparations is generally low because the intestinal ep
 
 1. Resuspend the cell pellet in **7 mL ACK lysis buffer**.
 2. Incubate for approximately **10 minutes at room temperature**.
-3. Pass the suspension through a **40 µm cell strainer** into a fresh 50 mL tube.
+3. Pass the suspension through a **70 µm cell strainer** into a fresh 50 mL tube.
 4. Top up to **30 mL with PBS**.
-5. Centrifuge at **[placeholder: ~400 g], 4 °C, 10 minutes**.
+5. Centrifuge at **400 g, 4 °C, 10 minutes**.
 6. Discard the supernatant.
 
 ## STEP 8 – Final resuspension and staining
@@ -323,7 +325,7 @@ RBC contamination in IEL preparations is generally low because the intestinal ep
 5. After staining, resuspend in **200 µL PBS** for acquisition.
 
 ::: callout-tip
-Expected yield from one small intestine: approximately **3–6 × 10⁶ total IEL** from an 8–12-week-old naïve C57BL/6 mouse after Percoll enrichment (literature estimate; actual yield depends on mouse age, strain, and protocol execution). Contaminating epithelial cells can be excluded in flow cytometry using **EpCAM (CD326)** in the dump channel.
+Expected yield from one small intestine: approximately **3–6 × 10^6 total IEL** from an 8–12-week-old naïve C57BL/6 mouse after Percoll enrichment (literature estimate; actual yield depends on mouse age, strain, and protocol execution). Contaminating epithelial cells can be excluded in flow cytometry using **EpCAM (CD326)** in the dump channel.
 :::
 
 {{< pagebreak >}}
@@ -334,25 +336,33 @@ All buffers are prepared fresh on the day of use unless otherwise stated.
 
 ## 3% Medium
 
-Base wash and collection medium.
+Base wash and collection medium. Also used as the base for Strip Medium.
 
-| Component | Final concentration / amount |
-|---|---|
-| RPMI 1640 | Base |
-| FCS | 3% (v/v) |
-| HEPES | 2% (v/v) from 1 M stock |
-| Penicillin/Streptomycin | 1% (v/v) from 100× stock |
-| L-glutamine | 1% (v/v) from 200 mM stock |
+Prepare **50 mL per mouse** (20 mL for intestinal washes in STEP 2 + 20 mL as base for Strip Medium + ~10 mL wiggle room).
+
+| Component | Final concentration | Volume for 50 mL |
+|---|---|---|
+| RPMI 1640 | Base | 46.0 mL |
+| FCS | 3% (v/v) | 1.5 mL |
+| HEPES (1 M stock) | 2% (v/v) | 1.0 mL |
+| Penicillin/Streptomycin (100× stock) | 1% (v/v) | 0.5 mL |
+| L-glutamine (200 mM stock) | 1% (v/v) | 0.5 mL |
 
 ## Strip Medium
 
 Used for the DTT/EDTA epithelial stripping step. Prepare fresh and pre-warm to 37 °C before use.
 
-| Component | Final concentration |
-|---|---|
-| 3% Medium (see above) | Base |
-| DTT (dithiothreitol) | 1 mM |
-| EDTA | 5 mM |
+Prepare **20 mL per mouse**. Made from 3% Medium with DTT and EDTA added fresh.
+
+DTT stock: 14.5 mg/mL. MW of DTT = 154.25 g/mol → 14.5 mg/mL = 94 mM stock. For 1 mM final in 20 mL: add **213 µL** DTT stock.
+
+EDTA stock: 500 mM. For 5 mM final in 20 mL: add **200 µL** EDTA stock.
+
+| Component | Final concentration | Volume for 20 mL |
+|---|---|---|
+| 3% Medium | Base | 19.6 mL |
+| DTT (14.5 mg/mL stock, ~94 mM) | 1 mM | 213 µL |
+| EDTA (500 mM stock) | 5 mM | 200 µL |
 
 ::: callout-warning
 Prepare Strip Medium fresh and pre-warm to 37 °C immediately before use. DTT is unstable in solution and loses activity over time. Do not store.
@@ -362,13 +372,17 @@ Prepare Strip Medium fresh and pre-warm to 37 °C immediately before use. DTT is
 
 Used for the mechanical agitation wash steps post-stripping.
 
-| Component | Final concentration |
-|---|---|
-| RPMI 1640 | Base |
-| L-glutamine | 1% (v/v) from 200 mM stock |
-| Penicillin/Streptomycin | 1% (v/v) from 100× stock |
-| HEPES | 2% (v/v) from 1 M stock |
-| EDTA | 2 mM |
+Prepare **25 mL per mouse** (2 × 10 mL for shake rounds + ~5 mL wiggle room).
+
+EDTA stock: 500 mM. For 2 mM final in 25 mL: add **100 µL** EDTA stock.
+
+| Component | Final concentration | Volume for 25 mL |
+|---|---|---|
+| RPMI 1640 | Base | 23.6 mL |
+| L-glutamine (200 mM stock) | 1% (v/v) | 250 µL |
+| Penicillin/Streptomycin (100× stock) | 1% (v/v) | 250 µL |
+| HEPES (1 M stock) | 2% (v/v) | 500 µL |
+| EDTA (500 mM stock) | 2 mM | 100 µL |
 
 ## 35% Percoll working solution
 
@@ -463,6 +477,32 @@ The Percoll concentration used for IEL enrichment varies across published protoc
 | pIELs (CD4+CD8αα+) | Ileum | Driven by microbial signals; highest in distal SI |
 | Total IEL yield | Whole small intestine | Standard for most panels; maximises cell numbers |
 
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
 {{< pagebreak >}}
 
 # Safety (brief)
@@ -478,3 +518,4 @@ The Percoll concentration used for IEL enrichment varies across published protoc
 |---|---|---|---|
 | v1.0 | 2026-03-19 | Dillon Corvino | Initial IEL isolation protocol for small intestine; adapted from collaborator protocol with literature integration |
 | v1.1 | 2026-03-20 | Dillon Corvino | Added comprehensive gut anatomy and immune compartment reference section |
+| v1.2 | 2026-04-08 | Dillon Corvino | Moved TOC to after Purpose; resolved g-force placeholders (400 g); updated Step 5 note to 550 g; replaced 40 µm with 70 µm strainer; added per-mouse buffer volumes with stock calculations for DTT and EDTA |

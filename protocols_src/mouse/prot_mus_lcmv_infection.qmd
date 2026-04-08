@@ -1,7 +1,7 @@
 ---
 title: "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-INF-LCMV-001"
+protocol_id: "MUS-INF-LCMV"
 version: "v1.0"
 date: "2026-01-09"
 description: "Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes."
@@ -117,6 +117,32 @@ Other strains (Docile, Armstrong) are included for reference and comparative stu
 - For studies requiring **broad or late NLC sampling**, LCMV-WE is preferred.
 - For studies focused on **early inflammatory or antigen-rich environments**, Clone 13 is appropriate but requires tight temporal control.
 - Direct comparisons between WE and Clone 13 must account for **non-overlapping NLC kinetics**.
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety (brief)
 

@@ -1,7 +1,7 @@
 ---
 title: "Mouse Tumour Digestion to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-TMR-DIG-001"
+protocol_id: "MUS-TMR-DIG"
 version: "v1.0"
 date: "2025-11-20"
 description: "Enzymatic and mechanical dissociation of mouse solid tumours to obtain viable single-cell suspensions for flow cytometry, sorting, and single-cell transcriptomic applications."
@@ -109,10 +109,29 @@ Proceed to:
 
 # Buffers used
 
-- **Tumour Digestion Buffer** – `BUF-TMR-DIG-v1.0`  
-  - Typically Collagenase IV or Collagenase D + DNase I in DMEM or RPMI.
-- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
-- **RBC Lysis Buffer** – `BUF-RBC-HYB-v1.0`  
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 {{< pagebreak >}}
 

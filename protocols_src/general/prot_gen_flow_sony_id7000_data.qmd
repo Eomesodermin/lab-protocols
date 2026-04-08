@@ -1,7 +1,7 @@
 ---
 title: "Sony ID7000 Data Handling and Storage"
 subtitle: "Export, data management, and retention policy"
-protocol_id: "GEN-FLOW-SONY-ID7000-DATA-001"
+protocol_id: "GEN-FLOW-SONY-ID7000-DATA"
 version: "v1.0"
 date: "2025-11-21"
 description: "Standard operating procedure for exporting, organizing, transferring, and deleting data generated on the Sony Spectral Cell Analyzer ID7000 systems, including FCS files, experiment files, and reference controls."
@@ -180,6 +180,32 @@ To minimize time at the instrument PCs:
 ## Best practice
 Transfer data to BTC as soon as possible after export and verify file integrity before deleting local copies.
 :::
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

@@ -1,7 +1,7 @@
 ---
 title: "<PROTOCOL TITLE HERE>"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "<PROT-XXX-XXX-vX.X>"
+protocol_id: "<SCOPE-ORGAN-DESCRIPTOR>"
 version: "vX.X"
 description: "<One-sentence description of protocol purpose>"
 format:
@@ -84,16 +84,35 @@ The procedure is divided into major steps (STEP 1, STEP 2, etc.). Add or remove 
 
 {{< pagebreak >}}
 
-# Buffers used (defined in separate buffer protocols)
+# Buffers used
 
-This protocol uses the following buffers.  
-Insert only the IDs and short names; do **not** define the buffer compositions here.
+```{r}
+#| echo: false
+#| message: false
 
-- **<Buffer Name 1>** – `<BUF-XXX-XXX-vX.X>`
-- **<Buffer Name 2>** – `<BUF-XXX-XXX-vX.X>`
-- **<Buffer Name 3>** – `<BUF-XXX-XXX-vX.X>`
+library(tidyverse)
 
-Each buffer must have its own dedicated buffer file in `protocols_src/buffers/`.
+# This protocol's ID (from YAML)
+this_protocol <- rmarkdown::metadata$protocol_id
+
+# Read registries (paths relative to protocols_src/)
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+# Filter to this protocol's buffers
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 {{< pagebreak >}}
 

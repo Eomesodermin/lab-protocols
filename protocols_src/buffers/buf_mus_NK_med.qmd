@@ -1,7 +1,7 @@
 ---
 title: "NK Cell Culture Medium (cRPMI for Murine NK Cells)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-MUS-NK-MED-001"
+protocol_id: "BUF-NK-MED"
 version: "v1.0"
 date: "2025-11-21"
 description: "Complete NK culture medium (cRPMI) for murine NK cells, including RPMI 1640 supplemented with FCS, antibiotics, HEPES, sodium pyruvate, NEAA, and β-mercaptoethanol. IL-15 is added fresh at the time of culture and is not included in the stored base medium."
@@ -14,6 +14,35 @@ description: "Complete NK culture medium (cRPMI) for murine NK cells, including 
 # Purpose
 
 This medium is used for in vitro culture and proliferation assays of murine NK cells. It is based on complete RPMI 1640 supplemented with nutrients essential for lymphocyte viability and proliferation. **IL-15 is added fresh immediately before plating cells** and is not included in the stock medium.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
+---
 
 # Working buffer composition
 

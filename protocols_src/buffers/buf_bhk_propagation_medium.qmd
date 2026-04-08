@@ -1,7 +1,7 @@
 ---
 title: "BHK Cell and Virus Propagation Medium"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-BHK-PROP-001"
+protocol_id: "BUF-BHK-PROP"
 version: "v1.0"
 date: "2025-12-01"
 description: "This medium is used for propagation of BHK-21 cells and for LCMV production workflows."
@@ -14,6 +14,35 @@ description: "This medium is used for propagation of BHK-21 cells and for LCMV p
 # Purpose
 
 This medium is used for propagation of BHK-21 cells and for LCMV production workflows.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
+---
 
 # Components (Final Volume: 500 mL)
 

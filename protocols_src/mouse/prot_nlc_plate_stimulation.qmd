@@ -1,7 +1,7 @@
 ---
 title: "Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "PROT-NLC-STIM-001"
+protocol_id: "NLC-PLATE-STIM"
 version: "v1.0"
 description: "Simple 96-well plate-bound stimulation of sorted NLCs for 3 days followed by IL-2-driven expansion."
 format:
@@ -82,6 +82,32 @@ To stimulate sorted NLCs in 96-well plates using plate-bound anti-CD3e and/or an
 
 - Coated plates can be prepared the day before and kept at **4 °C overnight** until use.
 - Prepare antibody working solutions fresh where possible.
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety
 

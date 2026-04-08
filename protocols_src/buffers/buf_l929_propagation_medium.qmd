@@ -1,0 +1,80 @@
+---
+title: "L929 Cell Propagation Medium"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-L929-PROP"
+version: "v1.0"
+date: "2026-03-31"
+description: "This medium is used for routine propagation of L929 cells for LCMV production workflows."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+
+# Purpose
+
+This medium is used for routine propagation of L929 fibroblasts. L929 cells are used as an alternative host cell line for LCMV propagation, particularly for certain strains such as Traub.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
+---
+
+# Components (Final volume: 500 mL)
+
+| Component                                      | Amount    | Final concentration |
+|------------------------------------------------|-----------|---------------------|
+| DMEM (high glucose, with L-glutamine)          | 475 mL    | Base medium         |
+| Heat-inactivated FCS/FBS                       | 25 mL     | 5% (v/v)            |
+
+# Preparation
+
+1. In a sterile biosafety cabinet, add ~450 mL of DMEM to a sterile 500 mL bottle.
+2. Add 25 mL heat-inactivated FCS/FBS.
+3. Top up with DMEM to a final volume of **500 mL**.
+4. Mix gently by inversion.
+5. Label with:
+   - "L929 propagation medium (DMEM + 5% FCS)"
+   - Date of preparation
+   - Initials
+6. Store at **4°C** for up to **4 weeks**.
+
+# Use
+
+- Warm medium to **37°C** before use with cells.
+- Discard medium if there is any sign of contamination (turbidity, threads, pH shift) or if it is past the defined expiry (4 weeks from preparation).
+
+# Notes
+
+- L929 cells are mouse fibroblasts commonly used for LCMV propagation.
+- The lower FCS concentration (5%) compared to other cell lines is standard for L929 maintenance.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                |
+|---------|------------|----------------|----------------------------------------|
+| v1.0    | 2026-03-31 | Dillon Corvino | Initial Quarto buffer document.        |

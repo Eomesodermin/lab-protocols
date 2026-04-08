@@ -42,13 +42,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-167a4993dfeda6e8ce52aaf90a3aabf8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4f4534ac06ff60a70a0629475afe65ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -130,12 +130,48 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Protocol Library</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/mouse/index.html"> 
+<span class="menu-text">Mouse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/buffers/index.html"> 
+<span class="menu-text">Buffers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/general/index.html"> 
+<span class="menu-text">General</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -144,26 +180,13 @@ window.Quarto = {
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols_src/mouse/index.html">Mouse</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../../">Protocol Library</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -326,9 +349,9 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -404,9 +427,9 @@ Version
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1774935017242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="898" data-listing-title-sort="Mouse Blood Processing to Single-Cell Suspension">
+<tr data-index="0" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1764149077690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="851" data-listing-title-sort="Mouse Blood Processing to Single-Cell Suspension">
 <td>
-<span class="listing-protocol_id">MUS-BLD-PRC</span>
+<span class="listing-protocol_id">MUS-BLD-PRC-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_blood_processing.html" class="title listing-title">Mouse Blood Processing to Single-Cell Suspension</a>
@@ -420,9 +443,9 @@ Version
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1774935017515" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1122" data-listing-title-sort="Mouse Bone Marrow Isolation to Single-Cell Suspension">
+<tr data-index="1" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1764149076025" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077" data-listing-title-sort="Mouse Bone Marrow Isolation to Single-Cell Suspension">
 <td>
-<span class="listing-protocol_id">MUS-BM-ISO</span>
+<span class="listing-protocol_id">MUS-BM-ISO-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_bone_marrow_isolation.html" class="title listing-title">Mouse Bone Marrow Isolation to Single-Cell Suspension</a>
@@ -436,25 +459,25 @@ Version
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1775599200000" data-listing-file-modified-sort="1775655934744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-word-count-sort="4191" data-listing-title-sort="Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation">
+<tr data-index="2" data-listing-date-sort="1773961200000" data-listing-file-modified-sort="1773997587528" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3885" data-listing-title-sort="Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation">
 <td>
-<span class="listing-protocol_id">MUS-IEL-ISO</span>
+<span class="listing-protocol_id">MUS-IEL-ISO-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_iel_isolation.html" class="title listing-title">Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation</a>
 </td>
 <td>
-<span class="listing-version">v1.2</span>
+<span class="listing-version">v1.1</span>
 </td>
 <td>
-<span class="listing-date">Apr 8, 2026</span>
+<span class="listing-date">Mar 20, 2026</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1774935133479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="926" data-listing-title-sort="LCMV Infection Models (WE, Clone 13, Docile, Armstrong)">
+<tr data-index="3" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767947514726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="863" data-listing-title-sort="LCMV Infection Models (WE, Clone 13, Docile, Armstrong)">
 <td>
-<span class="listing-protocol_id">MUS-INF-LCMV</span>
+<span class="listing-protocol_id">MUS-INF-LCMV-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_lcmv_infection.html" class="title listing-title">LCMV Infection Models (WE, Clone 13, Docile, Armstrong)</a>
@@ -468,9 +491,9 @@ Version
 
 </tr>
 
-<tr data-index="4" data-listing-date-sort="1764630000000" data-listing-file-modified-sort="1774935099421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3495" data-listing-title-sort="LCMV Focus-Forming Assay (Immunofocus)">
+<tr data-index="4" data-listing-date-sort="1764630000000" data-listing-file-modified-sort="1773056429325" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3432" data-listing-title-sort="LCMV Focus-Forming Assay (Immunofocus)">
 <td>
-<span class="listing-protocol_id">MUS-LCMV-FFA</span>
+<span class="listing-protocol_id">MUS-LCMV-FFA-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_lcmv_focus_forming_assay.html" class="title listing-title">LCMV Focus-Forming Assay (Immunofocus)</a>
@@ -484,9 +507,9 @@ Version
 
 </tr>
 
-<tr data-index="5" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1774935099168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1507" data-listing-title-sort="LCMV Plaque Assay on Vero Cells">
+<tr data-index="5" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764667036660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1444" data-listing-title-sort="LCMV Plaque Assay on Vero Cells">
 <td>
-<span class="listing-protocol_id">MUS-LCMV-PLA</span>
+<span class="listing-protocol_id">MUS-LCMV-PLA-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_lcmv_plaque_assay_vero.html" class="title listing-title">LCMV Plaque Assay on Vero Cells</a>
@@ -500,13 +523,9 @@ Version
 
 </tr>
 
-<<<<<<< Updated upstream
-<tr data-index="6" data-listing-date-sort="1774652400000" data-listing-file-modified-sort="1774702580040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3372" data-listing-title-sort="LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)">
-=======
-<tr data-index="6" data-listing-date-sort="1774652400000" data-listing-file-modified-sort="1774935099741" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3435" data-listing-title-sort="LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)">
->>>>>>> Stashed changes
+<tr data-index="6" data-listing-date-sort="1774652400000" data-listing-file-modified-sort="1774880963757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3372" data-listing-title-sort="LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)">
 <td>
-<span class="listing-protocol_id">MUS-LCMV-PROD</span>
+<span class="listing-protocol_id">MUS-LCMV-PROD-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_lcmv_multi_strain_production.html" class="title listing-title">LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)</a>
@@ -520,9 +539,9 @@ Version
 
 </tr>
 
-<tr data-index="7" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1774935134027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1864" data-listing-title-sort="LCMV Viral Load Quantification by GP-Based SYBR Green qPCR">
+<tr data-index="7" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1768156355973" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1801" data-listing-title-sort="LCMV Viral Load Quantification by GP-Based SYBR Green qPCR">
 <td>
-<span class="listing-protocol_id">MUS-LCMV-QPCR</span>
+<span class="listing-protocol_id">MUS-LCMV-QPCR-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_lcmv_gp_qpcr_viral_load.html" class="title listing-title">LCMV Viral Load Quantification by GP-Based SYBR Green qPCR</a>
@@ -536,9 +555,9 @@ Version
 
 </tr>
 
-<tr data-index="8" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1774935017013" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2736" data-listing-title-sort="Mouse Liver Digestion to Single-Cell Suspension">
+<tr data-index="8" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1773327042622" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2673" data-listing-title-sort="Mouse Liver Digestion to Single-Cell Suspension">
 <td>
-<span class="listing-protocol_id">MUS-LIV-DIG</span>
+<span class="listing-protocol_id">MUS-LIV-DIG-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_liver_digestion.html" class="title listing-title">Mouse Liver Digestion to Single-Cell Suspension</a>
@@ -552,9 +571,9 @@ Version
 
 </tr>
 
-<tr data-index="9" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1774935041431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="882" data-listing-title-sort="Mouse Lung Digestion to Single-Cell Suspension">
+<tr data-index="9" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1764147951077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="854" data-listing-title-sort="Mouse Lung Digestion to Single-Cell Suspension">
 <td>
-<span class="listing-protocol_id">MUS-LNG-DIG</span>
+<span class="listing-protocol_id">MUS-LNG-DIG-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_lung_digestion.html" class="title listing-title">Mouse Lung Digestion to Single-Cell Suspension</a>
@@ -568,9 +587,9 @@ Version
 
 </tr>
 
-<tr data-index="10" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1774935133730" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="910" data-listing-title-sort="NLC Adoptive Transfer (Liver-derived NK-like Cells)">
+<tr data-index="10" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767953017071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="847" data-listing-title-sort="NLC Adoptive Transfer (Liver-derived NK-like Cells)">
 <td>
-<span class="listing-protocol_id">MUS-NLC-ACT</span>
+<span class="listing-protocol_id">MUS-NLC-ACT-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_NLC_ACT.html" class="title listing-title">NLC Adoptive Transfer (Liver-derived NK-like Cells)</a>
@@ -584,9 +603,9 @@ Version
 
 </tr>
 
-<tr data-index="11" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1774935133303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="964" data-listing-title-sort="P14 Adoptive Transfer (GP33-specific CD8 T cells)">
+<tr data-index="11" data-listing-date-sort="1767913200000" data-listing-file-modified-sort="1767949520944" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="901" data-listing-title-sort="P14 Adoptive Transfer (GP33-specific CD8 T cells)">
 <td>
-<span class="listing-protocol_id">MUS-P14-ACT</span>
+<span class="listing-protocol_id">MUS-P14-ACT-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_P14_transfer.html" class="title listing-title">P14 Adoptive Transfer (GP33-specific CD8 T cells)</a>
@@ -600,9 +619,9 @@ Version
 
 </tr>
 
-<tr data-index="12" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1774935155652" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="494" data-listing-title-sort="Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)">
+<tr data-index="12" data-listing-date-sort="1764543600000" data-listing-file-modified-sort="1764598401557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="435" data-listing-title-sort="Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)">
 <td>
-<span class="listing-protocol_id">MUS-PTPRC-GENO</span>
+<span class="listing-protocol_id">MUS-PTPRC-GENO-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.html" class="title listing-title">Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)</a>
@@ -616,9 +635,9 @@ Version
 
 </tr>
 
-<tr data-index="13" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1774935016857" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="814" data-listing-title-sort="Mouse Spleen Dissociation to Single-Cell Suspension">
+<tr data-index="13" data-listing-date-sort="1764111600000" data-listing-file-modified-sort="1766998310440" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="767" data-listing-title-sort="Mouse Spleen Dissociation to Single-Cell Suspension">
 <td>
-<span class="listing-protocol_id">MUS-SPL-DIS</span>
+<span class="listing-protocol_id">MUS-SPL-DIS-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_spleen_dissociation.html" class="title listing-title">Mouse Spleen Dissociation to Single-Cell Suspension</a>
@@ -632,9 +651,9 @@ Version
 
 </tr>
 
-<tr data-index="14" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1774935065784" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4713" data-listing-title-sort="In vitro NK Cell Proliferation Assay Using CellTrace Dyes">
+<tr data-index="14" data-listing-date-sort="1763679600000" data-listing-file-modified-sort="1763766892252" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4717" data-listing-title-sort="In vitro NK Cell Proliferation Assay Using CellTrace Dyes">
 <td>
-<span class="listing-protocol_id">MUS-SPL-NK-PROLIF</span>
+<span class="listing-protocol_id">MUS-SPL-NK-PROLIF-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.html" class="title listing-title">In vitro NK Cell Proliferation Assay Using CellTrace Dyes</a>
@@ -648,9 +667,9 @@ Version
 
 </tr>
 
-<tr data-index="15" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1774935041600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="930" data-listing-title-sort="Mouse Tumour Digestion to Single-Cell Suspension">
+<tr data-index="15" data-listing-date-sort="1763593200000" data-listing-file-modified-sort="1763766878209" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="904" data-listing-title-sort="Mouse Tumour Digestion to Single-Cell Suspension">
 <td>
-<span class="listing-protocol_id">MUS-TMR-DIG</span>
+<span class="listing-protocol_id">MUS-TMR-DIG-001</span>
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_mus_tumour_digestion.html" class="title listing-title">Mouse Tumour Digestion to Single-Cell Suspension</a>
@@ -664,9 +683,8 @@ Version
 
 </tr>
 
-<tr data-index="16" data-listing-date-sort="1774479600000" data-listing-file-modified-sort="1774935110901" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3641" data-listing-title-sort="xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts">
+<tr data-index="16" data-listing-file-modified-sort="1772455124721" data-listing-reading-time-sort="2" data-listing-word-count-sort="387" data-listing-title-sort="Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)">
 <td>
-<<<<<<< Updated upstream
 <span class="listing-protocol_id">PROT-NLC-STIM-001</span>
 </td>
 <td>
@@ -681,12 +699,9 @@ Version
 
 </tr>
 
-<tr data-index="17" data-listing-date-sort="1774479600000" data-listing-file-modified-sort="1774598958139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3578" data-listing-title-sort="xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts">
+<tr data-index="17" data-listing-date-sort="1774479600000" data-listing-file-modified-sort="1774880963757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3578" data-listing-title-sort="xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts">
 <td>
 <span class="listing-protocol_id">PROT-XCELL-LCMV-001</span>
-=======
-<span class="listing-protocol_id">MUS-XCELL-LCMV</span>
->>>>>>> Stashed changes
 </td>
 <td>
 <a href="../../protocols_src/mouse/prot_xcelligence_lcmv_cytotoxicity.html" class="title listing-title">xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts</a>
@@ -696,22 +711,6 @@ Version
 </td>
 <td>
 <span class="listing-date">Mar 26, 2026</span>
-</td>
-
-</tr>
-
-<tr data-index="17" data-listing-file-modified-sort="1774935111144" data-listing-reading-time-sort="3" data-listing-word-count-sort="450" data-listing-title-sort="Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)">
-<td>
-<span class="listing-protocol_id">NLC-PLATE-STIM</span>
-</td>
-<td>
-<a href="../../protocols_src/mouse/prot_nlc_plate_stimulation.pdf" class="title listing-title">Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)</a>
-</td>
-<td>
-<span class="listing-version">v1.0</span>
-</td>
-<td>
-<span class="listing-date">&nbsp;</span>
 </td>
 
 </tr>

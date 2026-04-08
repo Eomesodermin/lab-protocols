@@ -1,7 +1,7 @@
 ---
 title: "P14 Adoptive Transfer (GP33-specific CD8 T cells)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-P14-ACT-001"
+protocol_id: "MUS-P14-ACT"
 version: "v1.0"
 date: "2026-01-09"
 description: "Adoptive transfer of congenically marked naive P14 CD8 T cells for tracking antigen-specific responses in LCMV infection models. Focus on transfer dose, timing, injection preparation, and core readouts."
@@ -113,6 +113,32 @@ Choose dose based on whether you want a **near-physiologic precursor frequency**
 - Effector function: peptide restimulation + ICS (IFNg, TNFa, IL-2) as per lab practice
 - Differentiation states relevant to model (e.g., progenitor-like vs terminal exhaustion markers in chronic settings)
 - Viral load readouts (if required; use lab-standard assay)
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety (brief)
 

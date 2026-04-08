@@ -1,7 +1,7 @@
 ---
 title: "In vitro NK Cell Proliferation Assay Using CellTrace Dyes"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-SPL-NK-PROLIF-001"
+protocol_id: "MUS-SPL-NK-PROLIF"
 version: "v1.0"
 date: "2025-11-21"
 description: "In vitro proliferation assay for murine NK cells using CellTrace dyes, starting from splenic NK cells isolated by magnetic enrichment and/or sorting, and cultured in NK medium containing IL-15."
@@ -277,9 +277,29 @@ The original SOP notes that Day 0 populations and single-stain controls can be f
 
 # Buffers used
 
-- **BUF-GEN-FACS-BUF-001** – FACS buffer (PBS + 2 % FCS + 2 mM EDTA).  
-- **BUF-MUS-NK-MED-001** – NK culture medium (RPMI 1640 + 10 % FCS + Pen/Strep + NaPy + HEPES + NEAA + β-mercaptoethanol; IL-15 added fresh to 100 IU/mL at the time of culture).  
-- **PBS, 1×** – Standard phosphate-buffered saline (no dedicated buffer file if already defined in the system).
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

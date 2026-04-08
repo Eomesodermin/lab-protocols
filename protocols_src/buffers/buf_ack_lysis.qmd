@@ -1,7 +1,7 @@
 ---
 title: "ACK Red Blood Cell Lysis Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-ACK-LYSIS-001"
+protocol_id: "BUF-ACK-LYSIS"
 version: "v1.1"
 date: "2026-01-09"
 description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions."
@@ -14,6 +14,35 @@ description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for se
 # Purpose
 
 ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g. liver digests, spleen, PBMC preparations). Under brief incubation, the buffer efficiently removes red blood cells while preserving leukocyte viability and integrity.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
+---
 
 # Working buffer composition
 

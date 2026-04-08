@@ -1,7 +1,7 @@
 ---
 title: "LCMV Focus-Forming Assay (Immunofocus)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-LCMV-FFA-001"
+protocol_id: "MUS-LCMV-FFA"
 version: "v1.1"
 date: "2025-12-02"
 description: "Quantification of infectious titer (FFU/mL) of LCMV using antibody-based detection of infected foci on Vero cells with semi-solid overlay"
@@ -379,6 +379,32 @@ Once fixation is complete and the plates have been washed, subsequent steps (per
 | Foci merging into large patches        | Incubation too long; inoculum too concentrated          | Shorten incubation; use higher (more dilute) dilutions                |
 | Uneven staining or edge effects        | Incomplete coverage during antibody or OPD steps         | Ensure sufficient volume and gentle rocking; avoid plate drying       |
 | Bubbles or holes in overlay            | Viscous overlay handled with narrow tips                 | Use cut tips or serological pipettes; avoid vigorous pipetting        |
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety considerations
 

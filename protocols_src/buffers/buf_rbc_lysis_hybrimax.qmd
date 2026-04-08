@@ -1,7 +1,7 @@
 ---
 title: "RBC Lysis Buffer (Hybrimax / Commercial)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-RBC-HYB-v1.0"
+protocol_id: "BUF-RBC-HYB"
 version: "v1.0"
 date: "2025-11-20"
 description: "Red blood cell lysis buffer based on commercial HybriMax or equivalent RBC lysis reagent."
@@ -20,10 +20,28 @@ This buffer is used to lyse red blood cells in single-cell suspensions derived f
 
 # Linked protocols
 
-This buffer is used in:
+```{r}
+#| echo: false
+#| message: false
 
-- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)  
-- Additional protocols where RBC lysis is required.
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Composition
 

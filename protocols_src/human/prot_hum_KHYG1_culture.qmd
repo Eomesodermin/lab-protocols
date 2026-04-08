@@ -1,7 +1,7 @@
 ---
 title: "KHYG-1 Cell Line Culture Protocol"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "HUM-KHYG1-CULTURE-001"
+protocol_id: "HUM-KHYG1-CULTURE"
 version: "v1.0"
 date: "2025-11-21"
 description: "Culture and maintenance of the human KHYG-1 NK-like cell line, including thawing, routine passaging, IL-2 supplementation, and cryopreservation."
@@ -178,9 +178,29 @@ Avoid extended handling of cells at room temperature in freezing medium; DMSO is
 
 # Buffers used
 
-- **BUF-GEN-R10-MED-001** – R10 complete medium (RPMI + 10% FCS + 1% Pen/Strep).  
-- **BUF-GEN-FREEZE-MIX-001** – 2× freezing medium (optional, when preparing final 10% DMSO freezing medium).  
-- PBS (standard laboratory PBS).
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

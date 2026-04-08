@@ -689,8 +689,10 @@ Buffers            : buf_{descriptor}.qmd
 Blocks             : block_{descriptor}.qmd
 ```
 
-Protocol IDs follow: `{SCOPE}-{ORGAN/SYSTEM}-{DESCRIPTOR}-{NNN}`
-Buffer IDs follow: `BUF-{DESCRIPTOR}-{NNN}`
+Protocol IDs follow: `{SCOPE}-{ORGAN/SYSTEM}-{DESCRIPTOR}`
+Buffer IDs follow: `BUF-{DESCRIPTOR}`
+
+Version tracking is handled by the `version:` field in YAML — IDs are stable identifiers that do not change across versions.
 
 ---
 

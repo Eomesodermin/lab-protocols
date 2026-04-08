@@ -1,7 +1,7 @@
 ---
 title: "Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-PTPRC-GENO-001"
+protocol_id: "MUS-PTPRC-GENO"
 version: "v1.0"
 date: "2025-12-01"
 description: "Validated allele-specific endpoint PCR using long-tailed primers."
@@ -122,10 +122,36 @@ Include known:
 - Ptprc^a/b  
 - NTC  
 
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
 # Troubleshooting
 
-- Weak bands → increase template or cycles.  
-- Allele dropout → check 56°C annealing temperature.  
+- Weak bands → increase template or cycles.
+- Allele dropout → check 56°C annealing temperature.
 - Non-specific bands → small increase in annealing temperature.
 
 # Version History

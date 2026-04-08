@@ -11,10 +11,22 @@ project:
 
 website:
   title: "Protocol Library"
+  bread-crumbs: true
+
+  navbar:
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Mouse"
+        href: protocols_src/mouse/index.qmd
+      - text: "Buffers"
+        href: protocols_src/buffers/index.qmd
+      - text: "General"
+        href: protocols_src/general/index.qmd
 
   sidebar:
-    style: "docked"
-    search: true
+    style: "floating"
     contents:
       - href: index.qmd
         text: "Overview"
@@ -90,8 +102,11 @@ website:
 format:
   html:
     theme: flatly
+    css: styles.css
     math: mathjax
     toc: true
+    back-to-top: true
+    format-links: [pdf]
     number-sections: false
     geometry: "margin=2cm"
     fontsize: 11pt

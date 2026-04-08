@@ -1,7 +1,7 @@
 ---
 title: "Mouse Bone Marrow Isolation to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-BM-ISO-001"
+protocol_id: "MUS-BM-ISO"
 version: "v1.1"
 date: "2025-11-26"
 description: "Isolation of mouse bone marrow cells from long bones for flow cytometry, sorting, and downstream immunological assays."
@@ -116,8 +116,29 @@ Proceed to:
 
 # Buffers used
 
-- **FACS Buffer** – `BUF-FACS-v1.0`  
-- **RBC Lysis Buffer (HybriMax or equivalent)** – `BUF-RBC-HYB-v1.0`  
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 {{< pagebreak >}}
 

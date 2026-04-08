@@ -1,7 +1,7 @@
 ---
 title: "FACS Buffer and MACS Buffer"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-FACS-MACS-v1.1"
+protocol_id: "BUF-FACS-MACS"
 version: "v1.1"
 date: "2025-12-29"
 description: "Buffers for washing, staining, and handling cells for flow cytometry (FACS) and magnetic separation (MACS)."
@@ -22,10 +22,28 @@ These buffers are used for washing, resuspending, and handling cells during **fl
 
 # Linked protocols
 
-These buffers are used in:
+```{r}
+#| echo: false
+#| message: false
 
-- **Mouse Liver Dissociation to Single-Cell Suspension** – `LIV-001` (v1.0)  
-- Additional staining, sorting, and enrichment protocols as required.
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 ---
 

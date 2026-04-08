@@ -1,7 +1,7 @@
 ---
 title: "xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "PROT-XCELL-LCMV-001"
+protocol_id: "MUS-XCELL-LCMV"
 version: "v1.4"
 date: "2026-03-26"
 description: "Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure effector cell killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Covers fibroblast culture, in vitro LCMV infection, E-plate setup, and real-time cytotoxicity measurement."
@@ -396,7 +396,33 @@ H |       |       |       H  |       |       |       H  |       |       |
 # Protocols used
 
 - Effector isolation protocol (NLC or CD8+ T cell, as applicable) — refer to lab SOP
-- LCMV-WE stock production — `MUS-LCMV-PROD-001`
+- LCMV-WE stock production — `MUS-LCMV-PROD`
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Version history
 

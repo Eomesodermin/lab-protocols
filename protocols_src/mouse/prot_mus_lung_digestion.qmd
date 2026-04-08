@@ -1,7 +1,7 @@
 ---
 title: "Mouse Lung Digestion to Single-Cell Suspension"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-LNG-DIG-001"
+protocol_id: "MUS-LNG-DIG"
 version: "v1.0"
 date: "2025-11-20"
 description: "Enzymatic digestion of mouse lung to generate viable single-cell suspensions for flow cytometry, sorting, and single-cell omics workflows."
@@ -103,10 +103,29 @@ If the lung was perfused effectively, this step may not be needed.
 
 # Buffers used
 
-- **Lung Digestion Buffer** – `BUF-LNG-DIG-v1.0`  
-  - Typically DMEM (or RPMI) + Collagenase D or Collagenase IV + DNase I.
-- **FACS/MACS Buffer** – `BUF-FACS-v1.0`  
-- **RBC Lysis Buffer** – `BUF-RBC-HYB-v1.0`
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 {{< pagebreak >}}
 

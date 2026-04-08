@@ -1,7 +1,7 @@
 ---
 title: "LCMV Viral Load Quantification by GP-Based SYBR Green qPCR"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-LCMV-QPCR-001"
+protocol_id: "MUS-LCMV-QPCR"
 version: "v1.0"
 date: "2025-12-01"
 description: "qPCR viral titre"
@@ -222,6 +222,32 @@ Check:
 -   Work in a laminar flow hood where possible; use UV decontamination between runs.
 -   Handle plasmid standards last and avoid placing them adjacent to unknown samples on the plate.
 -   For very high viral loads, a 1:200 dilution of cDNA may be required to bring Ct values into the dynamic range of the standard curve.
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety considerations
 

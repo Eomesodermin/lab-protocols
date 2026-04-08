@@ -1,7 +1,7 @@
 ---
 title: "LCMV Plaque Assay on Vero Cells"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-LCMV-PLA-001"
+protocol_id: "MUS-LCMV-PLA"
 version: "v1.0"
 date: "2025-12-01"
 description: "Quantification of infectious titer (PFU/mL)"
@@ -193,6 +193,32 @@ PFU/mL is calculated as:
 | High background staining       | Incomplete washing after staining             | Increase number and volume of wash steps           |
 
 
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
 # Safety considerations
 
 - Confirm that all work with LCMV and infected animals/samples is covered by approved **biosafety and animal use protocols**.
@@ -202,7 +228,6 @@ PFU/mL is calculated as:
 - Decontaminate all liquid waste (e.g. with freshly prepared bleach) before disposal. Solid waste (tips, plates, tubes) must be autoclaved or otherwise inactivated according to institutional guidelines.
 - OPD and its solutions are handled as **chemical hazardous waste**; follow chemical safety rules in addition to biosafety rules.
 - Pregnant or immunocompromised personnel should not work with LCMV unless explicitly allowed under institutional policy with additional safeguards.
-
 
 # Version History
 

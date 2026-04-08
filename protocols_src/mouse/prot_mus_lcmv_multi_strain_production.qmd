@@ -1,7 +1,7 @@
 ---
 title: "LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-LCMV-PROD-001"
+protocol_id: "MUS-LCMV-PROD"
 version: "v1.2"
 date: "2026-03-28"
 description: "Propagation on fibroblast cell lines and harvest of high-titer stocks."
@@ -296,6 +296,32 @@ Separate Quarto protocols exist for:
 - WE-derived persistent variant.
 - Grows on BHK-21 and L929 cells; replication in vitro may be slightly slower than WE in some systems.
 - Used for chronic infection models as an alternative to Clone 13.
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety Considerations
 

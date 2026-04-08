@@ -1,7 +1,7 @@
 ---
 title: "BUFFER TITLE HERE"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "BUF-XXX-XXX-vX.X"
+protocol_id: "BUF-DESCRIPTOR"
 version: "vX.X"
 description: "Short one-sentence purpose"
 format:
@@ -26,9 +26,32 @@ format:
 
 # Linked protocols
 
-This buffer is used in:
+```{r}
+#| echo: false
+#| message: false
 
-- <List relevant protocol IDs, e.g. `LIV-001`, `SPN-001`, etc.>
+library(tidyverse)
+
+# This buffer's ID (from YAML)
+this_buffer <- rmarkdown::metadata$protocol_id
+
+# Read registries (paths relative to protocols_src/)
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+# Filter to protocols that use this buffer
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Composition
 

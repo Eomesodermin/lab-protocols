@@ -1,7 +1,7 @@
 ---
 title: "NLC Adoptive Transfer (Liver-derived NK-like Cells)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "MUS-NLC-ACT-001"
+protocol_id: "MUS-NLC-ACT"
 version: "v1.0"
 date: "2026-01-09"
 description: "Adoptive transfer of liver-derived NLCs for downstream phenotyping and functional studies, including planning calculations for donor requirements and standard timelines for LCMV- and BDL+LCMV-based experiments."
@@ -134,6 +134,32 @@ Design:
 - Recipient immune context (key lymphoid/myeloid compartments as relevant to model)
 - Functional assays as needed (e.g., ex vivo stimulation / cytokines, cytotoxicity surrogates)
 - Infection-context readouts (use lab-standard viral load or surrogate readouts where applicable)
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Safety (brief)
 

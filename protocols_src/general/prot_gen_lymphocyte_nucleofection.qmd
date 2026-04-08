@@ -1,7 +1,7 @@
 ---
 title: "4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
-protocol_id: "GEN-LYMPH-NUC-001"
+protocol_id: "GEN-LYMPH-NUC"
 version: "v1.0"
 date: "2025-11-21"
 description: "Unified 4D-Nucleofector protocol for CRISPR–Cas9 RNP delivery into primary mouse T cells, primary mouse NK cells, human CD8 T cells, and NK-92 cells using cell-type–specific buffer and pulse codes."
@@ -274,16 +274,29 @@ Choice of timepoint should balance maximal editing efficiency with sufficient re
 
 # Buffers used
 
-- **Nucleofection buffers (Lonza kits):**
-  - P3 Primary Cell kit – solution + supplement  
-  - P4 Primary Cell kit – solution + supplement  
-  - SE Cell Line kit – solution + supplement  
+```{r}
+#| echo: false
+#| message: false
 
-- **Culture media and specialised buffers:**  
-  - T-cell medium (e.g. RPMI + 10% FCS + Pen/Strep + supplements)  
-  - NK medium (e.g. BUF-MUS-NK-MED-001)  
-  - NK-92 medium (cell-line–specific formulation)  
-  - DPBS/PBS, 1× (for washes)
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

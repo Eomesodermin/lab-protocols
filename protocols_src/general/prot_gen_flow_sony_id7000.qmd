@@ -1,7 +1,7 @@
 ---
 title: "Sony Spectral Cell Analyzer ID7000"
 subtitle: "Sample acquisition, spectral unmixing, and shutdown"
-protocol_id: "GEN-FLOW-SONY-ID7000-001"
+protocol_id: "GEN-FLOW-SONY-ID7000"
 version: "v1.0"
 date: "2025-11-21"
 description: "Standard operating procedure for startup, daily QC, experiment setup, single-stain acquisition and spectral unmixing, sample acquisition, data export, and cleaning/shutdown of the Sony Spectral Cell Analyzer ID7000 at the Flow Cytometry Core Facility (FCCF), University Hospital Bonn."
@@ -337,6 +337,32 @@ After the software closes, a red “Error” light on the ID7000 is normal and i
 5. Remove samples, return tube rack to FCCF fridge.
 6. After shutdown completes and cytometer switches off automatically, close the software.
 7. Ensure waste is empty and sheath is full for next user.
+
+# Buffers used
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_protocol <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
+
+used <- deps |>
+  filter(protocol_id == this_protocol) |>
+  left_join(buffers, by = "buffer_id")
+
+if (nrow(used) == 0) {
+  cat("None\n")
+} else {
+  used |>
+    mutate(line = glue::glue("- **{buffer_name}** - `{buffer_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
 
 # Troubleshooting
 

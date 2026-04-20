@@ -2,14 +2,15 @@
 title: "xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-XCELL-LCMV"
-version: "v1.4"
-date: "2026-03-26"
+version: "v1.6"
+date: "2026-04-15"
 description: "Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure effector cell killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Covers fibroblast culture, in vitro LCMV infection, E-plate setup, and real-time cytotoxicity measurement."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}  
-**Version:** {{< meta version >}}  
-**Author:** Dillon Corvino  
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** 2026-04-15
 
 # Purpose
 
@@ -23,7 +24,7 @@ Example effectors: NLCs or CD8+ T cells sorted from LCMV-WE infected C57BL/6J mi
 
 -   **xCELLigence E-Plates are required** — standard tissue culture plates cannot substitute.
 -   **Fibroblasts must be seeded, allowed to adhere, then infected** when at ~50% confluence. After 48 hours of infection, they are harvested, counted, and re-plated into E-Plates.
--   **MEFs are cultured in DMEM + 10% FBS + 1% P/S** (see STEP 1). Do not use RPMI for MEFs.
+-   **MEFs are routinely cultured in DMEM + 10% FBS + 1% P/S**, but for this assay they are adapted to T cell medium (RPMI + 10% FCS + 1% P/S + 2 mM L-glutamine + 1% NEAAs + 50 uM beta-mercaptoethanol) to match the effector cell environment — see STEP 1 for details.
 -   **Target cell density in E-Plates is critical** — aim for 60–80% confluence at the time of effector addition, not at seeding.
 -   **Temperature stability is critical** — pre-warm all media to 37°C before addition to E-Plates.
 -   **Minimize plate handling** once the assay begins to avoid impedance artifacts.
@@ -52,17 +53,25 @@ Example effectors: NLCs or CD8+ T cells sorted from LCMV-WE infected C57BL/6J mi
 
 - C57BL/6J embryonic fibroblasts (primary or immortalized MEFs)
 
-**MEF complete medium (standard culture):**
+**MEF standard culture medium (not used in this assay):**
 
 - DMEM high glucose
 - 10% FBS
 - 1% Penicillin/Streptomycin
-- Optional: 1% L-glutamine or GlutaMAX, 1% NEAA (recommended for primary MEFs)
+
+**MEF killing assay medium (used in this protocol):**
+
+- RPMI 1640
+- 10% FCS
+- 1% Penicillin/Streptomycin
+- 2 mM L-glutamine (from 200 mM stock, 1:100)
+- 1% Non-essential amino acids (NEAAs)
+- 50 uM beta-mercaptoethanol (from 50 mM stock, 1:1000)
 
 **Virus infection:**
 
 - LCMV-WE stock (titered, stored at -80°C)
-- Low-serum adsorption medium: DMEM + 2% FCS (for virus adsorption step)
+- Low-serum adsorption medium: RPMI + 2% FCS (for virus adsorption step)
 - Sterile PBS (endotoxin-free)
 
 **Passaging:**
@@ -104,21 +113,42 @@ Example effectors: NLCs or CD8+ T cells sorted from LCMV-WE infected C57BL/6J mi
 
 ### Background: MEF culture conditions
 
-MEFs are adherent fibroblasts and are maintained in **DMEM + 10% FBS + 1% P/S** at 37°C, 5% CO2. Primary MEFs should not be passaged beyond P4-5, as proliferative capacity decreases. Cells are subcultured at **70-85% confluence** — do not allow full confluence before passaging, as contact inhibition impairs subsequent growth.
+MEFs are adherent fibroblasts typically maintained in **DMEM + 10% FBS + 1% P/S** at 37°C, 5% CO2. However, for use in this cytotoxicity assay, MEFs are adapted to T cell medium (**RPMI + 10% FCS + 1% P/S + 2 mM L-glutamine + 1% NEAAs + 50 uM beta-mercaptoethanol + 50 uM beta-mercaptoethanol**) to match the effector cell environment. Adaptation is done by switching culture medium to T cell medium at least one passage (ideally two) before the experiment. All culture and assay steps in this protocol use T cell medium unless otherwise stated. Primary MEFs should not be passaged beyond P4-5, as proliferative capacity decreases. Cells are subcultured at **70-85% confluence** — do not allow full confluence before passaging, as contact inhibition impairs subsequent growth.
 
-### Passaging / seeding procedure
+### MEF seeding density reference
+
+- **Seeding density for culture/expansion:** 2x10^4 – 4x10^4 cells/cm^2
+- **T75 flask surface area:** 75 cm^2 — seed 1.5x10^6 – 3x10^6 cells per T75 for routine passaging
+- **Expected yield from a confluent T75:** ~10x10^6 – 20x10^6 cells
+- **Target density for infection (overnight approach):** seed at a density that gives ~50% confluence 24-48 h later
+
+### Option A — Standard procedure (seed day before infection)
 
 1. **Aspirate medium** and wash monolayer with warm PBS (1x).
 2. **Add 0.25% Trypsin-EDTA** — for a T75 flask, add ~2-3 mL. For a 6-well plate, 0.3-0.5 mL per well.
 3. **Incubate at 37°C for 3-5 min.** Monitor under microscope — do not over-trypsinize (reduces viability).
-4. **Neutralize trypsin** by adding 2-3x volume of complete DMEM (FBS inactivates trypsin).
+4. **Neutralize trypsin** by adding 2-3x volume of complete T cell medium (FBS inactivates trypsin).
 5. **Transfer to a centrifuge tube** and spin at 300 x g, 5 min, RT.
 6. **Aspirate supernatant** and resuspend in complete medium.
 7. **Count cells** using trypan blue exclusion.
-8. **Seed into standard 6-well plates or T25 flasks** at a density that will yield ~50% confluence within 24-48 h.
+8. **Seed into standard 6-well plates or T25 flasks** at a density that will yield ~50% confluence within 24-48 h. Infect the following day (STEP 2).
 
 ::: {.callout-note}
 For infection, cells should be actively dividing and at **~50% confluence** — this is the optimal state for LCMV uptake. Avoid seeding into E-Plates at this stage; E-Plate seeding follows post-infection (STEP 2).
+:::
+
+### Option B — Same-day trypsin, replate, and infect (compressed timeline)
+
+Use this approach when MEFs are already too confluent (>60-70%) on the intended infection day and there is no time to seed the day before.
+
+1. **Trypsinise** as per Option A steps 1-7.
+2. **Count and reseed** into 6-well plates. Seed at a density sufficient to achieve ~50% confluence within 4 hours — seed more cells than the overnight approach since proliferation is not relied upon to reach target density.
+3. **Allow 4 hours adherence** at 37°C, 5% CO2.
+4. **Confirm attachment** by microscopy before proceeding.
+5. **Infect immediately** — proceed to STEP 2. The 1h adsorption step is unchanged.
+
+::: {.callout-note}
+Same-day replating is acceptable when timeline constraints require it. MEFs adhere within 1-2 h and resume active metabolism within 3-4 h post-trypsin — viral uptake is not meaningfully impaired provided cells are confirmed attached and not blebbing.
 :::
 
 ## STEP 2 — LCMV infection of fibroblasts
@@ -141,7 +171,7 @@ For infection, cells should be actively dividing and at **~50% confluence** — 
    → PFU required = 0.01 x 400,000 = **4,000 PFU**  
    → Volume of stock = 4,000 / 1 x 10^8 = **0.04 uL** — dilute into adsorption medium to a workable volume (e.g. 0.5-1 mL per well)
 
-4. **Dilute virus** in low-serum adsorption medium (DMEM + 2% FCS) to the calculated concentration.
+4. **Dilute virus** in low-serum adsorption medium (RPMI + 2% FCS) to the calculated concentration.
 
 ::: {.callout-note}
 A MOI range of **0.01-0.1 PFU/cell** is appropriate for LCMV infection of actively growing fibroblasts at ~50% confluence. **Kostas previously used MOI 0.01** for this assay, which gives moderate infection rates and minimal cytopathic effect at 48 h — a reasonable starting point. Higher MOI (up to 0.1) will increase infection efficiency but may cause more target cell death before the assay begins.
@@ -154,7 +184,7 @@ A MOI range of **0.01-0.1 PFU/cell** is appropriate for LCMV infection of active
 3. **Add equivalent volume of adsorption medium** (no virus) to control wells.
 4. **Incubate 1 hour** at 37°C. Rock plate gently every 15 min to distribute virus evenly.
 5. **Remove virus-containing medium** and wash wells **2x with warm PBS**.
-6. **Add complete DMEM** (normal culture volume).
+6. **Add complete T cell medium** (normal culture volume).
 7. **Incubate 48 hours** at 37°C, 5% CO2. This allows viral protein expression and presentation on target cell surface.
 
 ::: {.callout-warning}
@@ -172,13 +202,13 @@ All steps involving live LCMV must be performed in a certified Class II biosafet
 3. **Wash once with warm PBS.**
 4. **Add pre-warmed 0.25% Trypsin-EDTA** (0.3-0.5 mL per well of a 6-well plate).
 5. **Incubate 3-5 min at 37°C.** Monitor — do not over-trypsinize infected cells, which may be more fragile.
-6. **Neutralize with complete DMEM** (2-3x trypsin volume).
+6. **Neutralize with complete T cell medium** (2-3x trypsin volume).
 7. **Transfer to 15 mL tube** and centrifuge at 300 x g, 5 min, RT.
-8. **Resuspend in complete DMEM** and count. Assess viability by trypan blue exclusion — aim for >85% viability.
+8. **Resuspend in complete T cell medium** and count. Assess viability by trypan blue exclusion — aim for >85% viability.
 
 ### E-Plate background measurement
 
-1. **Add 50 uL complete DMEM** to each well of the E-Plate.
+1. **Add 50 uL complete T cell medium** to each well of the E-Plate.
 2. **Place plate in xCELLigence** instrument.
 3. **Perform background read** to establish baseline impedance.
 4. **Remove plate** from instrument and proceed immediately to cell seeding.
@@ -189,7 +219,7 @@ All steps involving live LCMV must be performed in a certified Class II biosafet
 
 **Recommended starting point for MEFs in this assay: 10,000-15,000 cells/well.** This reduces effector demand approximately 2-fold compared to 25,000 targets while maintaining sufficient impedance signal. Validate CI at 24 h before committing to a final density.
 
-1. **Adjust cell concentration** to the target density in complete DMEM (e.g. 2 x 10^5 cells/mL for 10,000 cells/well in 50 uL).
+1. **Adjust cell concentration** to the target density in complete T cell medium (e.g. 2 x 10^5 cells/mL for 10,000 cells/well in 50 uL).
 2. **Add 50 uL per well** to E-Plate wells (total volume = 100 uL with background medium already present).
 3. **Assign wells:**
    - LCMV-infected MEFs (effector wells + target-alone control wells)
@@ -433,3 +463,5 @@ if (nrow(used) == 0) {
 | v1.2 | 2026-03-26 | Dillon Corvino | Added MOI calculation formula with worked example; noted Kostas MOI 0.01 as reference starting point; updated MOI range note |
 | v1.3 | 2026-03-26 | Dillon Corvino | Reduced recommended target cell density to 10,000-15,000 cells/well to reduce effector demand; added literature context (Galli 2013) and comparison to prior lab density (25,000); updated E:T ratio guidance to 1:1-10:1 range for sorted effectors; added three-density concentration calculation tables |
 | v1.4 | 2026-03-26 | Dillon Corvino | Replaced list-based plate layout with blank visual plate maps (3x E-Plate grids, 2 col x 8 row); added required controls section |
+| v1.5 | 2026-04-13 | Dillon Corvino | Added MEF seeding density reference (2x10^4-4x10^4 cells/cm^2, T75 yield ~10-20x10^6); restructured STEP 1 into Option A (standard overnight) and Option B (same-day trypsin-replate-infect compressed timeline) |
+| v1.6 | 2026-04-15 | Dillon Corvino | Changed MEF culture medium from DMEM to T cell medium (RPMI + 10% FCS + 1% P/S + 2 mM L-glutamine + 1% NEAAs + 50 uM beta-mercaptoethanol) throughout; added adaptation rationale to STEP 1 background; updated adsorption medium to RPMI-based; Materials section now distinguishes standard DMEM culture from killing assay medium |

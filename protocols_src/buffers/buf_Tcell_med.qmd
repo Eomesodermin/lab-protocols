@@ -2,9 +2,9 @@
 title: "T Cell Medium (RPMI + 10% FCS + Supplements)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "BUF-TCELL-MED"
-version: "v1.0"
-date: "2026-03-02"
-description: "Complete RPMI 1640 medium supplemented with FCS, Penicillin/Streptomycin, beta-mercaptoethanol, L-glutamine, and sodium pyruvate for mouse T cell and NLC culture."
+version: "v1.1"
+date: "2026-04-15"
+description: "Complete RPMI 1640 medium supplemented with FCS, Penicillin/Streptomycin, beta-mercaptoethanol, and L-glutamine for mouse T cell and NLC culture. Optional supplements: sodium pyruvate, HEPES, MEM NEAAs."
 ---
 
 **Protocol ID:** {< meta protocol_id >}  
@@ -50,44 +50,66 @@ if (nrow(linked) == 0) {
 |---------------------------|--------------------|--------------------------------|
 | RPMI 1640                 | —                  | Base medium                   |
 | Fetal calf serum (FCS)    | 10% (v/v)          | Heat-inactivated              |
-| Penicillin/Streptomycin   | 1% (v/v)           | 100× stock → 1× final         |
-| L-glutamine               | 2 mM               | From 200 mM stock             |
-| Sodium pyruvate           | 1 mM               | From 100 mM stock             |
-| beta-mercaptoethanol      | 50 µM              | From 50 mM stock              |
+| Penicillin/Streptomycin   | 1% (v/v)           | 100x stock → 1x final         |
+| L-glutamine               | 2 mM               | From 200 mM stock; prefer GlutaMAX if medium will be stored at 4°C for weeks — L-glutamine degrades over time |
+| Sodium pyruvate           | 1 mM               | From 100 mM stock; **optional** |
+| beta-mercaptoethanol      | 50 uM              | From 50 mM stock              |
+| HEPES                     | 10 mM              | From 1 M stock; **optional** but common |
+| MEM Non-essential amino acids (NEAAs) | 1% (v/v) | 100x stock → 1x final; **optional** |
+
+::: {.callout-note}
+**Sodium pyruvate, HEPES, and NEAAs** are optional but improve viability in longer cultures and under stress conditions. Worth including for multiday assays (>48 h) or when cells will be under metabolic stress (e.g. cytokine stimulation, limiting nutrients).
+:::
+
+::: {.callout-note}
+**Beta-mercaptoethanol** is particularly important for mouse primary cells, which are more sensitive to oxidative stress than human cell lines. Do not omit for primary mouse T cells or NLCs.
+:::
+
+::: {.callout-tip}
+**GlutaMAX vs L-glutamine:** If medium will be stored at 4°C for more than 1–2 weeks, substitute GlutaMAX at the same volume — L-glutamine degrades to pyroglutamate and ammonia over time, which is toxic at high concentrations. GlutaMAX is stable and converted to glutamine by cells.
+:::
 
 # Preparation
 
 ## Stock solutions required
 
-| Reagent                    | Stock concentration | Dilution to final |
-|----------------------------|--------------------|------------------|
-| Fetal calf serum (FCS)     | —                  | 10% (v/v)        |
-| Penicillin/Streptomycin    | 100×               | 1:100            |
-| L-glutamine                | 200 mM             | 1:100            |
-| Sodium pyruvate            | 100 mM             | 1:100            |
-| beta-mercaptoethanol       | 50 mM              | 1:1000           |
-| RPMI 1640                  | —                  | Base medium      |
+| Reagent                    | Stock concentration | Dilution to final | Optional |
+|----------------------------|--------------------|------------------|---------|
+| Fetal calf serum (FCS)     | —                  | 10% (v/v)        | No |
+| Penicillin/Streptomycin    | 100x               | 1:100            | No |
+| L-glutamine (or GlutaMAX)  | 200 mM             | 1:100            | No |
+| Sodium pyruvate            | 100 mM             | 1:100            | Yes |
+| beta-mercaptoethanol       | 50 mM              | 1:1000           | No |
+| HEPES                      | 1 M                | 1:100            | Yes |
+| MEM NEAAs                  | 100x               | 1:100            | Yes |
+| RPMI 1640                  | —                  | Base medium      | No |
 
 ## Volume calculations
 
 Dilution logic:
 
-- 10% FCS → 1:10  
-- 1% Pen/Strep (100×) → 1:100  
-- 2 mM L-glut from 200 mM → 1:100  
-- 1 mM sodium pyruvate from 100 mM → 1:100  
-- 50 µM beta-mercaptoethanol from 50 mM → 1:1000  
+- 10% FCS → 1:10
+- 1% Pen/Strep (100x) → 1:100
+- 2 mM L-glut from 200 mM → 1:100
+- 1 mM sodium pyruvate from 100 mM → 1:100 *(optional)*
+- 50 uM beta-mercaptoethanol from 50 mM → 1:1000
+- 10 mM HEPES from 1 M → 1:100 *(optional)*
+- 1x NEAAs from 100x → 1:100 *(optional)*
 
 ## Preparation table
 
-| Reagent        | 10 mL | 50 mL | 100 mL | 200 mL | 500 mL |
-| -------------- | ----- | ----- | ------ | ------ | ------ |
-| RPMI (mL)      | 8.69  | 43.45 | 86.9   | 173.8  | 434.5  |
-| FCS (mL)       | 1.0   | 5.0   | 10.0   | 20.0   | 50.0   |
-| Pen/Strep (ul) | 100   | 500   | 1,000    | 2,000   | 5,000    |
-| L-glut (uL)    | 100   | 500   | 1,000    | 2,000   | 5,000    |
-| Pyruvate (uL)  | 100   | 500   | 1,000    | 2,000   | 5,000    |
-| beta-ME (uL)   | 10  | 50  | 100    | 200    | 500    |
+Volumes for mandatory components. Add optional supplements (pyruvate, HEPES, NEAAs) by substituting equivalent volume from the RPMI column.
+
+| Reagent              | 10 mL | 50 mL | 100 mL | 200 mL | 500 mL |
+|----------------------|-------|-------|--------|--------|--------|
+| RPMI (mL)            | 8.69  | 43.45 | 86.9   | 173.8  | 434.5  |
+| FCS (mL)             | 1.0   | 5.0   | 10.0   | 20.0   | 50.0   |
+| Pen/Strep (uL)       | 100   | 500   | 1,000  | 2,000  | 5,000  |
+| L-glut / GlutaMAX (uL) | 100 | 500  | 1,000  | 2,000  | 5,000  |
+| beta-ME (uL)         | 10    | 50    | 100    | 200    | 500    |
+| Pyruvate (uL) *opt*  | 100   | 500   | 1,000  | 2,000  | 5,000  |
+| HEPES (uL) *opt*     | 100   | 500   | 1,000  | 2,000  | 5,000  |
+| NEAAs (uL) *opt*     | 100   | 500   | 1,000  | 2,000  | 5,000  |
 
 Label with:
    - *T Cell Complete Medium*  
@@ -110,10 +132,13 @@ Add beta-mercaptoethanol fresh where possible for optimal T cell viability.
 |-------------------------|----------|--------|-------|
 | RPMI 1640               | Various  | —      | Base medium |
 | Fetal calf serum        | Various  | —      | Heat-inactivated |
-| Pen/Strep (100×)        | Various  | —      | Antibiotics |
-| L-glutamine (200 mM)    | Various  | —      | Stable stock |
-| Sodium pyruvate (100 mM)| Various  | —      | Optional supplement |
-| beta-mercaptoethanol    | Various  | —      | Handle in hood |
+| Pen/Strep (100x)        | Various  | —      | Antibiotics |
+| L-glutamine (200 mM)    | Various  | —      | Degrades over weeks at 4°C; substitute GlutaMAX for long-stored medium |
+| GlutaMAX (200 mM)       | Various  | —      | Stable dipeptide alternative to L-glutamine; use at same volume |
+| Sodium pyruvate (100 mM)| Various  | —      | Optional |
+| beta-mercaptoethanol    | Various  | —      | Handle in hood; essential for mouse primary cells |
+| HEPES (1 M)             | Various  | —      | Optional; buffering capacity for longer assays |
+| MEM NEAAs (100x)        | Various  | —      | Optional; supports viability in multiday cultures |
 
 # Safety
 
@@ -125,4 +150,5 @@ Add beta-mercaptoethanol fresh where possible for optimal T cell viability.
 
 | Version | Date       | Author         | Changes |
 |--------|------------|----------------|---------|
-| v1.0   | 2026-03-02 | Dillon Corvino | Initial T cell medium document. |
+| v1.0   | 2026-03-02 | Dillon Corvino | Initial T cell medium document |
+| v1.1   | 2026-04-15 | Dillon Corvino | Added HEPES (optional, 10 mM) and MEM NEAAs (optional, 1x) to composition; marked sodium pyruvate as optional; added notes on GlutaMAX vs L-glutamine stability, beta-ME importance for mouse primary cells, and conditions where optional supplements are recommended |

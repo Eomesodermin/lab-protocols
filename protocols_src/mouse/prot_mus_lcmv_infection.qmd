@@ -67,9 +67,13 @@ Mice are infected **intravenously (i.v.)** via the lateral tail vein using the f
 
 - **LCMV-Clone 13:** **2 × 10⁶ plaque-forming units (PFU)**
 - **LCMV-WE:** **2 × 10⁴ plaque-forming units (PFU)**
-- **LCMV-Armstrong:** **2 × 10⁴ plaque-forming units (PFU)**
+- **LCMV-Armstrong:** **2 × 10⁴ plaque-forming units (PFU)** *(Anna's protocol; i.v.)*
 
-LCMV-Docile is included for reference and comparative studies as outlined below.
+Docile is included for reference and comparative studies as outlined below.
+
+::: {.callout-note}
+**LCMV-Armstrong — route note:** The standard Abdullah Lab dose for Armstrong is **2 × 10⁴ PFU i.v.** (Anna's protocol). The broader literature typically uses **1 × 10⁴ – 2 × 10⁵ PFU administered intraperitoneally (i.p.)** for acute infection and memory studies. The i.p. route is the most common in published Armstrong protocols. The i.v. route used here differs from the literature standard — this should be noted when comparing outcomes across studies.
+:::
 
 ### Injection parameters
 
@@ -87,16 +91,15 @@ LCMV-Docile is included for reference and comparative studies as outlined below.
 
 # Infection dose ranges, rationale, and expected outcomes
 
-| Virus strain | Dose range (PFU, literature) | Rationale for low vs high dose | Expected outcome | Abdullah Lab standard |
-|-------------|-----------------------------|-------------------------------|------------------|-----------------------|
-| **Armstrong** | ~1 × 10⁴ – 2 × 10⁵ | Low–moderate dose to induce acute infection with rapid immune control | Acute infection; strong effector CD8 response; viral clearance and memory formation | — |
-|  | **2 × 10⁴** | Matches WE dose; used in DC26_23/DC26_24 cytotoxicity experiments | Robust acute infection; strong effector CD8 and NLC response | **Yes** |
-| **WE** | ~1 × 10² – 1 × 10³ | Minimal acute infection | Rapid clearance; limited systemic and hepatic involvement | – |
-|  | **2 × 10⁴** | Intermediate dose to ensure robust systemic infection without chronic persistence | Strong liver immune response; sustained NLC accumulation | **Yes** |
-|  | ~1 × 10⁶ | High-dose systemic challenge used in comparative studies | Severe acute disease; heightened inflammation | No |
-| **Clone 13** | **2 × 10⁶** | High antigen load to enforce chronic infection and exhaustion | Persistent infection; CD8 exhaustion program | **Yes** |
-| **Docile** | ~1 × 10⁵ | Moderate dose allowing partial control | Semi-chronic infection; intermediate exhaustion | – |
-|  | **2 × 10⁶** | High-dose infection to drive persistent antigen exposure | Chronic infection; exhaustion-prone immune response | **Yes** |
+| Virus strain | Dose range (PFU, literature) | Route (literature) | Rationale for low vs high dose | Expected outcome | Abdullah Lab standard |
+|-------------|-----------------------------|-------------------|-------------------------------|------------------|-----------------------|
+| **Armstrong** | ~1 × 10⁴ – 2 × 10⁵ | **i.p.** (literature standard) | Low–moderate dose to induce acute infection with rapid immune control | Acute infection; strong effector CD8 response; viral clearance and memory formation | **2 × 10⁴ PFU i.v.** (Anna's protocol) |
+| **WE** | ~1 × 10² – 1 × 10³ | i.v. | Minimal acute infection | Rapid clearance; limited systemic and hepatic involvement | – |
+|  | **2 × 10⁴** | i.v. | Intermediate dose to ensure robust systemic infection without chronic persistence | Strong liver immune response; sustained NLC accumulation | **Yes** |
+|  | ~1 × 10⁶ | i.v. | High-dose systemic challenge used in comparative studies | Severe acute disease; heightened inflammation | No |
+| **Clone 13** | **2 × 10⁶** | i.v. | High antigen load to enforce chronic infection and exhaustion | Persistent infection; CD8 exhaustion program | **Yes** |
+| **Docile** | ~1 × 10⁵ | i.v./i.p. | Moderate dose allowing partial control | Semi-chronic infection; intermediate exhaustion | – |
+|  | **2 × 10⁶** | i.v. | High-dose infection to drive persistent antigen exposure | Chronic infection; exhaustion-prone immune response | **Yes** |
 
 # Expected NLC dynamics in the liver
 
@@ -159,6 +162,6 @@ if (nrow(used) == 0) {
 | Version | Date | Author | Change summary |
 |-------------|-------------|-------------|-----------------------------------|
 | v1.0 | 2026-01-09 | Dillon Corvino | Initial LCMV infection protocol (WE, Clone 13, Docile, Armstrong) |
-| v1.1 | 2026-04-21 | Dillon Corvino | Added LCMV-Armstrong lab standard dose (2 x 10^4 PFU i.v.) based on DC26_23/DC26_24 |
+| v1.1 | 2026-04-13 | Dillon Corvino | Added Armstrong as Abdullah Lab standard (2 × 10⁴ PFU i.v., Anna's protocol); added route note clarifying i.p. vs i.v. difference from literature; added Route column to dose table |
 
 

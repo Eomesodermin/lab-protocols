@@ -2,8 +2,8 @@
 title: "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-INF-LCMV"
-version: "v1.0"
-date: "2026-01-09"
+version: "v1.1"
+date: "2026-04-21"
 description: "Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes."
 ---
 

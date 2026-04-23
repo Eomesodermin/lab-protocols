@@ -2,8 +2,8 @@
 title: "LCMV Infection Models (WE, Clone 13, Docile, Armstrong)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "MUS-INF-LCMV"
-version: "v1.0"
-date: "2026-01-09"
+version: "v1.1"
+date: "2026-04-21"
 description: "Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes."
 ---
 
@@ -67,8 +67,9 @@ Mice are infected **intravenously (i.v.)** via the lateral tail vein using the f
 
 - **LCMV-Clone 13:** **2 × 10⁶ plaque-forming units (PFU)**
 - **LCMV-WE:** **2 × 10⁴ plaque-forming units (PFU)**
+- **LCMV-Armstrong:** **2 × 10⁴ plaque-forming units (PFU)**
 
-Other strains (Docile, Armstrong) are included for reference and comparative studies as outlined below.
+LCMV-Docile is included for reference and comparative studies as outlined below.
 
 ### Injection parameters
 
@@ -88,7 +89,8 @@ Other strains (Docile, Armstrong) are included for reference and comparative stu
 
 | Virus strain | Dose range (PFU, literature) | Rationale for low vs high dose | Expected outcome | Abdullah Lab standard |
 |-------------|-----------------------------|-------------------------------|------------------|-----------------------|
-| **Armstrong** | ~1 × 10⁴ – 2 × 10⁵ | Low–moderate dose to induce acute infection with rapid immune control | Acute infection; strong effector CD8 response; viral clearance and memory formation | Not standard |
+| **Armstrong** | ~1 × 10⁴ – 2 × 10⁵ | Low–moderate dose to induce acute infection with rapid immune control | Acute infection; strong effector CD8 response; viral clearance and memory formation | — |
+|  | **2 × 10⁴** | Matches WE dose; used in DC26_23/DC26_24 cytotoxicity experiments | Robust acute infection; strong effector CD8 and NLC response | **Yes** |
 | **WE** | ~1 × 10² – 1 × 10³ | Minimal acute infection | Rapid clearance; limited systemic and hepatic involvement | – |
 |  | **2 × 10⁴** | Intermediate dose to ensure robust systemic infection without chronic persistence | Strong liver immune response; sustained NLC accumulation | **Yes** |
 |  | ~1 × 10⁶ | High-dose systemic challenge used in comparative studies | Severe acute disease; heightened inflammation | No |
@@ -157,5 +159,6 @@ if (nrow(used) == 0) {
 | Version | Date | Author | Change summary |
 |-------------|-------------|-------------|-----------------------------------|
 | v1.0 | 2026-01-09 | Dillon Corvino | Initial LCMV infection protocol (WE, Clone 13, Docile, Armstrong) |
+| v1.1 | 2026-04-21 | Dillon Corvino | Added LCMV-Armstrong lab standard dose (2 x 10^4 PFU i.v.) based on DC26_23/DC26_24 |
 
 

@@ -50,6 +50,97 @@ This protocol describes the preparation of single-cell suspensions from mouse li
 
 {{< pagebreak >}}
 
+# Prep checklist
+
+Everything below is **per mouse**. Multiply by the number of animals, and add margin on the buffers so the last sample is not short.
+
+## Reagents
+
+| Reagent | Per mouse | Where it is used |
+|---|---|---|
+| **PBS, ice-cold** | **10 mL** | STEP 2 — perfusion (5–10 mL, until the liver blanches). Perfusion only; never MACS Buffer |
+| **Liver digestion buffer** (`BUF-LIV-DIG`) | **5 mL** | STEP 4 — pre-warmed to 37 °C in the C-tube |
+| **37% Percoll** (`BUF-PERC-37`) | **25 mL** | STEP 6 — from isotonic stock: 9.25 mL stock + 15.75 mL PBS |
+| **ACK lysis buffer** | **1 mL** | STEP 7 |
+| **MACS Buffer** | **\~110 mL** | Collection 5 mL; STEP 5 washes 35 + 40 mL; STEP 7 quench 9 mL; STEP 8 final 5 mL (94 mL used, allowance includes margin) |
+
+## Plasticware and consumables
+
+| Item | Per mouse | Note |
+|---|---|---|
+| **gentleMACS C-tube** | **1** | Option A only |
+| **70 um cell strainer** | **1** | Strictly one per liver — never reuse between livers |
+| **50 mL conical tube** | **3** | Collection (STEP 3), filtration + washes (STEP 5), Percoll (STEP 6). **Add 1** if using the optional 50 g hepatocyte spin |
+| **15 mL conical tube** | **1** | Post-lysis wash (STEP 7) |
+| **5 mL syringe** | **1** | Plunger only — used to press tissue through the strainer (STEP 5) |
+| **Syringe, 5–10 mL** | **1** | Perfusion; may be shared within a treatment group |
+| **Needle, 25–27 G** | **1** | Perfusion |
+| **Transfer pipette** | **2** | Pellet resuspension (STEP 6), ACK resuspension (STEP 7) |
+| **Filter paper** | 1 piece | Blotting the liver before weighing |
+
+::: callout-note
+Collection at STEP 3 may instead use **1 well of a 6-well plate** with 3–5 mL ice-cold buffer, in which case only **2** 50 mL tubes are needed per mouse.
+:::
+
+**Shared, not per mouse:** gentleMACS + warming sleeves, 37 °C water bath, refrigerated centrifuge with adjustable brake and acceleration, 5–10 mL stripettes, paper towels, ice, timers, dissection scissors and forceps, sharps container, analytical balance.
+
+## Buffer recipes
+
+Recipes are reproduced here so the protocol can be followed without opening the linked buffer documents. See `BUF-LIV-DIG`, `BUF-PERC-37`, `BUF-FACS-MACS` and `BUF-ACK-LYSIS` for supplier details, stock preparation, and storage.
+
+### Liver digestion buffer — make fresh on the day
+
+**5 mL per mouse.** Base medium may be **DMEM (incomplete), PBS 1x, or HBSS 1x** — interchangeable for this application.
+
+| Component | Stock | Per 5 mL (1 mouse) | Final |
+|---|---|---|---|
+| Base medium | — | to **5 mL** | — |
+| **Collagenase D** *or* | 100 mg/mL | **50 uL** | 1 mg/mL |
+| **Collagenase IV** | 100 mg/mL | **25 uL** | 0.5 mg/mL |
+| **DNase I** | 10 mg/mL | **25 uL** | 50 ug/mL |
+
+Mix gently by inversion — do **not** vortex. Pre-warm to **37 °C** immediately before use.
+
+::: callout-important
+Collagenase D and Collagenase IV are **not** used at the same concentration — D is 1 mg/mL, IV is 0.5 mg/mL. Use one or the other, not both.
+:::
+
+### 37% Percoll — make fresh on the day
+
+**25 mL per mouse**, prepared by diluting **isotonic Percoll stock** with 1x PBS.
+
+| Component | Per 25 mL (1 mouse) |
+|---|---|
+| **Isotonic Percoll stock** | **9.25 mL** |
+| **PBS 1x, sterile** | **15.75 mL** |
+
+Mix gently by inversion and keep at **room temperature**. Aliquot 25 mL per labelled 50 mL conical tube.
+
+::: callout-note
+**"37%" here means 37% of isotonic stock**, which equals **33% final Percoll** (37 x 0.9 = 33.3), because isotonic stock is 90% Percoll by volume. Both labels describe the same solution — see `BUF-PERC-37`.
+
+**Isotonic Percoll stock** is made **once per bottle**, not per experiment: remove 100 mL from a 1000 mL Percoll bottle and add 100 mL sterile **10x PBS** (a 9:1 ratio). Once the stock is isotonic, all working dilutions use **1x PBS only** — do not add further 10x PBS.
+:::
+
+### MACS Buffer — stable at 4 °C, make in advance
+
+| Component | Per 500 mL | Final |
+|---|---|---|
+| PBS 1x | 488 mL | — |
+| FCS | 10 mL | 2% (v/v) |
+| EDTA (0.5 M) | 2 mL | 2 mM |
+
+### ACK lysis buffer — stable, make in advance
+
+| Component | Per 1 L |
+|---|---|
+| NH4Cl | 8.26 g |
+| KHCO3 | 1.00 g |
+| EDTA | 37 mg |
+| Distilled water | to 1 L, pH 7.2 |
+
+{{< pagebreak >}}
+
 # Procedure
 
 ## STEP 1 – Preparation and setup
@@ -304,11 +395,15 @@ For single-cell sequencing applications, minimise the time from tissue harvest t
 
 # Buffers used
 
+Full recipes for the two buffers made on the day are given in the **Prep checklist** at the front of this document. The linked buffer documents carry supplier details and stock preparation.
+
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
+#| results: asis
 
-library(tidyverse)
+suppressPackageStartupMessages(library(tidyverse))
 
 this_protocol <- rmarkdown::metadata$protocol_id
 deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)

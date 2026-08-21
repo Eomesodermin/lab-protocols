@@ -23,6 +23,44 @@ The protocol uses DTT/EDTA-based epithelial stripping combined with mechanical a
 
 {{< pagebreak >}}
 
+# Prep checklist
+
+Everything below is **per mouse**. Multiply by the number of animals, and add margin on the buffers so the last sample is not short.
+
+## Reagents
+
+| Reagent | Per mouse | Where it is used |
+|---|---|---|
+| **3% Medium** | **50 mL** | STEP 2 intestine washes (20 mL) + base for Strip Medium (20 mL) + 10 mL margin |
+| **Strip Medium** | **20 mL** | STEP 3 — **make fresh and pre-warm to 37 °C**; DTT is unstable in solution |
+| **Shake Medium** | **25 mL** | STEP 4 — 2 x 10 mL shake rounds + 5 mL margin |
+| **35% Percoll** | **10 mL** | STEP 6 |
+| **PBS** | **\~60 mL** | STEP 2 wash, STEP 6 post-Percoll wash, STEP 7 top-up to 30 mL, STEP 8 resuspension |
+| **ACK lysis buffer** | **7 mL** | STEP 7 — optional; often omitted after Percoll |
+
+::: callout-warning
+Strip Medium is the only buffer that **must** be made on the day — DTT loses activity in solution. 3% Medium and Shake Medium can be prepared the evening before and held at 4 °C.
+:::
+
+## Plasticware and consumables
+
+| Item | Per mouse | Note |
+|---|---|---|
+| **50 mL Falcon tube** | **4** | Transport (STEP 2), shake rounds (STEP 4), pooled strip + shake fractions (STEP 5), fresh tube post-ACK (STEP 7). **3** if ACK is omitted |
+| **Beaker + magnetic stir bar** | **1** | STEP 3 stripping — see the note below |
+| **70 um cell strainer** | **1** | STEP 7, post-ACK filtration |
+| **15 mL conical tube** | **1, optional** | Only if running the Percoll step in a smaller volume |
+| **Aluminium foil** | 1 piece | Covers the beaker during stripping |
+| **Transfer pipette** | **1** | Resuspension steps |
+
+::: callout-important
+The **20 minute stripping step at 37 °C is the throughput bottleneck**. One beaker and stir bar are needed per mouse being stripped simultaneously — if the heated stir plate holds only 2–3 beakers, samples must be staggered in rounds. Count the available positions before planning the day.
+:::
+
+**Shared, not per mouse:** metal strainer and large collection beaker (wash thoroughly between mice), 37 °C heated magnetic stir plate, 37 °C water bath, refrigerated centrifuge with adjustable brake, fine scissors, forceps, ice, timers.
+
+{{< pagebreak >}}
+
 # Background: gut anatomy, immune compartments, and isolation logic
 
 This section provides an anatomical and immunological reference for the intestinal tract relevant to IEL isolation. It is intended as orientation for researchers new to gut immunology and as a practical guide for experimental design decisions (segment choice, compartment targeting, downstream assay selection).
@@ -482,8 +520,10 @@ The Percoll concentration used for IEL enrichment varies across published protoc
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
+#| results: asis
 
-library(tidyverse)
+suppressPackageStartupMessages(library(tidyverse))
 
 this_protocol <- rmarkdown::metadata$protocol_id
 deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)

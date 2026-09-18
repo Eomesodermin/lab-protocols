@@ -1,19 +1,62 @@
 ---
-title: "37% Percoll Solution"
+title: "37% Percoll Solution (= 33% final Percoll)"
 subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
 protocol_id: "BUF-PERC-37"
-version: "v1.2"
-date: "2025-12-29"
-description: "37% Percoll density solution for enrichment of leukocytes from digested liver tissue."
+version: "v2.0"
+date: "2026-08-05"
+description: "Percoll density solution for enrichment of leukocytes from digested liver tissue. 37% of isotonic Percoll stock, equivalent to 33% final Percoll."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}  
-**Version:** {{< meta version >}}  
-**Author:** Dillon Corvino  
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
 
 # Purpose
 
-This buffer is used as a **37% Percoll solution** for density-based enrichment of leukocytes from digested liver tissue. During centrifugation, hepatocytes and debris remain in the supernatant, while leukocyte-enriched pellets form at the bottom of the tube.
+This buffer is used for density-based enrichment of leukocytes from digested liver tissue. During centrifugation, hepatocytes and debris remain in the supernatant, while leukocyte-enriched pellets form at the bottom of the tube.
+
+# "37%" and "33%" are the same solution
+
+This buffer is called **37%** because it is **37% of isotonic Percoll stock**. The identical solution is **33% Percoll** when quoted by final Percoll content. Both numbers are correct — they use different denominators.
+
+**SIP** — *Stock Isotonic Percoll*, also written *Standard Isotonic Percoll* — is the conventional term for neat Percoll pre-adjusted to physiological osmolality with 10x PBS at **9:1**. That mix is **90% Percoll by volume**, so:
+
+$$\text{final Percoll \%} = \text{SIP \%} \times 0.9$$
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+# ---- inputs (edit here) ----
+percollInSip <- 0.9    # SIP = 9 parts neat Percoll : 1 part 10x PBS
+sipPct       <- 37     # this buffer, expressed as % of isotonic stock
+# ----------------------------
+
+naming.df <- tibble::tibble(
+  convention  = c("% of isotonic stock (SIP)", "% final Percoll"),
+  thisBuffer  = c(sipPct, sipPct * percollInSip),
+  denominator = c("Volume of SIP as a fraction of the working solution",
+                  "Volume of neat Percoll as a fraction of the working solution")
+)
+
+stopifnot(abs(naming.df$thisBuffer[2] - 33.3) < 1e-9)
+
+naming.df |>
+  dplyr::mutate(thisBuffer = scales::percent(thisBuffer / 100, accuracy = 0.1)) |>
+  knitr::kable(align = "l",
+               col.names = c("Convention", "This buffer", "What the % is measured against"))
+```
+
+::: callout-important
+When comparing against an external protocol, **check which convention it uses before changing any number**.
+
+-   This buffer and `MUS-LIV-DIG` quote **% of isotonic stock**.
+-   The AG Surace SOP #001 quotes **% final Percoll** — its "33% Percoll" (9 mL Percoll + 1 mL 10x DPBS + 17 mL 1x DPBS) is **the same density as this buffer**.
+
+Relabelling "37%" as "33%" without also changing the recipe would drop the gradient to **29.7% final Percoll** and increase hepatocyte carryover.
+:::
 
 ### Density vs osmolality (important conceptual note)
 
@@ -105,27 +148,74 @@ Therefore:
 
 ---
 
-# Composition (per 10 mL 37% Percoll)
+# Composition
 
 | Component | Stock | Volume for 10 mL | Final composition | Notes |
 |------------------|-------|------------------|-------------------|-------|
-| Percoll (isotonic) | 100% | **3.70 mL** | 37% (v/v) | Pre-adjusted stock |
+| Percoll (isotonic) | 100% | **3.70 mL** | 37% of SIP = **33.3% final Percoll** | Pre-adjusted stock |
 | PBS 1× | — | **6.30 mL** | — | Diluent |
 
----
-
-# Preparation of 37% Percoll working solution
+# Preparation of working solution
 
 1. Equilibrate **isotonic Percoll stock** to **room temperature**.
-2. In a sterile 15 mL or 50 mL tube, add:
-   - **3.70 mL isotonic Percoll**
-   - **6.30 mL sterile PBS 1×**
+2. Combine isotonic Percoll and sterile 1x PBS in the ratio **3.70 : 6.30**, scaled per the table below.
 3. Mix gently by inversion until homogeneous.
-4. Prepare sufficient volume for the experiment (typically **10 mL per liver**).
-5. Aliquot immediately into labelled **15 mL conical tubes**.
+4. Aliquot immediately into labelled tubes — for `MUS-LIV-DIG`, **25 mL per 50 mL conical tube**, one per liver.
 
-:::callout-note
-Prepare 37% Percoll fresh on the day of use for optimal separation performance and cell viability.
+Volumes below are the exact requirement per number of livers — see the tip beneath the table on adding margin.
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+# ---- inputs (edit here) ----
+percollInSip   <- 0.9    # SIP is 90% neat Percoll by volume
+sipFraction    <- 0.37   # 37% of isotonic stock
+volPerLiver    <- 25     # mL loaded per sample (MUS-LIV-DIG STEP 6)
+nLivers        <- c(1, 2, 3, 4, 5, 6, 8, 9, 10, 12)
+# ----------------------------
+
+percoll.df <- tibble::tibble(nLivers = nLivers) |>
+  dplyr::mutate(
+    totalMl = nLivers * volPerLiver,
+    sipMl   = totalMl * sipFraction,
+    pbsMl   = totalMl - sipMl
+  )
+
+# components sum to total, and both percentages hold exactly at every scale
+stopifnot(all(abs(percoll.df$sipMl + percoll.df$pbsMl - percoll.df$totalMl) < 1e-9))
+stopifnot(all(abs(percoll.df$sipMl / percoll.df$totalMl - sipFraction) < 1e-9))
+stopifnot(all(abs(percoll.df$sipMl * percollInSip / percoll.df$totalMl -
+                    sipFraction * percollInSip) < 1e-9))
+
+percoll.df |>
+  dplyr::mutate(
+    finalPct = scales::percent(sipMl * percollInSip / totalMl, accuracy = 0.1),
+    dplyr::across(c(totalMl, sipMl, pbsMl), ~ round(.x, 2))
+  ) |>
+  knitr::kable(
+    align = "l",
+    col.names = c("Livers", "Total (mL)", "Isotonic Percoll (mL)",
+                  "PBS 1x (mL)", "Final Percoll")
+  )
+```
+
+Per liver this is **9.25 mL isotonic Percoll + 15.75 mL PBS** = 25 mL.
+
+::: callout-tip
+The table gives the **exact** volume for the number of livers being processed, with no margin built in. When preparing for more than one liver, **add some extra** so the last tube is not short — tube dead volume, pipetting loss, and the meniscus left in the stripette all add up across samples.
+
+How much extra is your call: one additional liver's worth (25 mL) is usually sufficient, and is simplest to work out. For example, for 9 livers read off the 10-liver row.
+:::
+
+::: callout-note
+That 10 : 17 ratio is arithmetically **37.04% SIP / 33.33% final** rather than exactly 37.00% / 33.30% — a difference of 0.03 percentage points, which is not meaningful at the bench. It is also **exactly** the AG Surace SOP recipe (9 mL Percoll + 1 mL 10x DPBS + 17 mL 1x DPBS), confirming the two protocols use the same gradient.
+:::
+
+::: callout-note
+Prepare the working solution fresh on the day of use for optimal separation performance and cell viability.
 :::
 
 ---
@@ -220,3 +310,4 @@ For every **9 mL of Percoll**, add **1 mL of 10× PBS** to make the solution iso
 | v1.0 | 2025-11-20 | Dillon Corvino | Initial buffer definition (33% Percoll) |
 | v1.1 | 2025-12-29 | Dillon Corvino | Updated to 37% Percoll; clarified isotonic prep |
 | v1.2 | 2025-12-29 | Dillon Corvino | Added stock isotonic prep, math explanation, sterility notes |
+| v2.0 | 2026-08-05 | Dillon Corvino | Density unchanged. Added explicit dual-convention section: 37% of isotonic stock = 33% final Percoll, with the AG Surace SOP #001 equivalence. Volumes for `MUS-LIV-DIG` raised to 25 mL per 50 mL tube (was 10 mL per 15 mL tube); scaling table added. |

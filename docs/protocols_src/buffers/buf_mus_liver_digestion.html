@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-21">
-<meta name="description" content="Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes.">
+<meta name="dcterms.date" content="2026-08-05">
+<meta name="description" content="Collagenase and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue. Supports Collagenase D or Collagenase IV in a DMEM, PBS, or HBSS base.">
 
-<title>LCMV Infection Models (WE, Clone 13, Docile, Armstrong) – Protocol Library</title>
+<title>Mouse Liver Digestion Buffer – Protocol Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">LCMV Infection Models (WE, Clone 13, Docile, Armstrong)</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Mouse Liver Digestion Buffer</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -326,46 +326,33 @@ window.Quarto = {
    
   <ul>
   <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
-  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
-  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <li><a href="#linked-protocols" id="toc-linked-protocols" class="nav-link" data-scroll-target="#linked-protocols">Linked protocols</a></li>
+  <li><a href="#choice-of-collagenase-and-base-medium" id="toc-choice-of-collagenase-and-base-medium" class="nav-link" data-scroll-target="#choice-of-collagenase-and-base-medium">Choice of collagenase and base medium</a></li>
+  <li><a href="#working-buffer-composition" id="toc-working-buffer-composition" class="nav-link" data-scroll-target="#working-buffer-composition">Working buffer composition</a></li>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a>
   <ul class="collapse">
-  <li><a href="#virus-stock-handling-and-preparation" id="toc-virus-stock-handling-and-preparation" class="nav-link" data-scroll-target="#virus-stock-handling-and-preparation">Virus stock handling and preparation</a>
-  <ul class="collapse">
-  <li><a href="#thawing" id="toc-thawing" class="nav-link" data-scroll-target="#thawing">Thawing</a></li>
-  <li><a href="#dilution-buffer" id="toc-dilution-buffer" class="nav-link" data-scroll-target="#dilution-buffer">Dilution buffer</a></li>
+  <li><a href="#stock-solutions" id="toc-stock-solutions" class="nav-link" data-scroll-target="#stock-solutions">Stock solutions</a></li>
+  <li><a href="#reconstitution-of-collagenase-powder" id="toc-reconstitution-of-collagenase-powder" class="nav-link" data-scroll-target="#reconstitution-of-collagenase-powder">Reconstitution of Collagenase powder</a></li>
+  <li><a href="#preparation-of-working-buffer" id="toc-preparation-of-working-buffer" class="nav-link" data-scroll-target="#preparation-of-working-buffer">Preparation of working buffer</a></li>
   </ul></li>
-  <li><a href="#infection-doses-and-routes" id="toc-infection-doses-and-routes" class="nav-link" data-scroll-target="#infection-doses-and-routes">Infection doses and routes</a>
-  <ul class="collapse">
-  <li><a href="#injection-parameters" id="toc-injection-parameters" class="nav-link" data-scroll-target="#injection-parameters">Injection parameters</a></li>
-  </ul></li>
-  <li><a href="#post-infection-monitoring" id="toc-post-infection-monitoring" class="nav-link" data-scroll-target="#post-infection-monitoring">Post-infection monitoring</a></li>
-  </ul></li>
-  <li><a href="#infection-dose-ranges-rationale-and-expected-outcomes" id="toc-infection-dose-ranges-rationale-and-expected-outcomes" class="nav-link" data-scroll-target="#infection-dose-ranges-rationale-and-expected-outcomes">Infection dose ranges, rationale, and expected outcomes</a></li>
-  <li><a href="#expected-nlc-dynamics-in-the-liver" id="toc-expected-nlc-dynamics-in-the-liver" class="nav-link" data-scroll-target="#expected-nlc-dynamics-in-the-liver">Expected NLC dynamics in the liver</a>
-  <ul class="collapse">
-  <li><a href="#lcmv-we-2-10⁴-pfu-i.v." id="toc-lcmv-we-2-10⁴-pfu-i.v." class="nav-link" data-scroll-target="#lcmv-we-2-10⁴-pfu-i.v.">LCMV-WE (2 × 10⁴ PFU i.v.)</a></li>
-  <li><a href="#lcmv-clone-13-2-10⁶-pfu-i.v." id="toc-lcmv-clone-13-2-10⁶-pfu-i.v." class="nav-link" data-scroll-target="#lcmv-clone-13-2-10⁶-pfu-i.v.">LCMV-Clone 13 (2 × 10⁶ PFU i.v.)</a></li>
-  </ul></li>
-  <li><a href="#experimental-design-guidance" id="toc-experimental-design-guidance" class="nav-link" data-scroll-target="#experimental-design-guidance">Experimental design guidance</a></li>
-  <li><a href="#buffers-used" id="toc-buffers-used" class="nav-link" data-scroll-target="#buffers-used">Buffers used</a></li>
-  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#storage-and-stability" id="toc-storage-and-stability" class="nav-link" data-scroll-target="#storage-and-stability">Storage and stability</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
   <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_lcmv_infection.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="buf_mus_liver_digestion.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">LCMV Infection Models (WE, Clone 13, Docile, Armstrong)</h1>
+<h1 class="title">Mouse Liver Digestion Buffer</h1>
 <p class="subtitle lead">Abdullah Lab, IMMEI, University Hospital Bonn</p>
 </div>
 
 <div>
   <div class="description">
-    Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes.
+    Collagenase and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue. Supports Collagenase D or Collagenase IV in a DMEM, PBS, or HBSS base.
   </div>
 </div>
 
@@ -376,7 +363,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 21, 2026</p>
+      <p class="date">August 5, 2026</p>
     </div>
   </div>
   
@@ -388,225 +375,14 @@ window.Quarto = {
 </header>
 
 
-<p><strong>Protocol ID:</strong> MUS-INF-LCMV<br>
-<strong>Version:</strong> v1.1<br>
-<strong>Author:</strong> Dillon Corvino</p>
+<p><strong>Protocol ID:</strong> BUF-LIV-DIG <strong>Version:</strong> v1.0 <strong>Author:</strong> Dillon Corvino</p>
 <section id="purpose" class="level1">
 <h1>Purpose</h1>
-<p>This protocol describes standardized mouse infection procedures using lymphocytic choriomeningitis virus (LCMV), with primary emphasis on <strong>LCMV-WE</strong> and <strong>LCMV-Clone 13</strong>, and additional reference to <strong>LCMV-Docile</strong> and <strong>LCMV-Armstrong</strong>.</p>
-<p>The protocol defines virus handling, dilution, injection parameters, infection doses, and sampling windows, with specific annotation of <strong>liver NLC (NK-like cell) dynamics</strong> to guide optimal experimental design.</p>
+<p>This buffer is used for enzymatic digestion of mouse liver tissue to generate viable single-cell suspensions. It contains a collagenase and DNase I at working concentrations suitable for dissociating liver parenchyma while preserving lymphocyte viability.</p>
+<p>This single buffer replaces the former separate Collagenase D and Collagenase IV documents (<code>BUF-LIV-DIG-COL-D</code>, <code>BUF-LIV-DIG-COL-IV</code>, both retired at v2.0 of <code>MUS-LIV-DIG</code>).</p>
 </section>
-<section id="critical-notes-read-before-starting" class="level1">
-<h1>Critical notes (read before starting)</h1>
-<ul>
-<li>All LCMV work must be performed under <strong>approved animal and biosafety protocols</strong>.</li>
-<li>Virus stocks must be <strong>titered, aliquoted, and freeze–thaw limited</strong>.</li>
-<li>Infection dose and route strongly influence antigen load and immune kinetics.</li>
-<li><strong>NLC dynamics differ markedly between WE and Clone 13</strong>, requiring strain-specific sampling strategies.</li>
-<li>Late timepoints (&gt; day 7) in Clone 13 infection are <strong>suboptimal for NLC-focused analyses</strong>.</li>
-</ul>
-</section>
-<section id="approximate-timing" class="level1">
-<h1>Approximate timing</h1>
-<ul>
-<li>Virus thawing and dilution: <strong>5–10 min</strong></li>
-<li>Intravenous injection: <strong>~1–2 min per mouse</strong></li>
-<li>Acute infection window: <strong>days 0–15</strong></li>
-<li>Chronic infection window: <strong>days 0–30+</strong></li>
-</ul>
-<div style="page-break-after: always;"></div>
-<div style="page-break-after: always;"></div>
-</section>
-<section id="procedure" class="level1">
-<h1>Procedure</h1>
-<section id="virus-stock-handling-and-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="virus-stock-handling-and-preparation">Virus stock handling and preparation</h2>
-<p>LCMV-WE, LCMV-Clone 13, LCMV-Docile, and LCMV-Armstrong virus stocks are propagated and titrated as previously described in the literature and internal Abdullah Lab SOPs.</p>
-<ul>
-<li>Virus stocks are stored at <strong>−80 °C</strong> in single-use aliquots.</li>
-<li>Repeated freeze–thaw cycles must be avoided.</li>
-</ul>
-<section id="thawing" class="level3">
-<h3 class="anchored" data-anchor-id="thawing">Thawing</h3>
-<ul>
-<li>Virus aliquots are <strong>rapidly thawed immediately before use</strong>.</li>
-<li>Thawing is performed in a <strong>37 °C water bath</strong> until the aliquot is just thawed.</li>
-<li>Aliquots are removed promptly from the water bath and placed <strong>immediately on ice</strong>.</li>
-<li>Virus is kept on ice during dilution and injection.</li>
-<li>Repeated freeze–thaw cycles must be avoided.</li>
-</ul>
-</section>
-<section id="dilution-buffer" class="level3">
-<h3 class="anchored" data-anchor-id="dilution-buffer">Dilution buffer</h3>
-<ul>
-<li>Virus stocks are diluted in <strong>sterile, endotoxin-free PBS</strong>.</li>
-<li>No serum or supplements are added unless explicitly required by internal SOP.</li>
-<li>Dilutions are prepared <strong>fresh on the day of infection</strong>.</li>
-</ul>
-</section>
-</section>
-<section id="infection-doses-and-routes" class="level2">
-<h2 class="anchored" data-anchor-id="infection-doses-and-routes">Infection doses and routes</h2>
-<p>Mice are infected <strong>intravenously (i.v.)</strong> via the lateral tail vein using the following Abdullah Lab standard doses:</p>
-<ul>
-<li><p><strong>LCMV-Clone 13:</strong> <strong>2 × 10⁶ plaque-forming units (PFU)</strong></p></li>
-<li><p><strong>LCMV-WE:</strong> <strong>2 × 10⁴ plaque-forming units (PFU)</strong></p></li>
-<li><p><strong>LCMV-Armstrong:</strong> <strong>2 × 10⁴ plaque-forming units (PFU)</strong></p></li>
-<li><p><strong>LCMV-Docile:</strong> <strong>2 × 10^6 plaque-forming units (PFU)</strong></p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>LCMV-Armstrong — route note:</strong> The standard Abdullah Lab dose for Armstrong is <strong>2 × 10⁴ PFU i.v.</strong> (Anna’s protocol). The broader literature typically uses <strong>1 × 10⁴ – 2 × 10⁵ PFU administered intraperitoneally (i.p.)</strong> for acute infection and memory studies. The i.p. route is the most common in published Armstrong protocols. The i.v. route used here differs from the literature standard — this should be noted when comparing outcomes across studies.</p>
-</div>
-</div>
-<section id="injection-parameters" class="level3">
-<h3 class="anchored" data-anchor-id="injection-parameters">Injection parameters</h3>
-<ul>
-<li><strong>Injection volume:</strong> <strong>200 µL per mouse</strong></li>
-<li><strong>Syringe:</strong> insulin syringe</li>
-<li><strong>Needle gauge:</strong> <strong>27G–30G</strong></li>
-<li>Injections are performed slowly to ensure proper intravenous delivery.</li>
-<li>Successful i.v. injection is confirmed by lack of resistance and absence of subcutaneous bleb formation.</li>
-</ul>
-</section>
-</section>
-<section id="post-infection-monitoring" class="level2">
-<h2 class="anchored" data-anchor-id="post-infection-monitoring">Post-infection monitoring</h2>
-<ul>
-<li>Body weight and general health are monitored daily during the first week post infection.</li>
-<li>Monitoring frequency is adjusted according to infection severity and institutional guidelines.</li>
-<li>Humane endpoints are applied as defined in approved protocols.</li>
-</ul>
-</section>
-</section>
-<section id="infection-dose-ranges-rationale-and-expected-outcomes" class="level1">
-<h1>Infection dose ranges, rationale, and expected outcomes</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Virus strain</th>
-<th>Dose range (PFU, literature)</th>
-<th>Route (literature)</th>
-<th>Rationale for low vs high dose</th>
-<th>Expected outcome</th>
-<th>Abdullah Lab standard</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Armstrong</strong></td>
-<td>~1 × 10⁴ – 2 × 10⁵</td>
-<td><strong>i.p.</strong> (literature standard)</td>
-<td>Low–moderate dose to induce acute infection with rapid immune control</td>
-<td>Acute infection; strong effector CD8 response; viral clearance and memory formation</td>
-<td><strong>2 × 10⁴ PFU i.v.</strong> (Anna’s protocol)</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>2 × 10⁴</strong></td>
-<td>i.v.</td>
-<td></td>
-<td></td>
-<td><strong>Yes</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>WE</strong></td>
-<td>~1 × 10² – 1 × 10³</td>
-<td>i.v.</td>
-<td>Minimal acute infection</td>
-<td>Rapid clearance; limited systemic and hepatic involvement</td>
-<td>–</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>2 × 10⁴</strong></td>
-<td>i.v.</td>
-<td>Intermediate dose to ensure robust systemic infection without chronic persistence</td>
-<td>Strong liver immune response; sustained NLC accumulation</td>
-<td><strong>Yes</strong></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>~1 × 10⁶</td>
-<td>i.v.</td>
-<td>High-dose systemic challenge used in comparative studies</td>
-<td>Severe acute disease; heightened inflammation</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td><strong>Clone 13</strong></td>
-<td><strong>2 × 10⁶</strong></td>
-<td>i.v.</td>
-<td>High antigen load to enforce chronic infection and exhaustion</td>
-<td>Persistent infection; CD8 exhaustion program</td>
-<td><strong>Yes</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>Docile</strong></td>
-<td>~1 × 10⁵</td>
-<td>i.v./i.p.</td>
-<td>Moderate dose allowing partial control</td>
-<td>Semi-chronic infection; intermediate exhaustion</td>
-<td>–</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>2 × 10⁶</strong></td>
-<td>i.v.</td>
-<td>High-dose infection to drive persistent antigen exposure</td>
-<td>Chronic infection; exhaustion-prone immune response</td>
-<td><strong>Yes</strong></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="expected-nlc-dynamics-in-the-liver" class="level1">
-<h1>Expected NLC dynamics in the liver</h1>
-<section id="lcmv-we-2-10⁴-pfu-i.v." class="level2">
-<h2 class="anchored" data-anchor-id="lcmv-we-2-10⁴-pfu-i.v.">LCMV-WE (2 × 10⁴ PFU i.v.)</h2>
-<ul>
-<li>NLCs accumulate prominently in the liver.</li>
-<li>Peak frequency occurs at approximately <strong>day 7 post infection</strong>.</li>
-<li>Elevated NLC levels are <strong>maintained through at least day 30 post infection</strong>.</li>
-<li>This model supports <strong>both early and long-term NLC analyses</strong>.</li>
-</ul>
-</section>
-<section id="lcmv-clone-13-2-10⁶-pfu-i.v." class="level2">
-<h2 class="anchored" data-anchor-id="lcmv-clone-13-2-10⁶-pfu-i.v.">LCMV-Clone 13 (2 × 10⁶ PFU i.v.)</h2>
-<ul>
-<li>NLCs peak <strong>early</strong>, around <strong>day 5 post infection</strong>.</li>
-<li>A <strong>sharp contraction occurs by ~day 7</strong>, followed by gradual decline through day 30.</li>
-<li>The effective experimental window for NLC analysis is <strong>day 4–7 post infection</strong>.</li>
-<li>Sampling outside this window will substantially underestimate NLC abundance.</li>
-</ul>
-</section>
-</section>
-<section id="experimental-design-guidance" class="level1">
-<h1>Experimental design guidance</h1>
-<ul>
-<li>For studies requiring <strong>broad or late NLC sampling</strong>, LCMV-WE is preferred.</li>
-<li>For studies focused on <strong>early inflammatory or antigen-rich environments</strong>, Clone 13 is appropriate but requires tight temporal control.</li>
-<li>Direct comparisons between WE and Clone 13 must account for <strong>non-overlapping NLC kinetics</strong>.</li>
-</ul>
-</section>
-<section id="buffers-used" class="level1">
-<h1>Buffers used</h1>
+<section id="linked-protocols" class="level1">
+<h1>Linked protocols</h1>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'ggplot2' was built under R version 4.5.2</code></pre>
@@ -630,28 +406,274 @@ Note
 <pre><code>Warning: package 'lubridate' was built under R version 4.5.2</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>None</code></pre>
+<pre><code>- `MUS-LIV-DIG`</code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="choice-of-collagenase-and-base-medium" class="level1">
+<h1>Choice of collagenase and base medium</h1>
+<p>Two collagenases are in routine use. They are <strong>not interchangeable at the same concentration</strong> — Collagenase D is used at <strong>twice</strong> the concentration of Collagenase IV.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Enzyme</th>
+<th>Working concentration</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collagenase D</strong></td>
+<td><strong>1 mg/mL</strong></td>
+<td>Roche 11088858001; supplied as lyophilised powder</td>
+</tr>
+<tr class="even">
+<td><strong>Collagenase IV</strong></td>
+<td><strong>0.5 mg/mL</strong></td>
+<td>Half the concentration used for Collagenase D</td>
+</tr>
+</tbody>
+</table>
+<p><strong>DNase I is 50 ug/mL for both.</strong></p>
+<p>The base medium may be <strong>DMEM (incomplete)</strong>, <strong>PBS 1x</strong>, or <strong>HBSS 1x</strong> — these are interchangeable for this application. Use whichever is on hand; HBSS and PBS avoid the phenol red background in DMEM if that matters downstream.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do <strong>not</strong> use an EDTA-containing buffer (e.g.&nbsp;MACS Buffer) as the base medium, and do not perfuse the liver with one. Collagenases are Ca2+/Zn2+-dependent metalloproteases and EDTA chelates these cofactors, inhibiting digestion.</p>
 </div>
 </div>
 </section>
-<section id="safety-brief" class="level1">
-<h1>Safety (brief)</h1>
+<section id="working-buffer-composition" class="level1">
+<h1>Working buffer composition</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 12%">
+<col style="width: 30%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Enzyme</th>
+<th style="text-align: left;">Final volume (mL)</th>
+<th style="text-align: left;">Base medium</th>
+<th style="text-align: left;">Collagenase (100 mg/mL stock)</th>
+<th style="text-align: left;">DNase I (10 mg/mL stock)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Collagenase D</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">to 1 mL</td>
+<td style="text-align: left;">10 uL</td>
+<td style="text-align: left;">5 uL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Collagenase D</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">to 5 mL</td>
+<td style="text-align: left;">50 uL</td>
+<td style="text-align: left;">25 uL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Collagenase D</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">to 10 mL</td>
+<td style="text-align: left;">100 uL</td>
+<td style="text-align: left;">50 uL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Collagenase D</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">to 25 mL</td>
+<td style="text-align: left;">250 uL</td>
+<td style="text-align: left;">125 uL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Collagenase D</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">to 50 mL</td>
+<td style="text-align: left;">500 uL</td>
+<td style="text-align: left;">250 uL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Collagenase IV</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">to 1 mL</td>
+<td style="text-align: left;">5 uL</td>
+<td style="text-align: left;">5 uL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Collagenase IV</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">to 5 mL</td>
+<td style="text-align: left;">25 uL</td>
+<td style="text-align: left;">25 uL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Collagenase IV</td>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;">to 10 mL</td>
+<td style="text-align: left;">50 uL</td>
+<td style="text-align: left;">50 uL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Collagenase IV</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">to 25 mL</td>
+<td style="text-align: left;">125 uL</td>
+<td style="text-align: left;">125 uL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Collagenase IV</td>
+<td style="text-align: left;">50</td>
+<td style="text-align: left;">to 50 mL</td>
+<td style="text-align: left;">250 uL</td>
+<td style="text-align: left;">250 uL</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><strong>5 mL of working buffer is required per liver.</strong></p>
+</section>
+<section id="preparation" class="level1">
+<h1>Preparation</h1>
+<section id="stock-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="stock-solutions">Stock solutions</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Stock concentration</th>
+<th>Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collagenase D or IV</td>
+<td>100 mg/mL in sterile PBS</td>
+<td>Aliquot at -20 °C</td>
+</tr>
+<tr class="even">
+<td>DNase I</td>
+<td>10 mg/mL</td>
+<td>Aliquot at -20 °C; avoid repeated freeze-thaw</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="reconstitution-of-collagenase-powder" class="level2">
+<h2 class="anchored" data-anchor-id="reconstitution-of-collagenase-powder">Reconstitution of Collagenase powder</h2>
+<p>Collagenase D is supplied as a <strong>lyophilised powder</strong> and must be reconstituted before use.</p>
+<ol type="1">
+<li>Add <strong>1 mL sterile PBS 1x</strong> directly to a vial containing <strong>100 mg</strong> Collagenase powder.</li>
+<li>Swirl gently until fully dissolved; <strong>do not vortex</strong>.</li>
+<li>This yields a <strong>100 mg/mL</strong> stock.</li>
+<li>Aliquot into single-use volumes and store at <strong>-20 °C</strong>, labelled with enzyme, concentration, date, and initials.</li>
+</ol>
+</section>
+<section id="preparation-of-working-buffer" class="level2">
+<h2 class="anchored" data-anchor-id="preparation-of-working-buffer">Preparation of working buffer</h2>
+<ol type="1">
+<li>Thaw collagenase and DNase I aliquots on ice.</li>
+<li>Add the base medium (DMEM, PBS, or HBSS) to a sterile tube.</li>
+<li>Add collagenase and DNase I per the table above.</li>
+<li>Mix gently by inversion; <strong>do not vortex</strong>.</li>
+<li>Pre-warm to <strong>37 °C</strong> immediately before use.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Collagenase-only buffer (without DNase) may be prepared in advance and frozen in aliquots. Add DNase I fresh on the day of use.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="storage-and-stability" class="level1">
+<h1>Storage and stability</h1>
 <ul>
-<li>All animal procedures must comply with approved animal licences and institutional regulations.</li>
-<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
-<li>Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.</li>
-<li>Perform virus handling, injections, and tissue processing in accordance with institutional biosafety guidelines.</li>
-<li>Dispose of viral waste and contaminated materials according to local biosafety regulations.</li>
+<li>Keep freshly prepared working buffer <strong>on ice</strong> until pre-warming for use.</li>
+<li>Do <strong>not</strong> freeze buffer after DNase I has been added.</li>
+<li>Discard unused working buffer at the end of the day.</li>
 </ul>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Cat. #</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Collagenase D</td>
+<td>Roche, Basel, Switzerland</td>
+<td>11088858001</td>
+</tr>
+<tr class="even">
+<td>Collagenase IV</td>
+<td>[TBD]</td>
+<td>[TBD]</td>
+</tr>
+<tr class="odd">
+<td>DNase I</td>
+<td>Sigma-Aldrich, Merck</td>
+<td>DN25-100MG</td>
+</tr>
+<tr class="even">
+<td>DMEM (incomplete)</td>
+<td>[TBD]</td>
+<td>[TBD]</td>
+</tr>
+<tr class="odd">
+<td>HBSS 1x</td>
+<td>PAN-Biotech, Aidenbach, Germany</td>
+<td>P04-34500</td>
+</tr>
+<tr class="even">
+<td>DPBS, no Ca / no Mg</td>
+<td>Gibco, ThermoFisher</td>
+<td>14190-094</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="version-history" class="level1">
 <h1>Version history</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 35%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -664,15 +686,9 @@ Note
 <tbody>
 <tr class="odd">
 <td>v1.0</td>
-<td>2026-01-09</td>
+<td>2026-08-05</td>
 <td>Dillon Corvino</td>
-<td>Initial LCMV infection protocol (WE, Clone 13, Docile, Armstrong)</td>
-</tr>
-<tr class="even">
-<td>v1.1</td>
-<td>2026-04-13</td>
-<td>Dillon Corvino</td>
-<td>Added Armstrong as Abdullah Lab standard (2 × 10⁴ PFU i.v., Anna’s protocol); added route note clarifying i.p. vs i.v. difference from literature; added Route column to dose table</td>
+<td>Created by merging <code>BUF-LIV-DIG-COL-D</code> and <code>BUF-LIV-DIG-COL-IV</code>. DNase I raised to 50 ug/mL for both enzymes (was 10 ug/mL for Col D, 25 ug/mL for Col IV). Base medium stated as DMEM, PBS, or HBSS.</td>
 </tr>
 </tbody>
 </table>

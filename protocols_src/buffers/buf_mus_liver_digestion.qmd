@@ -1,0 +1,164 @@
+---
+title: "Mouse Liver Digestion Buffer"
+subtitle: "Abdullah Lab, IMMEI, University Hospital Bonn"
+protocol_id: "BUF-LIV-DIG"
+version: "v1.0"
+date: "2026-08-05"
+description: "Collagenase and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue. Supports Collagenase D or Collagenase IV in a DMEM, PBS, or HBSS base."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+
+# Purpose
+
+This buffer is used for enzymatic digestion of mouse liver tissue to generate viable single-cell suspensions. It contains a collagenase and DNase I at working concentrations suitable for dissociating liver parenchyma while preserving lymphocyte viability.
+
+This single buffer replaces the former separate Collagenase D and Collagenase IV documents (`BUF-LIV-DIG-COL-D`, `BUF-LIV-DIG-COL-IV`, both retired at v2.0 of `MUS-LIV-DIG`).
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+this_buffer <- rmarkdown::metadata$protocol_id
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+
+linked <- deps |>
+  filter(buffer_id == this_buffer) |>
+  distinct(protocol_id)
+
+if (nrow(linked) == 0) {
+  cat("None\n")
+} else {
+  linked |>
+    mutate(line = glue::glue("- `{protocol_id}`")) |>
+    pull(line) |>
+    cat(sep = "\n")
+}
+```
+
+---
+
+# Choice of collagenase and base medium
+
+Two collagenases are in routine use. They are **not interchangeable at the same concentration** — Collagenase D is used at **twice** the concentration of Collagenase IV.
+
+| Enzyme | Working concentration | Notes |
+|---|---|---|
+| **Collagenase D** | **1 mg/mL** | Roche 11088858001; supplied as lyophilised powder |
+| **Collagenase IV** | **0.5 mg/mL** | Half the concentration used for Collagenase D |
+
+**DNase I is 50 ug/mL for both.**
+
+The base medium may be **DMEM (incomplete)**, **PBS 1x**, or **HBSS 1x** — these are interchangeable for this application. Use whichever is on hand; HBSS and PBS avoid the phenol red background in DMEM if that matters downstream.
+
+::: callout-important
+Do **not** use an EDTA-containing buffer (e.g. MACS Buffer) as the base medium, and do not perfuse the liver with one. Collagenases are Ca2+/Zn2+-dependent metalloproteases and EDTA chelates these cofactors, inhibiting digestion.
+:::
+
+# Working buffer composition
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+# ---- inputs (edit here) ----
+collagenaseStockMgMl <- 100      # mg/mL
+dnaseStockMgMl       <- 10       # mg/mL
+dnaseFinalUgMl       <- 50       # ug/mL, both enzymes
+volumesMl            <- c(1, 5, 10, 25, 50)
+enzymes.df <- tibble::tibble(
+  enzyme      = c("Collagenase D", "Collagenase IV"),
+  finalMgMl   = c(1, 0.5)
+)
+# ----------------------------
+
+recipe.df <- tidyr::expand_grid(enzymes.df, volumeMl = volumesMl) |>
+  dplyr::mutate(
+    collagenaseUl = finalMgMl * volumeMl / collagenaseStockMgMl * 1000,
+    dnaseUl       = (dnaseFinalUgMl / 1000) * volumeMl / dnaseStockMgMl * 1000
+  )
+
+# verify the arithmetic reproduces the target concentrations exactly
+stopifnot(all(abs(recipe.df$collagenaseUl / 1000 * collagenaseStockMgMl /
+                    recipe.df$volumeMl - recipe.df$finalMgMl) < 1e-9))
+stopifnot(all(abs(recipe.df$dnaseUl / 1000 * dnaseStockMgMl /
+                    recipe.df$volumeMl * 1000 - dnaseFinalUgMl) < 1e-9))
+
+recipe.df |>
+  dplyr::mutate(
+    baseMedium    = paste0("to ", scales::comma(volumeMl), " mL"),
+    collagenaseUl = paste0(scales::comma(collagenaseUl), " uL"),
+    dnaseUl       = paste0(scales::comma(dnaseUl), " uL")
+  ) |>
+  dplyr::select(enzyme, volumeMl, baseMedium, collagenaseUl, dnaseUl) |>
+  knitr::kable(
+    align = "l",
+    col.names = c("Enzyme", "Final volume (mL)", "Base medium",
+                  "Collagenase (100 mg/mL stock)", "DNase I (10 mg/mL stock)")
+  )
+```
+
+**5 mL of working buffer is required per liver.**
+
+# Preparation
+
+## Stock solutions
+
+| Reagent | Stock concentration | Storage |
+|---|---|---|
+| Collagenase D or IV | 100 mg/mL in sterile PBS | Aliquot at -20 °C |
+| DNase I | 10 mg/mL | Aliquot at -20 °C; avoid repeated freeze-thaw |
+
+## Reconstitution of Collagenase powder
+
+Collagenase D is supplied as a **lyophilised powder** and must be reconstituted before use.
+
+1. Add **1 mL sterile PBS 1x** directly to a vial containing **100 mg** Collagenase powder.
+2. Swirl gently until fully dissolved; **do not vortex**.
+3. This yields a **100 mg/mL** stock.
+4. Aliquot into single-use volumes and store at **-20 °C**, labelled with enzyme, concentration, date, and initials.
+
+## Preparation of working buffer
+
+1. Thaw collagenase and DNase I aliquots on ice.
+2. Add the base medium (DMEM, PBS, or HBSS) to a sterile tube.
+3. Add collagenase and DNase I per the table above.
+4. Mix gently by inversion; **do not vortex**.
+5. Pre-warm to **37 °C** immediately before use.
+
+::: callout-note
+Collagenase-only buffer (without DNase) may be prepared in advance and frozen in aliquots. Add DNase I fresh on the day of use.
+:::
+
+# Storage and stability
+
+- Keep freshly prepared working buffer **on ice** until pre-warming for use.
+- Do **not** freeze buffer after DNase I has been added.
+- Discard unused working buffer at the end of the day.
+
+# Materials
+
+| Reagent | Supplier | Cat. # |
+|---|---|---|
+| Collagenase D | Roche, Basel, Switzerland | 11088858001 |
+| Collagenase IV | [TBD] | [TBD] |
+| DNase I | Sigma-Aldrich, Merck | DN25-100MG |
+| DMEM (incomplete) | [TBD] | [TBD] |
+| HBSS 1x | PAN-Biotech, Aidenbach, Germany | P04-34500 |
+| DPBS, no Ca / no Mg | Gibco, ThermoFisher | 14190-094 |
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---|---|---|---|
+| v1.0 | 2026-08-05 | Dillon Corvino | Created by merging `BUF-LIV-DIG-COL-D` and `BUF-LIV-DIG-COL-IV`. DNase I raised to 50 ug/mL for both enzymes (was 10 ug/mL for Col D, 25 ug/mL for Col IV). Base medium stated as DMEM, PBS, or HBSS. |

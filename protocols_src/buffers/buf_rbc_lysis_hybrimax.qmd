@@ -1,0 +1,101 @@
+---
+title: "RBC Lysis Buffer (Hybrimax / Commercial)"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-RBC-HYB"
+version: "v1.1"
+date: "2026-09-18"
+description: "Red blood cell lysis buffer based on commercial HybriMax or equivalent RBC lysis reagent."
+summary:
+  final_volume: "0.5 mL per sample (as used in `MUS-LIV-DIG`)"
+  components:
+    - name: "RBC Lysis Buffer (HybriMax), 1x ready-to-use"
+      amount: "as supplied"
+  prep_note: "If supplied as concentrate, dilute to 1x per manufacturer instructions before use."
+  storage: "2-8C per manufacturer instructions; do not freeze unless explicitly supported"
+  caveat: "Used at 0.5 mL of 1x buffer per sample with a 7-minute room-temperature incubation in `MUS-LIV-DIG` - adapt incubation time if switching supplier."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+This buffer is used to lyse red blood cells in single-cell suspensions derived from liver (and other tissues, if applicable) while aiming to preserve leukocyte populations for downstream analysis.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+This protocol assumes the use of a **commercially supplied RBC lysis buffer**, such as:
+
+- **HybriMax RBC lysis buffer** (Sigma), used at 1x working strength.
+
+If an alternative supplier is used (e.g. BioLegend RBC Lysis Buffer), document the product and use according to manufacturer instructions, adapting incubation times as internally validated.
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — this reagent is not diluted from an internal stock. It is either used directly as supplied (ready-to-use 1x) or diluted straight to working strength from a commercial concentrate (see B).
+
+## B. Preparation of working buffer
+
+1. Confirm whether the commercial HybriMax RBC lysis buffer is supplied as **ready-to-use (1x)** or **concentrate (e.g. 10x)**.
+2. If supplied as **1x solution**:
+   - Aliquot into smaller working volumes (e.g. 5-10 mL) to avoid repeated bottle opening.
+   - No further dilution is required.
+3. If supplied as **concentrate (e.g. 10x)**:
+   - Dilute with sterile water or buffer as per manufacturer's instructions to make **1x RBC lysis solution**.
+   - Mix thoroughly.
+4. Label aliquots with:
+   - "RBC Lysis Buffer (HybriMax)"
+   - 1x or stock concentration
+   - Date of preparation
+   - Version (`BUF-RBC-HYB`)
+
+::: {.callout-note}
+The liver protocol `LIV-001` uses **0.5 mL of 1x RBC lysis buffer per sample** after Percoll enrichment, with a **7-minute** incubation at room temperature.
+:::
+
+# Storage and stability
+
+- Store the commercial RBC lysis buffer according to manufacturer’s instructions (commonly at **2–8 °C**).
+- Keep tightly closed to avoid evaporation and contamination.
+- Aliquoted 1x working solution should also be stored at **2–8 °C** and used within the period recommended by the manufacturer or internal validation.
+- Do not freeze unless explicitly supported by the manufacturer.
+
+# Reagent details
+
+| Component                    | Supplier | Cat# | Notes |
+|-----------------------------|----------|------|-------|
+| HybriMax RBC lysis buffer   | [TBD]    | [TBD]| Commercial RBC lysis buffer; used at 1x working concentration |
+
+(If using a different brand, add a row or update Supplier/Cat# accordingly.)
+
+# Safety (brief)
+
+- RBC lysis buffers typically contain detergents and may contain **sodium azide** or other toxic components.
+- Handle with gloves and standard lab PPE.
+- Avoid contact with eyes and skin; consult the manufacturer’s safety data sheet (SDS).
+- Dispose of RBC-lysis waste and contaminated consumables in accordance with local chemical and biohazard regulations.
+
+# Version history
+
+| Version | Date       | Author          | Change summary           |
+|---------|------------|-----------------|--------------------------|
+| v1.0    | 2025-11-20 | Dillon Corvino  | Initial buffer definition |
+| v1.1    | 2026-09-18 | Dillon Corvino  | Migrated to shared summary:/helper architecture (buffer/protocol redesign). |

@@ -1,0 +1,151 @@
+---
+title: "NK Cell Culture Medium (cRPMI for Murine NK Cells)"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-NK-MED"
+version: "v1.1"
+date: "2026-09-18"
+description: "Complete NK culture medium (cRPMI) for murine NK cells, including RPMI 1640 supplemented with FCS, antibiotics, HEPES, sodium pyruvate, NEAA, and beta-mercaptoethanol. IL-15 is added fresh at the time of culture and is not included in the stored base medium."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "RPMI 1640"
+      amount: "to 500 mL"
+    - name: "Fetal calf serum (FCS)"
+      amount: "10% (v/v)"
+    - name: "Penicillin/Streptomycin"
+      amount: "1% (v/v)"
+    - name: "HEPES"
+      amount: "10 mM (~1% v/v)"
+    - name: "Sodium pyruvate"
+      amount: "1 mM (1% v/v)"
+    - name: "Non-essential amino acids (NEAA)"
+      amount: "1% (v/v)"
+    - name: "beta-mercaptoethanol"
+      amount: "50 uM"
+  prep_note: "Mix gently by inversion; do not vortex. IL-15 is added fresh (100 IU/mL) immediately before plating cells and is not part of the stored base medium."
+  storage: "4C, protected from light, 4-5 weeks; do not freeze"
+  caveat: "IL-15 must not be stored in the base medium - add fresh immediately prior to culture."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+This medium is used for in vitro culture and proliferation assays of murine NK cells. It is based on complete RPMI 1640 supplemented with nutrients essential for lymphocyte viability and proliferation. **IL-15 is added fresh immediately before plating cells** and is not included in the stock medium.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+---
+
+# Working buffer composition
+
+| Component                 | Final concentration | Notes                                        |
+|---------------------------|---------------------|----------------------------------------------|
+| RPMI 1640                 | —                   | Base medium                                  |
+| Fetal calf serum (FCS)    | 10% (v/v)           | Heat-inactivated                              |
+| Penicillin/Streptomycin  | 1% (v/v)            | 100x stock -> 1x final                         |
+| HEPES                    | 10 mM (~1% v/v)     | Buffering at 37 °C                            |
+| Sodium pyruvate (NaPy)   | 1 mM (1% v/v)       | Energy substrate                              |
+| Non-essential amino acids (NEAA) | 1% (v/v)   | Supports lymphocyte metabolism                |
+| beta-mercaptoethanol (beta-ME) | 50 uM (e.g. 0.05 mM)| Reduces oxidative stress                      |
+
+::: callout-note
+IL-15 is **not included** in this stock medium. It must be added to a final concentration of 100 IU/mL immediately before culturing NK cells.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer from commercial stock reagents. Stock reagents required:
+
+| Reagent                   | Stock concentration | Notes                                    |
+|---------------------------|---------------------|------------------------------------------|
+| RPMI 1640                 | —                   | Sterile-filtered                         |
+| FCS, heat-inactivated     | —                   | 10% final                                 |
+| Pen/Strep                 | 100x                | 1% final                                  |
+| HEPES buffer              | 1 M                 | 10 mM final (~1% v/v)                    |
+| Sodium pyruvate (NaPy)    | 100 mM              | 1 mM final (1% v/v)                      |
+| NEAA                      | 100x                | 1% final                                  |
+| beta-mercaptoethanol      | 50 mM or 14.3 M     | See dilution below                        |
+
+## B. Preparation of working buffer
+
+Preparation of **500 mL NK medium (cRPMI base)**:
+
+1. In a sterile bottle, combine:
+   - **450 mL** RPMI 1640
+   - **50 mL** FCS (10% final)
+2. Add supplements:
+   - **5 mL** Pen/Strep (100x stock -> 1% final)
+   - **5 mL** HEPES (1 M stock -> 10 mM final)
+   - **5 mL** Sodium pyruvate (100 mM stock -> 1 mM final)
+   - **5 mL** NEAA (100x stock -> 1% final)
+3. Add beta-mercaptoethanol:
+   - Final concentration: **50 uM**
+   - If using 50 mM stock: add **0.5 mL**
+   - If using 14.3 M stock: prepare a working dilution before adding
+4. Mix gently by inversion; do **not vortex**.
+5. Label with:
+   - "NK medium (cRPMI base)"
+   - Date of preparation
+   - Expiry (4-5 weeks at 4 °C)
+
+::: callout-warning
+beta-mercaptoethanol is hazardous. Handle it in a fume hood and avoid skin contact. Do not open concentrated beta-ME bottles inside a biosafety cabinet.
+:::
+
+# Usage
+
+- Warm medium to **37 °C** before adding cells.  
+- **Add IL-15 fresh** immediately prior to plating NK cells:  
+  - Final concentration **100 IU/mL**.  
+- Do not store IL-15 in the base medium.
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.
+- Use within **4-5 weeks** of preparation.
+- Do **not freeze**.
+
+# Reagent details
+
+| Reagent             | Supplier | Cat. # | Notes                                   |
+|---------------------|----------|--------|-----------------------------------------|
+| RPMI 1640           | Various  | —      | Base medium                             |
+| FCS                 | Various  | —      | Heat-inactivated                        |
+| Pen/Strep           | Various  | —      | 100x working stock                      |
+| HEPES               | Various  | —      | 1 M stock                               |
+| Sodium pyruvate     | Various  | —      | 100 mM stock                            |
+| NEAA                | Various  | —      | 100x stock                              |
+| beta-mercaptoethanol | Sigma/etc | —      | Handle with caution                     |
+| IL-15 (added fresh) | PeproTech/etc | —  | Not included in base medium             |
+
+# Safety (brief)
+
+- Handle beta-mercaptoethanol and all supplements using gloves and eye protection.
+- beta-ME requires fume hood handling due to volatility.
+- Prepare medium under aseptic conditions inside a biosafety cabinet.
+- Dispose of expired or contaminated medium as biohazardous waste.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                      |
+|--------|------------|----------------|----------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto buffer document for NK medium |
+| v1.1   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign). |

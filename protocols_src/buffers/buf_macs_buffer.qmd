@@ -1,0 +1,100 @@
+---
+title: "MACS Buffer"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-MACS-BUF"
+version: "v1.0"
+date: "2026-09-18"
+description: "PBS + FCS + EDTA buffer for magnetic-activated cell sorting (MACS) and general washes."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "PBS 1x"
+      amount: "to 500 mL"
+    - name: "FCS"
+      amount: "10 mL (2% v/v)"
+    - name: "EDTA (0.5 M)"
+      amount: "2 mL (2 mM final)"
+  prep_note: "Mix gently by inversion."
+  sterile_filter: "0.22 um filter if sterility required"
+  storage: "4C, 4-6 weeks"
+  caveat: "Contains EDTA - do not use for liver perfusion or any step upstream of collagenase digestion (EDTA chelates the Ca2+/Zn2+ cofactors collagenases require). Use FACS Buffer (BUF-FACS-BUF) instead."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+This buffer is used for washing, resuspending, and handling cells during **magnetic-activated cell sorting (MACS)** and general processing. It includes EDTA to prevent cell clumping and nonspecific aggregation during magnetic separation.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+Typical preparation for **500 mL**:
+
+| Component | Stock concentration | Volume for 500 mL | Final concentration | Notes |
+|---|---|---|---|---|
+| PBS 1x | — | 488 mL | — | Base buffer |
+| FCS | — | 10 mL | 2% (v/v) | Heat-inactivated if required |
+| EDTA | 0.5 M | 2 mL | 2 mM | Sterile stock |
+
+::: callout-important
+Do **not** use MACS Buffer for liver perfusion or for any step upstream of collagenase digestion. EDTA chelates the Ca2+/Zn2+ cofactors collagenases require, inhibiting digestion. Use FACS Buffer (`BUF-FACS-BUF`) or PBS for those steps.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+1. Start with sterile **PBS 1x** in an appropriate bottle.
+2. Add **FCS** to achieve **2% (v/v)**.
+3. Add **EDTA** to a final concentration of **2 mM**.
+4. Mix gently by inversion.
+5. If sterility is required, filter through a **0.22 um filter** into a sterile storage bottle.
+6. Label clearly with buffer name, date of preparation, initials, and sterile/non-sterile status.
+
+# Storage and stability
+
+- Store at **4 °C**.
+- Recommended use within **4–6 weeks**, subject to internal QC and sterility checks.
+- Invert gently before use to resuspend any settled components.
+- Avoid repeated temperature cycling; prepare smaller working aliquots if accessed frequently.
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| PBS 1x | [TBD] | [TBD] | Sterile, Ca2+/Mg2+-free recommended |
+| FCS | [TBD] | [TBD] | Heat-inactivated if required |
+| EDTA 0.5 M | [TBD] | [TBD] | Sterile stock; pH ~8.0 |
+
+# Safety (brief)
+
+- Handle biological samples in MACS buffer according to institutional biosafety rules.
+- FCS is of animal origin and should be treated as a potential biohazard.
+- EDTA is of low toxicity at working concentrations but should be handled with standard laboratory PPE.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---|---|---|---|
+| v1.0 | 2026-09-18 | Dillon Corvino | Split out of `BUF-FACS-MACS` (formerly `buf_facs_macs_buffer.qmd`) so each buffer_id maps to exactly one recipe. |

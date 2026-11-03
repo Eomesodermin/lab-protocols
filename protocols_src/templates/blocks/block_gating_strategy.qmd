@@ -1,0 +1,10 @@
+### Gating strategy
+
+1. FSC/SSC — lymphocyte gate
+2. Singlets
+3. Live cells (viability dye negative)
+4. [Population gate — e.g. CD45+]
+5. [Marker 1 vs Marker 2]
+6. [Target population]
+
+---

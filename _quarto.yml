@@ -1,0 +1,77 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - protocols_src/templates/*
+    - protocols_src/resources/*.html
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
+    - "!protocols_src/templates/blocks/"
+
+website:
+  title: "Protocol Library"
+  bread-crumbs: true
+
+  navbar:
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Mouse"
+        href: protocols_src/mouse/index.qmd
+      - text: "Buffers"
+        href: protocols_src/buffers/index.qmd
+      - text: "General"
+        href: protocols_src/general/index.qmd
+
+  sidebar:
+    style: "floating"
+    contents:
+      - href: index.qmd
+        text: "Overview"
+        icon: house
+
+      - href: protocols_src/buffers/index.qmd
+        text: "Buffers"
+        icon: droplet
+
+      - href: protocols_src/general/index.qmd
+        text: "General"
+        icon: gear
+
+      - href: protocols_src/human/index.qmd
+        text: "Human"
+        icon: person
+
+      - href: protocols_src/mouse/index.qmd
+        text: "Mouse"
+        icon: mouse
+
+      - href: protocols_src/resources/index.qmd
+        text: "Resources"
+        icon: link-45deg
+
+      - href: protocols_src/templates/index.qmd
+        text: "Templates"
+        icon: file-earmark-spreadsheet
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    math: mathjax
+    toc: true
+    back-to-top: true
+    format-links: [pdf]
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+  pdf:
+    toc: false
+    pdf-engine: xelatex
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false

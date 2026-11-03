@@ -1,0 +1,102 @@
+---
+title: "BHK Cell and Virus Propagation Medium"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-BHK-PROP"
+version: "v1.1"
+date: "2026-09-18"
+description: "This medium is used for propagation of BHK-21 cells and for LCMV production workflows."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "DMEM, high glucose"
+      amount: "500 mL"
+    - name: "200 mM L-glutamine"
+      amount: "10 mL"
+    - name: "Heat-inactivated FBS (56C, 30 min)"
+      amount: "50 mL (10%)"
+    - name: "Tryptose phosphate broth"
+      amount: "25 mL (5%)"
+    - name: "Pen/Strep (10,000 U/mL penicillin G, 10,000 ug/mL streptomycin)"
+      amount: "5 mL"
+  prep_note: "Warm medium to 37C before use."
+  storage: "4C, up to 4 weeks"
+  sterile_filter: "Do not filter-sterilize after adding FBS - assemble using sterile technique instead."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+This medium is used for propagation of BHK-21 cells and for LCMV production workflows.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+**Final volume: 500 mL**
+
+| Component | Amount |
+|----------|--------|
+| DMEM, high glucose | 500 mL |
+| 200 mM L-glutamine | 10 mL |
+| Heat-inactivated FBS (56°C, 30 min) | 50 mL (10%) |
+| Tryptose phosphate broth | 25 mL (5%) |
+| Pen/Strep (10,000 U/mL penicillin G, 10,000 ug/mL streptomycin) | 5 mL |
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+1. Add DMEM to a sterile bottle.
+2. Add 200 mM glutamine, FBS, tryptose phosphate broth, and Pen/Strep.
+3. Mix gently by inversion.
+4. Warm medium to **37°C** before use.
+
+::: callout-important
+Do **not** filter-sterilize after adding FBS. Assemble the medium using sterile technique throughout instead.
+:::
+
+# Storage and stability
+
+- Store at **4°C** for up to **4 weeks**.
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| DMEM, high glucose | [TBD] | [TBD] | Base medium |
+| 200 mM L-glutamine | [TBD] | [TBD] | |
+| FBS | [TBD] | [TBD] | Heat-inactivate at 56°C for 30 min |
+| Tryptose phosphate broth | [TBD] | [TBD] | |
+| Pen/Strep | [TBD] | [TBD] | 10,000 U/mL penicillin G, 10,000 ug/mL streptomycin |
+
+# Safety (brief)
+
+- FBS and tryptose phosphate broth are animal-derived materials; handle as potential biohazards per institutional biosafety rules.
+- This medium is used for BHK-21 cell culture and LCMV virus propagation — follow institutional biosafety protocols when handling virus-containing supernatants.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                  |
+|--------|------------|----------------|-------------------------------------------|
+| v1.0   | 2025-12-01 | Dillon Corvino | Initial Quarto buffer document |
+| v1.1   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign); added Storage/Safety/Reagent-details sections. |

@@ -1,0 +1,7 @@
+### Timeline
+
+- **Day 0:** [event]
+- **Day N:** [event]
+- **Day N:** Harvest
+
+---

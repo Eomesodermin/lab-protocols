@@ -1,0 +1,30 @@
+### Recipient counts
+
+```{r}
+# ---- inputs (edit here) ----
+# Change "receivesTransfer" to match the boolean column name in groups.df
+transferCol <- "receivesTransfer"
+
+totalRecipients    <- as.integer(sum(groups.df$n))
+transferRecipients <- as.integer(sum(groups.df$n[groups.df[[transferCol]]]))
+
+recipientCounts.df <- tibble::tibble(
+  metric = c(
+    "Total recipients (all groups)",
+    paste0("Recipients receiving transfer (", transferCol, " == TRUE)")
+  ),
+  value = c(totalRecipients, transferRecipients),
+  notes = c(
+    "sum(groups.df$n)",
+    paste0("sum(n) where ", transferCol, " == TRUE")
+  )
+)
+
+knitr::kable(
+  recipientCounts.df,
+  align = "l",
+  col.names = c("Metric", "Value", "Notes")
+)
+```
+
+---

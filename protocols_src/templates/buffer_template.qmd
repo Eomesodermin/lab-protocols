@@ -1,0 +1,110 @@
+---
+title: "BUFFER TITLE HERE"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-DESCRIPTOR"
+version: "vX.X"
+date: "YYYY-MM-DD"
+description: "Short one-sentence purpose"
+summary:
+  final_volume: "<e.g. 5 mL per sample, or 500 mL>"
+  components:
+    - name: "<Component>"
+      amount: "<final concentration / amount>"
+    - name: "<Component>"
+      amount: "<final concentration / amount>"
+  # Optional fields below — omit any that don't apply to this buffer
+  # prep_note: "<one-line prep step essential to getting this right>"
+  # sterile_filter: "<required / conditional / not required / do not filter>"
+  # storage: "<temperature, shelf life>"
+  # caveat: "<the one thing someone must not get wrong>"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: "margin=2cm"
+    fontsize: 11pt
+    colorlinks: false
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+<Describe in 1–3 sentences why the buffer is used and in what type of protocols.>
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+<Describe the buffer composition, either per X mL or as % concentrations. This is the
+full, detailed recipe table — the `summary:` block in the YAML above is the separate,
+concise version that protocols automatically pull into their "Buffers Required" section.
+Keep the two consistent when either changes.>
+
+| Component | Stock concentration | Volume for final | Final concentration | Notes |
+|---|---|---|---|---|
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+::: callout-note
+Add optional notes about working vs stock versions.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+<List clear, step-by-step instructions. Write "Not applicable" if prepared directly
+as the working buffer.>
+
+## B. Preparation of working buffer
+
+<List final steps, adjustments, pre-warming notes, etc.>
+
+# Storage and stability
+
+- Describe storage of stock versions
+- Describe storage of working solutions
+- Provide any stability windows (e.g. "Use within 6 months")
+- Optional: note how thawing or aliquoting should be done
+
+::: callout-note
+Include any exceptions or internal validations here.
+:::
+
+# Reagent details
+
+Fill this table with supplier + catalogue info when known:
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+|  | [TBD] | [TBD] |  |
+|  | [TBD] | [TBD] |  |
+|  | [TBD] | [TBD] |  |
+
+# Safety (brief)
+
+<Summarize minimal safety notes: handling, enzymes, chemicals, waste stream. Write
+"Not applicable" rather than omitting this section.>
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---|---|---|---|
+| vX.X | YYYY-MM-DD | Dillon Corvino | Initial version |

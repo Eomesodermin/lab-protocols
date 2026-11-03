@@ -1,0 +1,62 @@
+---
+title: "Protocol Library"
+page-layout: article
+---
+
+# Welcome
+
+This site hosts the standardised protocol library for the lab, including buffers, mouse and human workflows, flow panels, and general methods. All documents follow a common Quarto template and are versioned.
+
+Use the navigation bar on the left to browse by category or search for a protocol by name.
+
+---
+
+## How to use this library
+
+- **Browse by category** using the sidebar:
+  - *Buffers* – all stock and working solutions.
+  - *Mouse* – mouse tissue processing and functional assays.
+  - *Human* – human PBMC and cell line protocols.
+  - *General* – cross-cutting methods (e.g. flow staining, nucleofection).
+
+- **Download as PDF**  
+  Each protocol page includes a PDF version suitable for printing or attaching to experiment documentation.
+
+- **Search**  
+  Use the search box in the sidebar to find protocols by keyword (e.g. “liver digestion”, “PBMC”, “ACK lysis”).
+
+---
+
+## Naming and versioning conventions
+
+Protocols and buffers follow a consistent naming scheme:
+
+- **Buffers:** `buf_<target>_vX.Y`, e.g. `buf_liver_digestion_v1.0`
+- **Mouse protocols:** `prot_mus_<tissue_or_process>_vX.Y`
+- **Human protocols:** `prot_hum_<tissue_or_process>_vX.Y`
+- **General protocols:** `prot_gen_<process>_vX.Y`
+
+Version numbers are incremented when the procedure changes in a way that could affect results (reagent changes, timings, etc.).
+
+The **title** and **version** in each protocol’s YAML header define what appears on the website and in the PDF.
+
+---
+
+## Document structure
+
+Most protocols follow a common structure:
+
+1. **Purpose and scope** – what the protocol is for and when to use it.  
+2. **Reagents and materials** – linked to buffer entries where applicable.  
+3. **Equipment** – key instruments and settings.  
+4. **Procedure** – stepwise instructions.  
+5. **Notes and troubleshooting** – optional recommendations, pitfalls, or variants.
+
+Buffers have a simplified structure focusing on:
+
+- Composition (final concentrations)
+- Preparation steps
+- Storage and stability
+- Safety considerations
+
+---

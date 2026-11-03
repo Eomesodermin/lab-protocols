@@ -1,0 +1,95 @@
+---
+title: "L929 Cell Propagation Medium"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-L929-PROP"
+version: "v1.1"
+date: "2026-09-18"
+description: "This medium is used for routine propagation of L929 cells for LCMV production workflows."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "DMEM (high glucose, with L-glutamine)"
+      amount: "475 mL"
+    - name: "Heat-inactivated FCS/FBS"
+      amount: "25 mL (5% v/v)"
+  storage: "4C, up to 4 weeks"
+  caveat: "Lower FCS concentration (5%) compared to other propagation media is standard for L929 maintenance."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+This medium is used for routine propagation of L929 fibroblasts. L929 cells are used as an alternative host cell line for LCMV propagation, particularly for certain strains such as Traub.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+**Final volume: 500 mL**
+
+| Component                                      | Amount    | Final concentration |
+|------------------------------------------------|-----------|---------------------|
+| DMEM (high glucose, with L-glutamine)          | 475 mL    | Base medium         |
+| Heat-inactivated FCS/FBS                       | 25 mL     | 5% (v/v)            |
+
+::: callout-note
+L929 cells are mouse fibroblasts commonly used for LCMV propagation. The lower FCS concentration (5%) compared to other cell lines is standard for L929 maintenance.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+1. In a sterile biosafety cabinet, add ~450 mL of DMEM to a sterile 500 mL bottle.
+2. Add 25 mL heat-inactivated FCS/FBS.
+3. Top up with DMEM to a final volume of **500 mL**.
+4. Mix gently by inversion.
+5. Label with:
+   - "L929 propagation medium (DMEM + 5% FCS)"
+   - Date of preparation
+   - Initials
+6. Warm medium to **37°C** before use with cells.
+
+# Storage and stability
+
+- Store at **4°C** for up to **4 weeks**.
+- Discard medium if there is any sign of contamination (turbidity, threads, pH shift) or if it is past the defined expiry (4 weeks from preparation).
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| DMEM (high glucose, with L-glutamine) | [TBD] | [TBD] | Base medium |
+| FCS/FBS | [TBD] | [TBD] | Heat-inactivated; 5% (v/v) final — lower than the 10% typically used for other lines |
+
+# Safety (brief)
+
+- FCS/FBS is of animal origin and should be treated as a potential biohazard.
+- This medium is used to propagate L929 cells for LCMV production workflows — follow institutional biosafety protocols when handling virus-associated cultures.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                |
+|---------|------------|----------------|-----------------------------------------|
+| v1.0    | 2026-03-31 | Dillon Corvino | Initial Quarto buffer document.        |
+| v1.1    | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign); added Storage/Safety/Reagent-details sections. |

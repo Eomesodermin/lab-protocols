@@ -1,0 +1,60 @@
+---
+title: "Resources"
+description: "Key references, platforms, and external tools used in this lab."
+---
+
+# Key references
+
+## Flow cytometry
+
+📄 **Guidelines for the use of flow cytometry and cell sorting in immunological studies**  
+Cossarizza *et al.* (2021), *European Journal of Immunology* — Third Edition
+
+- [Open paper (open access, CC BY 4.0)](https://doi.org/10.1002/eji.202170126)
+
+---
+
+# Core lab platforms (University Hospital Bonn)
+
+## PyRAT (animal facility)
+
+- 🔐 [PyRAT login](https://pyrat.ukbonn.de/pyrat/frontend/session/login)
+
+## Flow cytometry facility tools
+- 🔐 [PPMS login (University of Bonn)](https://ppms.eu/uni-bonn/login/)
+- 🧪 [FluoroFinder – Bonn FCCF](https://app.fluorofinder.com/bonn-fccf)
+
+---
+
+# Experimental reagents and ordering
+
+## Lab ordering and inventory
+
+- 📦 [Quartzy – Lab requests](https://app.quartzy.com/groups/256099/requests)
+
+---
+
+# Computational resources
+
+## High-performance computing (HPC)
+
+- 🖥️ [University of Bonn HPC Wiki](https://wiki.hpc.uni-bonn.de)
+
+---
+
+# Misc
+
+## Mouse identification
+
+- [Mouse ear notch ID guide](mouse_ear_notch_id.html)
+
+## Paper deconstruction
+
+- [QED Bioscience](https://www.qedscience.com)
+
+---
+# Notes
+
+:::callout-note
+Some platforms (e.g. PyRAT, PPMS, Quartzy) require institutional login or VPN access when off-site.
+:::

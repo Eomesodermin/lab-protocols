@@ -1,0 +1,113 @@
+---
+title: "Vero Cell Propagation Medium"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-VERO-PROP"
+version: "v1.2"
+date: "2026-09-18"
+description: "This medium is used for routine propagation of Vero cells."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "DMEM (high glucose, with L-glutamine, phenol red)"
+      amount: "to 500 mL"
+    - name: "Heat-inactivated FCS/FBS"
+      amount: "50 mL (10% v/v)"
+    - name: "2-mercaptoethanol (100x stock)"
+      amount: "0.5 mL (1x final, typical 50-100 uM range)"
+  prep_note: "Mix gently by inversion; sterile-filter (0.22 um) if any component was added from a non-sterile container."
+  storage: "4C, protected from light, up to 4 weeks"
+  caveat: "Always use DMEM-based medium for Vero cells - do not confuse with RPMI-based media used elsewhere in the plaque/FFA protocol."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+This medium is used for routine propagation of Vero cells for LCMV focus-forming assays and other virological applications.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+---
+
+# Working buffer composition
+
+Final volume: **500 mL**.
+
+| Component                                                                 | Amount    | Final concentration / note          |
+|---------------------------------------------------------------------------|-----------|-------------------------------------|
+| DMEM (high glucose, with L-glutamine, phenol red)                        | to 500 mL | Base medium                         |
+| Heat-inactivated FCS/FBS                                                 | 50 mL     | 10% (v/v)                           |
+| 2-mercaptoethanol (100x stock; see lab stock sheet for concentration)    | 0.5 mL    | 1x final (typical 50-100 uM range)  |
+
+:::callout-warning
+For Vero cell culture, always use **DMEM-based medium**. Do **not** confuse this with RPMI-based media used elsewhere in the plaque/FFA protocol (e.g. for sample dilution).
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+1. In a sterile biosafety cabinet, add ~400 mL of DMEM to a sterile 500 mL bottle.
+2. Add:
+   - 50 mL heat-inactivated FCS/FBS.
+   - 0.5 mL of the 100x 2-mercaptoethanol stock (check your lab stock sheet for the exact stock concentration and resulting final uM).
+3. Top up with DMEM to a final volume of **500 mL**.
+4. Mix gently by inversion.
+5. If any component was added from a non-sterile container, sterile-filter the complete medium (0.22 um filter) into a fresh sterile bottle.
+6. Label with:
+   - "Vero propagation medium (DMEM + 10% FCS + 2-ME)"
+   - Date of preparation
+   - Initials
+7. Store at **4 °C** for up to **4 weeks**, protected from light.
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.
+- Use within **4 weeks** of preparation.
+- Discard medium if there is any sign of contamination (turbidity, threads, pH shift) or if it is past the defined expiry.
+
+# Use
+
+- Warm medium to **37 °C** before use with cells.
+- Discard medium if there is any sign of contamination (turbidity, threads, pH shift) or if it is past the defined expiry (4 weeks from preparation).
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| DMEM (high glucose, with L-glutamine, phenol red) | [TBD] | [TBD] | Base medium |
+| Heat-inactivated FCS/FBS | [TBD] | [TBD] | 10% final |
+| 2-mercaptoethanol | [TBD] | [TBD] | 100x stock; 1x final |
+
+# Safety (brief)
+
+- 2-mercaptoethanol is hazardous — handle with gloves and eye protection, and use a fume hood when working with concentrated stock.
+- FCS/FBS is of animal origin and should be treated as a potential biohazard.
+- Prepare and handle medium under aseptic conditions inside a biosafety cabinet.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                                |
+|--------|------------|----------------|-------------------------------------------------------------------------|
+| v1.0   | 2025-12-01 | Dillon Corvino | Initial Quarto buffer document (MEM-based formulation).                |
+| v1.1   | 2025-12-02 | Dillon Corvino | Updated to DMEM + 10% FCS + 1x P/S + 2-ME, aligned with lab protocol.  |
+| v1.2   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign). |

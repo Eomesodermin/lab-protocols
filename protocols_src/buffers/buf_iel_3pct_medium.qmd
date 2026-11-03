@@ -1,0 +1,94 @@
+---
+title: "3% Medium (IEL Wash/Base Medium)"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-IEL-3PCT"
+version: "v1.0"
+date: "2026-09-18"
+description: "Low-serum RPMI wash medium used for intestinal washes and as the base for IEL Strip Medium."
+summary:
+  final_volume: "50 mL per mouse"
+  components:
+    - name: "RPMI 1640"
+      amount: "46.0 mL (base)"
+    - name: "FCS"
+      amount: "1.5 mL (3% v/v)"
+    - name: "HEPES (1 M stock)"
+      amount: "1.0 mL (2% v/v)"
+    - name: "Penicillin/Streptomycin (100x stock)"
+      amount: "0.5 mL (1% v/v)"
+    - name: "L-glutamine (200 mM stock)"
+      amount: "0.5 mL (1% v/v)"
+  storage: "Can be prepared the evening before and held at 4C."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+Low-serum RPMI wash medium used to wash the opened small intestine before stripping, and as the base medium for IEL Strip Medium (`BUF-IEL-STRIP`).
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+**50 mL per mouse** (20 mL for intestinal washes + 20 mL as base for Strip Medium + ~10 mL margin).
+
+| Component | Final concentration | Volume for 50 mL |
+|---|---|---|
+| RPMI 1640 | Base | 46.0 mL |
+| FCS | 3% (v/v) | 1.5 mL |
+| HEPES (1 M stock) | 2% (v/v) | 1.0 mL |
+| Penicillin/Streptomycin (100x stock) | 1% (v/v) | 0.5 mL |
+| L-glutamine (200 mM stock) | 1% (v/v) | 0.5 mL |
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+1. Combine RPMI 1640 with FCS, HEPES, Penicillin/Streptomycin, and L-glutamine per the table above.
+2. Mix gently by inversion.
+
+# Storage and stability
+
+- Can be prepared the evening before use and held at **4 °C**.
+- Bring to room temperature or 37 °C (as needed) before use.
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| RPMI 1640 | [TBD] | [TBD] |  |
+| FCS | [TBD] | [TBD] |  |
+| HEPES (1 M stock) | [TBD] | [TBD] |  |
+| Penicillin/Streptomycin (100x) | [TBD] | [TBD] |  |
+| L-glutamine (200 mM stock) | [TBD] | [TBD] |  |
+
+# Safety (brief)
+
+- FCS is of animal origin and should be treated as a potential biohazard.
+- Not applicable beyond standard laboratory PPE.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---|---|---|---|
+| v1.0 | 2026-09-18 | Dillon Corvino | Split out of `prot_mus_iel_isolation.qmd` into its own buffer document (buffer/protocol architecture redesign) — no change to composition. |

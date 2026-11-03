@@ -1,0 +1,108 @@
+---
+title: "R10 Medium (RPMI + 10% FCS + Pen/Strep)"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-R10-MED"
+version: "v1.1"
+date: "2026-09-18"
+description: "Complete RPMI 1640 medium supplemented with 10% fetal calf serum and Penicillin/Streptomycin for culture and washing of human PBMCs and lymphocytes."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "RPMI 1640"
+      amount: "to 500 mL"
+    - name: "Fetal calf serum (FCS)"
+      amount: "10% (v/v)"
+    - name: "Penicillin/Streptomycin"
+      amount: "1% (v/v)"
+  prep_note: "Gently invert to mix; do not vortex."
+  storage: "4C, protected from light; use within 4 weeks; do not freeze."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+R10 is complete RPMI 1640 medium supplemented with 10% heat-inactivated FCS and Penicillin/Streptomycin. It is used for PBMC washing after Ficoll separation, for quenching CellTrace dyes, and as a general-purpose lymphocyte culture medium.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+| Component           | Final concentration | Notes                                           |
+|---------------------|---------------------|--------------------------------------------------|
+| RPMI 1640           | —                   | Base medium                                     |
+| Fetal calf serum    | 10% (v/v)           | Heat-inactivated                                |
+| Penicillin/Streptomycin | 1% (v/v)        | 100x stock → 1x final                           |
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+### Stock solutions required
+
+| Reagent                | Stock concentration | Notes                       |
+|------------------------|---------------------|------------------------------|
+| Fetal calf serum (FCS) | —                   | Heat-inactivate if required |
+| Penicillin/Streptomycin| 100x                | Add to 1x final             |
+| RPMI 1640               | —                  | Sterile-filtered            |
+
+### Preparation of **500 mL R10**
+
+1. Aliquot **450 mL** sterile RPMI 1640 into a sterile bottle.
+2. Add **50 mL** FCS (10% final).
+3. Add **5 mL** Penicillin/Streptomycin (100x stock) → **1% final**.
+4. Gently invert to mix; **do not vortex**.
+5. Label with:
+   - *R10 complete medium*
+   - Date of preparation
+   - Expiry (4 weeks after preparation)
+
+::: callout-tip
+Pre-warming R10 to 37 °C before use improves cell recovery following Ficoll separation or staining.
+:::
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.
+- Use within **4 weeks** after preparation.
+- Do not freeze.
+
+# Reagent details
+
+| Reagent               | Supplier  | Cat. # | Notes                          |
+|----------------------|-----------|--------|---------------------------------|
+| RPMI 1640            | Various   | —      | Base medium                    |
+| Fetal calf serum     | Various   | —      | Heat-inactivated               |
+| Pen/Strep (100x)     | Various   | —      | Final 1x concentration         |
+
+# Safety (brief)
+
+- Handle medium aseptically in a biosafety cabinet.
+- Dispose of contaminated or expired medium as biohazardous waste.
+- Follow institutional guidelines for handling FCS-containing media.
+
+# Version history
+
+| Version | Date       | Author         | Changes                        |
+|--------|------------|----------------|---------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial R10 buffer document.   |
+| v1.1   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign). |

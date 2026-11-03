@@ -1,0 +1,99 @@
+---
+title: "LCMV Plaque Assay Medium"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-LCMV-PLA"
+version: "v1.1"
+date: "2026-09-18"
+description: "Medium used to overlay infected Vero cell monolayers during LCMV plaque assays."
+summary:
+  final_volume: "250 mL"
+  components:
+    - name: "2x Eagle MEM without phenol red"
+      amount: "250 mL"
+    - name: "200 mM L-glutamine"
+      amount: "5 mL"
+    - name: "Heat-inactivated FBS"
+      amount: "25 mL (10%)"
+    - name: "Pen/Strep (10,000 U/mL penicillin G, 10,000 ug/mL streptomycin)"
+      amount: "5 mL"
+    - name: "Fungizone (amphotericin B 250 ug/mL)"
+      amount: "2.5 mL"
+  prep_note: "Fungizone is optional but recommended to prevent fungal contamination."
+  storage: "4C, up to 4 weeks"
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+Medium used to overlay infected Vero cell monolayers during LCMV plaque assays.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+**Final volume: 250 mL**
+
+| Component | Amount |
+|----------|--------|
+| 2x Eagle MEM without phenol red | 250 mL |
+| 200 mM L-glutamine | 5 mL |
+| Heat-inactivated FBS (10%) | 25 mL |
+| Pen/Strep (10,000 U/mL penicillin G, 10,000 ug/mL streptomycin) | 5 mL |
+| Fungizone (amphotericin B 250 ug/mL) | 2.5 mL |
+
+::: callout-note
+Fungizone is optional but recommended to prevent fungal contamination.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+1. Combine all components in a sterile bottle.
+2. Mix thoroughly by gentle inversion.
+
+# Storage and stability
+
+- Store at **4°C** for up to **4 weeks**.
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| 2x Eagle MEM without phenol red | [TBD] | [TBD] | Base medium |
+| 200 mM L-glutamine | [TBD] | [TBD] | |
+| FBS | [TBD] | [TBD] | Heat-inactivated |
+| Pen/Strep | [TBD] | [TBD] | 10,000 U/mL penicillin G, 10,000 ug/mL streptomycin |
+| Fungizone (amphotericin B) | [TBD] | [TBD] | 250 ug/mL; optional but recommended to prevent fungal contamination |
+
+# Safety (brief)
+
+- FBS is of animal origin and should be treated as a potential biohazard.
+- This medium overlays LCMV-infected Vero cell monolayers — handle infected plates and this medium according to institutional biosafety protocols for virus-containing material.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                  |
+|--------|------------|----------------|-------------------------------------------|
+| v1.0   | 2025-12-01 | Dillon Corvino | Initial Quarto buffer document |
+| v1.1   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign); added Storage/Safety/Reagent-details sections. |

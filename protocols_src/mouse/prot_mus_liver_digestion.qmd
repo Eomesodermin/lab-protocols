@@ -1,0 +1,442 @@
+---
+title: "Mouse Liver Digestion to Single-Cell Suspension"
+subtitle: "Dillon Corvino"
+protocol_id: "MUS-LIV-DIG"
+version: "v2.1"
+date: "2026-09-18"
+description: "Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}\
+**Version:** {{< meta version >}}\
+**Author:** Dillon Corvino
+
+# Purpose
+
+This protocol describes the preparation of single-cell suspensions from mouse liver using perfusion, enzymatic digestion, mechanical dissociation, density centrifugation, and RBC lysis. The resulting cell suspension is suitable for downstream applications such as flow cytometry, FACS sorting, and single-cell omics workflows (with appropriate QC).
+
+# Workflow summary
+
+**Perfuse (ice-cold PBS) -> gentleMACS digestion -> 70 um filtration with syringe plunger -> wash spins -> Percoll -> RBC lysis**
+
+# Critical notes (read before starting)
+
+-   **Perfuse with ice-cold PBS or FACS Buffer only — never MACS Buffer.** See the callout in STEP 2.
+-   Spin times depend on tube format: **50 mL tubes 400 g for 7 min**, **15 mL tubes 400 g for 5 min**. See the callout in STEP 5.
+-   Percoll enrichment is performed in a **50 mL tube**, not a 15 mL tube. See the callout in STEP 6.
+-   Keep all **post-digestion washes cold** (4 °C) where possible to preserve viability.
+-   Process **one liver per 70 µm strainer**; do not reuse strainers between livers.
+-   Liver cell pellets are often **loose**; be careful when pouring supernatants.
+-   Do not over-digest; limit digestion to the programmed gentleMACS time, or **30 minutes at 37 °C** with agitation if dissociating manually.
+-   Percoll must be at **room temperature** and properly diluted to **37% of isotonic stock (= 33% final Percoll)** immediately before use.
+-   Ensure RBC lysis is **time-limited (2 minutes with ACK)** to avoid damaging leukocytes.
+
+# Approximate timing
+
+-   Preparation and setup: **10–15 min**
+-   Mouse euthanasia, perfusion, and liver dissection: **5–10 min per mouse**
+-   gentleMACS dissociation and enzymatic digestion: **25–30 min**
+-   70 µm filtration: **5 min per liver**
+-   Two wash spins (400 g, 7 min each in 50 mL tubes): **20–25 min**
+-   Percoll centrifugation and leukocyte enrichment: **20–25 min**
+-   RBC lysis, quench, and final resuspension: **15–20 min**
+
+**Total approximate time:** **\~2–2.5 hours for 1–4 livers processed in parallel**\
+(Effective hands-on time per liver is \~60–90 minutes, depending on batching and operator experience.)
+
+{{< pagebreak >}}
+
+\tableofcontents
+
+{{< pagebreak >}}
+
+# Prep checklist
+
+Everything below is **per mouse**. Multiply by the number of animals, and add margin on the buffers so the last sample is not short.
+
+## Reagents
+
+| Reagent | Per mouse | Where it is used |
+|---|---|---|
+| **PBS or FACS Buffer, ice-cold** (`BUF-FACS-BUF`) | **10 mL** | STEP 2 — perfusion (5–10 mL, until the liver blanches). Perfusion only; never MACS Buffer |
+| **Liver digestion buffer** (`BUF-LIV-DIG`) | **5 mL** | STEP 4 — pre-warmed to 37 °C in the C-tube |
+| **37% Percoll** (`BUF-PERC-37`) | **25 mL** | STEP 6 — from isotonic stock: 9.25 mL stock + 15.75 mL PBS |
+| **ACK lysis buffer** (`BUF-ACK-LYSIS`) | **1 mL** | STEP 7 |
+| **MACS Buffer** (`BUF-MACS-BUF`) | **\~110 mL** | Collection 5 mL; STEP 5 washes 35 + 40 mL; STEP 7 quench 9 mL; STEP 8 final 5 mL (94 mL used, allowance includes margin) |
+
+## Plasticware and consumables
+
+| Item | Per mouse | Note |
+|---|---|---|
+| **gentleMACS C-tube** | **1** | Option A only |
+| **70 um cell strainer** | **1** | Strictly one per liver — never reuse between livers |
+| **50 mL conical tube** | **3** | Collection (STEP 3), filtration + washes (STEP 5), Percoll (STEP 6). **Add 1** if using the optional 50 g hepatocyte spin |
+| **15 mL conical tube** | **1** | Post-lysis wash (STEP 7) |
+| **5 mL syringe** | **1** | Plunger only — used to press tissue through the strainer (STEP 5) |
+| **Syringe, 5–10 mL** | **1** | Perfusion; may be shared within a treatment group |
+| **Needle, 25–27 G** | **1** | Perfusion |
+| **Transfer pipette** | **2** | Pellet resuspension (STEP 6), ACK resuspension (STEP 7) |
+| **Filter paper** | 1 piece | Blotting the liver before weighing |
+
+::: callout-note
+Collection at STEP 3 may instead use **1 well of a 6-well plate** with 3–5 mL ice-cold buffer, in which case only **2** 50 mL tubes are needed per mouse.
+:::
+
+**Shared, not per mouse:** gentleMACS + warming sleeves, 37 °C water bath, refrigerated centrifuge with adjustable brake and acceleration, 5–10 mL stripettes, paper towels, ice, timers, dissection scissors and forceps, sharps container, analytical balance.
+
+::: callout-note
+Full recipes, stock preparation, and storage for each buffer are no longer reproduced here — see the auto-generated **`# Buffers Required`** section after the Procedure below, or open the linked buffer document directly (`BUF-LIV-DIG`, `BUF-PERC-37`, `BUF-FACS-BUF`, `BUF-MACS-BUF`, `BUF-ACK-LYSIS`).
+:::
+
+{{< pagebreak >}}
+
+# Procedure
+
+## STEP 1 – Preparation and setup
+
+1.  **Pre-cool collection solutions**
+    -   Pre-cool **PBS** on ice for liver perfusion.
+    -   Pre-cool **MACS Buffer** on ice for tissue collection and all subsequent washes.
+2.  **Label collection vessels (choose one option per experiment)**
+    -   **Option A: 6-well plate collection**
+        -   Label one well per mouse in a 6-well plate.
+        -   Add **3–5 mL ice-cold PBS or MACS Buffer** per well.
+    -   **Option B: 50 mL tube collection**
+        -   Label one **50 mL conical tube per liver**.
+        -   Add **5 mL ice-cold PBS or MACS Buffer** per tube.
+3.  **Label dissociation and processing tubes**
+    -   Label **gentleMACS C-tubes** (or equivalent) for each liver.
+    -   Label **50 mL tubes** for filtration, washing, and Percoll enrichment (one per liver).
+    -   Label **15 mL tubes** for the post-lysis wash (one per liver).
+4.  **Prepare buffers**
+    -   **Liver digestion buffer** — `BUF-LIV-DIG`; **5 mL per liver**.
+    -   **37% Percoll working solution** — `BUF-PERC-37`; **25 mL per liver** (**9.25 mL isotonic stock + 15.75 mL PBS**). Add margin when preparing for several livers so the last tube is not short.
+    -   **ACK lysis buffer** — **1 mL per liver**.
+    -   **MACS Buffer** for washes and final resuspension — allow **\~110 mL per liver**.
+5.  **Warm digestion components**
+    -   Pre-warm a water bath to **37 °C**.
+    -   Place an aliquot of **liver digestion buffer** in the water bath to equilibrate.
+    -   If digestion buffer will be prepared immediately before use, pre-warm the **base medium** (DMEM, PBS, or HBSS) instead.
+6.  **Equipment setup**
+    -   Pre-cool a benchtop centrifuge to **4 °C**.
+    -   Ensure access to a **gentleMACS** instrument with an appropriate liver dissociation program.
+7.  **Items to take to the animal facility**
+    -   Ice bucket with **ice-cold PBS** for perfusion.
+    -   6-well plates *and/or* pre-filled **50 mL tubes** (as selected above).
+    -   Sterile scissors and forceps.
+    -   **5–10 mL syringes** (one per mouse or per treatment group).
+    -   Needles for liver perfusion (**25–27 G recommended**).
+    -   Absorbent pads and a waste container for perfusion runoff.
+
+## STEP 2 – Liver harvest and perfusion
+
+1.  Euthanise the mouse according to institutional and ethical guidelines (e.g. **CO₂ asphyxiation** or other approved method).
+2.  Place the mouse in a supine position and perform a midline incision to open the abdominal cavity.
+3.  Expose the liver and major vessels (**Inferior vena cava and portal vein**).
+4.  Load a **5 mL syringe** with **ice-cold PBS** and attach a **25–27 G needle**.
+5.  Perfuse the liver via one of the following routes:
+    -   **Inferior vena cava**\
+    -   **Portal vein**
+6.  Slowly perfuse with **\~5–10 mL ice-cold PBS per mouse** until the liver visibly blanches.
+
+::: callout-important
+**Perfuse with PBS or FACS Buffer only — do not perfuse with MACS Buffer.**\
+MACS Buffer contains **2 mM EDTA**. Anecdotal evidence suggests residual EDTA carried into the tissue **inhibits downstream collagenase digestion** (collagenases are Ca2+/Zn2+-dependent metalloproteases and EDTA chelates these cofactors).\
+MACS Buffer is fine for **all subsequent steps** — collection, washes, Percoll resuspension, quenching, and final resuspension.
+:::
+
+::: callout-note
+Efficient perfusion reduces blood content and improves hepatocyte removal, density separation, and downstream staining quality.
+:::
+
+::: callout-warning
+Handle needles and sharps carefully and dispose of them immediately into an approved sharps container after perfusion.
+:::
+
+7.  Excise the liver carefully, **removing the gallbladder**.
+8.  Place the liver briefly on **filter paper** to blot excess buffer.
+
+## STEP 3 – Liver collection, weighing, and mincing
+
+1.  Transfer the perfused liver to a **pre-labelled collection vessel** (on ice).
+2.  *(Recommended)* **Weigh the liver**:
+    -   Briefly blot on filter paper to remove excess liquid.
+    -   Record the liver weight.
+
+## STEP 4 – enzymatic and mechanical dissociation
+
+### Option A - GentleMACS C-tube
+
+1.  Add **5 mL pre-warmed liver digestion buffer (with DNase)** to a **labelled gentleMACS C-tube**.
+2.  Transfer the liver into the gentleMACS C-tube.
+3.  Secure the C-tube onto the **gentleMACS instrument** and place the **warming sleeve** over the tube.
+4.  Run the **m_liver_02_02** program to mechanically dissociate the tissue.
+5.  After the program finishes, briefly inspect the tube to ensure the tissue has been **mechanically disrupted into small fragments** and is fully submerged in digestion buffer.
+6.  Run the **HH17** program (**\~17 min**) to allow **warmed enzymatic digestion** of the tissue.
+
+::: callout-warning
+Confirm that each C-tube is correctly seated and rotating before leaving the instrument.\
+If a tube is not spinning, stop the run, reseat the tube, and restart the program.
+:::
+
+::: callout-important
+Do **not** leave livers in digestion buffer beyond the programmed digestion time.\
+Over-digestion can strip surface epitopes and negatively impact downstream phenotyping.\
+Note: the gentleMACS instrument does **not** beep when the program finishes—set a timer before starting.
+:::
+
+Proceed directly to **STEP 5 – Filtration**.
+
+### Option B – Manual mechanical dissociation (fallback)
+
+Use this route if the gentleMACS is unavailable.
+
+1.  Add **5 mL pre-warmed liver digestion buffer (with DNAse)** to a **labelled 50 mL tube**.
+2.  Transfer the liver into the 50 mL tube.
+3.  Using sterile scissors, mince the liver **directly in the tube** until fragments are approximately **2–3 mm** in size.
+4.  Ensure all tissue pieces are fully submerged in digestion buffer and not adhered to the tube walls.
+5.  Place the tube horizontally on a **37°C shaking incubator (250 rpm)** and incubate for **30 minutes**.
+
+::: callout-important
+Ensure tubes are tightly closed and positioned securely on the shaker.\
+Set a timer — prolonged digestion can reduce viability and affect surface marker integrity.
+:::
+
+Proceed directly to **STEP 5 – Filtration**.
+
+## STEP 5 – Filtration and washing
+
+Applies to both Option A and Option B.
+
+1.  Seat a **70 µm cell strainer** on a **labelled 50 mL conical tube**.
+2.  Pour the digested liver suspension through the strainer.
+3.  Using the back of a **5 mL syringe plunger**, gently press the remaining tissue through the strainer until no visible fragments remain.
+4.  Rinse the strainer with **ice-cold MACS Buffer** while continuing gentle mechanical disruption.
+5.  Bring the total volume to **40 mL with ice-cold MACS Buffer**.
+
+::: callout-note
+Filtration is performed **directly into the 50 mL tube** — no petri dish, and no dab/swirl recovery steps. One strainer per liver; do not reuse.
+:::
+
+6.  Centrifuge at **400 g for 7 minutes at 4 °C**.
+
+::: callout-important
+**Spin time depends on tube format.** The longer path length in a 50 mL tube requires a longer spin to pellet equivalently:
+
+| Tube | Speed | Time |
+|---|---|---|
+| **50 mL** | 400 g | **7 min** |
+| **15 mL** | 400 g | **5 min** |
+
+This applies to **every 400 g wash spin in this protocol**. Check which tube you are in before starting the centrifuge.
+:::
+
+7.  Discard the supernatant by pouring.
+8.  Resuspend the pellet and bring the volume to **40 mL with ice-cold MACS Buffer**.
+9.  Recap and resuspend by inverting the tube back and forth, or with a brief but firm shake.
+10. Centrifuge at **400 g for 7 minutes at 4 °C** (50 mL tube).
+11. Discard the supernatant and keep the leukocyte pellet **on ice**.
+
+::: callout-warning
+Cell pellets from digested liver are often **loose and poorly compacted**.\
+When discarding supernatant by pouring, do so carefully. Avoid flicking, shaking, or abrupt movements.
+:::
+
+::: callout-note
+**Optional hepatocyte pre-clearing spin (recommended).** A low-speed spin can be inserted immediately after filtration (before step 6) to sediment hepatocytes while leaving leukocytes in suspension:
+
+1.  Centrifuge at **50 g for 2 minutes at 4 °C**.
+2.  Carefully transfer the **supernatant** (containing leukocytes) to a fresh 50 mL tube, avoiding the hepatocyte pellet.
+3.  Continue from step 5 above.
+
+**Why this is worth doing.** Hepatocytes are large, fragile cells and rupture readily at the higher speeds used for the subsequent wash and Percoll spins. Lysed hepatocytes release DNA and cytoplasmic contents that drive **clumping** and trap leukocytes, and they release **damage-associated molecular patterns** — extracellular ATP, HMGB1, mitochondrial DNA — which ligate purinergic and pattern-recognition receptors and can **activate the very leukocytes being isolated**, altering activation-marker expression before staining. Removing intact hepatocytes at low speed first avoids generating that debris.
+
+Weigh this against the leukocyte loss in the discarded pellet: a proportion of leukocytes will be carried down with the hepatocytes. The Percoll gradient alone removes hepatocytes effectively, so this step is optional — but it is recommended where activation phenotype is a readout, where clumping has been a problem, or for single-cell applications.
+:::
+
+## STEP 6 – Percoll enrichment
+
+::: callout-note
+The Percoll working solution is **37% of isotonic Percoll stock**, which is the **same solution as "33% Percoll"** when quoted by final Percoll content (37 x 0.9 = 33.3). The AG Surace SOP #001 uses the latter convention. See `BUF-PERC-37` — do not relabel one as the other without changing the recipe.
+:::
+
+1.  Aliquot **25 mL of 37% Percoll** into **pre-labelled 50 mL conical tubes** (one tube per liver).
+
+::: callout-warning
+**Use a 50 mL tube for the Percoll step, not a 15 mL tube.**\
+In a 50 mL tube the hepatocyte layer floats clear of the pellet and the supernatant can be **poured off** cleanly.\
+If a 15 mL tube must be used, the hepatocyte layer sits much closer to the pellet — you **must aspirate the supernatant under vacuum** rather than pour, or hepatocyte contamination of the leukocyte fraction will be unacceptably high.
+:::
+
+2.  Using a **transfer pipette**, resuspend the cell pellet using the small remaining **dead volume**.
+3.  Take up approximately **1 mL of 37% Percoll** from the corresponding 50 mL tube and use it to **rinse the wash tube**, resuspending any remaining cells.
+4.  Transfer the resuspended cells into the corresponding tube containing **25 mL 37% Percoll**.
+5.  Repeat the rinse **1–2 times** with additional small volumes of Percoll (as needed) to recover all remaining cells.
+6.  Recap and **invert gently 2–3 times** to ensure an even cell suspension.
+7.  Centrifuge at **611 g for 15 minutes at room temperature (20–22 °C)** using:
+    -   Acceleration: **high** (e.g. **acc 9**)
+    -   Brake: **minimal** (e.g. **br 1**)
+
+::: callout-note
+**611 g corresponds to 1700 rpm on the lab centrifuge** (rotor rmax \~18.9 cm). If using a different rotor, set the instrument by **relative centrifugal force (611 g)**, not by rpm. Equivalent speeds:
+
+| Rotor rmax | rpm for 611 g |
+|---|---|
+| 16.0 cm | 1848 |
+| 17.0 cm | 1793 |
+| 18.0 cm | 1742 |
+| 18.9 cm | 1700 |
+| 20.0 cm | 1653 |
+
+Calculated as `RCF = 1.118e-5 x r(cm) x rpm^2`.
+:::
+
+::: callout-warning
+Avoid high brake settings during Percoll centrifugation. Abrupt braking can disrupt the gradient and reduce lymphocyte enrichment.
+:::
+
+::: callout-important
+Do not leave liver samples in Percoll longer than necessary. Prolonged exposure can reduce viability and negatively impact downstream applications. Plan spins and next steps in advance.
+:::
+
+::: callout-note
+After the Percoll spin, a **hepatocyte layer floats on top of the solution**, while a **leukocyte + erythrocyte pellet** forms at the apex of the tube.
+:::
+
+8.  Prepare a few layers of paper towel next to the waste container.
+9.  **Pour off** the hepatocyte layer and supernatant in one smooth motion.
+10. Keep the tube inverted briefly and dab the opening on the paper towel to wick residual Percoll (avoid touching or dislodging the pellet).
+
+Proceed directly to **STEP 7 – RBC lysis**. There is no intermediate wash.
+
+## STEP 7 – RBC lysis
+
+1.  Using a 5 mL or 10 mL Stripette, add **1 mL ACK lysis buffer** to each pellet.
+2.  Using a transfer pipette, resuspend the leukocyte + erythrocyte pellet by aspirating and dispensing until homogeneous.
+3.  Incubate for **2 minutes at room temperature**.
+4.  During the incubation, transfer each suspension into the corresponding **labelled 15 mL tube**.
+5.  At the end of the incubation, quench by topping up to **10 mL with MACS Buffer**.
+6.  Centrifuge at **400 g for 5 minutes at 4 °C** (15 mL tube; return brake to a normal setting, e.g. **br 6**).
+7.  Discard the supernatant by pouring, dab the inverted tube on paper towel, and keep the pellet on ice.
+
+::: callout-warning
+Liver leukocytes are particularly sensitive to over-lysis. Do not exceed the stated incubation time, especially after enzymatic digestion or Percoll separation.
+:::
+
+::: callout-note
+**HybriMax** may be substituted for ACK (**2–3 minutes at room temperature**) and is gentler, but ACK at 2 minutes is the standard for this protocol.
+:::
+
+## STEP 8 – Final resuspension and counting
+
+1.  Loosen the pellet in the remaining dead volume by vortexing briefly.
+2.  Resuspend the cell pellet in **5 mL ice-cold MACS Buffer**.
+3.  Count cells and assess viability (e.g. trypan blue) as required.
+4.  Proceed with downstream applications (e.g. flow cytometry, sorting, or culture of NLCs).
+
+::: callout-tip
+For flow cytometry staining, seed up to **5 x 10^6 cells per well** of a 96-well U-bottom plate. This is the maximum recommended for a **50 uL** staining volume — scale the staining volume up for more cells. Maximum well volume is **200 uL**.
+:::
+
+::: callout-tip
+For single-cell sequencing applications, minimise the time from tissue harvest to final resuspension, keep samples on ice whenever possible after digestion, and consider additional debris/dead cell removal steps if yields permit.
+:::
+
+# Buffers Required
+
+Full composition, preparation, storage, and safety information for each buffer lives in its own linked buffer document — only a concise per-buffer summary is reproduced here, generated automatically from that document.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_all_buffer_summaries(rmarkdown::metadata$protocol_id)
+```
+
+{{< pagebreak >}}
+
+# Materials
+
+## Reagents
+
+| Reagent | Supplier | Notes |
+|-----------------------|------------------|-------------------------------|
+| PBS 1x or FACS Buffer, ice-cold | Various | `BUF-FACS-BUF`; **perfusion only** — never perfuse with MACS Buffer |
+| MACS Buffer | In-house / various | `BUF-MACS-BUF`; collection, washes, and final resuspension; kept cold |
+| Liver digestion buffer | In-house | `BUF-LIV-DIG`; DMEM, PBS, or HBSS base; collagenase + DNase I; pre-warmed to 37 °C |
+| Collagenase D or Collagenase IV | Roche / various | Component of liver digestion buffer |
+| DNase I | Various | Component of liver digestion buffer; 50 ug/mL final |
+| Percoll | Cytiva/GE or similar | `BUF-PERC-37`; **37% of isotonic stock = 33% final Percoll**; prepared on day of use |
+| ACK lysis buffer | Commercial or in-house | `BUF-ACK-LYSIS`; 1 mL per liver; 2 min at room temperature |
+| Fetal calf serum (FCS), heat-inactivated | Various | Component of MACS Buffer |
+| EDTA | Various | Component of MACS Buffer |
+| CO₂ or approved euthanasia agent | Facility supply | For mouse sacrifice |
+
+## Disposables
+
+| Item | Notes |
+|-----------------------------|-------------------------------------------|
+| 50 mL conical tubes | Liver collection, filtration, washing, and **Percoll enrichment** (2 per liver) |
+| 15 mL conical tubes | Post-lysis wash (one per liver) |
+| gentleMACS C-tubes (or equivalent) | Enzymatic and mechanical dissociation |
+| Sterile Petri dishes (10 cm) | Backup mincing / straining if required |
+| 70 µm cell strainers | Filtration of digested tissue |
+| Syringes (5–10 mL) | Liver perfusion |
+| Needles (25–27 G) | Inferior vena cava or portal vein perfusion |
+| Transfer pipettes | Resuspension and Percoll transfer |
+| Filter paper | Blotting liver prior to weighing |
+| Paper towels / bench wipes | Wicking supernatants after Percoll |
+| Gloves and sharps container | Standard laboratory safety |
+
+## Equipment
+
+| Equipment | Notes |
+|----------------------------|--------------------------------------------|
+| CO₂ chamber or euthanasia setup | As per animal ethics approval |
+| Dissection instruments | Scissors and forceps |
+| gentleMACS dissociator | With liver-appropriate digestion program |
+| Refrigerated centrifuge | Compatible with 15 mL and 50 mL tubes; adjustable brake |
+| Benchtop incubator or heating sleeve | 37 °C for enzymatic digestion |
+| Analytical balance | For weighing mice and livers |
+| Biological safety cabinet (Class II) | Recommended for tissue and cell handling |
+| Ice bucket | To keep samples cold between steps |
+| Timer | Critical for digestion, Percoll, and lysis steps |
+
+{{< pagebreak >}}
+
+# Troubleshooting
+
+| Problem | Possible cause | Suggested solution |
+|-------------------|-------------------------|-----------------------------|
+| Low lymphocyte yield | Incomplete perfusion or digestion | Ensure liver blanches during perfusion; mince thoroughly; avoid under-digestion |
+| High red blood cell contamination | Insufficient or skipped RBC lysis | Perform ACK lysis for the full **2 min** and quench immediately |
+| Poor Percoll separation or weak pellet | Incorrect Percoll concentration or harsh braking | Use fresh **37% Percoll**; confirm **611 g**; set brake to minimum |
+| Heavy hepatocyte carryover | Percoll run in a 15 mL tube, or supernatant poured | Use a **50 mL tube**; if 15 mL is unavoidable, **vacuum-aspirate** the supernatant; consider the optional 50 g pre-clearing spin |
+| Poor digestion despite correct enzyme | Perfused with EDTA-containing MACS Buffer | Perfuse with **PBS or FACS Buffer** only |
+| Loose pellets and cell loss | Aggressive pouring of supernatant | Pour slowly in one smooth motion; wick residual liquid gently |
+| Cells still in supernatant after a wash | 50 mL tube spun for the 15 mL duration | Spin 50 mL tubes at **400 g for 7 min**, 15 mL tubes for 5 min |
+| Low viability | Over-digestion or prolonged handling at RT | Limit digestion time; keep washes cold; process promptly |
+| Excess debris or clumping | Inadequate DNase activity or filtration | Confirm DNase at **50 ug/mL**; filter through 70 µm mesh with the plunger |
+
+{{< pagebreak >}}
+
+# Safety (brief)
+
+-   All animal procedures must comply with approved animal licences and institutional regulations.
+-   Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.
+-   Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.
+-   Perform tissue and cell handling in a biological safety cabinet where appropriate.
+-   Percoll and RBC lysis buffers are chemical hazards; avoid skin and eye contact and dispose of waste according to local safety guidelines.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|----------------|----------------|----------------|--------------------------|
+| v1.0 | 2025-11-20 | Dillon Corvino | Initial Quarto version based on SOP_001 (liver) from IEO |
+| v1.1 | 2025-11-26 | Dillon Corvino | Manual check and update protocol |
+| v1.2 | 2025-12-29 | Dillon Corvino | Unified with the established lab protocol |
+| v2.0 | 2026-08-05 | Dillon Corvino | Merged with AG Surace SOP #001 (S. Ng). Perfusion switched to ice-cold PBS (EDTA-free) with rationale callout. Mandatory 70 um syringe-plunger filtration directly into a 50 mL tube after gentleMACS. 50 g hepatocyte spin demoted to optional. Two 40 mL washes at 400 g. All 50 mL tube wash spins 5 -> 7 min (15 mL remain 5 min). Percoll: density unchanged (37% of isotonic stock = 33% final Percoll, now labelled with both conventions); 10 mL in 15 mL tube -> 25 mL in 50 mL tube, 800 g/20 min -> 611 g/15 min, acc 7 -> acc 9; post-Percoll wash removed. ACK lysis standardised to 1 mL for 2 min. Final resuspension 5 mL. Digestion buffer consolidated to single `BUF-LIV-DIG`. |
+| v2.1 | 2026-09-18 | Dillon Corvino | Removed the inline `## Buffer recipes` section (full recipes were duplicated from the linked buffer documents); replaced `# Buffers used` with an auto-generated `# Buffers Required` section (one heading + one small table per buffer, sourced from each buffer's own `summary:` data). `BUF-FACS-MACS` split into `BUF-FACS-BUF` and `BUF-MACS-BUF`; reagent references updated accordingly. |

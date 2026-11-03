@@ -1,0 +1,28 @@
+### Recipient mice
+
+```{r}
+library(tidyverse)
+
+experimentDate <- as.Date("YYYY-MM-DD")  # from YAML date field — edit here
+
+recipients.df <- tibble::tibble(
+  mouseId   = c(NA_character_),
+  genotype  = c(NA_character_),
+  sex       = c(NA_character_),
+  dob       = as.Date(c(NA_character_)),
+  earMark   = c(NA_character_),
+  treatment = c(NA_character_)
+) |>
+  dplyr::mutate(
+    ageWeeks = as.integer(difftime(experimentDate, dob, units = "weeks"))
+  ) |>
+  dplyr::select(mouseId, genotype, sex, dob, ageWeeks, earMark, treatment)
+
+knitr::kable(
+  recipients.df,
+  align = "l",
+  col.names = c("Mouse ID", "Genotype", "Sex", "DOB", "Age (weeks)", "Ear mark", "Treatment")
+)
+```
+
+---

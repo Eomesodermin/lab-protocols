@@ -1,0 +1,96 @@
+---
+title: "IEL Strip Medium (DTT/EDTA)"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-IEL-STRIP"
+version: "v1.0"
+date: "2026-09-18"
+description: "DTT/EDTA epithelial stripping medium for releasing intraepithelial lymphocytes from the small intestine."
+summary:
+  final_volume: "20 mL per mouse"
+  components:
+    - name: "3% Medium (BUF-IEL-3PCT)"
+      amount: "19.6 mL (base)"
+    - name: "DTT (14.5 mg/mL stock, ~94 mM)"
+      amount: "213 uL (1 mM final)"
+    - name: "EDTA (500 mM stock)"
+      amount: "200 uL (5 mM final)"
+  prep_note: "Prepare fresh and pre-warm to 37C immediately before use."
+  storage: "Do not store - DTT is unstable in solution and loses activity over time."
+  caveat: "Do not exceed 1 mM DTT or the 20-minute stripping incubation - over-exposure to DTT reduces leukocyte viability."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+Used for the DTT/EDTA epithelial stripping step in intraepithelial lymphocyte (IEL) isolation. DTT reduces disulfide bonds in mucus and epithelial junctions; EDTA chelates calcium, destabilising E-cadherin-based junctions — together with mechanical agitation, this releases IELs from the epithelial layer.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+**20 mL per mouse**, made from 3% Medium (`BUF-IEL-3PCT`) with DTT and EDTA added fresh.
+
+DTT stock: 14.5 mg/mL. MW of DTT = 154.25 g/mol -> 14.5 mg/mL = 94 mM stock. For 1 mM final in 20 mL: add **213 uL** DTT stock.
+
+EDTA stock: 500 mM. For 5 mM final in 20 mL: add **200 uL** EDTA stock.
+
+| Component | Final concentration | Volume for 20 mL |
+|---|---|---|
+| 3% Medium | Base | 19.6 mL |
+| DTT (14.5 mg/mL stock, ~94 mM) | 1 mM | 213 uL |
+| EDTA (500 mM stock) | 5 mM | 200 uL |
+
+::: callout-warning
+Prepare fresh and pre-warm to **37 °C** immediately before use. DTT is unstable in solution and loses activity over time. Do not store.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Prepare 3% Medium (`BUF-IEL-3PCT`) in advance — this forms the base. DTT and EDTA stocks may be pre-made and stored (DTT stock at -20 °C; EDTA stock at room temperature), but must only be added to the base medium immediately before use.
+
+## B. Preparation of working buffer
+
+1. Add DTT and EDTA stock to 3% Medium per the table above.
+2. Mix gently by inversion.
+3. Pre-warm to **37 °C** in a water bath immediately before use.
+
+# Storage and stability
+
+- Do not store — prepare fresh and use the same day.
+- DTT loses activity in solution over time; do not prepare in advance.
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| DTT (dithiothreitol) | [TBD] | [TBD] | Prepare 14.5 mg/mL (~94 mM) stock; add fresh |
+| EDTA (0.5 M stock) | [TBD] | [TBD] |  |
+
+# Safety (brief)
+
+- DTT is a reducing agent with a strong odour; handle in a well-ventilated area and avoid inhalation.
+- Standard laboratory PPE otherwise.
+
+# Version history
+
+| Version | Date | Author | Change summary |
+|---|---|---|---|
+| v1.0 | 2026-09-18 | Dillon Corvino | Split out of `prot_mus_iel_isolation.qmd` into its own buffer document (buffer/protocol architecture redesign) — no change to composition. |

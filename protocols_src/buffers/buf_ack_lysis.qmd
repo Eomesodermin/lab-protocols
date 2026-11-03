@@ -1,0 +1,117 @@
+---
+title: "ACK Red Blood Cell Lysis Buffer"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-ACK-LYSIS"
+version: "v1.2"
+date: "2026-09-18"
+description: "Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions."
+summary:
+  final_volume: "1 L"
+  components:
+    - name: "Ammonium chloride (NH4Cl)"
+      amount: "8.26 g/L"
+    - name: "Potassium bicarbonate (KHCO3)"
+      amount: "1.00 g/L"
+    - name: "EDTA"
+      amount: "0.037 g/L (37 mg/L)"
+  prep_note: "Dissolve in sterile distilled water, then adjust to pH 7.2 with dilute HCl before sterile filtration."
+  sterile_filter: "0.22 um filter required"
+  storage: "4C; stable up to 3 months when sterile; do not freeze."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+ACK lysis buffer is used to selectively lyse erythrocytes in single-cell suspensions derived from mouse or human tissues (e.g. liver digests, spleen, PBMC preparations). Under brief incubation, the buffer efficiently removes red blood cells while preserving leukocyte viability and integrity.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+| Component                     | Final concentration | Notes                                                    |
+|------------------------------|---------------------|------------------------------------------------------------|
+| Ammonium chloride (NH4Cl)    |  X mM             | Primary erythrocyte-lysing component                     |
+| Potassium bicarbonate (KHCO3)| X mM               | Buffering capacity                                      |
+| EDTA       | X mM              | Chelates divalent cations; reduces cell clumping         |
+| Sterile distilled water      | —                   | Solvent                                                  |
+| pH                            | 7.2                 | Adjusted after dissolution                               |
+
+::: callout-note
+This formulation reflects the standard ACK buffer used in immunology workflows, with explicit pH adjustment to ensure reproducibility across batches.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+### Preparation of **1 L ACK lysis buffer**
+
+1. Use a clean **1 L glass bottle** or beaker.
+2. Add the following dry reagents:
+   - **8.26 g NH4Cl**
+   - **1.00 g KHCO3**
+   - **0.037 g (37 mg) EDTA**
+3. Add **1 L sterile distilled (bidest) water**.
+4. Mix thoroughly by stirring or gentle swirling until all components are fully dissolved.
+5. Measure pH and **adjust to pH 7.2** using dilute HCl.
+6. **Sterile-filter** the solution using a **0.22 um vacuum filter unit**.
+7. Aliquot if desired under sterile conditions.
+
+### Labelling
+
+Clearly label each bottle or aliquot with:
+- Buffer name: **ACK Lysis Buffer**
+- Date of preparation
+- Preparer initials
+- **Sterile**
+- **pH adjusted to 7.2**
+
+# Storage and stability
+
+- Store at **4 °C**.
+- Stable for up to **3 months** when sterile.
+- **Do not freeze**, as freezing may alter buffer performance.
+
+# Reagent details
+
+| Component | Supplier | Cat# | Notes |
+|---|---|---|---|
+| NH4Cl | [TBD] | [TBD] | Powder; analytical or cell-culture grade |
+| KHCO3 | [TBD] | [TBD] | Powder; hygroscopic — store tightly sealed |
+| EDTA | [TBD] | [TBD] | Powder; cell-culture grade |
+| Distilled water | [TBD] | [TBD] | Sterile (bidest) |
+| HCl | [TBD] | [TBD] | For pH adjustment |
+
+# Safety (brief)
+
+- Wear gloves and eye protection; ammonium chloride is an irritant.
+- Dispose of unused buffer and erythrocyte-containing waste according to biological/chemical waste regulations.
+- For use in primary tissue processing, preparation and sterile filtration should be performed using appropriate aseptic technique.
+
+# Version history
+
+| Version | Date       | Author         | Changes                                                         |
+|--------|------------|----------------|-----------------------------------------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial Quarto buffer document for ACK lysis buffer             |
+| v1.1   | 2026-01-09 | Dillon Corvino | Corrected concentrations, explicit pH adjustment, clarified sterility and labelling requirements |
+| v1.2   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign). |

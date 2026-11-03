@@ -1,0 +1,99 @@
+---
+title: "R0 Medium (RPMI Without Serum)"
+subtitle: "Dillon Corvino"
+protocol_id: "BUF-R0-MED"
+version: "v1.1"
+date: "2026-09-18"
+description: "Serum-free RPMI 1640 medium used for dilution of whole blood prior to Ficoll gradient separation, and for initial PBMC washes."
+summary:
+  final_volume: "500 mL"
+  components:
+    - name: "RPMI 1640"
+      amount: "to 500 mL (serum-free, no additives)"
+  prep_note: "Optional: add 1% (v/v) Pen/Strep (100x stock) only if sterility support is explicitly required."
+  storage: "4C, protected from light; 4-6 weeks unopened, 2-4 weeks after opening; do not freeze."
+  caveat: "Serum-free by design - do not add FCS; serum interferes with Ficoll density gradient separation and interface formation."
+---
+
+**Protocol ID:** {{< meta protocol_id >}}
+**Version:** {{< meta version >}}
+**Author:** Dillon Corvino
+**Date:** {{< meta date >}}
+
+# Purpose
+
+R0 medium is serum-free RPMI 1640 used for diluting whole blood prior to Ficoll separation and for washing PBMCs following gradient isolation. The absence of serum preserves the density characteristics of blood during layering and ensures optimal interface formation on Ficoll.
+
+\tableofcontents
+
+# Linked protocols
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_linked_protocols(rmarkdown::metadata$protocol_id)
+```
+
+# Working buffer composition
+
+| Component        | Final concentration | Notes                                      |
+|------------------|---------------------|--------------------------------------------|
+| RPMI 1640        | 100%                | Base medium                                |
+| FCS              | 0%                  | Serum-free formulation                     |
+| Antibiotics      | 0%                  | Add only if required for sterility         |
+
+::: callout-note
+This buffer is intentionally **serum-free** to avoid interference with Ficoll density gradient separation.
+:::
+
+# Preparation
+
+## A. Preparation of stock (if applicable)
+
+Not applicable — prepared directly as the working buffer.
+
+## B. Preparation of working buffer
+
+R0 medium consists of sterile RPMI 1640 with **no** serum or additional supplements.
+
+### Preparation of **500 mL R0**
+
+1. Obtain 500 mL sterile-filtered RPMI 1640.
+2. Inspect for turbidity or colour change; discard if contamination is suspected.
+3. Label the bottle clearly as **R0 (RPMI, no serum)**.
+4. Store protected from light.
+
+### Optional antibiotic supplementation
+If required for sterility during slower workflows:
+- Add **5 mL** Penicillin/Streptomycin (100x stock) → final 1% (v/v).
+(Not recommended unless protocol explicitly requires it.)
+
+# Storage and stability
+
+- Store at **4 °C**, protected from light.
+- Stable for **4–6 weeks** unopened; **2–4 weeks** after opening if handled aseptically.
+- Do not freeze.
+
+# Reagent details
+
+| Reagent     | Supplier | Cat. # | Notes                     |
+|-------------|----------|--------|---------------------------|
+| RPMI 1640    | Various  | —      | Sterile-filtered          |
+| Pen/Strep (optional) | Various | — | Only if supplementation required |
+
+# Safety (brief)
+
+- Handle RPMI using aseptic technique to avoid contamination.
+- Work in a biosafety cabinet when preparing aliquots or supplementing.
+- Dispose of expired or contaminated medium as biohazardous liquid waste.
+
+# Version history
+
+| Version | Date       | Author         | Changes                           |
+|--------|------------|----------------|-----------------------------------|
+| v1.0   | 2025-11-21 | Dillon Corvino | Initial release of R0 medium file |
+| v1.1   | 2026-09-18 | Dillon Corvino | Migrated to shared summary:/helper architecture (buffer/protocol redesign). |

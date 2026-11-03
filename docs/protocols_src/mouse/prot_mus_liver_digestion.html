@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-09-18">
+<meta name="description" content="Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications.">
+
+<title>Mouse Liver Digestion to Single-Cell Suspension – Protocol Library</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4f4534ac06ff60a70a0629475afe65ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Protocol Library</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/mouse/index.html"> 
+<span class="menu-text">Mouse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/buffers/index.html"> 
+<span class="menu-text">Buffers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols_src/general/index.html"> 
+<span class="menu-text">General</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Mouse Liver Digestion to Single-Cell Suspension</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-house" role="img">
+</i> 
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/buffers/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-droplet" role="img">
+</i> 
+ <span class="menu-text">Buffers</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/general/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-gear" role="img">
+</i> 
+ <span class="menu-text">General</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/human/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person" role="img">
+</i> 
+ <span class="menu-text">Human</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/mouse/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mouse" role="img">
+</i> 
+ <span class="menu-text">Mouse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/resources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-link-45deg" role="img">
+</i> 
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols_src/templates/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link active" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#workflow-summary" id="toc-workflow-summary" class="nav-link" data-scroll-target="#workflow-summary">Workflow summary</a></li>
+  <li><a href="#critical-notes-read-before-starting" id="toc-critical-notes-read-before-starting" class="nav-link" data-scroll-target="#critical-notes-read-before-starting">Critical notes (read before starting)</a></li>
+  <li><a href="#approximate-timing" id="toc-approximate-timing" class="nav-link" data-scroll-target="#approximate-timing">Approximate timing</a></li>
+  <li><a href="#prep-checklist" id="toc-prep-checklist" class="nav-link" data-scroll-target="#prep-checklist">Prep checklist</a>
+  <ul class="collapse">
+  <li><a href="#reagents" id="toc-reagents" class="nav-link" data-scroll-target="#reagents">Reagents</a></li>
+  <li><a href="#plasticware-and-consumables" id="toc-plasticware-and-consumables" class="nav-link" data-scroll-target="#plasticware-and-consumables">Plasticware and consumables</a></li>
+  </ul></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-preparation-and-setup" id="toc-step-1-preparation-and-setup" class="nav-link" data-scroll-target="#step-1-preparation-and-setup">STEP 1 – Preparation and setup</a></li>
+  <li><a href="#step-2-liver-harvest-and-perfusion" id="toc-step-2-liver-harvest-and-perfusion" class="nav-link" data-scroll-target="#step-2-liver-harvest-and-perfusion">STEP 2 – Liver harvest and perfusion</a></li>
+  <li><a href="#step-3-liver-collection-weighing-and-mincing" id="toc-step-3-liver-collection-weighing-and-mincing" class="nav-link" data-scroll-target="#step-3-liver-collection-weighing-and-mincing">STEP 3 – Liver collection, weighing, and mincing</a></li>
+  <li><a href="#step-4-enzymatic-and-mechanical-dissociation" id="toc-step-4-enzymatic-and-mechanical-dissociation" class="nav-link" data-scroll-target="#step-4-enzymatic-and-mechanical-dissociation">STEP 4 – enzymatic and mechanical dissociation</a>
+  <ul class="collapse">
+  <li><a href="#option-a---gentlemacs-c-tube" id="toc-option-a---gentlemacs-c-tube" class="nav-link" data-scroll-target="#option-a---gentlemacs-c-tube">Option A - GentleMACS C-tube</a></li>
+  <li><a href="#option-b-manual-mechanical-dissociation-fallback" id="toc-option-b-manual-mechanical-dissociation-fallback" class="nav-link" data-scroll-target="#option-b-manual-mechanical-dissociation-fallback">Option B – Manual mechanical dissociation (fallback)</a></li>
+  </ul></li>
+  <li><a href="#step-5-filtration-and-washing" id="toc-step-5-filtration-and-washing" class="nav-link" data-scroll-target="#step-5-filtration-and-washing">STEP 5 – Filtration and washing</a></li>
+  <li><a href="#step-6-percoll-enrichment" id="toc-step-6-percoll-enrichment" class="nav-link" data-scroll-target="#step-6-percoll-enrichment">STEP 6 – Percoll enrichment</a></li>
+  <li><a href="#step-7-rbc-lysis" id="toc-step-7-rbc-lysis" class="nav-link" data-scroll-target="#step-7-rbc-lysis">STEP 7 – RBC lysis</a></li>
+  <li><a href="#step-8-final-resuspension-and-counting" id="toc-step-8-final-resuspension-and-counting" class="nav-link" data-scroll-target="#step-8-final-resuspension-and-counting">STEP 8 – Final resuspension and counting</a></li>
+  </ul></li>
+  <li><a href="#buffers-required" id="toc-buffers-required" class="nav-link" data-scroll-target="#buffers-required">Buffers Required</a>
+  <ul class="collapse">
+  <li><a href="#facs-buffer" id="toc-facs-buffer" class="nav-link" data-scroll-target="#facs-buffer">FACS Buffer</a></li>
+  <li><a href="#macs-buffer" id="toc-macs-buffer" class="nav-link" data-scroll-target="#macs-buffer">MACS Buffer</a></li>
+  <li><a href="#liver-digestion-buffer" id="toc-liver-digestion-buffer" class="nav-link" data-scroll-target="#liver-digestion-buffer">Liver Digestion Buffer</a></li>
+  <li><a href="#percoll-solution-37-of-isotonic-stock-33-final" id="toc-percoll-solution-37-of-isotonic-stock-33-final" class="nav-link" data-scroll-target="#percoll-solution-37-of-isotonic-stock-33-final">Percoll Solution (37% of isotonic stock = 33% final)</a></li>
+  <li><a href="#ack-rbc-lysis-buffer" id="toc-ack-rbc-lysis-buffer" class="nav-link" data-scroll-target="#ack-rbc-lysis-buffer">ACK RBC Lysis Buffer</a></li>
+  </ul></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
+  <ul class="collapse">
+  <li><a href="#reagents-1" id="toc-reagents-1" class="nav-link" data-scroll-target="#reagents-1">Reagents</a></li>
+  <li><a href="#disposables" id="toc-disposables" class="nav-link" data-scroll-target="#disposables">Disposables</a></li>
+  <li><a href="#equipment" id="toc-equipment" class="nav-link" data-scroll-target="#equipment">Equipment</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
+  <li><a href="#safety-brief" id="toc-safety-brief" class="nav-link" data-scroll-target="#safety-brief">Safety (brief)</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">Version history</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="prot_mus_liver_digestion.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mouse Liver Digestion to Single-Cell Suspension</h1>
+<p class="subtitle lead">Dillon Corvino</p>
+</div>
+
+<div>
+  <div class="description">
+    Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 18, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Protocol ID:</strong> MUS-LIV-DIG<br>
+<strong>Version:</strong> v2.1<br>
+<strong>Author:</strong> Dillon Corvino</p>
+<section id="purpose" class="level1">
+<h1>Purpose</h1>
+<p>This protocol describes the preparation of single-cell suspensions from mouse liver using perfusion, enzymatic digestion, mechanical dissociation, density centrifugation, and RBC lysis. The resulting cell suspension is suitable for downstream applications such as flow cytometry, FACS sorting, and single-cell omics workflows (with appropriate QC).</p>
+</section>
+<section id="workflow-summary" class="level1">
+<h1>Workflow summary</h1>
+<p><strong>Perfuse (ice-cold PBS) -&gt; gentleMACS digestion -&gt; 70 um filtration with syringe plunger -&gt; wash spins -&gt; Percoll -&gt; RBC lysis</strong></p>
+</section>
+<section id="critical-notes-read-before-starting" class="level1">
+<h1>Critical notes (read before starting)</h1>
+<ul>
+<li><strong>Perfuse with ice-cold PBS or FACS Buffer only — never MACS Buffer.</strong> See the callout in STEP 2.</li>
+<li>Spin times depend on tube format: <strong>50 mL tubes 400 g for 7 min</strong>, <strong>15 mL tubes 400 g for 5 min</strong>. See the callout in STEP 5.</li>
+<li>Percoll enrichment is performed in a <strong>50 mL tube</strong>, not a 15 mL tube. See the callout in STEP 6.</li>
+<li>Keep all <strong>post-digestion washes cold</strong> (4 °C) where possible to preserve viability.</li>
+<li>Process <strong>one liver per 70 µm strainer</strong>; do not reuse strainers between livers.</li>
+<li>Liver cell pellets are often <strong>loose</strong>; be careful when pouring supernatants.</li>
+<li>Do not over-digest; limit digestion to the programmed gentleMACS time, or <strong>30 minutes at 37 °C</strong> with agitation if dissociating manually.</li>
+<li>Percoll must be at <strong>room temperature</strong> and properly diluted to <strong>37% of isotonic stock (= 33% final Percoll)</strong> immediately before use.</li>
+<li>Ensure RBC lysis is <strong>time-limited (2 minutes with ACK)</strong> to avoid damaging leukocytes.</li>
+</ul>
+</section>
+<section id="approximate-timing" class="level1">
+<h1>Approximate timing</h1>
+<ul>
+<li>Preparation and setup: <strong>10–15 min</strong></li>
+<li>Mouse euthanasia, perfusion, and liver dissection: <strong>5–10 min per mouse</strong></li>
+<li>gentleMACS dissociation and enzymatic digestion: <strong>25–30 min</strong></li>
+<li>70 µm filtration: <strong>5 min per liver</strong></li>
+<li>Two wash spins (400 g, 7 min each in 50 mL tubes): <strong>20–25 min</strong></li>
+<li>Percoll centrifugation and leukocyte enrichment: <strong>20–25 min</strong></li>
+<li>RBC lysis, quench, and final resuspension: <strong>15–20 min</strong></li>
+</ul>
+<p><strong>Total approximate time:</strong> <strong>~2–2.5 hours for 1–4 livers processed in parallel</strong><br>
+(Effective hands-on time per liver is ~60–90 minutes, depending on batching and operator experience.)</p>
+<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="prep-checklist" class="level1">
+<h1>Prep checklist</h1>
+<p>Everything below is <strong>per mouse</strong>. Multiply by the number of animals, and add margin on the buffers so the last sample is not short.</p>
+<section id="reagents" class="level2">
+<h2 class="anchored" data-anchor-id="reagents">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Per mouse</th>
+<th>Where it is used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PBS or FACS Buffer, ice-cold</strong> (<code>BUF-FACS-BUF</code>)</td>
+<td><strong>10 mL</strong></td>
+<td>STEP 2 — perfusion (5–10 mL, until the liver blanches). Perfusion only; never MACS Buffer</td>
+</tr>
+<tr class="even">
+<td><strong>Liver digestion buffer</strong> (<code>BUF-LIV-DIG</code>)</td>
+<td><strong>5 mL</strong></td>
+<td>STEP 4 — pre-warmed to 37 °C in the C-tube</td>
+</tr>
+<tr class="odd">
+<td><strong>37% Percoll</strong> (<code>BUF-PERC-37</code>)</td>
+<td><strong>25 mL</strong></td>
+<td>STEP 6 — from isotonic stock: 9.25 mL stock + 15.75 mL PBS</td>
+</tr>
+<tr class="even">
+<td><strong>ACK lysis buffer</strong> (<code>BUF-ACK-LYSIS</code>)</td>
+<td><strong>1 mL</strong></td>
+<td>STEP 7</td>
+</tr>
+<tr class="odd">
+<td><strong>MACS Buffer</strong> (<code>BUF-MACS-BUF</code>)</td>
+<td><strong>~110 mL</strong></td>
+<td>Collection 5 mL; STEP 5 washes 35 + 40 mL; STEP 7 quench 9 mL; STEP 8 final 5 mL (94 mL used, allowance includes margin)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="plasticware-and-consumables" class="level2">
+<h2 class="anchored" data-anchor-id="plasticware-and-consumables">Plasticware and consumables</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Per mouse</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>gentleMACS C-tube</strong></td>
+<td><strong>1</strong></td>
+<td>Option A only</td>
+</tr>
+<tr class="even">
+<td><strong>70 um cell strainer</strong></td>
+<td><strong>1</strong></td>
+<td>Strictly one per liver — never reuse between livers</td>
+</tr>
+<tr class="odd">
+<td><strong>50 mL conical tube</strong></td>
+<td><strong>3</strong></td>
+<td>Collection (STEP 3), filtration + washes (STEP 5), Percoll (STEP 6). <strong>Add 1</strong> if using the optional 50 g hepatocyte spin</td>
+</tr>
+<tr class="even">
+<td><strong>15 mL conical tube</strong></td>
+<td><strong>1</strong></td>
+<td>Post-lysis wash (STEP 7)</td>
+</tr>
+<tr class="odd">
+<td><strong>5 mL syringe</strong></td>
+<td><strong>1</strong></td>
+<td>Plunger only — used to press tissue through the strainer (STEP 5)</td>
+</tr>
+<tr class="even">
+<td><strong>Syringe, 5–10 mL</strong></td>
+<td><strong>1</strong></td>
+<td>Perfusion; may be shared within a treatment group</td>
+</tr>
+<tr class="odd">
+<td><strong>Needle, 25–27 G</strong></td>
+<td><strong>1</strong></td>
+<td>Perfusion</td>
+</tr>
+<tr class="even">
+<td><strong>Transfer pipette</strong></td>
+<td><strong>2</strong></td>
+<td>Pellet resuspension (STEP 6), ACK resuspension (STEP 7)</td>
+</tr>
+<tr class="odd">
+<td><strong>Filter paper</strong></td>
+<td>1 piece</td>
+<td>Blotting the liver before weighing</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Collection at STEP 3 may instead use <strong>1 well of a 6-well plate</strong> with 3–5 mL ice-cold buffer, in which case only <strong>2</strong> 50 mL tubes are needed per mouse.</p>
+</div>
+</div>
+<p><strong>Shared, not per mouse:</strong> gentleMACS + warming sleeves, 37 °C water bath, refrigerated centrifuge with adjustable brake and acceleration, 5–10 mL stripettes, paper towels, ice, timers, dissection scissors and forceps, sharps container, analytical balance.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Full recipes, stock preparation, and storage for each buffer are no longer reproduced here — see the auto-generated <strong><code># Buffers Required</code></strong> section after the Procedure below, or open the linked buffer document directly (<code>BUF-LIV-DIG</code>, <code>BUF-PERC-37</code>, <code>BUF-FACS-BUF</code>, <code>BUF-MACS-BUF</code>, <code>BUF-ACK-LYSIS</code>).</p>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="procedure" class="level1">
+<h1>Procedure</h1>
+<section id="step-1-preparation-and-setup" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-preparation-and-setup">STEP 1 – Preparation and setup</h2>
+<ol type="1">
+<li><strong>Pre-cool collection solutions</strong>
+<ul>
+<li>Pre-cool <strong>PBS</strong> on ice for liver perfusion.</li>
+<li>Pre-cool <strong>MACS Buffer</strong> on ice for tissue collection and all subsequent washes.</li>
+</ul></li>
+<li><strong>Label collection vessels (choose one option per experiment)</strong>
+<ul>
+<li><strong>Option A: 6-well plate collection</strong>
+<ul>
+<li>Label one well per mouse in a 6-well plate.</li>
+<li>Add <strong>3–5 mL ice-cold PBS or MACS Buffer</strong> per well.</li>
+</ul></li>
+<li><strong>Option B: 50 mL tube collection</strong>
+<ul>
+<li>Label one <strong>50 mL conical tube per liver</strong>.</li>
+<li>Add <strong>5 mL ice-cold PBS or MACS Buffer</strong> per tube.</li>
+</ul></li>
+</ul></li>
+<li><strong>Label dissociation and processing tubes</strong>
+<ul>
+<li>Label <strong>gentleMACS C-tubes</strong> (or equivalent) for each liver.</li>
+<li>Label <strong>50 mL tubes</strong> for filtration, washing, and Percoll enrichment (one per liver).</li>
+<li>Label <strong>15 mL tubes</strong> for the post-lysis wash (one per liver).</li>
+</ul></li>
+<li><strong>Prepare buffers</strong>
+<ul>
+<li><strong>Liver digestion buffer</strong> — <code>BUF-LIV-DIG</code>; <strong>5 mL per liver</strong>.</li>
+<li><strong>37% Percoll working solution</strong> — <code>BUF-PERC-37</code>; <strong>25 mL per liver</strong> (<strong>9.25 mL isotonic stock + 15.75 mL PBS</strong>). Add margin when preparing for several livers so the last tube is not short.</li>
+<li><strong>ACK lysis buffer</strong> — <strong>1 mL per liver</strong>.</li>
+<li><strong>MACS Buffer</strong> for washes and final resuspension — allow <strong>~110 mL per liver</strong>.</li>
+</ul></li>
+<li><strong>Warm digestion components</strong>
+<ul>
+<li>Pre-warm a water bath to <strong>37 °C</strong>.</li>
+<li>Place an aliquot of <strong>liver digestion buffer</strong> in the water bath to equilibrate.</li>
+<li>If digestion buffer will be prepared immediately before use, pre-warm the <strong>base medium</strong> (DMEM, PBS, or HBSS) instead.</li>
+</ul></li>
+<li><strong>Equipment setup</strong>
+<ul>
+<li>Pre-cool a benchtop centrifuge to <strong>4 °C</strong>.</li>
+<li>Ensure access to a <strong>gentleMACS</strong> instrument with an appropriate liver dissociation program.</li>
+</ul></li>
+<li><strong>Items to take to the animal facility</strong>
+<ul>
+<li>Ice bucket with <strong>ice-cold PBS</strong> for perfusion.</li>
+<li>6-well plates <em>and/or</em> pre-filled <strong>50 mL tubes</strong> (as selected above).</li>
+<li>Sterile scissors and forceps.</li>
+<li><strong>5–10 mL syringes</strong> (one per mouse or per treatment group).</li>
+<li>Needles for liver perfusion (<strong>25–27 G recommended</strong>).</li>
+<li>Absorbent pads and a waste container for perfusion runoff.</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-2-liver-harvest-and-perfusion" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-liver-harvest-and-perfusion">STEP 2 – Liver harvest and perfusion</h2>
+<ol type="1">
+<li>Euthanise the mouse according to institutional and ethical guidelines (e.g.&nbsp;<strong>CO₂ asphyxiation</strong> or other approved method).</li>
+<li>Place the mouse in a supine position and perform a midline incision to open the abdominal cavity.</li>
+<li>Expose the liver and major vessels (<strong>Inferior vena cava and portal vein</strong>).</li>
+<li>Load a <strong>5 mL syringe</strong> with <strong>ice-cold PBS</strong> and attach a <strong>25–27 G needle</strong>.</li>
+<li>Perfuse the liver via one of the following routes:
+<ul>
+<li><strong>Inferior vena cava</strong><br>
+</li>
+<li><strong>Portal vein</strong></li>
+</ul></li>
+<li>Slowly perfuse with <strong>~5–10 mL ice-cold PBS per mouse</strong> until the liver visibly blanches.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Perfuse with PBS or FACS Buffer only — do not perfuse with MACS Buffer.</strong><br>
+MACS Buffer contains <strong>2 mM EDTA</strong>. Anecdotal evidence suggests residual EDTA carried into the tissue <strong>inhibits downstream collagenase digestion</strong> (collagenases are Ca2+/Zn2+-dependent metalloproteases and EDTA chelates these cofactors).<br>
+MACS Buffer is fine for <strong>all subsequent steps</strong> — collection, washes, Percoll resuspension, quenching, and final resuspension.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Efficient perfusion reduces blood content and improves hepatocyte removal, density separation, and downstream staining quality.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Handle needles and sharps carefully and dispose of them immediately into an approved sharps container after perfusion.</p>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Excise the liver carefully, <strong>removing the gallbladder</strong>.</li>
+<li>Place the liver briefly on <strong>filter paper</strong> to blot excess buffer.</li>
+</ol>
+</section>
+<section id="step-3-liver-collection-weighing-and-mincing" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-liver-collection-weighing-and-mincing">STEP 3 – Liver collection, weighing, and mincing</h2>
+<ol type="1">
+<li>Transfer the perfused liver to a <strong>pre-labelled collection vessel</strong> (on ice).</li>
+<li><em>(Recommended)</em> <strong>Weigh the liver</strong>:
+<ul>
+<li>Briefly blot on filter paper to remove excess liquid.</li>
+<li>Record the liver weight.</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-4-enzymatic-and-mechanical-dissociation" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-enzymatic-and-mechanical-dissociation">STEP 4 – enzymatic and mechanical dissociation</h2>
+<section id="option-a---gentlemacs-c-tube" class="level3">
+<h3 class="anchored" data-anchor-id="option-a---gentlemacs-c-tube">Option A - GentleMACS C-tube</h3>
+<ol type="1">
+<li>Add <strong>5 mL pre-warmed liver digestion buffer (with DNase)</strong> to a <strong>labelled gentleMACS C-tube</strong>.</li>
+<li>Transfer the liver into the gentleMACS C-tube.</li>
+<li>Secure the C-tube onto the <strong>gentleMACS instrument</strong> and place the <strong>warming sleeve</strong> over the tube.</li>
+<li>Run the <strong>m_liver_02_02</strong> program to mechanically dissociate the tissue.</li>
+<li>After the program finishes, briefly inspect the tube to ensure the tissue has been <strong>mechanically disrupted into small fragments</strong> and is fully submerged in digestion buffer.</li>
+<li>Run the <strong>HH17</strong> program (<strong>~17 min</strong>) to allow <strong>warmed enzymatic digestion</strong> of the tissue.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Confirm that each C-tube is correctly seated and rotating before leaving the instrument.<br>
+If a tube is not spinning, stop the run, reseat the tube, and restart the program.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do <strong>not</strong> leave livers in digestion buffer beyond the programmed digestion time.<br>
+Over-digestion can strip surface epitopes and negatively impact downstream phenotyping.<br>
+Note: the gentleMACS instrument does <strong>not</strong> beep when the program finishes—set a timer before starting.</p>
+</div>
+</div>
+<p>Proceed directly to <strong>STEP 5 – Filtration</strong>.</p>
+</section>
+<section id="option-b-manual-mechanical-dissociation-fallback" class="level3">
+<h3 class="anchored" data-anchor-id="option-b-manual-mechanical-dissociation-fallback">Option B – Manual mechanical dissociation (fallback)</h3>
+<p>Use this route if the gentleMACS is unavailable.</p>
+<ol type="1">
+<li>Add <strong>5 mL pre-warmed liver digestion buffer (with DNAse)</strong> to a <strong>labelled 50 mL tube</strong>.</li>
+<li>Transfer the liver into the 50 mL tube.</li>
+<li>Using sterile scissors, mince the liver <strong>directly in the tube</strong> until fragments are approximately <strong>2–3 mm</strong> in size.</li>
+<li>Ensure all tissue pieces are fully submerged in digestion buffer and not adhered to the tube walls.</li>
+<li>Place the tube horizontally on a <strong>37°C shaking incubator (250 rpm)</strong> and incubate for <strong>30 minutes</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ensure tubes are tightly closed and positioned securely on the shaker.<br>
+Set a timer — prolonged digestion can reduce viability and affect surface marker integrity.</p>
+</div>
+</div>
+<p>Proceed directly to <strong>STEP 5 – Filtration</strong>.</p>
+</section>
+</section>
+<section id="step-5-filtration-and-washing" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-filtration-and-washing">STEP 5 – Filtration and washing</h2>
+<p>Applies to both Option A and Option B.</p>
+<ol type="1">
+<li>Seat a <strong>70 µm cell strainer</strong> on a <strong>labelled 50 mL conical tube</strong>.</li>
+<li>Pour the digested liver suspension through the strainer.</li>
+<li>Using the back of a <strong>5 mL syringe plunger</strong>, gently press the remaining tissue through the strainer until no visible fragments remain.</li>
+<li>Rinse the strainer with <strong>ice-cold MACS Buffer</strong> while continuing gentle mechanical disruption.</li>
+<li>Bring the total volume to <strong>40 mL with ice-cold MACS Buffer</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Filtration is performed <strong>directly into the 50 mL tube</strong> — no petri dish, and no dab/swirl recovery steps. One strainer per liver; do not reuse.</p>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Centrifuge at <strong>400 g for 7 minutes at 4 °C</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Spin time depends on tube format.</strong> The longer path length in a 50 mL tube requires a longer spin to pellet equivalently:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tube</th>
+<th>Speed</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>50 mL</strong></td>
+<td>400 g</td>
+<td><strong>7 min</strong></td>
+</tr>
+<tr class="even">
+<td><strong>15 mL</strong></td>
+<td>400 g</td>
+<td><strong>5 min</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This applies to <strong>every 400 g wash spin in this protocol</strong>. Check which tube you are in before starting the centrifuge.</p>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Discard the supernatant by pouring.</li>
+<li>Resuspend the pellet and bring the volume to <strong>40 mL with ice-cold MACS Buffer</strong>.</li>
+<li>Recap and resuspend by inverting the tube back and forth, or with a brief but firm shake.</li>
+<li>Centrifuge at <strong>400 g for 7 minutes at 4 °C</strong> (50 mL tube).</li>
+<li>Discard the supernatant and keep the leukocyte pellet <strong>on ice</strong>.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cell pellets from digested liver are often <strong>loose and poorly compacted</strong>.<br>
+When discarding supernatant by pouring, do so carefully. Avoid flicking, shaking, or abrupt movements.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Optional hepatocyte pre-clearing spin (recommended).</strong> A low-speed spin can be inserted immediately after filtration (before step 6) to sediment hepatocytes while leaving leukocytes in suspension:</p>
+<ol type="1">
+<li>Centrifuge at <strong>50 g for 2 minutes at 4 °C</strong>.</li>
+<li>Carefully transfer the <strong>supernatant</strong> (containing leukocytes) to a fresh 50 mL tube, avoiding the hepatocyte pellet.</li>
+<li>Continue from step 5 above.</li>
+</ol>
+<p><strong>Why this is worth doing.</strong> Hepatocytes are large, fragile cells and rupture readily at the higher speeds used for the subsequent wash and Percoll spins. Lysed hepatocytes release DNA and cytoplasmic contents that drive <strong>clumping</strong> and trap leukocytes, and they release <strong>damage-associated molecular patterns</strong> — extracellular ATP, HMGB1, mitochondrial DNA — which ligate purinergic and pattern-recognition receptors and can <strong>activate the very leukocytes being isolated</strong>, altering activation-marker expression before staining. Removing intact hepatocytes at low speed first avoids generating that debris.</p>
+<p>Weigh this against the leukocyte loss in the discarded pellet: a proportion of leukocytes will be carried down with the hepatocytes. The Percoll gradient alone removes hepatocytes effectively, so this step is optional — but it is recommended where activation phenotype is a readout, where clumping has been a problem, or for single-cell applications.</p>
+</div>
+</div>
+</section>
+<section id="step-6-percoll-enrichment" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-percoll-enrichment">STEP 6 – Percoll enrichment</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Percoll working solution is <strong>37% of isotonic Percoll stock</strong>, which is the <strong>same solution as “33% Percoll”</strong> when quoted by final Percoll content (37 x 0.9 = 33.3). The AG Surace SOP #001 uses the latter convention. See <code>BUF-PERC-37</code> — do not relabel one as the other without changing the recipe.</p>
+</div>
+</div>
+<ol type="1">
+<li>Aliquot <strong>25 mL of 37% Percoll</strong> into <strong>pre-labelled 50 mL conical tubes</strong> (one tube per liver).</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Use a 50 mL tube for the Percoll step, not a 15 mL tube.</strong><br>
+In a 50 mL tube the hepatocyte layer floats clear of the pellet and the supernatant can be <strong>poured off</strong> cleanly.<br>
+If a 15 mL tube must be used, the hepatocyte layer sits much closer to the pellet — you <strong>must aspirate the supernatant under vacuum</strong> rather than pour, or hepatocyte contamination of the leukocyte fraction will be unacceptably high.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Using a <strong>transfer pipette</strong>, resuspend the cell pellet using the small remaining <strong>dead volume</strong>.</li>
+<li>Take up approximately <strong>1 mL of 37% Percoll</strong> from the corresponding 50 mL tube and use it to <strong>rinse the wash tube</strong>, resuspending any remaining cells.</li>
+<li>Transfer the resuspended cells into the corresponding tube containing <strong>25 mL 37% Percoll</strong>.</li>
+<li>Repeat the rinse <strong>1–2 times</strong> with additional small volumes of Percoll (as needed) to recover all remaining cells.</li>
+<li>Recap and <strong>invert gently 2–3 times</strong> to ensure an even cell suspension.</li>
+<li>Centrifuge at <strong>611 g for 15 minutes at room temperature (20–22 °C)</strong> using:
+<ul>
+<li>Acceleration: <strong>high</strong> (e.g.&nbsp;<strong>acc 9</strong>)</li>
+<li>Brake: <strong>minimal</strong> (e.g.&nbsp;<strong>br 1</strong>)</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>611 g corresponds to 1700 rpm on the lab centrifuge</strong> (rotor rmax ~18.9 cm). If using a different rotor, set the instrument by <strong>relative centrifugal force (611 g)</strong>, not by rpm. Equivalent speeds:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Rotor rmax</th>
+<th>rpm for 611 g</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>16.0 cm</td>
+<td>1848</td>
+</tr>
+<tr class="even">
+<td>17.0 cm</td>
+<td>1793</td>
+</tr>
+<tr class="odd">
+<td>18.0 cm</td>
+<td>1742</td>
+</tr>
+<tr class="even">
+<td>18.9 cm</td>
+<td>1700</td>
+</tr>
+<tr class="odd">
+<td>20.0 cm</td>
+<td>1653</td>
+</tr>
+</tbody>
+</table>
+<p>Calculated as <code>RCF = 1.118e-5 x r(cm) x rpm^2</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Avoid high brake settings during Percoll centrifugation. Abrupt braking can disrupt the gradient and reduce lymphocyte enrichment.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not leave liver samples in Percoll longer than necessary. Prolonged exposure can reduce viability and negatively impact downstream applications. Plan spins and next steps in advance.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After the Percoll spin, a <strong>hepatocyte layer floats on top of the solution</strong>, while a <strong>leukocyte + erythrocyte pellet</strong> forms at the apex of the tube.</p>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Prepare a few layers of paper towel next to the waste container.</li>
+<li><strong>Pour off</strong> the hepatocyte layer and supernatant in one smooth motion.</li>
+<li>Keep the tube inverted briefly and dab the opening on the paper towel to wick residual Percoll (avoid touching or dislodging the pellet).</li>
+</ol>
+<p>Proceed directly to <strong>STEP 7 – RBC lysis</strong>. There is no intermediate wash.</p>
+</section>
+<section id="step-7-rbc-lysis" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-rbc-lysis">STEP 7 – RBC lysis</h2>
+<ol type="1">
+<li>Using a 5 mL or 10 mL Stripette, add <strong>1 mL ACK lysis buffer</strong> to each pellet.</li>
+<li>Using a transfer pipette, resuspend the leukocyte + erythrocyte pellet by aspirating and dispensing until homogeneous.</li>
+<li>Incubate for <strong>2 minutes at room temperature</strong>.</li>
+<li>During the incubation, transfer each suspension into the corresponding <strong>labelled 15 mL tube</strong>.</li>
+<li>At the end of the incubation, quench by topping up to <strong>10 mL with MACS Buffer</strong>.</li>
+<li>Centrifuge at <strong>400 g for 5 minutes at 4 °C</strong> (15 mL tube; return brake to a normal setting, e.g.&nbsp;<strong>br 6</strong>).</li>
+<li>Discard the supernatant by pouring, dab the inverted tube on paper towel, and keep the pellet on ice.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Liver leukocytes are particularly sensitive to over-lysis. Do not exceed the stated incubation time, especially after enzymatic digestion or Percoll separation.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>HybriMax</strong> may be substituted for ACK (<strong>2–3 minutes at room temperature</strong>) and is gentler, but ACK at 2 minutes is the standard for this protocol.</p>
+</div>
+</div>
+</section>
+<section id="step-8-final-resuspension-and-counting" class="level2">
+<h2 class="anchored" data-anchor-id="step-8-final-resuspension-and-counting">STEP 8 – Final resuspension and counting</h2>
+<ol type="1">
+<li>Loosen the pellet in the remaining dead volume by vortexing briefly.</li>
+<li>Resuspend the cell pellet in <strong>5 mL ice-cold MACS Buffer</strong>.</li>
+<li>Count cells and assess viability (e.g.&nbsp;trypan blue) as required.</li>
+<li>Proceed with downstream applications (e.g.&nbsp;flow cytometry, sorting, or culture of NLCs).</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For flow cytometry staining, seed up to <strong>5 x 10^6 cells per well</strong> of a 96-well U-bottom plate. This is the maximum recommended for a <strong>50 uL</strong> staining volume — scale the staining volume up for more cells. Maximum well volume is <strong>200 uL</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For single-cell sequencing applications, minimise the time from tissue harvest to final resuspension, keep samples on ice whenever possible after digestion, and consider additional debris/dead cell removal steps if yields permit.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="buffers-required" class="level1">
+<h1>Buffers Required</h1>
+<p>Full composition, preparation, storage, and safety information for each buffer lives in its own linked buffer document — only a concise per-buffer summary is reproduced here, generated automatically from that document.</p>
+<section id="facs-buffer" class="level2">
+<h2 class="anchored" data-anchor-id="facs-buffer">FACS Buffer</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Final concentration / amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">PBS 1x</td>
+<td style="text-align: left;">to 500 mL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FCS</td>
+<td style="text-align: left;">10 mL (2% v/v)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Final volume:</strong> 500 mL</li>
+<li><strong>Preparation note:</strong> Mix gently by inversion.</li>
+<li><strong>Sterilisation / filtering:</strong> 0.22 um filter if sterility required</li>
+<li><strong>Storage:</strong> 4C, 4-6 weeks</li>
+<li><strong>Caveat:</strong> No EDTA - EDTA is excluded from FACS buffer to avoid interference with staining reagents and functional assays. Use MACS Buffer (BUF-MACS-BUF) instead if EDTA is needed.</li>
+</ul>
+<p><em>Full composition, preparation steps, storage, and safety information: <code>BUF-FACS-BUF</code>.</em></p>
+</section>
+<section id="macs-buffer" class="level2">
+<h2 class="anchored" data-anchor-id="macs-buffer">MACS Buffer</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Final concentration / amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">PBS 1x</td>
+<td style="text-align: left;">to 500 mL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FCS</td>
+<td style="text-align: left;">10 mL (2% v/v)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EDTA (0.5 M)</td>
+<td style="text-align: left;">2 mL (2 mM final)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Final volume:</strong> 500 mL</li>
+<li><strong>Preparation note:</strong> Mix gently by inversion.</li>
+<li><strong>Sterilisation / filtering:</strong> 0.22 um filter if sterility required</li>
+<li><strong>Storage:</strong> 4C, 4-6 weeks</li>
+<li><strong>Caveat:</strong> Contains EDTA - do not use for liver perfusion or any step upstream of collagenase digestion (EDTA chelates the Ca2+/Zn2+ cofactors collagenases require). Use FACS Buffer (BUF-FACS-BUF) instead.</li>
+</ul>
+<p><em>Full composition, preparation steps, storage, and safety information: <code>BUF-MACS-BUF</code>.</em></p>
+</section>
+<section id="liver-digestion-buffer" class="level2">
+<h2 class="anchored" data-anchor-id="liver-digestion-buffer">Liver Digestion Buffer</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 83%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Final concentration / amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Collagenase D</td>
+<td style="text-align: left;">1 mg/mL (50 uL of 100 mg/mL stock per 5 mL)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Collagenase IV</td>
+<td style="text-align: left;">0.5 mg/mL (25 uL of 100 mg/mL stock per 5 mL) - alternative to Collagenase D</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DNase I</td>
+<td style="text-align: left;">50 ug/mL (25 uL of 10 mg/mL stock per 5 mL)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Final volume:</strong> 5 mL per liver</li>
+<li><strong>Preparation note:</strong> Mix gently by inversion; do not vortex. Pre-warm to 37C immediately before use.</li>
+<li><strong>Storage:</strong> Keep on ice until pre-warming; do not freeze after DNase I is added; discard unused buffer at end of day.</li>
+<li><strong>Caveat:</strong> Collagenase D and IV are not interchangeable at the same concentration - use one or the other, not both. Never use an EDTA-containing base (e.g.&nbsp;MACS Buffer) - EDTA inhibits collagenase digestion.</li>
+</ul>
+<p><em>Full composition, preparation steps, storage, and safety information: <code>BUF-LIV-DIG</code>.</em></p>
+</section>
+<section id="percoll-solution-37-of-isotonic-stock-33-final" class="level2">
+<h2 class="anchored" data-anchor-id="percoll-solution-37-of-isotonic-stock-33-final">Percoll Solution (37% of isotonic stock = 33% final)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Final concentration / amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Percoll (isotonic)</td>
+<td style="text-align: left;">9.25 mL (37% of isotonic stock = 33% final Percoll)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PBS 1x</td>
+<td style="text-align: left;">15.75 mL</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Final volume:</strong> 25 mL per mouse liver</li>
+<li><strong>Preparation note:</strong> Equilibrate isotonic Percoll stock to room temperature before diluting; mix gently by inversion. Prepare fresh on the day of use.</li>
+<li><strong>Storage:</strong> Room temperature, same-day use only; do not freeze working solution</li>
+<li><strong>Caveat:</strong> 37% (of isotonic stock) and 33% (final Percoll) both describe this same solution, just measured against different denominators - check which convention an external protocol uses before changing any number.</li>
+</ul>
+<p><em>Full composition, preparation steps, storage, and safety information: <code>BUF-PERC-37</code>.</em></p>
+</section>
+<section id="ack-rbc-lysis-buffer" class="level2">
+<h2 class="anchored" data-anchor-id="ack-rbc-lysis-buffer">ACK RBC Lysis Buffer</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Final concentration / amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Ammonium chloride (NH4Cl)</td>
+<td style="text-align: left;">8.26 g/L</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Potassium bicarbonate (KHCO3)</td>
+<td style="text-align: left;">1.00 g/L</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EDTA</td>
+<td style="text-align: left;">0.037 g/L (37 mg/L)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Final volume:</strong> 1 L</li>
+<li><strong>Preparation note:</strong> Dissolve in sterile distilled water, then adjust to pH 7.2 with dilute HCl before sterile filtration.</li>
+<li><strong>Sterilisation / filtering:</strong> 0.22 um filter required</li>
+<li><strong>Storage:</strong> 4C; stable up to 3 months when sterile; do not freeze.</li>
+</ul>
+<p><em>Full composition, preparation steps, storage, and safety information: <code>BUF-ACK-LYSIS</code>.</em></p>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="materials" class="level1">
+<h1>Materials</h1>
+<section id="reagents-1" class="level2">
+<h2 class="anchored" data-anchor-id="reagents-1">Reagents</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 25%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Supplier</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PBS 1x or FACS Buffer, ice-cold</td>
+<td>Various</td>
+<td><code>BUF-FACS-BUF</code>; <strong>perfusion only</strong> — never perfuse with MACS Buffer</td>
+</tr>
+<tr class="even">
+<td>MACS Buffer</td>
+<td>In-house / various</td>
+<td><code>BUF-MACS-BUF</code>; collection, washes, and final resuspension; kept cold</td>
+</tr>
+<tr class="odd">
+<td>Liver digestion buffer</td>
+<td>In-house</td>
+<td><code>BUF-LIV-DIG</code>; DMEM, PBS, or HBSS base; collagenase + DNase I; pre-warmed to 37 °C</td>
+</tr>
+<tr class="even">
+<td>Collagenase D or Collagenase IV</td>
+<td>Roche / various</td>
+<td>Component of liver digestion buffer</td>
+</tr>
+<tr class="odd">
+<td>DNase I</td>
+<td>Various</td>
+<td>Component of liver digestion buffer; 50 ug/mL final</td>
+</tr>
+<tr class="even">
+<td>Percoll</td>
+<td>Cytiva/GE or similar</td>
+<td><code>BUF-PERC-37</code>; <strong>37% of isotonic stock = 33% final Percoll</strong>; prepared on day of use</td>
+</tr>
+<tr class="odd">
+<td>ACK lysis buffer</td>
+<td>Commercial or in-house</td>
+<td><code>BUF-ACK-LYSIS</code>; 1 mL per liver; 2 min at room temperature</td>
+</tr>
+<tr class="even">
+<td>Fetal calf serum (FCS), heat-inactivated</td>
+<td>Various</td>
+<td>Component of MACS Buffer</td>
+</tr>
+<tr class="odd">
+<td>EDTA</td>
+<td>Various</td>
+<td>Component of MACS Buffer</td>
+</tr>
+<tr class="even">
+<td>CO₂ or approved euthanasia agent</td>
+<td>Facility supply</td>
+<td>For mouse sacrifice</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="disposables" class="level2">
+<h2 class="anchored" data-anchor-id="disposables">Disposables</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>50 mL conical tubes</td>
+<td>Liver collection, filtration, washing, and <strong>Percoll enrichment</strong> (2 per liver)</td>
+</tr>
+<tr class="even">
+<td>15 mL conical tubes</td>
+<td>Post-lysis wash (one per liver)</td>
+</tr>
+<tr class="odd">
+<td>gentleMACS C-tubes (or equivalent)</td>
+<td>Enzymatic and mechanical dissociation</td>
+</tr>
+<tr class="even">
+<td>Sterile Petri dishes (10 cm)</td>
+<td>Backup mincing / straining if required</td>
+</tr>
+<tr class="odd">
+<td>70 µm cell strainers</td>
+<td>Filtration of digested tissue</td>
+</tr>
+<tr class="even">
+<td>Syringes (5–10 mL)</td>
+<td>Liver perfusion</td>
+</tr>
+<tr class="odd">
+<td>Needles (25–27 G)</td>
+<td>Inferior vena cava or portal vein perfusion</td>
+</tr>
+<tr class="even">
+<td>Transfer pipettes</td>
+<td>Resuspension and Percoll transfer</td>
+</tr>
+<tr class="odd">
+<td>Filter paper</td>
+<td>Blotting liver prior to weighing</td>
+</tr>
+<tr class="even">
+<td>Paper towels / bench wipes</td>
+<td>Wicking supernatants after Percoll</td>
+</tr>
+<tr class="odd">
+<td>Gloves and sharps container</td>
+<td>Standard laboratory safety</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="equipment" class="level2">
+<h2 class="anchored" data-anchor-id="equipment">Equipment</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Equipment</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CO₂ chamber or euthanasia setup</td>
+<td>As per animal ethics approval</td>
+</tr>
+<tr class="even">
+<td>Dissection instruments</td>
+<td>Scissors and forceps</td>
+</tr>
+<tr class="odd">
+<td>gentleMACS dissociator</td>
+<td>With liver-appropriate digestion program</td>
+</tr>
+<tr class="even">
+<td>Refrigerated centrifuge</td>
+<td>Compatible with 15 mL and 50 mL tubes; adjustable brake</td>
+</tr>
+<tr class="odd">
+<td>Benchtop incubator or heating sleeve</td>
+<td>37 °C for enzymatic digestion</td>
+</tr>
+<tr class="even">
+<td>Analytical balance</td>
+<td>For weighing mice and livers</td>
+</tr>
+<tr class="odd">
+<td>Biological safety cabinet (Class II)</td>
+<td>Recommended for tissue and cell handling</td>
+</tr>
+<tr class="even">
+<td>Ice bucket</td>
+<td>To keep samples cold between steps</td>
+</tr>
+<tr class="odd">
+<td>Timer</td>
+<td>Critical for digestion, Percoll, and lysis steps</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="troubleshooting" class="level1">
+<h1>Troubleshooting</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 34%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Possible cause</th>
+<th>Suggested solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Low lymphocyte yield</td>
+<td>Incomplete perfusion or digestion</td>
+<td>Ensure liver blanches during perfusion; mince thoroughly; avoid under-digestion</td>
+</tr>
+<tr class="even">
+<td>High red blood cell contamination</td>
+<td>Insufficient or skipped RBC lysis</td>
+<td>Perform ACK lysis for the full <strong>2 min</strong> and quench immediately</td>
+</tr>
+<tr class="odd">
+<td>Poor Percoll separation or weak pellet</td>
+<td>Incorrect Percoll concentration or harsh braking</td>
+<td>Use fresh <strong>37% Percoll</strong>; confirm <strong>611 g</strong>; set brake to minimum</td>
+</tr>
+<tr class="even">
+<td>Heavy hepatocyte carryover</td>
+<td>Percoll run in a 15 mL tube, or supernatant poured</td>
+<td>Use a <strong>50 mL tube</strong>; if 15 mL is unavoidable, <strong>vacuum-aspirate</strong> the supernatant; consider the optional 50 g pre-clearing spin</td>
+</tr>
+<tr class="odd">
+<td>Poor digestion despite correct enzyme</td>
+<td>Perfused with EDTA-containing MACS Buffer</td>
+<td>Perfuse with <strong>PBS or FACS Buffer</strong> only</td>
+</tr>
+<tr class="even">
+<td>Loose pellets and cell loss</td>
+<td>Aggressive pouring of supernatant</td>
+<td>Pour slowly in one smooth motion; wick residual liquid gently</td>
+</tr>
+<tr class="odd">
+<td>Cells still in supernatant after a wash</td>
+<td>50 mL tube spun for the 15 mL duration</td>
+<td>Spin 50 mL tubes at <strong>400 g for 7 min</strong>, 15 mL tubes for 5 min</td>
+</tr>
+<tr class="even">
+<td>Low viability</td>
+<td>Over-digestion or prolonged handling at RT</td>
+<td>Limit digestion time; keep washes cold; process promptly</td>
+</tr>
+<tr class="odd">
+<td>Excess debris or clumping</td>
+<td>Inadequate DNase activity or filtration</td>
+<td>Confirm DNase at <strong>50 ug/mL</strong>; filter through 70 µm mesh with the plunger</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="safety-brief" class="level1">
+<h1>Safety (brief)</h1>
+<ul>
+<li>All animal procedures must comply with approved animal licences and institutional regulations.</li>
+<li>Wear appropriate PPE (lab coat, gloves, eye protection) when handling animals, tissues, and reagents.</li>
+<li>Handle sharps (needles, scalpels) with care and dispose of immediately in approved sharps containers.</li>
+<li>Perform tissue and cell handling in a biological safety cabinet where appropriate.</li>
+<li>Percoll and RBC lysis buffers are chemical hazards; avoid skin and eye contact and dispose of waste according to local safety guidelines.</li>
+</ul>
+</section>
+<section id="version-history" class="level1">
+<h1>Version history</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Date</th>
+<th>Author</th>
+<th>Change summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>v1.0</td>
+<td>2025-11-20</td>
+<td>Dillon Corvino</td>
+<td>Initial Quarto version based on SOP_001 (liver) from IEO</td>
+</tr>
+<tr class="even">
+<td>v1.1</td>
+<td>2025-11-26</td>
+<td>Dillon Corvino</td>
+<td>Manual check and update protocol</td>
+</tr>
+<tr class="odd">
+<td>v1.2</td>
+<td>2025-12-29</td>
+<td>Dillon Corvino</td>
+<td>Unified with the established lab protocol</td>
+</tr>
+<tr class="even">
+<td>v2.0</td>
+<td>2026-08-05</td>
+<td>Dillon Corvino</td>
+<td>Merged with AG Surace SOP #001 (S. Ng). Perfusion switched to ice-cold PBS (EDTA-free) with rationale callout. Mandatory 70 um syringe-plunger filtration directly into a 50 mL tube after gentleMACS. 50 g hepatocyte spin demoted to optional. Two 40 mL washes at 400 g. All 50 mL tube wash spins 5 -&gt; 7 min (15 mL remain 5 min). Percoll: density unchanged (37% of isotonic stock = 33% final Percoll, now labelled with both conventions); 10 mL in 15 mL tube -&gt; 25 mL in 50 mL tube, 800 g/20 min -&gt; 611 g/15 min, acc 7 -&gt; acc 9; post-Percoll wash removed. ACK lysis standardised to 1 mL for 2 min. Final resuspension 5 mL. Digestion buffer consolidated to single <code>BUF-LIV-DIG</code>.</td>
+</tr>
+<tr class="odd">
+<td>v2.1</td>
+<td>2026-09-18</td>
+<td>Dillon Corvino</td>
+<td>Removed the inline <code>## Buffer recipes</code> section (full recipes were duplicated from the linked buffer documents); replaced <code># Buffers used</code> with an auto-generated <code># Buffers Required</code> section (one heading + one small table per buffer, sourced from each buffer’s own <code>summary:</code> data). <code>BUF-FACS-MACS</code> split into <code>BUF-FACS-BUF</code> and <code>BUF-MACS-BUF</code>; reagent references updated accordingly.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -9,4 +9,6 @@ authors:
 repository-code: "https://github.com/Eomesodermin/lab-protocols"
 url: "https://dilloncorvino.com/lab-protocols/"
 license: CC-BY-4.0
+doi: 10.5281/zenodo.23950821
+version: 1.0.0
 date-released: "2026-11-04"

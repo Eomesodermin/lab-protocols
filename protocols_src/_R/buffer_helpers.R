@@ -18,6 +18,42 @@ suppressWarnings(suppressPackageStartupMessages(library(tidyverse)))
   readr::read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
 }
 
+# ---- Links ---------------------------------------------------------------
+# IDs, titles and paths come from protocols_src/_registry.tsv, generated from
+# every document's YAML by _R/build_registry.R (a Quarto pre-render step).
+
+.site_url <- "https://eomesodermin.github.io/lab-protocols"
+
+.read_registry <- function() {
+  path <- here::here("protocols_src/_registry.tsv")
+  if (!file.exists(path)) {
+    source(here::here("protocols_src/_R/build_registry.R"))
+    build_registry(quiet = TRUE)
+  }
+  readr::read_tsv(path, show_col_types = FALSE)
+}
+
+# URL of a document's rendered page. HTML output gets a path relative to the
+# document being rendered; PDF (and anything else) gets the published site URL,
+# because relative links do not survive in a PDF.
+.page_url <- function(qmd_path) {
+  html_path <- sub("\\.qmd$", ".html", qmd_path)
+  if (isTRUE(knitr::is_html_output())) {
+    as.character(fs::path_rel(here::here(html_path), start = getwd()))
+  } else {
+    paste0(.site_url, "/", html_path)
+  }
+}
+
+# Markdown link to a protocol or buffer by ID. `label` defaults to the title;
+# unknown IDs fall back to plain code so a typo never breaks the render.
+link_to <- function(id, label = NULL) {
+  entry <- .read_registry() |> dplyr::filter(id == !!id)
+  if (nrow(entry) == 0) return(glue::glue("`{id}`"))
+  label <- label %||% entry$title[1]
+  glue::glue("[{label}]({.page_url(entry$path[1])})")
+}
+
 .cat_line <- function(...) {
   # glue::glue() trims trailing newlines from its own output by default, so
   # relying on an embedded "\n" inside a glue template silently drops the
@@ -67,7 +103,9 @@ render_linked_protocols <- function(buffer_id) {
   }
 
   linked |>
-    dplyr::mutate(line = glue::glue("- `{protocol_id}`")) |>
+    dplyr::mutate(line = glue::glue(
+      "- {purrr::map_chr(protocol_id, ~ as.character(link_to(.x)))} (`{protocol_id}`)"
+    )) |>
     dplyr::pull(line) |>
     cat(sep = "\n")
 
@@ -102,7 +140,7 @@ render_buffer_summary <- function(buffer_id) {
   meta <- rmarkdown::yaml_front_matter(path)
   summary <- meta$summary
 
-  .cat_line(glue::glue("## {buffer_name}"))
+  .cat_line(glue::glue("## {link_to(buffer_id, buffer_name)}"))
   .cat_line("")
 
   if (is.null(summary)) {
@@ -145,7 +183,7 @@ render_buffer_summary <- function(buffer_id) {
   }
 
   .cat_line(glue::glue(
-    "*Full composition, preparation steps, storage, and safety information: `{buffer_id}`.*"
+    "*Full composition, preparation steps, storage, and safety information: {link_to(buffer_id, paste0(buffer_id, ' - full buffer document'))}.*"
   ))
   .cat_line("")
 
@@ -166,5 +204,44 @@ render_all_buffer_summaries <- function(protocol_id) {
     render_buffer_summary(bid)
   }
 
+  invisible(NULL)
+}
+
+# ---- Cross-reference tables ------------------------------------------------
+
+# Buffer -> protocols that use it (every registered buffer, including unused).
+render_buffer_to_protocols <- function() {
+  deps <- .read_dependencies()
+  reg <- .read_registry()
+  buffers <- reg |> dplyr::filter(type == "buffer") |> dplyr::arrange(title)
+
+  rows <- purrr::map_dfr(buffers$id, function(bid) {
+    prots <- deps |> dplyr::filter(buffer_id == bid) |> dplyr::pull(protocol_id) |> unique() |> sort()
+    tibble::tibble(
+      Buffer = as.character(link_to(bid)),
+      `Buffer ID` = paste0("`", bid, "`"),
+      `Used in` = length(prots),
+      Protocols = if (length(prots) == 0) "-" else paste(purrr::map_chr(prots, ~ as.character(link_to(.x))), collapse = "; ")
+    )
+  })
+  print(knitr::kable(rows, align = "l"))
+  invisible(NULL)
+}
+
+# Protocol -> buffers it uses (every registered protocol, including those with none).
+render_protocol_to_buffers <- function() {
+  deps <- .read_dependencies()
+  reg <- .read_registry()
+  protocols <- reg |> dplyr::filter(type == "protocol") |> dplyr::arrange(title)
+
+  rows <- purrr::map_dfr(protocols$id, function(pid) {
+    bufs <- deps |> dplyr::filter(protocol_id == pid) |> dplyr::pull(buffer_id) |> unique() |> sort()
+    tibble::tibble(
+      Protocol = as.character(link_to(pid)),
+      `Protocol ID` = paste0("`", pid, "`"),
+      Buffers = if (length(bufs) == 0) "-" else paste(purrr::map_chr(bufs, ~ as.character(link_to(.x))), collapse = "; ")
+    )
+  })
+  print(knitr::kable(rows, align = "l"))
   invisible(NULL)
 }

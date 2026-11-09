@@ -1,0 +1,39 @@
+---
+title: "Buffer and protocol cross-reference"
+description: "Which buffers each protocol uses, and which protocols use each buffer."
+format: html
+---
+
+Generated automatically from `_dependencies.csv` and each document's YAML — do not edit by hand. To change a link, edit the dependency in `protocols_src/_dependencies.csv`.
+
+::: {.panel-tabset}
+
+## Buffer → protocols
+
+Find a buffer, then jump to every protocol that uses it.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_buffer_to_protocols()
+```
+
+## Protocol → buffers
+
+Find a protocol, then jump to the buffers it needs.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/buffer_helpers.R"))
+render_protocol_to_buffers()
+```
+
+:::

@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  pre-render:
+    - Rscript protocols_src/_R/build_registry.R
+    - Rscript protocols_src/_validate_dependencies.R --quiet
   resources:
     - protocols_src/templates/*
     - protocols_src/resources/*.html
@@ -11,6 +14,7 @@ project:
 
 website:
   title: "Protocol Library"
+  site-url: "https://eomesodermin.github.io/lab-protocols"
   bread-crumbs: true
 
   navbar:
@@ -24,6 +28,10 @@ website:
         href: protocols_src/buffers/index.qmd
       - text: "General"
         href: protocols_src/general/index.qmd
+      - text: "Human"
+        href: protocols_src/human/index.qmd
+      - text: "Cross-reference"
+        href: protocols_src/cross_reference.qmd
 
   sidebar:
     style: "floating"
@@ -48,6 +56,10 @@ website:
         text: "Mouse"
         icon: mouse
 
+      - href: protocols_src/cross_reference.qmd
+        text: "Buffer / protocol links"
+        icon: diagram-3
+
       - href: protocols_src/resources/index.qmd
         text: "Resources"
         icon: link-45deg
@@ -55,6 +67,9 @@ website:
       - href: protocols_src/templates/index.qmd
         text: "Templates"
         icon: file-earmark-spreadsheet
+
+filters:
+  - protocols_src/_filters/autolink.lua
 
 format:
   html:

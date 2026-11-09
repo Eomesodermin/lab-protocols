@@ -6,8 +6,8 @@ listing:
   type: table
   fields: [protocol_id, title, version, date]
   field-display-names:
-    protocol_id: "Protocol ID"
-    title: "Protocol"
+    protocol_id: "Buffer ID"
+    title: "Buffer"
     version: "Version"
     date: "Date"
   field-types:
@@ -16,4 +16,4 @@ listing:
   sort: "protocol_id"    # or "title" or "-date"
 ---
 
-Standard buffers used across protocols. Select a buffer from the table below to view the full protocol.
+Standard buffers used across protocols. Select a buffer from the table below to view the full recipe and the protocols that use it. For the reverse view, see the [buffer / protocol cross-reference](../cross_reference.qmd).

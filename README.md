@@ -196,6 +196,16 @@ git push
 
 See `naming_guide.qmd` for all identifier rules.
 
+## Linked buffers and protocols
+
+Buffers and protocols reference each other automatically:
+
+- Write IDs as inline code (`` `BUF-ACK-LYSIS` ``, `` `MUS-LIV-DIG` ``) and they render as links, in HTML and PDF.
+- A buffer page lists the protocols that use it; a protocol's "Buffers Required" section links to each buffer.
+- `cross_reference.qmd` gives the full buffer-to-protocol and protocol-to-buffer tables.
+- To declare that a protocol uses a buffer, add a row to `protocols_src/_dependencies.csv`.
+- `protocols_src/_registry.tsv` is generated at render time from each file's YAML; do not edit it.
+
 ## Licence
 
 Content is released under [CC BY 4.0](LICENSE). Please credit Dillon Corvino (<https://dilloncorvino.com>) when you reuse or adapt a protocol.

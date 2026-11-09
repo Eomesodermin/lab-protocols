@@ -1,80 +1,75 @@
 #!/usr/bin/env Rscript
-# Validation script for protocol-buffer cross-references
-# Run from protocols_src/ directory: Rscript _validate_dependencies.R
+# Validation of protocol <-> buffer cross-references.
+# Runs as a Quarto pre-render step (quiet; exits non-zero on ERROR so a broken
+# link graph cannot be published). Run by hand for the full report:
+#   Rscript protocols_src/_validate_dependencies.R
 
-library(tidyverse)
+suppressWarnings(suppressPackageStartupMessages(library(tidyverse)))
 
-cat("=== Protocol-Buffer Dependency Validation ===\n\n")
+args <- commandArgs(trailingOnly = TRUE)
+quiet <- "--quiet" %in% args
 
-# Read registries
-deps <- read_csv("_dependencies.csv", show_col_types = FALSE)
-buffers <- read_csv("_buffer_registry.csv", show_col_types = FALSE)
+source(here::here("protocols_src/_R/build_registry.R"))
+registry <- build_registry(quiet = TRUE)
 
-# Check 1: All buffer_ids in deps exist in registry
-cat("CHECK 1: Buffer IDs in dependencies exist in registry\n")
-missing_buffers <- deps |>
-  filter(!buffer_id %in% buffers$buffer_id) |>
-  distinct(buffer_id)
+deps <- read_csv(here::here("protocols_src/_dependencies.csv"), show_col_types = FALSE)
+buffers <- read_csv(here::here("protocols_src/_buffer_registry.csv"), show_col_types = FALSE)
 
-if (nrow(missing_buffers) > 0) {
-  cat("  ERROR: Buffer IDs in _dependencies.csv not found in _buffer_registry.csv:\n")
-  print(missing_buffers)
-} else {
-  cat("  PASS: All buffer IDs in dependencies are registered\n")
+errors <- character()
+warnings_ <- character()
+
+# 1. Dependency buffer IDs exist in the buffer registry.
+bad <- setdiff(deps$buffer_id, buffers$buffer_id)
+if (length(bad) > 0) errors <- c(errors, paste("Buffer IDs in _dependencies.csv not in _buffer_registry.csv:", paste(bad, collapse = ", ")))
+
+# 2. Dependency protocol IDs exist as real protocol documents (catches typos).
+bad <- setdiff(deps$protocol_id, registry$id[registry$type == "protocol"])
+if (length(bad) > 0) errors <- c(errors, paste("Protocol IDs in _dependencies.csv with no matching protocol document:", paste(bad, collapse = ", ")))
+
+# 3. Buffer registry files exist, and the file's own ID matches the registry ID.
+for (i in seq_len(nrow(buffers))) {
+  path <- here::here("protocols_src/buffers", buffers$filename[i])
+  if (!file.exists(path)) {
+    errors <- c(errors, paste("Buffer file missing:", buffers$filename[i]))
+  } else {
+    id_in_file <- rmarkdown::yaml_front_matter(path)$protocol_id
+    if (!identical(id_in_file, buffers$buffer_id[i])) {
+      errors <- c(errors, paste0(buffers$filename[i], ": registry says ", buffers$buffer_id[i], " but the file says ", id_in_file))
+    }
+  }
 }
 
-# Check 2: All buffer files actually exist
-cat("\nCHECK 2: Buffer files exist on disk\n")
-buffers |>
-  mutate(path = file.path("buffers", filename)) |>
-  filter(!file.exists(path)) |>
-  select(buffer_id, filename) -> missing_files
+# 4. Every live buffer document is in the buffer registry.
+unregistered <- setdiff(registry$id[registry$type == "buffer"], buffers$buffer_id)
+if (length(unregistered) > 0) errors <- c(errors, paste("Buffer documents not in _buffer_registry.csv:", paste(unregistered, collapse = ", ")))
 
-if (nrow(missing_files) > 0) {
-  cat("  ERROR: Buffer files referenced in registry do not exist:\n")
-  print(missing_files)
-} else {
-  cat("  PASS: All buffer files exist\n")
+# 5. Registered buffers that no protocol uses.
+orphaned <- setdiff(buffers$buffer_id, deps$buffer_id)
+if (length(orphaned) > 0) warnings_ <- c(warnings_, paste("Buffers used by no protocol:", paste(orphaned, collapse = ", ")))
+
+# 6. Buffers named in a protocol's text but missing from _dependencies.csv
+#    (the usual way the link graph drifts). Version-history rows are ignored.
+protocol_docs <- registry |> filter(type == "protocol")
+for (i in seq_len(nrow(protocol_docs))) {
+  lines <- read_lines(here::here(protocol_docs$path[i]))
+  lines <- lines[!str_detect(lines, "^\\|\\s*v[0-9]")]
+  mentioned <- str_extract_all(paste(lines, collapse = "\n"), "BUF-[A-Z0-9]+(?:-[A-Z0-9]+)*") |>
+    unlist() |> unique()
+  mentioned <- intersect(mentioned, buffers$buffer_id)
+  declared <- deps$buffer_id[deps$protocol_id == protocol_docs$id[i]]
+  missing <- setdiff(mentioned, declared)
+  if (length(missing) > 0) {
+    warnings_ <- c(warnings_, paste0(protocol_docs$id[i], " mentions ", paste(missing, collapse = ", "), " but has no row in _dependencies.csv"))
+  }
 }
 
-# Check 3: Orphaned buffers (in registry but never used)
-cat("\nCHECK 3: Orphaned buffers (registered but not used by any protocol)\n")
-orphaned <- buffers |>
-  filter(!buffer_id %in% deps$buffer_id)
+if (length(errors) > 0) cat("ERROR:", errors, sep = "\n  ", "\n")
+if (length(warnings_) > 0 && !quiet) cat("WARNING:", warnings_, sep = "\n  ", "\n")
+if (length(errors) == 0 && length(warnings_) == 0 && !quiet) cat("All cross-reference checks passed.\n")
 
-if (nrow(orphaned) > 0) {
-  cat("  WARNING: Buffers in registry but not used by any protocol:\n")
-  orphaned |> select(buffer_id, buffer_name) |> print()
-} else {
-  cat("  PASS: All registered buffers are used\n")
+if (!quiet) {
+  cat("\n=== SUMMARY ===\n")
+  cat(glue::glue("{nrow(registry |> filter(type == 'protocol'))} protocols, {nrow(buffers)} buffers, {nrow(deps)} links; {length(errors)} errors, {length(warnings_)} warnings\n"))
 }
 
-# Check 4: Summary stats
-cat("\n=== DEPENDENCY SUMMARY ===\n")
-cat(glue::glue("Total relationships: {nrow(deps)}\n"))
-cat(glue::glue("Unique protocols with buffer deps: {n_distinct(deps$protocol_id)}\n"))
-cat(glue::glue("Unique buffers used: {n_distinct(deps$buffer_id)}\n"))
-cat(glue::glue("Buffers in registry: {nrow(buffers)}\n"))
-
-# Check 5: Protocols per buffer (usage frequency)
-cat("\n=== BUFFER USAGE FREQUENCY ===\n")
-deps |>
-  left_join(buffers, by = "buffer_id") |>
-  group_by(buffer_id, buffer_name) |>
-  summarise(n_protocols = n(), .groups = "drop") |>
-  arrange(desc(n_protocols)) |>
-  print(n = Inf)
-
-# Check 6: Buffers per protocol
-cat("\n=== BUFFERS PER PROTOCOL ===\n")
-deps |>
-  group_by(protocol_id) |>
-  summarise(
-    n_buffers = n(),
-    buffers = paste(buffer_id, collapse = ", "),
-    .groups = "drop"
-  ) |>
-  arrange(desc(n_buffers)) |>
-  print(n = Inf)
-
-cat("\n=== VALIDATION COMPLETE ===\n")
+if (length(errors) > 0) quit(status = 1)

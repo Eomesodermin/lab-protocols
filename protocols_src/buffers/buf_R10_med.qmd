@@ -18,9 +18,9 @@ summary:
   storage: "4C, protected from light; use within 4 weeks; do not freeze."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

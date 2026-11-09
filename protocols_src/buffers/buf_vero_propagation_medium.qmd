@@ -19,9 +19,9 @@ summary:
   caveat: "Always use DMEM-based medium for Vero cells - do not confuse with RPMI-based media used elsewhere in the plaque/FFA protocol."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

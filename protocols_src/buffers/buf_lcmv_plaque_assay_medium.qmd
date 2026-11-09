@@ -22,9 +22,9 @@ summary:
   storage: "4C, up to 4 weeks"
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

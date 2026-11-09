@@ -5,6 +5,7 @@ protocol_id: "NLC-PLATE-STIM"
 version: "v1.1"
 description: "Simple 96-well plate-bound stimulation of sorted NLCs for 3 days followed by IL-2-driven expansion."
 format:
+  html: default
   pdf:
     toc: false
     number-sections: false

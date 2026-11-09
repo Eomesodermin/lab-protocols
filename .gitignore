@@ -2,3 +2,4 @@
 **/*.quarto_ipynb
 .claude/
 CLAUDE.md
+/docs/

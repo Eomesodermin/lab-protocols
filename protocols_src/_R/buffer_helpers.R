@@ -22,7 +22,7 @@ suppressWarnings(suppressPackageStartupMessages(library(tidyverse)))
 # IDs, titles and paths come from protocols_src/_registry.tsv, generated from
 # every document's YAML by _R/build_registry.R (a Quarto pre-render step).
 
-.site_url <- "https://eomesodermin.github.io/lab-protocols"
+.site_url <- "https://dilloncorvino.com/lab-protocols"
 
 .read_registry <- function() {
   path <- here::here("protocols_src/_registry.tsv")

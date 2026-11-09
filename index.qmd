@@ -1,62 +1,65 @@
 ---
 title: "Protocol Library"
+description: "Lab protocols and buffer recipes, linked."
 page-layout: article
+format: html
 ---
 
-# Welcome
+Standardised, version-controlled protocols and buffer recipes. Each is available as a web page and a printable PDF, and protocols and buffers are cross-linked.
 
-This site hosts the standardised protocol library for the lab, including buffers, mouse and human workflows, flow panels, and general methods. All documents follow a common Quarto template and are versioned.
+::::: {.home-grid}
+::: {.home-card}
+### [Mouse protocols](protocols_src/mouse/index.qmd)
+Tissue digestion, cell isolation, LCMV work, in vivo and functional assays.
+:::
 
-Use the navigation bar on the left to browse by category or search for a protocol by name.
+::: {.home-card}
+### [Human protocols](protocols_src/human/index.qmd)
+PBMC isolation and human cell line culture.
+:::
 
----
+::: {.home-card}
+### [General protocols](protocols_src/general/index.qmd)
+Flow cytometry, cell labelling, nucleofection.
+:::
 
-## How to use this library
+::: {.home-card}
+### [Buffers](protocols_src/buffers/index.qmd)
+Every buffer and medium, with full recipes.
+:::
 
-- **Browse by category** using the sidebar:
-  - *Buffers* – all stock and working solutions.
-  - *Mouse* – mouse tissue processing and functional assays.
-  - *Human* – human PBMC and cell line protocols.
-  - *General* – cross-cutting methods (e.g. flow staining, nucleofection).
+::: {.home-card}
+### [Buffer / protocol links](protocols_src/cross_reference.qmd)
+Which buffers each protocol needs, and which protocols use each buffer.
+:::
 
-- **Download as PDF**  
-  Each protocol page includes a PDF version suitable for printing or attaching to experiment documentation.
+::: {.home-card}
+### [Templates](protocols_src/templates/index.qmd)
+Flow panels, sorter sheets and authoring templates.
+:::
+:::::
 
-- **Search**  
-  Use the search box in the sidebar to find protocols by keyword (e.g. “liver digestion”, “PBMC”, “ACK lysis”).
+Use the search box in the top bar to find a protocol by keyword.
 
----
+## How the pieces connect
 
-## Naming and versioning conventions
+- A protocol lists only the **minimum** needed to make each buffer (components, final volume, key caveats). Click the buffer's name to open its full page with preparation, storage, reagent details and safety.
+- Every buffer page lists the **protocols that use it**, with links back.
+- Buffer and protocol IDs (for example `BUF-ACK-LYSIS`, `MUS-LIV-DIG`) are links wherever they appear in the text.
+- **PDF:** use the "PDF" link in the right-hand margin of any protocol or buffer page. Links inside a PDF open the published page for the linked document.
 
-Protocols and buffers follow a consistent naming scheme:
+## Naming and versioning
 
-- **Buffers:** `buf_<target>_vX.Y`, e.g. `buf_liver_digestion_v1.0`
-- **Mouse protocols:** `prot_mus_<tissue_or_process>_vX.Y`
-- **Human protocols:** `prot_hum_<tissue_or_process>_vX.Y`
-- **General protocols:** `prot_gen_<process>_vX.Y`
+Documents are identified by a stable ID, not by their filename:
 
-Version numbers are incremented when the procedure changes in a way that could affect results (reagent changes, timings, etc.).
+- **Buffers:** `BUF-<DESCRIPTOR>`, e.g. `BUF-ACK-LYSIS`
+- **Protocols:** `<SCOPE>-<SYSTEM>-<DESCRIPTOR>`, e.g. `MUS-LIV-DIG`, `HUM-BLD-PBMC-ISO`, `GEN-FLOW-STD`
+- **Files:** `prot_<scope>_<name>.qmd` and `buf_<name>.qmd`
 
-The **title** and **version** in each protocol’s YAML header define what appears on the website and in the PDF.
-
----
+The `version` in each document's header is raised whenever a change could affect results (reagents, timings, volumes); each document ends with a version history. See the [naming guide](protocols_src/templates/naming_guide.qmd) for the full rules.
 
 ## Document structure
 
-Most protocols follow a common structure:
+**Protocols:** Purpose, critical notes, approximate timing, procedure (as numbered steps), protocols used, buffers required, materials, troubleshooting, version history.
 
-1. **Purpose and scope** – what the protocol is for and when to use it.  
-2. **Reagents and materials** – linked to buffer entries where applicable.  
-3. **Equipment** – key instruments and settings.  
-4. **Procedure** – stepwise instructions.  
-5. **Notes and troubleshooting** – optional recommendations, pitfalls, or variants.
-
-Buffers have a simplified structure focusing on:
-
-- Composition (final concentrations)
-- Preparation steps
-- Storage and stability
-- Safety considerations
-
----
+**Buffers:** Purpose, linked protocols, working composition, preparation, storage and stability, reagent details, safety, version history.

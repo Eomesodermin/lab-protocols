@@ -15,9 +15,9 @@ summary:
   caveat: "Used at 0.5 mL of 1x buffer per sample with a 7-minute room-temperature incubation in `MUS-LIV-DIG` - adapt incubation time if switching supplier."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

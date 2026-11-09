@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+$body-bg: #0f1419;
+$body-color: #d5dae0;
+$primary: #5aa9d6;
+$link-color: #6db6e0;
+$link-decoration: none;
+$headings-color: #f3f4f6;
+$headings-font-weight: 650;
+$line-height-base: 1.65;
+$border-radius: 0.5rem;
+$navbar-bg: #0f1419;
+$navbar-fg: #c3cad2;
+$navbar-hl: #6db6e0;
+$code-color: #8fd0f0;
+$footer-bg: #0f1419;
+$footer-fg: #8b949e;
+
+/*-- scss:rules --*/
+:root { --rule: #262d36; --soft: #161c23; --muted: #8b949e; }

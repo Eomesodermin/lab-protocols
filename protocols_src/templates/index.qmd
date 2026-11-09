@@ -1,6 +1,7 @@
 ---
 title: "Templates"
 description: "Downloadable templates for cytometry panels, cell sorting, and protocol authoring."
+format: html
 ---
 
 # Templates

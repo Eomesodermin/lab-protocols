@@ -18,9 +18,9 @@ summary:
   caveat: "No EDTA - EDTA is excluded from FACS buffer to avoid interference with staining reagents and functional assays. Use MACS Buffer (BUF-MACS-BUF) instead if EDTA is needed."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

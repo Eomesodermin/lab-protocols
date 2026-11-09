@@ -19,47 +19,33 @@ Protocols and buffers are intended to be:
 
 ---
 
-## Repository Structure (example)
+## Repository Structure
 
-- protocols_src/
-  - _templates/
-    - `naming_guide.qmd` – naming and ID conventions  
-    - `buffer_template.qmd`
-    - `protocol_template.qmd`
-  - general/
-    - `prot_gen_CTV_stain.qmd`
-    - `prot_gen_flow_standard.qmd`
-  - human/
-    - `prot_hum_blood_PBMC_iso.qmd`
-    - `prot_hum_NK92_culture.qmd`
-  - mouse/  
-    - `prot_mus_lcmv_multi_strain_production.qmd`  
-    - `prot_mus_lcmv_plaque_assay_vero.qmd`  
-  - buffers/  
-    - `buf_bhk_propagation_medium.qmd`  
-    - `buf_vero_propagation_medium.qmd`  
-- docs/ – rendered HTML/PDF for GitHub Pages  
+- `protocols_src/`
+  - `mouse/`, `human/`, `general/` – protocols (`prot_<scope>_<name>.qmd`) and a listing `index.qmd` for each
+  - `buffers/` – buffer recipes (`buf_<name>.qmd`)
+  - `templates/` – `naming_guide.qmd`, protocol/buffer templates, Excel panel templates, and `blocks/` (copy-paste R blocks for experimental plans)
+  - `resources/` – links and reference pages
+  - `Archived_protocols/` – retired documents (rendered, but hidden from search)
+  - `cross_reference.qmd` – generated buffer-to-protocol and protocol-to-buffer tables
+  - `_dependencies.csv`, `_buffer_registry.csv` – which protocol uses which buffer (edited by hand)
+  - `_registry.tsv` – generated from each file's YAML at render time (do not edit)
+  - `_R/`, `_filters/` – render-time helpers (buffer summaries, auto-links, PDF symbol fixes)
+- `scripts/` – `build.sh` (full render + checks), `check_site.py` (link and output checks)
+- `docs/` – local build output (git-ignored; deployed by GitHub Actions)
 
 ---
 
-## GitHub Pages
+## Publishing
 
-This `README.md` appears on the **GitHub repository front page**, but it is **not automatically the homepage of your GitHub Pages site**.
+The site is built and deployed by GitHub Actions (`.github/workflows/publish.yml`); `docs/` is build output and is **not** committed.
 
-To enable GitHub Pages:
+- Push to `main` -> the workflow renders every document to HTML and PDF, runs `scripts/check_site.py`, and deploys to GitHub Pages.
+- Pull requests are built and checked but not deployed.
+- One-time setting: **Settings -> Pages -> Source = GitHub Actions**.
+- Live site: <https://dilloncorvino.com/lab-protocols/>
 
-1. Go to **Settings → Pages**  
-2. Select:  
-   - Source: `Deploy from a branch`  
-   - Branch: `main` (or your default)  
-   - Folder: `/docs`  
-3. Render Quarto documents into `docs/` using `_quarto.yml`.
-
-Your published site will be accessible at:
-
-```
-https://eomesodermin.github.io/lab-protocols/
-```
+To preview locally, run `./scripts/build.sh` and open `docs/index.html`.
 
 ---
 
@@ -150,35 +136,22 @@ Render a **single file**:
 quarto render prot_mus_lcmv_multi_strain_production.qmd
 ```
 
-Render all documents using `_quarto.yml`:
+Render everything (use this, not `--to <format>`):
 
 ```bash
 quarto render
 ```
 
-Render directly into `docs/` (recommended for GitHub Pages):
+Output goes to `docs/` (set by `output-dir` in `_quarto.yml`). It is git-ignored; GitHub Actions rebuilds and deploys it.
 
-```yaml
-# _quarto.yml
-project:
-  type: website
-  output-dir: docs
-```
-
-```bash
-quarto render
-```
-
----
-
-## Typical Git Workflow (render + commit + push)
+## Typical Git Workflow
 
 ```bash
 git pull
-quarto render
-git add .
+./scripts/build.sh      # optional local preview + link check
+git add -A
 git commit -m "Update LCMV production and plaque assay protocols"
-git push
+git push                # Actions builds and deploys
 ```
 
 ---

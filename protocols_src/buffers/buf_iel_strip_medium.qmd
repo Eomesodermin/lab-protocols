@@ -19,9 +19,9 @@ summary:
   caveat: "Do not exceed 1 mM DTT or the 20-minute stripping incubation - over-exposure to DTT reduces leukocyte viability."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

@@ -1,0 +1,49 @@
+/*-- scss:rules --*/
+:root:not(.quarto-dark) { --rule: #e5e7eb; --soft: #f7f8fa; --muted: #6b7280; }
+
+/* Navigation: flat, hairline, no shadow */
+.navbar { border-bottom: 1px solid var(--rule); box-shadow: none; }
+.navbar-brand { font-weight: 650; letter-spacing: -0.01em; }
+.navbar .nav-link { font-size: 0.95rem; }
+.navbar .dropdown-menu { border: 1px solid var(--rule); box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+
+/* Type */
+body { -webkit-font-smoothing: antialiased; }
+#title-block-header .title { font-weight: 700; letter-spacing: -0.02em; }
+#title-block-header .description { color: var(--muted); font-size: 1.05rem; }
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
+h1 { font-size: 1.55rem; margin-top: 2.4rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--rule); }
+h2 { font-size: 1.28rem; margin-top: 1.9rem; }
+h3 { font-size: 1.08rem; color: var(--muted); }
+a { text-underline-offset: 0.18em; }
+a:hover { text-decoration: underline; }
+code { font-size: 0.86em; padding: 0.1em 0.35em; border-radius: 0.3rem; background: var(--soft); }
+td code, th code { white-space: nowrap !important; word-break: keep-all !important; overflow-wrap: normal !important; }
+pre code, a > code { background: transparent; padding: 0; }
+a > code { color: inherit; }
+pre { border: 1px solid var(--rule); border-radius: 0.5rem; background: var(--soft); }
+
+/* Tables: hairlines, quiet headers */
+table { font-size: 0.94rem; border-collapse: collapse; }
+thead th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--rule) !important; }
+tbody td, tbody th { border-top: 1px solid var(--rule); border-bottom: 0; vertical-align: top; }
+tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
+.table > :not(caption) > * > * { background-color: transparent; box-shadow: none; }
+
+/* Callouts: softer */
+.callout { border-radius: 0.5rem; box-shadow: none; border: 1px solid var(--rule); border-left-width: 4px; }
+
+/* Right-hand TOC */
+#TOC, .sidebar nav[role=doc-toc] { font-size: 0.88rem; }
+
+/* Footer */
+.nav-footer { border-top: 1px solid var(--rule) !important; font-size: 0.85rem; padding: 1rem 0; }
+
+/* Home page cards */
+.home-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.25rem 0 2rem; }
+.home-card { position: relative; border: 1px solid var(--rule); border-radius: 0.75rem; padding: 1.1rem 1.25rem; transition: border-color .15s, transform .15s; }
+.home-card:hover { border-color: var(--bs-link-color); transform: translateY(-1px); }
+.home-card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; font-weight: 650; color: inherit; }
+.home-card h3 a { color: inherit; }
+.home-card h3 a::after { content: ""; position: absolute; inset: 0; }
+.home-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }

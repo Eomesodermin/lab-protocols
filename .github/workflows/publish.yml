@@ -1,0 +1,59 @@
+# Builds the site (HTML + PDF), checks links, and deploys it to GitHub Pages.
+# - Every push and pull request: render + check (so a broken link or LaTeX error is caught early).
+# - Push to main only: also deploy.
+# docs/ is build output and is not committed; Pages serves the artifact built here.
+# One-time setup: Settings > Pages > Source = "GitHub Actions".
+name: publish
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::tidyverse
+            any::here
+            any::rmarkdown
+            any::knitr
+            any::glue
+            any::fs
+      - name: Render site
+        run: quarto render
+      - name: Check output
+        run: python3 scripts/check_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

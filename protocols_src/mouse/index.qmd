@@ -14,6 +14,7 @@ listing:
     date: date        # so date sorts and formats correctly
   field-links: [title]   # make the title the clickable link
   sort: "protocol_id"    # or "title" or "-date"
+format: html
 ---
 
 Mouse processing, tissue digestion, and functional assays.

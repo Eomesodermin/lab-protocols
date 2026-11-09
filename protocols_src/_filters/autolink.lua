@@ -13,7 +13,7 @@
 -- archived buffers) are left as plain code. Code already inside a link, and a
 -- document's own ID, are left alone.
 
-local SITE_URL = "https://eomesodermin.github.io/lab-protocols"
+local SITE_URL = "https://dilloncorvino.com/lab-protocols"
 
 local registry = {}      -- id -> path of the .qmd relative to the project root
 local project_dir = nil

@@ -15,59 +15,37 @@ project:
 
 website:
   title: "Protocol Library"
-  site-url: "https://eomesodermin.github.io/lab-protocols"
+  site-url: "https://dilloncorvino.com/lab-protocols"
   bread-crumbs: true
+  page-footer:
+    left: "Protocol Library - CC BY 4.0 - Dillon Corvino"
+    right:
+      - text: "GitHub"
+        href: https://github.com/Eomesodermin/lab-protocols
+      - text: "Cite"
+        href: https://doi.org/10.5281/zenodo.23950821
 
   navbar:
     search: true
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Mouse"
-        href: protocols_src/mouse/index.qmd
+      - text: "Protocols"
+        menu:
+          - text: "Mouse"
+            href: protocols_src/mouse/index.qmd
+          - text: "Human"
+            href: protocols_src/human/index.qmd
+          - text: "General"
+            href: protocols_src/general/index.qmd
       - text: "Buffers"
         href: protocols_src/buffers/index.qmd
-      - text: "General"
-        href: protocols_src/general/index.qmd
-      - text: "Human"
-        href: protocols_src/human/index.qmd
-      - text: "Cross-reference"
+      - text: "Buffer / protocol links"
         href: protocols_src/cross_reference.qmd
-
-  sidebar:
-    style: "floating"
-    contents:
-      - href: index.qmd
-        text: "Overview"
-        icon: house
-
-      - href: protocols_src/buffers/index.qmd
-        text: "Buffers"
-        icon: droplet
-
-      - href: protocols_src/general/index.qmd
-        text: "General"
-        icon: gear
-
-      - href: protocols_src/human/index.qmd
-        text: "Human"
-        icon: person
-
-      - href: protocols_src/mouse/index.qmd
-        text: "Mouse"
-        icon: mouse
-
-      - href: protocols_src/cross_reference.qmd
-        text: "Buffer / protocol links"
-        icon: diagram-3
-
-      - href: protocols_src/resources/index.qmd
-        text: "Resources"
-        icon: link-45deg
-
-      - href: protocols_src/templates/index.qmd
-        text: "Templates"
-        icon: file-earmark-spreadsheet
+      - text: "Templates"
+        href: protocols_src/templates/index.qmd
+      - text: "Resources"
+        href: protocols_src/resources/index.qmd
 
 filters:
   - protocols_src/_filters/autolink.lua
@@ -75,8 +53,13 @@ filters:
 
 format:
   html:
-    theme: flatly
+    theme:
+      light: [cosmo, theme/light.scss, theme/rules.scss]
+      dark: [darkly, theme/dark.scss, theme/rules.scss]
     css: styles.css
+    respect-user-color-scheme: true
+    anchor-sections: true
+    smooth-scroll: true
     math: mathjax
     toc: true
     back-to-top: true

@@ -19,9 +19,9 @@ summary:
   caveat: "DMSO is toxic at room temperature - keep the 2x mix on ice and mix with cells immediately after preparation. Final working freezing medium (after 1:1 mix with cells) contains 10% DMSO."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

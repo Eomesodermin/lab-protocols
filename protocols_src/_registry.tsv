@@ -38,7 +38,7 @@ MUS-LIV-DIG	protocol	Mouse Liver Digestion to Single-Cell Suspension	v2.1	protoc
 MUS-LNG-DIG	protocol	Mouse Lung Digestion to Single-Cell Suspension	v1.1	protocols_src/mouse/prot_mus_lung_digestion.qmd
 MUS-NLC-ACT	protocol	NLC Adoptive Transfer (Liver-derived NK-like Cells)	v1.1	protocols_src/mouse/prot_mus_NLC_ACT.qmd
 MUS-P14-ACT	protocol	P14 Adoptive Transfer (GP33-specific CD8 T cells)	v1.1	protocols_src/mouse/prot_mus_P14_transfer.qmd
-MUS-PTPRC-GENO	protocol	Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)	v1.1	protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.qmd
+MUS-PTPRC-GENO	protocol	Single-Tube PCR Genotyping of Ptprc^a^ (JAXBoy, CD45.1) and Ptprc^b^ (C57BL/6J, CD45.2)	v1.1	protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.qmd
 MUS-SPL-DIS	protocol	Mouse Spleen Dissociation to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_spleen_dissociation.qmd
 MUS-SPL-NK-PROLIF	protocol	In vitro NK Cell Proliferation Assay Using CellTrace Dyes	v1.1	protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.qmd
 MUS-TMR-DIG	protocol	Mouse Tumour Digestion to Single-Cell Suspension	v1.1	protocols_src/mouse/prot_mus_tumour_digestion.qmd

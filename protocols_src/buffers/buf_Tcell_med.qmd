@@ -29,9 +29,9 @@ summary:
   caveat: "beta-mercaptoethanol is essential for mouse primary T cells/NLCs - do not omit. L-glutamine degrades at 4C over weeks; substitute GlutaMAX for medium stored more than 1-2 weeks."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

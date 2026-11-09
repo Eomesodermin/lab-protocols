@@ -20,9 +20,9 @@ summary:
   caveat: "Contains EDTA - do not use for liver perfusion or any step upstream of collagenase digestion (EDTA chelates the Ca2+/Zn2+ cofactors collagenases require). Use FACS Buffer (BUF-FACS-BUF) instead."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

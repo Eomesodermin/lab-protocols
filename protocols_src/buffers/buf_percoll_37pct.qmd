@@ -17,9 +17,9 @@ summary:
   caveat: "37% (of isotonic stock) and 33% (final Percoll) both describe this same solution, just measured against different denominators - check which convention an external protocol uses before changing any number."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

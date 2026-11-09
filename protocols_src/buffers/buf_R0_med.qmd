@@ -15,9 +15,9 @@ summary:
   caveat: "Serum-free by design - do not add FCS; serum interferes with Ficoll density gradient separation and interface formation."
 ---
 
-**Protocol ID:** {{< meta protocol_id >}}
-**Version:** {{< meta version >}}
-**Author:** Dillon Corvino
+**Protocol ID:** {{< meta protocol_id >}}  
+**Version:** {{< meta version >}}  
+**Author:** Dillon Corvino  
 **Date:** {{< meta date >}}
 
 # Purpose

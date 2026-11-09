@@ -10,7 +10,7 @@ description: "Standard operating procedure for exporting, organizing, transferri
 **Protocol ID:** {{< meta protocol_id >}}  
 **Version:** {{< meta version >}}  
 **Author:** Dillon Corvino  
-**Adapted from:** FCCF SOP – Data handling on Sony ID7000 systems fileciteturn1file0  
+**Adapted from:** FCCF SOP – Data handling on Sony ID7000 systems   
 
 # Purpose
 

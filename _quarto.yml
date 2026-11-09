@@ -4,6 +4,7 @@ project:
   pre-render:
     - Rscript protocols_src/_R/build_registry.R
     - Rscript protocols_src/_validate_dependencies.R --quiet
+    - Rscript protocols_src/_lint_symbols.R
   resources:
     - protocols_src/templates/*
     - protocols_src/resources/*.html
@@ -70,6 +71,7 @@ website:
 
 filters:
   - protocols_src/_filters/autolink.lua
+  - protocols_src/_filters/pdf_symbols.lua
 
 format:
   html:

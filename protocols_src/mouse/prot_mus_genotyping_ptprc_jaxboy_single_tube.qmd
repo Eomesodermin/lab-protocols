@@ -1,5 +1,5 @@
 ---
-title: "Single-Tube PCR Genotyping of Ptprc<sup>a</sup> (JAXBoy, CD45.1) and Ptprc<sup>b</sup> (C57BL/6J, CD45.2)"
+title: "Single-Tube PCR Genotyping of Ptprc^a^ (JAXBoy, CD45.1) and Ptprc^b^ (C57BL/6J, CD45.2)"
 subtitle: "Dillon Corvino"
 protocol_id: "MUS-PTPRC-GENO"
 version: "v1.1"

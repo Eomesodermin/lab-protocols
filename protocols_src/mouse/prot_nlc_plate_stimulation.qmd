@@ -11,7 +11,6 @@ format:
     number-sections: false
     geometry: "margin=2cm"
     fontsize: 11pt
-    colorlinks: false
 ---
 
 **Protocol ID:** {< meta protocol_id >}  

@@ -4,16 +4,16 @@ BUF-MACS-BUF,MACS Buffer,buf_macs_buffer.qmd
 BUF-RBC-HYB,RBC Lysis Buffer (HybriMax),buf_rbc_lysis_hybrimax.qmd
 BUF-ACK-LYSIS,ACK RBC Lysis Buffer,buf_ack_lysis.qmd
 BUF-PERC-37,Percoll Solution (37% of isotonic stock = 33% final),buf_percoll_37pct.qmd
-BUF-R0-MED,R0 Medium (Serum-free RPMI),buf_R0_med.qmd
-BUF-R10-MED,R10 Medium (RPMI + 10% FCS),buf_R10_med.qmd
-BUF-TCELL-MED,T Cell Medium,buf_Tcell_med.qmd
-BUF-NK-MED,NK Cell Culture Medium,buf_mus_NK_med.qmd
+BUF-R0-MED,R0 Medium (Serum-free RPMI),buf_r0_med.qmd
+BUF-R10-MED,R10 Medium (RPMI + 10% FCS),buf_r10_med.qmd
+BUF-TCELL-MED,T Cell Medium,buf_tcell_med.qmd
+BUF-NK-MED,NK Cell Culture Medium,buf_nk_med.qmd
 BUF-FREEZE-MIX,2x Freezing Medium,buf_freeze_mix_2x.qmd
 BUF-VERO-PROP,Vero Cell Propagation Medium,buf_vero_propagation_medium.qmd
 BUF-BHK-PROP,BHK Cell Propagation Medium,buf_bhk_propagation_medium.qmd
 BUF-LCMV-PLA,LCMV Plaque Assay Medium,buf_lcmv_plaque_assay_medium.qmd
 BUF-L929-PROP,L929 Cell Propagation Medium,buf_l929_propagation_medium.qmd
-BUF-LIV-DIG,Liver Digestion Buffer,buf_mus_liver_digestion.qmd
+BUF-LIV-DIG,Liver Digestion Buffer,buf_liver_digestion.qmd
 BUF-IEL-3PCT,3% Medium (IEL Wash/Base Medium),buf_iel_3pct_medium.qmd
 BUF-IEL-STRIP,IEL Strip Medium (DTT/EDTA),buf_iel_strip_medium.qmd
 BUF-IEL-SHAKE,IEL Shake Medium,buf_iel_shake_medium.qmd

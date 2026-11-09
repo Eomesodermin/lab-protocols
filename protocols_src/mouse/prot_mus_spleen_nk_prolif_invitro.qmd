@@ -231,6 +231,11 @@ The original SOP notes that Day 0 populations and single-stain controls can be f
 
 {{< pagebreak >}}
 
+# Protocols used
+
+- Spleen harvest and splenocyte isolation — `MUS-SPL-DIS`
+- CellTrace Violet (CTV) labelling — `GEN-CTV-STAIN`
+
 # Buffers Required
 
 Full composition, preparation, storage, and safety information for each buffer lives in its own linked buffer document — only a concise per-buffer summary is reproduced here, generated automatically from that document.

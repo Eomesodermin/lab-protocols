@@ -5,6 +5,8 @@ protocol_id: "MUS-XCELL-LCMV"
 version: "v1.7"
 date: "2026-04-15"
 description: "Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure effector cell killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Covers fibroblast culture, in vitro LCMV infection, E-plate setup, and real-time cytotoxicity measurement."
+aliases:
+  - prot_xcelligence_lcmv_cytotoxicity.html
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}

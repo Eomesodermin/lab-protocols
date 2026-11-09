@@ -47,8 +47,8 @@ render_linked_protocols(rmarkdown::metadata$protocol_id)
 | Component                     | Final concentration | Notes                                                    |
 |------------------------------|---------------------|------------------------------------------------------------|
 | Ammonium chloride (NH4Cl)    |  X mM             | Primary erythrocyte-lysing component                     |
-| Potassium bicarbonate (KHCO3)| X mM               | Buffering capacity                                      |
-| EDTA       | X mM              | Chelates divalent cations; reduces cell clumping         |
+| Potassium bicarbonate (KHCO3)| 10 mM              | Buffering capacity                                      |
+| EDTA       | ~0.1 mM           | Chelates divalent cations; reduces cell clumping         |
 | Sterile distilled water      | —                   | Solvent                                                  |
 | pH                            | 7.2                 | Adjusted after dissolution                               |
 

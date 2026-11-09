@@ -25,6 +25,8 @@ summary:
   prep_note: "Mix gently by inversion; do not vortex. IL-15 is added fresh (100 IU/mL) immediately before plating cells and is not part of the stored base medium."
   storage: "4C, protected from light, 4-5 weeks; do not freeze"
   caveat: "IL-15 must not be stored in the base medium - add fresh immediately prior to culture."
+aliases:
+  - buf_mus_NK_med.html
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  

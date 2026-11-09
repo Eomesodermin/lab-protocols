@@ -74,4 +74,11 @@ format:
     number-sections: false
     geometry: "margin=2cm"
     fontsize: 11pt
-    colorlinks: false
+    colorlinks: true
+    linkcolor: black
+    urlcolor: linkblue
+    citecolor: linkblue
+    include-in-header:
+      text: |
+        \usepackage{xcolor}
+        \definecolor{linkblue}{HTML}{0F5C8C}

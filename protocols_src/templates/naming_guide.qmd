@@ -1,8 +1,8 @@
 ---
 title: "Lab Naming and Versioning Guide"
 subtitle: "Dillon Corvino"
-version: "v1.1"
-date: "2025-11-20"
+version: "v1.2"
+date: "2026-11-09"
 ---
 
 # Purpose
@@ -26,60 +26,65 @@ This naming guide governs all **protocol**, **buffer**, and **supporting documen
 
 # Identifier Principles
 
-Each file includes a **stable identifier** (`protocol_id`) that never changes once assigned.  
+Each file includes a **stable identifier** (`protocol_id`) that never changes once assigned.
 Document **versions**, however, reflect revisions and updates over time.
 
 Identifiers are:
 
-- Human-readable  
-- Hierarchical  
-- Independent of filenames  
-- Independent of version numbers  
+- Human-readable
+- Hierarchical
+- Independent of filenames
+- Independent of version numbers
+
+The identifier is what other documents link to. In text, always write an ID as inline code
+(for example `` `BUF-ACK-LYSIS` `` or `` `MUS-LIV-DIG` ``) and it becomes a link automatically.
 
 ---
 
 # Identifier Structure
 
-All identifiers follow this structure:
-
 ```
-<DOMAIN>-<TOPIC>-<TYPE>-<ID>
+Protocols:  <SCOPE>-<TOPIC>-<METHOD>      e.g. MUS-LCMV-PLA, HUM-K562-CULTURE
+Buffers:    BUF-<DESCRIPTOR>              e.g. BUF-ACK-LYSIS, BUF-FACS-BUF
 ```
 
-Where:
+There is **no numeric suffix**. A distinct variant gets a descriptive extension instead
+(for example a serum-free variant of `BUF-BHK-PROP` would be `BUF-BHK-PROP-SF`).
 
-### DOMAIN
-Defines biological context or system  
-Examples:
-- `MUS` → mouse  
-- `HUM` → human  
-- `CELL` → cell-line–based procedure  
-- `GEN` → general or cross-species workflows  
+### SCOPE
+Defines the biological context or system:
+
+- `MUS` - mouse
+- `HUM` - human
+- `GEN` - general or cross-species workflows
+- `NLC` - NLC-specific in vitro work
 
 ### TOPIC
-Defines the primary experimental or biological theme  
-Examples:
-- `LCMV` → LCMV virology workflows  
-- `PTPRC` → genotyping or CD45 locus assays  
-- `FLOW` → flow cytometry  
-- `RNA` → RNA extraction or analysis  
+The primary experimental or biological theme, for example `LCMV`, `PTPRC`, `FLOW`, `LIV` (liver), `SPL` (spleen), `IEL`.
 
-### TYPE  
-A concise descriptor of the method class  
-Examples:
-- `PROD` → virus production  
-- `PLA` → plaque assay  
-- `FFA` → focus-forming assay  
-- `QPCR` → quantitative PCR  
-- `GENO` → genotyping  
-- `PROP` → propagation medium or cell maintenance  
-- `MED` → assay or experimental medium  
+### METHOD
+A concise descriptor of the method class, for example:
 
-### ID  
-A three-digit number (`001`, `002`, …) indicating discrete methods inside the same category.
+- `PROD` - virus production
+- `PLA` - plaque assay
+- `FFA` - focus-forming assay
+- `QPCR` - quantitative PCR
+- `GENO` - genotyping
+- `DIG` - tissue digestion
+- `ISO` - isolation
+- `CULTURE` - cell-line maintenance
+- `ACT` - adoptive cell transfer
 
-**Important:**  
-The ID increments only when a **new, distinct protocol or buffer** is added—not when updating or revising an existing file.
+### Legacy exceptions
+
+IDs are never changed once assigned (documents and the published release already cite them),
+so a few early IDs do not follow the TOPIC-METHOD order or scope rule. They are kept as they are:
+
+| ID | Why it is an exception |
+|---|---|
+| `MUS-INF-LCMV` | Method and topic reversed (LCMV infection; would now be `MUS-LCMV-INF`) |
+| `MUS-XCELL-LCMV` | Method and topic reversed (xCELLigence LCMV assay; would now be `MUS-LCMV-XCELL`) |
+| `NLC-PLATE-STIM` | Scope `NLC` rather than `MUS`; file lives in `mouse/` |
 
 ---
 
@@ -91,74 +96,71 @@ Versions are tracked exclusively in the YAML header:
 version: "v1.0"
 ```
 
-- Version increases reflect evolutionary changes to the *same* protocol or buffer.  
-- `protocol_id` remains **unchanged** across all updates.  
+- Version increases reflect evolutionary changes to the *same* protocol or buffer.
+- `protocol_id` remains **unchanged** across all updates.
+- Never encode the version inside the `protocol_id`.
 
 Examples:
-- `v1.0` → initial release  
-- `v1.1` → minor modifications  
-- `v2.0` → major revision  
 
-Never encode the version inside the `protocol_id`.
+- `v1.0` - initial release
+- `v1.1` - minor modifications
+- `v2.0` - major revision
 
 ---
 
-# When to Assign a New ID (001 → 002)
+# When to Assign a New ID
 
 A new ID is assigned when:
 
-- The protocol constitutes a **novel method**, *not* just a revision  
-- The workflow differs in a functionally meaningful way  
-- A buffer has a **distinct formulation** or **different intended use**  
-- An assay variant is introduced (e.g., fluorescent plaque assay, alternate overlay formulation, new primer system)
+- The protocol constitutes a **novel method**, *not* just a revision
+- The workflow differs in a functionally meaningful way
+- A buffer has a **distinct formulation** or **different intended use**
+- An assay variant is introduced (for example a fluorescent plaque assay or a new primer system)
 
-Examples:
-
-### Virus Production
-- `MUS-LCMV-PROD-001` → standard T75 BHK or L929 production  
-- `MUS-LCMV-PROD-002` → roller-bottle high-volume culture system  
-
-### Assays
-- `MUS-LCMV-PLA-001` → crystal violet plaque assay  
-- `MUS-LCMV-PLA-002` → fluorescent immunoplaque assay  
-
-### Genotyping
-- `MUS-PTPRC-GENO-001` → Ptprc SNP genotyping  
-- `MUS-PTPRC-GENO-002` → multiplexed three-primer allelic discrimination assay  
-
-### Buffers
-- `BUF-BHK-PROP` → BHK propagation medium
-
-Buffer IDs are `BUF-{DESCRIPTOR}` — no numeric suffix. One buffer_id maps to exactly one
-recipe/file; a serum-free variant would be a separate buffer_id (e.g. `BUF-BHK-PROP-SF`),
-not a numbered suffix on the same ID.
+One `buffer_id` maps to exactly one recipe and one file.
 
 ---
 
 # Filenames
 
-Filenames describe the file content and follow this structure:
+Filenames describe the file content. They are **all lowercase**, with underscores between words.
 
 ### Protocols
 ```
-prot_<domain>_<topic>_<method>.qmd
+prot_<scope>_<topic>_<method>.qmd
 ```
 
-Examples:
+The scope token matches the ID prefix (`mus`, `hum`, `gen`, `nlc`). Examples:
+
 - `prot_mus_lcmv_multi_strain_production.qmd`
 - `prot_mus_lcmv_plaque_assay_vero.qmd`
-- `prot_mus_lcmv_focus_forming_assay.qmd`
-- `prot_mus_genotyping_ptprc_jaxboy_single_tube.qmd`
+- `prot_hum_k562_culture.qmd`
+- `prot_gen_ctv_stain.qmd`
 
 ### Buffers
 ```
-buf_<target>_<function>.qmd
+buf_<descriptor>.qmd
 ```
 
-Examples:
+Buffer filenames carry **no scope token**, because buffer IDs do not. Examples:
+
 - `buf_bhk_propagation_medium.qmd`
-- `buf_vero_propagation_medium.qmd`
-- `buf_lcmv_plaque_assay_medium.qmd`
+- `buf_liver_digestion.qmd`
+- `buf_r10_med.qmd`
+
+### Why lowercase
+macOS treats `Prot_X` and `prot_x` as the same file, but the Linux build that publishes the site does
+not. A stray capital in a name can work locally and then break a link online. Keep everything lowercase.
+
+### Renaming a file
+Rename with `git mv`, update `filename` in `_buffer_registry.csv` for a buffer, and (unless the rename
+changes capitalisation only) add the old page name to the document's YAML so the old web address
+still redirects:
+
+```yaml
+aliases:
+  - old_filename.html
+```
 
 ---
 
@@ -177,37 +179,40 @@ protocol_id:
 Example:
 
 ```yaml
-protocol_id: "MUS-LCMV-PROD-001"
-version: "v1.0"
+protocol_id: "MUS-LCMV-PROD"
+version: "v1.3"
 ```
+
+`aliases:` is the only optional field added to a document, and only after a rename.
 
 ---
 
 # Protocol ID Examples (Current Library)
 
-### LCMV Methods
-- `MUS-LCMV-PROD-001` → LCMV multi-strain production protocol  
-- `MUS-LCMV-PLA-001` → Vero cell plaque assay  
-- `MUS-LCMV-FFA-001` → Focus-forming assay  
-- `MUS-LCMV-QPCR-001` → GP-based qPCR viral load assay  
+### LCMV methods
+- `MUS-LCMV-PROD` - multi-strain virus production
+- `MUS-LCMV-PLA` - Vero cell plaque assay
+- `MUS-LCMV-FFA` - focus-forming assay
+- `MUS-LCMV-QPCR` - GP-based qPCR viral load
 
 ### Genotyping
-- `MUS-PTPRC-GENO-001` → Ptprc (CD45.1/2) allele SNP genotyping  
+- `MUS-PTPRC-GENO` - Ptprc (CD45.1/2) allele SNP genotyping
 
 ### Buffers
-- `BUF-BHK-PROP` → BHK propagation medium
-- `BUF-VERO-PROP` → Vero propagation medium
-- `BUF-LCMV-PLA` → LCMV plaque assay medium
+- `BUF-BHK-PROP` - BHK propagation medium
+- `BUF-VERO-PROP` - Vero propagation medium
+- `BUF-LCMV-PLA` - LCMV plaque assay medium
 
 ---
 
 # Rules for Future Expansion
 
-1. Maintain readability: avoid unnecessary abbreviations.  
-2. Keep identifiers **short but descriptive**.  
-3. Ensure **no collisions** within each TOPIC–TYPE group.  
-4. Do not remove or reuse IDs, even if protocols become deprecated.  
-5. Always update the version number when content changes.  
+1. Maintain readability: avoid unnecessary abbreviations.
+2. Keep identifiers **short but descriptive**.
+3. Ensure **no collisions** within each TOPIC-METHOD group.
+4. Do not remove or reuse IDs, even if protocols become deprecated.
+5. Always update the version number when content changes.
+6. Check the pre-render validation output: it fails the build on a broken ID or dependency.
 
 ---
 
@@ -217,3 +222,4 @@ version: "v1.0"
 |--------|------|-------------|
 | v1.0 | 2025-08-01 | Original naming guide. |
 | v1.1 | 2025-12-02 | Expanded to include LCMV protocol classes, buffer categories, and new genotyping schema. |
+| v1.2 | 2026-11-09 | Aligned with the library as built: no numeric ID suffix, SCOPE-TOPIC-METHOD structure, scopes incl. NLC, documented legacy ID exceptions, lowercase filenames with no scope token on buffers, renaming procedure. |

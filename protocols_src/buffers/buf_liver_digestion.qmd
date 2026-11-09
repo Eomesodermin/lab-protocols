@@ -17,6 +17,8 @@ summary:
   prep_note: "Mix gently by inversion; do not vortex. Pre-warm to 37C immediately before use."
   storage: "Keep on ice until pre-warming; do not freeze after DNase I is added; discard unused buffer at end of day."
   caveat: "Collagenase D and IV are not interchangeable at the same concentration - use one or the other, not both. Never use an EDTA-containing base (e.g. MACS Buffer) - EDTA inhibits collagenase digestion."
+aliases:
+  - buf_mus_liver_digestion.html
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  

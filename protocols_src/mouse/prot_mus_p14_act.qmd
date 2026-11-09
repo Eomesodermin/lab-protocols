@@ -5,6 +5,8 @@ protocol_id: "MUS-P14-ACT"
 version: "v1.1"
 date: "2026-01-09"
 description: "Adoptive transfer of congenically marked naive P14 CD8 T cells for tracking antigen-specific responses in LCMV infection models. Focus on transfer dose, timing, injection preparation, and core readouts."
+aliases:
+  - prot_mus_P14_transfer.html
 ---
 
 **Protocol ID:** {{< meta protocol_id >}}  
@@ -90,6 +92,10 @@ Choose dose based on whether you want a **near-physiologic precursor frequency**
 | **5,000** | **Standard** | Default for internal consistency; supports robust tracking without extreme precursor-frequency effects | Internal standard; consistent with modern literature low-dose range  |
 | **~50,000 (5 × 10^4)** | Higher precursor frequency to boost signal | Increased detectability; higher chance of competition/altered differentiation; must be justified when comparing to “low-dose” studies | Example: 5 × 10^4 used one day before acute LCMV in some contexts ; also shown in a recent Nature Immunology schematic  |
 | **~500,000 (5 × 10^5)** | High-input experimental designs (specialized) | Strong perturbation potential; not directly comparable to low-dose physiology; used for specific mechanistic questions | Example: 5 × 10^5 total P14 transferred in a SciImmunol study  |
+
+# Protocols used
+
+- Donor spleen harvest and single-cell suspension — `MUS-SPL-DIS`
 
 # Buffers Required
 

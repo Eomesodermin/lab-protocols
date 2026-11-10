@@ -27,6 +27,12 @@ source(here::here("protocols_src/_R/buffer_helpers.R"))
   ifelse(is.na(out), "", out)
 }
 .read_groups <- function() readr::read_csv(here::here("protocols_src/_groups.csv"), show_col_types = FALSE)
+# Colour for a group heading: blue / teal / green / amber / rose / violet / slate (see _group_colors.csv).
+.group_color <- function(g) {
+  cols <- readr::read_csv(here::here("protocols_src/_group_colors.csv"), show_col_types = FALSE)
+  c <- cols$color[cols$group == g]
+  if (length(c) == 0 || is.na(c[1])) "slate" else c[1]
+}
 .page <- function(path) .page_url(path)
 .pdf <- function(path) sub("\\.html$", ".pdf", .page_url(path))
 
@@ -129,7 +135,7 @@ render_listing <- function(type = "protocol", folder) {
     rows <- items |> dplyr::filter(group == g) |> dplyr::arrange(title)
     cards <- vapply(seq_len(nrow(rows)), function(i) card(rows[i, ]), character(1))
     html <- c(html,
-      sprintf('<section class="pgroup"><h2 class="pgroup-title">%s<span class="n">%d</span></h2><div class="pgrid">', .esc(g), nrow(rows)),
+      sprintf('<section class="pgroup" style="--accent: var(--c-%s)"><h2 class="pgroup-title">%s<span class="n">%d</span></h2><div class="pgrid">', .group_color(g), .esc(g), nrow(rows)),
       cards, "</div></section>")
   }
   html <- c(html, sprintf('<p class="pempty" style="display:none">No %s match that filter.</p>', noun), .filter_script)

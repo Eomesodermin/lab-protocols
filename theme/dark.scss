@@ -18,4 +18,8 @@ $footer-bg: #0f1419;
 $footer-fg: #8b949e;
 
 /*-- scss:rules --*/
-:root { --rule: #262d36; --soft: #161c23; --muted: #8b949e; }
+:root {
+  --rule: #262d36; --soft: #161c23; --muted: #8b949e;
+  --c-blue: #6ea8e8; --c-teal: #5ec8bd; --c-green: #6fcf97; --c-amber: #e5b055;
+  --c-rose: #f08b9a; --c-violet: #a897f0; --c-slate: #9aa7b4;
+}

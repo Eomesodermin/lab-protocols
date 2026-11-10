@@ -1,5 +1,10 @@
 /*-- scss:rules --*/
-:root:not(.quarto-dark) { --rule: #e5e7eb; --soft: #f7f8fa; --muted: #6b7280; }
+:root:not(.quarto-dark) {
+  --rule: #e5e7eb; --soft: #f7f8fa; --muted: #6b7280;
+  /* section / group colours */
+  --c-blue: #2563a8; --c-teal: #0f766e; --c-green: #2f855a; --c-amber: #b7791f;
+  --c-rose: #be3a52; --c-violet: #6d4fc2; --c-slate: #52606d;
+}
 
 /* Navigation: flat, hairline, no shadow */
 .navbar { border-bottom: 1px solid var(--rule); box-shadow: none; }

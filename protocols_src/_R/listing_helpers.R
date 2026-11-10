@@ -30,8 +30,17 @@ source(here::here("protocols_src/_R/buffer_helpers.R"))
 .page <- function(path) .page_url(path)
 .pdf <- function(path) sub("\\.html$", ".pdf", .page_url(path))
 
+# Non-ASCII characters become numeric entities, so the output is correct in any locale.
+.to_entities <- function(x) {
+  vapply(x, function(s) {
+    cp <- utf8ToInt(enc2utf8(s))
+    if (all(cp < 128L)) return(s)
+    paste0(ifelse(cp > 127L, sprintf("&#%d;", cp), intToUtf8(cp, multiple = TRUE)), collapse = "")
+  }, character(1), USE.NAMES = FALSE)
+}
+
 .emit_html <- function(html) {
-  cat("```{=html}\n", paste(html, collapse = "\n"), "\n```\n", sep = "")
+  cat("```{=html}\n", paste(.to_entities(html), collapse = "\n"), "\n```\n", sep = "")
 }
 
 .filter_script <- "<script>

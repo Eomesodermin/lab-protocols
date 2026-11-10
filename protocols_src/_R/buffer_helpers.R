@@ -5,6 +5,17 @@ suppressWarnings(suppressPackageStartupMessages(library(tidyverse)))
 # place in the repo this call happens; every doc sources this file instead
 # of calling library(tidyverse) itself for buffer/protocol cross-referencing.
 
+# Quarto often runs R in the plain "C" locale, where cat() prints a non-ASCII character
+# such as an en dash as the literal text "<U+2013>" (which the browser then swallows as
+# an HTML tag). Switch to a UTF-8 locale so titles and descriptions come out intact.
+local({
+  if (!isTRUE(l10n_info()[["UTF-8"]])) {
+    for (loc in c("en_US.UTF-8", "C.UTF-8", "UTF-8")) {
+      if (nzchar(suppressWarnings(Sys.setlocale("LC_CTYPE", loc)))) break
+    }
+  }
+})
+
 # Single source of truth for protocol <-> buffer cross-referencing.
 # Sourced (not copy-pasted) from every buffer and protocol .qmd via:
 #   source(here::here("protocols_src/_R/buffer_helpers.R"))

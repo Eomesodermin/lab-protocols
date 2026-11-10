@@ -1,61 +1,87 @@
 ---
 title: "Resources"
-description: "Key references, platforms, and external tools used in this lab."
+description: "Key references, platforms and external tools used in the lab."
 format: html
+toc: false
 ---
 
-# Key references
+## Key references
 
-## Flow cytometry
+```{=html}
+<div class="lgrid">
+<div class="lcard">
+<div class="ltop"><span class="lhost">doi.org</span></div>
+<h3 class="ltitle"><a href="https://doi.org/10.1002/eji.202170126" target="_blank" rel="noopener">Guidelines for the use of flow cytometry and cell sorting in immunological studies</a></h3>
+<p class="ldesc">Cossarizza et al. (2021), <em>European Journal of Immunology</em>, third edition. Open access (CC BY 4.0).</p>
+</div>
+</div>
+```
 
-📄 **Guidelines for the use of flow cytometry and cell sorting in immunological studies**  
-Cossarizza *et al.* (2021), *European Journal of Immunology* — Third Edition
+## Core lab platforms
 
-- [Open paper (open access, CC BY 4.0)](https://doi.org/10.1002/eji.202170126)
+University Hospital Bonn systems and flow cytometry facility tools.
 
----
+```{=html}
+<div class="lgrid">
+<div class="lcard">
+<div class="ltop"><span class="lhost">pyrat.ukbonn.de</span><span class="lbadge">Login required</span></div>
+<h3 class="ltitle"><a href="https://pyrat.ukbonn.de/pyrat/frontend/session/login" target="_blank" rel="noopener">PyRAT</a></h3>
+<p class="ldesc">Animal facility management system.</p>
+</div>
+<div class="lcard">
+<div class="ltop"><span class="lhost">ppms.eu</span><span class="lbadge">Login required</span></div>
+<h3 class="ltitle"><a href="https://ppms.eu/uni-bonn/login/" target="_blank" rel="noopener">PPMS</a></h3>
+<p class="ldesc">Core facility booking (University of Bonn).</p>
+</div>
+<div class="lcard">
+<div class="ltop"><span class="lhost">app.fluorofinder.com</span></div>
+<h3 class="ltitle"><a href="https://app.fluorofinder.com/bonn-fccf" target="_blank" rel="noopener">FluoroFinder - Bonn FCCF</a></h3>
+<p class="ldesc">Panel design for the Bonn flow cytometry core facility.</p>
+</div>
+</div>
+```
 
-# Core lab platforms (University Hospital Bonn)
+## Ordering and inventory
 
-## PyRAT (animal facility)
+```{=html}
+<div class="lgrid">
+<div class="lcard">
+<div class="ltop"><span class="lhost">app.quartzy.com</span><span class="lbadge">Login required</span></div>
+<h3 class="ltitle"><a href="https://app.quartzy.com/groups/256099/requests" target="_blank" rel="noopener">Quartzy - lab requests</a></h3>
+<p class="ldesc">Ordering and inventory for the lab.</p>
+</div>
+</div>
+```
 
-- 🔐 [PyRAT login](https://pyrat.ukbonn.de/pyrat/frontend/session/login)
+## Computational resources
 
-## Flow cytometry facility tools
-- 🔐 [PPMS login (University of Bonn)](https://ppms.eu/uni-bonn/login/)
-- 🧪 [FluoroFinder – Bonn FCCF](https://app.fluorofinder.com/bonn-fccf)
+```{=html}
+<div class="lgrid">
+<div class="lcard">
+<div class="ltop"><span class="lhost">wiki.hpc.uni-bonn.de</span></div>
+<h3 class="ltitle"><a href="https://wiki.hpc.uni-bonn.de" target="_blank" rel="noopener">University of Bonn HPC wiki</a></h3>
+<p class="ldesc">Documentation for the Marvin cluster and high-performance computing at Bonn.</p>
+</div>
+</div>
+```
 
----
+## Misc
 
-# Experimental reagents and ordering
+```{=html}
+<div class="lgrid">
+<div class="lcard">
+<div class="ltop"><span class="lhost">this site</span></div>
+<h3 class="ltitle"><a href="mouse_ear_notch_id.html">Mouse ear notch ID guide</a></h3>
+<p class="ldesc">Ear-notch numbering for identifying mice.</p>
+</div>
+<div class="lcard">
+<div class="ltop"><span class="lhost">qedscience.com</span></div>
+<h3 class="ltitle"><a href="https://www.qedscience.com" target="_blank" rel="noopener">QED Bioscience</a></h3>
+<p class="ldesc">Paper deconstruction resources.</p>
+</div>
+</div>
+```
 
-## Lab ordering and inventory
-
-- 📦 [Quartzy – Lab requests](https://app.quartzy.com/groups/256099/requests)
-
----
-
-# Computational resources
-
-## High-performance computing (HPC)
-
-- 🖥️ [University of Bonn HPC Wiki](https://wiki.hpc.uni-bonn.de)
-
----
-
-# Misc
-
-## Mouse identification
-
-- [Mouse ear notch ID guide](mouse_ear_notch_id.html)
-
-## Paper deconstruction
-
-- [QED Bioscience](https://www.qedscience.com)
-
----
-# Notes
-
-:::callout-note
-Some platforms (e.g. PyRAT, PPMS, Quartzy) require institutional login or VPN access when off-site.
+::: callout-note
+Some platforms (PyRAT, PPMS, Quartzy) require institutional login or VPN access when off-site.
 :::

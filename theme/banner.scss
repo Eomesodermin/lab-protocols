@@ -34,3 +34,6 @@ body:has(#quarto-content.page-layout-full) #title-block-header .quarto-title-met
   grid-column: screen-start-inset / screen-end-inset !important;
   width: 100%; max-width: 1560px; margin-inline: auto; padding-inline: clamp(0rem, 1.5vw, 2rem);
 }
+
+/* No empty gap under the banner when a page has no author/date block. */
+.quarto-title-meta:not(:has(.quarto-title-meta-heading)) { display: none; }

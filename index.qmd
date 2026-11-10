@@ -2,6 +2,7 @@
 title: "Protocol Library"
 description: "Lab protocols and buffer recipes, linked."
 page-layout: full
+toc: false
 format: html
 ---
 

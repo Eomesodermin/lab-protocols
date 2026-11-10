@@ -44,11 +44,23 @@ tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
 /* Footer */
 .nav-footer { border-top: 1px solid var(--rule) !important; font-size: 0.85rem; padding: 1rem 0; }
 
-/* Home page cards */
-.home-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.25rem 0 2rem; }
-.home-card { position: relative; border: 1px solid var(--rule); border-radius: 0.75rem; padding: 1.1rem 1.25rem; transition: border-color .15s, transform .15s; }
-.home-card:hover { border-color: var(--bs-link-color); transform: translateY(-1px); }
-.home-card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; font-weight: 650; color: inherit; }
+/* Home page cards: each card carries its own accent colour */
+.home-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.1rem; margin: 1.25rem 0 2rem; }
+.home-card { --accent: var(--c-blue); position: relative; border: 1px solid var(--rule); border-top: 4px solid var(--accent); border-radius: 0.75rem; padding: 1.1rem 1.25rem 1.2rem; transition: border-color .15s, box-shadow .15s, transform .15s; }
+.home-card:hover { border-color: var(--accent); box-shadow: 0 4px 14px rgba(0,0,0,.08); transform: translateY(-1px); }
+.home-card:nth-child(1) { --accent: var(--c-blue); }
+.home-card:nth-child(2) { --accent: var(--c-green); }
+.home-card:nth-child(3) { --accent: var(--c-violet); }
+.home-card:nth-child(4) { --accent: var(--c-amber); }
+.home-card:nth-child(5) { --accent: var(--c-rose); }
+.home-card:nth-child(6) { --accent: var(--c-teal); }
+.home-card h3 { margin: 0 0 0.35rem; font-size: 1.15rem; font-weight: 700; color: var(--accent); }
 .home-card h3 a { color: inherit; }
 .home-card h3 a::after { content: ""; position: absolute; inset: 0; }
-.home-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+.home-card h3 .anchorjs-link { display: none !important; }
+.home-card p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+
+/* Navbar: mark the current page */
+.navbar .nav-link.active, .navbar .nav-link:hover { color: var(--bs-link-color) !important; }
+.navbar .nav-link.active { box-shadow: inset 0 -3px 0 var(--bs-link-color); }
+.navbar-brand { font-weight: 700; }

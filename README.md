@@ -29,6 +29,7 @@ Protocols and buffers are intended to be:
   - `Archived_protocols/` – retired documents (rendered, but hidden from search)
   - `cross_reference.qmd` – generated buffer-to-protocol and protocol-to-buffer tables
   - `_dependencies.csv`, `_buffer_registry.csv` – which protocol uses which buffer (edited by hand)
+  - `_groups.csv` – which heading each document sits under on the listing pages (edit to regroup; unlisted documents appear under "Other")
   - `_registry.tsv` – generated from each file's YAML at render time (do not edit)
   - `_R/`, `_filters/` – render-time helpers (buffer summaries, auto-links, PDF symbol fixes)
 - `scripts/` – `build.sh` (full render + checks), `check_site.py` (link and output checks)

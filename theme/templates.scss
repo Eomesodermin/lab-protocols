@@ -1,1 +1,24 @@
 /*-- scss:rules --*/
+/* Templates page: file cards with a download button. */
+
+.tgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1rem; margin: 1rem 0 2.2rem; }
+.tcard { display: flex; flex-direction: column; padding: 1rem 1.1rem; border: 1px solid var(--rule); border-radius: 0.75rem; transition: border-color 0.15s; }
+.tcard:hover { border-color: var(--bs-link-color); }
+.ttop { margin-bottom: 0.5rem; }
+.tbadge {
+  display: inline-block; padding: 0.08rem 0.5rem; border: 1px solid var(--rule); border-radius: 0.3rem; background: var(--soft);
+  font-family: var(--bs-font-monospace); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.06em; color: var(--muted);
+}
+.ttitle { margin: 0 0 0.35rem; padding: 0; border: 0; font-size: 1.02rem; font-weight: 650; line-height: 1.35; color: inherit; }
+.ttitle .anchorjs-link { display: none !important; }
+.tdesc { margin: 0 0 0.9rem; font-size: 0.87rem; line-height: 1.5; color: var(--muted); }
+.tfoot { display: flex; justify-content: space-between; align-items: flex-end; gap: 0.6rem; margin-top: auto; }
+.tfile { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--bs-font-monospace); font-size: 0.66rem; color: var(--muted); }
+.tlinks { display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0; }
+.tdl {
+  padding: 0.22rem 0.7rem; border: 1px solid var(--bs-link-color); border-radius: 0.4rem;
+  font-size: 0.76rem; font-weight: 600; text-decoration: none; color: var(--bs-link-color);
+}
+.tdl:hover { background: var(--bs-link-color); color: var(--bs-body-bg); text-decoration: none; }
+.tdl.alt { border-color: var(--rule); color: var(--muted); }
+.tdl.alt:hover { border-color: var(--bs-link-color); background: transparent; color: var(--bs-link-color); }

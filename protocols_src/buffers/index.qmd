@@ -3,6 +3,7 @@ title: "Buffers"
 description: "Buffers and media, each with a full recipe and the protocols that use it."
 format: html
 toc: false
+page-layout: full
 ---
 
 ```{r}

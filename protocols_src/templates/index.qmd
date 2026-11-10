@@ -3,6 +3,7 @@ title: "Templates"
 description: "Downloadable templates for cytometry panels, cell sorting and writing new protocols."
 format: html
 toc: false
+page-layout: full
 ---
 
 ## Cell sorters

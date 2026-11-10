@@ -3,6 +3,7 @@ title: "Human protocols"
 description: "PBMC isolation and human cell line culture."
 format: html
 toc: false
+page-layout: full
 ---
 
 ```{r}

@@ -3,6 +3,7 @@ title: "Buffer and protocol links"
 description: "Which buffers each protocol needs, and which protocols use each buffer."
 format: html
 toc: false
+page-layout: full
 ---
 
 Generated from `_dependencies.csv` and each document's header, so it never goes stale. To change a link, edit `protocols_src/_dependencies.csv`.

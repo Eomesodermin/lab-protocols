@@ -3,6 +3,7 @@ title: "Mouse protocols"
 description: "Tissue processing, LCMV virology, cell transfer and in vitro assays."
 format: html
 toc: false
+page-layout: full
 ---
 
 ```{r}

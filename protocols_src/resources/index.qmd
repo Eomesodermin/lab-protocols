@@ -3,6 +3,7 @@ title: "Resources"
 description: "Key references, platforms and external tools used in the lab."
 format: html
 toc: false
+page-layout: full
 ---
 
 ## Key references

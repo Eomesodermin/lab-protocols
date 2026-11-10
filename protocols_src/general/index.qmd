@@ -3,6 +3,7 @@ title: "General protocols"
 description: "Cross-species methods: flow cytometry, cell labelling and gene editing."
 format: html
 toc: false
+page-layout: full
 ---
 
 ```{r}

@@ -1,0 +1,13 @@
+/*-- scss:rules --*/
+/* Wider layout. Listing-style pages (page-layout: full) use nearly the whole window, capped
+   at 1560px on very large monitors; on phones the grid collapses and nothing changes. */
+
+.page-layout-full main.content {
+  grid-column: screen-start-inset / screen-end-inset !important;
+  width: 100%;
+  max-width: 1560px;
+  justify-self: center;
+  padding-inline: clamp(0rem, 1.5vw, 2rem);
+}
+.page-layout-full #title-block-header { grid-column: screen-start-inset / screen-end-inset !important; max-width: 1560px; justify-self: center; width: 100%; padding-inline: clamp(0rem, 1.5vw, 2rem); }
+.page-layout-full .nav-footer { max-width: 1560px; margin-inline: auto; }

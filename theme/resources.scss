@@ -2,10 +2,10 @@
 /* Resources page: link cards. */
 
 .lgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1rem; margin: 1rem 0 2.2rem; }
-.lcard { position: relative; padding: 1rem 1.1rem; border: 1px solid var(--rule); border-radius: 0.75rem; transition: border-color 0.15s, box-shadow 0.15s; }
-.lcard:hover { border-color: var(--bs-link-color); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06); }
+.lcard { position: relative; padding: 1rem 1.1rem; border: 1px solid var(--rule); border-top: 4px solid var(--accent, var(--c-blue)); border-radius: 0.75rem; transition: border-color 0.15s, box-shadow 0.15s; }
+.lcard:hover { border-color: var(--accent, var(--c-blue)); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08); }
 .ltop { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.45rem; }
-.lhost { font-family: var(--bs-font-monospace); font-size: 0.7rem; color: var(--muted); }
+.lhost { font-family: var(--bs-font-monospace); font-size: 0.72rem; font-weight: 600; color: var(--accent, var(--c-blue)); }
 .lbadge { padding: 0.06rem 0.5rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--soft); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.03em; color: var(--muted); }
 .ltitle { margin: 0 0 0.35rem; padding: 0; border: 0; font-size: 1.02rem; font-weight: 650; line-height: 1.35; color: inherit; }
 .ltitle .anchorjs-link { display: none !important; }

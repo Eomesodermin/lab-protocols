@@ -46,7 +46,8 @@ render_matrix <- function() {
 
   rows <- character()
   for (g in pgroups) {
-    rows <- c(rows, sprintf('<tr class="xgroup"><td colspan="%d">%s</td></tr>', nrow(bufs) + 1, .esc(g)))
+    acc <- sprintf("--accent: var(--c-%s)", .group_color(g))
+    rows <- c(rows, sprintf('<tr class="xgroup" style="%s"><td colspan="%d">%s</td></tr>', acc, nrow(bufs) + 1, .esc(g)))
     gp <- prots |> dplyr::filter(group == g) |> dplyr::arrange(title)
     for (i in seq_len(nrow(gp))) {
       p <- gp[i, ]
@@ -57,8 +58,8 @@ render_matrix <- function() {
         sprintf('<td class="x%s%s" data-col="%d"%s></td>', if (on) " on" else "", if (new_group) " xsep" else "", j,
                 if (on) sprintf(' title="%s uses %s"', .attr(p$id), .attr(bufs$id[j])) else "")
       }, character(1))
-      rows <- c(rows, sprintf('<tr><th class="xrowh" scope="row"><a href="%s" title="%s">%s</a></th>%s</tr>',
-                              .page(p$path), .attr(p$id), .inline(p$title), paste(cells, collapse = "")))
+      rows <- c(rows, sprintf('<tr style="%s"><th class="xrowh" scope="row"><a href="%s" title="%s">%s</a></th>%s</tr>',
+                              acc, .page(p$path), .attr(p$id), .inline(p$title), paste(cells, collapse = "")))
     }
   }
   html <- c(

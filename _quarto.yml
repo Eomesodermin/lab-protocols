@@ -60,8 +60,8 @@ format:
       margin-width: 280px
       gutter-width: 2rem
     theme:
-      light: [cosmo, theme/light.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss]
-      dark: [darkly, theme/dark.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss]
+      light: [cosmo, theme/light.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss, theme/sections.scss]
+      dark: [darkly, theme/dark.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss, theme/sections.scss]
     css: styles.css
     respect-user-color-scheme: true
     anchor-sections: true

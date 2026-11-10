@@ -1,0 +1,17 @@
+/*-- scss:rules --*/
+/* Section headings on hand-written full-width pages (Templates, Resources): the same
+   colour-barred style as the listing group headings, one colour per section. */
+
+main.content section.level2 { --accent: var(--c-blue); margin-bottom: 1rem; }
+main.content section.level2:nth-of-type(6n+2) { --accent: var(--c-teal); }
+main.content section.level2:nth-of-type(6n+3) { --accent: var(--c-violet); }
+main.content section.level2:nth-of-type(6n+4) { --accent: var(--c-amber); }
+main.content section.level2:nth-of-type(6n+5) { --accent: var(--c-rose); }
+main.content section.level2:nth-of-type(6n+6) { --accent: var(--c-green); }
+body:has(#quarto-content.page-layout-full) main.content section.level2 > h2 {
+  margin: 2.4rem 0 0.6rem; padding: 0.55rem 1rem; border: 0; border-left: 6px solid var(--accent); border-radius: 0 0.5rem 0.5rem 0;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 12%, transparent), transparent 75%);
+  font-size: 1.45rem; font-weight: 700; letter-spacing: -0.015em; color: var(--bs-heading-color, inherit);
+}
+body:has(#quarto-content.page-layout-full) main.content section.level2 > p { color: var(--muted); margin: 0.2rem 0 0.4rem; }
+body:has(#quarto-content.page-layout-full) main.content section.level2:first-of-type > h2 { margin-top: 0.6rem; }

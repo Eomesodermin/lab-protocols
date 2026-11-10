@@ -1,1 +1,41 @@
 /*-- scss:rules --*/
+/* Cross-reference page: protocol x buffer grid and compact lists. See _R/matrix_helpers.R */
+
+.xhint { margin: 0.4rem 0 0.9rem; font-size: 0.88rem; color: var(--muted); }
+.xwrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 0.75rem; }
+table.xmatrix { width: max-content; min-width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.86rem; }
+.xmatrix th, .xmatrix td { border: 0 !important; background-clip: padding-box; }
+.xmatrix thead th.xcol { height: 8.5rem; padding: 0 0.1rem 0.6rem; vertical-align: bottom; text-align: center; }
+.xcol a {
+  display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap;
+  font-family: var(--bs-font-monospace); font-size: 0.68rem; color: var(--muted);
+}
+.xcol a:hover { color: var(--bs-link-color); text-decoration: none; }
+.xmatrix .xrowh {
+  position: sticky; left: 0; z-index: 1; min-width: 18rem; max-width: 22rem; padding: 0.42rem 0.85rem;
+  background: var(--bs-body-bg); border-top: 1px solid var(--rule) !important; font-weight: 500;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left;
+}
+.xmatrix .xrowh a { color: inherit; }
+.xmatrix .xrowh a:hover { color: var(--bs-link-color); }
+.xmatrix tr.xgroup td {
+  position: sticky; left: 0; padding: 0.45rem 0.85rem; background: var(--soft);
+  font-size: 0.7rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+}
+.xmatrix td.x { width: 2rem; min-width: 2rem; text-align: center; border-top: 1px solid var(--rule) !important; }
+.xmatrix .xsep { border-left: 1px solid var(--rule) !important; }
+.xmatrix td.x.on::before {
+  content: ""; display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--bs-link-color); vertical-align: middle;
+}
+.xmatrix tbody tr:not(.xgroup):hover td, .xmatrix tbody tr:not(.xgroup):hover th.xrowh { background: var(--soft); }
+.xmatrix .col-hl { background: var(--soft); }
+
+.xlist { margin-top: 0.8rem; }
+.xrow { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.2rem; padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
+.xrow:first-child { border-top: 1px solid var(--rule); }
+.xmain { flex: 0 1 22rem; min-width: 0; }
+.xmain a { font-weight: 600; color: inherit; }
+.xmain a:hover { color: var(--bs-link-color); }
+.xmain .pid { display: block; margin-top: 0.1rem; }
+.xrow .pchips { flex: 1 1 0; justify-content: flex-start; }
+@media (max-width: 767px) { .xrow { flex-direction: column; gap: 0.5rem; } .xmain { flex-basis: auto; } }

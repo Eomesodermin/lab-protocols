@@ -1,14 +1,27 @@
 ---
-title: "Buffer and protocol cross-reference"
-description: "Which buffers each protocol uses, and which protocols use each buffer."
+title: "Buffer and protocol links"
+description: "Which buffers each protocol needs, and which protocols use each buffer."
 format: html
+toc: false
 ---
 
-Generated automatically from `_dependencies.csv` and each document's YAML — do not edit by hand. To change a link, edit the dependency in `protocols_src/_dependencies.csv`.
+Generated from `_dependencies.csv` and each document's header, so it never goes stale. To change a link, edit `protocols_src/_dependencies.csv`.
 
 ::: {.panel-tabset}
 
-## Buffer → protocols
+## Grid
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/matrix_helpers.R"))
+render_matrix()
+```
+
+## By buffer
 
 Find a buffer, then jump to every protocol that uses it.
 
@@ -18,11 +31,11 @@ Find a buffer, then jump to every protocol that uses it.
 #| warning: false
 #| results: asis
 
-source(here::here("protocols_src/_R/buffer_helpers.R"))
-render_buffer_to_protocols()
+source(here::here("protocols_src/_R/matrix_helpers.R"))
+render_xlist("buffer")
 ```
 
-## Protocol → buffers
+## By protocol
 
 Find a protocol, then jump to the buffers it needs.
 
@@ -32,8 +45,8 @@ Find a protocol, then jump to the buffers it needs.
 #| warning: false
 #| results: asis
 
-source(here::here("protocols_src/_R/buffer_helpers.R"))
-render_protocol_to_buffers()
+source(here::here("protocols_src/_R/matrix_helpers.R"))
+render_xlist("protocol")
 ```
 
 :::

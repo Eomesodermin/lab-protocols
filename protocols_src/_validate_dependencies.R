@@ -63,6 +63,13 @@ for (i in seq_len(nrow(protocol_docs))) {
   }
 }
 
+# 7. Every live document has a heading in _groups.csv (otherwise it shows under "Other").
+groups <- read_csv(here::here("protocols_src/_groups.csv"), show_col_types = FALSE)
+ungrouped <- setdiff(registry$id, groups$id)
+if (length(ungrouped) > 0) warnings_ <- c(warnings_, paste("Not in _groups.csv (will list under 'Other'):", paste(ungrouped, collapse = ", ")))
+stale <- setdiff(groups$id, registry$id)
+if (length(stale) > 0) warnings_ <- c(warnings_, paste("_groups.csv lists IDs with no document:", paste(stale, collapse = ", ")))
+
 if (length(errors) > 0) cat("ERROR:", errors, sep = "\n  ", "\n")
 if (length(warnings_) > 0 && !quiet) cat("WARNING:", warnings_, sep = "\n  ", "\n")
 if (length(errors) == 0 && length(warnings_) == 0 && !quiet) cat("All cross-reference checks passed.\n")

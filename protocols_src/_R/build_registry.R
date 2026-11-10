@@ -4,7 +4,7 @@
 # source of truth for IDs, titles and file paths used by
 #   - buffer_helpers.R   (clickable links in "Buffers Required" / "Linked protocols")
 #   - _filters/autolink.lua (turns `BUF-...` / `MUS-...` code spans into links)
-#   - the cross-reference page
+#   - the cross-reference page and the generated listing pages
 # Run automatically as a Quarto pre-render step; safe to run by hand from anywhere:
 #   Rscript protocols_src/_R/build_registry.R
 
@@ -26,7 +26,9 @@ build_registry <- function(quiet = FALSE) {
       type = if_else(str_starts(basename(f), "buf_"), "buffer", "protocol"),
       title = str_replace_all(meta$title %||% NA_character_, "[\t\n]", " "),
       version = meta$version %||% NA_character_,
-      path = str_remove(f, fixed(paste0(root, "/")))
+      path = str_remove(f, fixed(paste0(root, "/"))),
+      description = str_squish(str_replace_all(meta$description %||% "", "[\t\n]", " ")),
+      date = as.character(meta$date %||% NA_character_)
     )
   }) |>
     arrange(type, id)

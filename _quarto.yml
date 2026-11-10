@@ -54,8 +54,8 @@ filters:
 format:
   html:
     theme:
-      light: [cosmo, theme/light.scss, theme/rules.scss]
-      dark: [darkly, theme/dark.scss, theme/rules.scss]
+      light: [cosmo, theme/light.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss]
+      dark: [darkly, theme/dark.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss]
     css: styles.css
     respect-user-color-scheme: true
     anchor-sections: true

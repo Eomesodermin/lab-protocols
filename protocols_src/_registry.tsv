@@ -1,46 +1,46 @@
-id	type	title	version	path
-BUF-ACK-LYSIS	buffer	ACK Red Blood Cell Lysis Buffer	v1.2	protocols_src/buffers/buf_ack_lysis.qmd
-BUF-BHK-PROP	buffer	BHK Cell and Virus Propagation Medium	v1.1	protocols_src/buffers/buf_bhk_propagation_medium.qmd
-BUF-FACS-BUF	buffer	FACS Buffer	v1.0	protocols_src/buffers/buf_facs_buffer.qmd
-BUF-FREEZE-MIX	buffer	2x Freezing Medium (R0 + 10% FCS + 20% DMSO)	v1.1	protocols_src/buffers/buf_freeze_mix_2x.qmd
-BUF-IEL-3PCT	buffer	3% Medium (IEL Wash/Base Medium)	v1.0	protocols_src/buffers/buf_iel_3pct_medium.qmd
-BUF-IEL-SHAKE	buffer	IEL Shake Medium	v1.0	protocols_src/buffers/buf_iel_shake_medium.qmd
-BUF-IEL-STRIP	buffer	IEL Strip Medium (DTT/EDTA)	v1.0	protocols_src/buffers/buf_iel_strip_medium.qmd
-BUF-L929-PROP	buffer	L929 Cell Propagation Medium	v1.1	protocols_src/buffers/buf_l929_propagation_medium.qmd
-BUF-LCMV-PLA	buffer	LCMV Plaque Assay Medium	v1.1	protocols_src/buffers/buf_lcmv_plaque_assay_medium.qmd
-BUF-LIV-DIG	buffer	Mouse Liver Digestion Buffer	v1.1	protocols_src/buffers/buf_mus_liver_digestion.qmd
-BUF-MACS-BUF	buffer	MACS Buffer	v1.0	protocols_src/buffers/buf_macs_buffer.qmd
-BUF-NK-MED	buffer	NK Cell Culture Medium (cRPMI for Murine NK Cells)	v1.1	protocols_src/buffers/buf_mus_NK_med.qmd
-BUF-PERC-37	buffer	37% Percoll Solution (= 33% final Percoll)	v2.1	protocols_src/buffers/buf_percoll_37pct.qmd
-BUF-R0-MED	buffer	R0 Medium (RPMI Without Serum)	v1.1	protocols_src/buffers/buf_R0_med.qmd
-BUF-R10-MED	buffer	R10 Medium (RPMI + 10% FCS + Pen/Strep)	v1.1	protocols_src/buffers/buf_R10_med.qmd
-BUF-RBC-HYB	buffer	RBC Lysis Buffer (Hybrimax / Commercial)	v1.1	protocols_src/buffers/buf_rbc_lysis_hybrimax.qmd
-BUF-TCELL-MED	buffer	T Cell Medium (RPMI + 10% FCS + Supplements)	v1.2	protocols_src/buffers/buf_Tcell_med.qmd
-BUF-VERO-PROP	buffer	Vero Cell Propagation Medium	v1.2	protocols_src/buffers/buf_vero_propagation_medium.qmd
-GEN-CTV-STAIN	protocol	CellTrace Violet (CTV) Staining of Lymphocytes	v1.1	protocols_src/general/prot_gen_CTV_stain.qmd
-GEN-FLOW-SONY-ID7000	protocol	Sony Spectral Cell Analyzer ID7000	v1.1	protocols_src/general/prot_gen_flow_sony_id7000.qmd
-GEN-FLOW-SONY-ID7000-DATA	protocol	Sony ID7000 Data Handling and Storage	v1.1	protocols_src/general/prot_gen_flow_sony_id7000_data.qmd
-GEN-FLOW-STD	protocol	Standard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)	v1.4	protocols_src/general/prot_gen_flow_standard.qmd
-GEN-LYMPH-NUC	protocol	4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells	v1.1	protocols_src/general/prot_gen_lymphocyte_nucleofection.qmd
-HUM-BLD-PBMC-ISO	protocol	Isolation of Human PBMCs from Whole Blood by Ficoll Gradient	v1.1	protocols_src/human/prot_hum_blood_PBMC_iso.qmd
-HUM-K562-CULTURE	protocol	K-562 Cell Line Culture Protocol	v1.1	protocols_src/human/prot_hum_K562_culture.qmd
-HUM-KHYG1-CULTURE	protocol	KHYG-1 Cell Line Culture Protocol	v1.1	protocols_src/human/prot_hum_KHYG1_culture.qmd
-HUM-NK92-CULTURE	protocol	NK-92 Cell Line Culture Protocol	v1.1	protocols_src/human/prot_hum_NK92_culture.qmd
-MUS-BLD-PRC	protocol	Mouse Blood Processing to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_blood_processing.qmd
-MUS-BM-ISO	protocol	Mouse Bone Marrow Isolation to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_bone_marrow_isolation.qmd
-MUS-IEL-ISO	protocol	Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation	v1.3	protocols_src/mouse/prot_mus_iel_isolation.qmd
-MUS-INF-LCMV	protocol	LCMV Infection Models (WE, Clone 13, Docile, Armstrong)	v1.2	protocols_src/mouse/prot_mus_lcmv_infection.qmd
-MUS-LCMV-FFA	protocol	LCMV Focus-Forming Assay (Immunofocus)	v1.2	protocols_src/mouse/prot_mus_lcmv_focus_forming_assay.qmd
-MUS-LCMV-PLA	protocol	LCMV Plaque Assay on Vero Cells	v1.1	protocols_src/mouse/prot_mus_lcmv_plaque_assay_vero.qmd
-MUS-LCMV-PROD	protocol	LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)	v1.3	protocols_src/mouse/prot_mus_lcmv_multi_strain_production.qmd
-MUS-LCMV-QPCR	protocol	LCMV Viral Load Quantification by GP-Based SYBR Green qPCR	v1.1	protocols_src/mouse/prot_mus_lcmv_gp_qpcr_viral_load.qmd
-MUS-LIV-DIG	protocol	Mouse Liver Digestion to Single-Cell Suspension	v2.1	protocols_src/mouse/prot_mus_liver_digestion.qmd
-MUS-LNG-DIG	protocol	Mouse Lung Digestion to Single-Cell Suspension	v1.1	protocols_src/mouse/prot_mus_lung_digestion.qmd
-MUS-NLC-ACT	protocol	NLC Adoptive Transfer (Liver-derived NK-like Cells)	v1.1	protocols_src/mouse/prot_mus_NLC_ACT.qmd
-MUS-P14-ACT	protocol	P14 Adoptive Transfer (GP33-specific CD8 T cells)	v1.1	protocols_src/mouse/prot_mus_P14_transfer.qmd
-MUS-PTPRC-GENO	protocol	Single-Tube PCR Genotyping of Ptprc^a^ (JAXBoy, CD45.1) and Ptprc^b^ (C57BL/6J, CD45.2)	v1.1	protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.qmd
-MUS-SPL-DIS	protocol	Mouse Spleen Dissociation to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_spleen_dissociation.qmd
-MUS-SPL-NK-PROLIF	protocol	In vitro NK Cell Proliferation Assay Using CellTrace Dyes	v1.1	protocols_src/mouse/prot_mus_spleen_NK_prolif_invitro.qmd
-MUS-TMR-DIG	protocol	Mouse Tumour Digestion to Single-Cell Suspension	v1.1	protocols_src/mouse/prot_mus_tumour_digestion.qmd
-MUS-XCELL-LCMV	protocol	xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts	v1.7	protocols_src/mouse/prot_xcelligence_lcmv_cytotoxicity.qmd
-NLC-PLATE-STIM	protocol	Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)	v1.1	protocols_src/mouse/prot_nlc_plate_stimulation.qmd
+id	type	title	version	path	description	date
+BUF-ACK-LYSIS	buffer	ACK Red Blood Cell Lysis Buffer	v1.2	protocols_src/buffers/buf_ack_lysis.qmd	Standard ammonium–chloride–potassium (ACK) lysis buffer for selective removal of red blood cells from murine or human single-cell suspensions.	2026-09-18
+BUF-BHK-PROP	buffer	BHK Cell and Virus Propagation Medium	v1.1	protocols_src/buffers/buf_bhk_propagation_medium.qmd	This medium is used for propagation of BHK-21 cells and for LCMV production workflows.	2026-09-18
+BUF-FACS-BUF	buffer	FACS Buffer	v1.0	protocols_src/buffers/buf_facs_buffer.qmd	PBS + FCS wash/staining buffer for flow cytometry (FACS), without EDTA.	2026-09-18
+BUF-FREEZE-MIX	buffer	2x Freezing Medium (R0 + 10% FCS + 20% DMSO)	v1.1	protocols_src/buffers/buf_freeze_mix_2x.qmd	Preparation of 2x freezing medium for cryopreservation of PBMCs and other lymphocytes. Mixed 1:1 with cell suspension to yield standard 10% DMSO freezing medium.	2026-09-18
+BUF-IEL-3PCT	buffer	3% Medium (IEL Wash/Base Medium)	v1.0	protocols_src/buffers/buf_iel_3pct_medium.qmd	Low-serum RPMI wash medium used for intestinal washes and as the base for IEL Strip Medium.	2026-09-18
+BUF-IEL-SHAKE	buffer	IEL Shake Medium	v1.0	protocols_src/buffers/buf_iel_shake_medium.qmd	EDTA/RPMI medium used for the mechanical shake washes after DTT/EDTA epithelial stripping.	2026-09-18
+BUF-IEL-STRIP	buffer	IEL Strip Medium (DTT/EDTA)	v1.0	protocols_src/buffers/buf_iel_strip_medium.qmd	DTT/EDTA epithelial stripping medium for releasing intraepithelial lymphocytes from the small intestine.	2026-09-18
+BUF-L929-PROP	buffer	L929 Cell Propagation Medium	v1.1	protocols_src/buffers/buf_l929_propagation_medium.qmd	This medium is used for routine propagation of L929 cells for LCMV production workflows.	2026-09-18
+BUF-LCMV-PLA	buffer	LCMV Plaque Assay Medium	v1.1	protocols_src/buffers/buf_lcmv_plaque_assay_medium.qmd	Medium used to overlay infected Vero cell monolayers during LCMV plaque assays.	2026-09-18
+BUF-LIV-DIG	buffer	Mouse Liver Digestion Buffer	v1.1	protocols_src/buffers/buf_liver_digestion.qmd	Collagenase and DNase I digestion buffer for enzymatic dissociation of mouse liver tissue. Supports Collagenase D or Collagenase IV in a DMEM, PBS, or HBSS base.	2026-09-18
+BUF-MACS-BUF	buffer	MACS Buffer	v1.0	protocols_src/buffers/buf_macs_buffer.qmd	PBS + FCS + EDTA buffer for magnetic-activated cell sorting (MACS) and general washes.	2026-09-18
+BUF-NK-MED	buffer	NK Cell Culture Medium (cRPMI for Murine NK Cells)	v1.1	protocols_src/buffers/buf_nk_med.qmd	Complete NK culture medium (cRPMI) for murine NK cells, including RPMI 1640 supplemented with FCS, antibiotics, HEPES, sodium pyruvate, NEAA, and beta-mercaptoethanol. IL-15 is added fresh at the time of culture and is not included in the stored base medium.	2026-09-18
+BUF-PERC-37	buffer	37% Percoll Solution (= 33% final Percoll)	v2.1	protocols_src/buffers/buf_percoll_37pct.qmd	Percoll density solution for enrichment of leukocytes from digested liver tissue. 37% of isotonic Percoll stock, equivalent to 33% final Percoll.	2026-09-18
+BUF-R0-MED	buffer	R0 Medium (RPMI Without Serum)	v1.1	protocols_src/buffers/buf_r0_med.qmd	Serum-free RPMI 1640 medium used for dilution of whole blood prior to Ficoll gradient separation, and for initial PBMC washes.	2026-09-18
+BUF-R10-MED	buffer	R10 Medium (RPMI + 10% FCS + Pen/Strep)	v1.1	protocols_src/buffers/buf_r10_med.qmd	Complete RPMI 1640 medium supplemented with 10% fetal calf serum and Penicillin/Streptomycin for culture and washing of human PBMCs and lymphocytes.	2026-09-18
+BUF-RBC-HYB	buffer	RBC Lysis Buffer (Hybrimax / Commercial)	v1.1	protocols_src/buffers/buf_rbc_lysis_hybrimax.qmd	Red blood cell lysis buffer based on commercial HybriMax or equivalent RBC lysis reagent.	2026-09-18
+BUF-TCELL-MED	buffer	T Cell Medium (RPMI + 10% FCS + Supplements)	v1.2	protocols_src/buffers/buf_tcell_med.qmd	Complete RPMI 1640 medium supplemented with FCS, Penicillin/Streptomycin, beta-mercaptoethanol, and L-glutamine for mouse T cell and NLC culture. Optional supplements: sodium pyruvate, HEPES, MEM NEAAs.	2026-09-18
+BUF-VERO-PROP	buffer	Vero Cell Propagation Medium	v1.2	protocols_src/buffers/buf_vero_propagation_medium.qmd	This medium is used for routine propagation of Vero cells.	2026-09-18
+GEN-CTV-STAIN	protocol	CellTrace Violet (CTV) Staining of Lymphocytes	v1.1	protocols_src/general/prot_gen_ctv_stain.qmd	Staining of lymphocytes (e.g. PBMCs) with CellTrace Violet (CTV) to enable analysis of cell proliferation by flow cytometry.	2025-11-21
+GEN-FLOW-SONY-ID7000	protocol	Sony Spectral Cell Analyzer ID7000	v1.1	protocols_src/general/prot_gen_flow_sony_id7000.qmd	Standard operating procedure for startup, daily QC, experiment setup, single-stain acquisition and spectral unmixing, sample acquisition, data export, and cleaning/shutdown of the Sony Spectral Cell Analyzer ID7000 at the Flow Cytometry Core Facility (FCCF), University Hospital Bonn.	2025-11-21
+GEN-FLOW-SONY-ID7000-DATA	protocol	Sony ID7000 Data Handling and Storage	v1.1	protocols_src/general/prot_gen_flow_sony_id7000_data.qmd	Standard operating procedure for exporting, organizing, transferring, and deleting data generated on the Sony Spectral Cell Analyzer ID7000 systems, including FCS files, experiment files, and reference controls.	2025-11-21
+GEN-FLOW-STD	protocol	Standard Flow Cytometry Staining (Surface, Intracellular, Intranuclear)	v1.4	protocols_src/general/prot_gen_flow_standard.qmd	Standard workflow for surface, intracellular, and intranuclear staining of cells for flow cytometry, including optional tetramer staining performed together with surface antibodies.	2025-12-30
+GEN-LYMPH-NUC	protocol	4D-Nucleofector CRISPR–Cas9 RNP Delivery to T and NK Cells	v1.1	protocols_src/general/prot_gen_lymphocyte_nucleofection.qmd	Unified 4D-Nucleofector protocol for CRISPR–Cas9 RNP delivery into primary mouse T cells, primary mouse NK cells, human CD8 T cells, and NK-92 cells using cell-type–specific buffer and pulse codes.	2025-11-21
+HUM-BLD-PBMC-ISO	protocol	Isolation of Human PBMCs from Whole Blood by Ficoll Gradient	v1.1	protocols_src/human/prot_hum_blood_pbmc_iso.qmd	Isolation of peripheral blood mononuclear cells (PBMCs) from whole human blood using Ficoll density gradient centrifugation, followed by washing and optional cryopreservation.	2025-11-21
+HUM-K562-CULTURE	protocol	K-562 Cell Line Culture Protocol	v1.1	protocols_src/human/prot_hum_k562_culture.qmd	Culture and maintenance of the human K-562 erythroleukemia cell line, including thawing, routine passaging, and cryopreservation.	2025-11-21
+HUM-KHYG1-CULTURE	protocol	KHYG-1 Cell Line Culture Protocol	v1.1	protocols_src/human/prot_hum_khyg1_culture.qmd	Culture and maintenance of the human KHYG-1 NK-like cell line, including thawing, routine passaging, IL-2 supplementation, and cryopreservation.	2025-11-21
+HUM-NK92-CULTURE	protocol	NK-92 Cell Line Culture Protocol	v1.1	protocols_src/human/prot_hum_nk92_culture.qmd	Culture and maintenance of the human NK-92 cell line, including thawing, IL-2–supplemented culture, routine passaging, and cryopreservation.	2025-11-21
+MUS-BLD-PRC	protocol	Mouse Blood Processing to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_blood_processing.qmd	Processing of mouse peripheral blood to obtain leukocyte-enriched single-cell suspensions for flow cytometry and immunological assays.	2026-09-18
+MUS-BM-ISO	protocol	Mouse Bone Marrow Isolation to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_bone_marrow_isolation.qmd	Isolation of mouse bone marrow cells from long bones for flow cytometry, sorting, and downstream immunological assays.	2026-09-18
+MUS-IEL-ISO	protocol	Mouse Small Intestinal Intraepithelial Lymphocyte (IEL) Isolation	v1.3	protocols_src/mouse/prot_mus_iel_isolation.qmd	Isolation of intraepithelial lymphocytes (IELs) from the mouse small intestine for flow cytometry and immunophenotyping, using DTT/EDTA epithelial stripping, mechanical agitation, and Percoll density centrifugation.	2026-09-18
+MUS-INF-LCMV	protocol	LCMV Infection Models (WE, Clone 13, Docile, Armstrong)	v1.2	protocols_src/mouse/prot_mus_lcmv_infection.qmd	Standardized mouse infection protocols for acute and chronic LCMV models, with emphasis on LCMV-WE and LCMV-Clone 13, including dose rationale, virus handling, timing, and expected immunological outcomes.	2026-04-21
+MUS-LCMV-FFA	protocol	LCMV Focus-Forming Assay (Immunofocus)	v1.2	protocols_src/mouse/prot_mus_lcmv_focus_forming_assay.qmd	Quantification of infectious titer (FFU/mL) of LCMV using antibody-based detection of infected foci on Vero cells with semi-solid overlay	2025-12-02
+MUS-LCMV-PLA	protocol	LCMV Plaque Assay on Vero Cells	v1.1	protocols_src/mouse/prot_mus_lcmv_plaque_assay_vero.qmd	Quantification of infectious titer (PFU/mL)	2025-12-01
+MUS-LCMV-PROD	protocol	LCMV Production: Unified Multi-Strain Protocol (Armstrong, Clone 13, WE, Docile)	v1.3	protocols_src/mouse/prot_mus_lcmv_multi_strain_production.qmd	Propagation on fibroblast cell lines and harvest of high-titer stocks.	2026-03-28
+MUS-LCMV-QPCR	protocol	LCMV Viral Load Quantification by GP-Based SYBR Green qPCR	v1.1	protocols_src/mouse/prot_mus_lcmv_gp_qpcr_viral_load.qmd	qPCR viral titre	2025-12-01
+MUS-LIV-DIG	protocol	Mouse Liver Digestion to Single-Cell Suspension	v2.1	protocols_src/mouse/prot_mus_liver_digestion.qmd	Isolation of viable mouse liver single-cell suspensions for downstream flow cytometry, sorting, and single-cell applications.	2026-09-18
+MUS-LNG-DIG	protocol	Mouse Lung Digestion to Single-Cell Suspension	v1.1	protocols_src/mouse/prot_mus_lung_digestion.qmd	Enzymatic digestion of mouse lung to generate viable single-cell suspensions for flow cytometry, sorting, and single-cell omics workflows.	2026-09-18
+MUS-NLC-ACT	protocol	NLC Adoptive Transfer (Liver-derived NK-like Cells)	v1.1	protocols_src/mouse/prot_mus_nlc_act.qmd	Adoptive transfer of liver-derived NLCs for downstream phenotyping and functional studies, including planning calculations for donor requirements and standard timelines for LCMV- and BDL+LCMV-based experiments.	2026-01-09
+MUS-P14-ACT	protocol	P14 Adoptive Transfer (GP33-specific CD8 T cells)	v1.1	protocols_src/mouse/prot_mus_p14_act.qmd	Adoptive transfer of congenically marked naive P14 CD8 T cells for tracking antigen-specific responses in LCMV infection models. Focus on transfer dose, timing, injection preparation, and core readouts.	2026-01-09
+MUS-PTPRC-GENO	protocol	Single-Tube PCR Genotyping of Ptprc^a^ (JAXBoy, CD45.1) and Ptprc^b^ (C57BL/6J, CD45.2)	v1.1	protocols_src/mouse/prot_mus_genotyping_ptprc_jaxboy_single_tube.qmd	Validated allele-specific endpoint PCR using long-tailed primers.	2025-12-01
+MUS-SPL-DIS	protocol	Mouse Spleen Dissociation to Single-Cell Suspension	v1.2	protocols_src/mouse/prot_mus_spleen_dissociation.qmd	Preparation of mouse spleen single-cell suspensions for flow cytometry, sorting, and downstream immunological assays.	2026-09-18
+MUS-SPL-NK-PROLIF	protocol	In vitro NK Cell Proliferation Assay Using CellTrace Dyes	v1.1	protocols_src/mouse/prot_mus_spleen_nk_prolif_invitro.qmd	In vitro proliferation assay for murine NK cells using CellTrace dyes, starting from splenic NK cells isolated by magnetic enrichment and/or sorting, and cultured in NK medium containing IL-15.	2026-09-18
+MUS-TMR-DIG	protocol	Mouse Tumour Digestion to Single-Cell Suspension	v1.1	protocols_src/mouse/prot_mus_tumour_digestion.qmd	Enzymatic and mechanical dissociation of mouse solid tumours to obtain viable single-cell suspensions for flow cytometry, sorting, and single-cell transcriptomic applications.	2026-09-18
+MUS-XCELL-LCMV	protocol	xCELLigence Real-Time Cytotoxicity Assay for LCMV-Infected Fibroblasts	v1.7	protocols_src/mouse/prot_mus_xcelligence_lcmv_cytotoxicity.qmd	Real-time impedance-based cytotoxicity assay using xCELLigence RTCA to measure effector cell killing of LCMV-infected and uninfected C57BL/6J fibroblasts. Covers fibroblast culture, in vitro LCMV infection, E-plate setup, and real-time cytotoxicity measurement.	2026-04-15
+NLC-PLATE-STIM	protocol	Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti-CD28)	v1.1	protocols_src/mouse/prot_nlc_plate_stimulation.qmd	Simple 96-well plate-bound stimulation of sorted NLCs for 3 days followed by IL-2-driven expansion.	NA

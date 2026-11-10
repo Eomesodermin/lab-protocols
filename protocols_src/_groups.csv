@@ -1,0 +1,46 @@
+id,group
+MUS-BLD-PRC,Tissue processing
+MUS-BM-ISO,Tissue processing
+MUS-IEL-ISO,Tissue processing
+MUS-LIV-DIG,Tissue processing
+MUS-LNG-DIG,Tissue processing
+MUS-SPL-DIS,Tissue processing
+MUS-TMR-DIG,Tissue processing
+MUS-LCMV-PROD,LCMV virology
+MUS-LCMV-PLA,LCMV virology
+MUS-LCMV-FFA,LCMV virology
+MUS-LCMV-QPCR,LCMV virology
+MUS-INF-LCMV,LCMV virology
+MUS-NLC-ACT,Cell transfer and in vitro assays
+MUS-P14-ACT,Cell transfer and in vitro assays
+MUS-SPL-NK-PROLIF,Cell transfer and in vitro assays
+NLC-PLATE-STIM,Cell transfer and in vitro assays
+MUS-XCELL-LCMV,Cell transfer and in vitro assays
+MUS-PTPRC-GENO,Genotyping
+HUM-BLD-PBMC-ISO,Cell isolation
+HUM-K562-CULTURE,Cell line culture
+HUM-KHYG1-CULTURE,Cell line culture
+HUM-NK92-CULTURE,Cell line culture
+GEN-FLOW-STD,Flow cytometry
+GEN-FLOW-SONY-ID7000,Flow cytometry
+GEN-FLOW-SONY-ID7000-DATA,Flow cytometry
+GEN-CTV-STAIN,Labelling and gene editing
+GEN-LYMPH-NUC,Labelling and gene editing
+BUF-FACS-BUF,Wash and staining buffers
+BUF-MACS-BUF,Wash and staining buffers
+BUF-ACK-LYSIS,Lysis and cell enrichment
+BUF-RBC-HYB,Lysis and cell enrichment
+BUF-PERC-37,Lysis and cell enrichment
+BUF-R0-MED,Cell culture media
+BUF-R10-MED,Cell culture media
+BUF-TCELL-MED,Cell culture media
+BUF-NK-MED,Cell culture media
+BUF-FREEZE-MIX,Cell culture media
+BUF-LIV-DIG,Tissue digestion and IEL isolation
+BUF-IEL-3PCT,Tissue digestion and IEL isolation
+BUF-IEL-STRIP,Tissue digestion and IEL isolation
+BUF-IEL-SHAKE,Tissue digestion and IEL isolation
+BUF-VERO-PROP,Virology media
+BUF-BHK-PROP,Virology media
+BUF-L929-PROP,Virology media
+BUF-LCMV-PLA,Virology media

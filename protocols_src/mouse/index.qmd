@@ -1,20 +1,16 @@
 ---
 title: "Mouse protocols"
-listing:
-  contents:
-    - "*.qmd"
-  type: table
-  fields: [protocol_id, title, version, date]
-  field-display-names:
-    protocol_id: "Protocol ID"
-    title: "Protocol"
-    version: "Version"
-    date: "Date"
-  field-types:
-    date: date        # so date sorts and formats correctly
-  field-links: [title]   # make the title the clickable link
-  sort: "protocol_id"    # or "title" or "-date"
+description: "Tissue processing, LCMV virology, cell transfer and in vitro assays."
 format: html
+toc: false
 ---
 
-Mouse processing, tissue digestion, and functional assays.
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: asis
+
+source(here::here("protocols_src/_R/listing_helpers.R"))
+render_listing("protocol", "mouse")
+```

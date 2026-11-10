@@ -45,3 +45,4 @@
 .plink { position: relative; z-index: 1; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.03em; }
 .pempty { color: var(--muted); padding: 1rem 0; }
 .pcard.is-hidden, .pgroup.is-hidden { display: none; }
+.ptitle .anchorjs-link, .pgroup-title .anchorjs-link { display: none !important; }

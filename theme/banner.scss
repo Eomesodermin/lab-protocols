@@ -1,0 +1,36 @@
+/*-- scss:rules --*/
+/* Coloured title banner at the top of every page. */
+
+#title-block-header.quarto-title-block .quarto-title-banner {
+  background: linear-gradient(115deg, #0e4f7a 0%, #1b72a8 55%, #23889a 100%) !important;
+  color: #fff !important;
+  margin-bottom: 1.6rem;
+  padding: 1.7rem 0 1.5rem;
+  border-bottom: 0;
+}
+:root.quarto-dark #title-block-header.quarto-title-block .quarto-title-banner,
+.quarto-dark #title-block-header.quarto-title-block .quarto-title-banner {
+  background: linear-gradient(115deg, #0b2a3f 0%, #123b57 55%, #15474f 100%) !important;
+}
+#title-block-header .quarto-title-banner .title,
+#title-block-header .quarto-title-banner .subtitle,
+#title-block-header .quarto-title-banner .description,
+#title-block-header .quarto-title-banner .quarto-title-meta-heading,
+#title-block-header .quarto-title-banner .quarto-title-meta-contents,
+#title-block-header .quarto-title-banner .quarto-title-meta-contents p,
+#title-block-header .quarto-title-banner a { color: #fff !important; border: 0; }
+#title-block-header .quarto-title-banner .title { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+#title-block-header .quarto-title-banner .subtitle { opacity: 0.9; font-size: 1.05rem; }
+#title-block-header .quarto-title-banner .description { opacity: 0.88; font-size: 1.05rem; max-width: 60rem; }
+#title-block-header .quarto-title-banner .quarto-title-meta-heading { opacity: 0.7; }
+@media (max-width: 767px) {
+  #title-block-header .quarto-title-banner .title { font-size: 1.55rem; }
+}
+
+/* Full-width pages: banner bleeds edge to edge, its text lines up with the content below.
+   (The title block sits outside the content container, hence body:has().) */
+body:has(#quarto-content.page-layout-full) #title-block-header .quarto-title,
+body:has(#quarto-content.page-layout-full) #title-block-header .quarto-title-meta {
+  grid-column: screen-start-inset / screen-end-inset !important;
+  width: 100%; max-width: 1560px; margin-inline: auto; padding-inline: clamp(0rem, 1.5vw, 2rem);
+}

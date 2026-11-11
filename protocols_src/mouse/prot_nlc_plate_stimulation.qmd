@@ -3,6 +3,7 @@ title: "Plate-bound stimulation of NLCs (anti-CD3e +/- anti-NK1.1 + soluble anti
 subtitle: "Dillon Corvino"
 protocol_id: "NLC-PLATE-STIM"
 version: "v1.1"
+date: "2026-09-18"
 description: "Simple 96-well plate-bound stimulation of sorted NLCs for 3 days followed by IL-2-driven expansion."
 format:
   html: default

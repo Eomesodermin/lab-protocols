@@ -17,6 +17,7 @@ website:
   title: "Protocol Library"
   site-url: "https://dilloncorvino.com/lab-protocols"
   bread-crumbs: true
+  favicon: favicon.svg
   page-footer:
     left: "Protocol Library - CC BY 4.0 - Dillon Corvino"
     right:
@@ -25,8 +26,11 @@ website:
       - text: "Cite"
         href: https://doi.org/10.5281/zenodo.23950821
 
+  search:
+    location: navbar
+    type: overlay
+    limit: 20
   navbar:
-    search: true
     left:
       - text: "Home"
         href: index.qmd
@@ -48,6 +52,7 @@ website:
         href: protocols_src/resources/index.qmd
 
 filters:
+  - protocols_src/_filters/doc_header.lua
   - protocols_src/_filters/autolink.lua
   - protocols_src/_filters/pdf_symbols.lua
 
@@ -60,8 +65,8 @@ format:
       margin-width: 280px
       gutter-width: 2rem
     theme:
-      light: [cosmo, theme/light.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss, theme/sections.scss]
-      dark: [darkly, theme/dark.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss, theme/sections.scss]
+      light: [cosmo, theme/light.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss, theme/sections.scss, theme/badges.scss]
+      dark: [darkly, theme/dark.scss, theme/rules.scss, theme/listing.scss, theme/matrix.scss, theme/resources.scss, theme/templates.scss, theme/layout.scss, theme/banner.scss, theme/sections.scss, theme/badges.scss]
     css: styles.css
     respect-user-color-scheme: true
     anchor-sections: true

@@ -1,0 +1,19 @@
+/*-- scss:rules --*/
+/* Badge row (ID, version, last revised, PDF) that replaces the plain header lines. */
+.doc-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 0.2rem 0 1.4rem; }
+.doc-badge {
+  display: inline-block; padding: 0.2rem 0.7rem; border-radius: 999px; font-size: 0.85rem;
+  background: color-mix(in srgb, var(--c-blue, #1b72a8) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c-blue, #1b72a8) 35%, transparent);
+  color: inherit; white-space: nowrap;
+}
+.doc-badge.doc-id { font-family: var(--bs-font-monospace, monospace); font-weight: 600; }
+.doc-pdf {
+  margin-left: auto; display: inline-block; padding: 0.3rem 0.95rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600;
+  background: var(--c-blue, #1b72a8); color: #fff !important; text-decoration: none;
+}
+.doc-pdf:hover { filter: brightness(1.12); text-decoration: none; }
+@media (max-width: 575px) { .doc-pdf { margin-left: 0; } }
+
+/* Page date ("Published ...") is the migration date, not a revision date: the badge row replaces it. */
+#title-block-header .quarto-title-meta { display: none !important; }

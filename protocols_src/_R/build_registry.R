@@ -19,6 +19,18 @@ build_registry <- function(quiet = FALSE) {
   # Archived documents and templates are not part of the live library.
   files <- files[!str_detect(files, "/Archived_protocols/|/templates/")]
 
+  # Latest date in a document's "Version history" table = when it was last revised.
+  last_revised <- function(f) {
+    txt <- read_lines(f)
+    start <- which(str_detect(txt, "^# Version history"))
+    if (length(start) == 0) return(NA_character_)
+    block <- txt[(start[1] + 1):length(txt)]
+    next_h <- which(str_detect(block, "^# "))
+    if (length(next_h) > 0) block <- block[seq_len(next_h[1] - 1)]
+    dates <- str_extract_all(paste(block[str_starts(block, "\\|")], collapse = " "), "\\d{4}-\\d{2}-\\d{2}")[[1]]
+    if (length(dates) == 0) NA_character_ else max(dates)
+  }
+
   registry <- map_dfr(files, function(f) {
     meta <- rmarkdown::yaml_front_matter(f)
     tibble(
@@ -28,7 +40,8 @@ build_registry <- function(quiet = FALSE) {
       version = meta$version %||% NA_character_,
       path = str_remove(f, fixed(paste0(root, "/"))),
       description = str_squish(str_replace_all(meta$description %||% "", "[\t\n]", " ")),
-      date = as.character(meta$date %||% NA_character_)
+      date = as.character(meta$date %||% NA_character_),
+      revised = coalesce(last_revised(f), as.character(meta$date %||% NA_character_))
     )
   }) |>
     arrange(type, id)

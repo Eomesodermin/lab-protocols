@@ -1,0 +1,16 @@
+---
+title: "Page not found"
+description: "That page does not exist (it may have been renamed)."
+format: html
+toc: false
+---
+
+The page you followed a link to is not here. Protocol and buffer files were renamed to lowercase names in November 2026, so an old bookmark may need updating.
+
+- [Library home](https://dilloncorvino.com/lab-protocols/)
+- [Mouse protocols](https://dilloncorvino.com/lab-protocols/protocols_src/mouse/index.html)
+- [Human protocols](https://dilloncorvino.com/lab-protocols/protocols_src/human/index.html)
+- [General protocols](https://dilloncorvino.com/lab-protocols/protocols_src/general/index.html)
+- [Buffers](https://dilloncorvino.com/lab-protocols/protocols_src/buffers/index.html)
+
+Or use the search box in the top bar.

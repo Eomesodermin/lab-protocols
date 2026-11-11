@@ -29,8 +29,8 @@ for q in glob.glob(os.path.join(root, "**", "*.qmd"), recursive=True):
 
 checked = 0
 for f in glob.glob(os.path.join(docs, "**", "*.html"), recursive=True):
-    if "site_libs" in f:
-        continue
+    if "site_libs" in f or os.path.basename(f) == "404.html":
+        continue  # 404.html uses root-relative links by design
     html = open(f, encoding="utf-8", errors="ignore").read()
     for u in re.findall(r'href="([^"#?]+\.(?:html|pdf))"', html):
         if re.match(r"^[a-z]+:", u):
